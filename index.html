@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyber Info</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --panel2: #1c2230; --line: #2a3140;
+    --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+    --red: #f85149; --orange: #f0883e; --yellow: #d29922; --green: #3fb950;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { position: sticky; top: 0; z-index: 5; background: rgba(13,17,23,.94);
+           backdrop-filter: blur(6px); border-bottom: 1px solid var(--line);
+           padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  h1 { font-size: 18px; margin: 0 12px 0 0; letter-spacing: .3px; }
+  h1 span { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 12px; }
+  .controls { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  input[type=search] { background: var(--panel); border: 1px solid var(--line); color: var(--text);
+                       border-radius: 8px; padding: 7px 10px; width: 240px; max-width: 100%; }
+  .chip { background: var(--panel); border: 1px solid var(--line); color: var(--muted);
+          border-radius: 999px; padding: 5px 11px; cursor: pointer; font-size: 12px; user-select: none; }
+  .chip.on { color: var(--text); border-color: var(--accent); background: #1f2d42; }
+  main { padding: 16px 20px 40px; max-width: 1700px; margin: 0 auto; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .stat b { display: block; font-size: 26px; font-variant-numeric: tabular-nums; }
+  .stat small { color: var(--muted); }
+  .grid { display: grid; grid-template-columns: 1.15fr 1.4fr 1fr; gap: 16px; align-items: start; }
+  @media (max-width: 1200px) { .grid { grid-template-columns: 1fr 1fr; } .col3 { grid-column: 1 / -1; } }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } header { padding: 10px 16px; } main { padding: 12px 16px; } }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  section > h2 { margin: 0; font-size: 13px; text-transform: uppercase; letter-spacing: .8px;
+                 padding: 11px 14px; border-bottom: 1px solid var(--line); background: var(--panel2);
+                 display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  section > h2 .tabs { display: flex; gap: 6px; text-transform: none; letter-spacing: 0; }
+  .list { max-height: 78vh; overflow-y: auto; }
+  .item { padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .item:last-child { border-bottom: 0; }
+  .item:hover { background: #1a2029; }
+  .item a { color: var(--text); text-decoration: none; font-weight: 600; }
+  .item a:hover { color: var(--accent); }
+  .item p { margin: 4px 0 0; color: var(--muted); font-size: 12.5px; }
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 11.5px; color: var(--muted); margin-top: 4px; }
+  .tag { border-radius: 4px; padding: 1px 6px; font-size: 11px; font-weight: 600; }
+  .t-threat { background: rgba(248,81,73,.15); color: var(--red); }
+  .t-hl { background: rgba(240,136,62,.15); color: var(--orange); }
+  .t-group { background: rgba(210,153,34,.15); color: var(--yellow); }
+  .t-it { background: rgba(63,185,80,.15); color: var(--green); }
+  .t-src { background: #21262d; color: var(--muted); }
+  .new { border-left: 3px solid var(--accent); padding-left: 11px; }
+  mark { background: rgba(240,136,62,.3); color: inherit; border-radius: 2px; }
+  .empty { padding: 20px 14px; color: var(--muted); }
+  .err { color: var(--yellow); font-size: 12px; padding: 8px 14px; }
+  .t-ransomware { background: rgba(248,81,73,.15); color: var(--red); }
+  .t-hacktivist { background: rgba(163,113,247,.18); color: #bc8cff; }
+  .t-apt { background: rgba(88,166,255,.15); color: var(--accent); }
+  .t-criminal { background: rgba(210,153,34,.15); color: var(--yellow); }
+  .actor { cursor: pointer; }
+  .actor:hover { outline: 1px solid currentColor; }
+  .grow { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; padding: 7px 14px;
+          border-bottom: 1px solid var(--line); cursor: pointer; font-size: 13px; }
+  .grow:hover, .grow.sel { background: #1f2d42; }
+  .grow .n { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .grow .c { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; text-align: right; }
+  .gfilter { display: none; background: #1f2d42; border: 1px solid var(--accent); border-radius: 8px;
+             padding: 8px 12px; margin-bottom: 12px; }
+  .gfilter button { background: none; border: 0; color: var(--accent); cursor: pointer; font-size: 13px; }
+  .col3 { display: flex; flex-direction: column; gap: 16px; }
+  .col3 .list.short { max-height: 44vh; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; padding: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🛡️ Cyber <span>Info</span></h1>
+  <div class="meta" id="updated">Caricamento…</div>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Cerca (es. noname, sanità, CVE-2026…)">
+    <span class="chip" data-f="italy">🇮🇹 Solo Italia/EU</span>
+    <span class="chip" data-f="h24">Ultime 24h</span>
+  </div>
+</header>
+
+<main>
+  <div class="stats" id="stats"></div>
+  <div class="gfilter" id="gfilter"></div>
+  <div class="grid">
+    <section>
+      <h2>⚠️ Allerta & rivendicazioni
+        <span class="tabs">
+          <span class="chip on" data-alert="threat">Hacktivismo / news</span>
+          <span class="chip" data-alert="ransom">Leak site ransomware</span>
+        </span>
+      </h2>
+      <div class="list" id="alerts"></div>
+    </section>
+    <section>
+      <h2>📰 Notizie
+        <span class="tabs">
+          <span class="chip on" data-lang="all">Tutte</span>
+          <span class="chip" data-lang="it">Italia</span>
+          <span class="chip" data-lang="en">Internazionali</span>
+          <span class="chip" data-lang="advisory">Advisory</span>
+        </span>
+      </h2>
+      <div class="list" id="news"></div>
+    </section>
+    <div class="col3">
+      <section>
+        <h2>👥 Gruppi (7 gg)
+          <span class="tabs">
+            <span class="chip on" data-gtype="all">Tutti</span>
+            <span class="chip" data-gtype="ransomware">Ransom</span>
+            <span class="chip" data-gtype="hacktivist">Hacktiv.</span>
+            <span class="chip" data-gtype="apt">APT</span>
+          </span>
+        </h2>
+        <div class="grow" style="cursor:default;color:var(--muted);font-size:11px"><span>gruppo · <span id="known"></span></span><span>citazioni</span><span>rivendic.</span></div>
+        <div class="list short" id="groups"></div>
+      </section>
+      <section>
+        <h2>🐞 Vulnerabilità sfruttate (CISA KEV)</h2>
+        <div class="list short" id="kev"></div>
+      </section>
+    </div>
+  </div>
+  <div id="errors"></div>
+</main>
+<footer>Fonti: CSIRT Italia, CERT-AGID, Red Hot Cyber, Cybersecurity360, BleepingComputer, The Hacker News, SecurityWeek, The Record, Krebs, ransomware.live, CISA. Aggiornamento automatico ogni 30 min.</footer>
+
+<script>
+const S = { data: null, q: "", italy: false, h24: false, alert: "threat", lang: "all", gtype: "all", group: null };
+const TYPE_LABEL = { ransomware: "ransomware", hacktivist: "hacktivisti", apt: "APT / stato", criminal: "criminale" };
+const SEEN_KEY = "cyberinfo_lastvisit";
+let lastVisit = 0;
+try { lastVisit = Number(localStorage.getItem(SEEN_KEY)) || 0; } catch {}
+
+const HL = ["italia","italy","italian","italiane","italiani","noname057","zero-day","0-day"];
+const EU = ["IT","FR","DE","ES","PT","NL","BE","AT","CH","PL","CZ","SK","SI","HR","RO","BG","GR","SE","DK","FI","NO","IE","LU","LT","LV","EE","HU","MT","CY","GB","UK"];
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function mark(text) {
+  let t = esc(text);
+  const words = [...HL, ...(S.q ? [S.q] : [])].filter(Boolean)
+    .map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  return words.length ? t.replace(new RegExp(`(${words.join("|")})`, "gi"), "<mark>$1</mark>") : t;
+}
+function ago(d) {
+  const t = new Date(d.length <= 10 ? d + "T00:00:00Z" : (d.endsWith("Z") ? d : d + "Z")).getTime();
+  if (isNaN(t)) return d;
+  const m = Math.round((Date.now() - t) / 60000);
+  if (m < 1) return "ora";
+  if (m < 60) return `${m} min fa`;
+  if (m < 1440) return `${Math.round(m / 60)} h fa`;
+  const g = Math.round(m / 1440);
+  return g === 1 ? "ieri" : `${g} giorni fa`;
+}
+const ts = d => new Date(d.length <= 10 ? d + "T00:00:00Z" : (d.endsWith("Z") ? d : d + "Z")).getTime() || 0;
+const within = (d, h) => Date.now() - ts(d) < h * 3600e3;
+const matchQ = s => !S.q || s.toLowerCase().includes(S.q.toLowerCase());
+const isNew = d => lastVisit && ts(d) > lastVisit;
+
+function actorType(a) { return (S.data.actor_types || {})[a] || "ransomware"; }
+function actorTag(a) {
+  const t = actorType(a);
+  return `<span class="tag actor t-${t}" data-actor="${esc(a)}" title="${TYPE_LABEL[t] || t} – clicca per filtrare">${esc(a)}</span>`;
+}
+function groupRow(g) {
+  const flag = g.country ? ` <span class="tag t-src">${esc(g.country)}</span>` : "";
+  return `<div class="grow ${S.group === g.name ? "sel" : ""}" data-actor="${esc(g.name)}">
+    <span class="n">${g.watch ? "⭐ " : ""}<span class="tag t-${g.type}">${esc(TYPE_LABEL[g.type] || g.type)}</span> ${esc(g.name)}${flag}</span>
+    <span class="c">${g.mentions || ""}</span>
+    <span class="c">${g.claims ? g.claims + (g.claims_it ? ` <span style="color:var(--green)">(${g.claims_it} IT)</span>` : "") : ""}</span></div>`;
+}
+function newsRow(n) {
+  return `<div class="item ${isNew(n.date) ? "new" : ""}">
+    <a href="${esc(n.link)}" target="_blank" rel="noopener">${mark(n.title)}</a>
+    ${n.summary ? `<p>${mark(n.summary)}</p>` : ""}
+    <div class="row"><span class="tag t-src">${esc(n.source)}</span>
+      ${(n.actors || []).map(actorTag).join("")}
+      ${n.threat && !(n.actors || []).length ? '<span class="tag t-threat">minaccia</span>' : ""}
+      ${n.highlight ? '<span class="tag t-hl">IT/EU</span>' : ""}
+      <span>${ago(n.date)}</span></div></div>`;
+}
+function ransomRow(r) {
+  const it = r.country === "IT";
+  return `<div class="item ${isNew(r.date) ? "new" : ""}">
+    <a href="${esc(r.link)}" target="_blank" rel="noopener">${mark(r.victim)}</a>
+    ${r.summary ? `<p>${mark(r.summary)}</p>` : ""}
+    <div class="row">${actorTag(r.group)}
+      ${r.country ? `<span class="tag ${it ? "t-it" : "t-src"}">${esc(r.country)}</span>` : ""}
+      ${r.sector ? `<span>${esc(r.sector)}</span>` : ""}
+      <span>${ago(r.date)}</span></div></div>`;
+}
+function kevRow(k) {
+  return `<div class="item ${isNew(k.date) ? "new" : ""}">
+    <a href="${esc(k.link)}" target="_blank" rel="noopener">${esc(k.cve)}</a> — ${mark(k.vendor + " " + k.product)}
+    <p>${mark(k.name)}</p>
+    <div class="row">${k.ransomware ? '<span class="tag t-threat">usata da ransomware</span>' : ""}
+      <span>aggiunta ${ago(k.date)}</span></div></div>`;
+}
+const listOr = (arr, fn) => arr.length ? arr.map(fn).join("") : '<div class="empty">Nessun elemento con i filtri attuali.</div>';
+
+function render() {
+  const d = S.data; if (!d) return;
+  let news = d.news.filter(n => matchQ(n.title + " " + n.summary + " " + n.source));
+  if (S.italy) news = news.filter(n => n.highlight || n.lang === "it");
+  if (S.h24) news = news.filter(n => within(n.date, 24));
+  if (S.group) news = news.filter(n => (n.actors || []).includes(S.group));
+
+  let ransom = d.ransomware.filter(r => matchQ(r.victim + " " + r.group + " " + r.sector + " " + r.summary));
+  if (S.italy) ransom = ransom.filter(r => EU.includes(r.country));
+  if (S.h24) ransom = ransom.filter(r => within(r.date, 24));
+  if (S.group) ransom = ransom.filter(r => r.group === S.group);
+
+  let kev = d.kev.filter(k => matchQ(k.cve + k.vendor + k.product + k.name));
+  if (S.h24) kev = kev.filter(k => within(k.date, 48));
+
+  document.getElementById("alerts").innerHTML = S.alert === "threat"
+    ? listOr(news.filter(n => n.threat).slice(0, 80), newsRow)
+    : listOr(ransom.slice(0, 120), ransomRow);
+
+  const nv = S.lang === "all" ? news : S.lang === "advisory" ? news.filter(n => n.type === "advisory") : news.filter(n => n.lang === S.lang);
+  document.getElementById("news").innerHTML = listOr(nv.slice(0, 150), newsRow);
+  document.getElementById("kev").innerHTML = listOr(kev, kevRow);
+
+  let groups = (d.actors || []).filter(g => S.gtype === "all" || g.type === S.gtype || (S.gtype === "apt" && g.type === "criminal"));
+  groups = groups.filter(g => matchQ(g.name) || !S.q);
+  document.getElementById("groups").innerHTML = listOr(groups, groupRow);
+  document.getElementById("known").textContent = `${(d.known_actors || 0).toLocaleString("it-IT")} monitorati`;
+  const gf = document.getElementById("gfilter");
+  gf.style.display = S.group ? "block" : "none";
+  if (S.group) {
+    const g = (d.actors || []).find(x => x.name === S.group) || {};
+    gf.innerHTML = `Filtro gruppo: <b>${esc(S.group)}</b> (${esc(TYPE_LABEL[actorType(S.group)] || "")}) · ${g.mentions || 0} citazioni, ${g.claims || 0} rivendicazioni in 7 giorni <button id="gclear">✕ rimuovi filtro</button>`;
+    document.getElementById("gclear").onclick = () => { S.group = null; render(); };
+  }
+
+  const stats = [
+    [d.ransomware.filter(r => within(r.date, 24)).length, "rivendicazioni ransomware 24h"],
+    [d.ransomware.filter(r => r.country === "IT" && within(r.date, 24 * 7)).length, "vittime italiane 7 giorni"],
+    [d.news.filter(n => n.threat && within(n.date, 24)).length, "notizie su minacce 24h"],
+    [d.kev.filter(k => within(k.date, 24 * 7)).length, "nuove KEV 7 giorni"],
+  ];
+  document.getElementById("stats").innerHTML = stats.map(([v, l]) => `<div class="stat"><b>${v}</b><small>${l}</small></div>`).join("");
+  document.getElementById("updated").textContent =
+    `Dati aggiornati ${ago(d.updated)} · ${new Date(d.updated).toLocaleString("it-IT")}`;
+  document.getElementById("errors").innerHTML = (d.errors || []).length
+    ? `<div class="err">Fonti non raggiunte all'ultimo aggiornamento: ${esc(d.errors.map(e => e.split(":")[0]).join(", "))}</div>` : "";
+}
+
+async function load() {
+  try {
+    const r = await fetch(`data/data.json?t=${Date.now()}`, { cache: "no-store" });
+    S.data = await r.json();
+    render();
+  } catch (e) {
+    document.getElementById("updated").textContent = "Impossibile caricare i dati: " + e.message;
+  }
+}
+
+document.getElementById("q").addEventListener("input", e => { S.q = e.target.value.trim(); render(); });
+document.querySelectorAll("[data-f]").forEach(c => c.onclick = () => { S[c.dataset.f] = !S[c.dataset.f]; c.classList.toggle("on"); render(); });
+function tabs(attr) {
+  document.querySelectorAll(`[data-${attr}]`).forEach(c => c.onclick = () => {
+    document.querySelectorAll(`[data-${attr}]`).forEach(x => x.classList.remove("on"));
+    c.classList.add("on"); S[attr] = c.dataset[attr]; render();
+  });
+}
+tabs("alert"); tabs("lang"); tabs("gtype");
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-actor]"); if (!el) return;
+  e.preventDefault();
+  S.group = S.group === el.dataset.actor ? null : el.dataset.actor;
+  // con un gruppo ransomware mostra direttamente le rivendicazioni
+  if (S.group && actorType(S.group) === "ransomware" && S.alert !== "ransom") document.querySelector('[data-alert="ransom"]').click();
+  render(); window.scrollTo({ top: 0, behavior: "smooth" });
+});
+window.addEventListener("beforeunload", () => { try { localStorage.setItem(SEEN_KEY, Date.now()); } catch {} });
+
+load();
+setInterval(load, 10 * 60 * 1000);
+</script>
+</body>
+</html>
