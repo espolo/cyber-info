@@ -1,0 +1,31 @@
+name: Aggiorna dati cyber
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # ogni 30 minuti (GitHub puo' ritardare di qualche minuto)
+  workflow_dispatch:          # pulsante "Run workflow" per lanciarlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install feedparser requests
+      - run: python scripts/update.py
+      - name: Salva i dati se sono cambiati
+        run: |
+          git config user.name "cyber-info-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/data.json data/actors.json
+          git diff --cached --quiet || git commit -m "Aggiornamento dati $(date -u +'%Y-%m-%d %H:%M')"
+          git push
