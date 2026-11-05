@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <title>Cyber Info</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
 <style>
@@ -73,6 +74,20 @@
   .gfilter button { background: none; border: 0; color: var(--accent); cursor: pointer; font-size: 13px; }
   .col3 { display: flex; flex-direction: column; gap: 16px; }
   .col3 .list.short { max-height: 44vh; }
+  .mal { display: grid; grid-template-columns: 1fr 0.8fr 1.3fr; gap: 16px; margin-top: 16px; align-items: start; }
+  @media (max-width: 1200px) { .mal { grid-template-columns: 1fr 1fr; } .mal > section:last-child { grid-column: 1 / -1; } }
+  @media (max-width: 760px) { .mal { grid-template-columns: 1fr; } }
+  .bar { display: grid; grid-template-columns: 1fr 44px; gap: 8px; align-items: center; padding: 6px 14px; font-size: 13px; cursor: pointer; }
+  .bar:hover { background: #1a2029; }
+  .bar .b { position: relative; padding: 2px 6px; z-index: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar .b::before { content: ""; position: absolute; inset: 0; width: var(--w); background: rgba(163,113,247,.22); border-radius: 3px; z-index: -1; }
+  .bar .v { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .ioc { font-family: ui-monospace, Consolas, monospace; font-size: 12px; word-break: break-all; }
+  .copy { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 4px; font-size: 11px; cursor: pointer; padding: 0 6px; }
+  .copy:hover { color: var(--text); border-color: var(--accent); }
+  .weekly { padding: 10px 14px; border-bottom: 1px solid var(--line); background: #1a1f2b; font-size: 12.5px; }
+  .weekly b { font-size: 18px; color: var(--text); }
+  .note { padding: 14px; color: var(--muted); font-size: 12.5px; }
   footer { color: var(--muted); font-size: 12px; text-align: center; padding: 20px; }
 </style>
 </head>
@@ -130,12 +145,33 @@
       </section>
     </div>
   </div>
+  <div class="mal">
+    <section>
+      <h2>🦠 Campagne in Italia (CERT-AGID)</h2>
+      <div id="agidweekly"></div>
+      <div class="list short" id="agid"></div>
+    </section>
+    <section>
+      <h2>📊 Malware più attivi (24h)</h2>
+      <div class="list short" id="maltop"></div>
+    </section>
+    <section>
+      <h2>🎯 Indicatori di compromissione
+        <span class="tabs">
+          <span class="chip on" data-ioc="tf">ThreatFox</span>
+          <span class="chip" data-ioc="uh">URL malevole</span>
+          <span class="chip" data-ioc="uhit">Solo domini .it</span>
+        </span>
+      </h2>
+      <div class="list short" id="iocs"></div>
+    </section>
+  </div>
   <div id="errors"></div>
 </main>
 <footer>Fonti: CSIRT Italia, CERT-AGID, Red Hot Cyber, Cybersecurity360, BleepingComputer, The Hacker News, SecurityWeek, The Record, Krebs, ransomware.live, CISA. Aggiornamento automatico ogni 30 min.</footer>
 
 <script>
-const S = { data: null, q: "", italy: false, h24: false, alert: "threat", lang: "all", gtype: "all", group: null };
+const S = { data: null, q: "", italy: false, h24: false, alert: "threat", lang: "all", gtype: "all", group: null, ioc: "tf", malware: null };
 const TYPE_LABEL = { ransomware: "ransomware", hacktivist: "hacktivisti", apt: "APT / stato", criminal: "criminale" };
 const SEEN_KEY = "cyberinfo_lastvisit";
 let lastVisit = 0;
@@ -229,6 +265,7 @@ function render() {
   const nv = S.lang === "all" ? news : S.lang === "advisory" ? news.filter(n => n.type === "advisory") : news.filter(n => n.lang === S.lang);
   document.getElementById("news").innerHTML = listOr(nv.slice(0, 150), newsRow);
   document.getElementById("kev").innerHTML = listOr(kev, kevRow);
+  renderMalware(d);
 
   let groups = (d.actors || []).filter(g => S.gtype === "all" || g.type === S.gtype || (S.gtype === "apt" && g.type === "criminal"));
   groups = groups.filter(g => matchQ(g.name) || !S.q);
@@ -255,6 +292,50 @@ function render() {
     ? `<div class="err">Fonti non raggiunte all'ultimo aggiornamento: ${esc(d.errors.map(e => e.split(":")[0]).join(", "))}</div>` : "";
 }
 
+function renderMalware(d) {
+  // sintesi settimanali CERT-AGID
+  const w = (d.agid_weekly || [])[0];
+  document.getElementById("agidweekly").innerHTML = w ? `<div class="weekly">Ultima settimana:
+      ${w.campaigns != null ? `<b>${w.campaigns}</b> campagne` : ""} ${w.iocs != null ? ` · <b>${w.iocs}</b> IoC` : ""}
+      <br><a href="${esc(w.link)}" target="_blank" rel="noopener" style="color:var(--accent)">${esc(w.title)}</a></div>` : "";
+  const agid = (d.agid_campaigns || []).filter(n => matchQ(n.title + " " + n.summary));
+  document.getElementById("agid").innerHTML = listOr(agid, n => `<div class="item ${isNew(n.date) ? "new" : ""}">
+      <a href="${esc(n.link)}" target="_blank" rel="noopener">${mark(n.title)}</a><p>${mark(n.summary)}</p>
+      <div class="row"><span>${ago(n.date)}</span></div></div>`);
+
+  // famiglie malware
+  const top = d.malware_top || [];
+  const max = Math.max(1, ...top.map(m => m.count));
+  document.getElementById("maltop").innerHTML = top.length ? top.map(m =>
+    `<div class="bar" data-malware="${esc(m.name)}" title="Clicca per vedere gli indicatori">
+       <span class="b" style="--w:${(m.count / max * 100).toFixed(0)}%">${S.malware === m.name ? "▶ " : ""}${esc(m.name)}</span>
+       <span class="v">${m.count}</span></div>`).join("")
+    : '<div class="note">Nessun dato. Configura la chiave abuse.ch (vedi README).</div>';
+
+  // indicatori
+  let rows;
+  if (S.ioc === "tf") {
+    rows = (d.iocs || []).filter(i => (!S.malware || i.malware === S.malware) && matchQ(i.ioc + " " + i.malware + " " + i.tags.join(" ")));
+    document.getElementById("iocs").innerHTML = (d.iocs || []).length ? listOr(rows.slice(0, 150), i => `<div class="item">
+        <span class="ioc">${esc(i.ioc)}</span> <button class="copy" data-copy="${esc(i.ioc)}">copia</button>
+        <div class="row"><span class="tag t-hacktivist">${esc(i.malware)}</span><span class="tag t-src">${esc(i.type)}</span>
+          <span>${esc(i.threat)}</span>${i.confidence ? `<span>affidabilità ${i.confidence}%</span>` : ""}
+          <a href="${esc(i.link)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:400">dettagli</a>
+          <span>${ago(i.date)}</span></div></div>`)
+      : '<div class="note">Per vedere gli indicatori serve la chiave gratuita di abuse.ch (vedi README, sezione "Malware e indicatori").</div>';
+  } else {
+    rows = (d.urlhaus || []).filter(u => (S.ioc !== "uhit" || u.host_it) && matchQ(u.ioc + " " + u.threat + " " + u.tags.join(" ")));
+    document.getElementById("iocs").innerHTML = (d.urlhaus || []).length ? listOr(rows.slice(0, 200), u => `<div class="item">
+        <span class="ioc">${esc(u.ioc)}</span> <button class="copy" data-copy="${esc(u.ioc)}">copia</button>
+        <div class="row">${u.host_it ? '<span class="tag t-it">.it</span>' : ""}
+          <span class="tag ${u.status === "online" ? "t-threat" : "t-src"}">${esc(u.status)}</span>
+          ${u.tags.slice(0, 4).map(t => `<span class="tag t-src">${esc(t)}</span>`).join("")}
+          <a href="${esc(u.link)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:400">dettagli</a>
+          <span>${ago(u.date)}</span></div></div>`)
+      : '<div class="note">Per vedere le URL malevole serve la chiave gratuita di abuse.ch (vedi README).</div>';
+  }
+}
+
 async function load() {
   try {
     const r = await fetch(`data/data.json?t=${Date.now()}`, { cache: "no-store" });
@@ -273,7 +354,16 @@ function tabs(attr) {
     c.classList.add("on"); S[attr] = c.dataset[attr]; render();
   });
 }
-tabs("alert"); tabs("lang"); tabs("gtype");
+tabs("alert"); tabs("lang"); tabs("gtype"); tabs("ioc");
+document.addEventListener("click", e => {
+  const c = e.target.closest("[data-copy]");
+  if (c) { navigator.clipboard?.writeText(c.dataset.copy); c.textContent = "copiato"; setTimeout(() => c.textContent = "copia", 1200); return; }
+  const m = e.target.closest("[data-malware]");
+  if (m) {
+    S.malware = S.malware === m.dataset.malware ? null : m.dataset.malware;
+    if (S.malware && S.ioc !== "tf") document.querySelector('[data-ioc="tf"]').click(); else render();
+  }
+});
 document.addEventListener("click", e => {
   const el = e.target.closest("[data-actor]"); if (!el) return;
   e.preventDefault();

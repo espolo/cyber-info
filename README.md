@@ -42,6 +42,23 @@ I gruppi della `watchlist` compaiono sempre in cima, con una stella.
 Alcuni nomi sono anche parole comuni ("Play", "Medusa", "Royal"). Per evitare falsi positivi vengono riconosciuti solo se vicini a parole come "ransomware", "gang" o "gruppo".
 Puoi estendere questa lista con `ambiguous_aliases`.
 
+## Malware e indicatori di compromissione
+
+La parte bassa della pagina mostra tre pannelli:
+
+- **Campagne in Italia (CERT-AGID):** le campagne di malware e phishing segnalate in Italia e il riepilogo settimanale (numero di campagne e di IoC).
+- **Malware più attivi (24h):** le famiglie di malware più segnalate nelle ultime 24 ore. Cliccando una famiglia vedi i suoi indicatori.
+- **Indicatori di compromissione:** IP, domini, URL e hash da ThreatFox e URLhaus, con un filtro per i soli domini .it.
+  Gli indicatori sono "disinnescati" (`hxxp`, `[.]`), così non si aprono per sbaglio. Il pulsante "copia" li copia per usarli nei tuoi strumenti.
+
+ThreatFox, URLhaus e MalwareBazaar (abuse.ch) richiedono una **chiave gratuita**. Si configura una volta sola:
+
+1. Vai su https://auth.abuse.ch/, accedi (per esempio con l'account GitHub) e copia la tua **Auth-Key** dal profilo.
+2. Nel repository vai su **Settings → Secrets and variables → Actions → New repository secret**.
+3. Come nome scrivi `ABUSECH_AUTH_KEY` e come valore incolla la chiave, poi clicca **Add secret**.
+
+La chiave resta nascosta: non compare né nella pagina né nel codice pubblico.
+
 ## Personalizzazione
 
 Modifica solo `config.json`:

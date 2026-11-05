@@ -11,7 +11,9 @@ Riconoscimento dei gruppi (threat actor):
 Ogni notizia viene confrontata con tutti i nomi e alias; i gruppi trovati diventano etichette.
 """
 import json
+import os
 import re
+from collections import Counter
 import time
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -25,6 +27,9 @@ CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 OUT = ROOT / "data" / "data.json"
 ACTORS_CACHE = ROOT / "data" / "actors.json"
 UA = {"User-Agent": "CyberInfoDashboard/1.0 (+github pages)"}
+# alcuni siti istituzionali rifiutano client non-browser
+BROWSER_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+              "Accept": "application/rss+xml, application/xml, text/xml, */*"}
 NOW = datetime.now(timezone.utc)
 
 CONTEXT_RE = re.compile(
@@ -178,9 +183,19 @@ def fetch_feeds(errors):
     items = []
     for f in CONFIG["feeds"]:
         try:
-            r = requests.get(f["url"], headers=UA, timeout=25)
-            r.raise_for_status()
-            parsed = feedparser.parse(r.content)
+            parsed, last_err = None, None
+            for url in [f["url"], *f.get("fallback_urls", [])]:
+                try:
+                    r = requests.get(url, headers=BROWSER_UA, timeout=25)
+                    r.raise_for_status()
+                    parsed = feedparser.parse(r.content)
+                    if parsed.entries:
+                        break
+                    last_err = "feed vuoto o non valido"
+                except Exception as ex:
+                    last_err = ex
+            if not parsed or not parsed.entries:
+                raise Exception(last_err)
             for e in parsed.entries[:40]:
                 st = e.get("published_parsed") or e.get("updated_parsed")
                 dt = datetime.fromtimestamp(time.mktime(st), timezone.utc) if st else NOW
@@ -242,6 +257,99 @@ def fetch_kev(errors):
     } for v in vulns[:40]]
 
 
+# ---------------------------------------------------------------- malware e IoC (abuse.ch, CERT-AGID)
+
+ABUSE_KEY = os.environ.get("ABUSECH_AUTH_KEY", "").strip()
+
+
+def abuse_post(url, data=None, json_body=None):
+    r = requests.post(url, headers={**UA, "Auth-Key": ABUSE_KEY}, data=data, json=json_body, timeout=45)
+    r.raise_for_status()
+    return r.json()
+
+
+def defang(x):
+    """Rende un indicatore non cliccabile: hxxp://dominio[.]it"""
+    return (x or "").replace("http", "hxxp").replace(".", "[.]")
+
+
+def fetch_threatfox(errors):
+    try:
+        d = abuse_post("https://threatfox-api.abuse.ch/api/v1/", json_body={"query": "get_iocs", "days": 1})
+    except Exception as ex:
+        errors.append(f"ThreatFox: {ex}")
+        return None
+    out = []
+    for i in d.get("data") or []:
+        if not isinstance(i, dict):
+            continue
+        out.append({
+            "ioc": defang(i.get("ioc", "")),
+            "type": i.get("ioc_type", ""),
+            "threat": i.get("threat_type_desc") or i.get("threat_type", ""),
+            "malware": i.get("malware_printable") or i.get("malware", ""),
+            "confidence": i.get("confidence_level", 0),
+            "date": str(i.get("first_seen", "")).replace(" UTC", "").replace(" ", "T")[:19],
+            "tags": i.get("tags") or [],
+            "link": f"https://threatfox.abuse.ch/ioc/{i.get('id')}/",
+        })
+    out.sort(key=lambda x: x["date"], reverse=True)
+    return out
+
+
+def fetch_urlhaus(errors):
+    try:
+        d = abuse_post("https://urlhaus-api.abuse.ch/v1/urls/recent/limit/1000/")
+    except Exception as ex:
+        errors.append(f"URLhaus: {ex}")
+        return None
+    out = []
+    for u in d.get("urls") or []:
+        host = (u.get("host") or "").lower()
+        out.append({
+            "ioc": defang(u.get("url", "")),
+            "host_it": host.endswith(".it"),
+            "status": u.get("url_status", ""),
+            "threat": u.get("threat", ""),
+            "tags": u.get("tags") or [],
+            "date": str(u.get("date_added", "")).replace(" UTC", "").replace(" ", "T")[:19],
+            "link": u.get("urlhaus_reference", ""),
+        })
+    # tutte le URL su domini .it + le 150 piu' recenti
+    it = [u for u in out if u["host_it"]]
+    return (it + [u for u in out if not u["host_it"]][:150])[:400]
+
+
+def fetch_bazaar(errors):
+    try:
+        d = abuse_post("https://mb-api.abuse.ch/api/v1/", data={"query": "get_recent", "selector": "time"})
+    except Exception as ex:
+        errors.append(f"MalwareBazaar: {ex}")
+        return None
+    return [{"sig": s.get("signature") or "", "type": s.get("file_type", ""),
+             "date": str(s.get("first_seen", "")).replace(" ", "T")[:19]}
+            for s in (d.get("data") or []) if isinstance(s, dict)]
+
+
+def agid_campaigns(news):
+    """Post CERT-AGID su campagne malevole e sintesi settimanali (n. campagne e IoC)."""
+    camp_re = re.compile(r"campagn|malware|phishing|smishing|trojan|stealer|\brat\b|ransomware|truffa|spoofing", re.I)
+    posts, weekly = [], []
+    for n in news:
+        if n["source"] != "CERT-AGID":
+            continue
+        text = f"{n['title']} {n['summary']}"
+        if "sintesi riepilogativa" in n["title"].lower():
+            c = re.search(r"(\d[\d.]*)\s+campagne", text, re.I)
+            i = re.search(r"(\d[\d.]*)\s+(?:indicatori|ioc)", text, re.I)
+            weekly.append({"title": n["title"], "link": n["link"], "date": n["date"],
+                           "campaigns": int(c.group(1).replace(".", "")) if c else None,
+                           "iocs": int(i.group(1).replace(".", "")) if i else None})
+        elif camp_re.search(text):
+            posts.append(n)
+    return posts[:40], weekly[:8]
+
+
 # ---------------------------------------------------------------- main
 
 def main():
@@ -295,6 +403,21 @@ def main():
                            "watch": name in watch, **s})
     actor_list.sort(key=lambda x: (x["watch"], x["claims"] + 3 * x["mentions"]), reverse=True)
 
+    # malware e IoC
+    if ABUSE_KEY:
+        tf, uh, mb = fetch_threatfox(errors), fetch_urlhaus(errors), fetch_bazaar(errors)
+    else:
+        tf = uh = mb = None
+        errors.append("abuse.ch: chiave non configurata (secret ABUSECH_AUTH_KEY)")
+    tf = tf if tf is not None else prev.get("iocs", [])
+    uh = uh if uh is not None else prev.get("urlhaus", [])
+    fam = Counter(i["malware"] for i in tf if i["malware"] and i["malware"].lower() != "unknown malware")
+    for s_ in (mb or []):
+        if s_["sig"]:
+            fam[s_["sig"]] += 1
+    malware_top = [{"name": k, "count": v} for k, v in fam.most_common(25)] if (tf or mb) else prev.get("malware_top", [])
+    camp_posts, camp_weekly = agid_campaigns(news)
+
     result = {
         "updated": iso(NOW),
         "news": news,
@@ -304,6 +427,11 @@ def main():
         "actor_types": {n: a["type"] for n, a in actors.items()
                         if n in stats or any(n in x["actors"] for x in news)},
         "known_actors": len(actors),
+        "iocs": tf[:200],
+        "urlhaus": uh,
+        "malware_top": malware_top,
+        "agid_campaigns": [{k: p[k] for k in ("title", "link", "summary", "date")} for p in camp_posts],
+        "agid_weekly": camp_weekly,
         "errors": errors,
     }
     OUT.parent.mkdir(exist_ok=True)
