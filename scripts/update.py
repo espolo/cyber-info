@@ -183,19 +183,21 @@ def fetch_feeds(errors):
     items = []
     for f in CONFIG["feeds"]:
         try:
-            parsed, last_err = None, None
+            parsed, tried = None, []
             for url in [f["url"], *f.get("fallback_urls", [])]:
+                host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
                 try:
                     r = requests.get(url, headers=BROWSER_UA, timeout=25)
                     r.raise_for_status()
                     parsed = feedparser.parse(r.content)
                     if parsed.entries:
                         break
-                    last_err = "feed vuoto o non valido"
+                    start = re.sub(r"\s+", " ", r.text[:80])
+                    tried.append(f"{host}: risposta {r.status_code} senza notizie ({r.headers.get('content-type', '?')}; inizia con: {start!r})")
                 except Exception as ex:
-                    last_err = ex
+                    tried.append(f"{host}: {str(ex)[:120]}")
             if not parsed or not parsed.entries:
-                raise Exception(last_err)
+                raise Exception(" | ".join(tried))
             for e in parsed.entries[:40]:
                 st = e.get("published_parsed") or e.get("updated_parsed")
                 dt = datetime.fromtimestamp(time.mktime(st), timezone.utc) if st else NOW
@@ -298,32 +300,53 @@ def fetch_threatfox(errors):
 
 
 def fetch_urlhaus(errors):
+    rows, tried = None, []
+    # 1) API v1 "recent" (GET)
     try:
-        # l'endpoint "recent" di URLhaus risponde in GET; il POST resta come riserva
-        url = "https://urlhaus-api.abuse.ch/v1/urls/recent/limit/1000/"
-        r = requests.get(url, headers={**UA, "Auth-Key": ABUSE_KEY}, timeout=45)
-        if r.status_code >= 400:
-            r = requests.post(url, headers={**UA, "Auth-Key": ABUSE_KEY}, timeout=45)
+        r = requests.get("https://urlhaus-api.abuse.ch/v1/urls/recent/",
+                         headers={**UA, "Auth-Key": ABUSE_KEY}, timeout=45)
         r.raise_for_status()
         d = r.json()
         if d.get("query_status") not in (None, "ok"):
-            raise Exception(f"risposta URLhaus: {d.get('query_status')}")
+            raise Exception(f"query_status={d.get('query_status')}")
+        rows = [{"url": u.get("url", ""), "status": u.get("url_status", ""), "threat": u.get("threat", ""),
+                 "tags": u.get("tags") or [], "date": u.get("date_added", ""), "link": u.get("urlhaus_reference", "")}
+                for u in d.get("urls") or []]
     except Exception as ex:
-        errors.append(f"URLhaus: {ex}")
+        tried.append(f"API v1: {str(ex)[:120]}")
+    # 2) export v2 CSV delle URL recenti
+    if rows is None:
+        try:
+            r = requests.get(f"https://urlhaus-api.abuse.ch/v2/files/exports/{ABUSE_KEY}/recent.csv",
+                             headers=UA, timeout=60)
+            r.raise_for_status()
+            import csv, io
+            lines = [l for l in r.text.splitlines() if l and not l.startswith("#")]
+            rows = []
+            for c in csv.reader(io.StringIO("\n".join(lines))):
+                # id, dateadded, url, url_status, last_online, threat, tags, urlhaus_link, reporter
+                if len(c) < 8:
+                    continue
+                rows.append({"url": c[2], "status": c[3], "threat": c[5],
+                             "tags": [t for t in c[6].split(",") if t], "date": c[1], "link": c[7]})
+        except Exception as ex:
+            tried.append(f"export v2: {str(ex)[:120].replace(ABUSE_KEY, '***')}")
+    if rows is None:
+        errors.append("URLhaus: " + " | ".join(tried))
         return None
     out = []
-    for u in d.get("urls") or []:
-        host = (u.get("host") or "").lower()
+    for u in rows:
+        host = re.sub(r"^[a-z]+://", "", u["url"].lower()).split("/")[0].split(":")[0]
         out.append({
-            "ioc": defang(u.get("url", "")),
+            "ioc": defang(u["url"]),
             "host_it": host.endswith(".it"),
-            "status": u.get("url_status", ""),
-            "threat": u.get("threat", ""),
-            "tags": u.get("tags") or [],
-            "date": str(u.get("date_added", "")).replace(" UTC", "").replace(" ", "T")[:19],
-            "link": u.get("urlhaus_reference", ""),
+            "status": u["status"],
+            "threat": u["threat"],
+            "tags": u["tags"],
+            "date": str(u["date"]).replace(" UTC", "").replace(" ", "T")[:19],
+            "link": u["link"],
         })
-    # tutte le URL su domini .it + le 150 piu' recenti
+    out.sort(key=lambda x: x["date"], reverse=True)
     it = [u for u in out if u["host_it"]]
     return (it + [u for u in out if not u["host_it"]][:150])[:400]
 
