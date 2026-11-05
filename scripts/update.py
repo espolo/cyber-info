@@ -299,7 +299,15 @@ def fetch_threatfox(errors):
 
 def fetch_urlhaus(errors):
     try:
-        d = abuse_post("https://urlhaus-api.abuse.ch/v1/urls/recent/limit/1000/")
+        # l'endpoint "recent" di URLhaus risponde in GET; il POST resta come riserva
+        url = "https://urlhaus-api.abuse.ch/v1/urls/recent/limit/1000/"
+        r = requests.get(url, headers={**UA, "Auth-Key": ABUSE_KEY}, timeout=45)
+        if r.status_code >= 400:
+            r = requests.post(url, headers={**UA, "Auth-Key": ABUSE_KEY}, timeout=45)
+        r.raise_for_status()
+        d = r.json()
+        if d.get("query_status") not in (None, "ok"):
+            raise Exception(f"risposta URLhaus: {d.get('query_status')}")
     except Exception as ex:
         errors.append(f"URLhaus: {ex}")
         return None

@@ -289,7 +289,7 @@ function render() {
   document.getElementById("updated").textContent =
     `Dati aggiornati ${ago(d.updated)} · ${new Date(d.updated).toLocaleString("it-IT")}`;
   document.getElementById("errors").innerHTML = (d.errors || []).length
-    ? `<div class="err">Fonti non raggiunte all'ultimo aggiornamento: ${esc(d.errors.map(e => e.split(":")[0]).join(", "))}</div>` : "";
+    ? `<details class="err"><summary style="cursor:pointer">Fonti non raggiunte all'ultimo aggiornamento: ${esc(d.errors.map(e => e.split(":")[0]).join(", "))} (clicca per i dettagli)</summary><pre style="white-space:pre-wrap;font-size:11px;color:var(--muted)">${esc(d.errors.join("\n"))}</pre></details>` : "";
 }
 
 function renderMalware(d) {
