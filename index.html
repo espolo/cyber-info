@@ -296,6 +296,7 @@ function render() {
   document.getElementById("kev").innerHTML = listOr(kev, kevRow);
   renderMalware(d);
   renderRadar(d);
+  fitLists();
 
   let groups = (d.actors || []).filter(g => S.gtype === "all" || g.type === S.gtype || (S.gtype === "apt" && g.type === "criminal"));
   groups = groups.filter(g => matchQ(g.name) || !S.q);
@@ -326,6 +327,29 @@ function render() {
   document.getElementById("errors").innerHTML = (d.errors || []).length
     ? `<details class="err"><summary style="cursor:pointer">Fonti non raggiunte all'ultimo aggiornamento: ${esc(d.errors.map(e => e.split(":")[0]).join(", "))} (clicca per i dettagli)</summary><pre style="white-space:pre-wrap;font-size:11px;color:var(--muted)">${esc(d.errors.join("\n"))}</pre></details>` : "";
 }
+
+// Mostra solo i primi N elementi di una lista: gli altri si vedono scorrendo
+const IOC_MAX = 30; // indicatori mostrati: solo i piu' recenti
+const VISIBLE = { alerts: 4, news: 4, maltop: 10, iocs: 5 };
+function fitLists() {
+  for (const [id, n] of Object.entries(VISIBLE)) {
+    const el = document.getElementById(id); if (!el) continue;
+    const kids = [...el.children].slice(0, n);
+    const h = kids.reduce((s, k) => s + k.offsetHeight, 0);
+    el.style.maxHeight = h ? `${h + 2}px` : "";
+  }
+  // colonna destra (gruppi + KEV) alta come le altre due, quando sono affiancate
+  const g = document.getElementById("groups"), k = document.getElementById("kev");
+  const col = g.closest(".col3"), ref = document.getElementById("news").closest("section");
+  g.style.maxHeight = ""; k.style.maxHeight = "";
+  if (window.innerWidth > 1200 && k.children.length) {
+    const kh = [...k.children].slice(0, 2).reduce((s, x) => s + x.offsetHeight, 0) + 2;
+    k.style.maxHeight = `${kh}px`;
+    const extra = col.offsetHeight - ref.offsetHeight;
+    if (extra > 0) g.style.maxHeight = `${Math.max(150, g.offsetHeight - extra)}px`;
+  }
+}
+window.addEventListener("resize", fitLists);
 
 function itRank(d) {
   const it = (d.radar || {})["it_1d"];
@@ -377,7 +401,7 @@ function renderMalware(d) {
   let rows;
   if (S.ioc === "tf") {
     rows = (d.iocs || []).filter(i => (!S.malware || i.malware === S.malware) && matchQ(i.ioc + " " + i.malware + " " + i.tags.join(" ")));
-    document.getElementById("iocs").innerHTML = (d.iocs || []).length ? listOr(rows.slice(0, 150), i => `<div class="item">
+    document.getElementById("iocs").innerHTML = (d.iocs || []).length ? listOr(rows.slice(0, IOC_MAX), i => `<div class="item">
         <span class="ioc">${esc(i.ioc)}</span> <button class="copy" data-copy="${esc(i.ioc)}">copia</button>
         <div class="row"><span class="tag t-hacktivist">${esc(i.malware)}</span><span class="tag t-src">${esc(i.type)}</span>
           <span>${esc(i.threat)}</span>${i.confidence ? `<span>affidabilità ${i.confidence}%</span>` : ""}
@@ -386,7 +410,8 @@ function renderMalware(d) {
       : '<div class="note">Per vedere gli indicatori serve la chiave gratuita di abuse.ch (vedi README, sezione "Malware e indicatori").</div>';
   } else {
     rows = (d.urlhaus || []).filter(u => (S.ioc !== "uhit" || u.host_it) && matchQ(u.ioc + " " + u.threat + " " + u.tags.join(" ")));
-    document.getElementById("iocs").innerHTML = (d.urlhaus || []).length ? listOr(rows.slice(0, 200), u => `<div class="item">
+    rows.sort((x, y) => ts(y.date) - ts(x.date));
+    document.getElementById("iocs").innerHTML = (d.urlhaus || []).length ? listOr(rows.slice(0, IOC_MAX), u => `<div class="item">
         <span class="ioc">${esc(u.ioc)}</span> <button class="copy" data-copy="${esc(u.ioc)}">copia</button>
         <div class="row">${u.host_it ? '<span class="tag t-it">.it</span>' : ""}
           <span class="tag ${u.status === "online" ? "t-threat" : "t-src"}">${esc(u.status)}</span>
