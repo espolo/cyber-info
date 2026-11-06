@@ -59,6 +59,8 @@ def word_regex(words):
 
 THREAT_RE = word_regex(CONFIG["threat_keywords"])
 HIGHLIGHT_RE = word_regex(CONFIG["highlight_keywords"])
+# Italia nei post Telegram (anche in russo e con la bandiera)
+IT_RE = re.compile(r"(?<!\w)(?:ital\w*|итали\w*)(?!\w)|🇮🇹", re.I)
 
 
 def get_json(url, timeout=40):
@@ -259,6 +261,189 @@ def fetch_kev(errors):
     } for v in vulns[:40]]
 
 
+# ---------------------------------------------------------------- RansomLook (seconda fonte leak site)
+
+COUNTRY_NAMES = {
+    "italy": "IT", "italia": "IT", "germany": "DE", "france": "FR", "spain": "ES", "united kingdom": "GB",
+    "uk": "GB", "united states": "US", "usa": "US", "canada": "CA", "netherlands": "NL", "belgium": "BE",
+    "switzerland": "CH", "austria": "AT", "portugal": "PT", "poland": "PL", "brazil": "BR", "india": "IN",
+    "australia": "AU", "mexico": "MX", "japan": "JP", "sweden": "SE", "denmark": "DK", "norway": "NO",
+    "finland": "FI", "ireland": "IE", "greece": "GR", "czech republic": "CZ", "czechia": "CZ", "romania": "RO",
+    "turkey": "TR", "israel": "IL", "argentina": "AR", "colombia": "CO", "chile": "CL", "peru": "PE",
+}
+
+
+def norm(s):
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def guess_country(title, desc):
+    m = re.search(r"country\s*:\s*([A-Za-z .]+?)\s*(?:\||$|,)", desc or "", re.I)
+    if m:
+        c = m.group(1).strip().lower()
+        if len(c) == 2:
+            return c.upper()
+        if c in COUNTRY_NAMES:
+            return COUNTRY_NAMES[c]
+    if re.search(r"\.it\b|\*+\.it$", (title or "").lower()):
+        return "IT"
+    return ""
+
+
+def fetch_ransomlook(errors):
+    try:
+        data = get_json(CONFIG.get("ransomlook_api", "https://www.ransomlook.io/api/recent/200"))
+    except Exception as ex:
+        errors.append(f"RansomLook: {ex}")
+        return None
+    out = []
+    for v in data if isinstance(data, list) else []:
+        victim = (v.get("post_title") or "?").strip()
+        group = v.get("group_name") or "?"
+        desc = v.get("description") or ""
+        out.append({
+            "id": f"{group}|{victim}",
+            "victim": victim,
+            "group": group,
+            "country": guess_country(victim, desc),
+            "sector": "",
+            "date": str(v.get("discovered") or "").replace(" ", "T")[:19],
+            "link": f"https://www.ransomlook.io/group/{group}",
+            "summary": clean(desc, 250),
+        })
+    return out
+
+
+def merge_victims(a, b):
+    """Unisce le rivendicazioni di ransomware.live (a) e RansomLook (b), togliendo i doppioni."""
+    seen = {}
+    for r in a:
+        r.setdefault("sources", ["ransomware.live"])
+        seen[(norm(r["group"]), norm(r["victim"]))] = r
+    for r in b:
+        k = (norm(r["group"]), norm(r["victim"]))
+        if k in seen:
+            x = seen[k]
+            if "RansomLook" not in x["sources"]:
+                x["sources"].append("RansomLook")
+            if not x["country"] and r["country"]:
+                x["country"] = r["country"]
+        else:
+            r["sources"] = ["RansomLook"]
+            seen[k] = r
+    out = sorted(seen.values(), key=lambda x: x["date"], reverse=True)
+    return out[:500]
+
+
+# ---------------------------------------------------------------- Telegram (canali pubblici hacktivisti)
+
+TG_MSG_RE = re.compile(r'data-post="([^"]+)"(.*?)(?=data-post="|\Z)', re.S)
+TG_TEXT_RE = re.compile(r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', re.S)
+TG_TIME_RE = re.compile(r'<time[^>]*datetime="([^"]+)"')
+
+
+def tg_text(html_):
+    import html as _h
+    t = re.sub(r"<br\s*/?>", "\n", html_)
+    t = re.sub(r"<[^>]+>", " ", t)
+    return re.sub(r"[ \t]+", " ", _h.unescape(t)).strip()
+
+
+def fetch_telegram(errors):
+    """Legge l'anteprima web pubblica (t.me/s/<canale>) senza account Telegram."""
+    items = []
+    for ch in CONFIG.get("telegram_channels", []):
+        # piu' username possibili: i canali vengono chiusi e riaperti spesso con nomi nuovi
+        names = [u.lstrip("@") for u in ch.get("usernames") or [ch.get("username", "")] if u]
+        user, r, tried = names[0] if names else "?", None, []
+        for u in names:
+            try:
+                x = requests.get(f"https://t.me/s/{u}", headers=BROWSER_UA, timeout=25)
+                x.raise_for_status()
+                if "/s/" in x.url and "tgme_widget_message" in x.text:
+                    user, r = u, x
+                    break
+                tried.append(u)
+            except Exception as ex:
+                tried.append(f"{u} ({str(ex)[:60]})")
+        try:
+            if r is None:
+                raise Exception("nessun canale pubblico raggiungibile tra: " + ", ".join(tried)
+                                + " (aggiorna gli username in config.json)")
+            count = 0
+            for post, body in TG_MSG_RE.findall(r.text):
+                tm = TG_TEXT_RE.search(body)
+                dt = TG_TIME_RE.search(body)
+                if not tm or not dt:
+                    continue
+                text = tg_text(tm.group(1))
+                if len(text) < 15:
+                    continue
+                d = datetime.fromisoformat(dt.group(1).replace("Z", "+00:00"))
+                first = text.split("\n", 1)[0]
+                items.append({
+                    "id": f"https://t.me/{post}",
+                    "title": clean(first, 200),
+                    "link": f"https://t.me/{post}",
+                    "summary": clean(text[len(first):] if len(text) > len(first) + 20 else "", 400),
+                    "source": f"Telegram · {ch.get('name') or user}",
+                    "lang": "tg",
+                    "type": "claims",
+                    "tg_actor": ch.get("actor", ""),
+                    "date": iso(d),
+                })
+                count += 1
+            if not count:
+                raise Exception("nessun messaggio di testo trovato")
+        except Exception as ex:
+            errors.append(f"Telegram {ch.get('name') or user}: {str(ex)[:300]}")
+    return items
+
+
+# ---------------------------------------------------------------- Cloudflare Radar (DDoS e disservizi)
+
+CF_TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+CF_API = "https://api.cloudflare.com/client/v4/radar"
+
+
+def cf_get(path, **params):
+    r = requests.get(f"{CF_API}{path}", params={**params, "format": "json"},
+                     headers={**UA, "Authorization": f"Bearer {CF_TOKEN}"}, timeout=40)
+    r.raise_for_status()
+    return r.json().get("result", {})
+
+
+def fetch_radar(errors):
+    if not CF_TOKEN:
+        errors.append("Cloudflare Radar: token non configurato (secret CLOUDFLARE_API_TOKEN)")
+        return None
+    out = {}
+    try:
+        for rng in ("1d", "7d"):
+            res = cf_get("/attacks/layer7/top/locations/target", dateRange=rng, limit=100)
+            rows = [{"code": x.get("targetCountryAlpha2", ""), "name": x.get("targetCountryName", ""),
+                     "value": round(float(x.get("value", 0)), 2), "rank": x.get("rank")}
+                    for x in res.get("top_0", [])]
+            out[f"l7_{rng}"] = rows[:12]
+            it = next((x for x in rows if x["code"] == "IT"), None)
+            out[f"it_{rng}"] = it
+    except Exception as ex:
+        errors.append(f"Cloudflare Radar attacchi: {str(ex)[:160]}")
+    try:
+        res = cf_get("/annotations/outages", location="IT", dateRange="30d", limit=20)
+        out["outages_it"] = [{
+            "start": a.get("startDate", ""), "end": a.get("endDate") or "",
+            "cause": (a.get("outage") or {}).get("outageCause", ""),
+            "type": (a.get("outage") or {}).get("outageType", ""),
+            "desc": clean(a.get("description", ""), 250),
+            "asns": [d.get("name", "") for d in (a.get("asnsDetails") or [])][:3],
+            "link": a.get("linkedUrl") or "",
+        } for a in res.get("annotations", [])]
+    except Exception as ex:
+        errors.append(f"Cloudflare Radar disservizi: {str(ex)[:160]}")
+    return out or None
+
+
 # ---------------------------------------------------------------- malware e IoC (abuse.ch, CERT-AGID)
 
 ABUSE_KEY = os.environ.get("ABUSECH_AUTH_KEY", "").strip()
@@ -388,15 +573,21 @@ def main():
     errors = []
 
     merged = {i["id"]: i for i in prev.get("news", [])}
-    for i in fetch_feeds(errors):
+    for i in fetch_feeds(errors) + fetch_telegram(errors):
         merged[i["id"]] = i
     cutoff = iso(NOW - timedelta(days=CONFIG["max_age_days"]))
     news = sorted((i for i in merged.values() if i["date"] >= cutoff),
                   key=lambda x: x["date"], reverse=True)[: CONFIG["max_items"]]
 
     ransom = fetch_ransomware(errors)
+    rlook = fetch_ransomlook(errors)
+    # se una delle due fonti non risponde, per quella si riusano i dati precedenti
+    old = prev.get("ransomware", [])
     if ransom is None:
-        ransom = prev.get("ransomware", [])
+        ransom = [r for r in old if "ransomware.live" in r.get("sources", ["ransomware.live"])]
+    if rlook is None:
+        rlook = [r for r in old if r.get("sources") == ["RansomLook"]]
+    ransom = merge_victims(ransom, rlook)
     kev = fetch_kev(errors)
     if kev is None:
         kev = prev.get("kev", [])
@@ -409,8 +600,12 @@ def main():
     for n in news:
         text = f"{n['title']} {n['summary']}"
         n["actors"] = matcher.find(text)
+        if n.get("tg_actor"):
+            a = matcher.canonical(n["tg_actor"])
+            n["actors"] = [a] + [x for x in n["actors"] if x != a]
         n["threat"] = bool(n["actors"]) or n["type"] == "claims" or bool(THREAT_RE and THREAT_RE.search(text))
-        n["highlight"] = bool(HIGHLIGHT_RE and HIGHLIGHT_RE.search(text))
+        n["highlight"] = bool(HIGHLIGHT_RE and HIGHLIGHT_RE.search(text)) or \
+            (n["lang"] == "tg" and bool(IT_RE.search(text)))
     for r in ransom:
         r["group"] = matcher.canonical(r["group"])
 
@@ -419,6 +614,10 @@ def main():
     stats = defaultdict(lambda: {"mentions": 0, "claims": 0, "claims_it": 0, "last": ""})
     for n in news:
         if n["date"] >= since:
+            if n.get("tg_actor"):  # un post sul canale del gruppo conta come rivendicazione
+                s = stats[n["actors"][0]]; s["claims"] += 1; s["last"] = max(s["last"], n["date"])
+                s["claims_it"] += bool(IT_RE.search(n["title"] + " " + n["summary"]))
+                continue
             for a in n["actors"]:
                 s = stats[a]; s["mentions"] += 1; s["last"] = max(s["last"], n["date"])
     for r in ransom:
@@ -448,6 +647,7 @@ def main():
             fam[s_["sig"]] += 1
     malware_top = [{"name": k, "count": v} for k, v in fam.most_common(25)] if (tf or mb) else prev.get("malware_top", [])
     camp_posts, camp_weekly = agid_campaigns(news)
+    radar = fetch_radar(errors) or prev.get("radar", {})
 
     result = {
         "updated": iso(NOW),
@@ -463,6 +663,8 @@ def main():
         "malware_top": malware_top,
         "agid_campaigns": [{k: p[k] for k in ("title", "link", "summary", "date")} for p in camp_posts],
         "agid_weekly": camp_weekly,
+        "radar": radar,
+        "telegram_channels": [c.get("name", "") for c in CONFIG.get("telegram_channels", [])],
         "errors": errors,
     }
     OUT.parent.mkdir(exist_ok=True)

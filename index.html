@@ -87,6 +87,11 @@
   .copy:hover { color: var(--text); border-color: var(--accent); }
   .weekly { padding: 10px 14px; border-bottom: 1px solid var(--line); background: #1a1f2b; font-size: 12.5px; }
   .weekly b { font-size: 18px; color: var(--text); }
+  .cf { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; align-items: start; }
+  @media (max-width: 760px) { .cf { grid-template-columns: 1fr; } }
+  .bar.it .b::before { background: rgba(63,185,80,.35); }
+  .bar.it { font-weight: 700; }
+  .stale { color: var(--red) !important; font-weight: 600; }
   .note { padding: 14px; color: var(--muted); font-size: 12.5px; }
   footer { color: var(--muted); font-size: 12px; text-align: center; padding: 20px; }
 </style>
@@ -110,6 +115,7 @@
       <h2>⚠️ Allerta & rivendicazioni
         <span class="tabs">
           <span class="chip on" data-alert="threat">Hacktivismo / news</span>
+          <span class="chip" data-alert="tg">Telegram</span>
           <span class="chip" data-alert="ransom">Leak site ransomware</span>
         </span>
       </h2>
@@ -166,12 +172,28 @@
       <div class="list short" id="iocs"></div>
     </section>
   </div>
+  <div class="cf">
+    <section>
+      <h2>🌐 Paesi più colpiti da attacchi DDoS (Cloudflare Radar)
+        <span class="tabs">
+          <span class="chip on" data-cfr="1d">24h</span>
+          <span class="chip" data-cfr="7d">7 giorni</span>
+        </span>
+      </h2>
+      <div id="cfit"></div>
+      <div class="list short" id="cftop"></div>
+    </section>
+    <section>
+      <h2>🔌 Disservizi Internet in Italia (30 gg)</h2>
+      <div class="list short" id="cfout"></div>
+    </section>
+  </div>
   <div id="errors"></div>
 </main>
-<footer>Fonti: CSIRT Italia, CERT-AGID, Red Hot Cyber, Cybersecurity360, BleepingComputer, The Hacker News, SecurityWeek, The Record, Krebs, ransomware.live, CISA. Aggiornamento automatico ogni 30 min.</footer>
+<footer>Fonti: CSIRT Italia, CERT-AGID, Red Hot Cyber, Cybersecurity360, BleepingComputer, The Hacker News, SecurityWeek, The Record, Krebs, ransomware.live, RansomLook, canali Telegram pubblici, Cloudflare Radar, CISA, abuse.ch. Aggiornamento automatico ogni 30 min.</footer>
 
 <script>
-const S = { data: null, q: "", italy: false, h24: false, alert: "threat", lang: "all", gtype: "all", group: null, ioc: "tf", malware: null };
+const S = { data: null, q: "", italy: false, h24: false, alert: "threat", lang: "all", gtype: "all", group: null, ioc: "tf", malware: null, cfr: "1d" };
 const TYPE_LABEL = { ransomware: "ransomware", hacktivist: "hacktivisti", apt: "APT / stato", criminal: "criminale" };
 const SEEN_KEY = "cyberinfo_lastvisit";
 let lastVisit = 0;
@@ -232,6 +254,7 @@ function ransomRow(r) {
     <div class="row">${actorTag(r.group)}
       ${r.country ? `<span class="tag ${it ? "t-it" : "t-src"}">${esc(r.country)}</span>` : ""}
       ${r.sector ? `<span>${esc(r.sector)}</span>` : ""}
+      ${(r.sources || []).length ? `<span title="fonte">${esc(r.sources.join(" + "))}</span>` : ""}
       <span>${ago(r.date)}</span></div></div>`;
 }
 function kevRow(k) {
@@ -258,14 +281,21 @@ function render() {
   let kev = d.kev.filter(k => matchQ(k.cve + k.vendor + k.product + k.name));
   if (S.h24) kev = kev.filter(k => within(k.date, 48));
 
+  const tg = news.filter(n => n.lang === "tg");
+  const tgEmpty = (d.telegram_channels || []).length
+    ? `<div class="note">Nessun post dai canali Telegram monitorati (${esc(d.telegram_channels.join(", "))}). Se il canale è stato chiuso o rinominato, l'errore compare in fondo alla pagina: aggiorna gli username in config.json.</div>`
+    : '<div class="note">Nessun canale Telegram configurato (config.json → telegram_channels).</div>';
   document.getElementById("alerts").innerHTML = S.alert === "threat"
     ? listOr(news.filter(n => n.threat).slice(0, 80), newsRow)
+    : S.alert === "tg" ? (tg.length ? tg.slice(0, 80).map(newsRow).join("") : tgEmpty)
     : listOr(ransom.slice(0, 120), ransomRow);
 
-  const nv = S.lang === "all" ? news : S.lang === "advisory" ? news.filter(n => n.type === "advisory") : news.filter(n => n.lang === S.lang);
+  const press = news.filter(n => n.lang !== "tg");
+  const nv = S.lang === "all" ? press : S.lang === "advisory" ? press.filter(n => n.type === "advisory") : press.filter(n => n.lang === S.lang);
   document.getElementById("news").innerHTML = listOr(nv.slice(0, 150), newsRow);
   document.getElementById("kev").innerHTML = listOr(kev, kevRow);
   renderMalware(d);
+  renderRadar(d);
 
   let groups = (d.actors || []).filter(g => S.gtype === "all" || g.type === S.gtype || (S.gtype === "apt" && g.type === "criminal"));
   groups = groups.filter(g => matchQ(g.name) || !S.q);
@@ -283,13 +313,44 @@ function render() {
     [d.ransomware.filter(r => within(r.date, 24)).length, "rivendicazioni ransomware 24h"],
     [d.ransomware.filter(r => r.country === "IT" && within(r.date, 24 * 7)).length, "vittime italiane 7 giorni"],
     [d.news.filter(n => n.threat && within(n.date, 24)).length, "notizie su minacce 24h"],
+    [d.news.filter(n => n.lang === "tg" && within(n.date, 24)).length, "post Telegram hacktivisti 24h"],
+    [itRank(d), "Italia tra i paesi più colpiti da DDoS (24h)"],
     [d.kev.filter(k => within(k.date, 24 * 7)).length, "nuove KEV 7 giorni"],
   ];
   document.getElementById("stats").innerHTML = stats.map(([v, l]) => `<div class="stat"><b>${v}</b><small>${l}</small></div>`).join("");
-  document.getElementById("updated").textContent =
-    `Dati aggiornati ${ago(d.updated)} · ${new Date(d.updated).toLocaleString("it-IT")}`;
+  const upd = document.getElementById("updated");
+  const old = !within(d.updated, 1);
+  upd.textContent = `${old ? "⚠️ " : ""}Dati aggiornati ${ago(d.updated)} · ${new Date(d.updated).toLocaleString("it-IT")}`;
+  upd.classList.toggle("stale", old);
+  upd.title = old ? "I dati hanno più di un'ora: controlla cron-job.org e la scheda Actions su GitHub (il token potrebbe essere scaduto)." : "";
   document.getElementById("errors").innerHTML = (d.errors || []).length
     ? `<details class="err"><summary style="cursor:pointer">Fonti non raggiunte all'ultimo aggiornamento: ${esc(d.errors.map(e => e.split(":")[0]).join(", "))} (clicca per i dettagli)</summary><pre style="white-space:pre-wrap;font-size:11px;color:var(--muted)">${esc(d.errors.join("\n"))}</pre></details>` : "";
+}
+
+function itRank(d) {
+  const it = (d.radar || {})["it_1d"];
+  return it ? `#${it.rank} <small style="font-size:14px;color:var(--muted)">${it.value}%</small>` : "–";
+}
+function renderRadar(d) {
+  const r = d.radar || {};
+  const top = r["l7_" + S.cfr] || [];
+  const it = r["it_" + S.cfr];
+  document.getElementById("cfit").innerHTML = it
+    ? `<div class="weekly">Italia: <b>#${it.rank}</b> per quota di attacchi DDoS applicativi (L7) ricevuti · <b>${it.value}%</b> del totale</div>` : "";
+  const max = Math.max(1, ...top.map(x => x.value));
+  document.getElementById("cftop").innerHTML = top.length ? top.map(x =>
+    `<div class="bar ${x.code === "IT" ? "it" : ""}" style="cursor:default">
+       <span class="b" style="--w:${(x.value / max * 100).toFixed(0)}%">${x.rank}. ${esc(x.name || x.code)}</span>
+       <span class="v">${x.value}%</span></div>`).join("")
+    : '<div class="note">Nessun dato. Serve il token gratuito di Cloudflare (secret CLOUDFLARE_API_TOKEN, vedi README).</div>';
+  const out = r.outages_it || [];
+  document.getElementById("cfout").innerHTML = out.length ? out.map(o => `<div class="item">
+      <b>${esc(o.cause ? o.cause.replace(/_/g, " ").toLowerCase() : "disservizio")}</b>${o.asns.length ? " · " + esc(o.asns.join(", ")) : ""}
+      ${o.desc ? `<p>${esc(o.desc)}</p>` : ""}
+      <div class="row">${o.cause === "CYBERATTACK" ? '<span class="tag t-threat">attacco informatico</span>' : ""}
+        <span>dal ${new Date(o.start).toLocaleString("it-IT")}${o.end ? " al " + new Date(o.end).toLocaleString("it-IT") : " · in corso"}</span>
+        ${o.link ? `<a href="${esc(o.link)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:400">dettagli</a>` : ""}</div></div>`).join("")
+    : (r.l7_1d ? '<div class="empty">Nessun disservizio segnalato in Italia negli ultimi 30 giorni.</div>' : '<div class="note">Nessun dato (serve il token Cloudflare).</div>');
 }
 
 function renderMalware(d) {
@@ -354,7 +415,7 @@ function tabs(attr) {
     c.classList.add("on"); S[attr] = c.dataset[attr]; render();
   });
 }
-tabs("alert"); tabs("lang"); tabs("gtype"); tabs("ioc");
+tabs("alert"); tabs("lang"); tabs("gtype"); tabs("ioc"); tabs("cfr");
 document.addEventListener("click", e => {
   const c = e.target.closest("[data-copy]");
   if (c) { navigator.clipboard?.writeText(c.dataset.copy); c.textContent = "copiato"; setTimeout(() => c.textContent = "copia", 1200); return; }

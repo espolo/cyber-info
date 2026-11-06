@@ -59,6 +59,16 @@ ThreatFox, URLhaus e MalwareBazaar (abuse.ch) richiedono una **chiave gratuita**
 
 La chiave resta nascosta: non compare né nella pagina né nel codice pubblico.
 
+## Rivendicazioni su Telegram, RansomLook e Cloudflare Radar
+
+- **Telegram**: lo script legge l'anteprima web pubblica dei canali (`t.me/s/<username>`), senza account e senza iscriversi. I canali sono in `config.json` → `telegram_channels`. Per ogni gruppo si possono indicare più username: viene usato il primo raggiungibile. Questi canali vengono chiusi e riaperti spesso con nomi nuovi: se in fondo alla pagina compare l'errore "Telegram …", aggiungi lo username nuovo alla lista. I post compaiono nella scheda **Telegram** del riquadro Allerta e contano come rivendicazioni del gruppo.
+- **RansomLook**: seconda fonte dei leak site ransomware, unita a ransomware.live senza doppioni. Non serve nessuna chiave.
+- **Cloudflare Radar**: classifica dei paesi più colpiti da attacchi DDoS e disservizi Internet in Italia. Serve un token gratuito:
+  1. Crea un account gratuito su dash.cloudflare.com (non serve aggiungere siti).
+  2. Profilo → **API Tokens** → **Create Token** → **Create Custom Token**.
+  3. Permissions: **Account** → **Radar** → **Read**. Crea il token e copialo.
+  4. Su GitHub: repository → Settings → Secrets and variables → Actions → **New repository secret**, nome `CLOUDFLARE_API_TOKEN`.
+
 ## Personalizzazione
 
 Modifica solo `config.json`:
