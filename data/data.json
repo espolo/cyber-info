@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T20:30:59Z",
+ "updated": "2026-11-07T20:39:26Z",
  "news": [
   {
    "id": "https://www.cybersecurity360.it/nuove-minacce/attacco-al-bennero-rivendicato-da-filo-russi-ecco-tutti-i-rischi/",
@@ -7975,16 +7975,6 @@
    "last": "2026-11-04T17:23:34"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
@@ -7995,8 +7985,8 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -8005,8 +7995,18 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -8682,6 +8682,40 @@
  },
  "known_actors": 1507,
  "iocs": [
+  {
+   "ioc": "secuhopa[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-07T20:38:42",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2019435/"
+  },
+  {
+   "ioc": "4acbe276d939a7c49f4a4c6069b4e497d19e240c5493b272670c187c62e46f14",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "AMOS",
+   "confidence": 100,
+   "date": "2026-11-07T20:35:19",
+   "tags": [
+    "Amos",
+    "ClickFix",
+    "Foxveil",
+    "grove",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2019434/"
+  },
   {
    "ioc": "6b14e7a06347306fbc9850856de2907b9e785bafe25ad1a38a50cfbda4e6d97c",
    "type": "sha256_hash",
@@ -11235,29 +11269,18 @@
    "date": "2026-11-07T16:43:08",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2019235/"
-  },
-  {
-   "ioc": "4a177bc043b70f389c7179cb9b672035f635f5c7",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "RN Stealer",
-   "confidence": 95,
-   "date": "2026-11-07T16:43:08",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2019236/"
-  },
-  {
-   "ioc": "b8f8e4c2689d59436a679027eac7295147c6c5f7",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "RN Stealer",
-   "confidence": 95,
-   "date": "2026-11-07T16:43:07",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2019233/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://42[.]232[.]237[.]78:47583/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-07T20:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4059687/"
+  },
   {
    "ioc": "hxxp://115[.]51[.]4[.]41:58196/bin[.]sh",
    "host_it": false,
@@ -13025,18 +13048,6 @@
    ],
    "date": "2026-11-07T19:39:51",
    "link": "https://urlhaus.abuse.ch/url/4059536/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Attomacyield87/AutoClicker-Macro-Tool/releases/download/v3[.]4[.]1/AutoClicker-v3[.]4[.]0[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-07T19:39:51",
-   "link": "https://urlhaus.abuse.ch/url/4059537/"
   }
  ],
  "malware_top": [
@@ -13078,7 +13089,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 24
+   "count": 25
   },
   {
    "name": "SNOWLIGHT",
