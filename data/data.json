@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T16:56:20Z",
+ "updated": "2026-11-07T17:01:12Z",
  "news": [
   {
    "id": "https://www.cybersecurity360.it/nuove-minacce/attacco-al-bennero-rivendicato-da-filo-russi-ecco-tutti-i-rischi/",
@@ -7975,9 +7975,9 @@
    "last": "2026-11-04T17:23:34"
   },
   {
-   "name": "APT28",
+   "name": "Lazarus Group",
    "type": "apt",
-   "country": "RU",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -7995,9 +7995,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -8005,9 +8005,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -8682,6 +8682,32 @@
  },
  "known_actors": 1506,
  "iocs": [
+  {
+   "ioc": "mandolinamandolina[.]it",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-07T16:58:36",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2019297/"
+  },
+  {
+   "ioc": "d7502bafa4dfd5fea3211d8268ee5a7174299b4e14fe2c7a5c06774d5c188de7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-07T16:57:27",
+   "tags": [
+    "Loader",
+    "macho"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2019296/"
+  },
   {
    "ioc": "d201cf8d99a2ddc50397f56f5adcbfcd1b5fb9da8a041d5e5049b31adae17b6c",
    "type": "sha256_hash",
@@ -10685,29 +10711,48 @@
    "date": "2026-11-07T16:41:45",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2019098/"
-  },
-  {
-   "ioc": "3e531ee1401f926846e3413794c2be52ebadfd18",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-07T16:41:44",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2019096/"
-  },
-  {
-   "ioc": "17b0e41e695b2c4744f74233d30b2095",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-07T16:41:44",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2019097/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://github[.]com/yellowmediatormill/yOutUbe_zaprET/releases/download/1[.]12[.]1/zapret-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-07T16:57:20",
+   "link": "https://urlhaus.abuse.ch/url/4059275/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/yellowmediatormill/ZaPrEt-youTuBe/releases/download/1[.]12[.]7/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-07T16:57:08",
+   "link": "https://urlhaus.abuse.ch/url/4059274/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/whisky1122/whisky1122[.]github[.]io/refs/heads/main/non-ai-projects/Release-v3[.]2[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-07T16:57:07",
+   "link": "https://urlhaus.abuse.ch/url/4059273/"
+  },
   {
    "ioc": "hxxps://raw[.]githubusercontent[.]com/UltimateSkidder/67-client-cracked/refs/heads/main/67-clientV7[.]jar",
    "host_it": false,
@@ -12443,55 +12488,16 @@
    ],
    "date": "2026-11-07T11:43:07",
    "link": "https://urlhaus.abuse.ch/url/4059128/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/ankitpadariya301/agent/refs/heads/main/Typingspeed/typing-speed-2[.]3[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-07T11:43:06",
-   "link": "https://urlhaus.abuse.ch/url/4059123/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/ankitpadariya301/agent/refs/heads/main/Typingspeed/typing_speed_v2[.]2[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-07T11:43:06",
-   "link": "https://urlhaus.abuse.ch/url/4059124/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Ahmed19Xx/human-clicker/refs/heads/main/aws-official-icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/64/Software_hereat[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-07T11:43:06",
-   "link": "https://urlhaus.abuse.ch/url/4059125/"
   }
  ],
  "malware_top": [
   {
    "name": "AMOS",
-   "count": 301
+   "count": 300
   },
   {
    "name": "Mirai",
-   "count": 125
+   "count": 115
   },
   {
    "name": "Unknown Loader",
@@ -12527,7 +12533,7 @@
   },
   {
    "name": "WARDENStealer",
-   "count": 24
+   "count": 20
   },
   {
    "name": "DanaBot",
@@ -12539,7 +12545,7 @@
   },
   {
    "name": "Sliver",
-   "count": 19
+   "count": 18
   },
   {
    "name": "Formbook",
@@ -12622,19 +12628,19 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.79,
+    "value": 57.15,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.02,
+    "value": 7.0,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.9,
+    "value": 2.92,
     "rank": 3
    },
    {
@@ -12646,13 +12652,13 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.31,
+    "value": 2.28,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.23,
+    "value": 2.25,
     "rank": 6
    },
    {
@@ -12664,31 +12670,31 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.72,
+    "value": 1.71,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.4,
+    "value": 1.45,
     "rank": 9
    },
    {
     "code": "CW",
     "name": "Curaçao",
-    "value": 1.28,
+    "value": 1.33,
     "rank": 10
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.26,
+    "value": 1.27,
     "rank": 11
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.11,
+    "value": 1.1,
     "rank": 12
    }
   ],
@@ -12696,7 +12702,7 @@
    "code": "IT",
    "name": "Italy",
    "value": 0.14,
-   "rank": 47
+   "rank": 48
   },
   "l7_7d": [
    {
@@ -12720,7 +12726,7 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.01,
+    "value": 2.99,
     "rank": 4
    },
    {
@@ -12768,7 +12774,7 @@
    {
     "code": "CR",
     "name": "Costa Rica",
-    "value": 0.95,
+    "value": 0.96,
     "rank": 12
    }
   ],
