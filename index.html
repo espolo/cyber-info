@@ -30,6 +30,10 @@
   main { padding: 16px 20px 40px; max-width: 1700px; margin: 0 auto; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
   .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .stat { cursor: pointer; transition: border-color .15s; }
+  .stat:hover { border-color: var(--accent); }
+  .stat.sel { border-color: var(--accent); background: #1f2d42; }
+  .stat .x { float: right; color: var(--accent); font-size: 12px; }
   .stat b { display: block; font-size: 26px; font-variant-numeric: tabular-nums; }
   .stat small { color: var(--muted); }
   .grid { display: grid; grid-template-columns: 1.15fr 1.4fr 1fr; gap: 16px; align-items: start; }
@@ -193,7 +197,7 @@
 <footer>Fonti: CSIRT Italia, CERT-AGID, Red Hot Cyber, Cybersecurity360, BleepingComputer, The Hacker News, SecurityWeek, The Record, Krebs, ransomware.live, RansomLook, canali Telegram pubblici, Cloudflare Radar, CISA, abuse.ch. Aggiornamento automatico ogni 30 min.</footer>
 
 <script>
-const S = { data: null, q: "", italy: false, h24: false, alert: "threat", lang: "all", gtype: "all", group: null, ioc: "tf", malware: null, cfr: "1d" };
+const S = { data: null, q: "", italy: false, h24: false, alert: "threat", lang: "all", gtype: "all", group: null, ioc: "tf", malware: null, cfr: "1d", preset: null };
 const TYPE_LABEL = { ransomware: "ransomware", hacktivist: "hacktivisti", apt: "APT / stato", criminal: "criminale" };
 const SEEN_KEY = "cyberinfo_lastvisit";
 let lastVisit = 0;
@@ -277,9 +281,13 @@ function render() {
   if (S.italy) ransom = ransom.filter(r => EU.includes(r.country));
   if (S.h24) ransom = ransom.filter(r => within(r.date, 24));
   if (S.group) ransom = ransom.filter(r => r.group === S.group);
+  if (S.preset === "r24") ransom = ransom.filter(r => within(r.date, 24));
+  if (S.preset === "it7") ransom = ransom.filter(r => r.country === "IT" && within(r.date, 24 * 7));
+  if (S.preset === "t24" || S.preset === "tg24") news = news.filter(n => within(n.date, 24));
 
   let kev = d.kev.filter(k => matchQ(k.cve + k.vendor + k.product + k.name));
   if (S.h24) kev = kev.filter(k => within(k.date, 48));
+  if (S.preset === "kev7") kev = kev.filter(k => within(k.date, 24 * 7));
 
   const tg = news.filter(n => n.lang === "tg");
   const tgEmpty = (d.telegram_channels || []).length
@@ -296,7 +304,6 @@ function render() {
   document.getElementById("kev").innerHTML = listOr(kev, kevRow);
   renderMalware(d);
   renderRadar(d);
-  fitLists();
 
   let groups = (d.actors || []).filter(g => S.gtype === "all" || g.type === S.gtype || (S.gtype === "apt" && g.type === "criminal"));
   groups = groups.filter(g => matchQ(g.name) || !S.q);
@@ -311,14 +318,16 @@ function render() {
   }
 
   const stats = [
-    [d.ransomware.filter(r => within(r.date, 24)).length, "rivendicazioni ransomware 24h"],
-    [d.ransomware.filter(r => r.country === "IT" && within(r.date, 24 * 7)).length, "vittime italiane 7 giorni"],
-    [d.news.filter(n => n.threat && within(n.date, 24)).length, "notizie su minacce 24h"],
-    [d.news.filter(n => n.lang === "tg" && within(n.date, 24)).length, "post Telegram hacktivisti 24h"],
-    [itRank(d), "Italia tra i paesi più colpiti da DDoS (24h)"],
-    [d.kev.filter(k => within(k.date, 24 * 7)).length, "nuove KEV 7 giorni"],
+    ["r24", d.ransomware.filter(r => within(r.date, 24)).length, "rivendicazioni ransomware 24h"],
+    ["it7", d.ransomware.filter(r => r.country === "IT" && within(r.date, 24 * 7)).length, "vittime italiane 7 giorni"],
+    ["t24", d.news.filter(n => n.threat && within(n.date, 24)).length, "notizie su minacce 24h"],
+    ["tg24", d.news.filter(n => n.lang === "tg" && within(n.date, 24)).length, "post Telegram hacktivisti 24h"],
+    ["ddos", itRank(d), "Italia tra i paesi più colpiti da DDoS (24h)"],
+    ["kev7", d.kev.filter(k => within(k.date, 24 * 7)).length, "nuove KEV 7 giorni"],
   ];
-  document.getElementById("stats").innerHTML = stats.map(([v, l]) => `<div class="stat"><b>${v}</b><small>${l}</small></div>`).join("");
+  document.getElementById("stats").innerHTML = stats.map(([k, v, l]) =>
+    `<div class="stat ${S.preset === k ? "sel" : ""}" data-preset="${k}" title="Clicca per vedere l'elenco">
+       ${S.preset === k ? '<span class="x">✕ mostra tutto</span>' : ""}<b>${v}</b><small>${l}</small></div>`).join("");
   const upd = document.getElementById("updated");
   const old = !within(d.updated, 1);
   upd.textContent = `${old ? "⚠️ " : ""}Dati aggiornati ${ago(d.updated)} · ${new Date(d.updated).toLocaleString("it-IT")}`;
@@ -327,29 +336,6 @@ function render() {
   document.getElementById("errors").innerHTML = (d.errors || []).length
     ? `<details class="err"><summary style="cursor:pointer">Fonti non raggiunte all'ultimo aggiornamento: ${esc(d.errors.map(e => e.split(":")[0]).join(", "))} (clicca per i dettagli)</summary><pre style="white-space:pre-wrap;font-size:11px;color:var(--muted)">${esc(d.errors.join("\n"))}</pre></details>` : "";
 }
-
-// Mostra solo i primi N elementi di una lista: gli altri si vedono scorrendo
-const IOC_MAX = 30; // indicatori mostrati: solo i piu' recenti
-const VISIBLE = { alerts: 4, news: 4, maltop: 10, iocs: 5 };
-function fitLists() {
-  for (const [id, n] of Object.entries(VISIBLE)) {
-    const el = document.getElementById(id); if (!el) continue;
-    const kids = [...el.children].slice(0, n);
-    const h = kids.reduce((s, k) => s + k.offsetHeight, 0);
-    el.style.maxHeight = h ? `${h + 2}px` : "";
-  }
-  // colonna destra (gruppi + KEV) alta come le altre due, quando sono affiancate
-  const g = document.getElementById("groups"), k = document.getElementById("kev");
-  const col = g.closest(".col3"), ref = document.getElementById("news").closest("section");
-  g.style.maxHeight = ""; k.style.maxHeight = "";
-  if (window.innerWidth > 1200 && k.children.length) {
-    const kh = [...k.children].slice(0, 2).reduce((s, x) => s + x.offsetHeight, 0) + 2;
-    k.style.maxHeight = `${kh}px`;
-    const extra = col.offsetHeight - ref.offsetHeight;
-    if (extra > 0) g.style.maxHeight = `${Math.max(150, g.offsetHeight - extra)}px`;
-  }
-}
-window.addEventListener("resize", fitLists);
 
 function itRank(d) {
   const it = (d.radar || {})["it_1d"];
@@ -401,7 +387,7 @@ function renderMalware(d) {
   let rows;
   if (S.ioc === "tf") {
     rows = (d.iocs || []).filter(i => (!S.malware || i.malware === S.malware) && matchQ(i.ioc + " " + i.malware + " " + i.tags.join(" ")));
-    document.getElementById("iocs").innerHTML = (d.iocs || []).length ? listOr(rows.slice(0, IOC_MAX), i => `<div class="item">
+    document.getElementById("iocs").innerHTML = (d.iocs || []).length ? listOr(rows.slice(0, 150), i => `<div class="item">
         <span class="ioc">${esc(i.ioc)}</span> <button class="copy" data-copy="${esc(i.ioc)}">copia</button>
         <div class="row"><span class="tag t-hacktivist">${esc(i.malware)}</span><span class="tag t-src">${esc(i.type)}</span>
           <span>${esc(i.threat)}</span>${i.confidence ? `<span>affidabilità ${i.confidence}%</span>` : ""}
@@ -410,8 +396,7 @@ function renderMalware(d) {
       : '<div class="note">Per vedere gli indicatori serve la chiave gratuita di abuse.ch (vedi README, sezione "Malware e indicatori").</div>';
   } else {
     rows = (d.urlhaus || []).filter(u => (S.ioc !== "uhit" || u.host_it) && matchQ(u.ioc + " " + u.threat + " " + u.tags.join(" ")));
-    rows.sort((x, y) => ts(y.date) - ts(x.date));
-    document.getElementById("iocs").innerHTML = (d.urlhaus || []).length ? listOr(rows.slice(0, IOC_MAX), u => `<div class="item">
+    document.getElementById("iocs").innerHTML = (d.urlhaus || []).length ? listOr(rows.slice(0, 200), u => `<div class="item">
         <span class="ioc">${esc(u.ioc)}</span> <button class="copy" data-copy="${esc(u.ioc)}">copia</button>
         <div class="row">${u.host_it ? '<span class="tag t-it">.it</span>' : ""}
           <span class="tag ${u.status === "online" ? "t-threat" : "t-src"}">${esc(u.status)}</span>
@@ -441,6 +426,17 @@ function tabs(attr) {
   });
 }
 tabs("alert"); tabs("lang"); tabs("gtype"); tabs("ioc"); tabs("cfr");
+// riquadri in alto cliccabili: mostrano l'elenco corrispondente
+document.getElementById("stats").addEventListener("click", e => {
+  const t = e.target.closest("[data-preset]"); if (!t) return;
+  const k = t.dataset.preset;
+  if (k === "ddos") { document.getElementById("cfit").closest("section").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+  S.preset = S.preset === k ? null : k;
+  const want = { r24: "ransom", it7: "ransom", t24: "threat", tg24: "tg" }[S.preset];
+  if (want && S.alert !== want) document.querySelector(`[data-alert="${want}"]`).click();
+  render();
+  if (S.preset) document.getElementById(S.preset === "kev7" ? "kev" : "alerts").closest("section").scrollIntoView({ behavior: "smooth", block: "start" });
+});
 document.addEventListener("click", e => {
   const c = e.target.closest("[data-copy]");
   if (c) { navigator.clipboard?.writeText(c.dataset.copy); c.textContent = "copiato"; setTimeout(() => c.textContent = "copia", 1200); return; }
