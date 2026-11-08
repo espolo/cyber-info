@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T13:45:18Z",
+ "updated": "2026-11-08T14:01:06Z",
  "news": [
   {
    "id": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
@@ -7945,26 +7945,6 @@
    "last": "2026-11-04T11:59:46Z"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
@@ -7978,6 +7958,26 @@
    "name": "APT28",
    "type": "apt",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -8652,6 +8652,92 @@
  },
  "known_actors": 1507,
  "iocs": [
+  {
+   "ioc": "mind2biz[.]com[.]tr",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-08T13:57:51",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2020462/"
+  },
+  {
+   "ioc": "nobias-project[.]eu",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-08T13:57:51",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2020463/"
+  },
+  {
+   "ioc": "4689a824b8d338949996ab54d6dce23c53ad9cd70357acec2fc693f27e5601ee",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-08T13:57:39",
+   "tags": [
+    "js",
+    "Loader",
+    "ps1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2020461/"
+  },
+  {
+   "ioc": "jahejy[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-08T13:46:11",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2020460/"
+  },
+  {
+   "ioc": "45[.]227[.]254[.]143:52555",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 75,
+   "date": "2026-11-08T13:46:06",
+   "tags": [
+    "CobaltStrike",
+    "drb-ra",
+    "modat"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2020459/"
+  },
+  {
+   "ioc": "222[.]186[.]135[.]93:13898",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 75,
+   "date": "2026-11-08T13:46:02",
+   "tags": [
+    "CobaltStrike",
+    "drb-ra",
+    "modat"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2020458/"
+  },
   {
    "ioc": "lrmbardo[.]lol",
    "type": "domain",
@@ -11258,99 +11344,141 @@
     "WARDENStealer"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2019553/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Annupinn/BattleBitRemasteredToolkit/refs/heads/main/L%D0%BEader[.]zip",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "WARDENStealer",
-   "confidence": 75,
-   "date": "2026-11-08T07:28:33",
-   "tags": [
-    "Github",
-    "lure",
-    "mediafire",
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2019554/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/AntonioPhilip/WolfTails-Adulteon-Patch/refs/heads/main/L%D0%BEader[.]zip",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "WARDENStealer",
-   "confidence": 75,
-   "date": "2026-11-08T07:28:32",
-   "tags": [
-    "Github",
-    "lure",
-    "mediafire",
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2019555/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/AriakaHS/DeadRailsScriptHub/refs/heads/main/L%D0%BEader[.]zip",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "WARDENStealer",
-   "confidence": 75,
-   "date": "2026-11-08T07:28:32",
-   "tags": [
-    "Github",
-    "lure",
-    "mediafire",
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2019556/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Ashikparvez89/Battlefield5-GameEnhancer/refs/heads/main/L%D0%BEader[.]zip",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "WARDENStealer",
-   "confidence": 75,
-   "date": "2026-11-08T07:28:32",
-   "tags": [
-    "Github",
-    "lure",
-    "mediafire",
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2019557/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/AshishParulekar/LucyGotProblems18PlusPatch-Enhanced-Edition/refs/heads/main/L%D0%BEader[.]zip",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "WARDENStealer",
-   "confidence": 75,
-   "date": "2026-11-08T07:28:31",
-   "tags": [
-    "Github",
-    "lure",
-    "mediafire",
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2019558/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/AttriKartik123/AceServe-Trainer-TennisManager25/refs/heads/main/L%D0%BEader[.]zip",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "WARDENStealer",
-   "confidence": 75,
-   "date": "2026-11-08T07:28:30",
-   "tags": [
-    "Github",
-    "lure",
-    "mediafire",
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2019559/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://180[.]190[.]240[.]131:44875/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-08T13:58:11",
+   "link": "https://urlhaus.abuse.ch/url/4060926/"
+  },
+  {
+   "ioc": "hxxp://119[.]157[.]51[.]2:54117/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-08T13:48:12",
+   "link": "https://urlhaus.abuse.ch/url/4060925/"
+  },
+  {
+   "ioc": "hxxp://182[.]126[.]94[.]101:41981/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-08T13:47:10",
+   "link": "https://urlhaus.abuse.ch/url/4060924/"
+  },
+  {
+   "ioc": "hxxp://110[.]93[.]243[.]25:58957/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-08T13:47:09",
+   "link": "https://urlhaus.abuse.ch/url/4060923/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/khantosif786786786/khantosif786786786[.]github[.]io/refs/heads/main/hdb-96WJHQErrHXxQ9Q8/3[.]8[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-08T13:46:06",
+   "link": "https://urlhaus.abuse.ch/url/4060922/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/lyx2022518/lyx2022518[.]github[.]io/refs/heads/main/images/gallery/v1[.]7[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-08T13:46:06",
+   "link": "https://urlhaus.abuse.ch/url/4060921/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/magdytarek11/magdytarek11[.]github[.]io/refs/heads/main/design/App-pronouncedly[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-08T13:45:34",
+   "link": "https://urlhaus.abuse.ch/url/4060920/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/kunal4040/kunal4040[.]github[.]io/refs/heads/main/projetos/v2[.]0[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-08T13:45:30",
+   "link": "https://urlhaus.abuse.ch/url/4060919/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/lilturman/lilturman[.]github[.]io/refs/heads/main/public/assets/css/v1[.]6[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-08T13:45:26",
+   "link": "https://urlhaus.abuse.ch/url/4060918/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Mallesh1924/mallesh1924[.]github[.]io/refs/heads/main/preludium/Dist-immigrator[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-08T13:45:26",
+   "link": "https://urlhaus.abuse.ch/url/4060917/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/lancetodjk14/lancetodjk14[.]github[.]io/refs/heads/main/css/App-3[.]3[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-08T13:45:07",
+   "link": "https://urlhaus.abuse.ch/url/4060916/"
+  },
   {
    "ioc": "hxxps://raw[.]githubusercontent[.]com/konyari/autonomous-ai-agent-security-incidents-2026/refs/heads/master/metasomatism/Software-v1[.]1[.]zip",
    "host_it": false,
@@ -12886,111 +13014,12 @@
    "tags": [],
    "date": "2026-11-08T11:23:37",
    "link": "https://urlhaus.abuse.ch/url/4060777/"
-  },
-  {
-   "ioc": "hxxps://46[.]19[.]140[.]50/ycJ6",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:37",
-   "link": "https://urlhaus.abuse.ch/url/4060776/"
-  },
-  {
-   "ioc": "hxxps://179[.]43[.]186[.]214:7889/me5U",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:37",
-   "link": "https://urlhaus.abuse.ch/url/4060775/"
-  },
-  {
-   "ioc": "hxxp://179[.]43[.]186[.]214/qYHJ",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:37",
-   "link": "https://urlhaus.abuse.ch/url/4060774/"
-  },
-  {
-   "ioc": "hxxps://www[.]complianceportals[.]com/CsLZ",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:36",
-   "link": "https://urlhaus.abuse.ch/url/4060773/"
-  },
-  {
-   "ioc": "hxxps://www[.]complianceportals[.]com/cbRE/",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:36",
-   "link": "https://urlhaus.abuse.ch/url/4060772/"
-  },
-  {
-   "ioc": "hxxp://179[.]43[.]186[.]214/k5rK",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:36",
-   "link": "https://urlhaus.abuse.ch/url/4060771/"
-  },
-  {
-   "ioc": "hxxp://179[.]43[.]186[.]243/__utm[.]gif",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:36",
-   "link": "https://urlhaus.abuse.ch/url/4060770/"
-  },
-  {
-   "ioc": "hxxps://www[.]complianceportals[.]com/AqWS",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:36",
-   "link": "https://urlhaus.abuse.ch/url/4060769/"
-  },
-  {
-   "ioc": "hxxps://www[.]complianceportals[.]com/WxAL",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:35",
-   "link": "https://urlhaus.abuse.ch/url/4060768/"
-  },
-  {
-   "ioc": "hxxps://179[.]43[.]186[.]214:7889/pixel",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:35",
-   "link": "https://urlhaus.abuse.ch/url/4060767/"
-  },
-  {
-   "ioc": "hxxp://46[.]19[.]140[.]50/SBMz",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T11:23:34",
-   "link": "https://urlhaus.abuse.ch/url/4060766/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 169
+   "count": 168
   },
   {
    "name": "WARDENStealer",
@@ -12998,15 +13027,15 @@
   },
   {
    "name": "AMOS",
-   "count": 147
+   "count": 143
   },
   {
    "name": "Unknown Loader",
-   "count": 139
+   "count": 140
   },
   {
    "name": "ClearFake",
-   "count": 125
+   "count": 126
   },
   {
    "name": "SNOWLIGHT",
@@ -13038,11 +13067,11 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 24
+   "count": 25
   },
   {
    "name": "Cobalt Strike",
-   "count": 22
+   "count": 24
   },
   {
    "name": "Unknown RAT",
@@ -13065,12 +13094,12 @@
    "count": 14
   },
   {
-   "name": "StrelaStealer",
+   "name": "Formbook",
    "count": 12
   },
   {
-   "name": "Formbook",
-   "count": 12
+   "name": "StrelaStealer",
+   "count": 11
   },
   {
    "name": "Mozi",
@@ -13125,73 +13154,73 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.93,
+    "value": 57.97,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.01,
+    "value": 7.17,
     "rank": 2
-   },
-   {
-    "code": "GB",
-    "name": "United Kingdom",
-    "value": 3.07,
-    "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.04,
+    "value": 3.11,
+    "rank": 3
+   },
+   {
+    "code": "GB",
+    "name": "United Kingdom",
+    "value": 3.08,
     "rank": 4
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.47,
+    "value": 2.48,
     "rank": 5
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.25,
+    "value": 2.24,
     "rank": 6
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.08,
+    "value": 2.07,
     "rank": 7
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.43,
+    "value": 1.42,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.23,
+    "value": 1.24,
     "rank": 9
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.14,
+    "value": 1.13,
     "rank": 10
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.03,
+    "value": 0.99,
     "rank": 11
    },
    {
-    "code": "TR",
-    "name": "Turkey",
-    "value": 0.83,
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "value": 0.78,
     "rank": 12
    }
   ],
@@ -13223,7 +13252,7 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.99,
+    "value": 2.98,
     "rank": 4
    },
    {
@@ -13233,27 +13262,27 @@
     "rank": 5
    },
    {
-    "code": "DE",
-    "name": "Germany",
+    "code": "FR",
+    "name": "France",
     "value": 2.32,
     "rank": 6
    },
    {
-    "code": "FR",
-    "name": "France",
+    "code": "DE",
+    "name": "Germany",
     "value": 2.32,
     "rank": 7
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.02,
+    "value": 2.01,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.59,
+    "value": 1.58,
     "rank": 9
    },
    {
