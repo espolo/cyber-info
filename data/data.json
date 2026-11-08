@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:30:57Z",
+ "updated": "2026-11-08T22:01:08Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
@@ -4587,12 +4587,13 @@
    "id": "akira|Calmont Wire & Cable",
    "victim": "Calmont Wire & Cable",
    "group": "akira",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-08T19:27:02",
-   "link": "https://www.ransomlook.io/group/akira",
-   "summary": "Calmont Wire & Cable is a leading custom wire and cable manufacturer known for its innovative solutions in medical, robotics, aerospace, military, and sensor applications. The company offersa wide range of products including completely custom cables,…",
+   "country": "CA",
+   "sector": "Manufacturing",
+   "date": "2026-11-08T17:33:01",
+   "link": "https://www.ransomware.live/group/akira",
+   "summary": "Calmont Wire & Cable is a leading custom wire and cable manufacturer known for its innovative s olutions in medical, robotics, aerospace, military, and sensor applications. The company offers a wide range of products including completely custom cable…",
    "sources": [
+    "ransomware.live",
     "RansomLook"
    ]
   },
@@ -6375,19 +6376,6 @@
    ]
   },
   {
-   "id": "medusalocker|baiapai",
-   "victim": "baiapai",
-   "group": "medusalocker",
-   "country": "",
-   "sector": "Technology",
-   "date": "2026-11-04T22:25:50",
-   "link": "https://www.ransomware.live/group/medusalocker",
-   "summary": "Béziers, Occitanie, France",
-   "sources": [
-    "ransomware.live"
-   ]
-  },
-  {
    "id": "soul|Noble Inc.",
    "victim": "Noble Inc.",
    "group": "soul",
@@ -7903,7 +7891,7 @@
    "mentions": 0,
    "claims": 14,
    "claims_it": 0,
-   "last": "2026-11-08T19:27:02"
+   "last": "2026-11-08T17:33:01"
   },
   {
    "name": "qilin",
@@ -7946,18 +7934,8 @@
    "last": "2026-11-04T11:59:46Z"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -7976,8 +7954,18 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -8376,16 +8364,6 @@
    "last": "2026-11-04T23:23:21"
   },
   {
-   "name": "medusalocker",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 2,
-   "claims_it": 0,
-   "last": "2026-11-04T22:27:24"
-  },
-  {
    "name": "payoutsking",
    "type": "ransomware",
    "country": "",
@@ -8546,6 +8524,16 @@
    "last": "2026-11-05T07:59:30"
   },
   {
+   "name": "medusalocker",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 0,
+   "claims": 1,
+   "claims_it": 0,
+   "last": "2026-11-04T22:27:24"
+  },
+  {
    "name": "Destello",
    "type": "ransomware",
    "country": "",
@@ -8675,6 +8663,20 @@
  },
  "known_actors": 1507,
  "iocs": [
+  {
+   "ioc": "06b5d5232b4f952e7d2ddd07d6d62552064833c2279fa00c7ba9640acc9dd1ae",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-08T21:57:42",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021365/"
+  },
   {
    "ioc": "hxxps://ccuffn[.]icu/",
    "type": "url",
@@ -11655,24 +11657,161 @@
     "WordPress"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2021163/"
-  },
-  {
-   "ioc": "savvybridaluniversity[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:17:53",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021164/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://115[.]55[.]243[.]172:36243/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-08T21:51:08",
+   "link": "https://urlhaus.abuse.ch/url/4061243/"
+  },
+  {
+   "ioc": "hxxp://39[.]61[.]46[.]143:54679/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-08T21:51:07",
+   "link": "https://urlhaus.abuse.ch/url/4061242/"
+  },
+  {
+   "ioc": "hxxp://42[.]179[.]166[.]245:45658/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-08T21:51:05",
+   "link": "https://urlhaus.abuse.ch/url/4061241/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Archivechemuse/V2rAYTun-wiNdoWs/releases/download/1[.]10[.]7/v2raytun[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-08T21:50:42",
+   "link": "https://urlhaus.abuse.ch/url/4061240/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/ActivistSpade/V2RAYTun-FrEe/releases/download/1[.]13[.]3/v2raytun[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-08T21:40:11",
+   "link": "https://urlhaus.abuse.ch/url/4061239/"
+  },
+  {
+   "ioc": "hxxp://59[.]96[.]139[.]109:42662/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-08T21:40:10",
+   "link": "https://urlhaus.abuse.ch/url/4061238/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/ActivistSpade/v2RaytUN-wiNDoWs/releases/download/1[.]10[.]6/v2raytun[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-08T21:40:09",
+   "link": "https://urlhaus.abuse.ch/url/4061237/"
+  },
+  {
+   "ioc": "hxxp://42[.]56[.]148[.]12:32871/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-08T21:40:08",
+   "link": "https://urlhaus.abuse.ch/url/4061236/"
+  },
+  {
+   "ioc": "hxxp://61[.]52[.]179[.]156:58327/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "elf"
+   ],
+   "date": "2026-11-08T21:40:08",
+   "link": "https://urlhaus.abuse.ch/url/4061235/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/ActivistSpade/V2RaYtUn-SeTup/releases/download/1[.]12[.]9/v2raytun[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-08T21:39:48",
+   "link": "https://urlhaus.abuse.ch/url/4061234/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/DrizzleRatString/v2RAYTUn_WindowS/releases/download/1[.]10[.]9/v2raytun[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-08T21:39:25",
+   "link": "https://urlhaus.abuse.ch/url/4061233/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Archivechemuse/v2RAYtUN-vpn/releases/download/1[.]12[.]9/v2raytun[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-08T21:33:55",
+   "link": "https://urlhaus.abuse.ch/url/4061232/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/ActivistSpade/v2raYtUn_Vpn/releases/download/1[.]13[.]0/v2raytun[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-08T21:31:16",
+   "link": "https://urlhaus.abuse.ch/url/4061231/"
+  },
   {
    "ioc": "hxxps://github[.]com/DrizzleRatString/V2rayTUN_VPn/releases/download/1[.]13[.]1/v2raytun[.]zip",
    "host_it": false,
@@ -13274,163 +13413,6 @@
    ],
    "date": "2026-11-08T17:20:22",
    "link": "https://urlhaus.abuse.ch/url/4061094/"
-  },
-  {
-   "ioc": "hxxp://103[.]238[.]235[.]250/ntb[.]x86",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ua-wget"
-   ],
-   "date": "2026-11-08T17:20:22",
-   "link": "https://urlhaus.abuse.ch/url/4061093/"
-  },
-  {
-   "ioc": "hxxp://103[.]238[.]235[.]250/ntb[.]mipsel",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ua-wget"
-   ],
-   "date": "2026-11-08T17:20:22",
-   "link": "https://urlhaus.abuse.ch/url/4061092/"
-  },
-  {
-   "ioc": "hxxp://103[.]238[.]235[.]250/ntb[.]64",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ua-wget"
-   ],
-   "date": "2026-11-08T17:20:22",
-   "link": "https://urlhaus.abuse.ch/url/4061091/"
-  },
-  {
-   "ioc": "hxxp://103[.]238[.]235[.]250/ntb[.]armv6l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ua-wget"
-   ],
-   "date": "2026-11-08T17:20:21",
-   "link": "https://urlhaus.abuse.ch/url/4061090/"
-  },
-  {
-   "ioc": "hxxp://105[.]186[.]187[.]132:60145/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T17:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4061089/"
-  },
-  {
-   "ioc": "hxxp://123[.]190[.]99[.]107:58895/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-08T17:14:10",
-   "link": "https://urlhaus.abuse.ch/url/4061088/"
-  },
-  {
-   "ioc": "hxxp://118[.]249[.]178[.]228:51327/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-08T17:13:06",
-   "link": "https://urlhaus.abuse.ch/url/4061087/"
-  },
-  {
-   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1543499545730748567/1569022264010211558/MaxAddon-v2[.]jar?ex=6af1f15a&is=6af09fda&hm=dbff5d7ba89cff26ca47742f0ec3500de41b39f37a8dbf4573fba50c2108c0a3&",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "SilentNet"
-   ],
-   "date": "2026-11-08T17:09:07",
-   "link": "https://urlhaus.abuse.ch/url/4061086/"
-  },
-  {
-   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1543465713706991746/1569025069232033822/mac[.]bypass1[.]21[.]11[.]jar?ex=6af1f3f7&is=6af0a277&hm=cd2f5242702943e3c85f3b05d7d736301777cc104aa5b6b28cb94ab43cc78dfe&",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "SilentNet"
-   ],
-   "date": "2026-11-08T17:09:05",
-   "link": "https://urlhaus.abuse.ch/url/4061085/"
-  },
-  {
-   "ioc": "hxxp://182[.]121[.]235[.]130:43720/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-08T17:06:14",
-   "link": "https://urlhaus.abuse.ch/url/4061084/"
-  },
-  {
-   "ioc": "hxxp://42[.]224[.]127[.]174:36999/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T17:06:06",
-   "link": "https://urlhaus.abuse.ch/url/4061083/"
-  },
-  {
-   "ioc": "hxxps://www[.]dropbox[.]com/scl/fi/2otgs26inywkd2rjws2kp/Ashenova_Setup[.]zip?rlkey=kntd0jiym8rujn4fw6s43innm&st=sxd2f0kk&dl=1",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "ashenova.com",
-    "nodeJS",
-    "payload",
-    "phishing",
-    "rapidontops",
-    "RapidStealer"
-   ],
-   "date": "2026-11-08T17:06:01",
-   "link": "https://urlhaus.abuse.ch/url/4061082/"
-  },
-  {
-   "ioc": "hxxps://physioga[.]net/u/upd_v4[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "zip"
-   ],
-   "date": "2026-11-08T17:05:19",
-   "link": "https://urlhaus.abuse.ch/url/4061081/"
   }
  ],
  "malware_top": [
@@ -13440,7 +13422,7 @@
   },
   {
    "name": "Mirai",
-   "count": 199
+   "count": 202
   },
   {
    "name": "Unknown Loader",
@@ -13452,7 +13434,7 @@
   },
   {
    "name": "ClearFake",
-   "count": 139
+   "count": 138
   },
   {
    "name": "SNOWLIGHT",
@@ -13463,12 +13445,12 @@
    "count": 65
   },
   {
-   "name": "AMOS",
-   "count": 63
-  },
-  {
    "name": "Vidar",
    "count": 59
+  },
+  {
+   "name": "AMOS",
+   "count": 57
   },
   {
    "name": "VShell",
@@ -13480,7 +13462,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 29
+   "count": 28
   },
   {
    "name": "Cobalt Strike",
@@ -13571,55 +13553,55 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 58.81,
+    "value": 59.06,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.47,
+    "value": 7.48,
     "rank": 2
-   },
-   {
-    "code": "MY",
-    "name": "Malaysia",
-    "value": 3.12,
-    "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
     "value": 3.11,
+    "rank": 3
+   },
+   {
+    "code": "MY",
+    "name": "Malaysia",
+    "value": 3.1,
     "rank": 4
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.56,
+    "value": 2.59,
     "rank": 5
-   },
-   {
-    "code": "DE",
-    "name": "Germany",
-    "value": 2.21,
-    "rank": 6
    },
    {
     "code": "CN",
     "name": "China",
     "value": 2.1,
+    "rank": 6
+   },
+   {
+    "code": "DE",
+    "name": "Germany",
+    "value": 2.07,
     "rank": 7
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.58,
+    "value": 1.6,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.16,
+    "value": 1.15,
     "rank": 9
    },
    {
@@ -13631,7 +13613,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 0.89,
+    "value": 0.83,
     "rank": 11
    },
    {
@@ -13651,7 +13633,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.47,
+    "value": 55.48,
     "rank": 1
    },
    {
@@ -13681,7 +13663,7 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.32,
+    "value": 2.31,
     "rank": 6
    },
    {
@@ -13693,7 +13675,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.99,
+    "value": 2.0,
     "rank": 8
    },
    {
@@ -13705,13 +13687,13 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.27,
+    "value": 1.28,
     "rank": 10
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.2,
+    "value": 1.19,
     "rank": 11
    },
    {
