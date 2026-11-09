@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T02:30:55Z",
+ "updated": "2026-11-09T03:01:10Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
@@ -4584,6 +4584,19 @@
    ]
   },
   {
+   "id": "Barracuda|ADG Blatt",
+   "victim": "ADG Blatt",
+   "group": "Barracuda",
+   "country": "DE",
+   "sector": "Other",
+   "date": "2026-11-08T22:50:42",
+   "link": "https://www.ransomware.live/group/Barracuda",
+   "summary": "\"ADG Blatt is committed to providing creative solutions in planning, design, and program management services that respond to each unique client's needs, budget, and schedule.\" We have stolen all files from main file server, including blueprints, sche…",
+   "sources": [
+    "ransomware.live"
+   ]
+  },
+  {
    "id": "cloak|tekra.com.pl",
    "victim": "tekra.com.pl",
    "group": "cloak",
@@ -6217,6 +6230,19 @@
    ]
   },
   {
+   "id": "byod|First and Final Warning - IHG Hotels & Resorts (Estate)",
+   "victim": "First and Final Warning - IHG Hotels & Resorts (Estate)",
+   "group": "BYOD",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-05T10:17:17",
+   "link": "https://www.ransomlook.io/group/byod",
+   "summary": "Here are some sample files for you and the public to see. Let's actually resolve this situation before we have to escalate it in ways we don't want to have to do. Make the right choice, we're not going to warn you again. | ORIGINAL MESSAGE: Nice LDAP…",
+   "sources": [
+    "RansomLook"
+   ]
+  },
+  {
    "id": "audit team|AUDIT ENTITY: kx***om",
    "victim": "AUDIT ENTITY: kx***om",
    "group": "audit team",
@@ -6226,20 +6252,6 @@
    "link": "https://www.ransomlook.io/group/audit team",
    "summary": "AUDIT ID: 21FE88BB955C2DE4 / DISCOVERY DATE: 2026-11-05",
    "sources": [
-    "RansomLook"
-   ]
-  },
-  {
-   "id": "BYOD|First and Final Warning - IHG Hotels & Resorts (Estate)",
-   "victim": "First and Final Warning - IHG Hotels & Resorts (Estate)",
-   "group": "BYOD",
-   "country": "",
-   "sector": "Hospitality",
-   "date": "2026-11-05T09:50:45",
-   "link": "https://www.ransomware.live/group/BYOD",
-   "summary": "Here are some sample files for you and the public to see. Let's actually resolve this situation before we have to escalate it in ways we don't want to have to do. Make the right choice, we're not going to warn you again. | ORIGINAL MESSAGE: Nice LDAP…",
-   "sources": [
-    "ransomware.live",
     "RansomLook"
    ]
   },
@@ -7910,16 +7922,6 @@
    "last": "2026-11-04T11:59:46Z"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
@@ -7930,9 +7932,9 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -7943,6 +7945,16 @@
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -7975,9 +7987,9 @@
    "country": "",
    "watch": false,
    "mentions": 4,
-   "claims": 0,
+   "claims": 1,
    "claims_it": 0,
-   "last": "2026-11-06T12:31:52Z"
+   "last": "2026-11-08T22:50:42"
   },
   {
    "name": "brain cipher",
@@ -8639,6 +8651,634 @@
  },
  "known_actors": 1507,
  "iocs": [
+  {
+   "ioc": "theletter[.]co",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AsyncRAT",
+   "confidence": 75,
+   "date": "2026-11-09T03:00:22",
+   "tags": [
+    "asyncrat"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021556/"
+  },
+  {
+   "ioc": "hxxps://khsnec[.]icu/",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-09T03:00:09",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021554/"
+  },
+  {
+   "ioc": "hxxps://teespresso[.]com/",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-09T03:00:09",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021555/"
+  },
+  {
+   "ioc": "194cdb4e4f06d5d427ed9d9e35aa6ca85a3019f1e513d8a23d2d2467659d70c0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:28",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021553/"
+  },
+  {
+   "ioc": "b8ecb49006946faff7ce5b0c5504a8c735efa8bd30d4497d85dc1c141ad794d6",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "RevStealer",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:27",
+   "tags": [
+    "exe",
+    "RevStealer",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021552/"
+  },
+  {
+   "ioc": "d814d66a6ecd1689dd4db791689b3800a1c931c871388b2681eadbb5c9378a98",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:26",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021551/"
+  },
+  {
+   "ioc": "4f36bce36adac4ac1bab82811f66031e79c54face92bb5c77072f90a0f3c51a5",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:25",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021550/"
+  },
+  {
+   "ioc": "0dca27d2ee1875826fe940f87861dd2e0ff584ce702be6526af37dd9960bb7f0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:24",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021549/"
+  },
+  {
+   "ioc": "324be994601153ee4ba2d8a95b27c653dfef6ce0b8a1c6a344e80260213892f6",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:23",
+   "tags": [
+    "elf",
+    "Mirai",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021548/"
+  },
+  {
+   "ioc": "c6677ce28ac8fed3b90503eee81d42893598586650ae7eecb1c99a8c0d141302",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:22",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021547/"
+  },
+  {
+   "ioc": "9f9c79af340619e906f9e368481f4bb9c0d3ffe7d44822c3a10120c008d3a711",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "RevStealer",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:21",
+   "tags": [
+    "exe",
+    "RevStealer",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021546/"
+  },
+  {
+   "ioc": "0c799f2eeba94f11c8f9a4535e985b2476cd3e0a62d69a8d9705a64eeb110107",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:19",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021545/"
+  },
+  {
+   "ioc": "4bed99c57042837f7d0b8a6740e96a8af257634bed63bcfbe9c3caf7891e468e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:18",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021544/"
+  },
+  {
+   "ioc": "965b975615f4a4b1dede91466429649f3ec768ebf95cbc6af8486eeb3c14335c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:17",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021543/"
+  },
+  {
+   "ioc": "d2533527ebd43347d2852b1b6185b8f941ae7ac1fe723d52d78e7b9201c77dd5",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:16",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021542/"
+  },
+  {
+   "ioc": "03e7e48389d780c7d96bf2376054cb68d57e7a1976f4e4fec311d07f89a06e79",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:15",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021541/"
+  },
+  {
+   "ioc": "5ad288c4c0caf0fd3f256263a2b8b8687b496c596394c8870cfc815d9a8cd687",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:14",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021540/"
+  },
+  {
+   "ioc": "9f733d32013bcc546d0abad66caf947c0ef009a7d3dcd189f2fcdb74008c41a1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:13",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021539/"
+  },
+  {
+   "ioc": "6de4d9a6b0e3d3c89b25f48ec7398db7afe5741ae2ba3465875e322548bc1c04",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:12",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021538/"
+  },
+  {
+   "ioc": "d75e456c72b288fb24a253705e1ab3b819e8a3fca07ac3adbff254df258582ab",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:11",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021537/"
+  },
+  {
+   "ioc": "acb72cceee31e44443ff3b959cc7f92265e6a08e7521323513bc4ce24dce7f6b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:10",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021536/"
+  },
+  {
+   "ioc": "337450ec0bcadd84f30d34866a16525643992d47730272face3d4addd461349d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:09",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021535/"
+  },
+  {
+   "ioc": "325b30c59421431f8905b38b9e4d9463ef3d5aaccadd50a838763ea8467650dc",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:08",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021534/"
+  },
+  {
+   "ioc": "9548f7a07b50d4163c6085cb488742f6ed5ccefe28c260a718b182efe10f6b7f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:07",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021533/"
+  },
+  {
+   "ioc": "f590527c06f3cf7ef71b3003bb14c5039e814b3160f64b5cce45b53f0f714077",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:06",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021532/"
+  },
+  {
+   "ioc": "fc6797411760f10feb659b7c25ed842284b1156129e9fb64587bb7e454aa012d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:05",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021531/"
+  },
+  {
+   "ioc": "956d24a3f0f6e53cd5c9510144212b54806d2371e89f608aaaabb43a1bf55674",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:03",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021530/"
+  },
+  {
+   "ioc": "0879991901744ec9f3faf1bb1d9016ba4780e99f05018e31402b3c00a82aeb3e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:02",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021529/"
+  },
+  {
+   "ioc": "bbedde0b36c5955984e63b3e6ab73774387b97b15e86fe1bd7e16b9701ce2290",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:01",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021528/"
+  },
+  {
+   "ioc": "ab319cb1d74bb88a2475146a7dc22b54a8eaaed23a84ea4676f4c953b89b8ba7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:58:00",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021527/"
+  },
+  {
+   "ioc": "d5a898887899920a5bdd4aba8bcb6ec81b5117c5ae19b9772b1a24d39f6afd0b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:59",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021526/"
+  },
+  {
+   "ioc": "cc2cd074414301995960cd062d254b41959a2c6fa594fb86169c726c13eb2de5",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:58",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021525/"
+  },
+  {
+   "ioc": "5fe40aa6bc2f2587abe85e857b547a2f4dc2679a0963c6f06500afa6203490f9",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:57",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021524/"
+  },
+  {
+   "ioc": "9778b79742e2baf9b8f64a64530d9e3b7366b4301339e7dddfddc4d43ea29e22",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:56",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021523/"
+  },
+  {
+   "ioc": "2b38ccc766eb2a10fdc2c5c755a39d36732a1632d174e8b1f872915eaa299c5e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:55",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021522/"
+  },
+  {
+   "ioc": "e4996018356a006c4831a505951a37378d0205dff8b25b74002539719b3ce5a0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:54",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021521/"
+  },
+  {
+   "ioc": "f03bf114c3002ecab9a1cf4542408a374b30a41d79c587ef89045c21682aede2",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:53",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021520/"
+  },
+  {
+   "ioc": "86914e863c5d8969ce2de828dc2e5e1237a3395b179d6e8cf852a57ee58bf5cf",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-09T02:57:52",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021519/"
+  },
+  {
+   "ioc": "4b534bcb465c29517e3636a5cebec23e07695bf8fe5a886e5ce63369f0b44262",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-09T02:57:50",
+   "tags": [
+    "elf",
+    "Gafgyt",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021518/"
+  },
+  {
+   "ioc": "06d6d0a3c4490b3c197bcaeb0eb09d2f638ab7855820dc194e33d8e4e9d106ed",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-09T02:57:49",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021517/"
+  },
+  {
+   "ioc": "2bc1e2c4babec831a953a90722ba082fd6b9ff13cb1475650c1f41bf1bb64e2b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:48",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021516/"
+  },
+  {
+   "ioc": "f2b2400fc9a2ae3cca9252b09e0a4324dba584557500162f37b81cb501dfc0ee",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:47",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021515/"
+  },
+  {
+   "ioc": "abda80b0c3214f9ea4a79a5110f7ecfb87383903bcec4eea554a4395cef763f2",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:46",
+   "tags": [
+    "elf",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021514/"
+  },
+  {
+   "ioc": "d0263010da58fc14e696a2a02534888c037ab95edf5dac128fefbeaf5b2ef323",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "AsyncRAT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:45",
+   "tags": [
+    "asyncrat",
+    "cloaked",
+    "exe"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021513/"
+  },
+  {
+   "ioc": "ba646ba4ce8394d2d921386fc0331baa9ee6103b6367aada687c6075349a1ea2",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "AsyncRAT",
+   "confidence": 95,
+   "date": "2026-11-09T02:57:43",
+   "tags": [
+    "asyncrat",
+    "exe"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021512/"
+  },
+  {
+   "ioc": "sunnycoastleathercare[.]com[.]au",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-09T02:54:05",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021511/"
+  },
+  {
+   "ioc": "229[.]201[.]148[.]34[.]bc[.]googleusercontent[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-09T02:49:16",
+   "tags": [
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021510/"
+  },
+  {
+   "ioc": "bopbop[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AsyncRAT",
+   "confidence": 75,
+   "date": "2026-11-09T02:45:21",
+   "tags": [
+    "asyncrat"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021509/"
+  },
   {
    "ioc": "cf0b50b8b7a861c3490889683d857e50b54d0e4975678d58778bba800b589db8",
    "type": "sha256_hash",
@@ -10653,737 +11293,89 @@
     "WordPress"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2021351/"
-  },
-  {
-   "ioc": "www[.]vfwofwa[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021352/"
-  },
-  {
-   "ioc": "www[.]virtualstatisticalsystem[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021353/"
-  },
-  {
-   "ioc": "www[.]vozvictimas[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021354/"
-  },
-  {
-   "ioc": "www[.]webpulp[.]tv",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021355/"
-  },
-  {
-   "ioc": "www[.]webyking[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021356/"
-  },
-  {
-   "ioc": "www[.]xn--aufgeklrt-12a[.]info",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021357/"
-  },
-  {
-   "ioc": "www[.]yagi-shika[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021358/"
-  },
-  {
-   "ioc": "www[.]zackandmiri[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021359/"
-  },
-  {
-   "ioc": "www[.]twilightcms[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:21",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021345/"
-  },
-  {
-   "ioc": "www[.]txvoad[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:21",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021346/"
-  },
-  {
-   "ioc": "www[.]uipjapan[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:21",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021347/"
-  },
-  {
-   "ioc": "www[.]ukspeedtraps[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:21",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021348/"
-  },
-  {
-   "ioc": "www[.]sweetenufcharters[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021338/"
-  },
-  {
-   "ioc": "www[.]synergyft[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021339/"
-  },
-  {
-   "ioc": "www[.]tgcigar[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021340/"
-  },
-  {
-   "ioc": "www[.]theatrederue[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021341/"
-  },
-  {
-   "ioc": "www[.]theforumguys[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021342/"
-  },
-  {
-   "ioc": "www[.]thesixchix[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021343/"
-  },
-  {
-   "ioc": "www[.]tietahtiin[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021344/"
-  },
-  {
-   "ioc": "www[.]sirwilliamrussellflintprints[.]co[.]uk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021330/"
-  },
-  {
-   "ioc": "www[.]sjch-archive[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021331/"
-  },
-  {
-   "ioc": "www[.]spadsoft[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021332/"
-  },
-  {
-   "ioc": "www[.]spardirdenanwalt[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021333/"
-  },
-  {
-   "ioc": "www[.]spritesandjets[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021334/"
-  },
-  {
-   "ioc": "www[.]startinglawncarebusiness[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021335/"
-  },
-  {
-   "ioc": "www[.]strawberryworld-lisbon[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021336/"
-  },
-  {
-   "ioc": "www[.]submitcentre[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021337/"
-  },
-  {
-   "ioc": "www[.]shopgrowcase[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:18",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021326/"
-  },
-  {
-   "ioc": "www[.]shopsaroundlenox[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:18",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021327/"
-  },
-  {
-   "ioc": "www[.]simplephpblog[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:18",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021328/"
-  },
-  {
-   "ioc": "www[.]simulationcredit1[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:18",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021329/"
-  },
-  {
-   "ioc": "www[.]puk-en-muk[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021315/"
-  },
-  {
-   "ioc": "www[.]punctus[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021316/"
-  },
-  {
-   "ioc": "www[.]quixoticweb[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021317/"
-  },
-  {
-   "ioc": "www[.]racef2000[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021318/"
-  },
-  {
-   "ioc": "www[.]radbox[.]me",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021319/"
-  },
-  {
-   "ioc": "www[.]railbikes[.]nz",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021320/"
-  },
-  {
-   "ioc": "www[.]resterhof-wachau[.]at",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021321/"
-  },
-  {
-   "ioc": "www[.]sanfrancisco-fineprintfair[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021322/"
-  },
-  {
-   "ioc": "www[.]seiten-movie[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021323/"
-  },
-  {
-   "ioc": "www[.]seyffertlaw[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021324/"
-  },
-  {
-   "ioc": "www[.]sfveteransmemorial[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021325/"
-  },
-  {
-   "ioc": "www[.]protocolww[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:16",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021314/"
-  },
-  {
-   "ioc": "www[.]online-casino-gaming[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021300/"
-  },
-  {
-   "ioc": "www[.]oobp[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021301/"
-  },
-  {
-   "ioc": "www[.]orcawebsites[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021302/"
-  },
-  {
-   "ioc": "www[.]othervoicesmagazine[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021303/"
-  },
-  {
-   "ioc": "www[.]overstreaminc[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021304/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://187[.]62[.]243[.]142:38094/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "arm",
+    "cowrie",
+    "elf",
+    "honeypot",
+    "Mozi"
+   ],
+   "date": "2026-11-09T03:00:17",
+   "link": "https://urlhaus.abuse.ch/url/4061416/"
+  },
+  {
+   "ioc": "hxxp://115[.]63[.]11[.]150:52956/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-09T03:00:15",
+   "link": "https://urlhaus.abuse.ch/url/4061415/"
+  },
+  {
+   "ioc": "hxxp://27[.]44[.]144[.]34:49761/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-09T02:50:24",
+   "link": "https://urlhaus.abuse.ch/url/4061414/"
+  },
+  {
+   "ioc": "hxxp://42[.]238[.]12[.]86:37209/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T02:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4061412/"
+  },
+  {
+   "ioc": "hxxp://27[.]44[.]147[.]63:53772/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T02:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4061413/"
+  },
+  {
+   "ioc": "hxxp://123[.]190[.]3[.]77:38524/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T02:31:18",
+   "link": "https://urlhaus.abuse.ch/url/4061411/"
+  },
   {
    "ioc": "hxxp://123[.]14[.]253[.]12:33972/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [
+    "32-bit",
     "elf",
-    "mips"
+    "mips",
+    "Mozi"
    ],
    "date": "2026-11-09T02:30:44",
    "link": "https://urlhaus.abuse.ch/url/4061410/"
@@ -13110,84 +13102,6 @@
    ],
    "date": "2026-11-08T22:21:31",
    "link": "https://urlhaus.abuse.ch/url/4061267/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Cylinderclupleat78/haPp/releases/download/1[.]15[.]1/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T22:21:06",
-   "link": "https://urlhaus.abuse.ch/url/4061266/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PortionMotorman/Happ_WIndowS/releases/download/1[.]11[.]2/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T22:17:48",
-   "link": "https://urlhaus.abuse.ch/url/4061265/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/AttorneyFoster/hApP-windOWS/releases/download/1[.]11[.]6/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T22:17:45",
-   "link": "https://urlhaus.abuse.ch/url/4061264/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/AttorneyFoster/hApP-PLuS/releases/download/1[.]16[.]1/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T22:17:34",
-   "link": "https://urlhaus.abuse.ch/url/4061263/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/hectosponsorgap/v2RAYTUN-HApp/releases/download/1[.]13[.]9/v2raytun[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T22:17:23",
-   "link": "https://urlhaus.abuse.ch/url/4061262/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/polygonlancesmelter/HaPP-pRoxY/releases/download/1[.]14[.]2/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T22:17:19",
-   "link": "https://urlhaus.abuse.ch/url/4061261/"
   }
  ],
  "malware_top": [
@@ -13197,19 +13111,19 @@
   },
   {
    "name": "Mirai",
-   "count": 259
+   "count": 228
   },
   {
    "name": "WARDENStealer",
-   "count": 150
+   "count": 151
   },
   {
    "name": "ClearFake",
-   "count": 96
+   "count": 97
   },
   {
    "name": "SNOWLIGHT",
-   "count": 83
+   "count": 91
   },
   {
    "name": "Raven Stealer",
@@ -13228,12 +13142,20 @@
    "count": 46
   },
   {
+   "name": "Prometei",
+   "count": 38
+  },
+  {
    "name": "ACR Stealer",
    "count": 36
   },
   {
    "name": "php.shin_webshell",
-   "count": 31
+   "count": 32
+  },
+  {
+   "name": "AsyncRAT",
+   "count": 23
   },
   {
    "name": "Cobalt Strike",
@@ -13242,10 +13164,6 @@
   {
    "name": "Unknown RAT",
    "count": 21
-  },
-  {
-   "name": "AsyncRAT",
-   "count": 18
   },
   {
    "name": "RN Stealer",
@@ -13262,10 +13180,6 @@
   {
    "name": "Creal Stealer",
    "count": 15
-  },
-  {
-   "name": "Snowlight",
-   "count": 14
   },
   {
    "name": "PureRAT",
@@ -13328,19 +13242,19 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 59.38,
+    "value": 59.19,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.61,
+    "value": 7.72,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.11,
+    "value": 3.12,
     "rank": 3
    },
    {
@@ -13352,7 +13266,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.62,
+    "value": 2.64,
     "rank": 5
    },
    {
@@ -13364,13 +13278,13 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.02,
+    "value": 2.03,
     "rank": 7
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.7,
+    "value": 1.77,
     "rank": 8
    },
    {
@@ -13382,7 +13296,7 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.02,
+    "value": 1.0,
     "rank": 10
    },
    {
@@ -13392,8 +13306,8 @@
     "rank": 11
    },
    {
-    "code": "CY",
-    "name": "Cyprus",
+    "code": "SG",
+    "name": "Singapore",
     "value": 0.7,
     "rank": 12
    }
@@ -13408,13 +13322,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.55,
+    "value": 55.56,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.17,
+    "value": 7.18,
     "rank": 2
    },
    {
@@ -13432,7 +13346,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.31,
+    "value": 2.32,
     "rank": 5
    },
    {
@@ -13444,7 +13358,7 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.3,
+    "value": 2.29,
     "rank": 7
    },
    {
@@ -13456,7 +13370,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.53,
+    "value": 1.52,
     "rank": 9
    },
    {
@@ -13472,8 +13386,8 @@
     "rank": 11
    },
    {
-    "code": "CR",
-    "name": "Costa Rica",
+    "code": "NL",
+    "name": "Netherlands",
     "value": 0.92,
     "rank": 12
    }
