@@ -1,6 +1,45 @@
 {
- "updated": "2026-11-09T18:31:13Z",
+ "updated": "2026-11-09T19:01:14Z",
  "news": [
+  {
+   "id": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks",
+   "title": "France blames Iran for fridge cyberattacks, says some caused fires",
+   "link": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks",
+   "summary": "In the first attribution since the October attacks, the French authorities identified the perpetrators as part of Shahid Kaveh, an IRGC cyber unit previously linked to attacks on industrial controllers at U.S. water utilities.",
+   "source": "The Record",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-09T18:45:00Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+   "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+   "link": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+   "summary": "France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers, saying the attacks caused food losses and sparked at least 15 fires. [...]",
+   "source": "BleepingComputer",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-09T18:32:42Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert",
+   "title": "Vanderbilt cybersecurity incident impacting campus devices and systems",
+   "link": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert",
+   "summary": "Vanderbilt University announced a cyberattack, warning students and employees that campus devices and systems may be impacted by the incident.",
+   "source": "The Record",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-09T18:30:00Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
   {
    "id": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
    "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
@@ -8422,19 +8461,9 @@
    "last": "2026-11-06T16:11:47Z"
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -8452,8 +8481,18 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -9063,6 +9102,76 @@
  },
  "known_actors": 1506,
  "iocs": [
+  {
+   "ioc": "8189d6ed5f86e79e70c2c321d615699a266d027bd9e0c7d739ace8f4b0381c43",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-09T18:57:54",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022336/"
+  },
+  {
+   "ioc": "0d1e89169b0f0b1f1d455e8c9b9fe98f540e0311df5eaa102c93be2d5a58accf",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-09T18:57:53",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022335/"
+  },
+  {
+   "ioc": "3e477c8a7aa71d44899748a35ea0c3bad35c2648d2062e9819e2c25e69238295",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-09T18:57:51",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022334/"
+  },
+  {
+   "ioc": "90b0fb1dffe679e5c6087cf9dd0f8fb3ca9ae3ab68fa247313e7a6427dd79ed7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-09T18:57:50",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022333/"
+  },
+  {
+   "ioc": "cuygl10401[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-09T18:37:30",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022332/"
+  },
   {
    "ioc": "202[.]61[.]73[.]177:3000",
    "type": "ip:port",
@@ -11587,74 +11696,79 @@
     "Loader"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2022137/"
-  },
-  {
-   "ioc": "6ad1045cc58f885aaa26a47f12fdb4e3a5006cddbbc2c59a6bd927922fde75a6",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T10:57:54",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022136/"
-  },
-  {
-   "ioc": "ec31c8679888429f4c42d708b18685990e7e7ce9d180a12b140d4ad576c0a9d9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T10:57:53",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022135/"
-  },
-  {
-   "ioc": "e383cf67a52cb718a83b4f67903acdbcc71f28280df6654b16d23f8609cc3ce3",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T10:57:52",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022134/"
-  },
-  {
-   "ioc": "4e58c2d0b250e28c4144467ff18bbb1f19852f1e42c7d8c8c90292fe8fac3740",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T10:57:50",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022133/"
-  },
-  {
-   "ioc": "7781ddd47c8d47dbc80d1d1a9afad5384ecef05a122ea9ff15ecfe5b5a7c21ad",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T10:57:49",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022132/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://213[.]64[.]230[.]238:3621/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "elf"
+   ],
+   "date": "2026-11-09T18:59:09",
+   "link": "https://urlhaus.abuse.ch/url/4062148/"
+  },
+  {
+   "ioc": "hxxp://45[.]172[.]218[.]85:35578/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-09T18:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4062147/"
+  },
+  {
+   "ioc": "hxxp://182[.]117[.]95[.]249:57147/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T18:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4062146/"
+  },
+  {
+   "ioc": "hxxp://113[.]239[.]113[.]197:49262/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T18:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4062145/"
+  },
+  {
+   "ioc": "hxxp://115[.]52[.]239[.]96:35155/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T18:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062144/"
+  },
+  {
+   "ioc": "hxxp://123[.]5[.]156[.]176:44906/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T18:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062143/"
+  },
+  {
+   "ioc": "hxxp://115[.]49[.]6[.]230:38439/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T18:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062142/"
+  },
   {
    "ioc": "hxxp://110[.]186[.]229[.]97:44885/i",
    "host_it": false,
@@ -12969,7 +13083,7 @@
   {
    "ioc": "hxxp://180[.]244[.]241[.]243:60502/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "32-bit",
@@ -13230,95 +13344,12 @@
    "tags": [],
    "date": "2026-11-09T13:47:06",
    "link": "https://urlhaus.abuse.ch/url/4061999/"
-  },
-  {
-   "ioc": "hxxp://183[.]151[.]168[.]116:46531/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf"
-   ],
-   "date": "2026-11-09T13:46:16",
-   "link": "https://urlhaus.abuse.ch/url/4061998/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/sightcandlemakerobey/freE-Vpn/releases/download/1[.]10[.]5/freevpn[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-09T13:36:14",
-   "link": "https://urlhaus.abuse.ch/url/4061997/"
-  },
-  {
-   "ioc": "hxxp://115[.]230[.]88[.]18:57069/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T13:36:13",
-   "link": "https://urlhaus.abuse.ch/url/4061996/"
-  },
-  {
-   "ioc": "hxxp://60[.]16[.]190[.]185:36548/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T13:36:13",
-   "link": "https://urlhaus.abuse.ch/url/4061995/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Saurabh-212800/1st-assignment-js-Advanced/refs/heads/main/chiaroscuro/js_Advanced_st_assignment_v3[.]2-alpha[.]3[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-09T13:36:12",
-   "link": "https://urlhaus.abuse.ch/url/4061994/"
-  },
-  {
-   "ioc": "hxxp://123[.]148[.]129[.]109:44863/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-09T13:36:11",
-   "link": "https://urlhaus.abuse.ch/url/4061993/"
-  },
-  {
-   "ioc": "hxxp://38[.]43[.]193[.]232:50562/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-09T13:36:11",
-   "link": "https://urlhaus.abuse.ch/url/4061992/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 263
+   "count": 262
   },
   {
    "name": "SNOWLIGHT",
@@ -13326,23 +13357,23 @@
   },
   {
    "name": "Unknown Loader",
-   "count": 76
+   "count": 72
   },
   {
    "name": "AsyncRAT",
    "count": 58
   },
   {
-   "name": "ClearFake",
-   "count": 55
-  },
-  {
    "name": "IClickFix",
    "count": 55
   },
   {
+   "name": "ClearFake",
+   "count": 53
+  },
+  {
    "name": "Vidar",
-   "count": 54
+   "count": 53
   },
   {
    "name": "Prometei",
@@ -13350,7 +13381,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 38
+   "count": 37
   },
   {
    "name": "XWorm",
@@ -13453,7 +13484,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.74,
+    "value": 57.66,
     "rank": 1
    },
    {
@@ -13465,25 +13496,25 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.12,
+    "value": 3.11,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.95,
+    "value": 2.93,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.53,
+    "value": 2.55,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.29,
+    "value": 2.27,
     "rank": 6
    },
    {
@@ -13495,19 +13526,19 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.11,
+    "value": 2.07,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.24,
+    "value": 1.23,
     "rank": 9
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.02,
+    "value": 1.01,
     "rank": 10
    },
    {
@@ -13519,7 +13550,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 0.87,
+    "value": 0.98,
     "rank": 12
    }
   ],
@@ -13533,13 +13564,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.73,
+    "value": 55.75,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.14,
+    "value": 7.12,
     "rank": 2
    },
    {
@@ -13569,7 +13600,7 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.23,
+    "value": 2.21,
     "rank": 7
    },
    {
@@ -13581,7 +13612,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.45,
+    "value": 1.46,
     "rank": 9
    },
    {
