@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T01:01:07Z",
+ "updated": "2026-11-09T01:30:54Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
@@ -4532,6 +4532,19 @@
  ],
  "ransomware": [
   {
+   "id": "black x|Court Square Group",
+   "victim": "Court Square Group",
+   "group": "Black X",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-09T02:24:51",
+   "link": "https://www.ransomlook.io/group/black x",
+   "summary": "We hacked into Court Square Group internal network and stole 3T of customer data from the RegDocs365 and ARCC cloud network. It includes sensitive info such as clinical trial data, research materials, and various reports belonging to Court Square Gro…",
+   "sources": [
+    "RansomLook"
+   ]
+  },
+  {
    "id": "anubis|Cuomo LLC",
    "victim": "Cuomo LLC",
    "group": "anubis",
@@ -7481,19 +7494,6 @@
    "sources": [
     "RansomLook"
    ]
-  },
-  {
-   "id": "n0n|Company #124",
-   "victim": "Company #124",
-   "group": "n0n",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-03T13:23:56",
-   "link": "https://www.ransomlook.io/group/n0n",
-   "summary": "mobile advertising · United States",
-   "sources": [
-    "RansomLook"
-   ]
   }
  ],
  "kev": [
@@ -7910,8 +7910,8 @@
    "last": "2026-11-04T11:59:46Z"
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -7930,9 +7930,9 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -7940,9 +7940,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -8015,7 +8015,7 @@
    "country": "",
    "watch": false,
    "mentions": 0,
-   "claims": 9,
+   "claims": 8,
    "claims_it": 0,
    "last": "2026-11-04T12:23:24"
   },
@@ -8360,6 +8360,16 @@
    "last": "2026-11-04T01:21:40"
   },
   {
+   "name": "Black X",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 0,
+   "claims": 1,
+   "claims_it": 0,
+   "last": "2026-11-09T02:24:51"
+  },
+  {
    "name": "Orova",
    "type": "ransomware",
    "country": "",
@@ -8550,6 +8560,7 @@
   "Aoqin": "ransomware",
   "BYOD": "ransomware",
   "Barracuda": "ransomware",
+  "Black X": "ransomware",
   "BrainCipher": "ransomware",
   "Dark Project": "ransomware",
   "Deadlock": "ransomware",
@@ -8617,6 +8628,200 @@
  },
  "known_actors": 1507,
  "iocs": [
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklsh4",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:40",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021455/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklppc",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:37",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021454/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklmpsl",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:34",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021453/"
+  },
+  {
+   "ioc": "47[.]122[.]122[.]41:9162",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:31",
+   "tags": [
+    "cryptojacking",
+    "docker",
+    "honeypot",
+    "redis"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021452/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklmips",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:31",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021451/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklm68k",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:27",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021450/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklarm7",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:24",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021449/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklarm6",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:21",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021448/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklarm5",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:18",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021447/"
+  },
+  {
+   "ioc": "hxxp://45[.]90[.]163[.]37/jklarm",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-09T01:29:15",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021446/"
+  },
+  {
+   "ioc": "a8db671b58d03320f807ff9ad14b11ba9ffa182576179df594b3a49a95719783",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-09T01:29:12",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021445/"
+  },
+  {
+   "ioc": "4ze4516g[.]kevg[.]store",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-09T01:29:10",
+   "tags": [
+    "ClearFake",
+    "mac-0x68dc",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021444/"
+  },
+  {
+   "ioc": "auditor[.]observer",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-09T01:20:00",
+   "tags": [
+    "9November2026",
+    "ClearFake",
+    "Commandline",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021443/"
+  },
+  {
+   "ioc": "rl[.]amin90[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-09T01:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021442/"
+  },
+  {
+   "ioc": "tyziguga[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-09T01:05:27",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021441/"
+  },
   {
    "ioc": "hxxps://maenc[.]icu/",
    "type": "url",
@@ -9208,18 +9413,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2021397/"
   },
   {
-   "ioc": "p[.]dav88[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-08T23:05:35",
-   "tags": [
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021395/"
-  },
-  {
    "ioc": "lh[.]amin90[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -9232,16 +9425,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2021396/"
   },
   {
-   "ioc": "y[.]dhawa[.]net",
+   "ioc": "p[.]dav88[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Vidar",
    "confidence": 100,
-   "date": "2026-11-08T23:05:34",
+   "date": "2026-11-08T23:05:35",
    "tags": [
     "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021393/"
+   "link": "https://threatfox.abuse.ch/ioc/2021395/"
   },
   {
    "ioc": "o5[.]amarta89[.]org",
@@ -9254,6 +9447,18 @@
     "Vidar"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2021394/"
+  },
+  {
+   "ioc": "y[.]dhawa[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-08T23:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021393/"
   },
   {
    "ioc": "hupume[.]workers[.]dev",
@@ -9483,7 +9688,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2021376/"
   },
   {
-   "ioc": "duskyprunttrioor[.]pro",
+   "ioc": "silver-birch-lepfliois[.]pro",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -9493,33 +9698,7 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021371/"
-  },
-  {
-   "ioc": "hainzpixx241[.]digital",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-08T22:21:50",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021372/"
-  },
-  {
-   "ioc": "ochre-sail-lark-bioix[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-08T22:21:50",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021373/"
+   "link": "https://threatfox.abuse.ch/ioc/2021375/"
   },
   {
    "ioc": "priompruia[.]pro",
@@ -9535,7 +9714,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2021374/"
   },
   {
-   "ioc": "silver-birch-lepfliois[.]pro",
+   "ioc": "ochre-sail-lark-bioix[.]pro",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -9545,7 +9724,33 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021375/"
+   "link": "https://threatfox.abuse.ch/ioc/2021373/"
+  },
+  {
+   "ioc": "hainzpixx241[.]digital",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-08T22:21:50",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021372/"
+  },
+  {
+   "ioc": "duskyprunttrioor[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-08T22:21:50",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021371/"
   },
   {
    "ioc": "121[.]196[.]22[.]34[.]bc[.]googleusercontent[.]com",
@@ -9660,21 +9865,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2021363/"
   },
   {
-   "ioc": "yoodle[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:24",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021361/"
-  },
-  {
    "ioc": "younitemedia[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -9688,6 +9878,21 @@
     "WordPress"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2021362/"
+  },
+  {
+   "ioc": "yoodle[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:24",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021361/"
   },
   {
    "ioc": "xitranch[.]com",
@@ -9705,7 +9910,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2021360/"
   },
   {
-   "ioc": "www[.]unleashedfamily[.]com",
+   "ioc": "www[.]zackandmiri[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -9717,127 +9922,7 @@
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021349/"
-  },
-  {
-   "ioc": "www[.]unsolodolar[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021350/"
-  },
-  {
-   "ioc": "www[.]uppsite[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021351/"
-  },
-  {
-   "ioc": "www[.]vfwofwa[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021352/"
-  },
-  {
-   "ioc": "www[.]virtualstatisticalsystem[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021353/"
-  },
-  {
-   "ioc": "www[.]vozvictimas[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021354/"
-  },
-  {
-   "ioc": "www[.]webpulp[.]tv",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021355/"
-  },
-  {
-   "ioc": "www[.]webyking[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021356/"
-  },
-  {
-   "ioc": "www[.]xn--aufgeklrt-12a[.]info",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:22",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021357/"
+   "link": "https://threatfox.abuse.ch/ioc/2021359/"
   },
   {
    "ioc": "www[.]yagi-shika[.]com",
@@ -9855,7 +9940,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2021358/"
   },
   {
-   "ioc": "www[.]zackandmiri[.]com",
+   "ioc": "www[.]xn--aufgeklrt-12a[.]info",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -9867,52 +9952,127 @@
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021359/"
+   "link": "https://threatfox.abuse.ch/ioc/2021357/"
   },
   {
-   "ioc": "www[.]twilightcms[.]com",
+   "ioc": "www[.]webyking[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:21",
+   "date": "2026-11-08T21:18:22",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021345/"
+   "link": "https://threatfox.abuse.ch/ioc/2021356/"
   },
   {
-   "ioc": "www[.]txvoad[.]org",
+   "ioc": "www[.]webpulp[.]tv",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:21",
+   "date": "2026-11-08T21:18:22",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021346/"
+   "link": "https://threatfox.abuse.ch/ioc/2021355/"
   },
   {
-   "ioc": "www[.]uipjapan[.]com",
+   "ioc": "www[.]vozvictimas[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:21",
+   "date": "2026-11-08T21:18:22",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021347/"
+   "link": "https://threatfox.abuse.ch/ioc/2021354/"
+  },
+  {
+   "ioc": "www[.]virtualstatisticalsystem[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:22",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021353/"
+  },
+  {
+   "ioc": "www[.]vfwofwa[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:22",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021352/"
+  },
+  {
+   "ioc": "www[.]uppsite[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:22",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021351/"
+  },
+  {
+   "ioc": "www[.]unsolodolar[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:22",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021350/"
+  },
+  {
+   "ioc": "www[.]unleashedfamily[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:22",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021349/"
   },
   {
    "ioc": "www[.]ukspeedtraps[.]com",
@@ -9930,94 +10090,49 @@
    "link": "https://threatfox.abuse.ch/ioc/2021348/"
   },
   {
-   "ioc": "www[.]sweetenufcharters[.]com",
+   "ioc": "www[.]uipjapan[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:20",
+   "date": "2026-11-08T21:18:21",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021338/"
+   "link": "https://threatfox.abuse.ch/ioc/2021347/"
   },
   {
-   "ioc": "www[.]synergyft[.]com",
+   "ioc": "www[.]txvoad[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:20",
+   "date": "2026-11-08T21:18:21",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021339/"
+   "link": "https://threatfox.abuse.ch/ioc/2021346/"
   },
   {
-   "ioc": "www[.]tgcigar[.]com",
+   "ioc": "www[.]twilightcms[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:20",
+   "date": "2026-11-08T21:18:21",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021340/"
-  },
-  {
-   "ioc": "www[.]theatrederue[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021341/"
-  },
-  {
-   "ioc": "www[.]theforumguys[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021342/"
-  },
-  {
-   "ioc": "www[.]thesixchix[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:20",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021343/"
+   "link": "https://threatfox.abuse.ch/ioc/2021345/"
   },
   {
    "ioc": "www[.]tietahtiin[.]com",
@@ -10035,109 +10150,94 @@
    "link": "https://threatfox.abuse.ch/ioc/2021344/"
   },
   {
-   "ioc": "www[.]sirwilliamrussellflintprints[.]co[.]uk",
+   "ioc": "www[.]thesixchix[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:19",
+   "date": "2026-11-08T21:18:20",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021330/"
+   "link": "https://threatfox.abuse.ch/ioc/2021343/"
   },
   {
-   "ioc": "www[.]sjch-archive[.]org",
+   "ioc": "www[.]theforumguys[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:19",
+   "date": "2026-11-08T21:18:20",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021331/"
+   "link": "https://threatfox.abuse.ch/ioc/2021342/"
   },
   {
-   "ioc": "www[.]spadsoft[.]com",
+   "ioc": "www[.]theatrederue[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:19",
+   "date": "2026-11-08T21:18:20",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021332/"
+   "link": "https://threatfox.abuse.ch/ioc/2021341/"
   },
   {
-   "ioc": "www[.]spardirdenanwalt[.]com",
+   "ioc": "www[.]tgcigar[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:19",
+   "date": "2026-11-08T21:18:20",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021333/"
+   "link": "https://threatfox.abuse.ch/ioc/2021340/"
   },
   {
-   "ioc": "www[.]spritesandjets[.]com",
+   "ioc": "www[.]synergyft[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:19",
+   "date": "2026-11-08T21:18:20",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021334/"
+   "link": "https://threatfox.abuse.ch/ioc/2021339/"
   },
   {
-   "ioc": "www[.]startinglawncarebusiness[.]com",
+   "ioc": "www[.]sweetenufcharters[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:19",
+   "date": "2026-11-08T21:18:20",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021335/"
-  },
-  {
-   "ioc": "www[.]strawberryworld-lisbon[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:19",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021336/"
+   "link": "https://threatfox.abuse.ch/ioc/2021338/"
   },
   {
    "ioc": "www[.]submitcentre[.]com",
@@ -10155,49 +10255,109 @@
    "link": "https://threatfox.abuse.ch/ioc/2021337/"
   },
   {
-   "ioc": "www[.]shopgrowcase[.]com",
+   "ioc": "www[.]strawberryworld-lisbon[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:18",
+   "date": "2026-11-08T21:18:19",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021326/"
+   "link": "https://threatfox.abuse.ch/ioc/2021336/"
   },
   {
-   "ioc": "www[.]shopsaroundlenox[.]com",
+   "ioc": "www[.]startinglawncarebusiness[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:18",
+   "date": "2026-11-08T21:18:19",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021327/"
+   "link": "https://threatfox.abuse.ch/ioc/2021335/"
   },
   {
-   "ioc": "www[.]simplephpblog[.]com",
+   "ioc": "www[.]spritesandjets[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:18",
+   "date": "2026-11-08T21:18:19",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021328/"
+   "link": "https://threatfox.abuse.ch/ioc/2021334/"
+  },
+  {
+   "ioc": "www[.]spardirdenanwalt[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:19",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021333/"
+  },
+  {
+   "ioc": "www[.]spadsoft[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:19",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021332/"
+  },
+  {
+   "ioc": "www[.]sjch-archive[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:19",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021331/"
+  },
+  {
+   "ioc": "www[.]sirwilliamrussellflintprints[.]co[.]uk",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:19",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021330/"
   },
   {
    "ioc": "www[.]simulationcredit1[.]com",
@@ -10215,154 +10375,49 @@
    "link": "https://threatfox.abuse.ch/ioc/2021329/"
   },
   {
-   "ioc": "www[.]puk-en-muk[.]com",
+   "ioc": "www[.]simplephpblog[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:17",
+   "date": "2026-11-08T21:18:18",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021315/"
+   "link": "https://threatfox.abuse.ch/ioc/2021328/"
   },
   {
-   "ioc": "www[.]punctus[.]org",
+   "ioc": "www[.]shopsaroundlenox[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:17",
+   "date": "2026-11-08T21:18:18",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021316/"
+   "link": "https://threatfox.abuse.ch/ioc/2021327/"
   },
   {
-   "ioc": "www[.]quixoticweb[.]com",
+   "ioc": "www[.]shopgrowcase[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:17",
+   "date": "2026-11-08T21:18:18",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021317/"
-  },
-  {
-   "ioc": "www[.]racef2000[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021318/"
-  },
-  {
-   "ioc": "www[.]radbox[.]me",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021319/"
-  },
-  {
-   "ioc": "www[.]railbikes[.]nz",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021320/"
-  },
-  {
-   "ioc": "www[.]resterhof-wachau[.]at",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021321/"
-  },
-  {
-   "ioc": "www[.]sanfrancisco-fineprintfair[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021322/"
-  },
-  {
-   "ioc": "www[.]seiten-movie[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021323/"
-  },
-  {
-   "ioc": "www[.]seyffertlaw[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:17",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021324/"
+   "link": "https://threatfox.abuse.ch/ioc/2021326/"
   },
   {
    "ioc": "www[.]sfveteransmemorial[.]org",
@@ -10380,6 +10435,156 @@
    "link": "https://threatfox.abuse.ch/ioc/2021325/"
   },
   {
+   "ioc": "www[.]seyffertlaw[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021324/"
+  },
+  {
+   "ioc": "www[.]seiten-movie[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021323/"
+  },
+  {
+   "ioc": "www[.]sanfrancisco-fineprintfair[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021322/"
+  },
+  {
+   "ioc": "www[.]resterhof-wachau[.]at",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021321/"
+  },
+  {
+   "ioc": "www[.]railbikes[.]nz",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021320/"
+  },
+  {
+   "ioc": "www[.]radbox[.]me",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021319/"
+  },
+  {
+   "ioc": "www[.]racef2000[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021318/"
+  },
+  {
+   "ioc": "www[.]quixoticweb[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021317/"
+  },
+  {
+   "ioc": "www[.]punctus[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021316/"
+  },
+  {
+   "ioc": "www[.]puk-en-muk[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 95,
+   "date": "2026-11-08T21:18:17",
+   "tags": [
+    "ClickFix",
+    "Kongtuke",
+    "victim",
+    "WordPress"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2021315/"
+  },
+  {
    "ioc": "www[.]protocolww[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -10393,201 +10598,6 @@
     "WordPress"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2021314/"
-  },
-  {
-   "ioc": "www[.]online-casino-gaming[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021300/"
-  },
-  {
-   "ioc": "www[.]oobp[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021301/"
-  },
-  {
-   "ioc": "www[.]orcawebsites[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021302/"
-  },
-  {
-   "ioc": "www[.]othervoicesmagazine[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021303/"
-  },
-  {
-   "ioc": "www[.]overstreaminc[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021304/"
-  },
-  {
-   "ioc": "www[.]parentingunpluggedradio[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021305/"
-  },
-  {
-   "ioc": "www[.]penafiel[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021306/"
-  },
-  {
-   "ioc": "www[.]peopleofcolororganize[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021307/"
-  },
-  {
-   "ioc": "www[.]phparena[.]net",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021308/"
-  },
-  {
-   "ioc": "www[.]phpnuke-europe[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021309/"
-  },
-  {
-   "ioc": "www[.]physio-on-the-river[.]co[.]uk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021310/"
-  },
-  {
-   "ioc": "www[.]pixtudio[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021311/"
-  },
-  {
-   "ioc": "www[.]pkpkarts[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:15",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021312/"
   },
   {
    "ioc": "www[.]poortastemag[.]com",
@@ -10605,199 +10615,199 @@
    "link": "https://threatfox.abuse.ch/ioc/2021313/"
   },
   {
-   "ioc": "www[.]kh-fleckenstein[.]com",
+   "ioc": "www[.]pkpkarts[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021286/"
+   "link": "https://threatfox.abuse.ch/ioc/2021312/"
   },
   {
-   "ioc": "www[.]krishnadhwaninatya[.]com",
+   "ioc": "www[.]pixtudio[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021287/"
+   "link": "https://threatfox.abuse.ch/ioc/2021311/"
   },
   {
-   "ioc": "www[.]legacy-nyc[.]com",
+   "ioc": "www[.]physio-on-the-river[.]co[.]uk",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021288/"
+   "link": "https://threatfox.abuse.ch/ioc/2021310/"
   },
   {
-   "ioc": "www[.]linksmoving[.]asia",
+   "ioc": "www[.]phpnuke-europe[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021289/"
+   "link": "https://threatfox.abuse.ch/ioc/2021309/"
   },
   {
-   "ioc": "www[.]macssteakhouse[.]co[.]nz",
+   "ioc": "www[.]phparena[.]net",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021290/"
+   "link": "https://threatfox.abuse.ch/ioc/2021308/"
   },
   {
-   "ioc": "www[.]mansacalligraphy[.]com",
+   "ioc": "www[.]peopleofcolororganize[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021291/"
+   "link": "https://threatfox.abuse.ch/ioc/2021307/"
   },
   {
-   "ioc": "www[.]marylandvoad[.]org",
+   "ioc": "www[.]penafiel[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021292/"
+   "link": "https://threatfox.abuse.ch/ioc/2021306/"
   },
   {
-   "ioc": "www[.]marysvillemerchants[.]com",
+   "ioc": "www[.]parentingunpluggedradio[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021293/"
+   "link": "https://threatfox.abuse.ch/ioc/2021305/"
   },
   {
-   "ioc": "www[.]mjsbigblog[.]com",
+   "ioc": "www[.]overstreaminc[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021294/"
+   "link": "https://threatfox.abuse.ch/ioc/2021304/"
   },
   {
-   "ioc": "www[.]mnvoad[.]org",
+   "ioc": "www[.]othervoicesmagazine[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021295/"
+   "link": "https://threatfox.abuse.ch/ioc/2021303/"
   },
   {
-   "ioc": "www[.]n1motion[.]com",
+   "ioc": "www[.]orcawebsites[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021296/"
+   "link": "https://threatfox.abuse.ch/ioc/2021302/"
   },
   {
-   "ioc": "www[.]newyorkvoad[.]org",
+   "ioc": "www[.]oobp[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021297/"
+   "link": "https://threatfox.abuse.ch/ioc/2021301/"
   },
   {
-   "ioc": "www[.]ninjamatics[.]com",
+   "ioc": "www[.]online-casino-gaming[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:13",
+   "date": "2026-11-08T21:18:15",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021298/"
+   "link": "https://threatfox.abuse.ch/ioc/2021300/"
   },
   {
    "ioc": "www[.]omcconnect[.]com",
@@ -10815,214 +10825,199 @@
    "link": "https://threatfox.abuse.ch/ioc/2021299/"
   },
   {
-   "ioc": "www[.]hannes-oberpaul[.]de",
+   "ioc": "www[.]ninjamatics[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021271/"
+   "link": "https://threatfox.abuse.ch/ioc/2021298/"
   },
   {
-   "ioc": "www[.]hellasinternet[.]com",
+   "ioc": "www[.]newyorkvoad[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021272/"
+   "link": "https://threatfox.abuse.ch/ioc/2021297/"
   },
   {
-   "ioc": "www[.]iloveportelizabeth[.]com",
+   "ioc": "www[.]n1motion[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021273/"
+   "link": "https://threatfox.abuse.ch/ioc/2021296/"
   },
   {
-   "ioc": "www[.]iloveubuntu[.]net",
+   "ioc": "www[.]mnvoad[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021274/"
+   "link": "https://threatfox.abuse.ch/ioc/2021295/"
   },
   {
-   "ioc": "www[.]immobilien-salzburg[.]at",
+   "ioc": "www[.]mjsbigblog[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021275/"
+   "link": "https://threatfox.abuse.ch/ioc/2021294/"
   },
   {
-   "ioc": "www[.]inclusivechurch2[.]net",
+   "ioc": "www[.]marysvillemerchants[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021276/"
+   "link": "https://threatfox.abuse.ch/ioc/2021293/"
   },
   {
-   "ioc": "www[.]indianirmansangh[.]org",
+   "ioc": "www[.]marylandvoad[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021277/"
+   "link": "https://threatfox.abuse.ch/ioc/2021292/"
   },
   {
-   "ioc": "www[.]info-tsukuba[.]org",
+   "ioc": "www[.]mansacalligraphy[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021278/"
+   "link": "https://threatfox.abuse.ch/ioc/2021291/"
   },
   {
-   "ioc": "www[.]inkfilepicker[.]com",
+   "ioc": "www[.]macssteakhouse[.]co[.]nz",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021279/"
+   "link": "https://threatfox.abuse.ch/ioc/2021290/"
   },
   {
-   "ioc": "www[.]isdasquash[.]com",
+   "ioc": "www[.]linksmoving[.]asia",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021280/"
+   "link": "https://threatfox.abuse.ch/ioc/2021289/"
   },
   {
-   "ioc": "www[.]itsworkingproject[.]com",
+   "ioc": "www[.]legacy-nyc[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021281/"
+   "link": "https://threatfox.abuse.ch/ioc/2021288/"
   },
   {
-   "ioc": "www[.]jacksonkatz[.]com",
+   "ioc": "www[.]krishnadhwaninatya[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021282/"
+   "link": "https://threatfox.abuse.ch/ioc/2021287/"
   },
   {
-   "ioc": "www[.]jbmittan[.]com",
+   "ioc": "www[.]kh-fleckenstein[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:11",
+   "date": "2026-11-08T21:18:13",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021283/"
-  },
-  {
-   "ioc": "www[.]jdfcure[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:11",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021284/"
+   "link": "https://threatfox.abuse.ch/ioc/2021286/"
   },
   {
    "ioc": "www[.]juristenmesse[.]at",
@@ -11040,214 +11035,214 @@
    "link": "https://threatfox.abuse.ch/ioc/2021285/"
   },
   {
-   "ioc": "www[.]feru[.]org",
+   "ioc": "www[.]jdfcure[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021256/"
+   "link": "https://threatfox.abuse.ch/ioc/2021284/"
   },
   {
-   "ioc": "www[.]finamasters2012[.]org",
+   "ioc": "www[.]jbmittan[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021257/"
+   "link": "https://threatfox.abuse.ch/ioc/2021283/"
   },
   {
-   "ioc": "www[.]firstlinux[.]com",
+   "ioc": "www[.]jacksonkatz[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021258/"
+   "link": "https://threatfox.abuse.ch/ioc/2021282/"
   },
   {
-   "ioc": "www[.]fittipaldiwheels[.]eu",
+   "ioc": "www[.]itsworkingproject[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021259/"
+   "link": "https://threatfox.abuse.ch/ioc/2021281/"
   },
   {
-   "ioc": "www[.]flythemes[.]com",
+   "ioc": "www[.]isdasquash[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021260/"
+   "link": "https://threatfox.abuse.ch/ioc/2021280/"
   },
   {
-   "ioc": "www[.]flywithmark[.]net",
+   "ioc": "www[.]inkfilepicker[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021261/"
+   "link": "https://threatfox.abuse.ch/ioc/2021279/"
   },
   {
-   "ioc": "www[.]francescatosocoaching[.]com",
+   "ioc": "www[.]info-tsukuba[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021262/"
+   "link": "https://threatfox.abuse.ch/ioc/2021278/"
   },
   {
-   "ioc": "www[.]frodev[.]org",
+   "ioc": "www[.]indianirmansangh[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021263/"
+   "link": "https://threatfox.abuse.ch/ioc/2021277/"
   },
   {
-   "ioc": "www[.]gavoad[.]org",
+   "ioc": "www[.]inclusivechurch2[.]net",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021264/"
+   "link": "https://threatfox.abuse.ch/ioc/2021276/"
   },
   {
-   "ioc": "www[.]genaissance[.]com",
+   "ioc": "www[.]immobilien-salzburg[.]at",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021265/"
+   "link": "https://threatfox.abuse.ch/ioc/2021275/"
   },
   {
-   "ioc": "www[.]gllabs[.]org",
+   "ioc": "www[.]iloveubuntu[.]net",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021266/"
+   "link": "https://threatfox.abuse.ch/ioc/2021274/"
   },
   {
-   "ioc": "www[.]glpiggy[.]net",
+   "ioc": "www[.]iloveportelizabeth[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021267/"
+   "link": "https://threatfox.abuse.ch/ioc/2021273/"
   },
   {
-   "ioc": "www[.]gochomuseum[.]net",
+   "ioc": "www[.]hellasinternet[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021268/"
+   "link": "https://threatfox.abuse.ch/ioc/2021272/"
   },
   {
-   "ioc": "www[.]gowebigo[.]com",
+   "ioc": "www[.]hannes-oberpaul[.]de",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:09",
+   "date": "2026-11-08T21:18:11",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021269/"
+   "link": "https://threatfox.abuse.ch/ioc/2021271/"
   },
   {
    "ioc": "www[.]halflife2[.]net",
@@ -11265,232 +11260,272 @@
    "link": "https://threatfox.abuse.ch/ioc/2021270/"
   },
   {
-   "ioc": "www[.]electric-manga[.]com",
+   "ioc": "www[.]gowebigo[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:07",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021249/"
+   "link": "https://threatfox.abuse.ch/ioc/2021269/"
   },
   {
-   "ioc": "www[.]essencetheme[.]com",
+   "ioc": "www[.]gochomuseum[.]net",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:07",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021250/"
+   "link": "https://threatfox.abuse.ch/ioc/2021268/"
   },
   {
-   "ioc": "www[.]ethanneuen[.]com",
+   "ioc": "www[.]glpiggy[.]net",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:07",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021251/"
+   "link": "https://threatfox.abuse.ch/ioc/2021267/"
   },
   {
-   "ioc": "www[.]exploitdevelopment[.]com",
+   "ioc": "www[.]gllabs[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:07",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021252/"
+   "link": "https://threatfox.abuse.ch/ioc/2021266/"
   },
   {
-   "ioc": "www[.]expresstechsoftwares[.]com",
+   "ioc": "www[.]genaissance[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:07",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021253/"
+   "link": "https://threatfox.abuse.ch/ioc/2021265/"
   },
   {
-   "ioc": "www[.]external-file[.]com",
+   "ioc": "www[.]gavoad[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:07",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021254/"
+   "link": "https://threatfox.abuse.ch/ioc/2021264/"
   },
   {
-   "ioc": "www[.]familyguyquotes[.]com",
+   "ioc": "www[.]frodev[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:07",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021255/"
+   "link": "https://threatfox.abuse.ch/ioc/2021263/"
   },
   {
-   "ioc": "www[.]dkpkarts[.]com",
+   "ioc": "www[.]francescatosocoaching[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:06",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021241/"
+   "link": "https://threatfox.abuse.ch/ioc/2021262/"
   },
   {
-   "ioc": "www[.]dogbluff[.]com",
+   "ioc": "www[.]flywithmark[.]net",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:06",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021242/"
+   "link": "https://threatfox.abuse.ch/ioc/2021261/"
   },
   {
-   "ioc": "www[.]drinknestea[.]ca",
+   "ioc": "www[.]flythemes[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:06",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021243/"
+   "link": "https://threatfox.abuse.ch/ioc/2021260/"
   },
   {
-   "ioc": "www[.]drrobynwatts[.]com",
+   "ioc": "www[.]fittipaldiwheels[.]eu",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:06",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021244/"
+   "link": "https://threatfox.abuse.ch/ioc/2021259/"
   },
   {
-   "ioc": "www[.]drupaldocs[.]org",
+   "ioc": "www[.]firstlinux[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:06",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021245/"
+   "link": "https://threatfox.abuse.ch/ioc/2021258/"
   },
   {
-   "ioc": "www[.]e-wasteonline[.]com",
+   "ioc": "www[.]finamasters2012[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:06",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021246/"
+   "link": "https://threatfox.abuse.ch/ioc/2021257/"
   },
   {
-   "ioc": "www[.]ecoinspections[.]com",
+   "ioc": "www[.]feru[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 95,
-   "date": "2026-11-08T21:18:06",
+   "date": "2026-11-08T21:18:09",
    "tags": [
     "ClickFix",
     "Kongtuke",
     "victim",
     "WordPress"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2021247/"
-  },
-  {
-   "ioc": "www[.]ecommmedia[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 95,
-   "date": "2026-11-08T21:18:06",
-   "tags": [
-    "ClickFix",
-    "Kongtuke",
-    "victim",
-    "WordPress"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2021248/"
+   "link": "https://threatfox.abuse.ch/ioc/2021256/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://27[.]21[.]30[.]139:42039/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-09T01:27:10",
+   "link": "https://urlhaus.abuse.ch/url/4061360/"
+  },
+  {
+   "ioc": "hxxp://45[.]194[.]88[.]27:33636/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T01:17:08",
+   "link": "https://urlhaus.abuse.ch/url/4061359/"
+  },
+  {
+   "ioc": "hxxp://39[.]71[.]15[.]128:49789/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T01:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4061357/"
+  },
+  {
+   "ioc": "hxxp://115[.]48[.]152[.]57:51471/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T01:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4061358/"
+  },
+  {
+   "ioc": "hxxp://123[.]158[.]95[.]0:41751/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-09T01:02:13",
+   "link": "https://urlhaus.abuse.ch/url/4061356/"
+  },
   {
    "ioc": "hxxp://45[.]231[.]145[.]15:50512/i",
    "host_it": false,
@@ -13216,68 +13251,6 @@
    ],
    "date": "2026-11-08T20:22:07",
    "link": "https://urlhaus.abuse.ch/url/4061212/"
-  },
-  {
-   "ioc": "hxxp://60[.]19[.]218[.]94:57089/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-08T20:22:07",
-   "link": "https://urlhaus.abuse.ch/url/4061213/"
-  },
-  {
-   "ioc": "hxxp://175[.]170[.]215[.]104:54393/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-08T20:22:06",
-   "link": "https://urlhaus.abuse.ch/url/4061209/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Colossusuosupply/v2RaYtUn-HAPP/releases/download/1[.]14[.]0/v2raytun[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T20:21:54",
-   "link": "https://urlhaus.abuse.ch/url/4061208/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/GrindBusiness/hapP/releases/download/1[.]14[.]6/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T20:21:48",
-   "link": "https://urlhaus.abuse.ch/url/4061207/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Colossusuosupply/v2raYtUn_FreE/releases/download/1[.]13[.]0/v2raytun[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-08T20:21:37",
-   "link": "https://urlhaus.abuse.ch/url/4061206/"
   }
  ],
  "malware_top": [
@@ -13287,15 +13260,15 @@
   },
   {
    "name": "Mirai",
-   "count": 242
+   "count": 247
   },
   {
    "name": "WARDENStealer",
-   "count": 151
+   "count": 150
   },
   {
    "name": "ClearFake",
-   "count": 97
+   "count": 99
   },
   {
    "name": "SNOWLIGHT",
@@ -13307,7 +13280,7 @@
   },
   {
    "name": "Vidar",
-   "count": 59
+   "count": 58
   },
   {
    "name": "Unknown Loader",
@@ -13315,7 +13288,7 @@
   },
   {
    "name": "VShell",
-   "count": 47
+   "count": 46
   },
   {
    "name": "ACR Stealer",
@@ -13323,7 +13296,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 31
+   "count": 32
   },
   {
    "name": "Cobalt Strike",
@@ -13335,11 +13308,7 @@
   },
   {
    "name": "Snowlight",
-   "count": 20
-  },
-  {
-   "name": "AMOS",
-   "count": 19
+   "count": 21
   },
   {
    "name": "AsyncRAT",
@@ -13366,20 +13335,24 @@
    "count": 11
   },
   {
-   "name": "RevStealer",
-   "count": 10
-  },
-  {
-   "name": "SalatStealer",
-   "count": 10
-  },
-  {
    "name": "DanaBot",
    "count": 10
   },
   {
    "name": "Sliver",
    "count": 10
+  },
+  {
+   "name": "AMOS",
+   "count": 10
+  },
+  {
+   "name": "Mozi",
+   "count": 9
+  },
+  {
+   "name": "VoltStealer",
+   "count": 9
   }
  ],
  "agid_campaigns": [
