@@ -1,6 +1,19 @@
 {
- "updated": "2026-11-09T20:31:00Z",
+ "updated": "2026-11-09T20:54:51Z",
  "news": [
+  {
+   "id": "https://therecord.media/amplifon-hearing-aid-company-data-breach",
+   "title": "Data breach at hearing aid giant Amplifon impacts thousands",
+   "link": "https://therecord.media/amplifon-hearing-aid-company-data-breach",
+   "summary": "The U.S arm of international hearing aid company Amplifon has been notifying customers about a data breach early this year that included medical information.",
+   "source": "The Record",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-09T20:44:00Z",
+   "actors": [],
+   "threat": true,
+   "highlight": false
+  },
   {
    "id": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks",
    "title": "France blames Iran for fridge cyberattacks, says some caused fires",
@@ -8076,6 +8089,15 @@
    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
   },
   {
+   "cve": "CVE-2026-123218",
+   "vendor": "IBM",
+   "product": "Aspera Faspex",
+   "name": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+   "date": "2026-11-09",
+   "ransomware": false,
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218"
+  },
+  {
    "cve": "CVE-2026-19868",
    "vendor": "SonicWall",
    "product": "SonicOS SSLVPN",
@@ -8398,15 +8420,6 @@
    "date": "2026-10-04",
    "ransomware": false,
    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779"
-  },
-  {
-   "cve": "CVE-2026-102490",
-   "vendor": "Zammad GmbH",
-   "product": "Zammad",
-   "name": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-   "date": "2026-10-02",
-   "ransomware": false,
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102490"
   }
  ],
  "actors": [
@@ -8461,9 +8474,9 @@
    "last": "2026-11-06T16:11:47Z"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -8481,9 +8494,9 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -9102,6 +9115,31 @@
  },
  "known_actors": 1506,
  "iocs": [
+  {
+   "ioc": "www[.]main-salesforce[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-09T20:53:13",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022363/"
+  },
+  {
+   "ioc": "physioga[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-09T20:36:31",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022362/"
+  },
   {
    "ioc": "clientservices12[.]cozyloft[.]cc",
    "type": "domain",
@@ -11663,35 +11701,81 @@
     "Loader"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2022165/"
-  },
-  {
-   "ioc": "166eae2e6a49e8d0e80e3c002dd33adc431174b09056611f2bb2f4761d4e1884",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T11:57:50",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022164/"
-  },
-  {
-   "ioc": "b5721421799b7ffc425fbb769d85e55159803d90d0b1370b8b7a3ea0abd4e110",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T11:57:49",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022163/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://112[.]84[.]20[.]87:42981/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-09T20:53:06",
+   "link": "https://urlhaus.abuse.ch/url/4062173/"
+  },
+  {
+   "ioc": "hxxp://171[.]213[.]231[.]188:47223/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T20:51:30",
+   "link": "https://urlhaus.abuse.ch/url/4062172/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/dolunayozel/cs2-aimbot-wallhack-multitool-esp/releases/download/v2[.]9[.]9-beta[.]1/SoftMicro[.]Drapes[.]v2[.]9[.]9-beta[.]1[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-09T20:48:06",
+   "link": "https://urlhaus.abuse.ch/url/4062171/"
+  },
+  {
+   "ioc": "hxxp://182[.]117[.]14[.]169:40368/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T20:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4062170/"
+  },
+  {
+   "ioc": "hxxp://27[.]44[.]144[.]125:43902/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T20:32:09",
+   "link": "https://urlhaus.abuse.ch/url/4062169/"
+  },
+  {
+   "ioc": "hxxp://222[.]142[.]247[.]161:49790/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T20:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062168/"
+  },
+  {
+   "ioc": "hxxp://78[.]25[.]143[.]77:54105/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T20:32:04",
+   "link": "https://urlhaus.abuse.ch/url/4062167/"
+  },
   {
    "ioc": "hxxp://78[.]25[.]143[.]77:54105/i",
    "host_it": false,
@@ -13242,86 +13326,6 @@
    "tags": [],
    "date": "2026-11-09T15:02:06",
    "link": "https://urlhaus.abuse.ch/url/4062024/"
-  },
-  {
-   "ioc": "hxxp://197[.]232[.]45[.]36:43016/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T15:02:05",
-   "link": "https://urlhaus.abuse.ch/url/4062023/"
-  },
-  {
-   "ioc": "hxxp://180[.]244[.]241[.]243:60502/i",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-09T14:59:13",
-   "link": "https://urlhaus.abuse.ch/url/4062022/"
-  },
-  {
-   "ioc": "hxxp://180[.]244[.]241[.]243:60502/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-09T14:54:17",
-   "link": "https://urlhaus.abuse.ch/url/4062021/"
-  },
-  {
-   "ioc": "hxxp://222[.]140[.]158[.]27:52535/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf"
-   ],
-   "date": "2026-11-09T14:50:10",
-   "link": "https://urlhaus.abuse.ch/url/4062020/"
-  },
-  {
-   "ioc": "hxxp://112[.]248[.]109[.]46:42653/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T14:47:26",
-   "link": "https://urlhaus.abuse.ch/url/4062019/"
-  },
-  {
-   "ioc": "hxxp://110[.]138[.]131[.]23:35435/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T14:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4062018/"
-  },
-  {
-   "ioc": "hxxp://42[.]225[.]203[.]238:53301/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-09T14:46:10",
-   "link": "https://urlhaus.abuse.ch/url/4062017/"
   }
  ],
  "malware_top": [
@@ -13343,11 +13347,11 @@
   },
   {
    "name": "IClickFix",
-   "count": 55
+   "count": 56
   },
   {
    "name": "ClearFake",
-   "count": 53
+   "count": 54
   },
   {
    "name": "Vidar",
@@ -13462,25 +13466,25 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.35,
+    "value": 57.41,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.56,
+    "value": 7.57,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.09,
+    "value": 3.1,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.92,
+    "value": 2.93,
     "rank": 4
    },
    {
@@ -13492,7 +13496,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.25,
+    "value": 2.26,
     "rank": 6
    },
    {
@@ -13504,31 +13508,31 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.07,
+    "value": 2.06,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.22,
+    "value": 1.23,
     "rank": 9
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.09,
+    "value": 1.04,
     "rank": 10
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.0,
+    "value": 1.01,
     "rank": 11
    },
    {
     "code": "BR",
     "name": "Brazil",
-    "value": 0.98,
+    "value": 0.99,
     "rank": 12
    }
   ],
@@ -13536,13 +13540,13 @@
    "code": "IT",
    "name": "Italy",
    "value": 0.15,
-   "rank": 43
+   "rank": 42
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.76,
+    "value": 55.75,
     "rank": 1
    },
    {
@@ -13554,7 +13558,7 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.05,
+    "value": 3.06,
     "rank": 3
    },
    {
@@ -13590,13 +13594,13 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.47,
+    "value": 1.48,
     "rank": 9
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.28,
+    "value": 1.27,
     "rank": 10
    },
    {
