@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-09T23:30:56Z",
+ "updated": "2026-11-10T00:01:09Z",
  "news": [
+  {
+   "id": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+   "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+   "link": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+   "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]",
+   "source": "BleepingComputer",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-09T23:52:12Z",
+   "actors": [
+    "BYOD"
+   ],
+   "threat": true,
+   "highlight": false
+  },
   {
    "id": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
    "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
@@ -8490,16 +8505,6 @@
    "last": "2026-11-08T19:27:02"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
@@ -8523,6 +8528,16 @@
    "name": "APT28",
    "type": "apt",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -8590,6 +8605,16 @@
    "last": "2026-11-09T11:45:38"
   },
   {
+   "name": "BYOD",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 1,
+   "claims": 4,
+   "claims_it": 0,
+   "last": "2026-11-09T23:52:12Z"
+  },
+  {
    "name": "Z-Pentest",
    "type": "hacktivist",
    "country": "RU",
@@ -8648,16 +8673,6 @@
    "claims": 5,
    "claims_it": 0,
    "last": "2026-11-09T09:07:48"
-  },
-  {
-   "name": "BYOD",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 4,
-   "claims_it": 0,
-   "last": "2026-11-09T16:50:49"
   },
   {
    "name": "audit team",
@@ -9142,6 +9157,19 @@
  },
  "known_actors": 1509,
  "iocs": [
+  {
+   "ioc": "3b3ee6153cde57050d03983b713d4f2e9a2dd4837a4b1edde1cef320114bf5e7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-09T23:57:52",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2022390/"
+  },
   {
    "ioc": "q[.]dog69[.]net",
    "type": "domain",
@@ -11700,63 +11728,84 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2022192/"
-  },
-  {
-   "ioc": "8398d0dfb2a42bd178316461e3f0f88f92c0285c26f4cd0665776a2fb36b5603",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 85,
-   "date": "2026-11-09T12:57:58",
-   "tags": [
-    "elf",
-    "Loader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2022191/"
   }
  ],
  "urlhaus": [
   {
-   "ioc": "hxxps://github[.]com/TechnicianEncoder/HApP/releases/download/1[.]15[.]4/happ[.]zip",
+   "ioc": "hxxp://182[.]116[.]53[.]191:42468/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [
-    "github",
-    "zapret",
-    "zip"
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
    ],
-   "date": "2026-11-09T23:30:42",
-   "link": "https://urlhaus.abuse.ch/url/4062261/"
+   "date": "2026-11-10T00:00:13",
+   "link": "https://urlhaus.abuse.ch/url/4062269/"
   },
   {
-   "ioc": "hxxps://github[.]com/MetalMindTier/zaPret-DIScOrd_YOUTUbe-githUb/releases/download/1[.]11[.]0/zapret-discord-youtube[.]zip",
+   "ioc": "hxxp://170[.]84[.]133[.]234:45593/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [
-    "github",
-    "zapret",
-    "zip"
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
    ],
-   "date": "2026-11-09T23:30:42",
-   "link": "https://urlhaus.abuse.ch/url/4062260/"
+   "date": "2026-11-09T23:45:07",
+   "link": "https://urlhaus.abuse.ch/url/4062268/"
   },
   {
-   "ioc": "hxxps://github[.]com/MetalMindTier/yOuTubE-ZAPReT/releases/download/1[.]10[.]7/zapret-youtube[.]zip",
+   "ioc": "hxxp://123[.]5[.]15[.]189:59054/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-09T23:30:42",
-   "link": "https://urlhaus.abuse.ch/url/4062259/"
+   "tags": [],
+   "date": "2026-11-09T23:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062263/"
   },
   {
-   "ioc": "hxxps://github[.]com/TieFollowerShears/haPP-vPn/releases/download/1[.]15[.]2/happ[.]zip",
+   "ioc": "hxxp://123[.]5[.]15[.]189:59054/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T23:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062264/"
+  },
+  {
+   "ioc": "hxxp://27[.]15[.]60[.]218:48293/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T23:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062265/"
+  },
+  {
+   "ioc": "hxxp://42[.]55[.]11[.]208:57849/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T23:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062266/"
+  },
+  {
+   "ioc": "hxxp://105[.]225[.]130[.]179:48791/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T23:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4062267/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/rivetsalamanderband/yOUtUbE_zAPrET/releases/download/1[.]10[.]7/zapret-youtube[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -11765,8 +11814,8 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:30:42",
-   "link": "https://urlhaus.abuse.ch/url/4062258/"
+   "date": "2026-11-09T23:31:25",
+   "link": "https://urlhaus.abuse.ch/url/4062262/"
   },
   {
    "ioc": "hxxps://github[.]com/MetalMindTier/ZAPreT_youtUbe/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
@@ -11782,7 +11831,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062257/"
   },
   {
-   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/happ-PRoXY/releases/download/1[.]15[.]3/happ[.]zip",
+   "ioc": "hxxps://github[.]com/TieFollowerShears/haPP-vPn/releases/download/1[.]15[.]2/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -11791,11 +11840,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:30:36",
-   "link": "https://urlhaus.abuse.ch/url/4062256/"
+   "date": "2026-11-09T23:30:42",
+   "link": "https://urlhaus.abuse.ch/url/4062258/"
   },
   {
-   "ioc": "hxxps://github[.]com/WeldInspectionTruss/ZApRet-DiScOrD-yoUtUBE-GIthuB/releases/download/1[.]11[.]2/zapret-discord-youtube[.]zip",
+   "ioc": "hxxps://github[.]com/MetalMindTier/yOuTubE-ZAPReT/releases/download/1[.]10[.]7/zapret-youtube[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -11804,11 +11853,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:30:36",
-   "link": "https://urlhaus.abuse.ch/url/4062255/"
+   "date": "2026-11-09T23:30:42",
+   "link": "https://urlhaus.abuse.ch/url/4062259/"
   },
   {
-   "ioc": "hxxps://github[.]com/UltraShogun33/zapRet-DiscoRd-YOutUbE_Github/releases/download/1[.]10[.]9/zapret-discord-youtube[.]zip",
+   "ioc": "hxxps://github[.]com/MetalMindTier/zaPret-DIScOrd_YOUTUbe-githUb/releases/download/1[.]11[.]0/zapret-discord-youtube[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -11817,8 +11866,21 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:30:36",
-   "link": "https://urlhaus.abuse.ch/url/4062254/"
+   "date": "2026-11-09T23:30:42",
+   "link": "https://urlhaus.abuse.ch/url/4062260/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/TechnicianEncoder/HApP/releases/download/1[.]15[.]4/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:30:42",
+   "link": "https://urlhaus.abuse.ch/url/4062261/"
   },
   {
    "ioc": "hxxps://github[.]com/TieFollowerShears/Happ_PlUS/releases/download/1[.]16[.]3/happ[.]zip",
@@ -11834,6 +11896,45 @@
    "link": "https://urlhaus.abuse.ch/url/4062253/"
   },
   {
+   "ioc": "hxxps://github[.]com/UltraShogun33/zapRet-DiscoRd-YOutUbE_Github/releases/download/1[.]10[.]9/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:30:36",
+   "link": "https://urlhaus.abuse.ch/url/4062254/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/WeldInspectionTruss/ZApRet-DiScOrD-yoUtUBE-GIthuB/releases/download/1[.]11[.]2/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:30:36",
+   "link": "https://urlhaus.abuse.ch/url/4062255/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/happ-PRoXY/releases/download/1[.]15[.]3/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:30:36",
+   "link": "https://urlhaus.abuse.ch/url/4062256/"
+  },
+  {
    "ioc": "hxxps://github[.]com/TechnicianEncoder/hAPp_winDowS/releases/download/1[.]11[.]9/happ[.]zip",
    "host_it": false,
    "status": "online",
@@ -11847,7 +11948,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062252/"
   },
   {
-   "ioc": "hxxps://github[.]com/Cycletruclaim/HAPp-WiNdoWs/releases/download/1[.]11[.]9/happ[.]zip",
+   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/HAPP-wINDoWS/releases/download/1[.]11[.]8/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -11857,7 +11958,7 @@
     "zip"
    ],
    "date": "2026-11-09T23:30:12",
-   "link": "https://urlhaus.abuse.ch/url/4062251/"
+   "link": "https://urlhaus.abuse.ch/url/4062249/"
   },
   {
    "ioc": "hxxps://github[.]com/Brilliancekatackle96/ZApRet-yOUTuBE/releases/download/1[.]11[.]0/zapret-discord-youtube[.]zip",
@@ -11873,7 +11974,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062250/"
   },
   {
-   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/HAPP-wINDoWS/releases/download/1[.]11[.]8/happ[.]zip",
+   "ioc": "hxxps://github[.]com/Cycletruclaim/HAPp-WiNdoWs/releases/download/1[.]11[.]9/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -11883,7 +11984,7 @@
     "zip"
    ],
    "date": "2026-11-09T23:30:12",
-   "link": "https://urlhaus.abuse.ch/url/4062249/"
+   "link": "https://urlhaus.abuse.ch/url/4062251/"
   },
   {
    "ioc": "hxxps://github[.]com/rivetsalamanderband/ZAprET-yoUTuBe-TELegrAm-diScORD/releases/download/1[.]10[.]9/zapret-discord-youtube[.]zip",
@@ -11912,19 +12013,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062247/"
   },
   {
-   "ioc": "hxxps://github[.]com/Brilliancekatackle96/zaPreT-yOutUbe-TELegrAm-DIsCorD/releases/download/1[.]11[.]0/zapret-discord-youtube[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-09T23:29:58",
-   "link": "https://urlhaus.abuse.ch/url/4062246/"
-  },
-  {
    "ioc": "hxxps://github[.]com/Cycletruclaim/hAPP-PLUs/releases/download/1[.]16[.]5/happ[.]zip",
    "host_it": false,
    "status": "online",
@@ -11936,6 +12024,19 @@
    ],
    "date": "2026-11-09T23:29:58",
    "link": "https://urlhaus.abuse.ch/url/4062245/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Brilliancekatackle96/zaPreT-yOutUbe-TELegrAm-DIsCorD/releases/download/1[.]11[.]0/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:29:58",
+   "link": "https://urlhaus.abuse.ch/url/4062246/"
   },
   {
    "ioc": "hxxps://github[.]com/WeldInspectionTruss/zapREt_yOutuBe/releases/download/1[.]11[.]1/zapret-discord-youtube[.]zip",
@@ -11951,19 +12052,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062244/"
   },
   {
-   "ioc": "hxxps://github[.]com/TieFollowerShears/haPP/releases/download/1[.]15[.]3/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-09T23:29:29",
-   "link": "https://urlhaus.abuse.ch/url/4062243/"
-  },
-  {
    "ioc": "hxxps://github[.]com/rivetsalamanderband/ZApRet-YOuTUbE/releases/download/1[.]10[.]9/zapret-discord-youtube[.]zip",
    "host_it": false,
    "status": "online",
@@ -11977,7 +12065,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062242/"
   },
   {
-   "ioc": "hxxps://github[.]com/Cycletruclaim/haPp_PrOXY/releases/download/1[.]15[.]5/happ[.]zip",
+   "ioc": "hxxps://github[.]com/TieFollowerShears/haPP/releases/download/1[.]15[.]3/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -11986,34 +12074,8 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:28",
-   "link": "https://urlhaus.abuse.ch/url/4062241/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/rivetsalamanderband/ZApRet-disCorD-yOUtUbe-gITHuB/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-09T23:29:28",
-   "link": "https://urlhaus.abuse.ch/url/4062240/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/UltraShogun33/zaPrET-YOutUBE-TelegRAm-DiSCorD/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-09T23:29:28",
-   "link": "https://urlhaus.abuse.ch/url/4062239/"
+   "date": "2026-11-09T23:29:29",
+   "link": "https://urlhaus.abuse.ch/url/4062243/"
   },
   {
    "ioc": "hxxps://github[.]com/TechnicianEncoder/HAPp-proXY/releases/download/1[.]15[.]4/happ[.]zip",
@@ -12029,7 +12091,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062238/"
   },
   {
-   "ioc": "hxxps://github[.]com/TieFollowerShears/HaPP-wiNDOWs/releases/download/1[.]11[.]8/happ[.]zip",
+   "ioc": "hxxps://github[.]com/UltraShogun33/zaPrET-YOutUBE-TelegRAm-DiSCorD/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12038,11 +12100,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:27",
-   "link": "https://urlhaus.abuse.ch/url/4062237/"
+   "date": "2026-11-09T23:29:28",
+   "link": "https://urlhaus.abuse.ch/url/4062239/"
   },
   {
-   "ioc": "hxxps://github[.]com/UltraShogun33/YOUtuBE_zapRET/releases/download/1[.]10[.]7/zapret-youtube[.]zip",
+   "ioc": "hxxps://github[.]com/rivetsalamanderband/ZApRet-disCorD-yOUtUbe-gITHuB/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12051,11 +12113,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:27",
-   "link": "https://urlhaus.abuse.ch/url/4062236/"
+   "date": "2026-11-09T23:29:28",
+   "link": "https://urlhaus.abuse.ch/url/4062240/"
   },
   {
-   "ioc": "hxxps://github[.]com/Cycletruclaim/haPp/releases/download/1[.]15[.]5/happ[.]zip",
+   "ioc": "hxxps://github[.]com/Cycletruclaim/haPp_PrOXY/releases/download/1[.]15[.]5/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12064,34 +12126,8 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:27",
-   "link": "https://urlhaus.abuse.ch/url/4062235/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/MetalMindTier/ZAPrET-youTUBE-TELeGraM-DIsCOrD/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-09T23:29:27",
-   "link": "https://urlhaus.abuse.ch/url/4062234/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/TechnicianEncoder/HapP_VpN/releases/download/1[.]15[.]3/happ[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret",
-    "zip"
-   ],
-   "date": "2026-11-09T23:29:27",
-   "link": "https://urlhaus.abuse.ch/url/4062233/"
+   "date": "2026-11-09T23:29:28",
+   "link": "https://urlhaus.abuse.ch/url/4062241/"
   },
   {
    "ioc": "hxxps://github[.]com/Brilliancekatackle96/ZaPrEt-DiSCord-YoutubE-gIthUb/releases/download/1[.]11[.]1/zapret-discord-youtube[.]zip",
@@ -12107,7 +12143,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062232/"
   },
   {
-   "ioc": "hxxps://github[.]com/TieFollowerShears/HAPP-pRoxy/releases/download/1[.]15[.]3/happ[.]zip",
+   "ioc": "hxxps://github[.]com/TechnicianEncoder/HapP_VpN/releases/download/1[.]15[.]3/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12116,11 +12152,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:26",
-   "link": "https://urlhaus.abuse.ch/url/4062231/"
+   "date": "2026-11-09T23:29:27",
+   "link": "https://urlhaus.abuse.ch/url/4062233/"
   },
   {
-   "ioc": "hxxps://github[.]com/UltraShogun33/ZapRet-YOUtubE/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
+   "ioc": "hxxps://github[.]com/MetalMindTier/ZAPrET-youTUBE-TELeGraM-DIsCOrD/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12129,11 +12165,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:26",
-   "link": "https://urlhaus.abuse.ch/url/4062230/"
+   "date": "2026-11-09T23:29:27",
+   "link": "https://urlhaus.abuse.ch/url/4062234/"
   },
   {
-   "ioc": "hxxps://github[.]com/TechnicianEncoder/HApP-pLus/releases/download/1[.]16[.]4/happ[.]zip",
+   "ioc": "hxxps://github[.]com/Cycletruclaim/haPp/releases/download/1[.]15[.]5/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12142,11 +12178,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:26",
-   "link": "https://urlhaus.abuse.ch/url/4062229/"
+   "date": "2026-11-09T23:29:27",
+   "link": "https://urlhaus.abuse.ch/url/4062235/"
   },
   {
-   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/HapP/releases/download/1[.]15[.]3/happ[.]zip",
+   "ioc": "hxxps://github[.]com/UltraShogun33/YOUtuBE_zapRET/releases/download/1[.]10[.]7/zapret-youtube[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12155,11 +12191,11 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:26",
-   "link": "https://urlhaus.abuse.ch/url/4062228/"
+   "date": "2026-11-09T23:29:27",
+   "link": "https://urlhaus.abuse.ch/url/4062236/"
   },
   {
-   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/haPp_vpN/releases/download/1[.]15[.]2/happ[.]zip",
+   "ioc": "hxxps://github[.]com/TieFollowerShears/HaPP-wiNDOWs/releases/download/1[.]11[.]8/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12168,8 +12204,8 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:26",
-   "link": "https://urlhaus.abuse.ch/url/4062227/"
+   "date": "2026-11-09T23:29:27",
+   "link": "https://urlhaus.abuse.ch/url/4062237/"
   },
   {
    "ioc": "hxxps://github[.]com/Cycletruclaim/happ-vPn/releases/download/1[.]15[.]4/happ[.]zip",
@@ -12185,7 +12221,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062226/"
   },
   {
-   "ioc": "hxxps://github[.]com/WeldInspectionTruss/yoUtUbE-ZaPRET/releases/download/1[.]10[.]9/zapret-youtube[.]zip",
+   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/haPp_vpN/releases/download/1[.]15[.]2/happ[.]zip",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -12194,8 +12230,60 @@
     "zapret",
     "zip"
    ],
-   "date": "2026-11-09T23:29:25",
-   "link": "https://urlhaus.abuse.ch/url/4062225/"
+   "date": "2026-11-09T23:29:26",
+   "link": "https://urlhaus.abuse.ch/url/4062227/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/MegaCanaryOscillator/HapP/releases/download/1[.]15[.]3/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:29:26",
+   "link": "https://urlhaus.abuse.ch/url/4062228/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/TechnicianEncoder/HApP-pLus/releases/download/1[.]16[.]4/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:29:26",
+   "link": "https://urlhaus.abuse.ch/url/4062229/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/UltraShogun33/ZapRet-YOUtubE/releases/download/1[.]10[.]8/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:29:26",
+   "link": "https://urlhaus.abuse.ch/url/4062230/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/TieFollowerShears/HAPP-pRoxy/releases/download/1[.]15[.]3/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:29:26",
+   "link": "https://urlhaus.abuse.ch/url/4062231/"
   },
   {
    "ioc": "hxxps://github[.]com/MegaCanaryOscillator/HApp_PLuS/releases/download/1[.]16[.]4/happ[.]zip",
@@ -12209,6 +12297,19 @@
    ],
    "date": "2026-11-09T23:29:25",
    "link": "https://urlhaus.abuse.ch/url/4062224/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/WeldInspectionTruss/yoUtUbE-ZaPRET/releases/download/1[.]10[.]9/zapret-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-09T23:29:25",
+   "link": "https://urlhaus.abuse.ch/url/4062225/"
   },
   {
    "ioc": "hxxps://github[.]com/WeldInspectionTruss/zapreT_YouTuBe-TEleGRAm-diScord/releases/download/1[.]11[.]1/zapret-discord-youtube[.]zip",
@@ -12238,15 +12339,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062222/"
   },
   {
-   "ioc": "hxxp://115[.]51[.]111[.]243:34111/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T23:17:07",
-   "link": "https://urlhaus.abuse.ch/url/4062221/"
-  },
-  {
    "ioc": "hxxp://103[.]249[.]199[.]4:40220/i",
    "host_it": false,
    "status": "online",
@@ -12254,6 +12346,15 @@
    "tags": [],
    "date": "2026-11-09T23:17:07",
    "link": "https://urlhaus.abuse.ch/url/4062220/"
+  },
+  {
+   "ioc": "hxxp://115[.]51[.]111[.]243:34111/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T23:17:07",
+   "link": "https://urlhaus.abuse.ch/url/4062221/"
   },
   {
    "ioc": "hxxp://219[.]155[.]208[.]111:36233/i",
@@ -12335,15 +12436,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062214/"
   },
   {
-   "ioc": "hxxp://27[.]215[.]86[.]174:58221/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T23:02:06",
-   "link": "https://urlhaus.abuse.ch/url/4062213/"
-  },
-  {
    "ioc": "hxxp://219[.]155[.]208[.]111:36233/bin[.]sh",
    "host_it": false,
    "status": "online",
@@ -12351,6 +12443,15 @@
    "tags": [],
    "date": "2026-11-09T23:02:06",
    "link": "https://urlhaus.abuse.ch/url/4062212/"
+  },
+  {
+   "ioc": "hxxp://27[.]215[.]86[.]174:58221/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T23:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4062213/"
   },
   {
    "ioc": "hxxp://77[.]239[.]124[.]12/mpsl",
@@ -12365,13 +12466,13 @@
    "link": "https://urlhaus.abuse.ch/url/4062211/"
   },
   {
-   "ioc": "hxxp://115[.]51[.]111[.]243:34111/bin[.]sh",
+   "ioc": "hxxp://103[.]249[.]199[.]4:40220/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T22:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4062210/"
+   "link": "https://urlhaus.abuse.ch/url/4062208/"
   },
   {
    "ioc": "hxxp://182[.]113[.]26[.]148:57204/i",
@@ -12383,13 +12484,13 @@
    "link": "https://urlhaus.abuse.ch/url/4062209/"
   },
   {
-   "ioc": "hxxp://103[.]249[.]199[.]4:40220/bin[.]sh",
+   "ioc": "hxxp://115[.]51[.]111[.]243:34111/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T22:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4062208/"
+   "link": "https://urlhaus.abuse.ch/url/4062210/"
   },
   {
    "ioc": "hxxp://182[.]120[.]92[.]122:55014/i",
@@ -12415,22 +12516,13 @@
    "link": "https://urlhaus.abuse.ch/url/4062206/"
   },
   {
-   "ioc": "hxxp://115[.]55[.]86[.]73:46968/i",
+   "ioc": "hxxp://36[.]152[.]102[.]46:11352/i",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T22:32:07",
-   "link": "https://urlhaus.abuse.ch/url/4062205/"
-  },
-  {
-   "ioc": "hxxp://42[.]235[.]172[.]2:40999/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T22:32:07",
-   "link": "https://urlhaus.abuse.ch/url/4062204/"
+   "link": "https://urlhaus.abuse.ch/url/4062202/"
   },
   {
    "ioc": "hxxp://27[.]44[.]146[.]37:50750/i",
@@ -12447,13 +12539,22 @@
    "link": "https://urlhaus.abuse.ch/url/4062203/"
   },
   {
-   "ioc": "hxxp://36[.]152[.]102[.]46:11352/i",
+   "ioc": "hxxp://42[.]235[.]172[.]2:40999/i",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T22:32:07",
-   "link": "https://urlhaus.abuse.ch/url/4062202/"
+   "link": "https://urlhaus.abuse.ch/url/4062204/"
+  },
+  {
+   "ioc": "hxxp://115[.]55[.]86[.]73:46968/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T22:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4062205/"
   },
   {
    "ioc": "hxxp://177[.]84[.]28[.]146:35575/bin[.]sh",
@@ -12479,22 +12580,13 @@
    "link": "https://urlhaus.abuse.ch/url/4062200/"
   },
   {
-   "ioc": "hxxp://123[.]12[.]156[.]175:56093/bin[.]sh",
+   "ioc": "hxxp://27[.]211[.]200[.]123:51735/i",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T22:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4062199/"
-  },
-  {
-   "ioc": "hxxp://123[.]14[.]25[.]65:60123/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T22:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4062198/"
+   "link": "https://urlhaus.abuse.ch/url/4062196/"
   },
   {
    "ioc": "hxxp://103[.]125[.]174[.]116:53287/bin[.]sh",
@@ -12506,13 +12598,22 @@
    "link": "https://urlhaus.abuse.ch/url/4062197/"
   },
   {
-   "ioc": "hxxp://27[.]211[.]200[.]123:51735/i",
+   "ioc": "hxxp://123[.]14[.]25[.]65:60123/i",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T22:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4062196/"
+   "link": "https://urlhaus.abuse.ch/url/4062198/"
+  },
+  {
+   "ioc": "hxxp://123[.]12[.]156[.]175:56093/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T22:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4062199/"
   },
   {
    "ioc": "hxxp://123[.]12[.]195[.]198:49537/i",
@@ -12538,15 +12639,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062194/"
   },
   {
-   "ioc": "hxxp://115[.]55[.]86[.]73:46968/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T22:02:06",
-   "link": "https://urlhaus.abuse.ch/url/4062193/"
-  },
-  {
    "ioc": "hxxp://123[.]135[.]157[.]87:41262/i",
    "host_it": false,
    "status": "online",
@@ -12554,6 +12646,15 @@
    "tags": [],
    "date": "2026-11-09T22:02:06",
    "link": "https://urlhaus.abuse.ch/url/4062192/"
+  },
+  {
+   "ioc": "hxxp://115[.]55[.]86[.]73:46968/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T22:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4062193/"
   },
   {
    "ioc": "hxxp://42[.]230[.]216[.]25:52535/i",
@@ -12576,15 +12677,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062190/"
   },
   {
-   "ioc": "hxxp://123[.]135[.]157[.]87:41262/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T21:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4062189/"
-  },
-  {
    "ioc": "hxxp://123[.]14[.]25[.]65:60123/bin[.]sh",
    "host_it": false,
    "status": "online",
@@ -12592,6 +12684,15 @@
    "tags": [],
    "date": "2026-11-09T21:47:07",
    "link": "https://urlhaus.abuse.ch/url/4062188/"
+  },
+  {
+   "ioc": "hxxp://123[.]135[.]157[.]87:41262/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T21:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4062189/"
   },
   {
    "ioc": "hxxp://27[.]215[.]179[.]197:49255/i",
@@ -12637,7 +12738,7 @@
   {
    "ioc": "hxxp://183[.]128[.]108[.]47:33281/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "32-bit",
@@ -12671,15 +12772,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062181/"
   },
   {
-   "ioc": "hxxp://112[.]84[.]20[.]87:42981/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T21:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4062180/"
-  },
-  {
    "ioc": "hxxp://182[.]127[.]177[.]127:44710/i",
    "host_it": false,
    "status": "online",
@@ -12687,6 +12779,15 @@
    "tags": [],
    "date": "2026-11-09T21:17:06",
    "link": "https://urlhaus.abuse.ch/url/4062179/"
+  },
+  {
+   "ioc": "hxxp://112[.]84[.]20[.]87:42981/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T21:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4062180/"
   },
   {
    "ioc": "hxxp://27[.]215[.]179[.]197:49255/bin[.]sh",
@@ -12698,15 +12799,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062178/"
   },
   {
-   "ioc": "hxxp://115[.]57[.]237[.]143:52308/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T21:02:05",
-   "link": "https://urlhaus.abuse.ch/url/4062177/"
-  },
-  {
    "ioc": "hxxp://182[.]117[.]14[.]169:40368/i",
    "host_it": false,
    "status": "online",
@@ -12714,6 +12806,15 @@
    "tags": [],
    "date": "2026-11-09T21:02:05",
    "link": "https://urlhaus.abuse.ch/url/4062176/"
+  },
+  {
+   "ioc": "hxxp://115[.]57[.]237[.]143:52308/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T21:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4062177/"
   },
   {
    "ioc": "hxxps://github[.]com/iampriam-dev/team-formation/releases/download/v1[.]0/Software[.]zip",
@@ -12868,15 +12969,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062162/"
   },
   {
-   "ioc": "hxxp://222[.]138[.]116[.]38:60835/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T19:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4062161/"
-  },
-  {
    "ioc": "hxxp://222[.]137[.]250[.]167:33379/i",
    "host_it": false,
    "status": "online",
@@ -12884,6 +12976,15 @@
    "tags": [],
    "date": "2026-11-09T19:47:07",
    "link": "https://urlhaus.abuse.ch/url/4062160/"
+  },
+  {
+   "ioc": "hxxp://222[.]138[.]116[.]38:60835/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T19:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4062161/"
   },
   {
    "ioc": "hxxp://60[.]16[.]190[.]185:36548/bin[.]sh",
@@ -12900,15 +13001,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062159/"
   },
   {
-   "ioc": "hxxp://115[.]216[.]118[.]23:44603/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T19:32:07",
-   "link": "https://urlhaus.abuse.ch/url/4062158/"
-  },
-  {
    "ioc": "hxxp://222[.]142[.]249[.]250:57351/i",
    "host_it": false,
    "status": "online",
@@ -12916,6 +13008,15 @@
    "tags": [],
    "date": "2026-11-09T19:32:07",
    "link": "https://urlhaus.abuse.ch/url/4062157/"
+  },
+  {
+   "ioc": "hxxp://115[.]216[.]118[.]23:44603/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T19:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4062158/"
   },
   {
    "ioc": "hxxp://115[.]57[.]237[.]143:52308/bin[.]sh",
@@ -12939,15 +13040,6 @@
    "link": "https://urlhaus.abuse.ch/url/4062155/"
   },
   {
-   "ioc": "hxxp://222[.]138[.]116[.]38:60835/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T19:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4062154/"
-  },
-  {
    "ioc": "hxxp://42[.]7[.]194[.]17:33361/i",
    "host_it": false,
    "status": "online",
@@ -12955,6 +13047,15 @@
    "tags": [],
    "date": "2026-11-09T19:17:06",
    "link": "https://urlhaus.abuse.ch/url/4062153/"
+  },
+  {
+   "ioc": "hxxp://222[.]138[.]116[.]38:60835/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-09T19:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4062154/"
   },
   {
    "ioc": "hxxp://115[.]216[.]118[.]23:44603/bin[.]sh",
@@ -13036,13 +13137,13 @@
    "link": "https://urlhaus.abuse.ch/url/4062145/"
   },
   {
-   "ioc": "hxxp://115[.]52[.]239[.]96:35155/bin[.]sh",
+   "ioc": "hxxp://115[.]49[.]6[.]230:38439/i",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T18:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4062144/"
+   "link": "https://urlhaus.abuse.ch/url/4062142/"
   },
   {
    "ioc": "hxxp://123[.]5[.]156[.]176:44906/bin[.]sh",
@@ -13054,13 +13155,13 @@
    "link": "https://urlhaus.abuse.ch/url/4062143/"
   },
   {
-   "ioc": "hxxp://115[.]49[.]6[.]230:38439/i",
+   "ioc": "hxxp://115[.]52[.]239[.]96:35155/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-09T18:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4062142/"
+   "link": "https://urlhaus.abuse.ch/url/4062144/"
   },
   {
    "ioc": "hxxp://110[.]186[.]229[.]97:44885/i",
@@ -13139,7 +13240,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062136/"
   },
   {
-   "ioc": "hxxps://github[.]com/Astralyoduct/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "ioc": "hxxps://github[.]com/EntranceCycle/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -13148,19 +13249,7 @@
     "SalatStealer"
    ],
    "date": "2026-11-09T18:20:16",
-   "link": "https://urlhaus.abuse.ch/url/4062135/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/MiniRollerPonder/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:16",
-   "link": "https://urlhaus.abuse.ch/url/4062134/"
+   "link": "https://urlhaus.abuse.ch/url/4062132/"
   },
   {
    "ioc": "hxxps://github[.]com/NoonFlowFurnace/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
@@ -13175,7 +13264,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062133/"
   },
   {
-   "ioc": "hxxps://github[.]com/EntranceCycle/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "ioc": "hxxps://github[.]com/MiniRollerPonder/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -13184,10 +13273,10 @@
     "SalatStealer"
    ],
    "date": "2026-11-09T18:20:16",
-   "link": "https://urlhaus.abuse.ch/url/4062132/"
+   "link": "https://urlhaus.abuse.ch/url/4062134/"
   },
   {
-   "ioc": "hxxps://github[.]com/ClutchRainMake16/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "ioc": "hxxps://github[.]com/Astralyoduct/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -13195,8 +13284,8 @@
     "github",
     "SalatStealer"
    ],
-   "date": "2026-11-09T18:20:14",
-   "link": "https://urlhaus.abuse.ch/url/4062131/"
+   "date": "2026-11-09T18:20:16",
+   "link": "https://urlhaus.abuse.ch/url/4062135/"
   },
   {
    "ioc": "hxxps://github[.]com/CatbirdTeach22/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
@@ -13211,7 +13300,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062130/"
   },
   {
-   "ioc": "hxxps://github[.]com/GravelSniper/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "ioc": "hxxps://github[.]com/ClutchRainMake16/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -13219,92 +13308,8 @@
     "github",
     "SalatStealer"
    ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062129/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/DigitalLoader/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062128/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/DigitalLoader/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062127/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/LinkMagpieAppreciate/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062126/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/CatbirdTeach22/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062125/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/LinkMagpieAppreciate/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062124/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/GravelSniper/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062123/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/NoonFlowFurnace/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T18:20:13",
-   "link": "https://urlhaus.abuse.ch/url/4062122/"
+   "date": "2026-11-09T18:20:14",
+   "link": "https://urlhaus.abuse.ch/url/4062131/"
   },
   {
    "ioc": "hxxps://github[.]com/ToneGrouseBarrow/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
@@ -13319,7 +13324,7 @@
    "link": "https://urlhaus.abuse.ch/url/4062121/"
   },
   {
-   "ioc": "hxxps://github[.]com/ClutchRainMake16/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "ioc": "hxxps://github[.]com/NoonFlowFurnace/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -13327,11 +13332,11 @@
     "github",
     "SalatStealer"
    ],
-   "date": "2026-11-09T18:20:12",
-   "link": "https://urlhaus.abuse.ch/url/4062120/"
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062122/"
   },
   {
-   "ioc": "hxxps://github[.]com/Phaseviconsider/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "ioc": "hxxps://github[.]com/GravelSniper/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
@@ -13339,8 +13344,80 @@
     "github",
     "SalatStealer"
    ],
-   "date": "2026-11-09T18:20:12",
-   "link": "https://urlhaus.abuse.ch/url/4062119/"
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062123/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/LinkMagpieAppreciate/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer"
+   ],
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062124/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/CatbirdTeach22/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer"
+   ],
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062125/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/LinkMagpieAppreciate/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer"
+   ],
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062126/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/DigitalLoader/ByeDPI-GUI-Windows/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer"
+   ],
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062127/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/DigitalLoader/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer"
+   ],
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062128/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/GravelSniper/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer"
+   ],
+   "date": "2026-11-09T18:20:13",
+   "link": "https://urlhaus.abuse.ch/url/4062129/"
   },
   {
    "ioc": "hxxps://github[.]com/Astralyoduct/ByeDPI-Manager-Pro/releases/download/1[.]0[.]0/ByeDPI[.]Manager[.]exe",
@@ -13353,79 +13430,12 @@
    ],
    "date": "2026-11-09T18:20:12",
    "link": "https://urlhaus.abuse.ch/url/4062118/"
-  },
-  {
-   "ioc": "hxxp://182[.]113[.]252[.]91:60642/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T18:17:07",
-   "link": "https://urlhaus.abuse.ch/url/4062117/"
-  },
-  {
-   "ioc": "hxxp://193[.]163[.]187[.]213:56518/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T18:17:05",
-   "link": "https://urlhaus.abuse.ch/url/4062116/"
-  },
-  {
-   "ioc": "hxxp://110[.]186[.]229[.]97:44885/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-09T18:02:07",
-   "link": "https://urlhaus.abuse.ch/url/4062115/"
-  },
-  {
-   "ioc": "hxxp://193[.]163[.]187[.]213:56518/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-09T18:02:05",
-   "link": "https://urlhaus.abuse.ch/url/4062114/"
-  },
-  {
-   "ioc": "hxxp://124[.]161[.]116[.]7:43527/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-09T18:01:09",
-   "link": "https://urlhaus.abuse.ch/url/4062113/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/rhythmoceanplan/v2raytun/refs/heads/main/v2raytun_windows[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-09T17:37:02",
-   "link": "https://urlhaus.abuse.ch/url/4062112/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 244
+   "count": 243
   },
   {
    "name": "SNOWLIGHT",
@@ -13436,16 +13446,16 @@
    "count": 76
   },
   {
-   "name": "ClearFake",
-   "count": 58
-  },
-  {
    "name": "AsyncRAT",
    "count": 58
   },
   {
-   "name": "Vidar",
+   "name": "ClearFake",
    "count": 56
+  },
+  {
+   "name": "Vidar",
+   "count": 53
   },
   {
    "name": "IClickFix",
@@ -13488,10 +13498,6 @@
    "count": 14
   },
   {
-   "name": "WARDENStealer",
-   "count": 13
-  },
-  {
    "name": "Remus",
    "count": 13
   },
@@ -13509,6 +13515,10 @@
   },
   {
    "name": "StrelaStealer",
+   "count": 7
+  },
+  {
+   "name": "RevStealer",
    "count": 7
   },
   {
@@ -13560,55 +13570,55 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.83,
+    "value": 56.63,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.49,
+    "value": 7.51,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.13,
+    "value": 3.12,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.8,
+    "value": 2.77,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.55,
+    "value": 2.58,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.23,
+    "value": 2.22,
     "rank": 6
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.12,
+    "value": 2.13,
     "rank": 7
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.06,
+    "value": 2.07,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.47,
+    "value": 1.55,
     "rank": 9
    },
    {
@@ -13620,13 +13630,13 @@
    {
     "code": "BR",
     "name": "Brazil",
-    "value": 0.99,
+    "value": 1.0,
     "rank": 11
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 0.99,
+    "value": 0.98,
     "rank": 12
    }
   ],
@@ -13640,13 +13650,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.78,
+    "value": 55.79,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.04,
+    "value": 7.02,
     "rank": 2
    },
    {
@@ -13688,7 +13698,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.49,
+    "value": 1.5,
     "rank": 9
    },
    {
