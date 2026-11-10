@@ -1,6 +1,19 @@
 {
- "updated": "2026-11-10T11:30:58Z",
+ "updated": "2026-11-10T12:01:12Z",
  "news": [
+  {
+   "id": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+   "title": "Beyond the Alert: The Case for Rich Network Data",
+   "link": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+   "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrup…",
+   "source": "The Hacker News",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-10T11:38:13Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
   {
    "id": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-farmasimplex",
    "title": "Rilevate vulnerabilità in Farmasimplex",
@@ -787,7 +800,7 @@
    "id": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-4",
    "title": "Risolte vulnerabilità in Craft CMS",
    "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-4",
-   "summary": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “critica” e 6 con gravità “alta”, in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di elude…",
+   "summary": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “critica” e 7 con gravità “alta”, in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tra queste si evidenzia la CVE-2026-123488 per la quale risulta disponibile un Proof of Concept (PoC) in …",
    "source": "CSIRT Italia (ACN)",
    "lang": "it",
    "type": "advisory",
@@ -8996,16 +9009,6 @@
    "last": "2026-11-08T19:27:02"
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Scattered Spider",
    "type": "criminal",
    "country": "",
@@ -9018,6 +9021,16 @@
   {
    "name": "APT28",
    "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -9648,6 +9661,71 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "863e5b14d0285fbad4453479bcb11c4b7a48c0e65302c601ce1328160701d434",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-10T11:58:00",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023004/"
+  },
+  {
+   "ioc": "fcdcdfea1f8741a0056ae1bfc76e59987be3d8a3fb29acae374405ab21afbe2c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-10T11:57:59",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023003/"
+  },
+  {
+   "ioc": "a17fcab2dcc924e11f8ab71d1ee41f8f5cfc72d911bbdc6e2cbaa4735add8bbd",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-10T11:57:58",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023002/"
+  },
+  {
+   "ioc": "20b85f57b96a67e171553026eb5126b484aa93725523d1fd05d9a68ba9759c0e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-10T11:57:57",
+   "tags": [
+    "Loader",
+    "macho"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023001/"
+  },
+  {
+   "ioc": "soporte5[.]jlmarketing[.]com[.]mx",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-10T11:57:44",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023000/"
+  },
   {
    "ioc": "172[.]238[.]100[.]177:443",
    "type": "ip:port",
@@ -12096,59 +12174,105 @@
    "date": "2026-11-10T06:49:24",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2022268/"
-  },
-  {
-   "ioc": "sei456456-62605[.]portmap[.]host",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "XWorm",
-   "confidence": 100,
-   "date": "2026-11-10T06:49:23",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2022269/"
-  },
-  {
-   "ioc": "bylzqj6tah[.]localto[.]net",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "XWorm",
-   "confidence": 100,
-   "date": "2026-11-10T06:49:23",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2022270/"
-  },
-  {
-   "ioc": "myname2026songs-43016[.]portmap[.]host",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "XWorm",
-   "confidence": 100,
-   "date": "2026-11-10T06:49:23",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2022271/"
-  },
-  {
-   "ioc": "myname2026songs-42488[.]portmap[.]host",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "XWorm",
-   "confidence": 100,
-   "date": "2026-11-10T06:49:22",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2022272/"
-  },
-  {
-   "ioc": "hxxp://www[.]topvizitka[.]cz/v6fd/",
-   "type": "url",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Formbook",
-   "confidence": 100,
-   "date": "2026-11-10T06:49:19",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2022207/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://182[.]117[.]71[.]73:59966/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "cowrie",
+    "elf",
+    "honeypot",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-10T11:59:11",
+   "link": "https://urlhaus.abuse.ch/url/4062614/"
+  },
+  {
+   "ioc": "hxxp://222[.]140[.]185[.]27:45116/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-10T11:59:09",
+   "link": "https://urlhaus.abuse.ch/url/4062613/"
+  },
+  {
+   "ioc": "hxxp://182[.]121[.]171[.]197:40525/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-10T11:59:07",
+   "link": "https://urlhaus.abuse.ch/url/4062612/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/HoDangDung/CapStone__Masterwork/refs/heads/main/momiology/CapStone__Masterwork[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-10T11:44:09",
+   "link": "https://urlhaus.abuse.ch/url/4062611/"
+  },
+  {
+   "ioc": "hxxp://42[.]243[.]228[.]150:37267/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-10T11:43:31",
+   "link": "https://urlhaus.abuse.ch/url/4062610/"
+  },
+  {
+   "ioc": "hxxp://81[.]163[.]99[.]129:47938/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-10T11:43:11",
+   "link": "https://urlhaus.abuse.ch/url/4062609/"
+  },
+  {
+   "ioc": "hxxp://42[.]237[.]50[.]50:35189/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-10T11:43:07",
+   "link": "https://urlhaus.abuse.ch/url/4062607/"
+  },
+  {
+   "ioc": "hxxp://119[.]165[.]155[.]246:57260/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-10T11:43:07",
+   "link": "https://urlhaus.abuse.ch/url/4062608/"
+  },
+  {
+   "ioc": "hxxp://103[.]172[.]186[.]177:48522/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-10T11:43:06",
+   "link": "https://urlhaus.abuse.ch/url/4062606/"
+  },
   {
    "ioc": "hxxps://raw[.]githubusercontent[.]com/HoDangDung/BrawhallaToolkitX/refs/heads/main/tenodynia/BrawhallaToolkitX[.]zip",
    "host_it": false,
@@ -13878,122 +14002,16 @@
    ],
    "date": "2026-11-10T08:25:09",
    "link": "https://urlhaus.abuse.ch/url/4062465/"
-  },
-  {
-   "ioc": "hxxp://125[.]24[.]169[.]135:49627/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-10T08:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4062464/"
-  },
-  {
-   "ioc": "hxxp://105[.]184[.]52[.]193:33857/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-10T08:16:06",
-   "link": "https://urlhaus.abuse.ch/url/4062463/"
-  },
-  {
-   "ioc": "hxxp://120[.]28[.]218[.]170:47254/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-10T08:13:11",
-   "link": "https://urlhaus.abuse.ch/url/4062462/"
-  },
-  {
-   "ioc": "hxxp://210[.]208[.]104[.]156:57344/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-10T08:08:16",
-   "link": "https://urlhaus.abuse.ch/url/4062461/"
-  },
-  {
-   "ioc": "hxxps://softshare[.]eeriiootw[.]com/d/canmtdillqqtmo",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "dll-sideloading",
-    "iso",
-    "Taiwan",
-    "zip"
-   ],
-   "date": "2026-11-10T08:08:05",
-   "link": "https://urlhaus.abuse.ch/url/4062460/"
-  },
-  {
-   "ioc": "hxxp://36[.]70[.]78[.]147:34938/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-10T08:02:31",
-   "link": "https://urlhaus.abuse.ch/url/4062459/"
-  },
-  {
-   "ioc": "hxxp://124[.]129[.]163[.]79:38543/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-10T08:02:08",
-   "link": "https://urlhaus.abuse.ch/url/4062458/"
-  },
-  {
-   "ioc": "hxxps://files[.]catbox[.]moe/4d2k4e[.]js",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "rat",
-    "RemcosRAT"
-   ],
-   "date": "2026-11-10T08:01:39",
-   "link": "https://urlhaus.abuse.ch/url/4062457/"
-  },
-  {
-   "ioc": "hxxps://drive[.]google[.]com/uc?export=download&id=1iinDedlLD51JDRt3P1WhdWj-eC3PkRK1",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "GuLoader"
-   ],
-   "date": "2026-11-10T08:01:07",
-   "link": "https://urlhaus.abuse.ch/url/4062456/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 165
+   "count": 166
   },
   {
    "name": "Unknown Loader",
-   "count": 99
+   "count": 96
   },
   {
    "name": "ClearFake",
@@ -14017,7 +14035,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 31
+   "count": 30
   },
   {
    "name": "XWorm",
@@ -14048,7 +14066,7 @@
    "count": 10
   },
   {
-   "name": "StrelaStealer",
+   "name": "PureRAT",
    "count": 8
   },
   {
@@ -14068,8 +14086,8 @@
    "count": 7
   },
   {
-   "name": "PureRAT",
-   "count": 6
+   "name": "StrelaStealer",
+   "count": 7
   },
   {
    "name": "Grandoreiro",
@@ -14124,19 +14142,19 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.92,
+    "value": 54.83,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.26,
+    "value": 7.22,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.19,
+    "value": 3.2,
     "rank": 3
    },
    {
@@ -14148,13 +14166,13 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 2.32,
+    "value": 2.38,
     "rank": 5
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.31,
+    "value": 2.27,
     "rank": 6
    },
    {
@@ -14178,13 +14196,13 @@
    {
     "code": "BR",
     "name": "Brazil",
-    "value": 1.42,
+    "value": 1.45,
     "rank": 10
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.2,
+    "value": 1.21,
     "rank": 11
    },
    {
@@ -14198,19 +14216,19 @@
    "code": "IT",
    "name": "Italy",
    "value": 0.16,
-   "rank": 44
+   "rank": 43
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.64,
+    "value": 55.62,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 6.96,
+    "value": 6.97,
     "rank": 2
    },
    {
@@ -14234,7 +14252,7 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.25,
+    "value": 2.24,
     "rank": 6
    },
    {
@@ -14252,7 +14270,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.5,
+    "value": 1.49,
     "rank": 9
    },
    {
@@ -14264,13 +14282,13 @@
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.19,
+    "value": 1.2,
     "rank": 11
    },
    {
     "code": "CR",
     "name": "Costa Rica",
-    "value": 0.9,
+    "value": 0.89,
     "rank": 12
    }
   ],
