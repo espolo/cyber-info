@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T04:01:09Z",
+ "updated": "2026-11-11T04:16:37Z",
  "news": [
   {
    "id": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/",
@@ -9825,7 +9825,7 @@
    "last": "2026-11-06T16:11:47Z"
   },
   {
-   "name": "LockBit",
+   "name": "qilin",
    "type": "ransomware",
    "country": "",
    "watch": true,
@@ -9845,7 +9845,7 @@
    "last": ""
   },
   {
-   "name": "qilin",
+   "name": "akira",
    "type": "ransomware",
    "country": "",
    "watch": true,
@@ -9865,7 +9865,17 @@
    "last": ""
   },
   {
-   "name": "akira",
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "LockBit",
    "type": "ransomware",
    "country": "",
    "watch": true,
@@ -9878,16 +9888,6 @@
    "name": "Scattered Spider",
    "type": "criminal",
    "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -10519,6 +10519,36 @@
  },
  "known_actors": 1511,
  "iocs": [
+  {
+   "ioc": "wqzkz57127[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-11T04:13:26",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023686/"
+  },
+  {
+   "ioc": "x0m[.]andraslotlink[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-11T04:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023685/"
+  },
   {
    "ioc": "hxxp://204[.]141[.]236[.]157:8080/aarch64",
    "type": "url",
@@ -13208,35 +13238,50 @@
     "macOS"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023487/"
-  },
-  {
-   "ioc": "alldrugspharmacy[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-10T23:11:08",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023485/"
-  },
-  {
-   "ioc": "sumatkenya[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-10T23:11:08",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023486/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://113[.]229[.]186[.]82:36542/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-11T04:09:14",
+   "link": "https://urlhaus.abuse.ch/url/4063063/"
+  },
+  {
+   "ioc": "hxxp://125[.]44[.]196[.]204:45428/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-11T04:02:07",
+   "link": "https://urlhaus.abuse.ch/url/4063062/"
+  },
+  {
+   "ioc": "hxxp://116[.]138[.]115[.]161:59157/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-11T04:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4063060/"
+  },
+  {
+   "ioc": "hxxp://27[.]220[.]81[.]202:34733/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-11T04:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4063061/"
+  },
   {
    "ioc": "hxxps://raw[.]githubusercontent[.]com/tserliiy/FortniteSpoofer/refs/heads/main/TempSpoofer[.]exe",
    "host_it": false,
@@ -14835,56 +14880,20 @@
    "tags": [],
    "date": "2026-11-10T21:47:06",
    "link": "https://urlhaus.abuse.ch/url/4062913/"
-  },
-  {
-   "ioc": "hxxp://39[.]90[.]144[.]249:59661/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-10T21:47:06",
-   "link": "https://urlhaus.abuse.ch/url/4062914/"
-  },
-  {
-   "ioc": "hxxp://87[.]68[.]236[.]197:51435/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-10T21:32:09",
-   "link": "https://urlhaus.abuse.ch/url/4062912/"
-  },
-  {
-   "ioc": "hxxp://45[.]48[.]226[.]174:47727/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-10T21:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4062911/"
-  },
-  {
-   "ioc": "hxxp://196[.]189[.]35[.]226:54240/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-10T21:32:05",
-   "link": "https://urlhaus.abuse.ch/url/4062910/"
   }
  ],
  "malware_top": [
-  {
-   "name": "Mirai",
-   "count": 119
-  },
   {
    "name": "Unknown Loader",
    "count": 117
   },
   {
+   "name": "Mirai",
+   "count": 117
+  },
+  {
    "name": "ClearFake",
-   "count": 115
+   "count": 113
   },
   {
    "name": "SalatStealer",
@@ -14908,7 +14917,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 33
+   "count": 34
   },
   {
    "name": "XWorm",
@@ -14943,10 +14952,6 @@
    "count": 11
   },
   {
-   "name": "VShell",
-   "count": 11
-  },
-  {
    "name": "Mozi",
    "count": 11
   },
@@ -14959,8 +14964,8 @@
    "count": 10
   },
   {
-   "name": "WARDENStealer",
-   "count": 10
+   "name": "VShell",
+   "count": 9
   },
   {
    "name": "Phemedrone Stealer",
@@ -14973,6 +14978,10 @@
   {
    "name": "SNOWLIGHT",
    "count": 9
+  },
+  {
+   "name": "NjRAT",
+   "count": 8
   }
  ],
  "agid_campaigns": [
