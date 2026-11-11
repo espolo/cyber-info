@@ -1,6 +1,45 @@
 {
- "updated": "2026-11-11T09:01:09Z",
+ "updated": "2026-11-11T09:30:58Z",
  "news": [
+  {
+   "id": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-mozilla-15",
+   "title": "Risolte vulnerabilità in prodotti Mozilla",
+   "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-mozilla-15",
+   "summary": "Aggiornamenti di sicurezza sanano 111 vulnerabilità, di cui 7 con gravità “critica” e 69 con gravità “alta”, nei prodotti Firefox, Firefox ESR e Thunderbird.",
+   "source": "CSIRT Italia (ACN)",
+   "lang": "it",
+   "type": "advisory",
+   "date": "2026-11-11T09:26:47Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
+   "title": "Microsoft fixes Exchange sign-ins broken by Windows Server updates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
+   "summary": "Microsoft has fixed Outlook sign-in and mail delivery issues on Exchange Server systems after installing the October 2026 Windows Server security updates. [...]",
+   "source": "BleepingComputer",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-11T09:07:27Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+   "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
+   "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+   "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities appeared first on SecurityWeek .",
+   "source": "SecurityWeek",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-11T09:01:07Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
   {
    "id": "https://www.cybersecurity360.it/nuove-minacce/microsoft-oltre-mille-vulnerabilita-corrette-e-una-zero-day-outlook-gia-sfruttata/",
    "title": "Microsoft, oltre mille vulnerabilità corrette e una zero-day Outlook già sfruttata",
@@ -10005,6 +10044,16 @@
    "last": "2026-11-06T16:11:47Z"
   },
   {
+   "name": "qilin",
+   "type": "ransomware",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
@@ -10015,9 +10064,9 @@
    "last": ""
   },
   {
-   "name": "LockBit",
-   "type": "ransomware",
-   "country": "",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -10035,7 +10084,7 @@
    "last": ""
   },
   {
-   "name": "qilin",
+   "name": "LockBit",
    "type": "ransomware",
    "country": "",
    "watch": true,
@@ -10047,16 +10096,6 @@
   {
    "name": "APT28",
    "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Killnet",
-   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -10711,6 +10750,78 @@
  "known_actors": 1511,
  "iocs": [
   {
+   "ioc": "anek4d[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-11T09:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024408/"
+  },
+  {
+   "ioc": "j[.]anek4d[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-11T09:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024407/"
+  },
+  {
+   "ioc": "45[.]207[.]208[.]51:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-11T09:05:08",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024406/"
+  },
+  {
+   "ioc": "45[.]207[.]208[.]51:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-11T09:05:07",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024405/"
+  },
+  {
+   "ioc": "45[.]207[.]208[.]51:18080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-11T09:05:07",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024404/"
+  },
+  {
+   "ioc": "119[.]91[.]140[.]188:8085",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-11T09:05:05",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024403/"
+  },
+  {
    "ioc": "9373ac7748f688281112e94ff42c53dc7fd26a9e928f9af66c3958cf6bac8f99",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -11055,7 +11166,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2024375/"
   },
   {
-   "ioc": "birchdaleham[.]cc",
+   "ioc": "wrenmereton[.]cc",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "ACR Stealer",
@@ -11064,91 +11175,7 @@
    "tags": [
     "ACRStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2024365/"
-  },
-  {
-   "ioc": "cindercoveber[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "ACR Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:50:35",
-   "tags": [
-    "ACRStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024366/"
-  },
-  {
-   "ioc": "duskbriarber[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "ACR Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:50:35",
-   "tags": [
-    "ACRStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024367/"
-  },
-  {
-   "ioc": "faircrossway[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "ACR Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:50:35",
-   "tags": [
-    "ACRStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024368/"
-  },
-  {
-   "ioc": "foxwarrenston[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "ACR Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:50:35",
-   "tags": [
-    "ACRStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024369/"
-  },
-  {
-   "ioc": "hazelcroftway[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "ACR Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:50:35",
-   "tags": [
-    "ACRStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024370/"
-  },
-  {
-   "ioc": "mossfoldway[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "ACR Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:50:35",
-   "tags": [
-    "ACRStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024371/"
-  },
-  {
-   "ioc": "tallowmereton[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "ACR Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:50:35",
-   "tags": [
-    "ACRStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024372/"
+   "link": "https://threatfox.abuse.ch/ioc/2024374/"
   },
   {
    "ioc": "thornhollowham[.]cc",
@@ -11163,7 +11190,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2024373/"
   },
   {
-   "ioc": "wrenmereton[.]cc",
+   "ioc": "tallowmereton[.]cc",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "ACR Stealer",
@@ -11172,7 +11199,91 @@
    "tags": [
     "ACRStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2024374/"
+   "link": "https://threatfox.abuse.ch/ioc/2024372/"
+  },
+  {
+   "ioc": "mossfoldway[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "ACR Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:50:35",
+   "tags": [
+    "ACRStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024371/"
+  },
+  {
+   "ioc": "hazelcroftway[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "ACR Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:50:35",
+   "tags": [
+    "ACRStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024370/"
+  },
+  {
+   "ioc": "foxwarrenston[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "ACR Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:50:35",
+   "tags": [
+    "ACRStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024369/"
+  },
+  {
+   "ioc": "faircrossway[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "ACR Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:50:35",
+   "tags": [
+    "ACRStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024368/"
+  },
+  {
+   "ioc": "duskbriarber[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "ACR Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:50:35",
+   "tags": [
+    "ACRStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024367/"
+  },
+  {
+   "ioc": "cindercoveber[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "ACR Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:50:35",
+   "tags": [
+    "ACRStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024366/"
+  },
+  {
+   "ioc": "birchdaleham[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "ACR Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:50:35",
+   "tags": [
+    "ACRStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024365/"
   },
   {
    "ioc": "0411proklayod[.]com",
@@ -11187,6 +11298,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2024364/"
   },
   {
+   "ioc": "uoverlazyt[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-11T08:41:52",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2024363/"
+  },
+  {
    "ioc": "kianonsmoke[.]redirectme[.]net",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -11197,16 +11318,6 @@
     "Mirai"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2024359/"
-  },
-  {
-   "ioc": "uoverlazyt[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-11T08:41:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2024363/"
   },
   {
    "ioc": "wohnwerk-wauwil[.]ch",
@@ -11252,18 +11363,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2024360/"
   },
   {
-   "ioc": "5[.]178[.]101[.]94:18129",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Mirai",
-   "confidence": 100,
-   "date": "2026-11-11T08:06:07",
-   "tags": [
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024345/"
-  },
-  {
    "ioc": "77[.]239[.]124[.]15:1995",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -11276,28 +11375,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2024346/"
   },
   {
-   "ioc": "181[.]215[.]115[.]186:60195",
+   "ioc": "5[.]178[.]101[.]94:18129",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Mirai",
    "confidence": 100,
-   "date": "2026-11-11T08:06:06",
+   "date": "2026-11-11T08:06:07",
    "tags": [
     "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2024347/"
-  },
-  {
-   "ioc": "45[.]156[.]87[.]230:6666",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Mirai",
-   "confidence": 100,
-   "date": "2026-11-11T08:06:06",
-   "tags": [
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2024348/"
+   "link": "https://threatfox.abuse.ch/ioc/2024345/"
   },
   {
    "ioc": "45[.]94[.]37[.]86:1995",
@@ -11312,16 +11399,28 @@
    "link": "https://threatfox.abuse.ch/ioc/2024349/"
   },
   {
-   "ioc": "43[.]228[.]157[.]37:1024",
+   "ioc": "45[.]156[.]87[.]230:6666",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Mirai",
    "confidence": 100,
-   "date": "2026-11-11T08:06:05",
+   "date": "2026-11-11T08:06:06",
    "tags": [
     "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2024350/"
+   "link": "https://threatfox.abuse.ch/ioc/2024348/"
+  },
+  {
+   "ioc": "181[.]215[.]115[.]186:60195",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-11T08:06:06",
+   "tags": [
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024347/"
   },
   {
    "ioc": "176[.]65[.]132[.]37:60195",
@@ -11336,16 +11435,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2024351/"
   },
   {
-   "ioc": "191[.]217[.]233[.]165:60195",
+   "ioc": "43[.]228[.]157[.]37:1024",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Mirai",
    "confidence": 100,
-   "date": "2026-11-11T08:06:04",
+   "date": "2026-11-11T08:06:05",
    "tags": [
     "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2024352/"
+   "link": "https://threatfox.abuse.ch/ioc/2024350/"
   },
   {
    "ioc": "45[.]61[.]183[.]64:60195",
@@ -11360,16 +11459,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2024353/"
   },
   {
-   "ioc": "q[.]dps69[.]org",
-   "type": "domain",
+   "ioc": "191[.]217[.]233[.]165:60195",
+   "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
+   "malware": "Mirai",
    "confidence": 100,
-   "date": "2026-11-11T08:05:34",
+   "date": "2026-11-11T08:06:04",
    "tags": [
-    "Vidar"
+    "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2024357/"
+   "link": "https://threatfox.abuse.ch/ioc/2024352/"
   },
   {
    "ioc": "d2[.]andraslotlink[.]org",
@@ -11384,16 +11483,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2024358/"
   },
   {
-   "ioc": "62[.]234[.]49[.]223:443",
-   "type": "ip:port",
+   "ioc": "q[.]dps69[.]org",
+   "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Cobalt Strike",
+   "malware": "Vidar",
    "confidence": 100,
-   "date": "2026-11-11T08:05:04",
+   "date": "2026-11-11T08:05:34",
    "tags": [
-    "CobaltStrike"
+    "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2024355/"
+   "link": "https://threatfox.abuse.ch/ioc/2024357/"
   },
   {
    "ioc": "62[.]234[.]49[.]223:8080",
@@ -11406,6 +11505,18 @@
     "CobaltStrike"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2024356/"
+  },
+  {
+   "ioc": "62[.]234[.]49[.]223:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-11T08:05:04",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2024355/"
   },
   {
    "ioc": "foerdermaterialien[.]ch",
@@ -11937,7 +12048,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2024303/"
   },
   {
-   "ioc": "e66b7d6837de75e7aefefab2cc979af74772ace6e076a995622a12337968d16c",
+   "ioc": "ee189b3e579bba325a2b2c60f8eeb5227a7361834af131f85ba201ee8ed6f187",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -11946,7 +12057,7 @@
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023897/"
+   "link": "https://threatfox.abuse.ch/ioc/2023899/"
   },
   {
    "ioc": "e752321390157abceab822aa14328bb2782a8ae26f108c8d564e1b987dbf1186",
@@ -11961,7 +12072,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2023898/"
   },
   {
-   "ioc": "ee189b3e579bba325a2b2c60f8eeb5227a7361834af131f85ba201ee8ed6f187",
+   "ioc": "e66b7d6837de75e7aefefab2cc979af74772ace6e076a995622a12337968d16c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -11970,31 +12081,7 @@
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023899/"
-  },
-  {
-   "ioc": "ef6c10c61c746d525970636b28d0ec7ceef7e48248ac5d7ac89f8d898f3bcf8e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:49",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023900/"
-  },
-  {
-   "ioc": "f0eaa8bcc3d1e8007a4345aeb06ece23e490a2294bc0fcfed6985f21de96f476",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:49",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023901/"
+   "link": "https://threatfox.abuse.ch/ioc/2023897/"
   },
   {
    "ioc": "f12dad58fa6f843a025cf858751e510c35708ad743331a0f77dfab86b1ea6bd3",
@@ -12009,28 +12096,28 @@
    "link": "https://threatfox.abuse.ch/ioc/2023902/"
   },
   {
-   "ioc": "f14ce7b86653a43d2214c232eaa6975cd27b86ca45148e557a77a598c15f3460",
+   "ioc": "f0eaa8bcc3d1e8007a4345aeb06ece23e490a2294bc0fcfed6985f21de96f476",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:48",
+   "date": "2026-11-11T07:52:49",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023903/"
+   "link": "https://threatfox.abuse.ch/ioc/2023901/"
   },
   {
-   "ioc": "f18fb42e589e866cbaa6ad711fee8129eb132cbb5fa7b0d976c97d00dc120103",
+   "ioc": "ef6c10c61c746d525970636b28d0ec7ceef7e48248ac5d7ac89f8d898f3bcf8e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:48",
+   "date": "2026-11-11T07:52:49",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023904/"
+   "link": "https://threatfox.abuse.ch/ioc/2023900/"
   },
   {
    "ioc": "f2d794070d13bc73ab5acf7848f3732454f64daa51f52c7371d9027de0bf31cd",
@@ -12045,16 +12132,28 @@
    "link": "https://threatfox.abuse.ch/ioc/2023905/"
   },
   {
-   "ioc": "f355500f37814dc50ff902b848ea92d9c247005b5a18689271c673db8247cc5c",
+   "ioc": "f18fb42e589e866cbaa6ad711fee8129eb132cbb5fa7b0d976c97d00dc120103",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:47",
+   "date": "2026-11-11T07:52:48",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023906/"
+   "link": "https://threatfox.abuse.ch/ioc/2023904/"
+  },
+  {
+   "ioc": "f14ce7b86653a43d2214c232eaa6975cd27b86ca45148e557a77a598c15f3460",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:48",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023903/"
   },
   {
    "ioc": "f5de3623ce7fac60a809368e256e19ff59d09433207e1f261dce3b1be5428b01",
@@ -12069,16 +12168,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023907/"
   },
   {
-   "ioc": "de3fd604905cb4f10a672ebeba443b47f1e219dd65efe65d17c820d3f1f939ee",
+   "ioc": "f355500f37814dc50ff902b848ea92d9c247005b5a18689271c673db8247cc5c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:46",
+   "date": "2026-11-11T07:52:47",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023895/"
+   "link": "https://threatfox.abuse.ch/ioc/2023906/"
   },
   {
    "ioc": "ded59115424ab97b2b3e8b3a853a87c726fba89084c973cdd392c0bc9826d475",
@@ -12091,6 +12190,18 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023896/"
+  },
+  {
+   "ioc": "de3fd604905cb4f10a672ebeba443b47f1e219dd65efe65d17c820d3f1f939ee",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:46",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023895/"
   },
   {
    "ioc": "dcc7a4f2ebc7442ee82b7c7d6d52694239718f40053313bd351ea51934de0835",
@@ -12117,18 +12228,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2023894/"
   },
   {
-   "ioc": "d8746152490236b472c47f91767d5e3a5cdf1258da91324365a51be04c90ecfe",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:43",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023891/"
-  },
-  {
    "ioc": "db8e703373f8e057d60837e81d73e45bc73c3c2281c08094970a52b953b58a97",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12141,16 +12240,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023892/"
   },
   {
-   "ioc": "d841ff7c54455e6bf5724f81a935976d993194b1645f7062483ac62bb256ff31",
+   "ioc": "d8746152490236b472c47f91767d5e3a5cdf1258da91324365a51be04c90ecfe",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:42",
+   "date": "2026-11-11T07:52:43",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023889/"
+   "link": "https://threatfox.abuse.ch/ioc/2023891/"
   },
   {
    "ioc": "d85e8f8f4fff22708ffa0a6d55b42112694d4ac8859862492d30c74c49cbb0ab",
@@ -12165,16 +12264,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023890/"
   },
   {
-   "ioc": "d55d56fdb95f5c0d1ab26bc2f4a54259cd04516baa8030aa450c5e5dbd8630e0",
+   "ioc": "d841ff7c54455e6bf5724f81a935976d993194b1645f7062483ac62bb256ff31",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:41",
+   "date": "2026-11-11T07:52:42",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023887/"
+   "link": "https://threatfox.abuse.ch/ioc/2023889/"
   },
   {
    "ioc": "d7a3428e6a983385c006fc07f73f893472c7e9f56846d21dcd918cd0e4a2ec73",
@@ -12189,16 +12288,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023888/"
   },
   {
-   "ioc": "d05d3d13d8a5ca0b95a8aad27224690688c2ee8cbd957dcdc26d00e61c7cd8cd",
+   "ioc": "d55d56fdb95f5c0d1ab26bc2f4a54259cd04516baa8030aa450c5e5dbd8630e0",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:40",
+   "date": "2026-11-11T07:52:41",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023885/"
+   "link": "https://threatfox.abuse.ch/ioc/2023887/"
   },
   {
    "ioc": "d101099e8927e87c0ec20408dc15ae58f03a136a067f4030c97424d90afe720d",
@@ -12211,6 +12310,18 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023886/"
+  },
+  {
+   "ioc": "d05d3d13d8a5ca0b95a8aad27224690688c2ee8cbd957dcdc26d00e61c7cd8cd",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:40",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023885/"
   },
   {
    "ioc": "cda02e1d22445bf201b4cb9ad01a7eab1ebf2fc70220702e33867b978ae8caf3",
@@ -12237,7 +12348,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2023883/"
   },
   {
-   "ioc": "b55a6ec0e869e6ac7dc28771de997fbc4a0bcbfc3450844386a8b2519f2a4913",
+   "ioc": "c1e7d8b50c15854efa4247fb126e6c5225080655ca8510d41a016e7c5cb08ee5",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -12246,7 +12357,7 @@
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023880/"
+   "link": "https://threatfox.abuse.ch/ioc/2023882/"
   },
   {
    "ioc": "ba8058df6fdab40fd343739e0dbde1b36c9028a4580bc36cf74ff66a000e9a5e",
@@ -12261,7 +12372,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2023881/"
   },
   {
-   "ioc": "c1e7d8b50c15854efa4247fb126e6c5225080655ca8510d41a016e7c5cb08ee5",
+   "ioc": "b55a6ec0e869e6ac7dc28771de997fbc4a0bcbfc3450844386a8b2519f2a4913",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -12270,19 +12381,7 @@
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023882/"
-  },
-  {
-   "ioc": "aedac03689059159a1ae8bcd5d77413bc9e8d708ccceda467ea18cd45cce7652",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:35",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023878/"
+   "link": "https://threatfox.abuse.ch/ioc/2023880/"
   },
   {
    "ioc": "b09f129f480e5e0d256b69b83aa7d33bcd310866c2ef7b909743da6959bd0fb9",
@@ -12297,16 +12396,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023879/"
   },
   {
-   "ioc": "ac158e02ce505998a0ac679a7f46f8e57ad8bc74a79915ed718b1b1d771f3b2b",
+   "ioc": "aedac03689059159a1ae8bcd5d77413bc9e8d708ccceda467ea18cd45cce7652",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:34",
+   "date": "2026-11-11T07:52:35",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023876/"
+   "link": "https://threatfox.abuse.ch/ioc/2023878/"
   },
   {
    "ioc": "adc79579a0e700b4ccd4fb64160321151275e0142ec55cfda1b64d535e612584",
@@ -12321,40 +12420,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023877/"
   },
   {
-   "ioc": "9c4f12629e3edbea9ac11703f53abbe94279b81debc59a39d0628347d19e8e00",
+   "ioc": "ac158e02ce505998a0ac679a7f46f8e57ad8bc74a79915ed718b1b1d771f3b2b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:33",
+   "date": "2026-11-11T07:52:34",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023872/"
-  },
-  {
-   "ioc": "9efe3f6900bff8dcf3fde4fce283c478eaf4e6c633cbf271b050fd5cccb93a8e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:33",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023873/"
-  },
-  {
-   "ioc": "a3921d2b6950d9b36fee9523c28ba484797b047f5273a607e577b7b370d05766",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:33",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023874/"
+   "link": "https://threatfox.abuse.ch/ioc/2023876/"
   },
   {
    "ioc": "a43794efd4f13148e3c226b781d77ce4c9b2d9cfe7f6a9d12eb1bace1e72591b",
@@ -12369,28 +12444,40 @@
    "link": "https://threatfox.abuse.ch/ioc/2023875/"
   },
   {
-   "ioc": "932633c001230a391d9e16dc5b2d26187e9056909b0508648a2b3eb78a2a185d",
+   "ioc": "a3921d2b6950d9b36fee9523c28ba484797b047f5273a607e577b7b370d05766",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:32",
+   "date": "2026-11-11T07:52:33",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023869/"
+   "link": "https://threatfox.abuse.ch/ioc/2023874/"
   },
   {
-   "ioc": "985d61fde5f26dc27f3b556d3cb6478cc238c986b1293732516d4e74f06477fe",
+   "ioc": "9efe3f6900bff8dcf3fde4fce283c478eaf4e6c633cbf271b050fd5cccb93a8e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:32",
+   "date": "2026-11-11T07:52:33",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023870/"
+   "link": "https://threatfox.abuse.ch/ioc/2023873/"
+  },
+  {
+   "ioc": "9c4f12629e3edbea9ac11703f53abbe94279b81debc59a39d0628347d19e8e00",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:33",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023872/"
   },
   {
    "ioc": "9a036ff1c07309fc4f6a2c888844396ec1e0db94610246d3dc5eed2fe861ac1a",
@@ -12405,6 +12492,30 @@
    "link": "https://threatfox.abuse.ch/ioc/2023871/"
   },
   {
+   "ioc": "985d61fde5f26dc27f3b556d3cb6478cc238c986b1293732516d4e74f06477fe",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:32",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023870/"
+  },
+  {
+   "ioc": "932633c001230a391d9e16dc5b2d26187e9056909b0508648a2b3eb78a2a185d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:32",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023869/"
+  },
+  {
    "ioc": "92ae2730a10007e164b20f5efa855863d28c5b357803e960a44cb45e2458b789",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12415,18 +12526,6 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023868/"
-  },
-  {
-   "ioc": "8c358aa85946145ad8fcbf66e3b576704199e6f167c233e3418c7d3b4ae9d35f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023866/"
   },
   {
    "ioc": "9142c0465e82274e25bc6c61b9334e1343de716100a46623e1abc22940e8fdb7",
@@ -12441,16 +12540,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023867/"
   },
   {
-   "ioc": "87458a95abebff9978954afb50ea24e011d0537bbff2d9edecfab1bd37f8006b",
+   "ioc": "8c358aa85946145ad8fcbf66e3b576704199e6f167c233e3418c7d3b4ae9d35f",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:29",
+   "date": "2026-11-11T07:52:30",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023864/"
+   "link": "https://threatfox.abuse.ch/ioc/2023866/"
   },
   {
    "ioc": "8b72910d2855423b56c8e8f352e873ed7777ba8e2d19fd036d72a40bd5141bbf",
@@ -12465,16 +12564,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023865/"
   },
   {
-   "ioc": "8188bc068d3e786b95b09fd8a29a87d44ac1034946be943296d5e9c50dfd31cb",
+   "ioc": "87458a95abebff9978954afb50ea24e011d0537bbff2d9edecfab1bd37f8006b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:28",
+   "date": "2026-11-11T07:52:29",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023862/"
+   "link": "https://threatfox.abuse.ch/ioc/2023864/"
   },
   {
    "ioc": "8238fd4252c1c2aab7c4cc1c19751184c913af9d50c29bd68418028160039d61",
@@ -12487,6 +12586,18 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023863/"
+  },
+  {
+   "ioc": "8188bc068d3e786b95b09fd8a29a87d44ac1034946be943296d5e9c50dfd31cb",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:28",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023862/"
   },
   {
    "ioc": "7eca5e54b3b7adb738b6aca028c12e66602220fe87e64b3d38cd6a11408d0ec9",
@@ -12513,18 +12624,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2023859/"
   },
   {
-   "ioc": "79aa6540aad70cc84fbb9d6874804ee86b6bfc2c703822a8d9c34f5a838e5304",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:25",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023858/"
-  },
-  {
    "ioc": "7d7a0db047e2dcfaf51abe6e0173eb8356fcb99012a378468dead27ff1f53d4a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12535,6 +12634,18 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023860/"
+  },
+  {
+   "ioc": "79aa6540aad70cc84fbb9d6874804ee86b6bfc2c703822a8d9c34f5a838e5304",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:25",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023858/"
   },
   {
    "ioc": "7537cb0e719d9d0609eee7910542e877eae032707cbc15cfbd4c758f0040861f",
@@ -12549,18 +12660,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2023857/"
   },
   {
-   "ioc": "6f2a59eb22eddff0e00bf0d865383cd8b3140602dff9dbd7bfa3ff3af18a0450",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:23",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023855/"
-  },
-  {
    "ioc": "70c815a7623a9788214869d2c7c23cd5cac0190531e7af207b6ad774ea64f24a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12573,28 +12672,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023856/"
   },
   {
-   "ioc": "6ccc86ca2a51a48328a2ffd12d10967b0fc07efe72ba6b853e43fdfd4aa54c42",
+   "ioc": "6f2a59eb22eddff0e00bf0d865383cd8b3140602dff9dbd7bfa3ff3af18a0450",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:22",
+   "date": "2026-11-11T07:52:23",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023852/"
-  },
-  {
-   "ioc": "6d79e9e7b1f35ef0591937a55ac952d2d736b1bd7bd8a88252ef42af8ae4bbc9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:22",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023853/"
+   "link": "https://threatfox.abuse.ch/ioc/2023855/"
   },
   {
    "ioc": "6ec740baf8fb46e3ab6760ba1e481b312d87fe0cc2a4c469c183881413a13a14",
@@ -12609,16 +12696,28 @@
    "link": "https://threatfox.abuse.ch/ioc/2023854/"
   },
   {
-   "ioc": "629a849e2494b00d97bf874321d430f13982140da7b3aa875a5cff76113ebd91",
+   "ioc": "6d79e9e7b1f35ef0591937a55ac952d2d736b1bd7bd8a88252ef42af8ae4bbc9",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:21",
+   "date": "2026-11-11T07:52:22",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023849/"
+   "link": "https://threatfox.abuse.ch/ioc/2023853/"
+  },
+  {
+   "ioc": "6ccc86ca2a51a48328a2ffd12d10967b0fc07efe72ba6b853e43fdfd4aa54c42",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:22",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023852/"
   },
   {
    "ioc": "658e213c08112b8bff7a5e6f5b7dd6771dad9d039b2042b076fe230032d1713d",
@@ -12633,16 +12732,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023851/"
   },
   {
-   "ioc": "616653a94509792ca13efc5a0bd597273d284201e14ff6e3ffeb12f7864ec470",
+   "ioc": "629a849e2494b00d97bf874321d430f13982140da7b3aa875a5cff76113ebd91",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:20",
+   "date": "2026-11-11T07:52:21",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023848/"
+   "link": "https://threatfox.abuse.ch/ioc/2023849/"
   },
   {
    "ioc": "63dd8f7ac49bbfb6a38e167cddb1c380d04bc742f8d28157aa671a798986e65f",
@@ -12657,16 +12756,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023850/"
   },
   {
-   "ioc": "5f87c32340fcc233192ff68c38b610c053812df1eeb602a3cdfd2b11fbbf578d",
+   "ioc": "616653a94509792ca13efc5a0bd597273d284201e14ff6e3ffeb12f7864ec470",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:19",
+   "date": "2026-11-11T07:52:20",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023846/"
+   "link": "https://threatfox.abuse.ch/ioc/2023848/"
   },
   {
    "ioc": "60c755c46d172a3fe9f74bc40698f0f4e737abd3e205d915ac8f5a358e8807bb",
@@ -12679,6 +12778,18 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023847/"
+  },
+  {
+   "ioc": "5f87c32340fcc233192ff68c38b610c053812df1eeb602a3cdfd2b11fbbf578d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:19",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023846/"
   },
   {
    "ioc": "5df2d590e2e0fba5967c5d80c7638a577604e271ba914d0d6b9b65843f732a85",
@@ -12705,18 +12816,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2023845/"
   },
   {
-   "ioc": "59e68db46ccebaca8e980a2179af10915313ef5d88a208e43939303c0bb30036",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:16",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023842/"
-  },
-  {
    "ioc": "5baaa1325d62973054a1904fbf9ff54701e569e24aaba73ccc6d79b6465f8628",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12729,16 +12828,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023843/"
   },
   {
-   "ioc": "5888bc907850745d89fba92e420d15022d853b70f2645a8befe1345285d8bfff",
+   "ioc": "59e68db46ccebaca8e980a2179af10915313ef5d88a208e43939303c0bb30036",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:11",
+   "date": "2026-11-11T07:52:16",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023840/"
+   "link": "https://threatfox.abuse.ch/ioc/2023842/"
   },
   {
    "ioc": "58b3dc467fe5761e4afb1cb2f9e9e4457ed96aa4405de5c460bd73ac31c32aa5",
@@ -12753,16 +12852,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023841/"
   },
   {
-   "ioc": "5254f422153d33bed254cd2a948cee9fbad3d92b0039fb8dd0070fe4a60df502",
+   "ioc": "5888bc907850745d89fba92e420d15022d853b70f2645a8befe1345285d8bfff",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:10",
+   "date": "2026-11-11T07:52:11",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023838/"
+   "link": "https://threatfox.abuse.ch/ioc/2023840/"
   },
   {
    "ioc": "542fa78f72fdd4a55ec0422da2f2babf6b5dc3dd93be056370a671ba463c997f",
@@ -12777,16 +12876,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023839/"
   },
   {
-   "ioc": "47399ca2062eaf993a9ee4c7afb6eea1f84ae7e06f361ace5b4b6a9581055f87",
+   "ioc": "5254f422153d33bed254cd2a948cee9fbad3d92b0039fb8dd0070fe4a60df502",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:09",
+   "date": "2026-11-11T07:52:10",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023836/"
+   "link": "https://threatfox.abuse.ch/ioc/2023838/"
   },
   {
    "ioc": "497dc04d45e3388c5c8cfd9a28a56279fc725dc604ee9cb038d87d6699ee93b7",
@@ -12801,16 +12900,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023837/"
   },
   {
-   "ioc": "44ec51e59233fb0ea464be8913c7acfbf3c7ae6448101d7a86f9f08ed0f03335",
+   "ioc": "47399ca2062eaf993a9ee4c7afb6eea1f84ae7e06f361ace5b4b6a9581055f87",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:08",
+   "date": "2026-11-11T07:52:09",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023834/"
+   "link": "https://threatfox.abuse.ch/ioc/2023836/"
   },
   {
    "ioc": "470592f45745eb990bdde52e2c8b7a6f1529a4f3d586fca15cfb2a36cb5df3c5",
@@ -12825,16 +12924,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023835/"
   },
   {
-   "ioc": "426ee6bdc96409df556fc0b4129cd18e8d4928fb48511989f211855fc5cf57e3",
+   "ioc": "44ec51e59233fb0ea464be8913c7acfbf3c7ae6448101d7a86f9f08ed0f03335",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:07",
+   "date": "2026-11-11T07:52:08",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023832/"
+   "link": "https://threatfox.abuse.ch/ioc/2023834/"
   },
   {
    "ioc": "42c58d386b2960029c5e1e0d36678a74495b52b9385c5180f24baa5b6d70f1eb",
@@ -12849,16 +12948,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023833/"
   },
   {
-   "ioc": "366d7b9c39b43a9643fe9fae161cb9178a06dba6764a2020a93b5dffda2ea481",
+   "ioc": "426ee6bdc96409df556fc0b4129cd18e8d4928fb48511989f211855fc5cf57e3",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:06",
+   "date": "2026-11-11T07:52:07",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023829/"
+   "link": "https://threatfox.abuse.ch/ioc/2023832/"
   },
   {
    "ioc": "3fe8623b08d5d62424ef93e64261dd71a9cb671c6be8c22a96628f2c3b610f03",
@@ -12873,6 +12972,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2023831/"
   },
   {
+   "ioc": "366d7b9c39b43a9643fe9fae161cb9178a06dba6764a2020a93b5dffda2ea481",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:06",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023829/"
+  },
+  {
    "ioc": "36e97095b00a16ca050fa0e1969d78d57f4b963cedbb663498cb868ee8e3a891",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12883,18 +12994,6 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023830/"
-  },
-  {
-   "ioc": "2f14d94173a685f357ab127ac90df249e13a80c0b4b30c9f83eed995615ec11f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:52:04",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023827/"
   },
   {
    "ioc": "322364c4a8fa4c6bfe5e12b595b634ad62c4252fc37fa5c03640f1be30749faa",
@@ -12909,16 +13008,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023828/"
   },
   {
-   "ioc": "2d1a57075f9d245648033e1cf4b318094392999bdcdfe52ebb516dd54e4c57c6",
+   "ioc": "2f14d94173a685f357ab127ac90df249e13a80c0b4b30c9f83eed995615ec11f",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:03",
+   "date": "2026-11-11T07:52:04",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023825/"
+   "link": "https://threatfox.abuse.ch/ioc/2023827/"
   },
   {
    "ioc": "2ef44387e22d6a288a1939eb65aefbd9c09ea5cf38423167755773e23acf3bc2",
@@ -12933,16 +13032,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023826/"
   },
   {
-   "ioc": "2b095eb43b55f5eda6df6fc2ff4188f70f099ade2655ceea7c1080f4774c091e",
+   "ioc": "2d1a57075f9d245648033e1cf4b318094392999bdcdfe52ebb516dd54e4c57c6",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:02",
+   "date": "2026-11-11T07:52:03",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023823/"
+   "link": "https://threatfox.abuse.ch/ioc/2023825/"
   },
   {
    "ioc": "2cbdfab09e85f78c6764742672604d689bb98476e8ed8369f14b6bad4dbc3c3b",
@@ -12957,16 +13056,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023824/"
   },
   {
-   "ioc": "20110389dafd4c6c4e68a1c78db0f4ed228edd9a6783f9ed5e2a11305862bd20",
+   "ioc": "2b095eb43b55f5eda6df6fc2ff4188f70f099ade2655ceea7c1080f4774c091e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:52:01",
+   "date": "2026-11-11T07:52:02",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023821/"
+   "link": "https://threatfox.abuse.ch/ioc/2023823/"
   },
   {
    "ioc": "29e2bc2b8baec72f106553eeb299ef2131069ea6f69b0a7db523e590f2da5f39",
@@ -12981,6 +13080,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2023822/"
   },
   {
+   "ioc": "20110389dafd4c6c4e68a1c78db0f4ed228edd9a6783f9ed5e2a11305862bd20",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:52:01",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023821/"
+  },
+  {
    "ioc": "1ff8cf14a003654c28f4bbc1c0f6112ea03d4a2c3fb4bbc7a0ee7df16d1ed5d6",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12991,18 +13102,6 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023820/"
-  },
-  {
-   "ioc": "19e49e4f4300c6bf8097c247ef4d7b2115f2ac3df48308afc9c9b354f656f946",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:59",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023818/"
   },
   {
    "ioc": "1f04a7c43d545834d01f46fc56743547ad8b7d8893df9ac8a49b2195ad9a858f",
@@ -13017,28 +13116,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2023819/"
   },
   {
-   "ioc": "0fb375201e23d5476530a101a190d4fcf629174650aa92129a30f239b9aa5e33",
+   "ioc": "19e49e4f4300c6bf8097c247ef4d7b2115f2ac3df48308afc9c9b354f656f946",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-11T07:51:58",
+   "date": "2026-11-11T07:51:59",
    "tags": [
     "ClickFix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2023815/"
-  },
-  {
-   "ioc": "11deca53159e2dea6cc927ecdf460d2988a00fbcdd667333f47fdedc1109c0f1",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:58",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023816/"
+   "link": "https://threatfox.abuse.ch/ioc/2023818/"
   },
   {
    "ioc": "1435ccb3269e7b6b77f47a6b627bce524b013e82a069bf289c1b26abf7f13cb7",
@@ -13053,6 +13140,30 @@
    "link": "https://threatfox.abuse.ch/ioc/2023817/"
   },
   {
+   "ioc": "11deca53159e2dea6cc927ecdf460d2988a00fbcdd667333f47fdedc1109c0f1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:51:58",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023816/"
+  },
+  {
+   "ioc": "0fb375201e23d5476530a101a190d4fcf629174650aa92129a30f239b9aa5e33",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-11T07:51:58",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2023815/"
+  },
+  {
    "ioc": "0f176c97a0a08459114e61dae67a73b553590b149b40473362318a8f36891ccf",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -13063,81 +13174,55 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2023814/"
-  },
-  {
-   "ioc": "089dd762a58fceff0530f1d0a1d12cf55901e86e4274875af4a7af8ef685b193",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:56",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023811/"
-  },
-  {
-   "ioc": "0a68a39b839422d91a6b55fcb35f12f9a243a912c48424271896b2065ba39387",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:56",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023812/"
-  },
-  {
-   "ioc": "0ef5fca09daa5f56bfcd02bff0921286fe9c22011d7ef12f3960a739adec5c53",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:56",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023813/"
-  },
-  {
-   "ioc": "03a92d1f868d2633367da36e3943c8313b90638e5015f4eaaf66429b9e45d995",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:55",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023808/"
-  },
-  {
-   "ioc": "046db2a652171bfaef4b6f7e269e56b4c685358ee36b4e9d7c6bf5b23c3b547d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:55",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023809/"
-  },
-  {
-   "ioc": "06ab6bf049e7a8606a6fe9d7474c2d8c00f5b97bd11e607dff9bd839725e1b68",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-11T07:51:55",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2023810/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://182[.]235[.]148[.]10:53443/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-11T09:24:15",
+   "link": "https://urlhaus.abuse.ch/url/4063688/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/scullert/Temp-Spoofer-LifeTime/refs/heads/main/TempSpoofer[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "CheatSheet",
+    "exe",
+    "github",
+    "rustystealer"
+   ],
+   "date": "2026-11-11T09:24:10",
+   "link": "https://urlhaus.abuse.ch/url/4063687/"
+  },
+  {
+   "ioc": "hxxp://115[.]50[.]45[.]6:51177/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-11T09:17:09",
+   "link": "https://urlhaus.abuse.ch/url/4063686/"
+  },
+  {
+   "ioc": "hxxp://36[.]70[.]43[.]23:45968/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-11T09:02:29",
+   "link": "https://urlhaus.abuse.ch/url/4063685/"
+  },
   {
    "ioc": "hxxps://cli[.]clipdghhs[.]top/cfas[.]msi",
    "host_it": false,
@@ -14503,42 +14588,6 @@
    "tags": [],
    "date": "2026-11-11T08:10:31",
    "link": "https://urlhaus.abuse.ch/url/4063535/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8090/Heyiwei-powerpc",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T08:10:31",
-   "link": "https://urlhaus.abuse.ch/url/4063536/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8092/ppc",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T08:10:31",
-   "link": "https://urlhaus.abuse.ch/url/4063537/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8080/x86",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T08:10:31",
-   "link": "https://urlhaus.abuse.ch/url/4063538/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8081/i586",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T08:10:31",
-   "link": "https://urlhaus.abuse.ch/url/4063539/"
   }
  ],
  "malware_top": [
@@ -14552,11 +14601,11 @@
   },
   {
    "name": "ClearFake",
-   "count": 115
+   "count": 113
   },
   {
    "name": "Mirai",
-   "count": 82
+   "count": 80
   },
   {
    "name": "Vidar",
@@ -14619,11 +14668,11 @@
    "count": 10
   },
   {
-   "name": "RN Stealer",
+   "name": "VShell",
    "count": 9
   },
   {
-   "name": "VShell",
+   "name": "RN Stealer",
    "count": 9
   },
   {
@@ -14679,7 +14728,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.0,
+    "value": 54.02,
     "rank": 1
    },
    {
@@ -14703,13 +14752,13 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.54,
+    "value": 2.55,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.52,
+    "value": 2.53,
     "rank": 6
    },
    {
@@ -14721,13 +14770,13 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.03,
+    "value": 2.02,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.74,
+    "value": 1.71,
     "rank": 9
    },
    {
@@ -14745,7 +14794,7 @@
    {
     "code": "BR",
     "name": "Brazil",
-    "value": 1.18,
+    "value": 1.17,
     "rank": 12
    }
   ],
