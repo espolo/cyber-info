@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T05:30:59Z",
+ "updated": "2026-11-12T06:01:08Z",
  "news": [
   {
    "id": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
@@ -7436,21 +7436,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "https://securelist.com/uefi-bootkit-blackx/121539/",
-   "title": "How APT41 revived the BlackLotus bootkit to attack diplomatic organizations in Central Asia",
-   "link": "https://securelist.com/uefi-bootkit-blackx/121539/",
-   "summary": "Kaspersky GReAT experts discovered a new UEFI bootkit, BlackX. It exploits the Baton Drop vulnerability (CVE-2022-21894) and is similar to the BlackLotus bootkit.",
-   "source": "Securelist (Kaspersky)",
-   "lang": "en",
-   "type": "research",
-   "date": "2026-10-22T06:00:48Z",
-   "actors": [
-    "APT41"
-   ],
-   "threat": true,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -11123,9 +11108,9 @@
    "last": "2026-11-11T13:42:18"
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -11135,6 +11120,16 @@
   {
    "name": "APT28",
    "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -11156,16 +11151,6 @@
    "name": "LockBit",
    "type": "ransomware",
    "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -11897,7 +11882,6 @@
   "Mofang": "apt",
   "Unit 8200": "apt",
   "APT-C-36": "criminal",
-  "APT41": "apt",
   "HAZY TIGER": "apt",
   "UAC-0099": "criminal",
   "INJ3CTOR3": "criminal",
@@ -11906,6 +11890,547 @@
  },
  "known_actors": 1512,
  "iocs": [
+  {
+   "ioc": "e92e30f3483863a964fd3bb61690e0cfb1c930824ce85b89e813a00a371ee99e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-12T05:59:01",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025541/"
+  },
+  {
+   "ioc": "f2b536ee6a04a2282cf28e5b243cdbb6b029620156de622e520ce3fb64cd59d1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-12T05:59:00",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025540/"
+  },
+  {
+   "ioc": "6d146197a3d22aeb95f172d429d6305f44fb50541521ae2af9ec7245c3eddad0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-12T05:58:59",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025539/"
+  },
+  {
+   "ioc": "81bb3d26d6d4e7e6c13c0403d0f901bdc4cb855ed56726afcd663eaf764e591b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-12T05:58:58",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025538/"
+  },
+  {
+   "ioc": "ff8435745d8c78cab06adf32485d119d611773d15b0d857bd3a0980b3fecddc6",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-12T05:58:57",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025537/"
+  },
+  {
+   "ioc": "0621f423ec3f67db53990c4e2618440e93092ee454006db660d37cc382649b0f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-12T05:58:56",
+   "tags": [
+    "Dropper",
+    "ps1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025536/"
+  },
+  {
+   "ioc": "a25a089453ef6288207076524fedae2903ca67eb631dc315c21f0db6ddb72947",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:55",
+   "tags": [
+    "Dropper",
+    "ps1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025535/"
+  },
+  {
+   "ioc": "3ad82681fb28bcf31d9ea5bba142ac9c7f74eeeb90d632fb50d4e5febf13323c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:54",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025534/"
+  },
+  {
+   "ioc": "2e9163002759c0aff91bd291b4fd196d662943106e396d052b341912fc1f3275",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:53",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025533/"
+  },
+  {
+   "ioc": "a8b93413525d41088f5f8241fbfa8d6a1ef9c1b2d0e58fbf8f08d6dc5c07bc17",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:52",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025532/"
+  },
+  {
+   "ioc": "6282301eae365e9a02fa23374df76a257bd5f333fd5c99f5f1985ed4081d3057",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:51",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025531/"
+  },
+  {
+   "ioc": "78cb487e42c0949ca3d9cb8895cd8f3106e651a059239d20918f9a125c87d162",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:50",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025530/"
+  },
+  {
+   "ioc": "0e47081f43b4fc6363042800f49f8743c0f080791e07fe0059cb0ffdfc6d3d79",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:49",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025529/"
+  },
+  {
+   "ioc": "d40c86bedac267de79bc67780d74fc48fcdb7c8cb90475cdc550521c76f5015a",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:48",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025528/"
+  },
+  {
+   "ioc": "67fc3da61560f9d2444ba1eea65b23a9a6a615ad9a890e22b80b0050105bd1aa",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:47",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025527/"
+  },
+  {
+   "ioc": "264ea6df56079f3c4e95f94f31bd4b5fae496f317a1085b01e33b163e0dbe380",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:46",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025526/"
+  },
+  {
+   "ioc": "a4401fe56d9ed0db770b09cad68830d61e95a71fdba31854eb78d1989b30efc1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:45",
+   "tags": [
+    "Dropper",
+    "ps1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025525/"
+  },
+  {
+   "ioc": "cb7f6c4a3c549034015b3cfc5e4d31d8cac856c08e822d87e35eac96ded32fec",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:44",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025524/"
+  },
+  {
+   "ioc": "6d19c01ecf8633a180debb24de676b0b8e343a912592ea02643f2ae3930726d0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:43",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025523/"
+  },
+  {
+   "ioc": "d0551423505273ab5fe650ba2b615db1204c3652eb36c49465bde23743339284",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:42",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025522/"
+  },
+  {
+   "ioc": "10c5f9da3f2e6a309df2e5db0720cea9343ce262bfd61265329047c44d3ce2e5",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:41",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025521/"
+  },
+  {
+   "ioc": "5efdc50801ce39744d5b1c3d4e489ed9f610eba32f8605f872c2a6c4a93da025",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:39",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025520/"
+  },
+  {
+   "ioc": "a4d3d4144393539377594795f99f9a92ff737ff4fca2f001415b3148df5bef95",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:38",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025519/"
+  },
+  {
+   "ioc": "99543fbcc935f9868b4d86417c9dead670149c87744f2dbf2f30f4e42a89b6ac",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:37",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025517/"
+  },
+  {
+   "ioc": "6d953690c65ecf023d545e102ea937fc8c6572ca96f2267aae950b9b50a822db",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:37",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025518/"
+  },
+  {
+   "ioc": "5e6e9fcda3a2776cb05e12b8235b674715c42b4a995d2a43ee2f12e440d196b0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:36",
+   "tags": [
+    "Dropper",
+    "ps1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025516/"
+  },
+  {
+   "ioc": "f4f3eecb834f362eb1b98b6f22390822fd2c27c2bc41b1faab15795e0e3dd49e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:35",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025515/"
+  },
+  {
+   "ioc": "01f0b425314259d25beaec35621029023121aa8a7e1586f90f6d590fe58e5990",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:34",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025514/"
+  },
+  {
+   "ioc": "2b7b54c07b12a4fe2f257d298e22c7bcd64418983900f3927bc9f67f5d5a2855",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:33",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025513/"
+  },
+  {
+   "ioc": "81a80a3700b54c37e4b9c0666e5c6e33a937cd0682e01536db91666f9a983a5b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:32",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025512/"
+  },
+  {
+   "ioc": "02e553e413e7c45fd3655cc0700427ea0e695b601e9d30b81afdf015299bb641",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:30",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025511/"
+  },
+  {
+   "ioc": "b48b5c4233f7d09f09d0da3126ad1e926ae3a1452957eab19d279648e2ed8278",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:29",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025510/"
+  },
+  {
+   "ioc": "40edfa28bf6b3254a8cd7ac8d03fdda7c01e99e0540a517373393a65140bfcd1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:28",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025509/"
+  },
+  {
+   "ioc": "989ee8fb9d61bf140a538ab6773b25bee986abb63b65f8fb36b4186ea280cced",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:27",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025508/"
+  },
+  {
+   "ioc": "d311376216918ce0c029b43e3af2523a27b232bffd03a84b27b86bb8c4586fdd",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:26",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025507/"
+  },
+  {
+   "ioc": "5bf4295e8809e00fb4bfeab59a7ee541c2d8c160daf354864d09799d603e816b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:25",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025506/"
+  },
+  {
+   "ioc": "174f3bfcfb9fc32c5257f420bb2d395e92acfb345241dc443f64ba25cbc41473",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:24",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025505/"
+  },
+  {
+   "ioc": "f8489e90b4d261f88b3d8bd4671aeeba9fd3e46c0c1c30d6a487ba50add0aabc",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:23",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025504/"
+  },
+  {
+   "ioc": "a7ea91a72708f92828b533ee95cb356576abbb996a2559e267321c690cf89fc0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:21",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025503/"
+  },
+  {
+   "ioc": "db175baf01c6a3437fa112c48ee54e2de0f7baa22078be265e550ea1444c127f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T05:58:20",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025502/"
+  },
+  {
+   "ioc": "7f64ed4a05d8be4a2ed5a6fddbae3c51238aec601971d3eb7dabb8a2794aec13",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-12T05:58:19",
+   "tags": [
+    "elf",
+    "Mirai",
+    "upx"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025501/"
+  },
+  {
+   "ioc": "b528de50ba3683de7f2d7937c4a65331eb367ec5c2a71e8e5c57fcd6f2b6b619",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-12T05:58:18",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025500/"
+  },
+  {
+   "ioc": "fodevi[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-12T05:53:02",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025499/"
+  },
+  {
+   "ioc": "www[.]osamaphplogistices1[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Remcos",
+   "confidence": 75,
+   "date": "2026-11-12T05:50:09",
+   "tags": [
+    "remcos"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025498/"
+  },
   {
    "ioc": "hxxp://83[.]229[.]121[.]34:9999/supershell/login",
    "type": "url",
@@ -11933,14 +12458,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2025496/"
   },
   {
-   "ioc": "hxxps://gamer-088local[.]mom/",
+   "ioc": "hxxps://loco-game[.]mom/",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "WARDENStealer",
    "confidence": 75,
    "date": "2026-11-12T05:27:03",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2025495/"
+   "link": "https://threatfox.abuse.ch/ioc/2025493/"
   },
   {
    "ioc": "hxxps://activelocalpricelol[.]com/",
@@ -11953,14 +12478,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2025494/"
   },
   {
-   "ioc": "hxxps://loco-game[.]mom/",
+   "ioc": "hxxps://gamer-088local[.]mom/",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "WARDENStealer",
    "confidence": 75,
    "date": "2026-11-12T05:27:03",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2025493/"
+   "link": "https://threatfox.abuse.ch/ioc/2025495/"
   },
   {
    "ioc": "115[.]190[.]165[.]108:50050",
@@ -12482,19 +13007,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2025450/"
   },
   {
-   "ioc": "13[.]140[.]85[.]200:31337",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Sliver",
-   "confidence": 50,
-   "date": "2026-11-12T05:08:51",
-   "tags": [
-    "modat",
-    "sliver"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025449/"
-  },
-  {
    "ioc": "167[.]172[.]167[.]65:31337",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -12506,6 +13018,19 @@
     "sliver"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025448/"
+  },
+  {
+   "ioc": "13[.]140[.]85[.]200:31337",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Sliver",
+   "confidence": 50,
+   "date": "2026-11-12T05:08:51",
+   "tags": [
+    "modat",
+    "sliver"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025449/"
   },
   {
    "ioc": "191[.]217[.]203[.]188:31337",
@@ -12975,18 +13500,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2025411/"
   },
   {
-   "ioc": "2d806ff3be1e07fe6a7dbcb19cbe76b2d4e0ab54f6f8b49c3151556d7a511a69",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 80,
-   "date": "2026-11-12T04:58:49",
-   "tags": [
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025410/"
-  },
-  {
    "ioc": "22e6b52cf660ff7fb7291585ce4ec240503d7b2eaaacedc6e82d91a05b5998b4",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12999,16 +13512,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2025409/"
   },
   {
-   "ioc": "92e6a3d72f3743dfec5221719a0a7fbe914e9d55705ff774f6ed0b2f425f4f90",
+   "ioc": "2d806ff3be1e07fe6a7dbcb19cbe76b2d4e0ab54f6f8b49c3151556d7a511a69",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown Loader",
    "confidence": 80,
-   "date": "2026-11-12T04:58:47",
+   "date": "2026-11-12T04:58:49",
    "tags": [
     "Dropper"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025408/"
+   "link": "https://threatfox.abuse.ch/ioc/2025410/"
   },
   {
    "ioc": "5bead6489ef4ca37b8e02dd20e475497c8143ac3a2ea4916645d4208a396c9a0",
@@ -13021,6 +13534,18 @@
     "Dropper"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025407/"
+  },
+  {
+   "ioc": "92e6a3d72f3743dfec5221719a0a7fbe914e9d55705ff774f6ed0b2f425f4f90",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-12T04:58:47",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025408/"
   },
   {
    "ioc": "b46b9ec596c1a989d0e80f5f2fc0411dd2b928230c55f1a79f8d3bc960db04ba",
@@ -13417,7 +13942,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2025376/"
   },
   {
-   "ioc": "www[.]collomb[.]com",
+   "ioc": "www[.]clinicaterezafilgueiras[.]com[.]br",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "ClearFake",
@@ -13427,7 +13952,7 @@
     "compromised",
     "etherhide"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025375/"
+   "link": "https://threatfox.abuse.ch/ioc/2025373/"
   },
   {
    "ioc": "www[.]cm-vernou[.]fr",
@@ -13443,7 +13968,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2025374/"
   },
   {
-   "ioc": "www[.]clinicaterezafilgueiras[.]com[.]br",
+   "ioc": "www[.]collomb[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "ClearFake",
@@ -13453,7 +13978,7 @@
     "compromised",
     "etherhide"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025373/"
+   "link": "https://threatfox.abuse.ch/ioc/2025375/"
   },
   {
    "ioc": "dambo[.]store",
@@ -13604,18 +14129,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2025361/"
   },
   {
-   "ioc": "2cead019605e17bd027e7f9e3faaeafd7855f9e7d3cad12e5d9ed2a26353d24c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 75,
-   "date": "2026-11-12T03:58:46",
-   "tags": [
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025360/"
-  },
-  {
    "ioc": "584ff1024d725518f597f4fecbb86696fa5fc80fadda29ffc31df05e303fca64",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -13626,6 +14139,18 @@
     "Dropper"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025359/"
+  },
+  {
+   "ioc": "2cead019605e17bd027e7f9e3faaeafd7855f9e7d3cad12e5d9ed2a26353d24c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-12T03:58:46",
+   "tags": [
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025360/"
   },
   {
    "ioc": "cc4fd9d53f9dc4030016a8ae9a6e99555b3914c6b2e6535d5ea4c5b3d41dcf66",
@@ -13868,608 +14393,127 @@
     "ps1"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025339/"
-  },
-  {
-   "ioc": "e26c6837334a3929fa580016b52a28c728631f37363b762fc2d54bec5085274e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 80,
-   "date": "2026-11-12T03:58:22",
-   "tags": [
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025338/"
-  },
-  {
-   "ioc": "e54947343477354e0bddc6ef78867fd9957a8d90b5f0466b39fe72612c95d3ee",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 80,
-   "date": "2026-11-12T03:58:21",
-   "tags": [
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025337/"
-  },
-  {
-   "ioc": "a02caa0b5aa5ebff67c25b6b1800fd4c0dde02ce90375a3c192b372d2f78693d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 80,
-   "date": "2026-11-12T03:58:20",
-   "tags": [
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025336/"
-  },
-  {
-   "ioc": "6e3ba2552b7dd2f733becc926ce4447f781af97405d06ea0354f9e2f7ce332b9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T03:58:19",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025335/"
-  },
-  {
-   "ioc": "b8adc57c452ecfd30bd17b053b4142f9be286ac4c879b353d7f0e2c34781f5d1",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 100,
-   "date": "2026-11-12T03:58:17",
-   "tags": [
-    "elf",
-    "Mirai",
-    "upx"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025334/"
-  },
-  {
-   "ioc": "222a01338329ff0c5413b22fbfc4f96d0b9d0b60cdba7b68e6956a7b81a59470",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 100,
-   "date": "2026-11-12T03:58:16",
-   "tags": [
-    "elf",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025333/"
-  },
-  {
-   "ioc": "www[.]maplezenith[.]live",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-12T03:47:47",
-   "tags": [
-    "ClickFix",
-    "compromised"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025332/"
-  },
-  {
-   "ioc": "nxebfffhmo[.]workers[.]dev",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "php.shin_webshell",
-   "confidence": 50,
-   "date": "2026-11-12T03:46:22",
-   "tags": [
-    "Cloudflare",
-    "gif",
-    "PHP",
-    "webshell",
-    "WordPress",
-    "workers.dev",
-    "wp-admin"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025331/"
-  },
-  {
-   "ioc": "141[.]98[.]10[.]160:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-12T03:37:21",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025330/"
-  },
-  {
-   "ioc": "hxxp://192[.]168[.]1[.]1:8088/i",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T03:29:01",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "telnet"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025329/"
-  },
-  {
-   "ioc": "www[.]cec[.]edu[.]cv",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-12T03:27:29",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025328/"
-  },
-  {
-   "ioc": "childquip[.]com[.]au",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-12T03:22:28",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025327/"
-  },
-  {
-   "ioc": "www[.]cbgeophysical[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-12T03:22:28",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025326/"
-  },
-  {
-   "ioc": "c0zp8sxj[.]gesra[.]store",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 100,
-   "date": "2026-11-12T03:17:35",
-   "tags": [
-    "ClearFake",
-    "mac-0xa07e",
-    "macOS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025325/"
-  },
-  {
-   "ioc": "cavalcanteadv[.]com[.]br",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-12T03:17:14",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025324/"
-  },
-  {
-   "ioc": "68abe439c5e5981fa8e69f33001b29a874bd3dc917aad710b22465ca26ba7388",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-12T03:11:52",
-   "tags": [
-    "jar",
-    "OSRS",
-    "runelure"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025323/"
-  },
-  {
-   "ioc": "angsa44d[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-12T03:05:35",
-   "tags": [
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025322/"
-  },
-  {
-   "ioc": "dv[.]angsa44d[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-12T03:05:34",
-   "tags": [
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025321/"
-  },
-  {
-   "ioc": "ow[.]amerika88[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-12T03:05:34",
-   "tags": [
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025320/"
-  },
-  {
-   "ioc": "gesra[.]store",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 100,
-   "date": "2026-11-12T03:05:32",
-   "tags": [
-    "12November2026",
-    "ClearFake",
-    "Commandline",
-    "macOS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025319/"
-  },
-  {
-   "ioc": "5a1ed238a7fe20561670d055e5e9da5e300651d2f87a7836993bd39a5a3dd1bc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:32",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025318/"
-  },
-  {
-   "ioc": "caac7e9d53a806f42d82c1a5d466e7ab5b1e248d04c45d4c1caadde72b1dcd18",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:31",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025317/"
-  },
-  {
-   "ioc": "e2287022dd66fd805bb6845d9dc1a63181aa587e87dac6c5358670815e124aa5",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:29",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025316/"
-  },
-  {
-   "ioc": "841c7c2330c378645dc8031ae6228924269b788e578ddbe94815b1bb06872737",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:28",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025315/"
-  },
-  {
-   "ioc": "0111db892e1b719ae12ed4cd847117670164d6ab636dec6eeb5e23d5d55d7986",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:27",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025314/"
-  },
-  {
-   "ioc": "ed9bd016ec38519dd07769755edd2ec5601c19694a94e089b2edd1190b6df91f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:26",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025313/"
-  },
-  {
-   "ioc": "4c0ab25df33fd65eb6d0cd2eb9cc39184ece05cf91b655a84882fce6746e36c9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:25",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025312/"
-  },
-  {
-   "ioc": "70422ee91ec13ab03002e0bfe9b3ccf2c09475b6c25933ccc60d02af183a5d51",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T02:58:24",
-   "tags": [
-    "elf",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025311/"
-  },
-  {
-   "ioc": "543de6a5e6c9cbb1f35ee8c0c42e43e442fb9a1dd1cbd570bf091725dda82b53",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-12T02:58:23",
-   "tags": [
-    "banker",
-    "exe",
-    "SalatStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025310/"
-  },
-  {
-   "ioc": "1815a173a2fb0ee6298186d98a88e272b6c6d5c586b0a21654c3d1ca7f7b2800",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-12T02:58:22",
-   "tags": [
-    "exe",
-    "SalatStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025309/"
-  },
-  {
-   "ioc": "3f8fdf75598d386424b6386dffe3915fd1f8b6431f931b91143e6cfea8e8986b",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-12T02:58:21",
-   "tags": [
-    "exe",
-    "SalatStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025308/"
-  },
-  {
-   "ioc": "61fb46f1f1564b2468d78f668c8047a2b998cfe46e6d84a1fb43a49165022636",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-12T02:58:19",
-   "tags": [
-    "exe",
-    "SalatStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025307/"
-  },
-  {
-   "ioc": "681caa54169e5890849e1edb1092c5a9776a9c91af88d23fe73aab1eb873d5d2",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-12T02:58:18",
-   "tags": [
-    "exe",
-    "SalatStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025306/"
-  },
-  {
-   "ioc": "b16121d30f49cc2788509173e0f54a47c524deba60418b3b393fc74b3211cb54",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-12T02:58:16",
-   "tags": [
-    "exe",
-    "SalatStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025305/"
-  },
-  {
-   "ioc": "a2v4fh5o[.]evna[.]store",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 100,
-   "date": "2026-11-12T02:53:15",
-   "tags": [
-    "ClearFake",
-    "mac-0x68dc",
-    "macOS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025304/"
-  },
-  {
-   "ioc": "evna[.]store",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 100,
-   "date": "2026-11-12T02:53:07",
-   "tags": [
-    "ClearFake"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025303/"
-  },
-  {
-   "ioc": "copperadan[.]workers[.]dev",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "php.shin_webshell",
-   "confidence": 50,
-   "date": "2026-11-12T02:42:36",
-   "tags": [
-    "Cloudflare",
-    "gif",
-    "PHP",
-    "webshell",
-    "WordPress",
-    "workers.dev",
-    "wp-admin"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025302/"
-  },
-  {
-   "ioc": "www[.]bvu[.]edu[.]cv",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-12T02:38:26",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025301/"
-  },
-  {
-   "ioc": "hxxps://cafegarelli[.]mx/",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-12T02:30:58",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025300/"
-  },
-  {
-   "ioc": "hxxps://canfont[.]net/",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-12T02:30:57",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025299/"
-  },
-  {
-   "ioc": "runelitepluginhub[.]net",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-12T02:23:04",
-   "tags": [
-    "runelure"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025298/"
-  },
-  {
-   "ioc": "hxxps://runelitepluginhub[.]net/files/client[.]jar",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-12T02:22:33",
-   "tags": [
-    "runelure"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025297/"
-  },
-  {
-   "ioc": "5[.]231[.]31[.]148:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Jackskid",
-   "confidence": 100,
-   "date": "2026-11-12T02:15:49",
-   "tags": [
-    "botnet",
-    "DDoS",
-    "Jackskid",
-    "Mirai",
-    "rctea"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025296/"
-  },
-  {
-   "ioc": "lrd[.]adv[.]br",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-12T02:07:38",
-   "tags": [
-    "ClickFix",
-    "compromised"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025295/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://180[.]191[.]20[.]148:33650/bin[.]sh",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-12T05:53:19",
+   "link": "https://urlhaus.abuse.ch/url/4064197/"
+  },
+  {
+   "ioc": "hxxp://103[.]190[.]23[.]91:45144/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4064193/"
+  },
+  {
+   "ioc": "hxxp://108[.]168[.]45[.]166:33295/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4064194/"
+  },
+  {
+   "ioc": "hxxp://123[.]5[.]132[.]75:39061/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4064195/"
+  },
+  {
+   "ioc": "hxxp://182[.]113[.]219[.]7:46329/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4064196/"
+  },
+  {
+   "ioc": "hxxp://27[.]205[.]145[.]222:51695/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-12T05:44:11",
+   "link": "https://urlhaus.abuse.ch/url/4064192/"
+  },
+  {
+   "ioc": "hxxp://163[.]142[.]92[.]93:34472/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4064190/"
+  },
+  {
+   "ioc": "hxxp://182[.]120[.]150[.]52:48138/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4064191/"
+  },
+  {
+   "ioc": "hxxp://221[.]203[.]125[.]251:41197/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4064186/"
+  },
+  {
+   "ioc": "hxxp://103[.]190[.]23[.]91:45144/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4064187/"
+  },
+  {
+   "ioc": "hxxp://5[.]26[.]131[.]236:44635/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4064188/"
+  },
+  {
+   "ioc": "hxxp://66[.]205[.]237[.]4:34423/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T05:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4064189/"
+  },
   {
    "ioc": "hxxp://27[.]205[.]145[.]222:51695/bin[.]sh",
    "host_it": false,
@@ -15930,126 +15974,12 @@
    "tags": [],
    "date": "2026-11-11T22:47:10",
    "link": "https://urlhaus.abuse.ch/url/4064048/"
-  },
-  {
-   "ioc": "hxxp://27[.]215[.]54[.]15:60637/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:47:09",
-   "link": "https://urlhaus.abuse.ch/url/4064047/"
-  },
-  {
-   "ioc": "hxxp://120[.]28[.]196[.]250:55313/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:47:06",
-   "link": "https://urlhaus.abuse.ch/url/4064046/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/zenrollersound/valorant-see-through/releases/download/1/Valorant-Loader[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "MopsStealer"
-   ],
-   "date": "2026-11-11T22:45:47",
-   "link": "https://urlhaus.abuse.ch/url/4064045/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/ThunderDoctor/valorant-fov-changer/releases/download/1/Valorant-Loader[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "MopsStealer"
-   ],
-   "date": "2026-11-11T22:45:07",
-   "link": "https://urlhaus.abuse.ch/url/4064044/"
-  },
-  {
-   "ioc": "hxxp://182[.]116[.]51[.]69:40248/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:33:06",
-   "link": "https://urlhaus.abuse.ch/url/4064043/"
-  },
-  {
-   "ioc": "hxxp://61[.]52[.]156[.]254:37805/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:32:12",
-   "link": "https://urlhaus.abuse.ch/url/4064042/"
-  },
-  {
-   "ioc": "hxxp://42[.]224[.]81[.]52:44228/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4064041/"
-  },
-  {
-   "ioc": "hxxp://105[.]186[.]247[.]242:56397/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:17:07",
-   "link": "https://urlhaus.abuse.ch/url/4064040/"
-  },
-  {
-   "ioc": "hxxp://120[.]28[.]196[.]250:55313/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4064037/"
-  },
-  {
-   "ioc": "hxxp://115[.]50[.]32[.]152:33258/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4064038/"
-  },
-  {
-   "ioc": "hxxp://61[.]52[.]156[.]254:37805/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4064039/"
-  },
-  {
-   "ioc": "hxxp://36[.]24[.]253[.]213:60427/i",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-11T22:02:15",
-   "link": "https://urlhaus.abuse.ch/url/4064036/"
   }
  ],
  "malware_top": [
   {
    "name": "Unknown Loader",
-   "count": 322
+   "count": 328
   },
   {
    "name": "IClickFix",
@@ -16057,7 +15987,7 @@
   },
   {
    "name": "SalatStealer",
-   "count": 167
+   "count": 159
   },
   {
    "name": "ClearFake",
@@ -16065,7 +15995,7 @@
   },
   {
    "name": "Mirai",
-   "count": 84
+   "count": 86
   },
   {
    "name": "StrelaStealer",
@@ -16073,7 +16003,7 @@
   },
   {
    "name": "Cobalt Strike",
-   "count": 55
+   "count": 46
   },
   {
    "name": "Vidar",
@@ -16084,19 +16014,11 @@
    "count": 41
   },
   {
-   "name": "Sliver",
-   "count": 26
-  },
-  {
    "name": "php.shin_webshell",
-   "count": 24
+   "count": 25
   },
   {
-   "name": "AsyncRAT",
-   "count": 21
-  },
-  {
-   "name": "PureRAT",
+   "name": "Sliver",
    "count": 19
   },
   {
@@ -16108,16 +16030,24 @@
    "count": 17
   },
   {
+   "name": "PureRAT",
+   "count": 14
+  },
+  {
+   "name": "AsyncRAT",
+   "count": 13
+  },
+  {
+   "name": "Remcos",
+   "count": 10
+  },
+  {
    "name": "RevStealer",
    "count": 10
   },
   {
    "name": "ACR Stealer",
    "count": 10
-  },
-  {
-   "name": "Remcos",
-   "count": 9
   },
   {
    "name": "AMOS",
@@ -16184,37 +16114,37 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 53.84,
+    "value": 53.82,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 8.13,
+    "value": 8.1,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 4.29,
+    "value": 4.34,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.21,
+    "value": 3.23,
     "rank": 4
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.47,
+    "value": 2.46,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.27,
+    "value": 2.25,
     "rank": 6
    },
    {
@@ -16232,13 +16162,13 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.72,
+    "value": 1.71,
     "rank": 9
    },
    {
     "code": "AE",
     "name": "United Arab Emirates",
-    "value": 1.45,
+    "value": 1.46,
     "rank": 10
    },
    {
@@ -16264,7 +16194,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.26,
+    "value": 55.27,
     "rank": 1
    },
    {
@@ -16282,13 +16212,13 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.09,
+    "value": 3.1,
     "rank": 4
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.32,
+    "value": 2.33,
     "rank": 5
    },
    {
@@ -16312,7 +16242,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.48,
+    "value": 1.47,
     "rank": 9
    },
    {
@@ -16324,7 +16254,7 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.16,
+    "value": 1.15,
     "rank": 11
    },
    {
