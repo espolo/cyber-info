@@ -1,6 +1,19 @@
 {
- "updated": "2026-11-12T16:31:01Z",
+ "updated": "2026-11-12T17:01:13Z",
  "news": [
+  {
+   "id": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+   "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+   "link": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+   "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can stil…",
+   "source": "The Hacker News",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-12T16:27:01Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
   {
    "id": "https://therecord.media/european-authorities-take-down-stealic-malware-second-time",
    "title": "European authorities take down SteaIC malware servers for second time this year",
@@ -8105,19 +8118,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
-   "title": "The Current Landscape of OAuth Attacks",
-   "link": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
-   "summary": "Unit 42 explores modern OAuth threats and actionable steps organizations can take to protect their environments. The post The Current Landscape of OAuth Attacks appeared first on Unit 42 .",
-   "source": "Unit 42",
-   "lang": "en",
-   "type": "research",
-   "date": "2026-10-22T17:00:25Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -11822,16 +11822,6 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "LockBit",
    "type": "ransomware",
    "country": "",
@@ -11845,6 +11835,16 @@
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12576,6 +12576,339 @@
  "known_actors": 1512,
  "iocs": [
   {
+   "ioc": "devam[.]store",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-12T16:57:46",
+   "tags": [
+    "12November2026",
+    "ClearFake",
+    "Commandline",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026067/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/windows?token=f93a38103457",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:30",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026060/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/linux?token=40abc18736c9",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:30",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026061/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/mac?token=40abc18736c9",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:30",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026062/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/windows?token=40abc18736c9",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:30",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026063/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/linux?token=302450aa67dc",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:30",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026064/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/mac?token=302450aa67dc",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:30",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026065/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/windows?token=302450aa67dc",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:30",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026066/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/linux?token=f93a38103457",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:29",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026058/"
+  },
+  {
+   "ioc": "hxxp://165[.]140[.]86[.]190:3000/task/mac?token=f93a38103457",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-12T16:57:29",
+   "tags": [
+    "ContagiousInterview",
+    "DPRK",
+    "vscode-tasks"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026059/"
+  },
+  {
+   "ioc": "hxxps://wocgranted[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=tomihomes[.]doc",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:06",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026055/"
+  },
+  {
+   "ioc": "hxxps://rockymountainstoneart[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=Boca[.]GrandeLighthouse",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:06",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026056/"
+  },
+  {
+   "ioc": "hxxps://rockymountainstoneart[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=access[.]doc",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:06",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026057/"
+  },
+  {
+   "ioc": "hxxps://wesleyjanitorial-doc-access[.]s3[.]us-east-2[.]amazonaws[.]com/Index1[.]html",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026046/"
+  },
+  {
+   "ioc": "hxxps://smee-stanselmschoolphila-doc-access[.]s3[.]us-east-2[.]amazonaws[.]com/Index1[.]html",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026047/"
+  },
+  {
+   "ioc": "hxxps://springboard-consulting-llc[.]s3[.]us-east-2[.]amazonaws[.]com/Index1[.]html",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026048/"
+  },
+  {
+   "ioc": "hxxps://tomihomes-com-doc-rfp[.]s3[.]us-east-2[.]amazonaws[.]com/Index1[.]html",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026049/"
+  },
+  {
+   "ioc": "hxxps://boca-grande-lighthouse-toffee-dcdd0e[.]netlify[.]app/",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026050/"
+  },
+  {
+   "ioc": "hxxps://apslearns-doc-access-28da15[.]netlify[.]app/",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026051/"
+  },
+  {
+   "ioc": "hxxps://thewildandfreecafe[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=wesley[.]doc",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026052/"
+  },
+  {
+   "ioc": "hxxps://scjwc[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=smee[.]stanselmschoolphila",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026053/"
+  },
+  {
+   "ioc": "hxxps://wocgranted[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=consultspringboard[.]doc",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:57:05",
+   "tags": [
+    "Adobe",
+    "fake-pdf",
+    "phishing",
+    "RMM-abuse",
+    "ScreenConnect"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026054/"
+  },
+  {
    "ioc": "3544ffefb2a38bf4faf6181aa4374f4c186d3c2a7b9b059244b65dce8d5688d9",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -12586,79 +12919,6 @@
     "upStage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2026045/"
-  },
-  {
-   "ioc": "b7a7013b951c3cea178ece3363e3dd06626b9b98ee27ebfd7c161d0bbcfbd894",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:49",
-   "tags": [
-    "upStage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026044/"
-  },
-  {
-   "ioc": "e7291095de78484039fdc82106d191bf41b7469811c4e31b4228227911d25027",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:49",
-   "tags": [
-    "upStage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026043/"
-  },
-  {
-   "ioc": "fc10ff87b6fe2dcbeffe636c7a3ca85ce3da944c38c7ea08cd7e784c11fa0302",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:49",
-   "tags": [
-    "upStage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026042/"
-  },
-  {
-   "ioc": "gg[.]afn360[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:49",
-   "tags": [
-    "upStage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026041/"
-  },
-  {
-   "ioc": "update[.]7zip[.]cloud",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:49",
-   "tags": [
-    "upStage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026040/"
-  },
-  {
-   "ioc": "4ce5e5768d2f9f71e2835ab8ebc4a2191d436ca3a990a56e9bc264235c7b5b55",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:49",
-   "tags": [
-    "Projextor",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026039/"
   },
   {
    "ioc": "c21eb14ba63e943db5ea9ab64af02a50a17260c7d8538a133c4f6e0957d36f47",
@@ -12674,82 +12934,77 @@
    "link": "https://threatfox.abuse.ch/ioc/2026038/"
   },
   {
-   "ioc": "3c1dbc3f56e91cc79f0014850e773a7f12bbfef06680f08f883b2bf12873eccc",
+   "ioc": "4ce5e5768d2f9f71e2835ab8ebc4a2191d436ca3a990a56e9bc264235c7b5b55",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:48",
+   "date": "2026-11-12T16:29:49",
    "tags": [
     "Projextor",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026037/"
+   "link": "https://threatfox.abuse.ch/ioc/2026039/"
   },
   {
-   "ioc": "e7bc36c7345b3894bc1da3d18ff3dbf0a20713d17b93a585ac0da65776d29027",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:48",
-   "tags": [
-    "Projextor",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026036/"
-  },
-  {
-   "ioc": "71656539cc644513396f56100ffb56f9ef9eaa5b7a16b0773d6e5d370a912a88",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:48",
-   "tags": [
-    "Projextor",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026035/"
-  },
-  {
-   "ioc": "a799417bd79060d63e93682f339fbe2868de3881f9c5865d9b583f5b715c70a9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:48",
-   "tags": [
-    "Projextor",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026034/"
-  },
-  {
-   "ioc": "conv[.]doceditorinc[.]com",
+   "ioc": "update[.]7zip[.]cloud",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:48",
+   "date": "2026-11-12T16:29:49",
    "tags": [
-    "Projextor",
-    "TamperedChef"
+    "upStage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026033/"
+   "link": "https://threatfox.abuse.ch/ioc/2026040/"
   },
   {
-   "ioc": "meal-formula[.]com",
+   "ioc": "gg[.]afn360[.]com",
    "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:48",
+   "date": "2026-11-12T16:29:49",
    "tags": [
-    "Projextor",
-    "TamperedChef"
+    "upStage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026032/"
+   "link": "https://threatfox.abuse.ch/ioc/2026041/"
+  },
+  {
+   "ioc": "fc10ff87b6fe2dcbeffe636c7a3ca85ce3da944c38c7ea08cd7e784c11fa0302",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:49",
+   "tags": [
+    "upStage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026042/"
+  },
+  {
+   "ioc": "e7291095de78484039fdc82106d191bf41b7469811c4e31b4228227911d25027",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:49",
+   "tags": [
+    "upStage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026043/"
+  },
+  {
+   "ioc": "b7a7013b951c3cea178ece3363e3dd06626b9b98ee27ebfd7c161d0bbcfbd894",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:49",
+   "tags": [
+    "upStage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026044/"
   },
   {
    "ioc": "doceditorinc[.]com",
@@ -12765,108 +13020,82 @@
    "link": "https://threatfox.abuse.ch/ioc/2026031/"
   },
   {
-   "ioc": "e0a8bf4c4b7b274da79d4ce6142b923a4bfc8482d6c1f5a662cfb2382bf5ad28",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "meal-formula[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:47",
+   "date": "2026-11-12T16:29:48",
    "tags": [
-    "DragonsGate",
+    "Projextor",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026030/"
+   "link": "https://threatfox.abuse.ch/ioc/2026032/"
   },
   {
-   "ioc": "b73de00b2bbd45ab7491ae9c5a31f60aa4e42bd5d3025a47fdbcbb3cdb5c18c0",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "conv[.]doceditorinc[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:47",
+   "date": "2026-11-12T16:29:48",
    "tags": [
-    "DragonsGate",
+    "Projextor",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026029/"
+   "link": "https://threatfox.abuse.ch/ioc/2026033/"
   },
   {
-   "ioc": "e786d9cf3e20b18c159e714cc601f296ffecb160e77acec63dc81cdb630dc426",
+   "ioc": "a799417bd79060d63e93682f339fbe2868de3881f9c5865d9b583f5b715c70a9",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:47",
+   "date": "2026-11-12T16:29:48",
    "tags": [
-    "DragonsGate",
+    "Projextor",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026028/"
+   "link": "https://threatfox.abuse.ch/ioc/2026034/"
   },
   {
-   "ioc": "a97958193a76fb9dd5f8c07e73f8a1b1dbb1a156d34ae00dd8cc4fa14b3cbf4b",
+   "ioc": "71656539cc644513396f56100ffb56f9ef9eaa5b7a16b0773d6e5d370a912a88",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:47",
+   "date": "2026-11-12T16:29:48",
    "tags": [
-    "DragonsGate",
+    "Projextor",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026027/"
+   "link": "https://threatfox.abuse.ch/ioc/2026035/"
   },
   {
-   "ioc": "0c99319f3c786c8c834db264847845658094817e646f3a8d7c34dce0ae65019c",
+   "ioc": "e7bc36c7345b3894bc1da3d18ff3dbf0a20713d17b93a585ac0da65776d29027",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:47",
+   "date": "2026-11-12T16:29:48",
    "tags": [
-    "DragonsGate",
+    "Projextor",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026026/"
+   "link": "https://threatfox.abuse.ch/ioc/2026036/"
   },
   {
-   "ioc": "6a85dc122b24578730b41fbab235e2278d400e10e8ec140eb29b6da403d22bdf",
+   "ioc": "3c1dbc3f56e91cc79f0014850e773a7f12bbfef06680f08f883b2bf12873eccc",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:47",
+   "date": "2026-11-12T16:29:48",
    "tags": [
-    "DragonsGate",
+    "Projextor",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026025/"
-  },
-  {
-   "ioc": "25bb78acb7bb070aebbc6126a18eaa57150bb8764746433cf439c22f8f26228e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:47",
-   "tags": [
-    "DragonsGate",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026024/"
-  },
-  {
-   "ioc": "07311efd018bf94088ff514360eb35390d493f75ac5cad1ced7e9acd85c56b5f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:47",
-   "tags": [
-    "DragonsGate",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026023/"
+   "link": "https://threatfox.abuse.ch/ioc/2026037/"
   },
   {
    "ioc": "2613489dd5d8b31ae06ca954d405f9309d2385dfe927a05194e4c11af8ca3e9d",
@@ -12882,121 +13111,108 @@
    "link": "https://threatfox.abuse.ch/ioc/2026022/"
   },
   {
-   "ioc": "14d0844c048da69c9469e30179cf46f75766420cf0f303f7a990575b3957926d",
+   "ioc": "07311efd018bf94088ff514360eb35390d493f75ac5cad1ced7e9acd85c56b5f",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026021/"
+   "link": "https://threatfox.abuse.ch/ioc/2026023/"
   },
   {
-   "ioc": "247e7753c25ff1f5571844cc97d73212bd23350bb29ed9a858e3d8949cc071ab",
+   "ioc": "25bb78acb7bb070aebbc6126a18eaa57150bb8764746433cf439c22f8f26228e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026020/"
+   "link": "https://threatfox.abuse.ch/ioc/2026024/"
   },
   {
-   "ioc": "6a23ca969cd6fda74845171d937b4ccabf8c90bb1949843b73a176a16b4ef6bd",
+   "ioc": "6a85dc122b24578730b41fbab235e2278d400e10e8ec140eb29b6da403d22bdf",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026019/"
+   "link": "https://threatfox.abuse.ch/ioc/2026025/"
   },
   {
-   "ioc": "6009158c61d0cecc3fd85e3a3b23e94ca79ef1524d6b749b24e9b52ff29c95ce",
+   "ioc": "0c99319f3c786c8c834db264847845658094817e646f3a8d7c34dce0ae65019c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026018/"
+   "link": "https://threatfox.abuse.ch/ioc/2026026/"
   },
   {
-   "ioc": "06798dfc0620ce5e2980b6684d7037436e72320386f8171a7ca72decf0d2edf2",
+   "ioc": "a97958193a76fb9dd5f8c07e73f8a1b1dbb1a156d34ae00dd8cc4fa14b3cbf4b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026017/"
+   "link": "https://threatfox.abuse.ch/ioc/2026027/"
   },
   {
-   "ioc": "49f86fab5187b52502299431dcc008367549db6d70d8c93a9a70dc7ee030f8f3",
+   "ioc": "e786d9cf3e20b18c159e714cc601f296ffecb160e77acec63dc81cdb630dc426",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026016/"
+   "link": "https://threatfox.abuse.ch/ioc/2026028/"
   },
   {
-   "ioc": "cefd5427c84894ded7e81a63bc6776a99fa9f41cfee41f446bcf93e64d7cd085",
+   "ioc": "b73de00b2bbd45ab7491ae9c5a31f60aa4e42bd5d3025a47fdbcbb3cdb5c18c0",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026015/"
+   "link": "https://threatfox.abuse.ch/ioc/2026029/"
   },
   {
-   "ioc": "6e112c6f95b5bbe30f433e51af92e18cd842b7ab14e097e9ffe616251fc3dfc0",
+   "ioc": "e0a8bf4c4b7b274da79d4ce6142b923a4bfc8482d6c1f5a662cfb2382bf5ad28",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:46",
+   "date": "2026-11-12T16:29:47",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026014/"
-  },
-  {
-   "ioc": "c0faf4d7eef6aaa8d7839ab7db2ed4c0ee59e081f21b6cbe2746d3837a5398d8",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:46",
-   "tags": [
-    "DragonsGate",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2026013/"
+   "link": "https://threatfox.abuse.ch/ioc/2026030/"
   },
   {
    "ioc": "cc823b2c31ff127bcada873aa5d2d2549d2c69007e4e68313c00f3b29ffe3e6e",
@@ -13012,121 +13228,121 @@
    "link": "https://threatfox.abuse.ch/ioc/2026012/"
   },
   {
-   "ioc": "8f246de765fa2b641dbff27df8f010cbb6b1569b93cdb1f99cf0a7fa2d3010e9",
+   "ioc": "c0faf4d7eef6aaa8d7839ab7db2ed4c0ee59e081f21b6cbe2746d3837a5398d8",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026011/"
+   "link": "https://threatfox.abuse.ch/ioc/2026013/"
   },
   {
-   "ioc": "5e4d114f062725011acb64738f637e9bd639d72c3c479687ee37befefbf3616f",
+   "ioc": "6e112c6f95b5bbe30f433e51af92e18cd842b7ab14e097e9ffe616251fc3dfc0",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026010/"
+   "link": "https://threatfox.abuse.ch/ioc/2026014/"
   },
   {
-   "ioc": "a221c8761fe264ffa953476ad0a23033f667a8c2c48eb43274d96e4ed208c23e",
+   "ioc": "cefd5427c84894ded7e81a63bc6776a99fa9f41cfee41f446bcf93e64d7cd085",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026009/"
+   "link": "https://threatfox.abuse.ch/ioc/2026015/"
   },
   {
-   "ioc": "590d5ae6170473e39bea7fbdc7a6300eeb484100ee62c49b5b1d55ace3516f61",
+   "ioc": "49f86fab5187b52502299431dcc008367549db6d70d8c93a9a70dc7ee030f8f3",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026008/"
+   "link": "https://threatfox.abuse.ch/ioc/2026016/"
   },
   {
-   "ioc": "708358ae2752dcde2a33ec5d26405bb99e6c007d99c31b84a87e06608b738bbc",
+   "ioc": "06798dfc0620ce5e2980b6684d7037436e72320386f8171a7ca72decf0d2edf2",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026007/"
+   "link": "https://threatfox.abuse.ch/ioc/2026017/"
   },
   {
-   "ioc": "ae7e01f76f121dae9f7f2b0916032565af8358a1d08d2031635cac1f5366ce06",
+   "ioc": "6009158c61d0cecc3fd85e3a3b23e94ca79ef1524d6b749b24e9b52ff29c95ce",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026006/"
+   "link": "https://threatfox.abuse.ch/ioc/2026018/"
   },
   {
-   "ioc": "abf343ee7267d17f6c114d2655c6aafed28bb06fa9696706e7c236b361ed416a",
+   "ioc": "6a23ca969cd6fda74845171d937b4ccabf8c90bb1949843b73a176a16b4ef6bd",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026005/"
+   "link": "https://threatfox.abuse.ch/ioc/2026019/"
   },
   {
-   "ioc": "8c887cdc657e0f01f2951830af35d2412411acc1dd15e680ef4f3096e0c521e3",
+   "ioc": "247e7753c25ff1f5571844cc97d73212bd23350bb29ed9a858e3d8949cc071ab",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026004/"
+   "link": "https://threatfox.abuse.ch/ioc/2026020/"
   },
   {
-   "ioc": "024be58d44a6021ac78688a28023e9ba7caf2d6bbeec2682b6b89d7c30802cc2",
+   "ioc": "14d0844c048da69c9469e30179cf46f75766420cf0f303f7a990575b3957926d",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:45",
+   "date": "2026-11-12T16:29:46",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026003/"
+   "link": "https://threatfox.abuse.ch/ioc/2026021/"
   },
   {
    "ioc": "ca1f7d008c3dcd970e98fc9ff1e75b3a093add3f1bcb2f48517fd9e8cab666df",
@@ -13142,108 +13358,121 @@
    "link": "https://threatfox.abuse.ch/ioc/2026002/"
   },
   {
-   "ioc": "674a5ee1e4acefa4b441cac5eadb190b8c83cf7483f34e949c0377a82a52ef6f",
+   "ioc": "024be58d44a6021ac78688a28023e9ba7caf2d6bbeec2682b6b89d7c30802cc2",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026001/"
+   "link": "https://threatfox.abuse.ch/ioc/2026003/"
   },
   {
-   "ioc": "badb7d1d06839aaa47ca91cc56d557e5da5d87ccf290492ec81c2f0496d5e160",
+   "ioc": "8c887cdc657e0f01f2951830af35d2412411acc1dd15e680ef4f3096e0c521e3",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2026000/"
+   "link": "https://threatfox.abuse.ch/ioc/2026004/"
   },
   {
-   "ioc": "f9ecdc0d003f5f17433f5368f93000ef3aac482a9a4b841a6bcee3b51c8b62de",
+   "ioc": "abf343ee7267d17f6c114d2655c6aafed28bb06fa9696706e7c236b361ed416a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025999/"
+   "link": "https://threatfox.abuse.ch/ioc/2026005/"
   },
   {
-   "ioc": "20283adea70fa0db5a5c0234c47126afe0ab55ced4c72eaf2c25dd3c56818208",
+   "ioc": "ae7e01f76f121dae9f7f2b0916032565af8358a1d08d2031635cac1f5366ce06",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025998/"
+   "link": "https://threatfox.abuse.ch/ioc/2026006/"
   },
   {
-   "ioc": "59fb5c00f5ca98cc7e22ba10c39708f1716820169680500749abf2990a21c6a1",
+   "ioc": "708358ae2752dcde2a33ec5d26405bb99e6c007d99c31b84a87e06608b738bbc",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025997/"
+   "link": "https://threatfox.abuse.ch/ioc/2026007/"
   },
   {
-   "ioc": "d093167ee24dcc77f7e78306053fce3f543b55e903d57c2bf37c1b5d0abd21a4",
+   "ioc": "590d5ae6170473e39bea7fbdc7a6300eeb484100ee62c49b5b1d55ace3516f61",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025996/"
+   "link": "https://threatfox.abuse.ch/ioc/2026008/"
   },
   {
-   "ioc": "2a22c1561e3a662e68d47823a49e8fae8f9dfc375a8f5e2271dbb901b3f9b3ef",
+   "ioc": "a221c8761fe264ffa953476ad0a23033f667a8c2c48eb43274d96e4ed208c23e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025995/"
+   "link": "https://threatfox.abuse.ch/ioc/2026009/"
   },
   {
-   "ioc": "cf6406efd76392a54cb4cdf32324946f1706fa8579f4074e2c252f5f9fed7040",
+   "ioc": "5e4d114f062725011acb64738f637e9bd639d72c3c479687ee37befefbf3616f",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:44",
+   "date": "2026-11-12T16:29:45",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025994/"
+   "link": "https://threatfox.abuse.ch/ioc/2026010/"
+  },
+  {
+   "ioc": "8f246de765fa2b641dbff27df8f010cbb6b1569b93cdb1f99cf0a7fa2d3010e9",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:45",
+   "tags": [
+    "DragonsGate",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026011/"
   },
   {
    "ioc": "64b028f94289d07fc246ca49ad77a5f59078c431ac318f37cfd9647495134bca",
@@ -13259,121 +13488,108 @@
    "link": "https://threatfox.abuse.ch/ioc/2025993/"
   },
   {
-   "ioc": "softwaresetupwizard[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "cf6406efd76392a54cb4cdf32324946f1706fa8579f4074e2c252f5f9fed7040",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
     "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025992/"
+   "link": "https://threatfox.abuse.ch/ioc/2025994/"
   },
   {
-   "ioc": "7d0649430f9e179ae573bdd10692628833d9a45a3df0a403dc35e11744c87d07",
+   "ioc": "2a22c1561e3a662e68d47823a49e8fae8f9dfc375a8f5e2271dbb901b3f9b3ef",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025991/"
+   "link": "https://threatfox.abuse.ch/ioc/2025995/"
   },
   {
-   "ioc": "4cbddbfdc2a2dc5111728db28806e1b74dfcd13bf0f56eee20d103fb67094754",
+   "ioc": "d093167ee24dcc77f7e78306053fce3f543b55e903d57c2bf37c1b5d0abd21a4",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025990/"
+   "link": "https://threatfox.abuse.ch/ioc/2025996/"
   },
   {
-   "ioc": "d0f0dd6c92f6644ca3db23c753a777d9841ec7d29db433a528c88d941ab00e3c",
+   "ioc": "59fb5c00f5ca98cc7e22ba10c39708f1716820169680500749abf2990a21c6a1",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025989/"
+   "link": "https://threatfox.abuse.ch/ioc/2025997/"
   },
   {
-   "ioc": "8b25d4e4e9ddb8cdede130e8c93f0e5a2b4c53397d902ae2a641066da569d400",
+   "ioc": "20283adea70fa0db5a5c0234c47126afe0ab55ced4c72eaf2c25dd3c56818208",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025988/"
+   "link": "https://threatfox.abuse.ch/ioc/2025998/"
   },
   {
-   "ioc": "212c7bd125ae9c825d8c6bba7d36dfaad5d15f2cc9dffc5733416dac18e40558",
+   "ioc": "f9ecdc0d003f5f17433f5368f93000ef3aac482a9a4b841a6bcee3b51c8b62de",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025987/"
+   "link": "https://threatfox.abuse.ch/ioc/2025999/"
   },
   {
-   "ioc": "b84ccc136a5696d47b716f8dd7fe30310a46946bf3e1e965d561f0354ef12913",
+   "ioc": "badb7d1d06839aaa47ca91cc56d557e5da5d87ccf290492ec81c2f0496d5e160",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025986/"
+   "link": "https://threatfox.abuse.ch/ioc/2026000/"
   },
   {
-   "ioc": "ffb8ed2f54a310a0238ed414a9eb6c4c07c29860d4d0056b9dc86b85d76ca599",
+   "ioc": "674a5ee1e4acefa4b441cac5eadb190b8c83cf7483f34e949c0377a82a52ef6f",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:43",
+   "date": "2026-11-12T16:29:44",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025985/"
-  },
-  {
-   "ioc": "904546a6a3743c8fb9dbfc592956ac07f049c88ef0be8a24826ac4b7cfbc7a75",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:43",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025984/"
+   "link": "https://threatfox.abuse.ch/ioc/2026001/"
   },
   {
    "ioc": "16e62857cdd57ec1c8ce6c581c13dbd1dcca1362c61bda8b96be83b352fad20a",
@@ -13389,121 +13605,121 @@
    "link": "https://threatfox.abuse.ch/ioc/2025983/"
   },
   {
-   "ioc": "061514f669e53a85e5f940fcc5ca951326245cf5b459aa1f3ed2d32c49b78cd5",
+   "ioc": "904546a6a3743c8fb9dbfc592956ac07f049c88ef0be8a24826ac4b7cfbc7a75",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025982/"
+   "link": "https://threatfox.abuse.ch/ioc/2025984/"
   },
   {
-   "ioc": "88149618c2acdd3a9d1ef9abeb743bfe172a3519fa53e6f78bcd5db466932dee",
+   "ioc": "ffb8ed2f54a310a0238ed414a9eb6c4c07c29860d4d0056b9dc86b85d76ca599",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025981/"
+   "link": "https://threatfox.abuse.ch/ioc/2025985/"
   },
   {
-   "ioc": "23fd7fb96f077847b320ded75bff3e3424da5aa7e0faa636c27b34166cf791ba",
+   "ioc": "b84ccc136a5696d47b716f8dd7fe30310a46946bf3e1e965d561f0354ef12913",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025980/"
+   "link": "https://threatfox.abuse.ch/ioc/2025986/"
   },
   {
-   "ioc": "d3fea43498a14b97d28612feb2c2cd439a01ed5017d473b74fcabc574e6b8ddd",
+   "ioc": "212c7bd125ae9c825d8c6bba7d36dfaad5d15f2cc9dffc5733416dac18e40558",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025979/"
+   "link": "https://threatfox.abuse.ch/ioc/2025987/"
   },
   {
-   "ioc": "538a6bbec60b0e59c4629ee467f86e4ee9c7969edd8d7ebd3a07f431b5b70f81",
+   "ioc": "8b25d4e4e9ddb8cdede130e8c93f0e5a2b4c53397d902ae2a641066da569d400",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025978/"
+   "link": "https://threatfox.abuse.ch/ioc/2025988/"
   },
   {
-   "ioc": "4e1d92b4ab516799b3882b57028122f0f36020248f473986bbd617c7a8263c41",
+   "ioc": "d0f0dd6c92f6644ca3db23c753a777d9841ec7d29db433a528c88d941ab00e3c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025977/"
+   "link": "https://threatfox.abuse.ch/ioc/2025989/"
   },
   {
-   "ioc": "e1d8cea8f23a4c2ccfa104e367eee028c16484db9fb635c17ed05761ede1e0be",
+   "ioc": "4cbddbfdc2a2dc5111728db28806e1b74dfcd13bf0f56eee20d103fb67094754",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025976/"
+   "link": "https://threatfox.abuse.ch/ioc/2025990/"
   },
   {
-   "ioc": "c4d5b70ab253952bfb0e1039eb2a07ac5686e742306195319043447840ef21d9",
+   "ioc": "7d0649430f9e179ae573bdd10692628833d9a45a3df0a403dc35e11744c87d07",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025975/"
+   "link": "https://threatfox.abuse.ch/ioc/2025991/"
   },
   {
-   "ioc": "b73fe3ba92396c2a051619b13b55e8e8f67b0a6b28b9888ced976047e50f5d9e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "softwaresetupwizard[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:42",
+   "date": "2026-11-12T16:29:43",
    "tags": [
-    "CookUp",
+    "DragonsGate",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025974/"
+   "link": "https://threatfox.abuse.ch/ioc/2025992/"
   },
   {
    "ioc": "92499c08766a398e9540e9497d5986d2bc7e7d47f11484c8ccace61a2cbaf583",
@@ -13519,69 +13735,121 @@
    "link": "https://threatfox.abuse.ch/ioc/2025973/"
   },
   {
-   "ioc": "16aa8544a931baac273b3b7be429039e50c91e8a309a282e84327fde10071693",
+   "ioc": "b73fe3ba92396c2a051619b13b55e8e8f67b0a6b28b9888ced976047e50f5d9e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:41",
+   "date": "2026-11-12T16:29:42",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025972/"
+   "link": "https://threatfox.abuse.ch/ioc/2025974/"
   },
   {
-   "ioc": "dc27bf7ab7568930ea50733396a235ed876cc5a504e376f8f516adac93859606",
+   "ioc": "c4d5b70ab253952bfb0e1039eb2a07ac5686e742306195319043447840ef21d9",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:41",
+   "date": "2026-11-12T16:29:42",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025971/"
+   "link": "https://threatfox.abuse.ch/ioc/2025975/"
   },
   {
-   "ioc": "416b6bacd7ea420bd6ff65947414cbfc75ac08af500a2bde5cc424aa6c31152d",
+   "ioc": "e1d8cea8f23a4c2ccfa104e367eee028c16484db9fb635c17ed05761ede1e0be",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:41",
+   "date": "2026-11-12T16:29:42",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025970/"
+   "link": "https://threatfox.abuse.ch/ioc/2025976/"
   },
   {
-   "ioc": "391e092009f31829435aa567bb6103b2d534a25308bcc9d96fa54c40f951b238",
+   "ioc": "4e1d92b4ab516799b3882b57028122f0f36020248f473986bbd617c7a8263c41",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:41",
+   "date": "2026-11-12T16:29:42",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025969/"
+   "link": "https://threatfox.abuse.ch/ioc/2025977/"
   },
   {
-   "ioc": "e864a4c216eac1f5d5f047e1ec8cada10f126089b6301c4a0ea80741bd1fa230",
+   "ioc": "538a6bbec60b0e59c4629ee467f86e4ee9c7969edd8d7ebd3a07f431b5b70f81",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:41",
+   "date": "2026-11-12T16:29:42",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025968/"
+   "link": "https://threatfox.abuse.ch/ioc/2025978/"
+  },
+  {
+   "ioc": "d3fea43498a14b97d28612feb2c2cd439a01ed5017d473b74fcabc574e6b8ddd",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:42",
+   "tags": [
+    "CookUp",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025979/"
+  },
+  {
+   "ioc": "23fd7fb96f077847b320ded75bff3e3424da5aa7e0faa636c27b34166cf791ba",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:42",
+   "tags": [
+    "CookUp",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025980/"
+  },
+  {
+   "ioc": "88149618c2acdd3a9d1ef9abeb743bfe172a3519fa53e6f78bcd5db466932dee",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:42",
+   "tags": [
+    "CookUp",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025981/"
+  },
+  {
+   "ioc": "061514f669e53a85e5f940fcc5ca951326245cf5b459aa1f3ed2d32c49b78cd5",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:42",
+   "tags": [
+    "CookUp",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025982/"
   },
   {
    "ioc": "40798b13e16d6a83cf5b828d7eca110b433eaabf8ca5c83511425eb24bbaee4f",
@@ -13597,121 +13865,69 @@
    "link": "https://threatfox.abuse.ch/ioc/2025967/"
   },
   {
-   "ioc": "a78020f0c61dfe25037b449e4ea5c73ff11f5167f8669980c995f56874c3a976",
+   "ioc": "e864a4c216eac1f5d5f047e1ec8cada10f126089b6301c4a0ea80741bd1fa230",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:40",
+   "date": "2026-11-12T16:29:41",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025966/"
+   "link": "https://threatfox.abuse.ch/ioc/2025968/"
   },
   {
-   "ioc": "930b2f8c395b3e37936370d49e31c0cd20f82b13735019eb51b649501b9427a4",
+   "ioc": "391e092009f31829435aa567bb6103b2d534a25308bcc9d96fa54c40f951b238",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:40",
+   "date": "2026-11-12T16:29:41",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025965/"
+   "link": "https://threatfox.abuse.ch/ioc/2025969/"
   },
   {
-   "ioc": "2fb8f8d0ddd39bf26a34c5ef4113acd2b240f99a3b75d8b6ba565e58c6a245c3",
+   "ioc": "416b6bacd7ea420bd6ff65947414cbfc75ac08af500a2bde5cc424aa6c31152d",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:40",
+   "date": "2026-11-12T16:29:41",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025964/"
+   "link": "https://threatfox.abuse.ch/ioc/2025970/"
   },
   {
-   "ioc": "b067d45e7a424e95392aabb0b119125efccdd1ad3eda95280eacf3dc2a0e3dbc",
+   "ioc": "dc27bf7ab7568930ea50733396a235ed876cc5a504e376f8f516adac93859606",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:40",
+   "date": "2026-11-12T16:29:41",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025963/"
+   "link": "https://threatfox.abuse.ch/ioc/2025971/"
   },
   {
-   "ioc": "68af7ece0141237c82e44d7e144239cd6786adfc2eabf2e94ad183c448a34607",
+   "ioc": "16aa8544a931baac273b3b7be429039e50c91e8a309a282e84327fde10071693",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:40",
+   "date": "2026-11-12T16:29:41",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025962/"
-  },
-  {
-   "ioc": "5dba7781d999a33496c03e87c489e3e4b95494fbf8786492ab42abe790a011a7",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:40",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025961/"
-  },
-  {
-   "ioc": "09499c78fb3da7be31cd1123d76c63a263701cc321a73571fdb05494276214fa",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:40",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025960/"
-  },
-  {
-   "ioc": "143948e6991d266a74d03a272f1df2c7979f12b1f00e155fa11bc5a738344551",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:40",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025959/"
-  },
-  {
-   "ioc": "0e8ae26649bdfc3ceac1c89e29992be58e2b868fc74fe7ab4dfe4202b6037c3b",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:40",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025958/"
+   "link": "https://threatfox.abuse.ch/ioc/2025972/"
   },
   {
    "ioc": "351676db9cb90912d49406637d14054237a51b5af1d0855863c8f1df1254ed88",
@@ -13727,121 +13943,121 @@
    "link": "https://threatfox.abuse.ch/ioc/2025957/"
   },
   {
-   "ioc": "c4161be01385c6a3dd8a233c7aa9366a92df952db7c4b6a6d4fe8d7123fed604",
+   "ioc": "0e8ae26649bdfc3ceac1c89e29992be58e2b868fc74fe7ab4dfe4202b6037c3b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025956/"
+   "link": "https://threatfox.abuse.ch/ioc/2025958/"
   },
   {
-   "ioc": "f3b37ec3dbafd98f144dbe959daeebb9463048b84cabcf32f462af5fb0624a98",
+   "ioc": "143948e6991d266a74d03a272f1df2c7979f12b1f00e155fa11bc5a738344551",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025955/"
+   "link": "https://threatfox.abuse.ch/ioc/2025959/"
   },
   {
-   "ioc": "caff81027b939c259271a9b69013c09b31325a7d32ff1adcbd65323aeeccab46",
+   "ioc": "09499c78fb3da7be31cd1123d76c63a263701cc321a73571fdb05494276214fa",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025954/"
+   "link": "https://threatfox.abuse.ch/ioc/2025960/"
   },
   {
-   "ioc": "a931ad04558159e3db2501d90a936c5ee72b407c4c032f60ea347e8c96e7babf",
+   "ioc": "5dba7781d999a33496c03e87c489e3e4b95494fbf8786492ab42abe790a011a7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025953/"
+   "link": "https://threatfox.abuse.ch/ioc/2025961/"
   },
   {
-   "ioc": "120e7294eff78dde791875e7affd8f52b53220e63db1625665e6342f49915a04",
+   "ioc": "68af7ece0141237c82e44d7e144239cd6786adfc2eabf2e94ad183c448a34607",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025952/"
+   "link": "https://threatfox.abuse.ch/ioc/2025962/"
   },
   {
-   "ioc": "8e0d1c38f976aca3ecb3fb0457790bcb6f5c567842938adf5833cbf832f514c5",
+   "ioc": "b067d45e7a424e95392aabb0b119125efccdd1ad3eda95280eacf3dc2a0e3dbc",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025951/"
+   "link": "https://threatfox.abuse.ch/ioc/2025963/"
   },
   {
-   "ioc": "b0e4d803731b88025eabdbee498fec8806e59e5ffc35d16a247bce3b6f5e87b1",
+   "ioc": "2fb8f8d0ddd39bf26a34c5ef4113acd2b240f99a3b75d8b6ba565e58c6a245c3",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025950/"
+   "link": "https://threatfox.abuse.ch/ioc/2025964/"
   },
   {
-   "ioc": "6584c54cd70d18da2d955f22cfd2ff8b23e0e10e7766bf44c438591116658985",
+   "ioc": "930b2f8c395b3e37936370d49e31c0cd20f82b13735019eb51b649501b9427a4",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025949/"
+   "link": "https://threatfox.abuse.ch/ioc/2025965/"
   },
   {
-   "ioc": "522328693c562b0551d3e0d0184c8126d9e818e1ee3c8936ec04856e80cbdbd7",
+   "ioc": "a78020f0c61dfe25037b449e4ea5c73ff11f5167f8669980c995f56874c3a976",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:39",
+   "date": "2026-11-12T16:29:40",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025948/"
+   "link": "https://threatfox.abuse.ch/ioc/2025966/"
   },
   {
    "ioc": "ffde5fbba662c27dbdf89236b16c80fcef3e5552d8ff98c052dd69b434fadf15",
@@ -13857,173 +14073,121 @@
    "link": "https://threatfox.abuse.ch/ioc/2025947/"
   },
   {
-   "ioc": "8f0ece85a46ee70ea70a176d19bd9a0e8a93286f3f8714e2e49c8526f704d880",
+   "ioc": "522328693c562b0551d3e0d0184c8126d9e818e1ee3c8936ec04856e80cbdbd7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025946/"
+   "link": "https://threatfox.abuse.ch/ioc/2025948/"
   },
   {
-   "ioc": "32201a3c693cbca677b75205cf392e1eacd8e96313952bc497ea2ff46711eae5",
+   "ioc": "6584c54cd70d18da2d955f22cfd2ff8b23e0e10e7766bf44c438591116658985",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025945/"
+   "link": "https://threatfox.abuse.ch/ioc/2025949/"
   },
   {
-   "ioc": "webpdfinstallerstudio[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "b0e4d803731b88025eabdbee498fec8806e59e5ffc35d16a247bce3b6f5e87b1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025944/"
+   "link": "https://threatfox.abuse.ch/ioc/2025950/"
   },
   {
-   "ioc": "setuppdfsoft[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "8e0d1c38f976aca3ecb3fb0457790bcb6f5c567842938adf5833cbf832f514c5",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025943/"
+   "link": "https://threatfox.abuse.ch/ioc/2025951/"
   },
   {
-   "ioc": "reciperoverapp[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "120e7294eff78dde791875e7affd8f52b53220e63db1625665e6342f49915a04",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025942/"
+   "link": "https://threatfox.abuse.ch/ioc/2025952/"
   },
   {
-   "ioc": "recipeinstaller[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "a931ad04558159e3db2501d90a936c5ee72b407c4c032f60ea347e8c96e7babf",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025941/"
+   "link": "https://threatfox.abuse.ch/ioc/2025953/"
   },
   {
-   "ioc": "perfectcookingsuite[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "caff81027b939c259271a9b69013c09b31325a7d32ff1adcbd65323aeeccab46",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025940/"
+   "link": "https://threatfox.abuse.ch/ioc/2025954/"
   },
   {
-   "ioc": "peregrinecooksoft[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "f3b37ec3dbafd98f144dbe959daeebb9463048b84cabcf32f462af5fb0624a98",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025939/"
+   "link": "https://threatfox.abuse.ch/ioc/2025955/"
   },
   {
-   "ioc": "nomadiccooknow[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "ioc": "c4161be01385c6a3dd8a233c7aa9366a92df952db7c4b6a6d4fe8d7123fed604",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:38",
+   "date": "2026-11-12T16:29:39",
    "tags": [
     "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025938/"
-  },
-  {
-   "ioc": "nomadiccookapp[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:38",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025937/"
-  },
-  {
-   "ioc": "mypdfsoftware[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:38",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025936/"
-  },
-  {
-   "ioc": "foodcooksoftware[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:38",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025935/"
-  },
-  {
-   "ioc": "cookingsuiteinstaller[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:38",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025934/"
+   "link": "https://threatfox.abuse.ch/ioc/2025956/"
   },
   {
    "ioc": "buysoftinstaller[.]com",
@@ -14039,124 +14203,173 @@
    "link": "https://threatfox.abuse.ch/ioc/2025933/"
   },
   {
-   "ioc": "00cbf6925ed0b4d6c1632ab51f5cc0a82fb0299a7be131911fa8877fa8541e4f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "cookingsuiteinstaller[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025932/"
+   "link": "https://threatfox.abuse.ch/ioc/2025934/"
   },
   {
-   "ioc": "884e5116a649cad08df4bb6738cf165d19def3cfee0cfb39463596cf060fcb48",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "foodcooksoftware[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025931/"
+   "link": "https://threatfox.abuse.ch/ioc/2025935/"
   },
   {
-   "ioc": "0063bd8e2848e7c44f286253fc7f8873f35244f43008f2d09a646e9e337670fc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "mypdfsoftware[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025930/"
+   "link": "https://threatfox.abuse.ch/ioc/2025936/"
   },
   {
-   "ioc": "026a78c66f17587d94c5a83c0d0815f1f45a41b25f740e984f62d55a5ea9545c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "nomadiccookapp[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025929/"
+   "link": "https://threatfox.abuse.ch/ioc/2025937/"
   },
   {
-   "ioc": "602644511397d5584853d032902e02e9a24ab3189b5cb536ebab395695efef39",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "nomadiccooknow[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025928/"
+   "link": "https://threatfox.abuse.ch/ioc/2025938/"
   },
   {
-   "ioc": "e30f58f6eb4b5ff5b6d847a4e65cdfa3fccf6b36e77980e2592c20ca05e8cc80",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "peregrinecooksoft[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025927/"
+   "link": "https://threatfox.abuse.ch/ioc/2025939/"
   },
   {
-   "ioc": "9eeea3842394d20cc9229d5698c58296e2bd13b978a0abd5bc1d911e065aca2c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "perfectcookingsuite[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025926/"
+   "link": "https://threatfox.abuse.ch/ioc/2025940/"
   },
   {
-   "ioc": "bba4fafd66f962ef742dbdc872eb2a000f3db2a2e8ccff829d2e56043af15e1d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "recipeinstaller[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025925/"
+   "link": "https://threatfox.abuse.ch/ioc/2025941/"
   },
   {
-   "ioc": "761e1120a373ce27eaf0e2f79997666e1febf2d6fc5f399c2e52312e2eec016a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "reciperoverapp[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025924/"
+   "link": "https://threatfox.abuse.ch/ioc/2025942/"
   },
   {
-   "ioc": "4a9960b1a5bc66fa56634d353bbc0c73de3c9abfd9c01af7cef7c90f234b20ba",
+   "ioc": "setuppdfsoft[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:38",
+   "tags": [
+    "CookUp",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025943/"
+  },
+  {
+   "ioc": "webpdfinstallerstudio[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:38",
+   "tags": [
+    "CookUp",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025944/"
+  },
+  {
+   "ioc": "32201a3c693cbca677b75205cf392e1eacd8e96313952bc497ea2ff46711eae5",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:37",
+   "date": "2026-11-12T16:29:38",
    "tags": [
+    "CookUp",
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025923/"
+   "link": "https://threatfox.abuse.ch/ioc/2025945/"
+  },
+  {
+   "ioc": "8f0ece85a46ee70ea70a176d19bd9a0e8a93286f3f8714e2e49c8526f704d880",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:38",
+   "tags": [
+    "CookUp",
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025946/"
   },
   {
    "ioc": "32dce2f8154c5ac28cb4e11a179cf90f2ddd8a273ee818a13a07ace9b17d1a7d",
@@ -14171,88 +14384,124 @@
    "link": "https://threatfox.abuse.ch/ioc/2025922/"
   },
   {
-   "ioc": "7e62cea0d453d40cce10376e9231c26cd7266ccde1a9d4e7dc267dbfbe9d3c64",
+   "ioc": "4a9960b1a5bc66fa56634d353bbc0c73de3c9abfd9c01af7cef7c90f234b20ba",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:36",
+   "date": "2026-11-12T16:29:37",
    "tags": [
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025921/"
+   "link": "https://threatfox.abuse.ch/ioc/2025923/"
   },
   {
-   "ioc": "4154a0499518bf9ec430cee96c168d85fc2603338e248c83771d800b92dea16c",
+   "ioc": "761e1120a373ce27eaf0e2f79997666e1febf2d6fc5f399c2e52312e2eec016a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:36",
+   "date": "2026-11-12T16:29:37",
    "tags": [
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025920/"
+   "link": "https://threatfox.abuse.ch/ioc/2025924/"
   },
   {
-   "ioc": "a04d94c658f09a13497df55c95500fdcf995c1407848fda6749b836385835f84",
+   "ioc": "bba4fafd66f962ef742dbdc872eb2a000f3db2a2e8ccff829d2e56043af15e1d",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:36",
+   "date": "2026-11-12T16:29:37",
    "tags": [
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025919/"
+   "link": "https://threatfox.abuse.ch/ioc/2025925/"
   },
   {
-   "ioc": "cbac5c21b6d5eceef068a4cdbe200f5bfbda3fc7e5af4ef4f2f61e78e827e3a9",
+   "ioc": "9eeea3842394d20cc9229d5698c58296e2bd13b978a0abd5bc1d911e065aca2c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:36",
+   "date": "2026-11-12T16:29:37",
    "tags": [
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025918/"
+   "link": "https://threatfox.abuse.ch/ioc/2025926/"
   },
   {
-   "ioc": "5cd3a93c97dd81f90fd196ea58249093efe77c847051f8527ae47bfda1000ff7",
+   "ioc": "e30f58f6eb4b5ff5b6d847a4e65cdfa3fccf6b36e77980e2592c20ca05e8cc80",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:36",
+   "date": "2026-11-12T16:29:37",
    "tags": [
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025917/"
+   "link": "https://threatfox.abuse.ch/ioc/2025927/"
   },
   {
-   "ioc": "bd7a2e2790147369bc7f45100a26a50d25f6d7022d640b297f19957105295f7c",
+   "ioc": "602644511397d5584853d032902e02e9a24ab3189b5cb536ebab395695efef39",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:36",
+   "date": "2026-11-12T16:29:37",
    "tags": [
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025916/"
+   "link": "https://threatfox.abuse.ch/ioc/2025928/"
   },
   {
-   "ioc": "450ca754edb64d21e2eba8692f53a947fc6c94a3fe4f94c6a6acd7125a4c44b1",
+   "ioc": "026a78c66f17587d94c5a83c0d0815f1f45a41b25f740e984f62d55a5ea9545c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:36",
+   "date": "2026-11-12T16:29:37",
    "tags": [
     "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025915/"
+   "link": "https://threatfox.abuse.ch/ioc/2025929/"
+  },
+  {
+   "ioc": "0063bd8e2848e7c44f286253fc7f8873f35244f43008f2d09a646e9e337670fc",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:37",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025930/"
+  },
+  {
+   "ioc": "884e5116a649cad08df4bb6738cf165d19def3cfee0cfb39463596cf060fcb48",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:37",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025931/"
+  },
+  {
+   "ioc": "00cbf6925ed0b4d6c1632ab51f5cc0a82fb0299a7be131911fa8877fa8541e4f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:37",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025932/"
   },
   {
    "ioc": "launchwindowtech[.]com",
@@ -14267,160 +14516,88 @@
    "link": "https://threatfox.abuse.ch/ioc/2025914/"
   },
   {
-   "ioc": "avepickupinstall[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025913/"
-  },
-  {
-   "ioc": "sklabboxrapid[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025912/"
-  },
-  {
-   "ioc": "prosmartservehub[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025911/"
-  },
-  {
-   "ioc": "jobnowtooliakit[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025910/"
-  },
-  {
-   "ioc": "websmartserverun[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025909/"
-  },
-  {
-   "ioc": "calwhichhegget[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025908/"
-  },
-  {
-   "ioc": "prowebsmarts[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025907/"
-  },
-  {
-   "ioc": "entralstationpoi[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025906/"
-  },
-  {
-   "ioc": "recipeappfeedback[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025905/"
-  },
-  {
-   "ioc": "appsetupstore[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:35",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025904/"
-  },
-  {
-   "ioc": "6805394cfec5a680860c5828ca003216fdc626e91ac649a177d2c64ee1ed8127",
+   "ioc": "450ca754edb64d21e2eba8692f53a947fc6c94a3fe4f94c6a6acd7125a4c44b1",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:35",
+   "date": "2026-11-12T16:29:36",
    "tags": [
-    "PureRAT"
+    "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025903/"
+   "link": "https://threatfox.abuse.ch/ioc/2025915/"
   },
   {
-   "ioc": "8e751724a30386948628c786e6cf4c894aebec8aa36d979b13d6b61a6b5e29c7",
+   "ioc": "bd7a2e2790147369bc7f45100a26a50d25f6d7022d640b297f19957105295f7c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:35",
+   "date": "2026-11-12T16:29:36",
    "tags": [
-    "PureRAT"
+    "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025902/"
+   "link": "https://threatfox.abuse.ch/ioc/2025916/"
   },
   {
-   "ioc": "628adb8b1814491d74b1cbf9d1ef25e36e93f58f8bc2d24b536bcd1627232a34",
+   "ioc": "5cd3a93c97dd81f90fd196ea58249093efe77c847051f8527ae47bfda1000ff7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:35",
+   "date": "2026-11-12T16:29:36",
    "tags": [
-    "PureRAT"
+    "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025901/"
+   "link": "https://threatfox.abuse.ch/ioc/2025917/"
+  },
+  {
+   "ioc": "cbac5c21b6d5eceef068a4cdbe200f5bfbda3fc7e5af4ef4f2f61e78e827e3a9",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:36",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025918/"
+  },
+  {
+   "ioc": "a04d94c658f09a13497df55c95500fdcf995c1407848fda6749b836385835f84",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:36",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025919/"
+  },
+  {
+   "ioc": "4154a0499518bf9ec430cee96c168d85fc2603338e248c83771d800b92dea16c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:36",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025920/"
+  },
+  {
+   "ioc": "7e62cea0d453d40cce10376e9231c26cd7266ccde1a9d4e7dc267dbfbe9d3c64",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:36",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025921/"
   },
   {
    "ioc": "6ef97cd831f3cd77ee2dcf98b100b31672887ede7c34ed2017039b9ae434ff9d",
@@ -14435,76 +14612,160 @@
    "link": "https://threatfox.abuse.ch/ioc/2025900/"
   },
   {
-   "ioc": "ca36b7438f248e01a20808fa0bbd30938eb3fac792b5ca59bf3ade01afa48992",
+   "ioc": "628adb8b1814491d74b1cbf9d1ef25e36e93f58f8bc2d24b536bcd1627232a34",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:34",
+   "date": "2026-11-12T16:29:35",
    "tags": [
     "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025899/"
+   "link": "https://threatfox.abuse.ch/ioc/2025901/"
   },
   {
-   "ioc": "e70cc6dddce8717ea5b4d3597d1543d43cfa9a0c2eac6c52f309adfe879b7352",
+   "ioc": "8e751724a30386948628c786e6cf4c894aebec8aa36d979b13d6b61a6b5e29c7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:34",
+   "date": "2026-11-12T16:29:35",
    "tags": [
     "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025898/"
+   "link": "https://threatfox.abuse.ch/ioc/2025902/"
   },
   {
-   "ioc": "f3284e498890139de2f94be50b260ec7547a91a63d72b926b71ae343106edc02",
+   "ioc": "6805394cfec5a680860c5828ca003216fdc626e91ac649a177d2c64ee1ed8127",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:34",
+   "date": "2026-11-12T16:29:35",
    "tags": [
     "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025897/"
+   "link": "https://threatfox.abuse.ch/ioc/2025903/"
   },
   {
-   "ioc": "agent[.]sm-veo[.]com",
+   "ioc": "appsetupstore[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:34",
+   "date": "2026-11-12T16:29:35",
    "tags": [
-    "PureRAT"
+    "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025896/"
+   "link": "https://threatfox.abuse.ch/ioc/2025904/"
   },
   {
-   "ioc": "admin[.]sm-veo[.]com",
+   "ioc": "recipeappfeedback[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:34",
+   "date": "2026-11-12T16:29:35",
    "tags": [
-    "PureRAT"
+    "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025895/"
+   "link": "https://threatfox.abuse.ch/ioc/2025905/"
   },
   {
-   "ioc": "smveo[.]com",
+   "ioc": "entralstationpoi[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:34",
+   "date": "2026-11-12T16:29:35",
    "tags": [
-    "PureRAT"
+    "TamperedChef"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025894/"
+   "link": "https://threatfox.abuse.ch/ioc/2025906/"
+  },
+  {
+   "ioc": "prowebsmarts[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:35",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025907/"
+  },
+  {
+   "ioc": "calwhichhegget[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:35",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025908/"
+  },
+  {
+   "ioc": "websmartserverun[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:35",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025909/"
+  },
+  {
+   "ioc": "jobnowtooliakit[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:35",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025910/"
+  },
+  {
+   "ioc": "prosmartservehub[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:35",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025911/"
+  },
+  {
+   "ioc": "sklabboxrapid[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:35",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025912/"
+  },
+  {
+   "ioc": "avepickupinstall[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:35",
+   "tags": [
+    "TamperedChef"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025913/"
   },
   {
    "ioc": "cfe976aa42a6c1d8e99098aff4124c6799ba210bc936173d8bd7a55ead45f620",
@@ -14520,82 +14781,76 @@
    "link": "https://threatfox.abuse.ch/ioc/2025893/"
   },
   {
-   "ioc": "c4edf28177e72d1bfc482cf4d05a156b",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "smveo[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:33",
+   "date": "2026-11-12T16:29:34",
    "tags": [
-    "EvilAI",
-    "upStage"
+    "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025892/"
+   "link": "https://threatfox.abuse.ch/ioc/2025894/"
   },
   {
-   "ioc": "ddf75cc7e322d75de77b17c8ec887975",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "admin[.]sm-veo[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:33",
+   "date": "2026-11-12T16:29:34",
    "tags": [
-    "EvilAI",
-    "upStage"
+    "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025891/"
+   "link": "https://threatfox.abuse.ch/ioc/2025895/"
   },
   {
-   "ioc": "e2022cedcea9b5ea81764996732a9880",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "agent[.]sm-veo[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:33",
+   "date": "2026-11-12T16:29:34",
    "tags": [
-    "EvilAI",
-    "upStage"
+    "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025890/"
+   "link": "https://threatfox.abuse.ch/ioc/2025896/"
   },
   {
-   "ioc": "2009b69852a9b20bbbe85061e1ef9186",
-   "type": "md5_hash",
+   "ioc": "f3284e498890139de2f94be50b260ec7547a91a63d72b926b71ae343106edc02",
+   "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:33",
+   "date": "2026-11-12T16:29:34",
    "tags": [
-    "EvilAI",
-    "upStage"
+    "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025889/"
+   "link": "https://threatfox.abuse.ch/ioc/2025897/"
   },
   {
-   "ioc": "63396fa92aa010e543e21cd8cb1bcccc",
-   "type": "md5_hash",
+   "ioc": "e70cc6dddce8717ea5b4d3597d1543d43cfa9a0c2eac6c52f309adfe879b7352",
+   "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:33",
+   "date": "2026-11-12T16:29:34",
    "tags": [
-    "EvilAI",
-    "upStage"
+    "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025888/"
+   "link": "https://threatfox.abuse.ch/ioc/2025898/"
   },
   {
-   "ioc": "1e9b503bce4cc68a96278972a1034af5",
-   "type": "md5_hash",
+   "ioc": "ca36b7438f248e01a20808fa0bbd30938eb3fac792b5ca59bf3ade01afa48992",
+   "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:33",
+   "date": "2026-11-12T16:29:34",
    "tags": [
-    "EvilAI",
-    "upStage"
+    "PureRAT"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025887/"
+   "link": "https://threatfox.abuse.ch/ioc/2025899/"
   },
   {
    "ioc": "543e9aaa45e11e7a6f86c80533c51bd4",
@@ -14611,56 +14866,82 @@
    "link": "https://threatfox.abuse.ch/ioc/2025886/"
   },
   {
-   "ioc": "b24e3c032e13af00606c9fc2047d16209caa4a14c93210bb2b3c3192421ef635",
-   "type": "sha256_hash",
+   "ioc": "1e9b503bce4cc68a96278972a1034af5",
+   "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:32",
+   "date": "2026-11-12T16:29:33",
    "tags": [
-    "CLOUDHAZE",
-    "EvilAI"
+    "EvilAI",
+    "upStage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025885/"
+   "link": "https://threatfox.abuse.ch/ioc/2025887/"
   },
   {
-   "ioc": "790ac1fcbef4075833e147c8c19a12d0d811b2b16e3d5b239046295b1d6924c3",
-   "type": "sha256_hash",
+   "ioc": "63396fa92aa010e543e21cd8cb1bcccc",
+   "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:32",
+   "date": "2026-11-12T16:29:33",
    "tags": [
-    "CLOUDHAZE",
-    "EvilAI"
+    "EvilAI",
+    "upStage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025884/"
+   "link": "https://threatfox.abuse.ch/ioc/2025888/"
   },
   {
-   "ioc": "22d3e48673fa09aca4e67f8c50b64bf76f795aad35755ba2ff8f499d325cf2e3",
-   "type": "sha256_hash",
+   "ioc": "2009b69852a9b20bbbe85061e1ef9186",
+   "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:32",
+   "date": "2026-11-12T16:29:33",
    "tags": [
-    "CLOUDHAZE",
-    "EvilAI"
+    "EvilAI",
+    "upStage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025883/"
+   "link": "https://threatfox.abuse.ch/ioc/2025889/"
   },
   {
-   "ioc": "1bd7c3aff7742a28d3664cc7579d34f63189e04120fe9d75e26c910251456da8",
-   "type": "sha256_hash",
+   "ioc": "e2022cedcea9b5ea81764996732a9880",
+   "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:32",
+   "date": "2026-11-12T16:29:33",
    "tags": [
-    "CLOUDHAZE",
-    "EvilAI"
+    "EvilAI",
+    "upStage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025882/"
+   "link": "https://threatfox.abuse.ch/ioc/2025890/"
+  },
+  {
+   "ioc": "ddf75cc7e322d75de77b17c8ec887975",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:33",
+   "tags": [
+    "EvilAI",
+    "upStage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025891/"
+  },
+  {
+   "ioc": "c4edf28177e72d1bfc482cf4d05a156b",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:33",
+   "tags": [
+    "EvilAI",
+    "upStage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025892/"
   },
   {
    "ioc": "234d8d99629d1dcf9d74b0f9911af86548ff8a2a1bfcaf07a73d80491e53fdd5",
@@ -14676,30 +14957,56 @@
    "link": "https://threatfox.abuse.ch/ioc/2025881/"
   },
   {
-   "ioc": "a99633b7b44884ceee3e374429fdc49f895cc5deeebaebc3edde065cfe352996",
+   "ioc": "1bd7c3aff7742a28d3664cc7579d34f63189e04120fe9d75e26c910251456da8",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:31",
+   "date": "2026-11-12T16:29:32",
    "tags": [
     "CLOUDHAZE",
     "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025880/"
+   "link": "https://threatfox.abuse.ch/ioc/2025882/"
   },
   {
-   "ioc": "989b2821032c5e43a0bc01ae5113da5aa2f7fa87666a20612b873e7e248b5968",
+   "ioc": "22d3e48673fa09aca4e67f8c50b64bf76f795aad35755ba2ff8f499d325cf2e3",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:31",
+   "date": "2026-11-12T16:29:32",
    "tags": [
     "CLOUDHAZE",
     "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025879/"
+   "link": "https://threatfox.abuse.ch/ioc/2025883/"
+  },
+  {
+   "ioc": "790ac1fcbef4075833e147c8c19a12d0d811b2b16e3d5b239046295b1d6924c3",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:32",
+   "tags": [
+    "CLOUDHAZE",
+    "EvilAI"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025884/"
+  },
+  {
+   "ioc": "b24e3c032e13af00606c9fc2047d16209caa4a14c93210bb2b3c3192421ef635",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:32",
+   "tags": [
+    "CLOUDHAZE",
+    "EvilAI"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025885/"
   },
   {
    "ioc": "updatedrun[.]com",
@@ -14715,124 +15022,30 @@
    "link": "https://threatfox.abuse.ch/ioc/2025878/"
   },
   {
-   "ioc": "f1aceb91e7dd9615a5ea224bfb3fc85cd2709c9aef352fc6731db34cd75bb94a",
+   "ioc": "989b2821032c5e43a0bc01ae5113da5aa2f7fa87666a20612b873e7e248b5968",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:30",
+   "date": "2026-11-12T16:29:31",
    "tags": [
+    "CLOUDHAZE",
     "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025877/"
+   "link": "https://threatfox.abuse.ch/ioc/2025879/"
   },
   {
-   "ioc": "46fd65b08ea59cbfb5719ddcdffc18aa8d95ecc409260e3509bc33238c52c0b7",
+   "ioc": "a99633b7b44884ceee3e374429fdc49f895cc5deeebaebc3edde065cfe352996",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:30",
+   "date": "2026-11-12T16:29:31",
    "tags": [
+    "CLOUDHAZE",
     "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025876/"
-  },
-  {
-   "ioc": "89a63487a28ab7e99863c0160b73fd7931059124e0c3b944c40b999769a7b6a0",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025875/"
-  },
-  {
-   "ioc": "6a03d9069150cc65c87174a89e51eec1a44cf739ab445796f509047e54208ce5",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025874/"
-  },
-  {
-   "ioc": "f8954e7b9d2c2e192a41984e2ad3a2f6a601365ac026b89b20f8f08ccbaf676a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025873/"
-  },
-  {
-   "ioc": "af4400a89955192d31f6590718792283a0911f9ee1ba06fdc6dd12edfedbac15",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025872/"
-  },
-  {
-   "ioc": "1bc91bf4370ba12bd1d01cb3598185e9ad018f5d457bdd6b67dbb4b9f6135c23",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025871/"
-  },
-  {
-   "ioc": "1482c4b91b1d5993eb4a1e4e455c68a2e6aecf660e7317d4ca1d0c5432d6ce8a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025870/"
-  },
-  {
-   "ioc": "9de8a00e661b017376dc8409f15df1eb68f432f9d19373b6fcb6908c71fc111b",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025869/"
-  },
-  {
-   "ioc": "c181db9086025a31c8493e95914638b4baf1a77f285df611a6b09a4213603d96",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025868/"
+   "link": "https://threatfox.abuse.ch/ioc/2025880/"
   },
   {
    "ioc": "82088351e93430b2d0140ecce7bee663989a8230b6891e7a5089830c2d17e812",
@@ -14847,271 +15060,184 @@
    "link": "https://threatfox.abuse.ch/ioc/2025867/"
   },
   {
-   "ioc": "56825c97309971832964c0948b66fc4d7e16fd246bf312f7fd185412fcffe05a",
+   "ioc": "c181db9086025a31c8493e95914638b4baf1a77f285df611a6b09a4213603d96",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:29",
+   "date": "2026-11-12T16:29:30",
    "tags": [
     "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025866/"
+   "link": "https://threatfox.abuse.ch/ioc/2025868/"
   },
   {
-   "ioc": "ae0029af74c4ec615a42d8eabbd970714c21858d70b07e89647164f99faa5f56",
+   "ioc": "9de8a00e661b017376dc8409f15df1eb68f432f9d19373b6fcb6908c71fc111b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-12T16:29:29",
+   "date": "2026-11-12T16:29:30",
    "tags": [
     "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025865/"
+   "link": "https://threatfox.abuse.ch/ioc/2025869/"
   },
   {
-   "ioc": "uralbioc[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:29",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025864/"
-  },
-  {
-   "ioc": "sharapik[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:29",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025863/"
-  },
-  {
-   "ioc": "siportao[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:29",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025862/"
-  },
-  {
-   "ioc": "visitrapidoc[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:29",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025861/"
-  },
-  {
-   "ioc": "getastrasnovei[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:29",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025860/"
-  },
-  {
-   "ioc": "gotoziply[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:29",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025859/"
-  },
-  {
-   "ioc": "gomeetpdfly[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:29",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025858/"
-  },
-  {
-   "ioc": "2f4502f29a7c61ebb300849d07b182a8f07efe8f72c2b84b10c74989e851158f",
+   "ioc": "1482c4b91b1d5993eb4a1e4e455c68a2e6aecf660e7317d4ca1d0c5432d6ce8a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-12T16:29:29",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:30",
    "tags": [
-    "CookUp",
-    "TamperedChef"
+    "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025857/"
+   "link": "https://threatfox.abuse.ch/ioc/2025870/"
   },
   {
-   "ioc": "c5fe0fb3abf00775a0c1139d3cc15d140f8b4f9558a5b0d84eeec59a561b29a1",
+   "ioc": "1bc91bf4370ba12bd1d01cb3598185e9ad018f5d457bdd6b67dbb4b9f6135c23",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-12T16:29:29",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:30",
    "tags": [
-    "CookUp",
-    "TamperedChef"
+    "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025856/"
+   "link": "https://threatfox.abuse.ch/ioc/2025871/"
   },
   {
-   "ioc": "af74f8974df1bff1c938a6f8f585cc8b5f370c98d41e7c5f476a4abda3cbfa2e",
+   "ioc": "af4400a89955192d31f6590718792283a0911f9ee1ba06fdc6dd12edfedbac15",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-12T16:29:28",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:30",
    "tags": [
-    "CookUp",
-    "TamperedChef"
+    "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025855/"
+   "link": "https://threatfox.abuse.ch/ioc/2025872/"
   },
   {
-   "ioc": "e7bc65daf98767646cb1a0e8c3d19cf0db0dce4618a9bcd2d287426cfd2c9034",
+   "ioc": "f8954e7b9d2c2e192a41984e2ad3a2f6a601365ac026b89b20f8f08ccbaf676a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-12T16:29:28",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:30",
    "tags": [
-    "CookUp",
-    "TamperedChef"
+    "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025854/"
+   "link": "https://threatfox.abuse.ch/ioc/2025873/"
   },
   {
-   "ioc": "5721c2ec43f9a1af24062542c91c1f2f9c736b45e407927d8768f21be8276808",
+   "ioc": "6a03d9069150cc65c87174a89e51eec1a44cf739ab445796f509047e54208ce5",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-12T16:29:28",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:30",
    "tags": [
-    "CookUp",
-    "TamperedChef"
+    "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025853/"
+   "link": "https://threatfox.abuse.ch/ioc/2025874/"
   },
   {
-   "ioc": "10fc69a80a44a2639d77bae2a70cfeeb2b438df76581b3969ec59053868d857e",
+   "ioc": "89a63487a28ab7e99863c0160b73fd7931059124e0c3b944c40b999769a7b6a0",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-12T16:29:28",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:30",
    "tags": [
-    "CookUp",
-    "TamperedChef"
+    "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025852/"
+   "link": "https://threatfox.abuse.ch/ioc/2025875/"
   },
   {
-   "ioc": "ecaa3ca51c1e9ec0f81a167909999af9f808515e3c35587955e61c228939aeb0",
+   "ioc": "46fd65b08ea59cbfb5719ddcdffc18aa8d95ecc409260e3509bc33238c52c0b7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-12T16:29:28",
+   "confidence": 75,
+   "date": "2026-11-12T16:29:30",
    "tags": [
-    "CookUp",
-    "TamperedChef"
+    "EvilAI"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2025851/"
-  },
-  {
-   "ioc": "getapprecipe[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-12T16:29:28",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025850/"
-  },
-  {
-   "ioc": "euappshopservices[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-12T16:29:28",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025849/"
-  },
-  {
-   "ioc": "softwaresetupelements[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-12T16:29:28",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025848/"
-  },
-  {
-   "ioc": "softwareinstallerusa[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-12T16:29:28",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025847/"
-  },
-  {
-   "ioc": "softwareinnosetup[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-12T16:29:28",
-   "tags": [
-    "CookUp",
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025846/"
+   "link": "https://threatfox.abuse.ch/ioc/2025876/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://115[.]205[.]74[.]157:36227/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T16:47:08",
+   "link": "https://urlhaus.abuse.ch/url/4064610/"
+  },
+  {
+   "ioc": "hxxp://112[.]248[.]0[.]3:57529/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-12T16:41:35",
+   "link": "https://urlhaus.abuse.ch/url/4064609/"
+  },
+  {
+   "ioc": "hxxp://105[.]225[.]53[.]47:48351/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-12T16:34:13",
+   "link": "https://urlhaus.abuse.ch/url/4064608/"
+  },
+  {
+   "ioc": "hxxp://42[.]233[.]146[.]195:37945/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T16:32:20",
+   "link": "https://urlhaus.abuse.ch/url/4064607/"
+  },
+  {
+   "ioc": "hxxp://113[.]229[.]191[.]121:51842/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T16:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4064606/"
+  },
+  {
+   "ioc": "hxxp://37[.]112[.]49[.]136:18699/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-12T16:31:14",
+   "link": "https://urlhaus.abuse.ch/url/4064605/"
+  },
   {
    "ioc": "hxxp://112[.]252[.]199[.]225:35036/i",
    "host_it": false,
@@ -15923,7 +16049,7 @@
   {
    "ioc": "hxxp://95[.]135[.]181[.]151/0x/ls",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "c2",
@@ -15937,7 +16063,7 @@
   {
    "ioc": "hxxp://95[.]135[.]181[.]151/0x/cls",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "c2",
@@ -15980,7 +16106,9 @@
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
-   "tags": [],
+   "tags": [
+    "rev-base64-loader"
+   ],
    "date": "2026-11-12T12:46:18",
    "link": "https://urlhaus.abuse.ch/url/4064529/"
   },
@@ -16097,7 +16225,7 @@
   {
    "ioc": "hxxp://182[.]126[.]124[.]170:39807/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-12T11:47:07",
@@ -16156,7 +16284,7 @@
   {
    "ioc": "hxxp://196[.]189[.]96[.]59:60830/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-12T11:32:05",
@@ -16743,79 +16871,6 @@
    ],
    "date": "2026-11-12T09:58:23",
    "link": "https://urlhaus.abuse.ch/url/4064462/"
-  },
-  {
-   "ioc": "hxxp://13[.]140[.]200[.]70:8799/kit/krig-miner-1[.]5[.]13-linux-x64[.]tar[.]gz",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "prl",
-    "qtc",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:22",
-   "link": "https://urlhaus.abuse.ch/url/4064459/"
-  },
-  {
-   "ioc": "hxxp://13[.]140[.]200[.]70:8799/kit/pearl-gpu-miner",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "crypto",
-    "elf",
-    "prl",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:22",
-   "link": "https://urlhaus.abuse.ch/url/4064460/"
-  },
-  {
-   "ioc": "hxxp://202[.]163[.]68[.]169:39153/Mozi[.]m",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi",
-    "web"
-   ],
-   "date": "2026-11-12T09:58:20",
-   "link": "https://urlhaus.abuse.ch/url/4064458/"
-  },
-  {
-   "ioc": "hxxp://23[.]19[.]231[.]52:8080/kubemgr_login[.]py",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:19",
-   "link": "https://urlhaus.abuse.ch/url/4064455/"
-  },
-  {
-   "ioc": "hxxp://23[.]19[.]231[.]52:8080/kubemgr_api[.]py",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:19",
-   "link": "https://urlhaus.abuse.ch/url/4064456/"
-  },
-  {
-   "ioc": "hxxp://23[.]19[.]231[.]52:8080/km_kube[.]py",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:19",
-   "link": "https://urlhaus.abuse.ch/url/4064457/"
   }
  ],
  "malware_top": [
@@ -16825,15 +16880,15 @@
   },
   {
    "name": "Unknown Loader",
-   "count": 206
+   "count": 205
   },
   {
    "name": "Mirai",
-   "count": 113
+   "count": 128
   },
   {
    "name": "ClearFake",
-   "count": 90
+   "count": 89
   },
   {
    "name": "Unknown Stealer",
@@ -16845,7 +16900,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 29
+   "count": 28
   },
   {
    "name": "Cobalt Strike",
@@ -16956,61 +17011,61 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.54,
+    "value": 54.62,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.81,
+    "value": 7.77,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 4.22,
+    "value": 4.25,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.3,
+    "value": 3.31,
     "rank": 4
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.41,
+    "value": 2.4,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.2,
+    "value": 2.21,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.02,
+    "value": 2.0,
     "rank": 7
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.86,
+    "value": 1.88,
     "rank": 8
-   },
-   {
-    "code": "IL",
-    "name": "Israel",
-    "value": 1.57,
-    "rank": 9
    },
    {
     "code": "AE",
     "name": "United Arab Emirates",
-    "value": 1.54,
+    "value": 1.57,
+    "rank": 9
+   },
+   {
+    "code": "IL",
+    "name": "Israel",
+    "value": 1.56,
     "rank": 10
    },
    {
@@ -17029,32 +17084,32 @@
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.16,
+   "value": 0.17,
    "rank": 42
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.41,
+    "value": 55.5,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.46,
+    "value": 7.47,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.14,
+    "value": 3.15,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.12,
+    "value": 3.13,
     "rank": 4
    },
    {
@@ -17078,7 +17133,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.89,
+    "value": 1.9,
     "rank": 8
    },
    {
