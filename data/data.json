@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T17:40:30Z",
+ "updated": "2026-11-12T18:01:11Z",
  "news": [
   {
    "id": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-citrix",
@@ -11815,9 +11815,19 @@
    "last": "2026-11-11T13:42:18"
   },
   {
-   "name": "APT28",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
    "type": "apt",
-   "country": "RU",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -11835,8 +11845,8 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -11845,19 +11855,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12588,6 +12588,42 @@
  },
  "known_actors": 1512,
  "iocs": [
+  {
+   "ioc": "chomleaestates[.]co[.]uk",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-12T17:52:00",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026074/"
+  },
+  {
+   "ioc": "colegiojeanpiaget[.]com[.]br",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-12T17:52:00",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026075/"
+  },
+  {
+   "ioc": "brunofoglia[.]it",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-12T17:51:59",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026073/"
+  },
   {
    "ioc": "4gpkk0qy[.]devam[.]store",
    "type": "domain",
@@ -15152,45 +15188,123 @@
     "EvilAI"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025868/"
-  },
-  {
-   "ioc": "9de8a00e661b017376dc8409f15df1eb68f432f9d19373b6fcb6908c71fc111b",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025869/"
-  },
-  {
-   "ioc": "1482c4b91b1d5993eb4a1e4e455c68a2e6aecf660e7317d4ca1d0c5432d6ce8a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025870/"
-  },
-  {
-   "ioc": "1bc91bf4370ba12bd1d01cb3598185e9ad018f5d457bdd6b67dbb4b9f6135c23",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:30",
-   "tags": [
-    "EvilAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025871/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://183[.]35[.]50[.]67:38590/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-12T17:59:13",
+   "link": "https://urlhaus.abuse.ch/url/4064633/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/cablecorerear/ZapRET-diSCord_yOUTUBE/releases/download/1[.]13[.]0/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-12T17:56:06",
+   "link": "https://urlhaus.abuse.ch/url/4064632/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/cablecorerear/DIScorD_zaPREt/releases/download/1[.]12[.]0/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-12T17:55:28",
+   "link": "https://urlhaus.abuse.ch/url/4064631/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Inertiauabait/diScord-ZApREt/releases/download/1[.]12[.]1/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-12T17:55:25",
+   "link": "https://urlhaus.abuse.ch/url/4064630/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Inertiauabait/ZApret-DiScORD/releases/download/1[.]11[.]9/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-12T17:55:17",
+   "link": "https://urlhaus.abuse.ch/url/4064629/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Entitydraheed/ZAPret-DIscOrd/releases/download/1[.]11[.]7/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-12T17:55:13",
+   "link": "https://urlhaus.abuse.ch/url/4064627/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Entitydraheed/DISCORd-ZAPrET/releases/download/1[.]12[.]0/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-12T17:55:13",
+   "link": "https://urlhaus.abuse.ch/url/4064628/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/cablecorerear/ZaPReT_discorD/releases/download/1[.]11[.]6/zapret-discord-youtube[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-12T17:55:11",
+   "link": "https://urlhaus.abuse.ch/url/4064626/"
+  },
+  {
+   "ioc": "hxxp://59[.]96[.]139[.]150:60276/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T17:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4064625/"
+  },
   {
    "ioc": "hxxp://42[.]178[.]108[.]20:53108/i",
    "host_it": false,
@@ -16772,131 +16886,24 @@
    ],
    "date": "2026-11-12T10:39:05",
    "link": "https://urlhaus.abuse.ch/url/4064484/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/lastlytime690-dot/Dcent/releases/download/v2[.]3[.]4/Dcent-Installer-Winx64-Setup-v2[.]5[.]3[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "connectwise",
-    "dropper",
-    "github"
-   ],
-   "date": "2026-11-12T10:34:24",
-   "link": "https://urlhaus.abuse.ch/url/4064483/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/lastlytime690-dot/SecondFi/releases/download/v2[.]3[.]4/SecondFi-Installer-Winx64-Setup-v2[.]5[.]3[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "connectwise",
-    "dropper",
-    "github"
-   ],
-   "date": "2026-11-12T10:34:13",
-   "link": "https://urlhaus.abuse.ch/url/4064482/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/lastlytime690-dot/foldapp/releases/download/v2[.]3[.]4/FoldApp-Installer-Winx64-Setup-v2[.]5[.]3[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "connectwise",
-    "dropper",
-    "github"
-   ],
-   "date": "2026-11-12T10:34:09",
-   "link": "https://urlhaus.abuse.ch/url/4064480/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Aasdsadsad04/newest-the-finals-mod-menu/refs/heads/main/bedtime/v2[.]0[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-12T10:34:09",
-   "link": "https://urlhaus.abuse.ch/url/4064481/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/lastlytime690-dot/cardano/releases/download/v2[.]3[.]4/CardanoFoundation-Installer-Winx64-Setup-v2[.]5[.]3[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "connectwise",
-    "dropper",
-    "github"
-   ],
-   "date": "2026-11-12T10:34:06",
-   "link": "https://urlhaus.abuse.ch/url/4064479/"
-  },
-  {
-   "ioc": "hxxp://182[.]122[.]218[.]192:34899/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "cowrie",
-    "elf",
-    "honeypot",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-12T10:32:11",
-   "link": "https://urlhaus.abuse.ch/url/4064478/"
-  },
-  {
-   "ioc": "hxxp://115[.]59[.]11[.]61:38478/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T10:32:08",
-   "link": "https://urlhaus.abuse.ch/url/4064477/"
-  },
-  {
-   "ioc": "hxxp://115[.]48[.]39[.]2:38761/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T10:32:07",
-   "link": "https://urlhaus.abuse.ch/url/4064476/"
-  },
-  {
-   "ioc": "hxxp://42[.]224[.]171[.]193:50373/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T10:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4064474/"
   }
  ],
  "malware_top": [
   {
-   "name": "IClickFix",
-   "count": 282
-  },
-  {
    "name": "Unknown Loader",
-   "count": 205
+   "count": 201
   },
   {
    "name": "Mirai",
-   "count": 158
+   "count": 142
   },
   {
    "name": "ClearFake",
    "count": 90
+  },
+  {
+   "name": "IClickFix",
+   "count": 40
   },
   {
    "name": "Unknown Stealer",
@@ -17019,67 +17026,67 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.63,
+    "value": 54.69,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.77,
+    "value": 7.67,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 4.22,
+    "value": 4.35,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.31,
+    "value": 3.32,
     "rank": 4
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.39,
+    "value": 2.38,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.2,
+    "value": 2.19,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.01,
+    "value": 2.0,
     "rank": 7
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.85,
+    "value": 1.86,
     "rank": 8
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.57,
+    "value": 1.59,
     "rank": 9
    },
    {
     "code": "AE",
     "name": "United Arab Emirates",
-    "value": 1.55,
+    "value": 1.45,
     "rank": 10
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.28,
+    "value": 1.29,
     "rank": 11
    },
    {
@@ -17093,13 +17100,13 @@
    "code": "IT",
    "name": "Italy",
    "value": 0.16,
-   "rank": 43
+   "rank": 42
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.5,
+    "value": 55.56,
     "rank": 1
    },
    {
@@ -17111,7 +17118,7 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.15,
+    "value": 3.16,
     "rank": 3
    },
    {
