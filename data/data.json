@@ -1,6 +1,32 @@
 {
- "updated": "2026-11-12T18:31:00Z",
+ "updated": "2026-11-12T19:01:12Z",
  "news": [
+  {
+   "id": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
+   "title": "Never be afraid to ask questions",
+   "link": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
+   "summary": "Amy reflects on a formative college anthropology course that taught her the power of asking questions to bridge cultural gaps.",
+   "source": "Cisco Talos",
+   "lang": "en",
+   "type": "research",
+   "date": "2026-11-12T19:00:00Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system",
+   "title": "Shipping giant Maersk says recent cyber incident affected legacy system",
+   "link": "https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system",
+   "summary": "The incident is the latest in a string of attacks on ports and other shipping organizations worldwide, with Brazil’s largest port hit with ransomware last week.",
+   "source": "The Record",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-12T18:28:00Z",
+   "actors": [],
+   "threat": true,
+   "highlight": false
+  },
   {
    "id": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
    "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
@@ -62,6 +88,19 @@
    "lang": "it",
    "type": "news",
    "date": "2026-11-12T17:13:33Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+   "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+   "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security …",
+   "source": "Microsoft Threat Intelligence",
+   "lang": "en",
+   "type": "research",
+   "date": "2026-11-12T17:00:00Z",
    "actors": [],
    "threat": false,
    "highlight": false
@@ -11840,16 +11879,6 @@
    "last": "2026-11-11T13:42:18"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
@@ -11860,9 +11889,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -11880,9 +11909,19 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12613,6 +12652,113 @@
  },
  "known_actors": 1512,
  "iocs": [
+  {
+   "ioc": "1a7d4b5bc83af4c3535a8e1cd97a032547eb9e7653a6551e828bab14655a6b33",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-12T18:58:24",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026128/"
+  },
+  {
+   "ioc": "1d2c04c5757040ec0f68dccd59beadd5e93d8811087422b4fc22d69ebc821c34",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-12T18:58:22",
+   "tags": [
+    "Mirai",
+    "Sh"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026127/"
+  },
+  {
+   "ioc": "alfajarind[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-12T18:57:34",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026124/"
+  },
+  {
+   "ioc": "ahmetlievdenevenakliye[.]cyou",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-12T18:57:34",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026125/"
+  },
+  {
+   "ioc": "www[.]atakentlastik[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-12T18:57:34",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026126/"
+  },
+  {
+   "ioc": "avcilartasimacilik[.]cyou",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-12T18:57:33",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026122/"
+  },
+  {
+   "ioc": "www[.]aractrafik[.]com[.]tr",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-12T18:57:33",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026123/"
+  },
+  {
+   "ioc": "85[.]122[.]114[.]16:8080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-12T18:45:00",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2026121/"
+  },
   {
    "ioc": "hxxp://153[.]117[.]9[.]211:38263/Mozi[.]m",
    "type": "url",
@@ -15192,105 +15338,176 @@
     "TamperedChef"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025925/"
-  },
-  {
-   "ioc": "9eeea3842394d20cc9229d5698c58296e2bd13b978a0abd5bc1d911e065aca2c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:37",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025926/"
-  },
-  {
-   "ioc": "e30f58f6eb4b5ff5b6d847a4e65cdfa3fccf6b36e77980e2592c20ca05e8cc80",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:37",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025927/"
-  },
-  {
-   "ioc": "602644511397d5584853d032902e02e9a24ab3189b5cb536ebab395695efef39",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:37",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025928/"
-  },
-  {
-   "ioc": "026a78c66f17587d94c5a83c0d0815f1f45a41b25f740e984f62d55a5ea9545c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:37",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025929/"
-  },
-  {
-   "ioc": "0063bd8e2848e7c44f286253fc7f8873f35244f43008f2d09a646e9e337670fc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:37",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025930/"
-  },
-  {
-   "ioc": "884e5116a649cad08df4bb6738cf165d19def3cfee0cfb39463596cf060fcb48",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:37",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025931/"
-  },
-  {
-   "ioc": "00cbf6925ed0b4d6c1632ab51f5cc0a82fb0299a7be131911fa8877fa8541e4f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-12T16:29:37",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025932/"
-  },
-  {
-   "ioc": "launchwindowtech[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-12T16:29:36",
-   "tags": [
-    "TamperedChef"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025914/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://87[.]68[.]236[.]233:45099/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-12T18:39:14",
+   "link": "https://urlhaus.abuse.ch/url/4064652/"
+  },
+  {
+   "ioc": "hxxp://115[.]48[.]144[.]212:48720/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-12T18:39:14",
+   "link": "https://urlhaus.abuse.ch/url/4064653/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]armv7-a",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:36:11",
+   "link": "https://urlhaus.abuse.ch/url/4064651/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]x86_64",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:13",
+   "link": "https://urlhaus.abuse.ch/url/4064646/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]mips",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:13",
+   "link": "https://urlhaus.abuse.ch/url/4064647/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]aarch64",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:13",
+   "link": "https://urlhaus.abuse.ch/url/4064648/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]armv5te",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:13",
+   "link": "https://urlhaus.abuse.ch/url/4064649/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]mipsel",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:13",
+   "link": "https://urlhaus.abuse.ch/url/4064650/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]armv6",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:08",
+   "link": "https://urlhaus.abuse.ch/url/4064642/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/loader[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "sh",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:08",
+   "link": "https://urlhaus.abuse.ch/url/4064643/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]x86",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:08",
+   "link": "https://urlhaus.abuse.ch/url/4064644/"
+  },
+  {
+   "ioc": "hxxp://204[.]76[.]203[.]170/bot[.]powerpc",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "204-76-203-170",
+    "elf",
+    "ua-wget"
+   ],
+   "date": "2026-11-12T18:35:08",
+   "link": "https://urlhaus.abuse.ch/url/4064645/"
+  },
+  {
+   "ioc": "hxxp://222[.]141[.]76[.]198:33195/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T18:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4064641/"
+  },
   {
    "ioc": "hxxp://125[.]43[.]124[.]3:35199/i",
    "host_it": false,
@@ -16833,170 +17050,20 @@
    ],
    "date": "2026-11-12T11:07:07",
    "link": "https://urlhaus.abuse.ch/url/4064505/"
-  },
-  {
-   "ioc": "hxxp://125[.]46[.]214[.]11:48113/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T11:02:12",
-   "link": "https://urlhaus.abuse.ch/url/4064503/"
-  },
-  {
-   "ioc": "hxxp://115[.]48[.]39[.]2:38761/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T11:02:07",
-   "link": "https://urlhaus.abuse.ch/url/4064501/"
-  },
-  {
-   "ioc": "hxxp://115[.]55[.]226[.]105:51891/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T11:02:07",
-   "link": "https://urlhaus.abuse.ch/url/4064502/"
-  },
-  {
-   "ioc": "hxxp://42[.]230[.]25[.]15:37228/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T11:02:06",
-   "link": "https://urlhaus.abuse.ch/url/4064500/"
-  },
-  {
-   "ioc": "hxxp://115[.]50[.]224[.]174:35583/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-12T11:02:05",
-   "link": "https://urlhaus.abuse.ch/url/4064499/"
-  },
-  {
-   "ioc": "hxxp://125[.]41[.]208[.]245:41274/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-12T11:00:09",
-   "link": "https://urlhaus.abuse.ch/url/4064498/"
-  },
-  {
-   "ioc": "hxxp://45[.]148[.]10[.]183/glm/cryptohunt[.]sh",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "docker",
-    "sh",
-    "ssh"
-   ],
-   "date": "2026-11-12T10:59:15",
-   "link": "https://urlhaus.abuse.ch/url/4064494/"
-  },
-  {
-   "ioc": "hxxp://103[.]39[.]108[.]200:8008/chisel",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "docker",
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T10:59:15",
-   "link": "https://urlhaus.abuse.ch/url/4064495/"
-  },
-  {
-   "ioc": "hxxps://103[.]39[.]108[.]200/chisel",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "docker",
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T10:59:15",
-   "link": "https://urlhaus.abuse.ch/url/4064496/"
-  },
-  {
-   "ioc": "hxxp://216[.]75[.]142[.]67:8089/xk250b",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "docker",
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T10:59:15",
-   "link": "https://urlhaus.abuse.ch/url/4064497/"
-  },
-  {
-   "ioc": "hxxps://tw[.]mcgrorys[.]top/DvnX[.]zip",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "dvx.to",
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-12T10:59:08",
-   "link": "https://urlhaus.abuse.ch/url/4064493/"
-  },
-  {
-   "ioc": "hxxps://on[.]mcgrorys[.]top/DvnX[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "dvx.to",
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-12T10:59:06",
-   "link": "https://urlhaus.abuse.ch/url/4064492/"
-  },
-  {
-   "ioc": "hxxp://216[.]75[.]142[.]67:8090/xmrig[.]tar[.]gz",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "crypto",
-    "docker",
-    "xmr"
-   ],
-   "date": "2026-11-12T10:59:04",
-   "link": "https://urlhaus.abuse.ch/url/4064491/"
   }
  ],
  "malware_top": [
   {
    "name": "Unknown Loader",
-   "count": 201
+   "count": 198
   },
   {
    "name": "Mirai",
-   "count": 111
+   "count": 114
   },
   {
    "name": "ClearFake",
-   "count": 89
+   "count": 92
   },
   {
    "name": "IClickFix",
@@ -17067,6 +17134,10 @@
    "count": 6
   },
   {
+   "name": "Aisuru",
+   "count": 5
+  },
+  {
    "name": "XWorm",
    "count": 5
   },
@@ -17076,10 +17147,6 @@
   },
   {
    "name": "Remcos",
-   "count": 4
-  },
-  {
-   "name": "Aisuru",
    "count": 4
   },
   {
@@ -17123,93 +17190,93 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.69,
+    "value": 54.53,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.67,
+    "value": 7.61,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 4.35,
+    "value": 4.72,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.32,
+    "value": 3.33,
     "rank": 4
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.38,
+    "value": 2.36,
     "rank": 5
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.19,
+    "value": 2.2,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.0,
+    "value": 1.99,
     "rank": 7
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.86,
+    "value": 1.85,
     "rank": 8
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.59,
+    "value": 1.64,
     "rank": 9
    },
    {
     "code": "AE",
     "name": "United Arab Emirates",
-    "value": 1.45,
+    "value": 1.29,
     "rank": 10
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.29,
+    "value": 1.27,
     "rank": 11
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.18,
+    "value": 1.21,
     "rank": 12
    }
   ],
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.16,
-   "rank": 42
+   "value": 0.15,
+   "rank": 45
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.54,
+    "value": 55.56,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.46,
+    "value": 7.47,
     "rank": 2
    },
    {
@@ -17233,7 +17300,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.29,
+    "value": 2.3,
     "rank": 6
    },
    {
