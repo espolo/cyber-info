@@ -1,6 +1,19 @@
 {
- "updated": "2026-11-12T15:31:07Z",
+ "updated": "2026-11-12T16:01:14Z",
  "news": [
+  {
+   "id": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+   "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
+   "link": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+   "summary": "The mod_http2 race condition, CVE-2026-119618, could let unauthenticated attackers execute code on servers with HTTP/2 enabled. The post Apache Patches Critical HTTP Server RCE Found by Anthropic, Google appeared first on SecurityWeek .",
+   "source": "SecurityWeek",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-12T15:38:31Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
   {
    "id": "https://www.cybersecurity360.it/nuove-minacce/ransomware/ransomware-a-malvestiti-50-password-in-un-file-di-testo-il-rischio-che-minaccia-la-filiera-automotive/",
    "title": "Ransomware a Malvestiti, 50 password in un file di testo: il rischio che minaccia la filiera automotive",
@@ -11697,9 +11710,9 @@
    "last": "2026-11-11T13:42:18"
   },
   {
-   "name": "LockBit",
-   "type": "ransomware",
-   "country": "",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -11717,9 +11730,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "LockBit",
+   "type": "ransomware",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -11727,9 +11740,9 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12471,6 +12484,60 @@
  "known_actors": 1512,
  "iocs": [
   {
+   "ioc": "hxxps://viventuresgroup[.]com/",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-12T16:00:58",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025820/"
+  },
+  {
+   "ioc": "hanningsacchet[.]wpengine[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-12T15:47:09",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025819/"
+  },
+  {
+   "ioc": "5c0x3yjo[.]gomas[.]store",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-12T15:37:19",
+   "tags": [
+    "ClearFake",
+    "mac-0xa07e",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025818/"
+  },
+  {
+   "ioc": "gomas[.]store",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-12T15:37:12",
+   "tags": [
+    "12November2026",
+    "ClearFake",
+    "Commandline",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2025817/"
+  },
+  {
    "ioc": "hxxps://lrd[.]adv[.]br/",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -12481,20 +12548,6 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025816/"
-  },
-  {
-   "ioc": "playsuno[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-12T15:19:02",
-   "tags": [
-    "exe",
-    "spyware",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025815/"
   },
   {
    "ioc": "146[.]103[.]41[.]86:40517",
@@ -15037,50 +15090,110 @@
     "Torii"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2025610/"
-  },
-  {
-   "ioc": "7729a612275980d83dac5859b37655c98839415b9f1e0c811e8526b66bc56dd4",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T07:58:57",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025609/"
-  },
-  {
-   "ioc": "e565170123198f39a434c2230d8819bcb0afdd7d70b240c0fc710c1f7556153b",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-12T07:58:56",
-   "tags": [
-    "elf",
-    "Mirai",
-    "Torii"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025608/"
-  },
-  {
-   "ioc": "7a3afc9cde42223ab4355541846c67fd2ececebb2ded2ddf7136db58d184b0be",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "AdaptixC2",
-   "confidence": 90,
-   "date": "2026-11-12T07:58:55",
-   "tags": [
-    "AdaptixC2",
-    "exe"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2025607/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://190[.]111[.]112[.]94:36088/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "cowrie",
+    "elf",
+    "honeypot",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-12T15:49:16",
+   "link": "https://urlhaus.abuse.ch/url/4064599/"
+  },
+  {
+   "ioc": "hxxps://rewardgoldshop[.]com/q",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "ClickFix"
+   ],
+   "date": "2026-11-12T15:49:06",
+   "link": "https://urlhaus.abuse.ch/url/4064598/"
+  },
+  {
+   "ioc": "hxxp://182[.]120[.]39[.]205:56802/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-12T15:47:12",
+   "link": "https://urlhaus.abuse.ch/url/4064597/"
+  },
+  {
+   "ioc": "hxxp://182[.]119[.]186[.]218:44663/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-12T15:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4064596/"
+  },
+  {
+   "ioc": "hxxp://36[.]69[.]74[.]26:58075/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-12T15:44:13",
+   "link": "https://urlhaus.abuse.ch/url/4064595/"
+  },
+  {
+   "ioc": "hxxp://36[.]69[.]74[.]26:58075/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-12T15:42:29",
+   "link": "https://urlhaus.abuse.ch/url/4064594/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/nuso635-sudo/Discord-zapret/releases/download/v1[.]0[.]0/zapret-discord-youtube-1[.]10[.]4[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "zapret",
+    "zip"
+   ],
+   "date": "2026-11-12T15:37:06",
+   "link": "https://urlhaus.abuse.ch/url/4064593/"
+  },
+  {
+   "ioc": "hxxp://42[.]230[.]25[.]15:37228/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "elf"
+   ],
+   "date": "2026-11-12T15:34:12",
+   "link": "https://urlhaus.abuse.ch/url/4064592/"
+  },
   {
    "ioc": "hxxp://190[.]111[.]112[.]94:36088/i",
    "host_it": false,
@@ -15121,7 +15234,7 @@
   {
    "ioc": "hxxps://nn[.]mcgrorys[.]top/DvnX[.]zip",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "malware",
@@ -16704,108 +16817,6 @@
    ],
    "date": "2026-11-12T09:58:13",
    "link": "https://urlhaus.abuse.ch/url/4064446/"
-  },
-  {
-   "ioc": "hxxp://216[.]75[.]142[.]67:8089/kw_bin",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:13",
-   "link": "https://urlhaus.abuse.ch/url/4064447/"
-  },
-  {
-   "ioc": "hxxp://216[.]75[.]142[.]67:8089/peakminer",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "crypto",
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:13",
-   "link": "https://urlhaus.abuse.ch/url/4064448/"
-  },
-  {
-   "ioc": "hxxp://216[.]75[.]142[.]67:8089/xmrig",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "crypto",
-    "elf",
-    "ssh",
-    "xmr"
-   ],
-   "date": "2026-11-12T09:58:13",
-   "link": "https://urlhaus.abuse.ch/url/4064449/"
-  },
-  {
-   "ioc": "hxxp://38[.]55[.]133[.]230/dist/peakminer",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "crypto",
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:13",
-   "link": "https://urlhaus.abuse.ch/url/4064450/"
-  },
-  {
-   "ioc": "hxxp://212[.]32[.]253[.]3:8899/peakminer",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "crypto",
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:13",
-   "link": "https://urlhaus.abuse.ch/url/4064451/"
-  },
-  {
-   "ioc": "hxxp://38[.]55[.]133[.]230:8898/dist/kitsd_v128[.]sh",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "docker",
-    "sh",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:13",
-   "link": "https://urlhaus.abuse.ch/url/4064452/"
-  },
-  {
-   "ioc": "hxxps://cdn[.]876553[.]xyz/Q1fc8a9OCb7AsC6f/dl/160a8fe2-b7d5-4f75-ad77-7cdf6c6825cc?a=armv7",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:09",
-   "link": "https://urlhaus.abuse.ch/url/4064443/"
-  },
-  {
-   "ioc": "hxxps://cdn[.]876553[.]xyz/Q1fc8a9OCb7AsC6f/dl/160a8fe2-b7d5-4f75-ad77-7cdf6c6825cc?a=armv6",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-12T09:58:08",
-   "link": "https://urlhaus.abuse.ch/url/4064442/"
   }
  ],
  "malware_top": [
@@ -16819,15 +16830,15 @@
   },
   {
    "name": "Mirai",
-   "count": 114
+   "count": 112
   },
   {
    "name": "ClearFake",
-   "count": 87
+   "count": 89
   },
   {
    "name": "Unknown Stealer",
-   "count": 41
+   "count": 40
   },
   {
    "name": "Vidar",
@@ -16839,7 +16850,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 29
+   "count": 28
   },
   {
    "name": "SalatStealer",
@@ -16878,15 +16889,15 @@
    "count": 9
   },
   {
-   "name": "WARDENStealer",
-   "count": 8
-  },
-  {
    "name": "Aisuru",
    "count": 6
   },
   {
    "name": "VShell",
+   "count": 6
+  },
+  {
+   "name": "WARDENStealer",
    "count": 6
   },
   {
@@ -16946,25 +16957,25 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.51,
+    "value": 54.47,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.83,
+    "value": 7.84,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 4.2,
+    "value": 4.24,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.27,
+    "value": 3.29,
     "rank": 4
    },
    {
@@ -16976,43 +16987,43 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.18,
+    "value": 2.2,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.02,
+    "value": 2.01,
     "rank": 7
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.86,
+    "value": 1.89,
     "rank": 8
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.58,
+    "value": 1.56,
     "rank": 9
    },
    {
     "code": "AE",
     "name": "United Arab Emirates",
-    "value": 1.54,
+    "value": 1.55,
     "rank": 10
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.26,
+    "value": 1.28,
     "rank": 11
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.17,
+    "value": 1.18,
     "rank": 12
    }
   ],
@@ -17026,13 +17037,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.34,
+    "value": 55.41,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.45,
+    "value": 7.46,
     "rank": 2
    },
    {
@@ -17044,7 +17055,7 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.11,
+    "value": 3.12,
     "rank": 4
    },
    {
@@ -17056,13 +17067,13 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.28,
+    "value": 2.29,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.16,
+    "value": 2.15,
     "rank": 7
    },
    {
@@ -17080,7 +17091,7 @@
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.18,
+    "value": 1.19,
     "rank": 10
    },
    {
@@ -17092,7 +17103,7 @@
    {
     "code": "BR",
     "name": "Brazil",
-    "value": 0.94,
+    "value": 0.95,
     "rank": 12
    }
   ],
