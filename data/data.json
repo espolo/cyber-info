@@ -1,6 +1,34 @@
 {
- "updated": "2026-11-13T17:31:08Z",
+ "updated": "2026-11-13T18:01:10Z",
  "news": [
+  {
+   "id": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+   "title": "German military drone operations disrupted by cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+   "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
+   "source": "BleepingComputer",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-13T17:31:56Z",
+   "actors": [
+    "quantum"
+   ],
+   "threat": true,
+   "highlight": false
+  },
+  {
+   "id": "https://therecord.media/university-of-texas-arlington-warns-data-breach",
+   "title": "University of Texas at Arlington warns personal information stolen during cyberattack",
+   "link": "https://therecord.media/university-of-texas-arlington-warns-data-breach",
+   "summary": "In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.",
+   "source": "The Record",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-13T17:26:00Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
   {
    "id": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-3",
    "title": "Rilevate vulnerabilità in prodotti Dell",
@@ -10,6 +38,19 @@
    "lang": "it",
    "type": "advisory",
    "date": "2026-11-13T16:53:54Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+   "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+   "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+   "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked …",
+   "source": "The Hacker News",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-13T16:53:08Z",
    "actors": [],
    "threat": false,
    "highlight": false
@@ -12779,38 +12820,8 @@
    "last": "2026-11-11T13:42:18"
   },
   {
-   "name": "Sandworm",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Scattered Spider",
    "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "LockBit",
-   "type": "ransomware",
    "country": "",
    "watch": true,
    "mentions": 0,
@@ -12832,6 +12843,36 @@
    "name": "APT28",
    "type": "apt",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "LockBit",
+   "type": "ransomware",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13067,6 +13108,16 @@
    "claims": 4,
    "claims_it": 0,
    "last": "2026-11-11T20:19:30"
+  },
+  {
+   "name": "quantum",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 1,
+   "claims": 0,
+   "claims_it": 0,
+   "last": "2026-11-13T17:31:56Z"
   },
   {
    "name": "global",
@@ -13540,6 +13591,7 @@
   "payload": "ransomware",
   "play": "ransomware",
   "qilin": "ransomware",
+  "quantum": "ransomware",
   "radar": "ransomware",
   "rhysida": "ransomware",
   "safepay": "ransomware",
@@ -13576,6 +13628,47 @@
  },
  "known_actors": 1512,
  "iocs": [
+  {
+   "ioc": "in71deke[.]geted[.]site",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-13T17:59:16",
+   "tags": [
+    "ClearFake",
+    "mac-0xa07e",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028188/"
+  },
+  {
+   "ioc": "nvidla[.]my",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Winos",
+   "confidence": 90,
+   "date": "2026-11-13T17:56:59",
+   "tags": [
+    "BYOVD",
+    "SilverFox",
+    "winos"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028187/"
+  },
+  {
+   "ioc": "hxxps://docs-cortex[.]paloaltonetworks[.]com/r/1/Cortex-Xpanse/Scanning-activity",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-13T17:50:29",
+   "tags": [
+    "blackhive",
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028186/"
+  },
   {
    "ioc": "hxxps://modat[.]io/)",
    "type": "url",
@@ -15617,39 +15710,44 @@
    "date": "2026-11-13T15:27:42",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2027989/"
-  },
-  {
-   "ioc": "ea161f246655324da6e7d4d1ee6593fe516767e86f3cbd9659194f42ce0f0340",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Formbook",
-   "confidence": 95,
-   "date": "2026-11-13T15:27:42",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2027990/"
-  },
-  {
-   "ioc": "133624990e62728737b31d58ade5562b",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "stealler",
-   "confidence": 95,
-   "date": "2026-11-13T15:27:41",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2027986/"
-  },
-  {
-   "ioc": "24a6ed8ce6aa9fb2c29a706882efd3f3e1dec98517fc0e50b36a09543b6c69e0",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "CrossRAT",
-   "confidence": 95,
-   "date": "2026-11-13T15:27:41",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2027987/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://59[.]96[.]140[.]124:33023/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-13T17:49:17",
+   "link": "https://urlhaus.abuse.ch/url/4065211/"
+  },
+  {
+   "ioc": "hxxp://183[.]13[.]135[.]38:48085/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T17:47:08",
+   "link": "https://urlhaus.abuse.ch/url/4065210/"
+  },
+  {
+   "ioc": "hxxps://gitlab[.]com/citylock/monotone-hwid-spoofer/-/raw/main/Monotone-HWID-Spoofer-master[.]zip",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "gitlab",
+    "LummaStealer"
+   ],
+   "date": "2026-11-13T17:38:15",
+   "link": "https://urlhaus.abuse.ch/url/4065209/"
+  },
   {
    "ioc": "hxxp://42[.]230[.]42[.]133:40248/i",
    "host_it": false,
@@ -15810,7 +15908,7 @@
   {
    "ioc": "hxxp://221[.]15[.]190[.]168:58030/bin[.]sh",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-13T14:47:07",
@@ -15864,7 +15962,7 @@
   {
    "ioc": "hxxp://186[.]227[.]246[.]242:32769/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-13T14:17:08",
@@ -16239,7 +16337,7 @@
   {
    "ioc": "hxxps://royal-wood-3c0d[.]julianosilvasantospiresrosa[.]workers[.]dev/ymexyxsytp",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "ascii",
@@ -16444,7 +16542,7 @@
   {
    "ioc": "hxxps://ruthaiv[.]com/JBaxNxbzw4/eeGai2ahyae[.]bin",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-13T13:14:08",
@@ -16676,7 +16774,7 @@
   {
    "ioc": "hxxp://171[.]213[.]208[.]56:55103/i",
    "host_it": false,
-   "status": "offline",
+   "status": "online",
    "threat": "malware_download",
    "tags": [
     "32-bit",
@@ -16917,7 +17015,7 @@
   {
    "ioc": "hxxp://85[.]11[.]167[.]218/mipsel",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "botnet",
@@ -16929,7 +17027,7 @@
   {
    "ioc": "hxxp://85[.]11[.]167[.]218/bot_test",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "botnet",
@@ -16965,7 +17063,7 @@
   {
    "ioc": "hxxp://196[.]189[.]35[.]226:38912/bin[.]sh",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "32-bit",
@@ -16990,7 +17088,7 @@
   {
    "ioc": "hxxp://182[.]118[.]240[.]13:39754/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-13T11:17:06",
@@ -17329,43 +17427,6 @@
    ],
    "date": "2026-11-13T10:42:08",
    "link": "https://urlhaus.abuse.ch/url/4065062/"
-  },
-  {
-   "ioc": "hxxp://31[.]76[.]64[.]74:8080/khot-rs[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "rustystealer",
-    "uac-bypass"
-   ],
-   "date": "2026-11-13T10:42:07",
-   "link": "https://urlhaus.abuse.ch/url/4065061/"
-  },
-  {
-   "ioc": "hxxp://ssh-node[.]hrtb[.]wreath[.]website:8070/binarys/x86_64",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "cowrie"
-   ],
-   "date": "2026-11-13T10:42:06",
-   "link": "https://urlhaus.abuse.ch/url/4065058/"
-  },
-  {
-   "ioc": "hxxp://ssh-node[.]hrtb[.]wreath[.]website:8070/binarys/armv7l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "cowrie"
-   ],
-   "date": "2026-11-13T10:42:06",
-   "link": "https://urlhaus.abuse.ch/url/4065059/"
   }
  ],
  "malware_top": [
@@ -17375,7 +17436,7 @@
   },
   {
    "name": "ClearFake",
-   "count": 139
+   "count": 140
   },
   {
    "name": "Mirai",
@@ -17383,7 +17444,7 @@
   },
   {
    "name": "IClickFix",
-   "count": 68
+   "count": 65
   },
   {
    "name": "NjRAT",
@@ -17519,19 +17580,19 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 8.03,
+    "value": 8.13,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 4.35,
+    "value": 4.38,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.32,
+    "value": 3.33,
     "rank": 4
    },
    {
@@ -17543,43 +17604,43 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.16,
+    "value": 2.13,
     "rank": 6
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 1.99,
+    "value": 1.98,
     "rank": 7
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 1.96,
+    "value": 1.95,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.66,
+    "value": 1.64,
     "rank": 9
-   },
-   {
-    "code": "AU",
-    "name": "Australia",
-    "value": 1.2,
-    "rank": 10
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.18,
+    "value": 1.16,
+    "rank": 10
+   },
+   {
+    "code": "AU",
+    "name": "Australia",
+    "value": 1.16,
     "rank": 11
    },
    {
     "code": "AE",
     "name": "United Arab Emirates",
-    "value": 0.99,
+    "value": 0.97,
     "rank": 12
    }
   ],
@@ -17593,7 +17654,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.93,
+    "value": 55.95,
     "rank": 1
    },
    {
@@ -17623,7 +17684,7 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.26,
+    "value": 2.25,
     "rank": 6
    },
    {
@@ -17635,7 +17696,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 1.96,
+    "value": 1.97,
     "rank": 8
    },
    {
@@ -17667,7 +17728,7 @@
    "code": "IT",
    "name": "Italy",
    "value": 0.17,
-   "rank": 45
+   "rank": 44
   },
   "outages_it": []
  },
