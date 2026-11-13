@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:30:57Z",
+ "updated": "2026-11-13T23:01:07Z",
  "news": [
   {
    "id": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
@@ -12810,6 +12810,16 @@
    "last": "2026-11-13T14:19:54"
   },
   {
+   "name": "LockBit",
+   "type": "ransomware",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
@@ -12840,16 +12850,6 @@
    "last": ""
   },
   {
-   "name": "Sandworm",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
@@ -12860,9 +12860,9 @@
    "last": ""
   },
   {
-   "name": "LockBit",
-   "type": "ransomware",
-   "country": "",
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13552,6 +13552,44 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "2c85a21fe7baf0defdf8f36da2afa9fa8aa87bfd884f528392da3958f07f0416",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-13T22:58:36",
+   "tags": [
+    "elf",
+    "Mirai",
+    "wraith"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028282/"
+  },
+  {
+   "ioc": "154[.]9[.]235[.]100:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AdaptixC2",
+   "confidence": 75,
+   "date": "2026-11-13T22:45:19",
+   "tags": [
+    "AdaptixC2"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028280/"
+  },
+  {
+   "ioc": "154[.]9[.]235[.]100:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AdaptixC2",
+   "confidence": 75,
+   "date": "2026-11-13T22:45:19",
+   "tags": [
+    "AdaptixC2"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028281/"
+  },
   {
    "ioc": "systhub[.]top",
    "type": "domain",
@@ -15886,39 +15924,122 @@
    "date": "2026-11-13T15:28:15",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2028079/"
-  },
-  {
-   "ioc": "7a06a31b2d0d59c19be47ebd999b353ce9fc859a",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "RN Stealer",
-   "confidence": 95,
-   "date": "2026-11-13T15:28:14",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028075/"
-  },
-  {
-   "ioc": "714fde47749e59b91c384886900622cc",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "RN Stealer",
-   "confidence": 95,
-   "date": "2026-11-13T15:28:14",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028076/"
-  },
-  {
-   "ioc": "4663a1694b9419f3a64d8e01edda88d3940c90f4",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "RN Stealer",
-   "confidence": 95,
-   "date": "2026-11-13T15:28:13",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028072/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://196[.]191[.]231[.]12:39156/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:47:38",
+   "link": "https://urlhaus.abuse.ch/url/4065396/"
+  },
+  {
+   "ioc": "hxxp://42[.]237[.]51[.]10:51381/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4065395/"
+  },
+  {
+   "ioc": "hxxp://59[.]97[.]254[.]22:35358/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4065394/"
+  },
+  {
+   "ioc": "hxxp://94[.]249[.]195[.]169/b/barm7",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf"
+   ],
+   "date": "2026-11-13T22:46:11",
+   "link": "https://urlhaus.abuse.ch/url/4065393/"
+  },
+  {
+   "ioc": "hxxp://42[.]224[.]52[.]34:44540/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-13T22:42:13",
+   "link": "https://urlhaus.abuse.ch/url/4065392/"
+  },
+  {
+   "ioc": "hxxp://175[.]175[.]93[.]205:50311/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4065391/"
+  },
+  {
+   "ioc": "hxxp://182[.]113[.]6[.]116:33465/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4065389/"
+  },
+  {
+   "ioc": "hxxp://125[.]44[.]34[.]230:55111/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4065390/"
+  },
+  {
+   "ioc": "hxxp://42[.]235[.]139[.]150:39584/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4065387/"
+  },
+  {
+   "ioc": "hxxp://125[.]44[.]34[.]230:55111/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-13T22:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4065388/"
+  },
+  {
+   "ioc": "hxxp://42[.]224[.]52[.]34:44540/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-13T22:31:08",
+   "link": "https://urlhaus.abuse.ch/url/4065386/"
+  },
   {
    "ioc": "hxxp://60[.]18[.]8[.]246:33409/bin[.]sh",
    "host_it": false,
@@ -16437,7 +16558,7 @@
   {
    "ioc": "hxxp://123[.]11[.]73[.]180:49309/bin[.]sh",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "32-bit",
@@ -17334,127 +17455,6 @@
    "tags": [],
    "date": "2026-11-13T19:47:18",
    "link": "https://urlhaus.abuse.ch/url/4065247/"
-  },
-  {
-   "ioc": "hxxps://abangpoteh[.]com/wp-content/uploads/1/setup2[.]ps1",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "ClickFix",
-    "powershell",
-    "ua-ps"
-   ],
-   "date": "2026-11-13T19:47:18",
-   "link": "https://urlhaus.abuse.ch/url/4065248/"
-  },
-  {
-   "ioc": "hxxp://43[.]157[.]55[.]140/xa7",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:47:17",
-   "link": "https://urlhaus.abuse.ch/url/4065244/"
-  },
-  {
-   "ioc": "hxxp://182[.]114[.]196[.]195:34216/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "cowrie",
-    "elf",
-    "honeypot",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-13T19:47:17",
-   "link": "https://urlhaus.abuse.ch/url/4065245/"
-  },
-  {
-   "ioc": "hxxp://178[.]17[.]240[.]162:443/A",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "docker",
-    "sh",
-    "ssh"
-   ],
-   "date": "2026-11-13T19:47:14",
-   "link": "https://urlhaus.abuse.ch/url/4065243/"
-  },
-  {
-   "ioc": "hxxp://178[.]17[.]240[.]162:443/bins/2",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "ssh"
-   ],
-   "date": "2026-11-13T19:47:13",
-   "link": "https://urlhaus.abuse.ch/url/4065242/"
-  },
-  {
-   "ioc": "hxxp://43[.]157[.]55[.]140/qq[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "ValleyRAT"
-   ],
-   "date": "2026-11-13T19:47:06",
-   "link": "https://urlhaus.abuse.ch/url/4065240/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Call-of-Duty-ModernWarfare-4-Cheats/[.]github/archive/refs/heads/main[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "malware"
-   ],
-   "date": "2026-11-13T19:47:06",
-   "link": "https://urlhaus.abuse.ch/url/4065241/"
-  },
-  {
-   "ioc": "hxxp://43[.]157[.]55[.]140/d64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:47:05",
-   "link": "https://urlhaus.abuse.ch/url/4065239/"
-  },
-  {
-   "ioc": "hxxps://storage[.]googleapis[.]com/salllfghnbgngflladaa/li",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:47:04",
-   "link": "https://urlhaus.abuse.ch/url/4065233/"
-  },
-  {
-   "ioc": "hxxps://storage[.]googleapis[.]com/mnsfdtr/2[.]html",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:47:04",
-   "link": "https://urlhaus.abuse.ch/url/4065234/"
-  },
-  {
-   "ioc": "hxxps://storage[.]googleapis[.]com/mtemebtmstemes/4[.]html",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:47:04",
-   "link": "https://urlhaus.abuse.ch/url/4065235/"
   }
  ],
  "malware_top": [
@@ -17464,19 +17464,19 @@
   },
   {
    "name": "Mirai",
-   "count": 89
-  },
-  {
-   "name": "RN Stealer",
-   "count": 45
+   "count": 113
   },
   {
    "name": "Vidar",
    "count": 44
   },
   {
+   "name": "RN Stealer",
+   "count": 43
+  },
+  {
    "name": "ClearFake",
-   "count": 33
+   "count": 26
   },
   {
    "name": "ZStealer",
@@ -17484,11 +17484,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 23
-  },
-  {
-   "name": "NjRAT",
-   "count": 23
+   "count": 22
   },
   {
    "name": "PureRAT",
@@ -17496,31 +17492,23 @@
   },
   {
    "name": "WARDENStealer",
-   "count": 22
+   "count": 20
   },
   {
    "name": "Unknown Stealer",
    "count": 19
   },
   {
-   "name": "IClickFix",
-   "count": 18
+   "name": "RevStealer",
+   "count": 17
   },
   {
-   "name": "RevStealer",
+   "name": "IClickFix",
    "count": 17
   },
   {
    "name": "stealler",
    "count": 17
-  },
-  {
-   "name": "Formbook",
-   "count": 17
-  },
-  {
-   "name": "Agent Tesla",
-   "count": 16
   },
   {
    "name": "Unknown RAT",
@@ -17531,16 +17519,28 @@
    "count": 14
   },
   {
-   "name": "Mozi",
-   "count": 12
+   "name": "Formbook",
+   "count": 14
   },
   {
-   "name": "CrossRAT",
+   "name": "Agent Tesla",
+   "count": 13
+  },
+  {
+   "name": "Mozi",
    "count": 12
   },
   {
    "name": "Remus",
    "count": 10
+  },
+  {
+   "name": "VShell",
+   "count": 9
+  },
+  {
+   "name": "NjRAT",
+   "count": 9
   },
   {
    "name": "Raven Stealer",
@@ -17551,8 +17551,8 @@
    "count": 9
   },
   {
-   "name": "VShell",
-   "count": 8
+   "name": "AdaptixC2",
+   "count": 7
   },
   {
    "name": "AsyncRAT",
@@ -17595,31 +17595,31 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.74,
+    "value": 54.69,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.98,
+    "value": 7.97,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 4.35,
+    "value": 4.36,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.25,
+    "value": 3.26,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.52,
+    "value": 2.54,
     "rank": 5
    },
    {
@@ -17637,24 +17637,24 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 1.94,
+    "value": 1.96,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.56,
+    "value": 1.53,
     "rank": 9
-   },
-   {
-    "code": "CH",
-    "name": "Switzerland",
-    "value": 1.13,
-    "rank": 10
    },
    {
     "code": "AU",
     "name": "Australia",
+    "value": 1.13,
+    "rank": 10
+   },
+   {
+    "code": "CH",
+    "name": "Switzerland",
     "value": 1.13,
     "rank": 11
    },
@@ -17669,13 +17669,13 @@
    "code": "IT",
    "name": "Italy",
    "value": 0.14,
-   "rank": 42
+   "rank": 41
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.96,
+    "value": 55.97,
     "rank": 1
    },
    {
@@ -17717,7 +17717,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.0,
+    "value": 2.01,
     "rank": 8
    },
    {
