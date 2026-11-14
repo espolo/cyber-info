@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T17:30:58Z",
+ "updated": "2026-11-14T18:01:10Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
@@ -12844,6 +12844,16 @@
    "last": "2026-11-13T14:19:54"
   },
   {
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Sandworm",
    "type": "apt",
    "country": "RU",
@@ -12854,19 +12864,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "APT28",
+   "name": "Lazarus Group",
    "type": "apt",
-   "country": "RU",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12894,9 +12894,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13621,6 +13621,24 @@
  "known_actors": 1510,
  "iocs": [
   {
+   "ioc": "lygawuqu[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-14T17:34:56",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028702/"
+  },
+  {
    "ioc": "04a6c4f691286d4c6c6ed280a484931d1cede33b91d0c3611cb4b2ac1928e99f",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -13636,8 +13654,8 @@
    "link": "https://threatfox.abuse.ch/ioc/2028701/"
   },
   {
-   "ioc": "hxxps://boost-19[.]com/f/zh2s2xptaamrnzpdyiq0ng/vj1ury4s",
-   "type": "url",
+   "ioc": "boost-19[.]com",
+   "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "AMOS",
    "confidence": 100,
@@ -13648,7 +13666,7 @@
     "Foxveil",
     "macOS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028700/"
+   "link": "https://threatfox.abuse.ch/ioc/2028698/"
   },
   {
    "ioc": "hxxps://boost-19[.]com/curl/irdxh38dlz/r9yq8jgse57g57oi190[.]dat",
@@ -13666,8 +13684,8 @@
    "link": "https://threatfox.abuse.ch/ioc/2028699/"
   },
   {
-   "ioc": "boost-19[.]com",
-   "type": "domain",
+   "ioc": "hxxps://boost-19[.]com/f/zh2s2xptaamrnzpdyiq0ng/vj1ury4s",
+   "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "AMOS",
    "confidence": 100,
@@ -13678,7 +13696,7 @@
     "Foxveil",
     "macOS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028698/"
+   "link": "https://threatfox.abuse.ch/ioc/2028700/"
   },
   {
    "ioc": "c[.]geng7[.]org",
@@ -13757,7 +13775,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028692/"
   },
   {
-   "ioc": "hxxps://thewildandfreecafe[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=wesley[.]docs",
+   "ioc": "hxxps://fishofwalton-doc-access[.]s3[.]us-east-2[.]amazonaws[.]com/Index1[.]html",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown malware",
@@ -13770,7 +13788,7 @@
     "RMM-abuse",
     "ScreenConnect"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028691/"
+   "link": "https://threatfox.abuse.ch/ioc/2028689/"
   },
   {
    "ioc": "hxxps://thewildandfreecafe[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=fish[.]docs",
@@ -13789,7 +13807,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028690/"
   },
   {
-   "ioc": "hxxps://fishofwalton-doc-access[.]s3[.]us-east-2[.]amazonaws[.]com/Index1[.]html",
+   "ioc": "hxxps://thewildandfreecafe[.]screenconnect[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi?e=Access&y=Guest&t=wesley[.]docs",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown malware",
@@ -13802,7 +13820,7 @@
     "RMM-abuse",
     "ScreenConnect"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028689/"
+   "link": "https://threatfox.abuse.ch/ioc/2028691/"
   },
   {
    "ioc": "z8t[.]appel4d[.]com",
@@ -13895,22 +13913,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2028682/"
   },
   {
-   "ioc": "38[.]60[.]206[.]178:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Jackskid",
-   "confidence": 100,
-   "date": "2026-11-14T15:26:12",
-   "tags": [
-    "botnet",
-    "DDoS",
-    "Jackskid",
-    "Mirai",
-    "rctea"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028681/"
-  },
-  {
    "ioc": "38[.]60[.]205[.]67:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -13927,6 +13929,22 @@
    "link": "https://threatfox.abuse.ch/ioc/2028680/"
   },
   {
+   "ioc": "38[.]60[.]206[.]178:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-14T15:26:12",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028681/"
+  },
+  {
    "ioc": "hxxps://metaslate[.]org/uBF7J3Oasiut/pE7rAq5Rz02L[.]php",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -13935,22 +13953,6 @@
    "date": "2026-11-14T15:21:38",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2028679/"
-  },
-  {
-   "ioc": "130[.]94[.]13[.]23:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Jackskid",
-   "confidence": 100,
-   "date": "2026-11-14T15:19:33",
-   "tags": [
-    "botnet",
-    "DDoS",
-    "Jackskid",
-    "Mirai",
-    "rctea"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028678/"
   },
   {
    "ioc": "130[.]94[.]10[.]21:443",
@@ -13969,18 +13971,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2028677/"
   },
   {
-   "ioc": "pcsofthub[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Remus",
-   "confidence": 85,
-   "date": "2026-11-14T15:18:58",
+   "ioc": "130[.]94[.]13[.]23:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-14T15:19:33",
    "tags": [
-    "GoCrypter",
-    "Lumma",
-    "Remus"
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028622/"
+   "link": "https://threatfox.abuse.ch/ioc/2028678/"
   },
   {
    "ioc": "0c39264337a1186b2e765e24073399cbdcba118306614eb411e315887af578bd",
@@ -13993,19 +13997,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2028616/"
   },
   {
-   "ioc": "67[.]215[.]228[.]4:25774",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-14T15:18:54",
+   "ioc": "pcsofthub[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Remus",
+   "confidence": 85,
+   "date": "2026-11-14T15:18:58",
    "tags": [
-    "c2",
-    "komari",
-    "komari-agent",
-    "proxmox"
+    "GoCrypter",
+    "Lumma",
+    "Remus"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028665/"
+   "link": "https://threatfox.abuse.ch/ioc/2028622/"
   },
   {
    "ioc": "tz[.]5671234[.]xyz",
@@ -14021,6 +14024,21 @@
     "proxmox"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2028664/"
+  },
+  {
+   "ioc": "67[.]215[.]228[.]4:25774",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-14T15:18:54",
+   "tags": [
+    "c2",
+    "komari",
+    "komari-agent",
+    "proxmox"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028665/"
   },
   {
    "ioc": "h99[.]anka69[.]org",
@@ -14047,18 +14065,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2028675/"
   },
   {
-   "ioc": "kc[.]appel4d[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-14T15:05:34",
-   "tags": [
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028674/"
-  },
-  {
    "ioc": "jk[.]apaljitu[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -14069,6 +14075,18 @@
     "Vidar"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2028673/"
+  },
+  {
+   "ioc": "kc[.]appel4d[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-14T15:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028674/"
   },
   {
    "ioc": "f61e9548ea915f7d052b1b929bb5ddf597a3fd93ee208b14b0e03553b98f7583",
@@ -14145,18 +14163,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2028660/"
   },
   {
-   "ioc": "zs[.]apij4ya[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-14T14:05:34",
-   "tags": [
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028659/"
-  },
-  {
    "ioc": "y[.]geng7[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -14167,6 +14173,18 @@
     "Vidar"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2028658/"
+  },
+  {
+   "ioc": "zs[.]apij4ya[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-14T14:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028659/"
   },
   {
    "ioc": "3c998ffdd5648bb4072e96387897ab89455b02aabf5ea73494fe555f9f685014",
@@ -14700,18 +14718,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2028619/"
   },
   {
-   "ioc": "47[.]238[.]116[.]190:8011",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-14T13:05:04",
-   "tags": [
-    "Supershell"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028618/"
-  },
-  {
    "ioc": "129[.]211[.]183[.]201:8080",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -14722,6 +14728,18 @@
     "Supershell"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2028617/"
+  },
+  {
+   "ioc": "47[.]238[.]116[.]190:8011",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-14T13:05:04",
+   "tags": [
+    "Supershell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028618/"
   },
   {
    "ioc": "rate-limited-proxy-74-125-151-98[.]google[.]com",
@@ -14806,7 +14824,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028608/"
   },
   {
-   "ioc": "bo[.]apij4ya[.]org",
+   "ioc": "p3l[.]apaljitu[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Vidar",
@@ -14815,7 +14833,7 @@
    "tags": [
     "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028607/"
+   "link": "https://threatfox.abuse.ch/ioc/2028605/"
   },
   {
    "ioc": "apaljitu[.]org",
@@ -14830,7 +14848,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028606/"
   },
   {
-   "ioc": "p3l[.]apaljitu[.]org",
+   "ioc": "bo[.]apij4ya[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Vidar",
@@ -14839,19 +14857,7 @@
    "tags": [
     "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028605/"
-  },
-  {
-   "ioc": "23[.]227[.]196[.]115:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AdaptixC2",
-   "confidence": 100,
-   "date": "2026-11-14T11:05:06",
-   "tags": [
-    "Adaptix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028604/"
+   "link": "https://threatfox.abuse.ch/ioc/2028607/"
   },
   {
    "ioc": "23[.]227[.]196[.]115:80",
@@ -14866,16 +14872,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2028603/"
   },
   {
-   "ioc": "23[.]227[.]196[.]115:443",
+   "ioc": "23[.]227[.]196[.]115:8080",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "AdaptixC2",
    "confidence": 100,
-   "date": "2026-11-14T11:05:05",
+   "date": "2026-11-14T11:05:06",
    "tags": [
     "Adaptix"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028602/"
+   "link": "https://threatfox.abuse.ch/ioc/2028604/"
   },
   {
    "ioc": "16[.]170[.]157[.]239:80",
@@ -14888,6 +14894,18 @@
     "asyncrat"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2028601/"
+  },
+  {
+   "ioc": "23[.]227[.]196[.]115:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AdaptixC2",
+   "confidence": 100,
+   "date": "2026-11-14T11:05:05",
+   "tags": [
+    "Adaptix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028602/"
   },
   {
    "ioc": "337u6zp1[.]retica[.]store",
@@ -15133,18 +15151,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2028581/"
   },
   {
-   "ioc": "apij4ya[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-14T09:10:34",
-   "tags": [
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028583/"
-  },
-  {
    "ioc": "gq[.]apij4ya[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -15157,16 +15163,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2028582/"
   },
   {
-   "ioc": "129[.]211[.]183[.]201:18080",
-   "type": "ip:port",
+   "ioc": "apij4ya[.]org",
+   "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
+   "malware": "Vidar",
    "confidence": 100,
-   "date": "2026-11-14T09:05:06",
+   "date": "2026-11-14T09:10:34",
    "tags": [
-    "Supershell"
+    "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028580/"
+   "link": "https://threatfox.abuse.ch/ioc/2028583/"
   },
   {
    "ioc": "120[.]79[.]172[.]40:18083",
@@ -15181,7 +15187,19 @@
    "link": "https://threatfox.abuse.ch/ioc/2028579/"
   },
   {
-   "ioc": "120[.]79[.]172[.]40:18080",
+   "ioc": "129[.]211[.]183[.]201:18080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-14T09:05:06",
+   "tags": [
+    "Supershell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028580/"
+  },
+  {
+   "ioc": "111[.]229[.]193[.]40:38001",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -15190,7 +15208,7 @@
    "tags": [
     "Supershell"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028578/"
+   "link": "https://threatfox.abuse.ch/ioc/2028576/"
   },
   {
    "ioc": "120[.]79[.]172[.]40:22",
@@ -15205,7 +15223,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028577/"
   },
   {
-   "ioc": "111[.]229[.]193[.]40:38001",
+   "ioc": "120[.]79[.]172[.]40:18080",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -15214,7 +15232,7 @@
    "tags": [
     "Supershell"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028576/"
+   "link": "https://threatfox.abuse.ch/ioc/2028578/"
   },
   {
    "ioc": "8[.]148[.]13[.]187:5555",
@@ -15583,7 +15601,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028548/"
   },
   {
-   "ioc": "zonce[.]tattoo",
+   "ioc": "mavrk[.]tattoo",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "WARDENStealer",
@@ -15592,235 +15610,7 @@
    "tags": [
     "WARDENStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028547/"
-  },
-  {
-   "ioc": "zjero[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028546/"
-  },
-  {
-   "ioc": "zehst[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028545/"
-  },
-  {
-   "ioc": "wiqld[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028544/"
-  },
-  {
-   "ioc": "wfave[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028543/"
-  },
-  {
-   "ioc": "vvoid[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028542/"
-  },
-  {
-   "ioc": "viebe[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028541/"
-  },
-  {
-   "ioc": "vdibe[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028540/"
-  },
-  {
-   "ioc": "trhue[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028539/"
-  },
-  {
-   "ioc": "taton[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028538/"
-  },
-  {
-   "ioc": "soful[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028537/"
-  },
-  {
-   "ioc": "skies[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028536/"
-  },
-  {
-   "ioc": "skhin[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028535/"
-  },
-  {
-   "ioc": "shilk[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028534/"
-  },
-  {
-   "ioc": "rxise[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028533/"
-  },
-  {
-   "ioc": "rawew[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028532/"
-  },
-  {
-   "ioc": "pubre[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028531/"
-  },
-  {
-   "ioc": "nejxt[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028530/"
-  },
-  {
-   "ioc": "mifnd[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028529/"
-  },
-  {
-   "ioc": "mgyth[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:52",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028528/"
+   "link": "https://threatfox.abuse.ch/ioc/2028526/"
   },
   {
    "ioc": "meood[.]tattoo",
@@ -15835,7 +15625,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028527/"
   },
   {
-   "ioc": "mavrk[.]tattoo",
+   "ioc": "mgyth[.]tattoo",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "WARDENStealer",
@@ -15844,10 +15634,238 @@
    "tags": [
     "WARDENStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028526/"
+   "link": "https://threatfox.abuse.ch/ioc/2028528/"
   },
   {
-   "ioc": "ligne[.]tattoo",
+   "ioc": "mifnd[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028529/"
+  },
+  {
+   "ioc": "nejxt[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028530/"
+  },
+  {
+   "ioc": "pubre[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028531/"
+  },
+  {
+   "ioc": "rawew[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028532/"
+  },
+  {
+   "ioc": "rxise[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028533/"
+  },
+  {
+   "ioc": "shilk[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028534/"
+  },
+  {
+   "ioc": "skhin[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028535/"
+  },
+  {
+   "ioc": "skies[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028536/"
+  },
+  {
+   "ioc": "soful[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028537/"
+  },
+  {
+   "ioc": "taton[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028538/"
+  },
+  {
+   "ioc": "trhue[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028539/"
+  },
+  {
+   "ioc": "vdibe[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028540/"
+  },
+  {
+   "ioc": "viebe[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028541/"
+  },
+  {
+   "ioc": "vvoid[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028542/"
+  },
+  {
+   "ioc": "wfave[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028543/"
+  },
+  {
+   "ioc": "wiqld[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028544/"
+  },
+  {
+   "ioc": "zehst[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028545/"
+  },
+  {
+   "ioc": "zjero[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028546/"
+  },
+  {
+   "ioc": "zonce[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:52",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028547/"
+  },
+  {
+   "ioc": "axpex[.]tattoo",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "WARDENStealer",
@@ -15856,175 +15874,7 @@
    "tags": [
     "WARDENStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028525/"
-  },
-  {
-   "ioc": "iccon[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028524/"
-  },
-  {
-   "ioc": "hhalo[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028523/"
-  },
-  {
-   "ioc": "gljow[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028522/"
-  },
-  {
-   "ioc": "gbrid[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028521/"
-  },
-  {
-   "ioc": "fofrm[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028520/"
-  },
-  {
-   "ioc": "flvux[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028519/"
-  },
-  {
-   "ioc": "fglow[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028518/"
-  },
-  {
-   "ioc": "fakde[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028517/"
-  },
-  {
-   "ioc": "eycho[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028516/"
-  },
-  {
-   "ioc": "epbic[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028515/"
-  },
-  {
-   "ioc": "edvge[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028514/"
-  },
-  {
-   "ioc": "darry[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028513/"
-  },
-  {
-   "ioc": "daerk[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028512/"
-  },
-  {
-   "ioc": "cufbe[.]tattoo",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 100,
-   "date": "2026-11-14T08:34:51",
-   "tags": [
-    "WARDENStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028511/"
+   "link": "https://threatfox.abuse.ch/ioc/2028509/"
   },
   {
    "ioc": "corge[.]tattoo",
@@ -16039,7 +15889,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028510/"
   },
   {
-   "ioc": "axpex[.]tattoo",
+   "ioc": "cufbe[.]tattoo",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "WARDENStealer",
@@ -16048,7 +15898,175 @@
    "tags": [
     "WARDENStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028509/"
+   "link": "https://threatfox.abuse.ch/ioc/2028511/"
+  },
+  {
+   "ioc": "daerk[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028512/"
+  },
+  {
+   "ioc": "darry[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028513/"
+  },
+  {
+   "ioc": "edvge[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028514/"
+  },
+  {
+   "ioc": "epbic[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028515/"
+  },
+  {
+   "ioc": "eycho[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028516/"
+  },
+  {
+   "ioc": "fakde[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028517/"
+  },
+  {
+   "ioc": "fglow[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028518/"
+  },
+  {
+   "ioc": "flvux[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028519/"
+  },
+  {
+   "ioc": "fofrm[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028520/"
+  },
+  {
+   "ioc": "gbrid[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028521/"
+  },
+  {
+   "ioc": "gljow[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028522/"
+  },
+  {
+   "ioc": "hhalo[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028523/"
+  },
+  {
+   "ioc": "iccon[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028524/"
+  },
+  {
+   "ioc": "ligne[.]tattoo",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 100,
+   "date": "2026-11-14T08:34:51",
+   "tags": [
+    "WARDENStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028525/"
   },
   {
    "ioc": "154[.]9[.]251[.]119:10086",
@@ -16135,7 +16153,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028502/"
   },
   {
-   "ioc": "py[.]apigcor88[.]org",
+   "ioc": "f[.]geng7[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Vidar",
@@ -16144,7 +16162,7 @@
    "tags": [
     "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028501/"
+   "link": "https://threatfox.abuse.ch/ioc/2028499/"
   },
   {
    "ioc": "geng7[.]org",
@@ -16159,7 +16177,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2028500/"
   },
   {
-   "ioc": "f[.]geng7[.]org",
+   "ioc": "py[.]apigcor88[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Vidar",
@@ -16168,7 +16186,7 @@
    "tags": [
     "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2028499/"
+   "link": "https://threatfox.abuse.ch/ioc/2028501/"
   },
   {
    "ioc": "120[.]79[.]172[.]40:8888",
@@ -16217,24 +16235,101 @@
     "WARDENStealer"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2028495/"
-  },
-  {
-   "ioc": "2431ad790c9decf8a231b36df0fc7763c35005753111d4d89913552c0b9b987a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown Loader",
-   "confidence": 90,
-   "date": "2026-11-14T07:58:41",
-   "tags": [
-    "dropped-by-ACRStealer",
-    "Loader",
-    "msi",
-    "PavinLoader"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028494/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/akbar-ops/inertia/refs/heads/main/backend/apps/core/services/ollama_agent/sistema_de_analisis_documentos_juridicos_v3[.]9[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-14T17:52:08",
+   "link": "https://urlhaus.abuse.ch/url/4066012/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/akbar-ops/inertia/refs/heads/main/backend/de_juridicos_sistema_analisis_documentos_v2[.]9-alpha[.]5[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-14T17:52:08",
+   "link": "https://urlhaus.abuse.ch/url/4066013/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Pyramidriseize/ai-fursuit-pattern-generator/releases/download/v0[.]1[.]2/ai-fursuit-pattern-generator[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "MopsStealer"
+   ],
+   "date": "2026-11-14T17:50:08",
+   "link": "https://urlhaus.abuse.ch/url/4066011/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/Obsidiantatrap/wow-forever-builds-waymark/releases/download/v1[.]0[.]5/wow-forever-builds-waymark[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "MopsStealer"
+   ],
+   "date": "2026-11-14T17:50:07",
+   "link": "https://urlhaus.abuse.ch/url/4066010/"
+  },
+  {
+   "ioc": "hxxp://196[.]190[.]228[.]108:41562/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T17:47:13",
+   "link": "https://urlhaus.abuse.ch/url/4066009/"
+  },
+  {
+   "ioc": "hxxp://115[.]51[.]86[.]182:55586/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T17:47:11",
+   "link": "https://urlhaus.abuse.ch/url/4066008/"
+  },
+  {
+   "ioc": "hxxp://105[.]184[.]136[.]237:58515/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T17:47:10",
+   "link": "https://urlhaus.abuse.ch/url/4066007/"
+  },
+  {
+   "ioc": "hxxp://220[.]198[.]112[.]93:42447/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "cowrie",
+    "elf",
+    "honeypot",
+    "mipsel",
+    "Mozi"
+   ],
+   "date": "2026-11-14T17:44:20",
+   "link": "https://urlhaus.abuse.ch/url/4066006/"
+  },
   {
    "ioc": "hxxp://219[.]157[.]132[.]51:58517/bin[.]sh",
    "host_it": false,
@@ -18060,116 +18155,12 @@
    ],
    "date": "2026-11-14T16:49:30",
    "link": "https://urlhaus.abuse.ch/url/4065865/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Solarluchateau68/disCOrDZaPrET/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:24",
-   "link": "https://urlhaus.abuse.ch/url/4065861/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/hearthaulerencoder/pLAnET-vPn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:24",
-   "link": "https://urlhaus.abuse.ch/url/4065862/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/PolishCodeInflate/dIscoRdZaPrEt/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:24",
-   "link": "https://urlhaus.abuse.ch/url/4065863/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Solarluchateau68/ZapRET-gIThUb-dIscorD-1[.]9[.]9c/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:23",
-   "link": "https://urlhaus.abuse.ch/url/4065859/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/harmoniccockatoosouk/PROTOn-vpN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:23",
-   "link": "https://urlhaus.abuse.ch/url/4065860/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Solarluchateau68/zaPreTdiSCORd/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:22",
-   "link": "https://urlhaus.abuse.ch/url/4065850/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/fastshaperdenote/tELEGrAmZaPREt/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:22",
-   "link": "https://urlhaus.abuse.ch/url/4065851/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/infernalhorseday/PROtON-vPN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:22",
-   "link": "https://urlhaus.abuse.ch/url/4065852/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 117
+   "count": 125
   },
   {
    "name": "Vidar",
@@ -18177,19 +18168,19 @@
   },
   {
    "name": "WARDENStealer",
-   "count": 48
+   "count": 47
+  },
+  {
+   "name": "php.shin_webshell",
+   "count": 18
   },
   {
    "name": "ClearFake",
-   "count": 19
+   "count": 18
   },
   {
    "name": "Cobalt Strike",
    "count": 18
-  },
-  {
-   "name": "php.shin_webshell",
-   "count": 17
   },
   {
    "name": "AdaptixC2",
@@ -18310,31 +18301,31 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.67,
+    "value": 7.69,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.29,
+    "value": 3.31,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.88,
+    "value": 2.89,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.52,
+    "value": 2.48,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.1,
+    "value": 2.11,
     "rank": 6
    },
    {
@@ -18352,25 +18343,25 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.16,
+    "value": 1.19,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.16,
+    "value": 1.15,
     "rank": 10
-   },
-   {
-    "code": "CH",
-    "name": "Switzerland",
-    "value": 1.04,
-    "rank": 11
    },
    {
     "code": "UA",
     "name": "Ukraine",
-    "value": 1.02,
+    "value": 1.03,
+    "rank": 11
+   },
+   {
+    "code": "CH",
+    "name": "Switzerland",
+    "value": 1.03,
     "rank": 12
    }
   ],
@@ -18390,7 +18381,7 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.7,
+    "value": 7.71,
     "rank": 2
    },
    {
@@ -18432,7 +18423,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.41,
+    "value": 1.42,
     "rank": 9
    },
    {
