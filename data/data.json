@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T22:51:19Z",
+ "updated": "2026-11-14T23:01:07Z",
  "news": [
   {
    "id": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMFRzX0hhVVd3OVFqRkVrOEtPNldBeTk1R181ejkwYWNIc3pyUE9US1NQOXd4QWZ0WGl2Sng1ZmRGOEhCdE1rMTJRSk1fT21uazI5V0JzR2ZvV3ZqUW1jYWRDc19KVmdvd0VXYkVrekhCTXo0VGxEQ3J3a21iSGhfOXpUcmVIM1NLeG9IN0VKaDlVT1M2aFNWRGFmdHFKc1RFNGdiblFIWXJqdnFIanZ6RzNodkgtcXY0cEN2S0t3V1gxVkl2T0I3bmcxMVk2c2UyNXRFRg?oc=5",
@@ -12776,8 +12776,38 @@
    "last": "2026-11-13T14:19:54"
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "LockBit",
+   "type": "ransomware",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -12796,39 +12826,9 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "LockBit",
-   "type": "ransomware",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13451,6 +13451,32 @@
  },
  "known_actors": 1160,
  "iocs": [
+  {
+   "ioc": "9305225f308e95c57c1a2d00d64cb3033710d55c0c9953b5fa42865c4e88e960",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-14T22:58:46",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028995/"
+  },
+  {
+   "ioc": "cad-kon[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-14T22:51:46",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028994/"
+  },
   {
    "ioc": "nunza[.]store",
    "type": "domain",
@@ -15670,29 +15696,23 @@
    "date": "2026-11-14T18:12:00",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2028798/"
-  },
-  {
-   "ioc": "cfbe95402662013bc58dada3a5424a4519883fc4",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:59",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028793/"
-  },
-  {
-   "ioc": "f1ba1aa49081c49f15865860e7ad521b",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:59",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028794/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://196[.]190[.]105[.]170:36951/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-14T22:58:13",
+   "link": "https://urlhaus.abuse.ch/url/4066100/"
+  },
   {
    "ioc": "hxxp://115[.]55[.]42[.]126:45133/bin[.]sh",
    "host_it": false,
@@ -16131,7 +16151,7 @@
   {
    "ioc": "hxxp://170[.]84[.]133[.]235:42649/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-14T20:17:05",
@@ -17380,25 +17400,12 @@
    ],
    "date": "2026-11-14T17:05:52",
    "link": "https://urlhaus.abuse.ch/url/4065950/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/DesertPotterAngular/zAPRET-yoUTUbE_fIX/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T17:05:52",
-   "link": "https://urlhaus.abuse.ch/url/4065951/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 87
+   "count": 95
   },
   {
    "name": "Raven Stealer",
@@ -17533,13 +17540,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.26,
+    "value": 57.2,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.95,
+    "value": 8.0,
     "rank": 2
    },
    {
@@ -17557,7 +17564,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.29,
+    "value": 2.26,
     "rank": 5
    },
    {
@@ -17575,19 +17582,19 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.93,
+    "value": 1.94,
     "rank": 8
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.21,
+    "value": 1.23,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.16,
+    "value": 1.15,
     "rank": 10
    },
    {
@@ -17619,7 +17626,7 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.76,
+    "value": 7.77,
     "rank": 2
    },
    {
@@ -17655,7 +17662,7 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.08,
+    "value": 2.06,
     "rank": 8
    },
    {
@@ -17673,13 +17680,13 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.01,
+    "value": 1.02,
     "rank": 11
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.0,
+    "value": 1.01,
     "rank": 12
    }
   ],
