@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T00:01:09Z",
+ "updated": "2026-11-14T00:06:33Z",
  "news": [
   {
    "id": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
@@ -12808,29 +12808,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "LockBit",
    "type": "ransomware",
    "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Sandworm",
-   "type": "apt",
-   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12848,9 +12828,29 @@
    "last": ""
   },
   {
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13540,6 +13540,22 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "185[.]122[.]62[.]34[.]bc[.]googleusercontent[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-14T00:04:54",
+   "tags": [
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028286/"
+  },
   {
    "ioc": "jisfe2f8hc[.]workers[.]dev",
    "type": "domain",
@@ -15915,19 +15931,59 @@
    "date": "2026-11-13T15:28:16",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2028081/"
-  },
-  {
-   "ioc": "15d0b0f44a40bd7fa1b7118ad81d094d",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-13T15:28:16",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028082/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://117[.]102[.]208[.]80:43986/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-14T00:05:09",
+   "link": "https://urlhaus.abuse.ch/url/4065417/"
+  },
+  {
+   "ioc": "hxxp://123[.]4[.]192[.]35:42418/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T00:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4065415/"
+  },
+  {
+   "ioc": "hxxp://27[.]215[.]32[.]89:49990/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T00:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4065416/"
+  },
+  {
+   "ioc": "hxxp://196[.]190[.]1[.]39:55856/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T00:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4065413/"
+  },
+  {
+   "ioc": "hxxp://42[.]59[.]113[.]224:33931/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T00:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4065414/"
+  },
   {
    "ioc": "hxxp://123[.]4[.]192[.]35:42418/bin[.]sh",
    "host_it": false,
@@ -17407,51 +17463,6 @@
    "tags": [],
    "date": "2026-11-13T19:48:08",
    "link": "https://urlhaus.abuse.ch/url/4065259/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8093/Heyiwei-armv5l",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:48:08",
-   "link": "https://urlhaus.abuse.ch/url/4065260/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8093/aarch64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:48:08",
-   "link": "https://urlhaus.abuse.ch/url/4065261/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8093/Heyiwei-armv6l",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:48:08",
-   "link": "https://urlhaus.abuse.ch/url/4065262/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8093/mipsel",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:48:08",
-   "link": "https://urlhaus.abuse.ch/url/4065263/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8093/Heyiwei-mips64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T19:48:08",
-   "link": "https://urlhaus.abuse.ch/url/4065264/"
   }
  ],
  "malware_top": [
@@ -17461,15 +17472,15 @@
   },
   {
    "name": "Mirai",
-   "count": 92
-  },
-  {
-   "name": "Vidar",
-   "count": 43
+   "count": 89
   },
   {
    "name": "RN Stealer",
    "count": 43
+  },
+  {
+   "name": "Vidar",
+   "count": 42
   },
   {
    "name": "ClearFake",
@@ -17481,11 +17492,15 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 22
+   "count": 23
   },
   {
    "name": "PureRAT",
    "count": 22
+  },
+  {
+   "name": "RevStealer",
+   "count": 20
   },
   {
    "name": "Unknown Stealer",
@@ -17494,10 +17509,6 @@
   {
    "name": "WARDENStealer",
    "count": 19
-  },
-  {
-   "name": "RevStealer",
-   "count": 17
   },
   {
    "name": "stealler",
