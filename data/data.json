@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T19:30:55Z",
+ "updated": "2026-11-14T20:01:10Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
@@ -12841,9 +12841,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12861,9 +12861,9 @@
    "last": ""
   },
   {
-   "name": "APT28",
+   "name": "Lazarus Group",
    "type": "apt",
-   "country": "RU",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12871,9 +12871,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13607,6 +13607,461 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "hxxps://pdfdocumentsharepoint[.]com/",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-14T20:00:47",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028976/"
+  },
+  {
+   "ioc": "exportrelay[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "XMRIG",
+   "confidence": 80,
+   "date": "2026-11-14T19:57:21",
+   "tags": [
+    "container-escape",
+    "docker-api",
+    "honeypot",
+    "xmrig"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028975/"
+  },
+  {
+   "ioc": "45[.]9[.]148[.]86:45876",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "XMRIG",
+   "confidence": 80,
+   "date": "2026-11-14T19:57:18",
+   "tags": [
+    "container-escape",
+    "docker-api",
+    "garble",
+    "honeypot",
+    "xmrig"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028974/"
+  },
+  {
+   "ioc": "185[.]106[.]98[.]235:8888",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "XMRIG",
+   "confidence": 80,
+   "date": "2026-11-14T19:57:16",
+   "tags": [
+    "cryptojacking",
+    "honeypot",
+    "LPE",
+    "redis",
+    "xmrig"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028973/"
+  },
+  {
+   "ioc": "159[.]69[.]58[.]170:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "XMRIG",
+   "confidence": 80,
+   "date": "2026-11-14T19:57:13",
+   "tags": [
+    "cryptojacking",
+    "honeypot",
+    "redis",
+    "xmrig"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028972/"
+  },
+  {
+   "ioc": "103[.]210[.]144[.]11:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Mirai",
+   "confidence": 80,
+   "date": "2026-11-14T19:57:08",
+   "tags": [
+    "docker-api",
+    "honeypot",
+    "Mirai",
+    "multi-arch"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028971/"
+  },
+  {
+   "ioc": "nordo[.]store",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-14T19:49:45",
+   "tags": [
+    "ClearFake"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028970/"
+  },
+  {
+   "ioc": "95[.]133[.]229[.]17:5000",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Evilginx",
+   "confidence": 75,
+   "date": "2026-11-14T19:45:33",
+   "tags": [
+    "drb-ra",
+    "EvilGinx",
+    "EvilGoPhish"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028969/"
+  },
+  {
+   "ioc": "82[.]148[.]239[.]8:56001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:45:24",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028968/"
+  },
+  {
+   "ioc": "45[.]156[.]87[.]167:7777",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:44:58",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028967/"
+  },
+  {
+   "ioc": "45[.]141[.]21[.]125:56001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:44:56",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028966/"
+  },
+  {
+   "ioc": "4[.]235[.]120[.]72:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-14T19:44:52",
+   "tags": [
+    "drb-ra",
+    "Mythic"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028965/"
+  },
+  {
+   "ioc": "209[.]99[.]190[.]30:4323",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AdaptixC2",
+   "confidence": 75,
+   "date": "2026-11-14T19:44:15",
+   "tags": [
+    "AdaptixC2",
+    "drb-ra"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028964/"
+  },
+  {
+   "ioc": "196[.]251[.]121[.]237:7777",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "DCRat",
+   "confidence": 75,
+   "date": "2026-11-14T19:44:06",
+   "tags": [
+    "dcrat",
+    "drb-ra",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028963/"
+  },
+  {
+   "ioc": "186[.]169[.]91[.]36:5012",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AsyncRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:58",
+   "tags": [
+    "asyncrat",
+    "drb-ra",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028961/"
+  },
+  {
+   "ioc": "186[.]169[.]91[.]36:5020",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "DCRat",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:58",
+   "tags": [
+    "dcrat",
+    "drb-ra",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028962/"
+  },
+  {
+   "ioc": "186[.]169[.]91[.]36:5010",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AsyncRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:57",
+   "tags": [
+    "asyncrat",
+    "drb-ra",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028959/"
+  },
+  {
+   "ioc": "186[.]169[.]91[.]36:5011",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AsyncRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:57",
+   "tags": [
+    "asyncrat",
+    "drb-ra",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028960/"
+  },
+  {
+   "ioc": "185[.]241[.]208[.]120:7222",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:56",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028958/"
+  },
+  {
+   "ioc": "18[.]136[.]4[.]30:4444",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Havoc",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:52",
+   "tags": [
+    "drb-ra",
+    "Havoc"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028957/"
+  },
+  {
+   "ioc": "173[.]195[.]100[.]55:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:49",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028956/"
+  },
+  {
+   "ioc": "169[.]58[.]38[.]91:4498",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AsyncRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:44",
+   "tags": [
+    "asyncrat",
+    "drb-ra",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028955/"
+  },
+  {
+   "ioc": "167[.]17[.]74[.]9:25340",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:43",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028954/"
+  },
+  {
+   "ioc": "153[.]79[.]249[.]159:5000",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Evilginx",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:33",
+   "tags": [
+    "drb-ra",
+    "EvilGinx",
+    "EvilGoPhish"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028953/"
+  },
+  {
+   "ioc": "134[.]255[.]218[.]122:56001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:22",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028951/"
+  },
+  {
+   "ioc": "134[.]255[.]218[.]122:56002",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "PureRAT",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:22",
+   "tags": [
+    "drb-ra",
+    "PureHVNC",
+    "PureRAT",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028952/"
+  },
+  {
+   "ioc": "117[.]55[.]237[.]88:4321",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AdaptixC2",
+   "confidence": 75,
+   "date": "2026-11-14T19:43:15",
+   "tags": [
+    "AdaptixC2",
+    "drb-ra"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028950/"
+  },
+  {
+   "ioc": "39[.]108[.]102[.]94:31337",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Sliver",
+   "confidence": 100,
+   "date": "2026-11-14T19:41:06",
+   "tags": [
+    "c2",
+    "sliver"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028949/"
+  },
+  {
+   "ioc": "124[.]156[.]204[.]199:31337",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Sliver",
+   "confidence": 100,
+   "date": "2026-11-14T19:40:19",
+   "tags": [
+    "c2",
+    "sliver"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028948/"
+  },
+  {
+   "ioc": "103[.]236[.]55[.]218:31337",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Sliver",
+   "confidence": 75,
+   "date": "2026-11-14T19:39:39",
+   "tags": [
+    "c2",
+    "sliver"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028947/"
+  },
+  {
+   "ioc": "121[.]89[.]84[.]167:31337",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Sliver",
+   "confidence": 75,
+   "date": "2026-11-14T19:36:05",
+   "tags": [
+    "c2",
+    "sliver"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028946/"
+  },
+  {
+   "ioc": "wvat5jzlpr[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-14T19:32:30",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028945/"
+  },
   {
    "ioc": "bo[.]appel4d[.]com",
    "type": "domain",
@@ -15330,329 +15785,150 @@
    "date": "2026-11-14T18:11:53",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2028775/"
-  },
-  {
-   "ioc": "99f147486b8663bd6ac3eb9349edeb3c",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "stealler",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:53",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028776/"
-  },
-  {
-   "ioc": "9553588c6eda1b492fcafee60dc628da85e47e22b940addd8fa8938defb62688",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:53",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028777/"
-  },
-  {
-   "ioc": "de84b717a3226e49fef1bc017f325ef1d550aed0",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028772/"
-  },
-  {
-   "ioc": "c97a9593d86bfdb4a8b7a035f983a590",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028773/"
-  },
-  {
-   "ioc": "50674b0276a7d6544bd8dfded2857e8b95a7690234a0687ed60958a96596090c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "stealler",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028774/"
-  },
-  {
-   "ioc": "02315842a5b8c381b2ab83e2dba7393511c02ef7",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:51",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028769/"
-  },
-  {
-   "ioc": "3e62aa763e960293cff3422f67c29f40",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:51",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028770/"
-  },
-  {
-   "ioc": "048fd927062cb3452b766f63221d2b73ce0412a812078b306548a80824699105",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:51",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028771/"
-  },
-  {
-   "ioc": "5b6973beb48d12727ebb40724b31e03aa60cadb2",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:50",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028766/"
-  },
-  {
-   "ioc": "4c3611aac028c23b0a737685039fa662",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:50",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028767/"
-  },
-  {
-   "ioc": "85fffaa78e32059f5be3572c9d60f57eb04f90108086691e351c5089f1b0023d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:50",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028768/"
-  },
-  {
-   "ioc": "8074ba611883600d45b553134754ad4b1bf46cf2",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:49",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028763/"
-  },
-  {
-   "ioc": "463e8b415e2cb0b07cc04b68a69bedcb",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:49",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028764/"
-  },
-  {
-   "ioc": "feb7619915910d7f68ea3ec2af425781e38c6a194ba019ab972def8aa971045a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:49",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028765/"
-  },
-  {
-   "ioc": "cfc0c3c507c8d9e5c9548732ffd541b3a61e4e9f",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "NjRAT",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:48",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028760/"
-  },
-  {
-   "ioc": "dc7e6267a257a4a6b17d120c7943aec5",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "NjRAT",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:48",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028761/"
-  },
-  {
-   "ioc": "730f4ae80cf7b0ce69d50decbf835a54771881c75f4427f275ce6d580b43c6a9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SalatStealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:48",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028762/"
-  },
-  {
-   "ioc": "0401774f0271b2b66dcf8051986054a4d9cf945c47a452fc8ed258d9de6d75c6",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:47",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028756/"
-  },
-  {
-   "ioc": "7547089fe30716986b6844b0d5c10c93e70c3391",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:47",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028757/"
-  },
-  {
-   "ioc": "dc4fb6036ad95db48cc7312a401adda9",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:47",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028758/"
-  },
-  {
-   "ioc": "9f0346d0bb09eae27177b9f5f44efcab33ab6e1cd4782bf815b6dd94cb11d7fa",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "NjRAT",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:47",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028759/"
-  },
-  {
-   "ioc": "f748151f1e0134febdf8857de24d72d58ef35d53",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:46",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028754/"
-  },
-  {
-   "ioc": "09ffd1e6d1b5041324dbededdf09a874",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:46",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028755/"
-  },
-  {
-   "ioc": "bdde56eab8a97296ccc8f005cd88b4cfa9eaa0b4",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:45",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028751/"
-  },
-  {
-   "ioc": "693e93d5d5a4693fa58aabc71ea2a074",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:45",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028752/"
-  },
-  {
-   "ioc": "7c1f94c62ae58062564b12875f3f0909e6f124787db04d2288bf2516c54542f4",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:45",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028753/"
-  },
-  {
-   "ioc": "fe160d81ccd66b4674703f9924bf087dd259eda1",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:44",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028748/"
-  },
-  {
-   "ioc": "d1874a4fae23a0ab5986cc90f7ce565b",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:44",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028749/"
-  },
-  {
-   "ioc": "b38bc3df6ff8b00aeb976c80c411e03bb0175299f10a7ea36e369027152faf21",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:44",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028750/"
-  },
-  {
-   "ioc": "d21f87781dab15d16b954fcb2c6602fcf7cd3cc0",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:43",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028745/"
-  },
-  {
-   "ioc": "ed3fb8a6afd9f8d624e050a7641352d4",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:43",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028746/"
-  },
-  {
-   "ioc": "7dac6de2254f38ca7bd8a3f9ac462b45001bb5d527274732fd35723a3215475c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:43",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028747/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1567313157385363520/1571251448811884607/44a5a40375?ex=6afa0d71&is=6af8bbf1&hm=58c4eb0cdc5d28991924500f333e3e8a725918391a1ffb926724709059f978f7&",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IRAHook"
+   ],
+   "date": "2026-11-14T20:00:15",
+   "link": "https://urlhaus.abuse.ch/url/4066052/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/bytheroberto/pocketvibe/refs/heads/main/polyscopic/conversational_chatbot_groq_2[.]3[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-14T19:56:05",
+   "link": "https://urlhaus.abuse.ch/url/4066050/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/bytheroberto/pocketvibe/refs/heads/main/polyscopic/groq-conversational-chatbot-melezitose[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-14T19:56:05",
+   "link": "https://urlhaus.abuse.ch/url/4066051/"
+  },
+  {
+   "ioc": "hxxp://124[.]6[.]167[.]113:53935/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-14T19:55:15",
+   "link": "https://urlhaus.abuse.ch/url/4066049/"
+  },
+  {
+   "ioc": "hxxp://163[.]142[.]79[.]243:43172/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4066048/"
+  },
+  {
+   "ioc": "hxxp://222[.]138[.]183[.]92:51987/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4066046/"
+  },
+  {
+   "ioc": "hxxp://37[.]148[.]126[.]219:42283/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4066047/"
+  },
+  {
+   "ioc": "hxxp://5[.]166[.]33[.]157:23299/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4066044/"
+  },
+  {
+   "ioc": "hxxp://5[.]166[.]33[.]157:23299/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4066045/"
+  },
+  {
+   "ioc": "hxxp://59[.]180[.]167[.]103:53916/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:32:20",
+   "link": "https://urlhaus.abuse.ch/url/4066043/"
+  },
+  {
+   "ioc": "hxxp://202[.]1[.]26[.]21:53728/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:32:08",
+   "link": "https://urlhaus.abuse.ch/url/4066042/"
+  },
+  {
+   "ioc": "hxxp://110[.]186[.]228[.]185:42394/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4066041/"
+  },
+  {
+   "ioc": "hxxp://49[.]70[.]25[.]163:53888/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4066039/"
+  },
+  {
+   "ioc": "hxxp://42[.]58[.]211[.]118:49262/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4066040/"
+  },
   {
    "ioc": "hxxp://115[.]49[.]15[.]81:57441/i",
    "host_it": false,
@@ -17325,194 +17601,12 @@
    ],
    "date": "2026-11-14T16:50:01",
    "link": "https://urlhaus.abuse.ch/url/4065903/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/harmoniccockatoosouk/aDGUARd-VPN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:50:00",
-   "link": "https://urlhaus.abuse.ch/url/4065900/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/hunterdomainclimb/prOToN-VpN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:50:00",
-   "link": "https://urlhaus.abuse.ch/url/4065901/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/infernalhorseday/fReE-vPN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:50:00",
-   "link": "https://urlhaus.abuse.ch/url/4065902/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/inertiaowlbang/AdGuARD-vpn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:58",
-   "link": "https://urlhaus.abuse.ch/url/4065899/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Solarluchateau68/zApreT-dIScoRD/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:57",
-   "link": "https://urlhaus.abuse.ch/url/4065894/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/hearthaulerencoder/frEE-VPn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:57",
-   "link": "https://urlhaus.abuse.ch/url/4065895/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/infernalhorseday/plAneT_VPN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:57",
-   "link": "https://urlhaus.abuse.ch/url/4065896/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/flamesleuthinferno/ZAPRET-DisCord-yOUtube-1[.]9[.]9c/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:57",
-   "link": "https://urlhaus.abuse.ch/url/4065897/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/CableGunsmithHope/tElEgrAm_PreMiUm/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:57",
-   "link": "https://urlhaus.abuse.ch/url/4065898/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/TrueVisionSilo42/DisCorDZAPrEt/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:55",
-   "link": "https://urlhaus.abuse.ch/url/4065887/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/flamesleuthinferno/ZapreT-TElEGrAm_1[.]9[.]9C/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:55",
-   "link": "https://urlhaus.abuse.ch/url/4065888/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/infernalhorseday/AdgUArD-vpn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:55",
-   "link": "https://urlhaus.abuse.ch/url/4065889/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/fixlizardclient/pRoton-VPN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:55",
-   "link": "https://urlhaus.abuse.ch/url/4065890/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/freeassurancecram/Vpn-tELeGRaM/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:55",
-   "link": "https://urlhaus.abuse.ch/url/4065891/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 94
+   "count": 95
   },
   {
    "name": "Raven Stealer",
@@ -17524,7 +17618,7 @@
   },
   {
    "name": "WARDENStealer",
-   "count": 47
+   "count": 50
   },
   {
    "name": "NjRAT",
@@ -17535,12 +17629,16 @@
    "count": 22
   },
   {
+   "name": "ClearFake",
+   "count": 21
+  },
+  {
    "name": "ZStealer",
    "count": 21
   },
   {
-   "name": "ClearFake",
-   "count": 20
+   "name": "php.shin_webshell",
+   "count": 18
   },
   {
    "name": "Cobalt Strike",
@@ -17549,10 +17647,6 @@
   {
    "name": "SalatStealer",
    "count": 18
-  },
-  {
-   "name": "php.shin_webshell",
-   "count": 17
   },
   {
    "name": "RN Stealer",
@@ -17567,16 +17661,20 @@
    "count": 12
   },
   {
+   "name": "PureRAT",
+   "count": 11
+  },
+  {
    "name": "ValleyRAT",
    "count": 11
   },
   {
    "name": "RevStealer",
-   "count": 11
+   "count": 10
   },
   {
    "name": "Unknown Stealer",
-   "count": 10
+   "count": 9
   },
   {
    "name": "Coinminer",
@@ -17591,6 +17689,10 @@
    "count": 9
   },
   {
+   "name": "Sliver",
+   "count": 8
+  },
+  {
    "name": "Mozi",
    "count": 8
   },
@@ -17601,14 +17703,6 @@
   {
    "name": "AsyncRAT",
    "count": 7
-  },
-  {
-   "name": "AMOS",
-   "count": 7
-  },
-  {
-   "name": "kkRAT",
-   "count": 6
   }
  ],
  "agid_campaigns": [
@@ -17647,37 +17741,37 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.31,
+    "value": 57.44,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.77,
+    "value": 7.83,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.33,
+    "value": 3.32,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.89,
+    "value": 2.92,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.44,
+    "value": 2.41,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.13,
+    "value": 2.14,
     "rank": 6
    },
    {
@@ -17689,31 +17783,31 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.96,
+    "value": 1.95,
     "rank": 8
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.2,
+    "value": 1.21,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.14,
+    "value": 1.15,
     "rank": 10
-   },
-   {
-    "code": "UA",
-    "name": "Ukraine",
-    "value": 1.04,
-    "rank": 11
    },
    {
     "code": "CH",
     "name": "Switzerland",
     "value": 1.02,
+    "rank": 11
+   },
+   {
+    "code": "UA",
+    "name": "Ukraine",
+    "value": 1.01,
     "rank": 12
    }
   ],
@@ -17733,7 +17827,7 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.73,
+    "value": 7.74,
     "rank": 2
    },
    {
@@ -17763,7 +17857,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.1,
+    "value": 2.11,
     "rank": 7
    },
    {
@@ -17775,7 +17869,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.41,
+    "value": 1.4,
     "rank": 9
    },
    {
@@ -17793,7 +17887,7 @@
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 0.99,
+    "value": 1.0,
     "rank": 12
    }
   ],
