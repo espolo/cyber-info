@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T18:55:25Z",
+ "updated": "2026-11-14T19:01:06Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
@@ -12844,6 +12844,26 @@
    "last": "2026-11-13T14:19:54"
   },
   {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "LockBit",
+   "type": "ransomware",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
@@ -12854,18 +12874,8 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "LockBit",
-   "type": "ransomware",
+   "name": "Scattered Spider",
+   "type": "criminal",
    "country": "",
    "watch": true,
    "mentions": 0,
@@ -12884,19 +12894,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13620,6 +13620,20 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "b43866cec329650bff964813ff8cebb93b50a537434ff7fc561a542891f74e8d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Stealer",
+   "confidence": 95,
+   "date": "2026-11-14T18:58:44",
+   "tags": [
+    "exe",
+    "RustyStealer",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028935/"
+  },
   {
    "ioc": "31[.]57[.]216[.]212:10213",
    "type": "ip:port",
@@ -15629,19 +15643,20 @@
    "date": "2026-11-14T18:11:39",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2028738/"
-  },
-  {
-   "ioc": "672d0f08ac533cffd47c6905356ba895f0ba3f0c",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:38",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028733/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/742704845508575294/1571237306239811664/4e6d3db966?ex=6afa0045&is=6af8aec5&hm=fefebc555223e01ba05073a8de2bac6bcae97775c47397db630c73c9e5961375&",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IRAHook"
+   ],
+   "date": "2026-11-14T19:00:36",
+   "link": "https://urlhaus.abuse.ch/url/4066029/"
+  },
   {
    "ioc": "hxxp://182[.]122[.]237[.]74:42479/i",
    "host_it": false,
@@ -17509,19 +17524,6 @@
    ],
    "date": "2026-11-14T16:49:43",
    "link": "https://urlhaus.abuse.ch/url/4065880/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/emberpharaohassess/adGuArD-vpn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:42",
-   "link": "https://urlhaus.abuse.ch/url/4065876/"
   }
  ],
  "malware_top": [
@@ -17570,12 +17572,12 @@
    "count": 18
   },
   {
-   "name": "ValleyRAT",
-   "count": 17
-  },
-  {
    "name": "RN Stealer",
    "count": 16
+  },
+  {
+   "name": "ValleyRAT",
+   "count": 13
   },
   {
    "name": "Remus",
@@ -17590,6 +17592,10 @@
    "count": 11
   },
   {
+   "name": "Unknown Stealer",
+   "count": 10
+  },
+  {
    "name": "Coinminer",
    "count": 9
   },
@@ -17599,10 +17605,6 @@
   },
   {
    "name": "Unknown RAT",
-   "count": 9
-  },
-  {
-   "name": "Unknown Stealer",
    "count": 9
   },
   {
@@ -17662,19 +17664,19 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.3,
+    "value": 57.31,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.69,
+    "value": 7.77,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.31,
+    "value": 3.33,
     "rank": 3
    },
    {
@@ -17686,13 +17688,13 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.48,
+    "value": 2.44,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.11,
+    "value": 2.13,
     "rank": 6
    },
    {
@@ -17710,45 +17712,45 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.19,
+    "value": 1.2,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.15,
+    "value": 1.14,
     "rank": 10
    },
    {
     "code": "UA",
     "name": "Ukraine",
-    "value": 1.03,
+    "value": 1.04,
     "rank": 11
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.03,
+    "value": 1.02,
     "rank": 12
    }
   ],
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.14,
+   "value": 0.15,
    "rank": 42
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.93,
+    "value": 55.92,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.71,
+    "value": 7.73,
     "rank": 2
    },
    {
@@ -17760,7 +17762,7 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.21,
+    "value": 3.22,
     "rank": 4
    },
    {
@@ -17776,27 +17778,27 @@
     "rank": 6
    },
    {
-    "code": "DE",
-    "name": "Germany",
+    "code": "IL",
+    "name": "Israel",
     "value": 2.1,
     "rank": 7
    },
    {
-    "code": "IL",
-    "name": "Israel",
-    "value": 2.09,
+    "code": "DE",
+    "name": "Germany",
+    "value": 2.1,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.42,
+    "value": 1.41,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.2,
+    "value": 1.19,
     "rank": 10
    },
    {
