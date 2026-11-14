@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T19:01:06Z",
+ "updated": "2026-11-14T19:30:55Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
@@ -9337,22 +9337,22 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "https://cert-agid.gov.it/news/php-nuova-vulnerabilita-rce-rischio-circoscritto-e-mitigazione-disponibile/",
-   "title": "PHP, nuova vulnerabilità RCE: rischio circoscritto e mitigazione disponibile",
-   "link": "https://cert-agid.gov.it/news/php-nuova-vulnerabilita-rce-rischio-circoscritto-e-mitigazione-disponibile/",
-   "summary": "A pochi giorni dal rilascio delle correzioni per le vulnerabilità critiche CVE-2026-109618 e CVE-2026-109619, il PHP Security Team ha comunicato il 23 ottobre 2026 l'esistenza di un'ulteriore problematica nella gestione delle sessioni PHP. La nuova vulnerabilità, identificata come CVE-2026-115560, p…",
-   "source": "CERT-AGID",
-   "lang": "it",
-   "type": "advisory",
-   "date": "2026-10-24T19:30:05Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
+  {
+   "id": "anubis|Home Instead",
+   "victim": "Home Instead",
+   "group": "anubis",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-14T20:21:20",
+   "link": "https://www.ransomlook.io/group/anubis",
+   "summary": "Behind the home care standards.",
+   "sources": [
+    "RansomLook"
+   ]
+  },
   {
    "id": "EndZone|Momentum Telecom",
    "victim": "Momentum Telecom",
@@ -12435,19 +12435,6 @@
    "sources": [
     "RansomLook"
    ]
-  },
-  {
-   "id": "climax|Allegis Advisor Group",
-   "victim": "Allegis Advisor Group",
-   "group": "climax",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-09T21:01:25",
-   "link": "https://www.ransomlook.io/group/climax",
-   "summary": "Climax lists this organization on its leak site. Site date: 2026-10-21. Site status: Published. Listed sector: Financial. Claimed volume: 22,704 files / 12 GB.",
-   "sources": [
-    "RansomLook"
-   ]
   }
  ],
  "kev": [
@@ -12844,29 +12831,9 @@
    "last": "2026-11-13T14:19:54"
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "LockBit",
    "type": "ransomware",
    "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -12887,6 +12854,26 @@
    "name": "Sandworm",
    "type": "apt",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13304,14 +13291,14 @@
    "last": "2026-11-12T23:19:34"
   },
   {
-   "name": "climax",
+   "name": "anubis",
    "type": "ransomware",
    "country": "",
    "watch": false,
    "mentions": 0,
-   "claims": 3,
+   "claims": 2,
    "claims_it": 0,
-   "last": "2026-11-10T16:24:15"
+   "last": "2026-11-14T20:21:20"
   },
   {
    "name": "EndZone",
@@ -13404,14 +13391,14 @@
    "last": "2026-11-10T18:52:11"
   },
   {
-   "name": "anubis",
+   "name": "climax",
    "type": "ransomware",
    "country": "",
    "watch": false,
    "mentions": 0,
-   "claims": 1,
+   "claims": 2,
    "claims_it": 0,
-   "last": "2026-11-14T04:22:28"
+   "last": "2026-11-10T16:24:15"
   },
   {
    "name": "payoutsking",
@@ -13620,6 +13607,116 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "bo[.]appel4d[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-14T19:05:36",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028944/"
+  },
+  {
+   "ioc": "zo[.]apaljitu[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-14T19:05:35",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028943/"
+  },
+  {
+   "ioc": "191[.]107[.]80[.]209:6001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Quasar RAT",
+   "confidence": 100,
+   "date": "2026-11-14T19:05:08",
+   "tags": [
+    "QuasarRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028942/"
+  },
+  {
+   "ioc": "210[.]56[.]48[.]188:8888",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-14T19:05:07",
+   "tags": [
+    "Supershell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028940/"
+  },
+  {
+   "ioc": "107[.]149[.]96[.]10:10086",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-14T19:05:07",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028941/"
+  },
+  {
+   "ioc": "45[.]207[.]208[.]51:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-14T19:05:06",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028939/"
+  },
+  {
+   "ioc": "62[.]85[.]91[.]36:8808",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AsyncRAT",
+   "confidence": 100,
+   "date": "2026-11-14T19:05:05",
+   "tags": [
+    "asyncrat"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028938/"
+  },
+  {
+   "ioc": "hdrichmondstag[.]wpengine[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-14T19:01:29",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028936/"
+  },
+  {
+   "ioc": "wordpress-1226367-4631498[.]cloudwaysapps[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-14T19:01:29",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028937/"
+  },
   {
    "ioc": "b43866cec329650bff964813ff8cebb93b50a537434ff7fc561a542891f74e8d",
    "type": "sha256_hash",
@@ -15553,99 +15650,102 @@
    "date": "2026-11-14T18:11:43",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2028747/"
-  },
-  {
-   "ioc": "1b553d0deee36318fac4ea8a7822bb11",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:42",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028743/"
-  },
-  {
-   "ioc": "f03f7ac94f67565bf433896495782ba3fbeed46554ee0ec9fae9de925489f16a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:42",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028744/"
-  },
-  {
-   "ioc": "f8d417955360e608ed22d94ae7c26ba9627a2d2c",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:41",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028742/"
-  },
-  {
-   "ioc": "40ac141999c5806f51f3d9d08eb043d472003130",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:40",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028739/"
-  },
-  {
-   "ioc": "6d0beeac9ae574a69a6aabc77a34fa55",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:40",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028740/"
-  },
-  {
-   "ioc": "52af906ca0e69f2be68ff7393f929b89d42c9d578a8481d962241fb8ac9d319c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:40",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028741/"
-  },
-  {
-   "ioc": "a2cb8a9398e88f4b81dd24a02cd2302aed3cacf5",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:39",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028736/"
-  },
-  {
-   "ioc": "9c6d2bd1beaac1d7e0f67c8680d11df7",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:39",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028737/"
-  },
-  {
-   "ioc": "99102a573990e3096da0f373f264104207ff8c2f8d5172cd4e7a779dc4936f2b",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Venus Stealer",
-   "confidence": 95,
-   "date": "2026-11-14T18:11:39",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2028738/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://115[.]49[.]15[.]81:57441/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-14T19:21:13",
+   "link": "https://urlhaus.abuse.ch/url/4066038/"
+  },
+  {
+   "ioc": "hxxp://79[.]106[.]74[.]163:59895/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-14T19:18:13",
+   "link": "https://urlhaus.abuse.ch/url/4066037/"
+  },
+  {
+   "ioc": "hxxp://81[.]163[.]99[.]129:8315/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:18:05",
+   "link": "https://urlhaus.abuse.ch/url/4066036/"
+  },
+  {
+   "ioc": "hxxp://49[.]70[.]25[.]163:53888/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4066035/"
+  },
+  {
+   "ioc": "hxxp://81[.]163[.]99[.]129:8315/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:17:05",
+   "link": "https://urlhaus.abuse.ch/url/4066034/"
+  },
+  {
+   "ioc": "hxxp://123[.]13[.]118[.]17:53800/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "elf"
+   ],
+   "date": "2026-11-14T19:14:06",
+   "link": "https://urlhaus.abuse.ch/url/4066033/"
+  },
+  {
+   "ioc": "hxxp://182[.]116[.]8[.]173:59109/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:02:12",
+   "link": "https://urlhaus.abuse.ch/url/4066032/"
+  },
+  {
+   "ioc": "hxxp://182[.]127[.]128[.]166:56957/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4066031/"
+  },
+  {
+   "ioc": "hxxp://193[.]163[.]187[.]230:45909/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-14T19:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4066030/"
+  },
   {
    "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/742704845508575294/1571237306239811664/4e6d3db966?ex=6afa0045&is=6af8aec5&hm=fefebc555223e01ba05073a8de2bac6bcae97775c47397db630c73c9e5961375&",
    "host_it": false,
@@ -17407,129 +17507,12 @@
    ],
    "date": "2026-11-14T16:49:55",
    "link": "https://urlhaus.abuse.ch/url/4065891/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/hunterdomainclimb/FREE_Vpn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:55",
-   "link": "https://urlhaus.abuse.ch/url/4065892/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/emberpharaohassess/WiNDow_vpn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:55",
-   "link": "https://urlhaus.abuse.ch/url/4065893/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/emberpharaohassess/pLaNet-Vpn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:53",
-   "link": "https://urlhaus.abuse.ch/url/4065886/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/TrueVisionSilo42/ZAprET-GIthub-DIScord-1[.]9[.]9c/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:44",
-   "link": "https://urlhaus.abuse.ch/url/4065881/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/PolishCodeInflate/DiSCOrD-ZapRet-1[.]9[.]9C/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:44",
-   "link": "https://urlhaus.abuse.ch/url/4065882/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/viewchiefrectify/telegrAM_zaPRet/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:44",
-   "link": "https://urlhaus.abuse.ch/url/4065883/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/conquerorworkersun/WIndoW-VPn/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:44",
-   "link": "https://urlhaus.abuse.ch/url/4065884/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/PolishCodeInflate/ZaPrET-GiThUB-dIsCord-1[.]9[.]9c/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:44",
-   "link": "https://urlhaus.abuse.ch/url/4065885/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/hunterdomainclimb/planet-vPN/refs/heads/main/serivce[.]bat",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer",
-    "zapret"
-   ],
-   "date": "2026-11-14T16:49:43",
-   "link": "https://urlhaus.abuse.ch/url/4065880/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 96
+   "count": 94
   },
   {
    "name": "Raven Stealer",
@@ -17537,7 +17520,7 @@
   },
   {
    "name": "Vidar",
-   "count": 58
+   "count": 59
   },
   {
    "name": "WARDENStealer",
@@ -17557,6 +17540,10 @@
   },
   {
    "name": "ClearFake",
+   "count": 20
+  },
+  {
+   "name": "Cobalt Strike",
    "count": 18
   },
   {
@@ -17565,19 +17552,11 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 18
-  },
-  {
-   "name": "Cobalt Strike",
-   "count": 18
+   "count": 17
   },
   {
    "name": "RN Stealer",
    "count": 16
-  },
-  {
-   "name": "ValleyRAT",
-   "count": 13
   },
   {
    "name": "Remus",
@@ -17586,6 +17565,10 @@
   {
    "name": "Unknown Loader",
    "count": 12
+  },
+  {
+   "name": "ValleyRAT",
+   "count": 11
   },
   {
    "name": "RevStealer",
@@ -17616,15 +17599,15 @@
    "count": 8
   },
   {
+   "name": "AsyncRAT",
+   "count": 7
+  },
+  {
    "name": "AMOS",
    "count": 7
   },
   {
    "name": "kkRAT",
-   "count": 6
-  },
-  {
-   "name": "stealler",
    "count": 6
   }
  ],
