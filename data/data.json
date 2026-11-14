@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T06:50:28Z",
+ "updated": "2026-11-14T07:01:06Z",
  "news": [
   {
    "id": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
@@ -9207,19 +9207,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcmRTdmw4aEk5TXRDMUdtUWRaZ2FRd2FaS3pjbEFhNVV6YmlvRzF4VW4zenBFZmFXcDdtQlVrV18wTVdxZWhRb0RjYlcwaUZMZFlzamZVQjU1RTJSbElHcFpvejlUNGVfY18yMlZGc2JXcXFIM2lFc2NaS2s3Vi1GdTBCU2EzMUZNdXctTlhtLXZFYjFFNkx2QjAtajRwWDZoVHZydThpdXhKdjc0VGQ0MVJpRW11Zw?oc=5",
-   "title": "Patch impossibili da installare in tempo: l’AI cambia le regole della cybersecurity - Red Hot Cyber",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcmRTdmw4aEk5TXRDMUdtUWRaZ2FRd2FaS3pjbEFhNVV6YmlvRzF4VW4zenBFZmFXcDdtQlVrV18wTVdxZWhRb0RjYlcwaUZMZFlzamZVQjU1RTJSbElHcFpvejlUNGVfY18yMlZGc2JXcXFIM2lFc2NaS2s3Vi1GdTBCU2EzMUZNdXctTlhtLXZFYjFFNkx2QjAtajRwWDZoVHZydThpdXhKdjc0VGQ0MVJpRW11Zw?oc=5",
-   "summary": "Patch impossibili da installare in tempo: l’AI cambia le regole della cybersecurity &nbsp;&nbsp; Red Hot Cyber",
-   "source": "Red Hot Cyber",
-   "lang": "it",
-   "type": "news",
-   "date": "2026-10-24T07:00:00Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -12750,6 +12737,16 @@
    "last": "2026-11-13T14:19:54"
   },
   {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Scattered Spider",
    "type": "criminal",
    "country": "",
@@ -12760,7 +12757,7 @@
    "last": ""
   },
   {
-   "name": "APT28",
+   "name": "Sandworm",
    "type": "apt",
    "country": "RU",
    "watch": true,
@@ -12790,17 +12787,7 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Sandworm",
+   "name": "APT28",
    "type": "apt",
    "country": "RU",
    "watch": true,
@@ -13515,6 +13502,44 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "hxxps://vid-security[.]top/",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-14T07:00:42",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028485/"
+  },
+  {
+   "ioc": "vid-security[.]top",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-14T06:59:24",
+   "tags": [
+    "ClickFix",
+    "compromised"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028484/"
+  },
+  {
+   "ioc": "9c7846ba26a7515556d620bf9b0663f8e8a4ae63311ef3edb2e9b0571828cf86",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-14T06:58:40",
+   "tags": [
+    "Dropper",
+    "powershell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2028483/"
+  },
   {
    "ioc": "k7spnoil[.]ranta[.]store",
    "type": "domain",
@@ -16142,47 +16167,37 @@
     "etherhide"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2028283/"
-  },
-  {
-   "ioc": "2c85a21fe7baf0defdf8f36da2afa9fa8aa87bfd884f528392da3958f07f0416",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 90,
-   "date": "2026-11-13T22:58:36",
-   "tags": [
-    "elf",
-    "Mirai",
-    "wraith"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028282/"
-  },
-  {
-   "ioc": "154[.]9[.]235[.]100:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AdaptixC2",
-   "confidence": 75,
-   "date": "2026-11-13T22:45:19",
-   "tags": [
-    "AdaptixC2"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028280/"
-  },
-  {
-   "ioc": "154[.]9[.]235[.]100:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AdaptixC2",
-   "confidence": 75,
-   "date": "2026-11-13T22:45:19",
-   "tags": [
-    "AdaptixC2"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2028281/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://175[.]154[.]117[.]107:49961/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-14T06:51:10",
+   "link": "https://urlhaus.abuse.ch/url/4065518/"
+  },
+  {
+   "ioc": "hxxp://39[.]79[.]72[.]241:45764/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-14T06:50:09",
+   "link": "https://urlhaus.abuse.ch/url/4065517/"
+  },
   {
    "ioc": "hxxp://115[.]63[.]228[.]168:46555/i",
    "host_it": false,
@@ -17684,34 +17699,16 @@
    ],
    "date": "2026-11-13T21:51:06",
    "link": "https://urlhaus.abuse.ch/url/4065369/"
-  },
-  {
-   "ioc": "hxxp://59[.]97[.]252[.]3:57612/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T21:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4065366/"
-  },
-  {
-   "ioc": "hxxp://182[.]119[.]10[.]123:52950/i",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-13T21:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4065367/"
   }
  ],
  "malware_top": [
   {
    "name": "Unknown Loader",
-   "count": 688
+   "count": 667
   },
   {
    "name": "Mirai",
-   "count": 66
+   "count": 69
   },
   {
    "name": "Vidar",
@@ -17842,31 +17839,31 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.19,
+    "value": 56.37,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 8.04,
+    "value": 8.08,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.23,
+    "value": 3.25,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.14,
+    "value": 3.13,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.58,
+    "value": 2.6,
     "rank": 5
    },
    {
@@ -17884,31 +17881,31 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.99,
+    "value": 2.0,
     "rank": 8
-   },
-   {
-    "code": "CY",
-    "name": "Cyprus",
-    "value": 1.16,
-    "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
     "value": 1.16,
-    "rank": 10
+    "rank": 9
    },
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 1.1,
-    "rank": 11
+    "value": 1.09,
+    "rank": 10
    },
    {
     "code": "HK",
     "name": "Hong Kong",
     "value": 1.01,
+    "rank": 11
+   },
+   {
+    "code": "CY",
+    "name": "Cyprus",
+    "value": 0.98,
     "rank": 12
    }
   ],
@@ -17934,7 +17931,7 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.38,
+    "value": 3.39,
     "rank": 3
    },
    {
@@ -17970,7 +17967,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.46,
+    "value": 1.45,
     "rank": 9
    },
    {
@@ -17988,7 +17985,7 @@
    {
     "code": "CH",
     "name": "Switzerland",
-    "value": 0.95,
+    "value": 0.96,
     "rank": 12
    }
   ],
