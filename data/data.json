@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T16:45:46Z",
+ "updated": "2026-11-15T17:01:10Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
@@ -13035,9 +13035,9 @@
    "last": "2026-11-15T01:22:00"
   },
   {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13055,7 +13055,7 @@
    "last": ""
   },
   {
-   "name": "Sandworm",
+   "name": "APT28",
    "type": "apt",
    "country": "RU",
    "watch": true,
@@ -13065,9 +13065,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13790,6 +13790,74 @@
  },
  "known_actors": 1510,
  "iocs": [
+  {
+   "ioc": "e9db319035dffdde5bb68537c1b60839c202e0e1cb61d462a3e6f430858b94fa",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-15T16:58:55",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2030372/"
+  },
+  {
+   "ioc": "64c57c4c576e6314dcd89530abd9e7ceb613bb8100db9b0e4419612a7ee2ac6b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-15T16:58:54",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2030371/"
+  },
+  {
+   "ioc": "42b4e4ad3a9724adb59b9ffcf1f532af2f5915a993d43935938ab707714f1d68",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-15T16:58:53",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2030370/"
+  },
+  {
+   "ioc": "155[.]4[.]245[.]113:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Nanocore RAT",
+   "confidence": 100,
+   "date": "2026-11-15T16:55:02",
+   "tags": [
+    "NanoCore",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2030369/"
+  },
+  {
+   "ioc": "thesigncore[.]com[.]au",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-15T16:52:45",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2030368/"
+  },
   {
    "ioc": "31[.]57[.]216[.]158:10213",
    "type": "ip:port",
@@ -16351,76 +16419,60 @@
     "Mirai"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2030172/"
-  },
-  {
-   "ioc": "www[.]survane[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-15T14:56:46",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2030171/"
-  },
-  {
-   "ioc": "agriculturaltoursvalencia[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-15T14:36:42",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2030170/"
-  },
-  {
-   "ioc": "globalnick[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-15T14:32:58",
-   "tags": [
-    "ZigClipper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2030169/"
-  },
-  {
-   "ioc": "sigmon-zz[.]mom",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 85,
-   "date": "2026-11-15T14:31:47",
-   "tags": [
-    "GoCrypter",
-    "stealer",
-    "WARDEN"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2030158/"
-  },
-  {
-   "ioc": "xiongying990kk099[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown RAT",
-   "confidence": 85,
-   "date": "2026-11-15T14:31:46",
-   "tags": [
-    "Android",
-    "banker",
-    "Rakuten",
-    "RatHat"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2030159/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1540130216540770334/1571566596239917117/e52805b161?ex=6afb32f2&is=6af9e172&hm=9c1f72f1451af6516966c6f3d3319496c1386b7d5492325fdea46092388f5fdf&",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IRAHook"
+   ],
+   "date": "2026-11-15T16:52:13",
+   "link": "https://urlhaus.abuse.ch/url/4067046/"
+  },
+  {
+   "ioc": "hxxp://27[.]215[.]182[.]212:42285/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-15T16:52:07",
+   "link": "https://urlhaus.abuse.ch/url/4067045/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Number2i/gta5-ios-port/refs/heads/main/internal/Payment-System-Orchestration-v1[.]2[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-15T16:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4067044/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Number2i/gta5-ios-port/refs/heads/main/internal/webhook_ingestor/stripe/System-Orchestration-Payment-mannish[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-15T16:46:05",
+   "link": "https://urlhaus.abuse.ch/url/4067043/"
+  },
   {
    "ioc": "hxxps://raw[.]githubusercontent[.]com/Number2i/gta5-ios-port/refs/heads/main/internal/payment/intent/System_Orchestration_Payment_v2[.]4[.]zip",
    "host_it": false,
@@ -18157,54 +18209,6 @@
    "tags": [],
    "date": "2026-11-15T14:32:09",
    "link": "https://urlhaus.abuse.ch/url/4066897/"
-  },
-  {
-   "ioc": "hxxp://182[.]119[.]71[.]1:35559/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-15T14:32:07",
-   "link": "https://urlhaus.abuse.ch/url/4066896/"
-  },
-  {
-   "ioc": "hxxp://61[.]163[.]147[.]33:37343/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-15T14:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4066895/"
-  },
-  {
-   "ioc": "hxxp://45[.]204[.]146[.]44/iran[.]x86_64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "45-204-146-44",
-    "elf",
-    "GBR",
-    "geofenced",
-    "ua-wget"
-   ],
-   "date": "2026-11-15T14:29:24",
-   "link": "https://urlhaus.abuse.ch/url/4066889/"
-  },
-  {
-   "ioc": "hxxp://45[.]204[.]146[.]44/iranbot-ultimate[.]mips",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "45-204-146-44",
-    "elf",
-    "GBR",
-    "geofenced",
-    "ua-wget"
-   ],
-   "date": "2026-11-15T14:29:24",
-   "link": "https://urlhaus.abuse.ch/url/4066890/"
   }
  ],
  "malware_top": [
@@ -18218,11 +18222,11 @@
   },
   {
    "name": "Mirai",
-   "count": 157
+   "count": 161
   },
   {
    "name": "ClearFake",
-   "count": 101
+   "count": 102
   },
   {
    "name": "Raven Stealer",
@@ -18250,7 +18254,7 @@
   },
   {
    "name": "RevStealer",
-   "count": 17
+   "count": 16
   },
   {
    "name": "RN Stealer",
@@ -18345,7 +18349,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.34,
+    "value": 56.13,
     "rank": 1
    },
    {
@@ -18357,13 +18361,13 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.33,
+    "value": 3.32,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.91,
+    "value": 2.9,
     "rank": 4
    },
    {
@@ -18387,7 +18391,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.92,
+    "value": 1.91,
     "rank": 8
    },
    {
@@ -18399,19 +18403,19 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.33,
+    "value": 1.37,
     "rank": 10
+   },
+   {
+    "code": "CW",
+    "name": "Curaçao",
+    "value": 1.08,
+    "rank": 11
    },
    {
     "code": "HK",
     "name": "Hong Kong",
     "value": 0.98,
-    "rank": 11
-   },
-   {
-    "code": "CH",
-    "name": "Switzerland",
-    "value": 0.96,
     "rank": 12
    }
   ],
@@ -18425,13 +18429,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.62,
+    "value": 55.57,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.83,
+    "value": 7.84,
     "rank": 2
    },
    {
@@ -18461,7 +18465,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.16,
+    "value": 2.15,
     "rank": 7
    },
    {
@@ -18473,7 +18477,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.47,
+    "value": 1.48,
     "rank": 9
    },
    {
