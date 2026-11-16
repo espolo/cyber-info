@@ -1,6 +1,32 @@
 {
- "updated": "2026-11-16T08:14:28Z",
+ "updated": "2026-11-16T08:31:03Z",
  "news": [
+  {
+   "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+   "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+   "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates. [...]",
+   "source": "BleepingComputer",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-16T08:26:52Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
+   "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
+   "link": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
+   "summary": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign appeared first on SecurityWeek .",
+   "source": "SecurityWeek",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-16T08:15:12Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
   {
    "id": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
    "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
@@ -13568,9 +13594,9 @@
    "last": "2026-11-15T15:03:34"
   },
   {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13578,9 +13604,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13598,8 +13624,8 @@
    "last": ""
   },
   {
-   "name": "Sandworm",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -13608,8 +13634,8 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Sandworm",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14290,6 +14316,32 @@
  },
  "known_actors": 1508,
  "iocs": [
+  {
+   "ioc": "vq8m3920[.]zalfa[.]store",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-16T08:27:14",
+   "tags": [
+    "ClearFake",
+    "mac-0xa07e",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2031188/"
+  },
+  {
+   "ioc": "aniyara[.]icu",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-16T08:20:30",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2031187/"
+  },
   {
    "ioc": "xcbdrixzll001[.]duckdns[.]org",
    "type": "domain",
@@ -17010,35 +17062,23 @@
     "nimplant"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2031070/"
-  },
-  {
-   "ioc": "20[.]206[.]160[.]57:51350",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Cobalt Strike",
-   "confidence": 50,
-   "date": "2026-11-16T05:09:46",
-   "tags": [
-    "CobaltStrike",
-    "modat"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2031069/"
-  },
-  {
-   "ioc": "186[.]105[.]10[.]174:8443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-16T05:09:32",
-   "tags": [
-    "hak5-cloud-c2",
-    "modat"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2031068/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://182[.]117[.]91[.]73:57147/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-16T08:30:18",
+   "link": "https://urlhaus.abuse.ch/url/4067330/"
+  },
   {
    "ioc": "hxxp://182[.]121[.]250[.]59:58887/bin[.]sh",
    "host_it": false,
@@ -18652,19 +18692,6 @@
    "tags": [],
    "date": "2026-11-16T01:02:05",
    "link": "https://urlhaus.abuse.ch/url/4067181/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/ZayZay1nonly/CastBox-Downloder-APP/refs/heads/main/skills/writing-tests/webdev-skills-v1[.]9[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-16T01:01:05",
-   "link": "https://urlhaus.abuse.ch/url/4067178/"
   }
  ],
  "malware_top": [
@@ -18674,7 +18701,7 @@
   },
   {
    "name": "IClickFix",
-   "count": 144
+   "count": 145
   },
   {
    "name": "Mirai",
@@ -18733,15 +18760,15 @@
    "count": 11
   },
   {
+   "name": "AdaptixC2",
+   "count": 10
+  },
+  {
    "name": "RemcosRAT",
-   "count": 11
+   "count": 10
   },
   {
    "name": "Formbook",
-   "count": 11
-  },
-  {
-   "name": "AdaptixC2",
    "count": 10
   },
   {
