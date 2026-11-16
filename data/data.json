@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T18:45:15Z",
+ "updated": "2026-11-16T19:01:20Z",
  "news": [
   {
    "id": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy",
@@ -13989,8 +13989,18 @@
    "last": "2026-11-15T15:03:34"
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -13999,9 +14009,9 @@
    "last": ""
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14022,16 +14032,6 @@
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14690,6 +14690,30 @@
  },
  "known_actors": 1508,
  "iocs": [
+  {
+   "ioc": "turmerictriforium[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "SmartApeSG",
+   "confidence": 100,
+   "date": "2026-11-16T18:54:41",
+   "tags": [
+    "SmartApeSG"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032044/"
+  },
+  {
+   "ioc": "hxxps://turmerictriforium[.]org/rate/dashboard-partial[.]js",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "SmartApeSG",
+   "confidence": 100,
+   "date": "2026-11-16T18:54:19",
+   "tags": [
+    "SmartApeSG"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032043/"
+  },
   {
    "ioc": "143[.]20[.]80[.]137:443",
    "type": "ip:port",
@@ -17214,29 +17238,52 @@
    "date": "2026-11-16T16:29:38",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2031844/"
-  },
-  {
-   "ioc": "31336a3df986df76c187317b3e9a2e98",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "NightshadeC2",
-   "confidence": 95,
-   "date": "2026-11-16T16:29:38",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2031845/"
-  },
-  {
-   "ioc": "c492723807208c487a9088c8ce50d05b1ffa15172346ec91487bc274a452b976",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Pony",
-   "confidence": 95,
-   "date": "2026-11-16T16:29:38",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2031846/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://42[.]235[.]91[.]111:56214/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "elf"
+   ],
+   "date": "2026-11-16T19:00:15",
+   "link": "https://urlhaus.abuse.ch/url/4067524/"
+  },
+  {
+   "ioc": "hxxp://182[.]234[.]145[.]4:46496/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-16T18:51:11",
+   "link": "https://urlhaus.abuse.ch/url/4067523/"
+  },
+  {
+   "ioc": "hxxp://27[.]207[.]224[.]242:51217/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-16T18:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4067522/"
+  },
+  {
+   "ioc": "hxxp://124[.]131[.]39[.]130:42912/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-16T18:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4067521/"
+  },
   {
    "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1566966094147756102/1571551492131913768/ba3abaf9c7?ex=6afc7661&is=6afb24e1&hm=cfa524e150e30e4ca34b2734f6c4fc795272848f63a1212e6bcfc23612bda9d1&",
    "host_it": false,
@@ -18816,42 +18863,6 @@
    "tags": [],
    "date": "2026-11-16T11:17:07",
    "link": "https://urlhaus.abuse.ch/url/4067375/"
-  },
-  {
-   "ioc": "hxxp://125[.]41[.]5[.]234:36243/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-16T11:02:06",
-   "link": "https://urlhaus.abuse.ch/url/4067374/"
-  },
-  {
-   "ioc": "hxxp://210[.]208[.]111[.]26:57818/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-16T10:47:08",
-   "link": "https://urlhaus.abuse.ch/url/4067373/"
-  },
-  {
-   "ioc": "hxxp://220[.]202[.]89[.]181:52234/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-16T10:47:07",
-   "link": "https://urlhaus.abuse.ch/url/4067372/"
-  },
-  {
-   "ioc": "hxxp://60[.]22[.]148[.]194:50612/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-16T10:32:08",
-   "link": "https://urlhaus.abuse.ch/url/4067371/"
   }
  ],
  "malware_top": [
@@ -18865,7 +18876,7 @@
   },
   {
    "name": "Mirai",
-   "count": 97
+   "count": 93
   },
   {
    "name": "ZStealer",
@@ -18904,11 +18915,11 @@
    "count": 21
   },
   {
-   "name": "php.shin_webshell",
-   "count": 16
+   "name": "Mozi",
+   "count": 15
   },
   {
-   "name": "Mozi",
+   "name": "php.shin_webshell",
    "count": 15
   },
   {
@@ -18985,13 +18996,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.14,
+    "value": 55.36,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 8.15,
+    "value": 8.16,
     "rank": 2
    },
    {
@@ -19003,13 +19014,13 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.87,
+    "value": 2.9,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.58,
+    "value": 2.61,
     "rank": 5
    },
    {
@@ -19019,21 +19030,21 @@
     "rank": 6
    },
    {
-    "code": "CY",
-    "name": "Cyprus",
-    "value": 2.25,
-    "rank": 7
-   },
-   {
     "code": "DE",
     "name": "Germany",
-    "value": 2.22,
-    "rank": 8
+    "value": 2.2,
+    "rank": 7
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.07,
+    "value": 2.11,
+    "rank": 8
+   },
+   {
+    "code": "CY",
+    "name": "Cyprus",
+    "value": 2.11,
     "rank": 9
    },
    {
@@ -19045,7 +19056,7 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.1,
+    "value": 1.09,
     "rank": 11
    },
    {
@@ -19058,14 +19069,14 @@
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.19,
+   "value": 0.2,
    "rank": 42
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.14,
+    "value": 55.15,
     "rank": 1
    },
    {
@@ -19077,7 +19088,7 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.37,
+    "value": 3.36,
     "rank": 3
    },
    {
@@ -19095,7 +19106,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.22,
+    "value": 2.23,
     "rank": 6
    },
    {
@@ -19113,7 +19124,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.66,
+    "value": 1.64,
     "rank": 9
    },
    {
@@ -19138,7 +19149,7 @@
   "it_7d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.16,
+   "value": 0.17,
    "rank": 42
   },
   "outages_it": []
