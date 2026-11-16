@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T18:31:05Z",
+ "updated": "2026-11-16T18:45:15Z",
  "news": [
   {
    "id": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy",
@@ -13989,8 +13989,28 @@
    "last": "2026-11-15T15:03:34"
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Sandworm",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14009,29 +14029,9 @@
    "last": ""
   },
   {
-   "name": "Sandworm",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14690,6 +14690,38 @@
  },
  "known_actors": 1508,
  "iocs": [
+  {
+   "ioc": "143[.]20[.]80[.]137:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-16T18:41:45",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032041/"
+  },
+  {
+   "ioc": "143[.]20[.]80[.]138:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-16T18:41:45",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032042/"
+  },
   {
    "ioc": "fastcdn[.]fastcdn[.]icu",
    "type": "domain",
@@ -17202,29 +17234,47 @@
    "date": "2026-11-16T16:29:38",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2031846/"
-  },
-  {
-   "ioc": "151427881251ec2953ecf3520ddee299",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Overlord RAT",
-   "confidence": 95,
-   "date": "2026-11-16T16:29:37",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2031839/"
-  },
-  {
-   "ioc": "b3936f9337341119df40f7bc94ef6d4536a2371d6473e72a69caa1a76dc94fa2",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Overlord RAT",
-   "confidence": 95,
-   "date": "2026-11-16T16:29:37",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2031840/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1566966094147756102/1571551492131913768/ba3abaf9c7?ex=6afc7661&is=6afb24e1&hm=cfa524e150e30e4ca34b2734f6c4fc795272848f63a1212e6bcfc23612bda9d1&",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IRAHook"
+   ],
+   "date": "2026-11-16T18:35:36",
+   "link": "https://urlhaus.abuse.ch/url/4067520/"
+  },
+  {
+   "ioc": "hxxp://123[.]190[.]225[.]146:36433/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-16T18:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4067519/"
+  },
+  {
+   "ioc": "hxxp://123[.]14[.]121[.]126:49375/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-16T18:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4067517/"
+  },
+  {
+   "ioc": "hxxp://119[.]187[.]200[.]158:57386/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-16T18:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4067518/"
+  },
   {
    "ioc": "hxxp://123[.]14[.]121[.]126:49375/bin[.]sh",
    "host_it": false,
@@ -18802,56 +18852,6 @@
    "tags": [],
    "date": "2026-11-16T10:32:08",
    "link": "https://urlhaus.abuse.ch/url/4067371/"
-  },
-  {
-   "ioc": "hxxp://98[.]36[.]141[.]73:38576/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-16T10:29:13",
-   "link": "https://urlhaus.abuse.ch/url/4067370/"
-  },
-  {
-   "ioc": "hxxp://125[.]99[.]3[.]179:49344/bin[.]sh",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-16T10:28:08",
-   "link": "https://urlhaus.abuse.ch/url/4067369/"
-  },
-  {
-   "ioc": "hxxp://36[.]138[.]222[.]77:39417/a7f3/bz",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "ssh"
-   ],
-   "date": "2026-11-16T10:27:30",
-   "link": "https://urlhaus.abuse.ch/url/4067368/"
-  },
-  {
-   "ioc": "hxxp://85[.]193[.]68[.]244/d/u78676388",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Amos"
-   ],
-   "date": "2026-11-16T10:27:06",
-   "link": "https://urlhaus.abuse.ch/url/4067367/"
   }
  ],
  "malware_top": [
@@ -18865,7 +18865,7 @@
   },
   {
    "name": "Mirai",
-   "count": 98
+   "count": 97
   },
   {
    "name": "ZStealer",
@@ -19071,13 +19071,13 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.93,
+    "value": 7.94,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.36,
+    "value": 3.37,
     "rank": 3
    },
    {
@@ -19138,7 +19138,7 @@
   "it_7d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.17,
+   "value": 0.16,
    "rank": 42
   },
   "outages_it": []
