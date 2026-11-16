@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T02:31:15Z",
+ "updated": "2026-11-16T03:01:12Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
@@ -13468,6 +13468,16 @@
    "last": "2026-11-15T15:03:34"
   },
   {
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
@@ -13488,29 +13498,19 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14201,6 +14201,21 @@
  },
  "known_actors": 1508,
  "iocs": [
+  {
+   "ioc": "102[.]220[.]161[.]178:10213",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "CECbot",
+   "confidence": 100,
+   "date": "2026-11-16T02:40:35",
+   "tags": [
+    "Android",
+    "botnet",
+    "CECbot",
+    "DDoS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2030983/"
+  },
   {
    "ioc": "weedstealer[.]xyz",
    "type": "domain",
@@ -16237,19 +16252,27 @@
    "date": "2026-11-16T01:41:01",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2030784/"
-  },
-  {
-   "ioc": "dcb28bd67be1256d76d796f142d9ead4e3b3b6b2",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Raven Stealer",
-   "confidence": 95,
-   "date": "2026-11-16T01:41:01",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2030785/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://58[.]255[.]43[.]49:53772/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-16T02:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4067206/"
+  },
+  {
+   "ioc": "hxxp://221[.]15[.]166[.]49:51137/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-16T02:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4067205/"
+  },
   {
    "ioc": "hxxp://27[.]21[.]29[.]8:46178/bin[.]sh",
    "host_it": false,
@@ -17770,34 +17793,6 @@
    "tags": [],
    "date": "2026-11-15T17:32:06",
    "link": "https://urlhaus.abuse.ch/url/4067057/"
-  },
-  {
-   "ioc": "hxxp://182[.]126[.]101[.]120:41383/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-15T17:30:09",
-   "link": "https://urlhaus.abuse.ch/url/4067056/"
-  },
-  {
-   "ioc": "hxxp://61[.]52[.]55[.]184:39033/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-15T17:30:08",
-   "link": "https://urlhaus.abuse.ch/url/4067055/"
   }
  ],
  "malware_top": [
@@ -17807,11 +17802,11 @@
   },
   {
    "name": "ClearFake",
-   "count": 173
+   "count": 163
   },
   {
    "name": "Mirai",
-   "count": 164
+   "count": 156
   },
   {
    "name": "IClickFix",
@@ -17839,7 +17834,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 16
+   "count": 15
   },
   {
    "name": "WARDENStealer",
@@ -17852,10 +17847,6 @@
   {
    "name": "Cobalt Strike",
    "count": 14
-  },
-  {
-   "name": "Aisuru",
-   "count": 13
   },
   {
    "name": "Venus Stealer",
@@ -17878,6 +17869,10 @@
    "count": 9
   },
   {
+   "name": "Aisuru",
+   "count": 8
+  },
+  {
    "name": "PureRAT",
    "count": 8
   },
@@ -17894,12 +17889,12 @@
    "count": 7
   },
   {
-   "name": "AdaptixC2",
+   "name": "CECbot",
    "count": 6
   },
   {
-   "name": "VShell",
-   "count": 5
+   "name": "AdaptixC2",
+   "count": 6
   }
  ],
  "agid_campaigns": [
@@ -17938,73 +17933,73 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.96,
+    "value": 54.77,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 8.18,
+    "value": 8.21,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.25,
+    "value": 3.26,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.85,
+    "value": 2.86,
     "rank": 4
-   },
-   {
-    "code": "IL",
-    "name": "Israel",
-    "value": 2.46,
-    "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.46,
+    "value": 2.48,
+    "rank": 5
+   },
+   {
+    "code": "IL",
+    "name": "Israel",
+    "value": 2.47,
     "rank": 6
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 2.14,
+    "value": 2.19,
     "rank": 7
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.04,
+    "value": 2.05,
     "rank": 8
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 1.88,
+    "value": 1.89,
     "rank": 9
    },
    {
     "code": "CW",
     "name": "Curaçao",
-    "value": 1.51,
+    "value": 1.52,
     "rank": 10
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.34,
+    "value": 1.27,
     "rank": 11
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.01,
+    "value": 1.02,
     "rank": 12
    }
   ],
@@ -18018,19 +18013,19 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.26,
+    "value": 55.25,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.88,
+    "value": 7.89,
     "rank": 2
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.34,
+    "value": 3.35,
     "rank": 3
    },
    {
@@ -18042,7 +18037,7 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.28,
+    "value": 2.29,
     "rank": 5
    },
    {
@@ -18054,7 +18049,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.11,
+    "value": 2.12,
     "rank": 7
    },
    {
@@ -18066,7 +18061,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.62,
+    "value": 1.64,
     "rank": 9
    },
    {
