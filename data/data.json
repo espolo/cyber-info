@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T19:31:03Z",
+ "updated": "2026-11-17T19:37:19Z",
  "news": [
   {
    "id": "https://therecord.media/uber-says-150000-impacted-third-party-breach",
@@ -10599,6 +10599,19 @@
  ],
  "ransomware": [
   {
+   "id": "the gentlemen|AARP",
+   "victim": "AARP",
+   "group": "the gentlemen",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-17T20:36:33",
+   "link": "https://www.ransomlook.io/group/the gentlemen",
+   "summary": "aarp.org Revenue $10 Billion AARP is a Washington group founded in 1958 for 38 million Americans over 50, neither a charity nor an insurer. Its business is renting its name to UnitedHealthcare, The Hartford, New York Life and Avis and taking a cut of…",
+   "sources": [
+    "RansomLook"
+   ]
+  },
+  {
    "id": "endzone|West-Com Nurse Call Systems, Inc",
    "victim": "West-Com Nurse Call Systems, Inc",
    "group": "EndZone",
@@ -13788,19 +13801,6 @@
    "sources": [
     "RansomLook"
    ]
-  },
-  {
-   "id": "anubis|VHV Company",
-   "victim": "VHV Company",
-   "group": "anubis",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-14T04:22:28",
-   "link": "https://www.ransomlook.io/group/anubis",
-   "summary": "Building plans exposed in data breach.",
-   "sources": [
-    "RansomLook"
-   ]
   }
  ],
  "kev": [
@@ -14207,29 +14207,9 @@
    "last": "2026-11-15T15:03:34"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14250,6 +14230,26 @@
    "name": "Sandworm",
    "type": "apt",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14312,9 +14312,9 @@
    "country": "",
    "watch": false,
    "mentions": 0,
-   "claims": 18,
+   "claims": 19,
    "claims_it": 0,
-   "last": "2026-11-17T00:36:16"
+   "last": "2026-11-17T20:36:33"
   },
   {
    "name": "Vortex",
@@ -14667,16 +14667,6 @@
    "last": "2026-11-16T15:26:23"
   },
   {
-   "name": "anubis",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 2,
-   "claims_it": 0,
-   "last": "2026-11-14T20:21:20"
-  },
-  {
    "name": "Black X",
    "type": "ransomware",
    "country": "",
@@ -14767,6 +14757,16 @@
    "last": "2026-11-16T14:02:57"
   },
   {
+   "name": "anubis",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 0,
+   "claims": 1,
+   "claims_it": 0,
+   "last": "2026-11-14T20:21:20"
+  },
+  {
    "name": "safepay",
    "type": "ransomware",
    "country": "",
@@ -14836,11 +14836,11 @@
   "safepay": "ransomware",
   "underground": "ransomware",
   "unknown": "ransomware",
+  "the gentlemen": "ransomware",
   "aoqin leaks": "ransomware",
   "brain cipher": "ransomware",
   "booba team": "ransomware",
   "climax": "ransomware",
-  "the gentlemen": "ransomware",
   "inc ransom": "ransomware",
   "vexy": "ransomware",
   "soul": "ransomware",
@@ -14859,6 +14859,18 @@
  },
  "known_actors": 1523,
  "iocs": [
+  {
+   "ioc": "51[.]81[.]211[.]97:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-17T19:32:26",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033281/"
+  },
   {
    "ioc": "124[.]221[.]80[.]161:8787",
    "type": "ip:port",
@@ -17307,19 +17319,27 @@
    "date": "2026-11-17T15:33:17",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2033082/"
-  },
-  {
-   "ioc": "18d25db5d6d3d67083566a8017a1663fdd334669",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "stealler",
-   "confidence": 95,
-   "date": "2026-11-17T15:33:17",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2033083/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://182[.]239[.]81[.]126:39343/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-17T19:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4068191/"
+  },
+  {
+   "ioc": "hxxp://59[.]180[.]140[.]211:58502/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-17T19:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4068192/"
+  },
   {
    "ioc": "hxxp://112[.]93[.]139[.]29:50864/bin[.]sh",
    "host_it": false,
@@ -19060,30 +19080,6 @@
    ],
    "date": "2026-11-17T12:28:13",
    "link": "https://urlhaus.abuse.ch/url/4068039/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Freewaybristore/Zapret-Telegram/releases/download/Zapret-Telegram/zapret-discord-youtube-1[.]10[.]4[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret"
-   ],
-   "date": "2026-11-17T12:28:13",
-   "link": "https://urlhaus.abuse.ch/url/4068040/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Freewaybristore/Telegram-Zapret/releases/download/Telegram-Zapret/zapret-discord-youtube-1[.]10[.]4[.]rar",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret"
-   ],
-   "date": "2026-11-17T12:28:13",
-   "link": "https://urlhaus.abuse.ch/url/4068041/"
   }
  ],
  "malware_top": [
@@ -19156,10 +19152,6 @@
    "count": 12
   },
   {
-   "name": "WARDENStealer",
-   "count": 9
-  },
-  {
    "name": "CrossRAT",
    "count": 9
   },
@@ -19169,6 +19161,10 @@
   },
   {
    "name": "NjRAT",
+   "count": 8
+  },
+  {
+   "name": "WARDENStealer",
    "count": 8
   },
   {
