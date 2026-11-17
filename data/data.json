@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T07:01:14Z",
+ "updated": "2026-11-17T07:31:01Z",
  "news": [
   {
    "id": "https://therecord.media/uber-says-150000-impacted-third-party-breach",
@@ -13,6 +13,19 @@
    "actors": [],
    "threat": true,
    "highlight": false
+  },
+  {
+   "id": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+   "title": "Ransomware affiliate suspect extradited to US, faces 27 years in prison",
+   "link": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+   "summary": "A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks. [...]",
+   "source": "BleepingComputer",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-17T07:25:44Z",
+   "actors": [],
+   "threat": true,
+   "highlight": true
   },
   {
    "id": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
@@ -10561,19 +10574,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-watchguard-4",
-   "title": "Risolte vulnerabilità in prodotti WatchGuard",
-   "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-watchguard-4",
-   "summary": "WatchGuard ha rilasciato aggiornamenti di sicurezza per sanare 4 vulnerabilità, 3 con gravità “critica” e una con gravità “alta”, nel prodotto AuthPoint Authentication Gateway, componente on-premise della piattaforma MFA AuthPoint che collega Active Directory/LDAP e gestisce l'autenticazione RADIUS.",
-   "source": "CSIRT Italia (ACN)",
-   "lang": "it",
-   "type": "advisory",
-   "date": "2026-11-05T10:08:54Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -14148,16 +14148,6 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
@@ -14171,6 +14161,16 @@
    "name": "Scattered Spider",
    "type": "criminal",
    "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14824,6 +14824,153 @@
  },
  "known_actors": 1520,
  "iocs": [
+  {
+   "ioc": "203[.]202[.]232[.]138:18000",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Remcos",
+   "confidence": 75,
+   "date": "2026-11-17T07:29:23",
+   "tags": [
+    "RAT",
+    "RemcosRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032690/"
+  },
+  {
+   "ioc": "198[.]23[.]150[.]2:38241",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-17T07:20:54",
+   "tags": [
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032689/"
+  },
+  {
+   "ioc": "172[.]86[.]85[.]96:23",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Bashlite",
+   "confidence": 100,
+   "date": "2026-11-17T07:20:34",
+   "tags": [
+    "Gafgyt"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032688/"
+  },
+  {
+   "ioc": "181[.]215[.]115[.]186:37215",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 100,
+   "date": "2026-11-17T07:20:03",
+   "tags": [
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032687/"
+  },
+  {
+   "ioc": "q8w4n7c5[.]elpaladin[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-17T07:16:50",
+   "tags": [
+    "ClearFake",
+    "mac-0x68dc",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032686/"
+  },
+  {
+   "ioc": "elpaladin[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-17T07:10:58",
+   "tags": [
+    "ClearFake"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032685/"
+  },
+  {
+   "ioc": "v5[.]apigacor77[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-17T07:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032683/"
+  },
+  {
+   "ioc": "gc[.]aria88[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-17T07:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032684/"
+  },
+  {
+   "ioc": "207[.]180[.]245[.]158:8080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-17T07:05:08",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032682/"
+  },
+  {
+   "ioc": "207[.]180[.]245[.]158:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-17T07:05:07",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032681/"
+  },
+  {
+   "ioc": "139[.]155[.]98[.]40:8084",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-17T07:05:06",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032679/"
+  },
+  {
+   "ioc": "207[.]180[.]245[.]158:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-17T07:05:06",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2032680/"
+  },
   {
    "ioc": "intoactiv[.]com",
    "type": "domain",
@@ -17306,167 +17453,175 @@
     "SNOWLIGHT"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2032490/"
-  },
-  {
-   "ioc": "4442e995d977dc934276da2920cc271d4358e68602c031ed64e890ac3254072d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SNOWLIGHT",
-   "confidence": 95,
-   "date": "2026-11-17T01:59:11",
-   "tags": [
-    "elf",
-    "SNOWLIGHT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032489/"
-  },
-  {
-   "ioc": "55c06886505f9111df2ea9f83fb967894676e17c69afcf5a4d4844804dcbe4eb",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SNOWLIGHT",
-   "confidence": 95,
-   "date": "2026-11-17T01:59:10",
-   "tags": [
-    "elf",
-    "SNOWLIGHT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032488/"
-  },
-  {
-   "ioc": "4eb9db275ded302e37e623bf501238da8ac6b2b06730ed6010930f4ee52ecff9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SNOWLIGHT",
-   "confidence": 95,
-   "date": "2026-11-17T01:59:09",
-   "tags": [
-    "elf",
-    "SNOWLIGHT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032487/"
-  },
-  {
-   "ioc": "81e604f67abbd8bfdaa379cb1133a2bb7dc40bad64af2b580ba3afcc458f59d4",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SNOWLIGHT",
-   "confidence": 95,
-   "date": "2026-11-17T01:59:08",
-   "tags": [
-    "elf",
-    "SNOWLIGHT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032486/"
-  },
-  {
-   "ioc": "de319ee2e3983ff03e3aac2ce574e17f5f2dc02dc60a7f23bd43eb79f8a1c95a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SNOWLIGHT",
-   "confidence": 95,
-   "date": "2026-11-17T01:59:07",
-   "tags": [
-    "elf",
-    "SNOWLIGHT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032485/"
-  },
-  {
-   "ioc": "5a198f7571caa1fc00751e17e04feed6904e61f2683ae6c64c811d6a559e913d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-17T01:59:06",
-   "tags": [
-    "exe",
-    "upx",
-    "Vidar"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032484/"
-  },
-  {
-   "ioc": "d0370cf97c5960654ba39198d3fe41916d0b6ce03a4b8726d785f402a2985fcd",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "VShell",
-   "confidence": 95,
-   "date": "2026-11-17T01:59:05",
-   "tags": [
-    "exe",
-    "Vshell"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032483/"
-  },
-  {
-   "ioc": "130[.]12[.]182[.]183:10213",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "CECbot",
-   "confidence": 100,
-   "date": "2026-11-17T01:34:07",
-   "tags": [
-    "Android",
-    "botnet",
-    "CECbot",
-    "DDoS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032482/"
-  },
-  {
-   "ioc": "pm55[.]bounceme[.]net",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Remcos",
-   "confidence": 75,
-   "date": "2026-11-17T01:25:15",
-   "tags": [
-    "remcos"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032481/"
-  },
-  {
-   "ioc": "ondemandpharma[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-17T01:21:33",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032477/"
-  },
-  {
-   "ioc": "www[.]frescofiore[.]it",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-17T01:21:33",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032478/"
-  },
-  {
-   "ioc": "www[.]j1spices[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-17T01:21:33",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2032479/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://107[.]172[.]148[.]215/30/RGB[.]vbe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "rat",
+    "RemcosRAT",
+    "vbe"
+   ],
+   "date": "2026-11-17T07:29:07",
+   "link": "https://urlhaus.abuse.ch/url/4067809/"
+  },
+  {
+   "ioc": "hxxp://107[.]172[.]148[.]215/30/RGB[.]hta",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "hta",
+    "rat",
+    "RemcosRAT"
+   ],
+   "date": "2026-11-17T07:29:05",
+   "link": "https://urlhaus.abuse.ch/url/4067808/"
+  },
+  {
+   "ioc": "hxxps://bkktech-thai[.]com/jcopnnn[.]txt",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "ascii",
+    "Encoded",
+    "PhantomStealer"
+   ],
+   "date": "2026-11-17T07:26:11",
+   "link": "https://urlhaus.abuse.ch/url/4067807/"
+  },
+  {
+   "ioc": "hxxps://bkktech-thai[.]com/cmdfdaF[.]txt",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "ascii",
+    "Encoded"
+   ],
+   "date": "2026-11-17T07:26:08",
+   "link": "https://urlhaus.abuse.ch/url/4067806/"
+  },
+  {
+   "ioc": "hxxp://digidonna[.]ru/jibsqyf/xskcv1w/bfmdejz/93KMK[.]ps1",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "ascii",
+    "Formbook",
+    "powershell",
+    "ps1"
+   ],
+   "date": "2026-11-17T07:25:06",
+   "link": "https://urlhaus.abuse.ch/url/4067805/"
+  },
+  {
+   "ioc": "hxxps://files[.]catbox[.]moe/q9ebhe[.]js",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "ascii",
+    "js",
+    "rat",
+    "RemcosRAT"
+   ],
+   "date": "2026-11-17T07:24:08",
+   "link": "https://urlhaus.abuse.ch/url/4067803/"
+  },
+  {
+   "ioc": "hxxps://files[.]catbox[.]moe/fntycb[.]js",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "ascii",
+    "js",
+    "rat",
+    "RemcosRAT"
+   ],
+   "date": "2026-11-17T07:24:08",
+   "link": "https://urlhaus.abuse.ch/url/4067804/"
+  },
+  {
+   "ioc": "hxxp://190[.]103[.]69[.]182:34442/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-17T07:17:09",
+   "link": "https://urlhaus.abuse.ch/url/4067802/"
+  },
+  {
+   "ioc": "hxxp://59[.]96[.]139[.]206:33999/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-17T07:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4067801/"
+  },
+  {
+   "ioc": "hxxp://42[.]230[.]41[.]174:46064/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-17T07:11:15",
+   "link": "https://urlhaus.abuse.ch/url/4067800/"
+  },
+  {
+   "ioc": "hxxp://42[.]230[.]41[.]174:46064/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-17T07:02:10",
+   "link": "https://urlhaus.abuse.ch/url/4067799/"
+  },
+  {
+   "ioc": "hxxp://115[.]61[.]13[.]191:42524/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-17T07:02:08",
+   "link": "https://urlhaus.abuse.ch/url/4067798/"
+  },
+  {
+   "ioc": "hxxp://59[.]96[.]138[.]176:58419/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-17T07:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4067797/"
+  },
+  {
+   "ioc": "hxxp://182[.]113[.]30[.]116:41592/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-17T07:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4067796/"
+  },
   {
    "ioc": "hxxp://123[.]11[.]78[.]59:40418/i",
    "host_it": false,
@@ -18903,180 +19058,12 @@
    ],
    "date": "2026-11-16T23:09:23",
    "link": "https://urlhaus.abuse.ch/url/4067661/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/CatbirdChange6/TelegramFix/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:22",
-   "link": "https://urlhaus.abuse.ch/url/4067658/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:22",
-   "link": "https://urlhaus.abuse.ch/url/4067659/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/ExaGladiatorSnap/ZapretTelegram/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:21",
-   "link": "https://urlhaus.abuse.ch/url/4067654/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/TgWsProxy/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:21",
-   "link": "https://urlhaus.abuse.ch/url/4067655/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/ExaGladiatorSnap/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:21",
-   "link": "https://urlhaus.abuse.ch/url/4067656/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/Telegram-Fix/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:21",
-   "link": "https://urlhaus.abuse.ch/url/4067657/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/Telegram-Zapret/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:20",
-   "link": "https://urlhaus.abuse.ch/url/4067651/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/tg-fix/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:20",
-   "link": "https://urlhaus.abuse.ch/url/4067652/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/ExaGladiatorSnap/tg-fix/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:20",
-   "link": "https://urlhaus.abuse.ch/url/4067653/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/Telegram-Zapret/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:19",
-   "link": "https://urlhaus.abuse.ch/url/4067649/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/ZapretTelegram/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:19",
-   "link": "https://urlhaus.abuse.ch/url/4067650/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/ExaGladiatorSnap/ZapretTelegram/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:18",
-   "link": "https://urlhaus.abuse.ch/url/4067641/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/ExaGladiatorSnap/tg-fix/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:18",
-   "link": "https://urlhaus.abuse.ch/url/4067642/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PresidentAppraise75/Tg-Ws-Proxy/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-16T23:09:18",
-   "link": "https://urlhaus.abuse.ch/url/4067643/"
   }
  ],
  "malware_top": [
   {
    "name": "ClearFake",
-   "count": 234
+   "count": 236
   },
   {
    "name": "IClickFix",
@@ -19084,7 +19071,7 @@
   },
   {
    "name": "Unknown Loader",
-   "count": 154
+   "count": 153
   },
   {
    "name": "ZStealer",
@@ -19100,7 +19087,7 @@
   },
   {
    "name": "Mirai",
-   "count": 52
+   "count": 53
   },
   {
    "name": "SNOWLIGHT",
@@ -19108,11 +19095,15 @@
   },
   {
    "name": "Cobalt Strike",
-   "count": 21
+   "count": 24
   },
   {
    "name": "Formbook",
    "count": 13
+  },
+  {
+   "name": "Remcos",
+   "count": 12
   },
   {
    "name": "WannaCryptor",
@@ -19135,19 +19126,11 @@
    "count": 11
   },
   {
-   "name": "Remcos",
-   "count": 11
-  },
-  {
    "name": "Mozi",
    "count": 10
   },
   {
    "name": "XWorm",
-   "count": 10
-  },
-  {
-   "name": "VShell",
    "count": 10
   },
   {
@@ -19163,8 +19146,8 @@
    "count": 9
   },
   {
-   "name": "RevStealer",
-   "count": 8
+   "name": "VShell",
+   "count": 7
   },
   {
    "name": "WARDENStealer",
@@ -19172,6 +19155,10 @@
   },
   {
    "name": "Sliver",
+   "count": 6
+  },
+  {
+   "name": "PureRAT",
    "count": 6
   }
  ],
