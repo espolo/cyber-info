@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T00:30:59Z",
+ "updated": "2026-11-18T01:01:10Z",
  "news": [
   {
    "id": "https://therecord.media/uber-says-150000-impacted-third-party-breach",
@@ -14043,18 +14043,8 @@
    "last": "2026-11-15T01:22:00"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14083,8 +14073,18 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14717,16 +14717,311 @@
  "known_actors": 1523,
  "iocs": [
   {
-   "ioc": "script-tau-silk[.]vercel[.]app",
+   "ioc": "38fef8dc1fab96cb08a27bebc4e85a022308371e15c7a131e27b491cd679dc90",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Remcos",
+   "confidence": 100,
+   "date": "2026-11-18T00:58:11",
+   "tags": [
+    "remcos",
+    "RemcosRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033768/"
+  },
+  {
+   "ioc": "906b78d823d1dc2b3283672e86ba5eb68e1b9c8c75dfe2a0b9d14579f9e52302",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Remcos",
+   "confidence": 100,
+   "date": "2026-11-18T00:58:11",
+   "tags": [
+    "remcos",
+    "RemcosRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033769/"
+  },
+  {
+   "ioc": "b94b3efa333e41c846b01a0a65a0c72a5e756e3b44bed78179ae2a577f1ec47d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Remcos",
+   "confidence": 100,
+   "date": "2026-11-18T00:58:11",
+   "tags": [
+    "remcos",
+    "RemcosRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033770/"
+  },
+  {
+   "ioc": "9912ca6dce79a65c49eb55f751759d426ded522f93d33358f2228f2c6270b321",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Remcos",
+   "confidence": 100,
+   "date": "2026-11-18T00:58:11",
+   "tags": [
+    "remcos",
+    "RemcosRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033771/"
+  },
+  {
+   "ioc": "2afde2e56560a21ce3f4646081e638b55cd43aa3189cbd8ea515a9e13d8b0dca",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Remcos",
+   "confidence": 100,
+   "date": "2026-11-18T00:58:11",
+   "tags": [
+    "remcos",
+    "RemcosRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033772/"
+  },
+  {
+   "ioc": "winne[.]mynetav[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Remcos",
+   "confidence": 100,
+   "date": "2026-11-18T00:53:20",
+   "tags": [
+    "remcos",
+    "RemcosRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033767/"
+  },
+  {
+   "ioc": "2[.]27[.]5[.]23:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Amatera",
+   "confidence": 75,
+   "date": "2026-11-18T00:45:20",
+   "tags": [
+    "ACRStealer",
+    "amatera",
+    "ClickFix",
+    "dead-drop",
+    "telegraph"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033766/"
+  },
+  {
+   "ioc": "object[.]policyuntaxed[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Amatera",
+   "confidence": 75,
+   "date": "2026-11-18T00:45:05",
+   "tags": [
+    "ACRStealer",
+    "amatera",
+    "ClickFix",
+    "NTSockets"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033765/"
+  },
+  {
+   "ioc": "www[.]yuceldds[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:30:27",
+   "confidence": 75,
+   "date": "2026-11-18T00:39:02",
    "tags": [
-    "ErrTraffic"
+    "BSC-testnet",
+    "ClickFix",
+    "etherhiding"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033751/"
+   "link": "https://threatfox.abuse.ch/ioc/2033764/"
+  },
+  {
+   "ioc": "www[.]cardockclassics[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-18T00:38:07",
+   "tags": [
+    "ClickFix",
+    "etherhiding",
+    "Polygon"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033763/"
+  },
+  {
+   "ioc": "www[.]dinterni[.]com[.]cy",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-18T00:35:22",
+   "tags": [
+    "ClickFix",
+    "etherhiding",
+    "Polygon"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033762/"
+  },
+  {
+   "ioc": "hxxp://93[.]152[.]217[.]16/348",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Stealc",
+   "confidence": 100,
+   "date": "2026-11-18T00:34:56",
+   "tags": [
+    "64-bit",
+    "ClickFix",
+    "Obfuscated",
+    "powershell",
+    "shellcode"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033756/"
+  },
+  {
+   "ioc": "hxxp://93[.]152[.]217[.]16/349",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Stealc",
+   "confidence": 100,
+   "date": "2026-11-18T00:34:56",
+   "tags": [
+    "64-bit",
+    "ClickFix",
+    "Obfuscated",
+    "powershell",
+    "shellcode"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033757/"
+  },
+  {
+   "ioc": "hxxp://93[.]152[.]217[.]16/yrjrs/user[.]cloud",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Stealc",
+   "confidence": 100,
+   "date": "2026-11-18T00:34:56",
+   "tags": [
+    "64-bit",
+    "ClickFix",
+    "Obfuscated",
+    "powershell",
+    "shellcode"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033758/"
+  },
+  {
+   "ioc": "hxxps://feidaindy[.]com/nfront[.]php",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Stealc",
+   "confidence": 100,
+   "date": "2026-11-18T00:34:56",
+   "tags": [
+    "64-bit",
+    "ClickFix",
+    "Obfuscated",
+    "powershell",
+    "shellcode"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033759/"
+  },
+  {
+   "ioc": "hxxps://feidaindy[.]com/nback[.]php",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Stealc",
+   "confidence": 100,
+   "date": "2026-11-18T00:34:56",
+   "tags": [
+    "64-bit",
+    "ClickFix",
+    "Obfuscated",
+    "powershell",
+    "shellcode"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033760/"
+  },
+  {
+   "ioc": "hxxps://fitbodnz[.]com/bmMb8kDc/61[.]bin",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Stealc",
+   "confidence": 100,
+   "date": "2026-11-18T00:34:56",
+   "tags": [
+    "64-bit",
+    "ClickFix",
+    "Obfuscated",
+    "powershell",
+    "shellcode"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033761/"
+  },
+  {
+   "ioc": "www[.]projecthomelessconnect[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-18T00:33:03",
+   "tags": [
+    "ClickFix",
+    "etherhiding",
+    "Polygon"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033755/"
+  },
+  {
+   "ioc": "crosscreekvet[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-18T00:32:36",
+   "tags": [
+    "BSC-testnet",
+    "ClickFix",
+    "etherhiding"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033754/"
+  },
+  {
+   "ioc": "vdno3fcw3x[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-18T00:32:11",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033753/"
+  },
+  {
+   "ioc": "thedaydreamdiaries[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-18T00:32:08",
+   "tags": [
+    "ClickFix",
+    "etherhiding",
+    "Polygon"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033752/"
   },
   {
    "ioc": "claude-flare-verification[.]vercel[.]app",
@@ -14739,6 +15034,18 @@
     "ErrTraffic"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2033750/"
+  },
+  {
+   "ioc": "script-tau-silk[.]vercel[.]app",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:30:27",
+   "tags": [
+    "ErrTraffic"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033751/"
   },
   {
    "ioc": "www[.]rakusuikai[.]jp",
@@ -14769,20 +15076,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2033748/"
   },
   {
-   "ioc": "hxxp://182[.]127[.]28[.]254:41823/Mozi[.]m",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Mozi",
-   "confidence": 75,
-   "date": "2026-11-18T00:19:05",
-   "tags": [
-    "elf",
-    "IoT",
-    "Mozi"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033747/"
-  },
-  {
    "ioc": "hxxp://102[.]33[.]18[.]105:36270/Mozi[.]m",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -14797,18 +15090,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2033746/"
   },
   {
-   "ioc": "hxxp://153[.]117[.]5[.]55:55679/Mozi[.]m",
+   "ioc": "hxxp://182[.]127[.]28[.]254:41823/Mozi[.]m",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Mozi",
    "confidence": 75,
-   "date": "2026-11-18T00:19:04",
+   "date": "2026-11-18T00:19:05",
    "tags": [
     "elf",
     "IoT",
     "Mozi"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033745/"
+   "link": "https://threatfox.abuse.ch/ioc/2033747/"
   },
   {
    "ioc": "hxxp://195[.]64[.]233[.]167:37846/Mozi[.]m",
@@ -14823,6 +15116,20 @@
     "Mozi"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2033744/"
+  },
+  {
+   "ioc": "hxxp://153[.]117[.]5[.]55:55679/Mozi[.]m",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Mozi",
+   "confidence": 75,
+   "date": "2026-11-18T00:19:04",
+   "tags": [
+    "elf",
+    "IoT",
+    "Mozi"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033745/"
   },
   {
    "ioc": "hxxp://103[.]99[.]196[.]2:47398/Mozi[.]m",
@@ -14851,7 +15158,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033742/"
   },
   {
-   "ioc": "www[.]avvocatomeraviglia[.]com",
+   "ioc": "syedmucktadirnuri[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -14861,85 +15168,7 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033741/"
-  },
-  {
-   "ioc": "www[.]angelopaolotricase[.]it",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:24",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033740/"
-  },
-  {
-   "ioc": "webperfology[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:24",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033739/"
-  },
-  {
-   "ioc": "vividfablab[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:24",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033738/"
-  },
-  {
-   "ioc": "uniqueeuphoria[.]net",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:24",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033737/"
-  },
-  {
-   "ioc": "thekandishopp[.]net",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:24",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033736/"
-  },
-  {
-   "ioc": "thavammusic[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:24",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033735/"
+   "link": "https://threatfox.abuse.ch/ioc/2033733/"
   },
   {
    "ioc": "tacosandco[.]fr",
@@ -14955,7 +15184,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033734/"
   },
   {
-   "ioc": "syedmucktadirnuri[.]com",
+   "ioc": "thavammusic[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -14965,10 +15194,88 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033733/"
+   "link": "https://threatfox.abuse.ch/ioc/2033735/"
   },
   {
-   "ioc": "stevencribbs[.]com",
+   "ioc": "thekandishopp[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:24",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033736/"
+  },
+  {
+   "ioc": "uniqueeuphoria[.]net",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:24",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033737/"
+  },
+  {
+   "ioc": "vividfablab[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:24",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033738/"
+  },
+  {
+   "ioc": "webperfology[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:24",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033739/"
+  },
+  {
+   "ioc": "www[.]angelopaolotricase[.]it",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:24",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033740/"
+  },
+  {
+   "ioc": "www[.]avvocatomeraviglia[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:24",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033741/"
+  },
+  {
+   "ioc": "amasina-restaurant[.]de",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -14978,202 +15285,7 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033732/"
-  },
-  {
-   "ioc": "pollerke[.]be",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033731/"
-  },
-  {
-   "ioc": "pngpanda[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033730/"
-  },
-  {
-   "ioc": "olgatom[.]in[.]ua",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033729/"
-  },
-  {
-   "ioc": "nitmedia[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033728/"
-  },
-  {
-   "ioc": "netrapedia[.]online",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033727/"
-  },
-  {
-   "ioc": "kiac[.]ac[.]rw",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033726/"
-  },
-  {
-   "ioc": "kafaatdev[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033725/"
-  },
-  {
-   "ioc": "jrveventos[.]com[.]br",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033724/"
-  },
-  {
-   "ioc": "hollandspecial[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033723/"
-  },
-  {
-   "ioc": "hlogistics[.]us",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033722/"
-  },
-  {
-   "ioc": "grupohensa[.]com[.]mx",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033721/"
-  },
-  {
-   "ioc": "elbahartrading[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033720/"
-  },
-  {
-   "ioc": "ctcobesa[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033719/"
-  },
-  {
-   "ioc": "choiceqlube[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033718/"
-  },
-  {
-   "ioc": "bocadeli[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-18T00:02:23",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033717/"
+   "link": "https://threatfox.abuse.ch/ioc/2033715/"
   },
   {
    "ioc": "apep[.]com[.]co",
@@ -15189,7 +15301,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033716/"
   },
   {
-   "ioc": "amasina-restaurant[.]de",
+   "ioc": "bocadeli[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -15199,7 +15311,202 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033715/"
+   "link": "https://threatfox.abuse.ch/ioc/2033717/"
+  },
+  {
+   "ioc": "choiceqlube[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033718/"
+  },
+  {
+   "ioc": "ctcobesa[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033719/"
+  },
+  {
+   "ioc": "elbahartrading[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033720/"
+  },
+  {
+   "ioc": "grupohensa[.]com[.]mx",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033721/"
+  },
+  {
+   "ioc": "hlogistics[.]us",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033722/"
+  },
+  {
+   "ioc": "hollandspecial[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033723/"
+  },
+  {
+   "ioc": "jrveventos[.]com[.]br",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033724/"
+  },
+  {
+   "ioc": "kafaatdev[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033725/"
+  },
+  {
+   "ioc": "kiac[.]ac[.]rw",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033726/"
+  },
+  {
+   "ioc": "netrapedia[.]online",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033727/"
+  },
+  {
+   "ioc": "nitmedia[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033728/"
+  },
+  {
+   "ioc": "olgatom[.]in[.]ua",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033729/"
+  },
+  {
+   "ioc": "pngpanda[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033730/"
+  },
+  {
+   "ioc": "pollerke[.]be",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033731/"
+  },
+  {
+   "ioc": "stevencribbs[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-18T00:02:23",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033732/"
   },
   {
    "ioc": "gghqg3fp[.]texbo[.]store",
@@ -15216,7 +15523,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033714/"
   },
   {
-   "ioc": "64[.]227[.]78[.]25:8001",
+   "ioc": "137[.]184[.]174[.]149:8001",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Aisuru",
@@ -15229,263 +15536,7 @@
     "DDoS",
     "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033713/"
-  },
-  {
-   "ioc": "64[.]227[.]70[.]4:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033712/"
-  },
-  {
-   "ioc": "206[.]189[.]132[.]151:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033711/"
-  },
-  {
-   "ioc": "188[.]166[.]244[.]198:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033710/"
-  },
-  {
-   "ioc": "178[.]128[.]222[.]69:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033709/"
-  },
-  {
-   "ioc": "178[.]128[.]120[.]217:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033708/"
-  },
-  {
-   "ioc": "167[.]99[.]141[.]182:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033707/"
-  },
-  {
-   "ioc": "165[.]232[.]183[.]248:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033706/"
-  },
-  {
-   "ioc": "165[.]232[.]118[.]180:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033705/"
-  },
-  {
-   "ioc": "165[.]227[.]40[.]189:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033704/"
-  },
-  {
-   "ioc": "165[.]227[.]38[.]82:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033703/"
-  },
-  {
-   "ioc": "165[.]227[.]231[.]9:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033702/"
-  },
-  {
-   "ioc": "165[.]227[.]143[.]154:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033701/"
-  },
-  {
-   "ioc": "164[.]92[.]203[.]129:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033700/"
-  },
-  {
-   "ioc": "159[.]203[.]3[.]52:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033699/"
-  },
-  {
-   "ioc": "144[.]126[.]192[.]202:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033698/"
-  },
-  {
-   "ioc": "139[.]59[.]92[.]114:8001",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Aisuru",
-   "confidence": 100,
-   "date": "2026-11-17T23:23:51",
-   "tags": [
-    "airashi",
-    "AISURU",
-    "botnet",
-    "DDoS",
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033697/"
+   "link": "https://threatfox.abuse.ch/ioc/2033695/"
   },
   {
    "ioc": "139[.]59[.]58[.]118:8001",
@@ -15504,7 +15555,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033696/"
   },
   {
-   "ioc": "137[.]184[.]174[.]149:8001",
+   "ioc": "139[.]59[.]92[.]114:8001",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Aisuru",
@@ -15517,7 +15568,263 @@
     "DDoS",
     "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033695/"
+   "link": "https://threatfox.abuse.ch/ioc/2033697/"
+  },
+  {
+   "ioc": "144[.]126[.]192[.]202:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033698/"
+  },
+  {
+   "ioc": "159[.]203[.]3[.]52:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033699/"
+  },
+  {
+   "ioc": "164[.]92[.]203[.]129:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033700/"
+  },
+  {
+   "ioc": "165[.]227[.]143[.]154:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033701/"
+  },
+  {
+   "ioc": "165[.]227[.]231[.]9:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033702/"
+  },
+  {
+   "ioc": "165[.]227[.]38[.]82:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033703/"
+  },
+  {
+   "ioc": "165[.]227[.]40[.]189:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033704/"
+  },
+  {
+   "ioc": "165[.]232[.]118[.]180:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033705/"
+  },
+  {
+   "ioc": "165[.]232[.]183[.]248:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033706/"
+  },
+  {
+   "ioc": "167[.]99[.]141[.]182:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033707/"
+  },
+  {
+   "ioc": "178[.]128[.]120[.]217:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033708/"
+  },
+  {
+   "ioc": "178[.]128[.]222[.]69:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033709/"
+  },
+  {
+   "ioc": "188[.]166[.]244[.]198:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033710/"
+  },
+  {
+   "ioc": "206[.]189[.]132[.]151:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033711/"
+  },
+  {
+   "ioc": "64[.]227[.]70[.]4:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033712/"
+  },
+  {
+   "ioc": "64[.]227[.]78[.]25:8001",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Aisuru",
+   "confidence": 100,
+   "date": "2026-11-17T23:23:51",
+   "tags": [
+    "airashi",
+    "AISURU",
+    "botnet",
+    "DDoS",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033713/"
   },
   {
    "ioc": "134[.]209[.]100[.]51:8001",
@@ -15548,19 +15855,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2033693/"
   },
   {
-   "ioc": "evriresorts[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 90,
-   "date": "2026-11-17T23:15:25",
-   "tags": [
-    "compromised",
-    "etherhide"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033692/"
-  },
-  {
    "ioc": "greencaresindia[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -15572,6 +15866,19 @@
     "etherhide"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2033691/"
+  },
+  {
+   "ioc": "evriresorts[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-17T23:15:25",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033692/"
   },
   {
    "ioc": "95[.]182[.]82[.]35:80",
@@ -15590,7 +15897,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033690/"
   },
   {
-   "ioc": "api-point-cf[.]cfd",
+   "ioc": "www-cf[.]sbs",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -15602,292 +15909,7 @@
     "msi",
     "msiexec"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033689/"
-  },
-  {
-   "ioc": "restapi-cf-web[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033688/"
-  },
-  {
-   "ioc": "restapi-cf-web-com[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033687/"
-  },
-  {
-   "ioc": "web-restapi[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033686/"
-  },
-  {
-   "ioc": "api-web-point[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033685/"
-  },
-  {
-   "ioc": "restapi-web[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033684/"
-  },
-  {
-   "ioc": "com-web-restapi[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033683/"
-  },
-  {
-   "ioc": "api-web-point[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033682/"
-  },
-  {
-   "ioc": "web-restapi[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033681/"
-  },
-  {
-   "ioc": "web-api-cf[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033680/"
-  },
-  {
-   "ioc": "web-restapi-cf[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033679/"
-  },
-  {
-   "ioc": "api-point-cf[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033678/"
-  },
-  {
-   "ioc": "web-cf-restapi[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033677/"
-  },
-  {
-   "ioc": "cf-restapi-web[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033676/"
-  },
-  {
-   "ioc": "cf-web-restapi[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033675/"
-  },
-  {
-   "ioc": "www-web-api[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033674/"
-  },
-  {
-   "ioc": "www-web[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033673/"
-  },
-  {
-   "ioc": "webapi-cf[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033672/"
-  },
-  {
-   "ioc": "cfapi[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033671/"
-  },
-  {
-   "ioc": "webapi-cf[.]cfd",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T23:13:43",
-   "tags": [
-    "ClickFix",
-    "fake-cloudflare",
-    "msi",
-    "msiexec"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033670/"
+   "link": "https://threatfox.abuse.ch/ioc/2033668/"
   },
   {
    "ioc": "ld-web[.]cfd",
@@ -15905,7 +15927,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033669/"
   },
   {
-   "ioc": "www-cf[.]sbs",
+   "ioc": "webapi-cf[.]cfd",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -15917,67 +15939,292 @@
     "msi",
     "msiexec"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033668/"
+   "link": "https://threatfox.abuse.ch/ioc/2033670/"
   },
   {
-   "ioc": "api-com[.]cfd",
+   "ioc": "cfapi[.]sbs",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 90,
-   "date": "2026-11-17T23:13:42",
+   "date": "2026-11-17T23:13:43",
    "tags": [
     "ClickFix",
     "fake-cloudflare",
     "msi",
     "msiexec"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033667/"
+   "link": "https://threatfox.abuse.ch/ioc/2033671/"
   },
   {
-   "ioc": "cf-com[.]sbs",
+   "ioc": "webapi-cf[.]sbs",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 90,
-   "date": "2026-11-17T23:13:42",
+   "date": "2026-11-17T23:13:43",
    "tags": [
     "ClickFix",
     "fake-cloudflare",
     "msi",
     "msiexec"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033666/"
+   "link": "https://threatfox.abuse.ch/ioc/2033672/"
   },
   {
-   "ioc": "api-c[.]cfd",
+   "ioc": "www-web[.]cfd",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 90,
-   "date": "2026-11-17T23:13:42",
+   "date": "2026-11-17T23:13:43",
    "tags": [
     "ClickFix",
     "fake-cloudflare",
     "msi",
     "msiexec"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033665/"
+   "link": "https://threatfox.abuse.ch/ioc/2033673/"
   },
   {
-   "ioc": "cf-relay[.]sbs",
+   "ioc": "www-web-api[.]cfd",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
    "confidence": 90,
-   "date": "2026-11-17T23:13:42",
+   "date": "2026-11-17T23:13:43",
    "tags": [
     "ClickFix",
     "fake-cloudflare",
     "msi",
     "msiexec"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033664/"
+   "link": "https://threatfox.abuse.ch/ioc/2033674/"
+  },
+  {
+   "ioc": "cf-web-restapi[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033675/"
+  },
+  {
+   "ioc": "cf-restapi-web[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033676/"
+  },
+  {
+   "ioc": "web-cf-restapi[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033677/"
+  },
+  {
+   "ioc": "api-point-cf[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033678/"
+  },
+  {
+   "ioc": "web-restapi-cf[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033679/"
+  },
+  {
+   "ioc": "web-api-cf[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033680/"
+  },
+  {
+   "ioc": "web-restapi[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033681/"
+  },
+  {
+   "ioc": "api-web-point[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033682/"
+  },
+  {
+   "ioc": "com-web-restapi[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033683/"
+  },
+  {
+   "ioc": "restapi-web[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033684/"
+  },
+  {
+   "ioc": "api-web-point[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033685/"
+  },
+  {
+   "ioc": "web-restapi[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033686/"
+  },
+  {
+   "ioc": "restapi-cf-web-com[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033687/"
+  },
+  {
+   "ioc": "restapi-cf-web[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033688/"
+  },
+  {
+   "ioc": "api-point-cf[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:43",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033689/"
   },
   {
    "ioc": "api-v1[.]cfd",
@@ -15995,16 +16242,64 @@
    "link": "https://threatfox.abuse.ch/ioc/2033663/"
   },
   {
-   "ioc": "fg[.]arusmenang[.]org",
+   "ioc": "cf-relay[.]sbs",
    "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-17T23:05:34",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:42",
    "tags": [
-    "Vidar"
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033662/"
+   "link": "https://threatfox.abuse.ch/ioc/2033664/"
+  },
+  {
+   "ioc": "api-c[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:42",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033665/"
+  },
+  {
+   "ioc": "cf-com[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:42",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033666/"
+  },
+  {
+   "ioc": "api-com[.]cfd",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T23:13:42",
+   "tags": [
+    "ClickFix",
+    "fake-cloudflare",
+    "msi",
+    "msiexec"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033667/"
   },
   {
    "ioc": "yw4[.]anka69[.]org",
@@ -16017,6 +16312,18 @@
     "Vidar"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2033661/"
+  },
+  {
+   "ioc": "fg[.]arusmenang[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Vidar",
+   "confidence": 100,
+   "date": "2026-11-17T23:05:34",
+   "tags": [
+    "Vidar"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033662/"
   },
   {
    "ioc": "5459d51b890223a31099e49dc0bc9aae778a5ffd3a48c17192efc93f0cd3fcbd",
@@ -16061,20 +16368,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2033658/"
   },
   {
-   "ioc": "seraitsgame[.]pages[.]dev",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:54:15",
-   "tags": [
-    "Discord",
-    "IRAHook",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033657/"
-  },
-  {
    "ioc": "spartensgame[.]pages[.]dev",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -16089,6 +16382,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2033656/"
   },
   {
+   "ioc": "seraitsgame[.]pages[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:54:15",
+   "tags": [
+    "Discord",
+    "IRAHook",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033657/"
+  },
+  {
    "ioc": "stcacke[.]biz",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -16099,174 +16406,6 @@
     "Kongtuke"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2033655/"
-  },
-  {
-   "ioc": "zinmoto[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033654/"
-  },
-  {
-   "ioc": "www[.]natureorganicbeauty[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033653/"
-  },
-  {
-   "ioc": "techcontrol-lg[.]ru",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033652/"
-  },
-  {
-   "ioc": "slabonstudio[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033651/"
-  },
-  {
-   "ioc": "secretsdecleopatre[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033650/"
-  },
-  {
-   "ioc": "sdvfinconsulting[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033649/"
-  },
-  {
-   "ioc": "roastandlambs[.]cl",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033648/"
-  },
-  {
-   "ioc": "regenciatransfert[.]fr",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033647/"
-  },
-  {
-   "ioc": "nenadbjelic[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033646/"
-  },
-  {
-   "ioc": "nachu[.]in",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033645/"
-  },
-  {
-   "ioc": "millcontabilidade[.]com[.]br",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033644/"
-  },
-  {
-   "ioc": "markint[.]in",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033643/"
-  },
-  {
-   "ioc": "lsm[.]com[.]ua",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033642/"
-  },
-  {
-   "ioc": "lawyerlegalguide[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:35",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033641/"
   },
   {
    "ioc": "kurdiskainstitutet[.]se",
@@ -16281,448 +16420,172 @@
    "link": "https://threatfox.abuse.ch/ioc/2033640/"
   },
   {
-   "ioc": "klangsteg[.]com",
+   "ioc": "lawyerlegalguide[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033639/"
+   "link": "https://threatfox.abuse.ch/ioc/2033641/"
   },
   {
-   "ioc": "kilcona[.]ca",
+   "ioc": "lsm[.]com[.]ua",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033638/"
+   "link": "https://threatfox.abuse.ch/ioc/2033642/"
   },
   {
-   "ioc": "kayumars[.]com",
+   "ioc": "markint[.]in",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033637/"
+   "link": "https://threatfox.abuse.ch/ioc/2033643/"
   },
   {
-   "ioc": "kapxapot[.]ru",
+   "ioc": "millcontabilidade[.]com[.]br",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033636/"
+   "link": "https://threatfox.abuse.ch/ioc/2033644/"
   },
   {
-   "ioc": "dj-vide[.]be",
+   "ioc": "nachu[.]in",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033635/"
+   "link": "https://threatfox.abuse.ch/ioc/2033645/"
   },
   {
-   "ioc": "dienlanhkhaan[.]com",
+   "ioc": "nenadbjelic[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033634/"
+   "link": "https://threatfox.abuse.ch/ioc/2033646/"
   },
   {
-   "ioc": "dessideriadcaro[.]com",
+   "ioc": "regenciatransfert[.]fr",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033633/"
+   "link": "https://threatfox.abuse.ch/ioc/2033647/"
   },
   {
-   "ioc": "crystalclearcosmeticsus[.]com",
+   "ioc": "roastandlambs[.]cl",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033632/"
+   "link": "https://threatfox.abuse.ch/ioc/2033648/"
   },
   {
-   "ioc": "cp-sourcing[.]dk",
+   "ioc": "sdvfinconsulting[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033631/"
+   "link": "https://threatfox.abuse.ch/ioc/2033649/"
   },
   {
-   "ioc": "coutocerimonial[.]com[.]br",
+   "ioc": "secretsdecleopatre[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033630/"
+   "link": "https://threatfox.abuse.ch/ioc/2033650/"
   },
   {
-   "ioc": "cosdent[.]ro",
+   "ioc": "slabonstudio[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033629/"
+   "link": "https://threatfox.abuse.ch/ioc/2033651/"
   },
   {
-   "ioc": "copypasteexception[.]com",
+   "ioc": "techcontrol-lg[.]ru",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033628/"
+   "link": "https://threatfox.abuse.ch/ioc/2033652/"
   },
   {
-   "ioc": "coopdescommuns[.]fr",
+   "ioc": "www[.]natureorganicbeauty[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033627/"
+   "link": "https://threatfox.abuse.ch/ioc/2033653/"
   },
   {
-   "ioc": "coatking[.]nl",
+   "ioc": "zinmoto[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "StrelaStealer",
    "confidence": 100,
-   "date": "2026-11-17T22:46:34",
+   "date": "2026-11-17T22:46:35",
    "tags": [
     "StrelaStealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033626/"
-  },
-  {
-   "ioc": "clip360[.]ru",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033625/"
-  },
-  {
-   "ioc": "byronyen[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033624/"
-  },
-  {
-   "ioc": "bvk32[.]ru",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033623/"
-  },
-  {
-   "ioc": "bullyfiendz[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033622/"
-  },
-  {
-   "ioc": "bonnemaisonhotel[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033621/"
-  },
-  {
-   "ioc": "boegehaven5210[.]dk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033620/"
-  },
-  {
-   "ioc": "biketribe[.]co[.]za",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033619/"
-  },
-  {
-   "ioc": "beilulrestaurant[.]co[.]uk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033618/"
-  },
-  {
-   "ioc": "beaknwhiskers[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033617/"
-  },
-  {
-   "ioc": "auto-service1[.]ru",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033616/"
-  },
-  {
-   "ioc": "arminehhelenohanian[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033615/"
-  },
-  {
-   "ioc": "arcpoint[.]solutions",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033614/"
-  },
-  {
-   "ioc": "applewatchecg[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033613/"
-  },
-  {
-   "ioc": "andesbtc[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033612/"
-  },
-  {
-   "ioc": "ancientamerica[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033611/"
-  },
-  {
-   "ioc": "americasnurse[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033610/"
-  },
-  {
-   "ioc": "alltherightmoversvancouver[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033609/"
-  },
-  {
-   "ioc": "alleswatbloeit[.]nl",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033608/"
-  },
-  {
-   "ioc": "alexanderandersen[.]se",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033607/"
-  },
-  {
-   "ioc": "airticket[.]cargolink[.]mn",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033606/"
-  },
-  {
-   "ioc": "advokat-rb[.]by",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033605/"
-  },
-  {
-   "ioc": "accupackindia[.]in",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033604/"
-  },
-  {
-   "ioc": "accordionman[.]co[.]za",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "StrelaStealer",
-   "confidence": 100,
-   "date": "2026-11-17T22:46:34",
-   "tags": [
-    "StrelaStealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033603/"
+   "link": "https://threatfox.abuse.ch/ioc/2033654/"
   },
   {
    "ioc": "abumajid[.]com",
@@ -16737,6 +16600,450 @@
    "link": "https://threatfox.abuse.ch/ioc/2033602/"
   },
   {
+   "ioc": "accordionman[.]co[.]za",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033603/"
+  },
+  {
+   "ioc": "accupackindia[.]in",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033604/"
+  },
+  {
+   "ioc": "advokat-rb[.]by",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033605/"
+  },
+  {
+   "ioc": "airticket[.]cargolink[.]mn",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033606/"
+  },
+  {
+   "ioc": "alexanderandersen[.]se",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033607/"
+  },
+  {
+   "ioc": "alleswatbloeit[.]nl",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033608/"
+  },
+  {
+   "ioc": "alltherightmoversvancouver[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033609/"
+  },
+  {
+   "ioc": "americasnurse[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033610/"
+  },
+  {
+   "ioc": "ancientamerica[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033611/"
+  },
+  {
+   "ioc": "andesbtc[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033612/"
+  },
+  {
+   "ioc": "applewatchecg[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033613/"
+  },
+  {
+   "ioc": "arcpoint[.]solutions",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033614/"
+  },
+  {
+   "ioc": "arminehhelenohanian[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033615/"
+  },
+  {
+   "ioc": "auto-service1[.]ru",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033616/"
+  },
+  {
+   "ioc": "beaknwhiskers[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033617/"
+  },
+  {
+   "ioc": "beilulrestaurant[.]co[.]uk",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033618/"
+  },
+  {
+   "ioc": "biketribe[.]co[.]za",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033619/"
+  },
+  {
+   "ioc": "boegehaven5210[.]dk",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033620/"
+  },
+  {
+   "ioc": "bonnemaisonhotel[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033621/"
+  },
+  {
+   "ioc": "bullyfiendz[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033622/"
+  },
+  {
+   "ioc": "bvk32[.]ru",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033623/"
+  },
+  {
+   "ioc": "byronyen[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033624/"
+  },
+  {
+   "ioc": "clip360[.]ru",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033625/"
+  },
+  {
+   "ioc": "coatking[.]nl",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033626/"
+  },
+  {
+   "ioc": "coopdescommuns[.]fr",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033627/"
+  },
+  {
+   "ioc": "copypasteexception[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033628/"
+  },
+  {
+   "ioc": "cosdent[.]ro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033629/"
+  },
+  {
+   "ioc": "coutocerimonial[.]com[.]br",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033630/"
+  },
+  {
+   "ioc": "cp-sourcing[.]dk",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033631/"
+  },
+  {
+   "ioc": "crystalclearcosmeticsus[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033632/"
+  },
+  {
+   "ioc": "dessideriadcaro[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033633/"
+  },
+  {
+   "ioc": "dienlanhkhaan[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033634/"
+  },
+  {
+   "ioc": "dj-vide[.]be",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033635/"
+  },
+  {
+   "ioc": "kapxapot[.]ru",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033636/"
+  },
+  {
+   "ioc": "kayumars[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033637/"
+  },
+  {
+   "ioc": "kilcona[.]ca",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033638/"
+  },
+  {
+   "ioc": "klangsteg[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "StrelaStealer",
+   "confidence": 100,
+   "date": "2026-11-17T22:46:34",
+   "tags": [
+    "StrelaStealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033639/"
+  },
+  {
    "ioc": "94[.]183[.]177[.]233:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -16749,51 +17056,6 @@
     "fake-cloudflare"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2033601/"
-  },
-  {
-   "ioc": "js-static[.]sbs",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T22:44:20",
-   "tags": [
-    "ClickFix",
-    "compromised-wordpress",
-    "Fake-Captcha",
-    "fake-cloudflare"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033600/"
-  },
-  {
-   "ioc": "js-static[.]live",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T22:44:20",
-   "tags": [
-    "ClickFix",
-    "compromised-wordpress",
-    "Fake-Captcha",
-    "fake-cloudflare"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033599/"
-  },
-  {
-   "ioc": "js-static[.]website",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 90,
-   "date": "2026-11-17T22:44:20",
-   "tags": [
-    "ClickFix",
-    "compromised-wordpress",
-    "Fake-Captcha",
-    "fake-cloudflare"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033598/"
   },
   {
    "ioc": "js-static[.]world",
@@ -16811,36 +17073,49 @@
    "link": "https://threatfox.abuse.ch/ioc/2033597/"
   },
   {
-   "ioc": "103[.]163[.]214[.]137:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Jackskid",
-   "confidence": 100,
-   "date": "2026-11-17T22:28:36",
+   "ioc": "js-static[.]website",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T22:44:20",
    "tags": [
-    "botnet",
-    "DDoS",
-    "Jackskid",
-    "Mirai",
-    "rctea"
+    "ClickFix",
+    "compromised-wordpress",
+    "Fake-Captcha",
+    "fake-cloudflare"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033596/"
+   "link": "https://threatfox.abuse.ch/ioc/2033598/"
   },
   {
-   "ioc": "103[.]163[.]214[.]135:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Jackskid",
-   "confidence": 100,
-   "date": "2026-11-17T22:28:36",
+   "ioc": "js-static[.]live",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T22:44:20",
    "tags": [
-    "botnet",
-    "DDoS",
-    "Jackskid",
-    "Mirai",
-    "rctea"
+    "ClickFix",
+    "compromised-wordpress",
+    "Fake-Captcha",
+    "fake-cloudflare"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033595/"
+   "link": "https://threatfox.abuse.ch/ioc/2033599/"
+  },
+  {
+   "ioc": "js-static[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 90,
+   "date": "2026-11-17T22:44:20",
+   "tags": [
+    "ClickFix",
+    "compromised-wordpress",
+    "Fake-Captcha",
+    "fake-cloudflare"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033600/"
   },
   {
    "ioc": "103[.]163[.]214[.]134:443",
@@ -16859,6 +17134,38 @@
    "link": "https://threatfox.abuse.ch/ioc/2033594/"
   },
   {
+   "ioc": "103[.]163[.]214[.]135:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-17T22:28:36",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033595/"
+  },
+  {
+   "ioc": "103[.]163[.]214[.]137:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-17T22:28:36",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033596/"
+  },
+  {
    "ioc": "www[.]tose-sonkekids[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -16872,7 +17179,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033593/"
   },
   {
-   "ioc": "mellow-arc-willow-craeyn[.]pro",
+   "ioc": "broatslioum-willow[.]pro",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -16882,20 +17189,7 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033592/"
-  },
-  {
-   "ioc": "glizgiarkflaie[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T22:13:32",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033591/"
+   "link": "https://threatfox.abuse.ch/ioc/2033589/"
   },
   {
    "ioc": "drexdeonfaiix[.]pro",
@@ -16911,7 +17205,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2033590/"
   },
   {
-   "ioc": "broatslioum-willow[.]pro",
+   "ioc": "glizgiarkflaie[.]pro",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -16921,7 +17215,20 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033589/"
+   "link": "https://threatfox.abuse.ch/ioc/2033591/"
+  },
+  {
+   "ioc": "mellow-arc-willow-craeyn[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-17T22:13:32",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033592/"
   },
   {
    "ioc": "ros[.]anka69[.]org",
@@ -17029,19 +17336,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2033581/"
   },
   {
-   "ioc": "yigilca-haber[.]cyou",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 75,
-   "date": "2026-11-17T21:36:54",
-   "tags": [
-    "etherhiding",
-    "layered"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033580/"
-  },
-  {
    "ioc": "vandacreative[.]cyou",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -17055,56 +17349,17 @@
    "link": "https://threatfox.abuse.ch/ioc/2033579/"
   },
   {
-   "ioc": "truthixa[.]com",
+   "ioc": "yigilca-haber[.]cyou",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown Loader",
    "confidence": 75,
-   "date": "2026-11-17T21:36:53",
+   "date": "2026-11-17T21:36:54",
    "tags": [
     "etherhiding",
     "layered"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033578/"
-  },
-  {
-   "ioc": "toolhub[.]space",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 75,
-   "date": "2026-11-17T21:36:53",
-   "tags": [
-    "etherhiding",
-    "layered"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033577/"
-  },
-  {
-   "ioc": "tawvalleytelecoms[.]co[.]uk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 75,
-   "date": "2026-11-17T21:36:53",
-   "tags": [
-    "etherhiding",
-    "layered"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033576/"
-  },
-  {
-   "ioc": "sezerlerambartasimaciligi[.]cyou",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 75,
-   "date": "2026-11-17T21:36:53",
-   "tags": [
-    "etherhiding",
-    "layered"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033575/"
+   "link": "https://threatfox.abuse.ch/ioc/2033580/"
   },
   {
    "ioc": "portacel[.]co[.]uk",
@@ -17120,28 +17375,56 @@
    "link": "https://threatfox.abuse.ch/ioc/2033574/"
   },
   {
-   "ioc": "zonahidup[.]id",
+   "ioc": "sezerlerambartasimaciligi[.]cyou",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:31",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-17T21:36:53",
    "tags": [
-    "ClickFix"
+    "etherhiding",
+    "layered"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033573/"
+   "link": "https://threatfox.abuse.ch/ioc/2033575/"
   },
   {
-   "ioc": "zetazsystems[.]com",
+   "ioc": "tawvalleytelecoms[.]co[.]uk",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:31",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-17T21:36:53",
    "tags": [
-    "ClickFix"
+    "etherhiding",
+    "layered"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2033572/"
+   "link": "https://threatfox.abuse.ch/ioc/2033576/"
+  },
+  {
+   "ioc": "toolhub[.]space",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-17T21:36:53",
+   "tags": [
+    "etherhiding",
+    "layered"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033577/"
+  },
+  {
+   "ioc": "truthixa[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-17T21:36:53",
+   "tags": [
+    "etherhiding",
+    "layered"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2033578/"
   },
   {
    "ioc": "yumvista[.]com",
@@ -17154,237 +17437,55 @@
     "ClickFix"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2033571/"
-  },
-  {
-   "ioc": "yukjudibola[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033570/"
-  },
-  {
-   "ioc": "woodhousekitchenandcloset[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033569/"
-  },
-  {
-   "ioc": "wonderlandcasinos[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033568/"
-  },
-  {
-   "ioc": "winlixs[.]click",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033567/"
-  },
-  {
-   "ioc": "visitcasinoss[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033566/"
-  },
-  {
-   "ioc": "vidaesport[.]co[.]za",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033565/"
-  },
-  {
-   "ioc": "usher[.]co[.]za",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033564/"
-  },
-  {
-   "ioc": "unye-nakliyat[.]cyou",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033563/"
-  },
-  {
-   "ioc": "tose-sonkekids[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033562/"
-  },
-  {
-   "ioc": "toolsvibe[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033561/"
-  },
-  {
-   "ioc": "thepowersofconnection[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033560/"
-  },
-  {
-   "ioc": "thelearningnest[.]co",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033559/"
-  },
-  {
-   "ioc": "theanalysis[.]in",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033558/"
-  },
-  {
-   "ioc": "tfp-architects[.]co[.]uk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033557/"
-  },
-  {
-   "ioc": "tesisatkacagitespiti[.]com[.]tr",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033556/"
-  },
-  {
-   "ioc": "techecy[.]co[.]uk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033555/"
-  },
-  {
-   "ioc": "taskent-haber[.]com[.]tr",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033554/"
-  },
-  {
-   "ioc": "tabeertours[.]co[.]uk",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033553/"
-  },
-  {
-   "ioc": "suriludeshi[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-17T21:32:30",
-   "tags": [
-    "ClickFix"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2033552/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://95[.]9[.]35[.]137:41483/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-18T00:58:11",
+   "link": "https://urlhaus.abuse.ch/url/4068386/"
+  },
+  {
+   "ioc": "hxxp://113[.]228[.]111[.]5:55980/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-18T00:55:15",
+   "link": "https://urlhaus.abuse.ch/url/4068385/"
+  },
+  {
+   "ioc": "hxxp://182[.]46[.]45[.]4:51140/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-18T00:47:11",
+   "link": "https://urlhaus.abuse.ch/url/4068384/"
+  },
+  {
+   "ioc": "hxxp://42[.]58[.]146[.]197:57081/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-18T00:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4068383/"
+  },
   {
    "ioc": "hxxp://115[.]55[.]177[.]230:57147/i",
    "host_it": false,
@@ -19239,80 +19340,24 @@
    ],
    "date": "2026-11-17T19:45:26",
    "link": "https://urlhaus.abuse.ch/url/4068244/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Godwinpie/WebSearch/refs/heads/master/public/fonts/fa-solid-500[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-17T19:45:26",
-   "link": "https://urlhaus.abuse.ch/url/4068245/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Meelex/testament-uploaded/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVBOX",
-    "github",
-    "js",
-    "VSCode"
-   ],
-   "date": "2026-11-17T19:45:26",
-   "link": "https://urlhaus.abuse.ch/url/4068246/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/ClarrieO5/Solstice/refs/heads/master/public/fonts/fa-solid-400[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVBOX",
-    "github",
-    "js"
-   ],
-   "date": "2026-11-17T19:45:25",
-   "link": "https://urlhaus.abuse.ch/url/4068224/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/ChatArchitect/n8n-nodes-chatarchitectcom-for-whatsapp/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVBOX",
-    "github",
-    "js",
-    "VSCode"
-   ],
-   "date": "2026-11-17T19:45:25",
-   "link": "https://urlhaus.abuse.ch/url/4068225/"
   }
  ],
  "malware_top": [
   {
-   "name": "ClearFake",
-   "count": 166
+   "name": "IClickFix",
+   "count": 164
   },
   {
-   "name": "IClickFix",
-   "count": 158
+   "name": "ClearFake",
+   "count": 164
   },
   {
    "name": "Unknown Loader",
-   "count": 106
+   "count": 84
   },
   {
    "name": "Mirai",
-   "count": 68
+   "count": 66
   },
   {
    "name": "StrelaStealer",
@@ -19327,12 +19372,8 @@
    "count": 37
   },
   {
-   "name": "SNOWLIGHT",
-   "count": 35
-  },
-  {
    "name": "VShell",
-   "count": 33
+   "count": 28
   },
   {
    "name": "stealler",
@@ -19341,6 +19382,10 @@
   {
    "name": "Agent Tesla",
    "count": 27
+  },
+  {
+   "name": "SNOWLIGHT",
+   "count": 26
   },
   {
    "name": "Aisuru",
@@ -19359,6 +19404,10 @@
    "count": 18
   },
   {
+   "name": "php.shin_webshell",
+   "count": 15
+  },
+  {
    "name": "Mozi",
    "count": 15
   },
@@ -19367,8 +19416,8 @@
    "count": 15
   },
   {
-   "name": "php.shin_webshell",
-   "count": 14
+   "name": "Remcos",
+   "count": 13
   },
   {
    "name": "XWorm",
@@ -19376,7 +19425,7 @@
   },
   {
    "name": "PureRAT",
-   "count": 12
+   "count": 11
   },
   {
    "name": "Unknown Stealer",
@@ -19392,10 +19441,6 @@
   },
   {
    "name": "NjRAT",
-   "count": 8
-  },
-  {
-   "name": "WARDENStealer",
    "count": 8
   }
  ],
@@ -19427,13 +19472,13 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.62,
+    "value": 55.67,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.72,
+    "value": 7.74,
     "rank": 2
    },
    {
@@ -19445,13 +19490,13 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.1,
+    "value": 3.12,
     "rank": 4
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.89,
+    "value": 2.86,
     "rank": 5
    },
    {
@@ -19469,31 +19514,31 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.86,
+    "value": 1.85,
     "rank": 8
    },
    {
     "code": "NP",
     "name": "Nepal",
-    "value": 1.24,
+    "value": 1.26,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.14,
+    "value": 1.13,
     "rank": 10
    },
    {
     "code": "UA",
     "name": "Ukraine",
-    "value": 1.01,
+    "value": 1.02,
     "rank": 11
    },
    {
     "code": "IN",
     "name": "India",
-    "value": 1.0,
+    "value": 1.01,
     "rank": 12
    }
   ],
@@ -19531,7 +19576,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.53,
+    "value": 2.54,
     "rank": 5
    },
    {
@@ -19543,7 +19588,7 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 2.06,
+    "value": 2.05,
     "rank": 7
    },
    {
@@ -19555,13 +19600,13 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.43,
+    "value": 1.42,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.23,
+    "value": 1.22,
     "rank": 10
    },
    {
