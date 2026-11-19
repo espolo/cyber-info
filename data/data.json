@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T22:31:13Z",
+ "updated": "2026-11-19T23:01:24Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
@@ -14198,9 +14198,9 @@
    "last": "2026-11-18T16:16:33"
   },
   {
-   "name": "Lazarus Group",
+   "name": "APT28",
    "type": "apt",
-   "country": "KP",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14208,9 +14208,9 @@
    "last": ""
   },
   {
-   "name": "Sandworm",
+   "name": "Lazarus Group",
    "type": "apt",
-   "country": "RU",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14228,7 +14228,7 @@
    "last": ""
   },
   {
-   "name": "APT28",
+   "name": "Sandworm",
    "type": "apt",
    "country": "RU",
    "watch": true,
@@ -14822,6 +14822,36 @@
  },
  "known_actors": 1529,
  "iocs": [
+  {
+   "ioc": "qagaqame[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-19T22:56:15",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2035698/"
+  },
+  {
+   "ioc": "27[.]50[.]63[.]50:8787",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-19T22:33:45",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2035697/"
+  },
   {
    "ioc": "isflafe0[.]tucargaseguraceo[.]com",
    "type": "domain",
@@ -17466,29 +17496,99 @@
    "date": "2026-11-19T14:33:01",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2035527/"
-  },
-  {
-   "ioc": "4139351ef138bdeadd9d68ff07502f682c08070dd5394ad6b67e62ccbd8e8ebd",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "MetaStealer",
-   "confidence": 95,
-   "date": "2026-11-19T14:33:01",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2035528/"
-  },
-  {
-   "ioc": "15c52e8f498ea75ae984522ff4b1d376de1e545e",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "MetaStealer",
-   "confidence": 95,
-   "date": "2026-11-19T14:33:01",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2035529/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://222[.]138[.]109[.]47:53447/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-19T23:00:16",
+   "link": "https://urlhaus.abuse.ch/url/4070987/"
+  },
+  {
+   "ioc": "hxxps://www[.]dropbox[.]com/scl/fi/u1gx3ts243xxoya048jbr/bundle[.]zip?rlkey=3ronxf88is6brzcriugpat5ld&st=7wz97uxi&dl=1",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IRAHook"
+   ],
+   "date": "2026-11-19T22:59:29",
+   "link": "https://urlhaus.abuse.ch/url/4070986/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Shoaibxaif/first-contributions/refs/heads/main/additional-material/translations/Ukrainian/first_contributions_v1[.]7-beta[.]1[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-19T22:59:09",
+   "link": "https://urlhaus.abuse.ch/url/4070985/"
+  },
+  {
+   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1572688525122347009/1572689475048570981/d717ab737d?ex=6b009a36&is=6aff48b6&hm=20d3dd27d1d0a4967c3cfd4c8df8a7f6b1e6cd8019aee34f9e0b22921eb89334&",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IRAHook"
+   ],
+   "date": "2026-11-19T22:59:09",
+   "link": "https://urlhaus.abuse.ch/url/4070984/"
+  },
+  {
+   "ioc": "hxxp://42[.]224[.]80[.]223:40596/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-19T22:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4070983/"
+  },
+  {
+   "ioc": "hxxp://46[.]236[.]65[.]145:39933/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-19T22:47:04",
+   "link": "https://urlhaus.abuse.ch/url/4070982/"
+  },
+  {
+   "ioc": "hxxp://196[.]190[.]1[.]39:59599/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-19T22:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4070981/"
+  },
+  {
+   "ioc": "hxxp://222[.]138[.]109[.]47:53447/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-19T22:31:06",
+   "link": "https://urlhaus.abuse.ch/url/4070980/"
+  },
   {
    "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/695865424750837862/1573100523333226546/127b568e2a?ex=6b00c787&is=6aff7607&hm=ae3efbc2a90f27224c0a2b177d0f1044538e2514adba247c2eb6eef7fb95b5bc&",
    "host_it": false,
@@ -19201,108 +19301,12 @@
    ],
    "date": "2026-11-19T19:31:56",
    "link": "https://urlhaus.abuse.ch/url/4070838/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=davinci-resolve-studio",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:56",
-   "link": "https://urlhaus.abuse.ch/url/4070837/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=vegas-pro-23",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:56",
-   "link": "https://urlhaus.abuse.ch/url/4070836/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=after-effects-2026",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:07",
-   "link": "https://urlhaus.abuse.ch/url/4070835/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=tradingview",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:07",
-   "link": "https://urlhaus.abuse.ch/url/4070834/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=boris-fx-sapphire",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:06",
-   "link": "https://urlhaus.abuse.ch/url/4070833/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=cinema4d",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:06",
-   "link": "https://urlhaus.abuse.ch/url/4070832/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=autocad-2026",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:06",
-   "link": "https://urlhaus.abuse.ch/url/4070831/"
-  },
-  {
-   "ioc": "hxxps://librehub[.]click/download[.]php?id=avid-media-composer",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-19T19:31:06",
-   "link": "https://urlhaus.abuse.ch/url/4070830/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 173
+   "count": 175
   },
   {
    "name": "ZStealer",
@@ -19330,7 +19334,7 @@
   },
   {
    "name": "AsyncRAT",
-   "count": 22
+   "count": 21
   },
   {
    "name": "Potassium",
@@ -19346,7 +19350,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 15
+   "count": 16
   },
   {
    "name": "Remcos",
@@ -19374,7 +19378,7 @@
   },
   {
    "name": "WARDENStealer",
-   "count": 10
+   "count": 9
   },
   {
    "name": "SNOWLIGHT",
@@ -19429,31 +19433,31 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.39,
+    "value": 57.47,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 8.06,
+    "value": 8.0,
     "rank": 2
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 3.29,
+    "value": 3.26,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.83,
+    "value": 2.82,
     "rank": 4
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.31,
+    "value": 2.3,
     "rank": 5
    },
    {
@@ -19463,33 +19467,33 @@
     "rank": 6
    },
    {
-    "code": "AU",
-    "name": "Australia",
-    "value": 1.91,
+    "code": "FR",
+    "name": "France",
+    "value": 1.9,
     "rank": 7
    },
    {
-    "code": "FR",
-    "name": "France",
-    "value": 1.89,
+    "code": "AU",
+    "name": "Australia",
+    "value": 1.88,
     "rank": 8
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 1.7,
+    "value": 1.71,
     "rank": 9
    },
    {
     "code": "BR",
     "name": "Brazil",
-    "value": 1.24,
+    "value": 1.22,
     "rank": 10
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.15,
+    "value": 1.16,
     "rank": 11
    },
    {
@@ -19503,13 +19507,13 @@
    "code": "IT",
    "name": "Italy",
    "value": 0.16,
-   "rank": 41
+   "rank": 40
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.69,
+    "value": 55.67,
     "rank": 1
    },
    {
@@ -19569,7 +19573,7 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 0.97,
+    "value": 0.98,
     "rank": 11
    },
    {
