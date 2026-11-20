@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-20T06:31:15Z",
+ "updated": "2026-11-20T07:01:15Z",
  "news": [
+  {
+   "id": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+   "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+   "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+   "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authe…",
+   "source": "The Hacker News",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-20T06:33:31Z",
+   "actors": [
+    "UTA0178"
+   ],
+   "threat": true,
+   "highlight": true
+  },
   {
    "id": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
    "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
@@ -10613,19 +10628,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORmpkWjhiWUoxYmMzT1pzNFFqYUtNYTB2ZTMyMjNWOTRQWWdST3ZwbF85M25ETEMtQUNTM1huaktPNTBlM1JSRE9VQkhnRlcwSTZkWDF4eTJYdVZvTVZCNHd0dVRieG03SDBUalNoeUJIN0hkSHVDcFVOOERLWVdYZkoydDA3OWZHblhPdmNkdHpReTU0V0gtSmdZU0RNZlBRNnR5WW85aGFodTczeTF5bER5MVczdw?oc=5",
-   "title": "Apache HTTP Server, allarme sicurezza: tre vulnerabilità, una consente RCE da remoto - Red Hot Cyber",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORmpkWjhiWUoxYmMzT1pzNFFqYUtNYTB2ZTMyMjNWOTRQWWdST3ZwbF85M25ETEMtQUNTM1huaktPNTBlM1JSRE9VQkhnRlcwSTZkWDF4eTJYdVZvTVZCNHd0dVRieG03SDBUalNoeUJIN0hkSHVDcFVOOERLWVdYZkoydDA3OWZHblhPdmNkdHpReTU0V0gtSmdZU0RNZlBRNnR5WW85aGFodTczeTF5bER5MVczdw?oc=5",
-   "summary": "Apache HTTP Server, allarme sicurezza: tre vulnerabilità, una consente RCE da remoto &nbsp;&nbsp; Red Hot Cyber",
-   "source": "Red Hot Cyber",
-   "lang": "it",
-   "type": "news",
-   "date": "2026-11-12T17:16:00Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -14198,9 +14200,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14208,9 +14210,9 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14518,6 +14520,16 @@
    "last": "2026-11-17T00:16:11"
   },
   {
+   "name": "UTA0178",
+   "type": "apt",
+   "country": "CN",
+   "watch": false,
+   "mentions": 1,
+   "claims": 0,
+   "claims_it": 0,
+   "last": "2026-11-20T06:33:31Z"
+  },
+  {
    "name": "AuditTeam",
    "type": "ransomware",
    "country": "",
@@ -14819,10 +14831,35 @@
   "Lazarus Group": "apt",
   "Callisto": "apt",
   "Sea Turtle": "apt",
+  "UTA0178": "apt",
   "SilentAir": "apt"
  },
  "known_actors": 1530,
  "iocs": [
+  {
+   "ioc": "2[.]26[.]55[.]223:8080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 70,
+   "date": "2026-11-20T07:01:01",
+   "tags": [
+    "SalasStealer",
+    "static-config",
+    "VIGIA"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036096/"
+  },
+  {
+   "ioc": "hxxps://bimbomhub[.]mom/",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 75,
+   "date": "2026-11-20T06:34:01",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2036095/"
+  },
   {
    "ioc": "www[.]riadbabyacout[.]com",
    "type": "domain",
@@ -17421,35 +17458,94 @@
     "netgear"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2035895/"
-  },
-  {
-   "ioc": "32fdb3ed8e69c9ab0bd385decdc8d486db8b75df681e978d80c9ea5430ecbef5",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 75,
-   "date": "2026-11-20T04:56:39",
-   "tags": [
-    "Mirai",
-    "netgear"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2035896/"
-  },
-  {
-   "ioc": "491a01d47c2ab2276705eac6b684c8c15d01071957c2875fb5e2282c934e443a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 75,
-   "date": "2026-11-20T04:56:39",
-   "tags": [
-    "Mirai",
-    "netgear"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2035897/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://115[.]49[.]8[.]164:57441/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-20T06:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4071082/"
+  },
+  {
+   "ioc": "hxxp://59[.]97[.]249[.]116:43105/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-20T06:45:12",
+   "link": "https://urlhaus.abuse.ch/url/4071081/"
+  },
+  {
+   "ioc": "hxxp://42[.]226[.]210[.]198:49189/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-20T06:41:08",
+   "link": "https://urlhaus.abuse.ch/url/4071080/"
+  },
+  {
+   "ioc": "hxxps://gitlab[.]com/Bledderhawk/fivem-mod-menu/-/raw/main/Loader[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "gitlab",
+    "LummaStealer"
+   ],
+   "date": "2026-11-20T06:37:07",
+   "link": "https://urlhaus.abuse.ch/url/4071079/"
+  },
+  {
+   "ioc": "hxxp://59[.]97[.]249[.]116:43105/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-20T06:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4071078/"
+  },
+  {
+   "ioc": "hxxp://106[.]40[.]242[.]75:54822/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-20T06:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4071077/"
+  },
+  {
+   "ioc": "hxxp://196[.]190[.]224[.]62:32962/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-20T06:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4071075/"
+  },
+  {
+   "ioc": "hxxp://115[.]55[.]253[.]40:51891/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-20T06:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4071076/"
+  },
   {
    "ioc": "hxxp://83[.]228[.]109[.]209:47628/i",
    "host_it": false,
@@ -19040,116 +19136,12 @@
    ],
    "date": "2026-11-19T21:38:07",
    "link": "https://urlhaus.abuse.ch/url/4070932/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Magentacluplay/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:38:07",
-   "link": "https://urlhaus.abuse.ch/url/4070933/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Magentacluplay/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:38:07",
-   "link": "https://urlhaus.abuse.ch/url/4070934/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Magentacluplay/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:38:07",
-   "link": "https://urlhaus.abuse.ch/url/4070935/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Magentacluplay/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:12",
-   "link": "https://urlhaus.abuse.ch/url/4070929/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PhoenixSleeve/tg-fix/releases/download/tg-fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:11",
-   "link": "https://urlhaus.abuse.ch/url/4070927/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PhoenixSleeve/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:11",
-   "link": "https://urlhaus.abuse.ch/url/4070928/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PhoenixSleeve/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:10",
-   "link": "https://urlhaus.abuse.ch/url/4070926/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PhoenixSleeve/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:09",
-   "link": "https://urlhaus.abuse.ch/url/4070921/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 165
+   "count": 154
   },
   {
    "name": "ZStealer",
@@ -19169,7 +19161,7 @@
   },
   {
    "name": "AsyncRAT",
-   "count": 36
+   "count": 38
   },
   {
    "name": "Sliver",
@@ -19188,20 +19180,16 @@
    "count": 27
   },
   {
-   "name": "Unknown Loader",
-   "count": 24
-  },
-  {
    "name": "Unknown Stealer",
    "count": 24
   },
   {
-   "name": "Potassium",
+   "name": "Unknown Loader",
    "count": 21
   },
   {
-   "name": "IClickFix",
-   "count": 20
+   "name": "Potassium",
+   "count": 21
   },
   {
    "name": "Unknown RAT",
@@ -19220,24 +19208,20 @@
    "count": 16
   },
   {
-   "name": "php.shin_webshell",
-   "count": 14
+   "name": "WARDENStealer",
+   "count": 15
   },
   {
-   "name": "WARDENStealer",
+   "name": "IClickFix",
+   "count": 15
+  },
+  {
+   "name": "php.shin_webshell",
    "count": 14
   },
   {
    "name": "Remcos",
    "count": 14
-  },
-  {
-   "name": "Agent Tesla",
-   "count": 10
-  },
-  {
-   "name": "Prometei",
-   "count": 10
   },
   {
    "name": "SNOWLIGHT",
@@ -19246,6 +19230,14 @@
   {
    "name": "Mozi",
    "count": 9
+  },
+  {
+   "name": "DCRat",
+   "count": 8
+  },
+  {
+   "name": "Prometei",
+   "count": 7
   }
  ],
  "agid_campaigns": [
@@ -19276,25 +19268,25 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.8,
+    "value": 57.77,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.52,
+    "value": 7.42,
     "rank": 2
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 3.08,
+    "value": 3.02,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.94,
+    "value": 2.95,
     "rank": 4
    },
    {
@@ -19312,37 +19304,37 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.92,
+    "value": 1.95,
     "rank": 7
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 1.78,
+    "value": 1.8,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.61,
+    "value": 1.59,
     "rank": 9
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.24,
+    "value": 1.28,
     "rank": 10
    },
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.09,
+    "value": 1.12,
     "rank": 11
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 0.92,
+    "value": 0.93,
     "rank": 12
    }
   ],
@@ -19356,7 +19348,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.82,
+    "value": 55.84,
     "rank": 1
    },
    {
@@ -19366,21 +19358,21 @@
     "rank": 2
    },
    {
-    "code": "GB",
-    "name": "United Kingdom",
+    "code": "IL",
+    "name": "Israel",
     "value": 2.98,
     "rank": 3
    },
    {
-    "code": "IL",
-    "name": "Israel",
+    "code": "GB",
+    "name": "United Kingdom",
     "value": 2.97,
     "rank": 4
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.85,
+    "value": 2.84,
     "rank": 5
    },
    {
@@ -19410,7 +19402,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.28,
+    "value": 1.27,
     "rank": 10
    },
    {
