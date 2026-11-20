@@ -1,6 +1,19 @@
 {
- "updated": "2026-11-20T05:31:07Z",
+ "updated": "2026-11-20T06:01:13Z",
  "news": [
+  {
+   "id": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+   "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+   "link": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+   "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher wh…",
+   "source": "The Hacker News",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-20T05:30:01Z",
+   "actors": [],
+   "threat": false,
+   "highlight": true
+  },
   {
    "id": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
    "title": "VMware patches vCenter zero-day exploited in attacks since September",
@@ -10613,19 +10626,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "https://www.cybersecurity360.it/soluzioni-aziendali/gestione-del-rischio-ict-in-dora-cosa-significa-davvero/",
-   "title": "Gestione del rischio ICT in DORA: cosa significa davvero",
-   "link": "https://www.cybersecurity360.it/soluzioni-aziendali/gestione-del-rischio-ict-in-dora-cosa-significa-davvero/",
-   "summary": "La gestione del rischio ICT è il primo pilastro di DORA e richiede molto più di controlli di cybersecurity. Dalla mappatura dei sistemi critici alla valutazione dei fornitori, fino alla Business Impact Analysis, ecco come integrare rischio tecnologico, continuità operativa e responsabilità del manag…",
-   "source": "Cybersecurity360",
-   "lang": "it",
-   "type": "news",
-   "date": "2026-11-12T17:13:33Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -14198,8 +14198,8 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Sandworm",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14208,8 +14208,8 @@
    "last": ""
   },
   {
-   "name": "Sandworm",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14823,6 +14823,59 @@
  },
  "known_actors": 1530,
  "iocs": [
+  {
+   "ioc": "e8d1c85f0e6376806fe2190065f3dfab69c7d8e4c18d848f9e3d810942e1425c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-20T05:59:47",
+   "tags": [
+    "elf",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036070/"
+  },
+  {
+   "ioc": "927cd1a20b55776b9a8bc5817a48608041d00df378da2abbeff76249722c882b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SalatStealer",
+   "confidence": 95,
+   "date": "2026-11-20T05:59:46",
+   "tags": [
+    "exe",
+    "SalatStealer",
+    "stealer",
+    "upx"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036069/"
+  },
+  {
+   "ioc": "608c4a0860edb73fc316dbfc7d2a81d5ffce173d124d8302023d6e6a2a3e8097",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SalatStealer",
+   "confidence": 95,
+   "date": "2026-11-20T05:59:45",
+   "tags": [
+    "exe",
+    "SalatStealer",
+    "stealer",
+    "upx"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036068/"
+  },
+  {
+   "ioc": "hxxps://huishushie[.]com/",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 75,
+   "date": "2026-11-20T05:32:43",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2036067/"
+  },
   {
    "ioc": "125[.]208[.]16[.]54:2015",
    "type": "ip:port",
@@ -17379,58 +17432,41 @@
     "modat"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2035870/"
-  },
-  {
-   "ioc": "154[.]12[.]28[.]138:18443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Cobalt Strike",
-   "confidence": 75,
-   "date": "2026-11-20T03:45:28",
-   "tags": [
-    "CobaltStrike",
-    "drb-ra",
-    "modat"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2035871/"
-  },
-  {
-   "ioc": "hxxps://setorderta[.]rest/",
-   "type": "url",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
-   "confidence": 75,
-   "date": "2026-11-20T03:30:13",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2035869/"
-  },
-  {
-   "ioc": "188[.]253[.]28[.]5:8041",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-20T03:29:32",
-   "tags": [
-    "config",
-    "ConnectWise",
-    "RMM-abuse",
-    "ScreenConnect"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2035868/"
-  },
-  {
-   "ioc": "76ae6d577ba96b1c3a1de8b21c32a9faf6040f7e78d98269e0469d896c29dc64",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 75,
-   "date": "2026-11-20T03:10:24",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2035866/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://125[.]47[.]32[.]222:54254/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-20T05:58:19",
+   "link": "https://urlhaus.abuse.ch/url/4071072/"
+  },
+  {
+   "ioc": "hxxp://178[.]141[.]31[.]141:55177/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-20T05:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4071071/"
+  },
+  {
+   "ioc": "hxxp://182[.]112[.]186[.]226:59723/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-20T05:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4071070/"
+  },
   {
    "ioc": "hxxp://123[.]11[.]15[.]4:45721/i",
    "host_it": false,
@@ -17678,7 +17714,7 @@
   {
    "ioc": "hxxp://115[.]55[.]228[.]246:39242/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-20T03:17:06",
@@ -18136,7 +18172,7 @@
   {
    "ioc": "hxxp://115[.]56[.]153[.]234:55570/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-20T00:02:05",
@@ -18182,7 +18218,7 @@
   {
    "ioc": "hxxp://117[.]199[.]74[.]85:58264/bin[.]sh",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-19T23:47:07",
@@ -18227,7 +18263,7 @@
   {
    "ioc": "hxxp://42[.]54[.]66[.]114:54476/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-19T23:32:06",
@@ -18263,7 +18299,7 @@
   {
    "ioc": "hxxp://196[.]189[.]101[.]82:44482/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-19T23:17:04",
@@ -18419,7 +18455,7 @@
   {
    "ioc": "hxxp://59[.]96[.]141[.]102:47081/i",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-19T22:17:07",
@@ -19096,51 +19132,12 @@
    ],
    "date": "2026-11-19T21:37:09",
    "link": "https://urlhaus.abuse.ch/url/4070923/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PhoenixSleeve/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:09",
-   "link": "https://urlhaus.abuse.ch/url/4070924/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Magentacluplay/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:09",
-   "link": "https://urlhaus.abuse.ch/url/4070925/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/PhoenixSleeve/tg-fix/releases/download/tg-fix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-19T21:37:07",
-   "link": "https://urlhaus.abuse.ch/url/4070919/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 165
+   "count": 166
   },
   {
    "name": "ZStealer",
@@ -19191,6 +19188,10 @@
    "count": 21
   },
   {
+   "name": "SalatStealer",
+   "count": 20
+  },
+  {
    "name": "Unknown RAT",
    "count": 20
   },
@@ -19201,10 +19202,6 @@
   {
    "name": "IClickFix",
    "count": 17
-  },
-  {
-   "name": "SalatStealer",
-   "count": 15
   },
   {
    "name": "NjRAT",
@@ -19219,20 +19216,20 @@
    "count": 14
   },
   {
+   "name": "WARDENStealer",
+   "count": 12
+  },
+  {
    "name": "Mozi",
    "count": 12
   },
   {
-   "name": "WARDENStealer",
-   "count": 11
+   "name": "Prometei",
+   "count": 12
   },
   {
    "name": "SNOWLIGHT",
    "count": 10
-  },
-  {
-   "name": "DCRat",
-   "count": 9
   },
   {
    "name": "Agent Tesla",
@@ -19267,37 +19264,37 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 57.85,
+    "value": 57.8,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.57,
+    "value": 7.52,
     "rank": 2
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 3.11,
+    "value": 3.08,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.92,
+    "value": 2.94,
     "rank": 4
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.32,
+    "value": 2.33,
     "rank": 5
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.29,
+    "value": 2.3,
     "rank": 6
    },
    {
@@ -19309,25 +19306,25 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 1.77,
+    "value": 1.78,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.64,
+    "value": 1.61,
     "rank": 9
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.21,
+    "value": 1.24,
     "rank": 10
    },
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.06,
+    "value": 1.09,
     "rank": 11
    },
    {
@@ -19347,7 +19344,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.79,
+    "value": 55.82,
     "rank": 1
    },
    {
@@ -19359,19 +19356,19 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.02,
+    "value": 2.98,
     "rank": 3
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.96,
+    "value": 2.97,
     "rank": 4
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.86,
+    "value": 2.85,
     "rank": 5
    },
    {
@@ -19389,19 +19386,19 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.95,
+    "value": 1.96,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.48,
+    "value": 1.49,
     "rank": 9
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.3,
+    "value": 1.28,
     "rank": 10
    },
    {
