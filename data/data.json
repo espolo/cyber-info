@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T20:01:08Z",
+ "updated": "2026-11-21T20:31:06Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
@@ -10527,6 +10527,19 @@
  ],
  "ransomware": [
   {
+   "id": "qilin|ION Asset Architecture UK LTD",
+   "victim": "ION Asset Architecture UK LTD",
+   "group": "qilin",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-21T21:16:27",
+   "link": "https://www.ransomlook.io/group/qilin",
+   "summary": "Software",
+   "sources": [
+    "RansomLook"
+   ]
+  },
+  {
    "id": "safepay|tiic.com.ph",
    "victim": "tiic.com.ph",
    "group": "safepay",
@@ -13656,19 +13669,6 @@
    "sources": [
     "RansomLook"
    ]
-  },
-  {
-   "id": "chaos|radienzliving.com",
-   "victim": "radienzliving.com",
-   "group": "chaos",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-17T05:14:26",
-   "link": "https://www.ransomlook.io/group/chaos",
-   "summary": "210GB Accounts Payable, Accounts Receivable, Finance Documents,Forecasts,G & O,Leases,Bank Letters,COI, W9,CF_Procedures,Government Filings, Process and Procedures,Sales,Month End,Fixed Assets,Commercialization,Customer Service, EHS,Inventory,Mainten…",
-   "sources": [
-    "RansomLook"
-   ]
   }
  ],
  "kev": [
@@ -14080,14 +14080,14 @@
    "country": "",
    "watch": true,
    "mentions": 0,
-   "claims": 2,
+   "claims": 3,
    "claims_it": 0,
-   "last": "2026-11-18T20:21:01"
+   "last": "2026-11-21T21:16:27"
   },
   {
-   "name": "Sandworm",
+   "name": "Lazarus Group",
    "type": "apt",
-   "country": "RU",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14115,9 +14115,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
+   "name": "Sandworm",
    "type": "apt",
-   "country": "KP",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14653,16 +14653,6 @@
    "claims": 1,
    "claims_it": 0,
    "last": "2026-11-17T09:15:22"
-  },
-  {
-   "name": "chaos",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 1,
-   "claims_it": 0,
-   "last": "2026-11-17T05:14:26"
   }
  ],
  "actor_types": {
@@ -14692,7 +14682,6 @@
   "akira": "ransomware",
   "aurora": "ransomware",
   "blackout": "ransomware",
-  "chaos": "ransomware",
   "cloak": "ransomware",
   "crypto24": "ransomware",
   "direwolf": "ransomware",
@@ -14731,6 +14720,173 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "e8b5de14c9347a9ba909789203f7c9651593d70ee8b24a89ac269b9209944fca",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T20:05:36",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038541/"
+  },
+  {
+   "ioc": "e123bfd4b2eb837e02c0a1efc06a34ac982d197bd3fa65bd545765d0a220fea6",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T20:05:36",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038542/"
+  },
+  {
+   "ioc": "8934326c5af7663597a4c19a81a58f6b0d23a2af97616343b3c25a52d5b12b19",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T20:05:36",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038543/"
+  },
+  {
+   "ioc": "cfcc27972cb4599acd3e761d50117243ca716b7a0d40aceefbe0deaef2652736",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T20:05:36",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038544/"
+  },
+  {
+   "ioc": "c0cde708b4e05bbd741dc96bf9a4593731a6a3d06175d2ebeea2b061af2e1525",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T20:05:36",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038545/"
+  },
+  {
+   "ioc": "df5f364a573312665ebe4b10d344ac7572ad7146c8a7095c5bf25c55cbd9d5de",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T20:05:36",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038546/"
+  },
+  {
+   "ioc": "c2e7412ff81afc580dd6bb00954747a5ee81a05743604d65ee530a5c7b7ed9d9",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T20:05:35",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038540/"
+  },
+  {
+   "ioc": "49[.]233[.]199[.]138:18084",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-21T20:05:06",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038539/"
+  },
+  {
+   "ioc": "43[.]136[.]175[.]43:8848",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-21T20:05:05",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038537/"
+  },
+  {
+   "ioc": "136[.]0[.]37[.]178:8000",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-21T20:05:05",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038538/"
+  },
+  {
+   "ioc": "23[.]95[.]220[.]222:20898",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-21T20:05:04",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038536/"
+  },
   {
    "ioc": "ff70b432b683ebdb6b43b582cda8912a61002a02c6cd778a65e6baff296fac63",
    "type": "sha256_hash",
@@ -17187,175 +17343,89 @@
     "victim"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038358/"
-  },
-  {
-   "ioc": "baseball[.]eu[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 50,
-   "date": "2026-11-21T18:11:12",
-   "tags": [
-    "beaconing",
-    "inject",
-    "victim"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038359/"
-  },
-  {
-   "ioc": "beritakepri[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 50,
-   "date": "2026-11-21T18:11:12",
-   "tags": [
-    "beaconing",
-    "inject",
-    "victim"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038360/"
-  },
-  {
-   "ioc": "bestfinance-blog[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 50,
-   "date": "2026-11-21T18:11:12",
-   "tags": [
-    "beaconing",
-    "inject",
-    "victim"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038361/"
-  },
-  {
-   "ioc": "biseresults[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 50,
-   "date": "2026-11-21T18:11:12",
-   "tags": [
-    "beaconing",
-    "inject",
-    "victim"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038362/"
-  },
-  {
-   "ioc": "bom88[.]codes",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 50,
-   "date": "2026-11-21T18:11:12",
-   "tags": [
-    "beaconing",
-    "inject",
-    "victim"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038363/"
-  },
-  {
-   "ioc": "bsop[.]edu[.]ph",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 50,
-   "date": "2026-11-21T18:11:12",
-   "tags": [
-    "beaconing",
-    "inject",
-    "victim"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038364/"
-  },
-  {
-   "ioc": "certifiedfoodies[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 50,
-   "date": "2026-11-21T18:11:12",
-   "tags": [
-    "beaconing",
-    "inject",
-    "victim"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038365/"
-  },
-  {
-   "ioc": "2fd7a8bf2dc2a04af0efbb9e470951b0393d5274c58c5a244e6d977bc467625e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T18:05:18",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038356/"
-  },
-  {
-   "ioc": "bb547720b5e797aa91942a5b2ba663155a0a3309beb803ee776ef06902653ba9",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T18:05:17",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038350/"
-  },
-  {
-   "ioc": "fc0e430c2734f6877cd97365fea42a6ce5a12d9562debd15e2d18c887ce28a11",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T18:05:17",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038351/"
-  },
-  {
-   "ioc": "dd8364ee4d8972a5865f25fbe37dcbc183aee11c4b834e4b5325bab6ce8332de",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T18:05:17",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038352/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://182[.]126[.]120[.]231:42374/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-21T20:30:14",
+   "link": "https://urlhaus.abuse.ch/url/4073490/"
+  },
+  {
+   "ioc": "hxxp://60[.]23[.]188[.]227:47013/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-21T20:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4073489/"
+  },
+  {
+   "ioc": "hxxp://115[.]62[.]155[.]207:47086/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T20:17:05",
+   "link": "https://urlhaus.abuse.ch/url/4073488/"
+  },
+  {
+   "ioc": "hxxp://203[.]177[.]28[.]149:40304/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T20:02:08",
+   "link": "https://urlhaus.abuse.ch/url/4073487/"
+  },
+  {
+   "ioc": "hxxp://115[.]49[.]230[.]227:45898/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T20:02:07",
+   "link": "https://urlhaus.abuse.ch/url/4073486/"
+  },
+  {
+   "ioc": "hxxp://118[.]248[.]133[.]205:48634/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-21T20:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4073485/"
+  },
+  {
+   "ioc": "hxxp://37[.]54[.]14[.]52:34150/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T20:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4073484/"
+  },
   {
    "ioc": "hxxp://115[.]62[.]155[.]207:47086/bin[.]sh",
    "host_it": false,
@@ -19396,109 +19466,6 @@
    ],
    "date": "2026-11-21T18:52:10",
    "link": "https://urlhaus.abuse.ch/url/4073341/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/html-hello-print/refs/heads/master/public/fonts/fa-solid-700[.]otf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:10",
-   "link": "https://urlhaus.abuse.ch/url/4073340/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Vicky2114/flask/refs/heads/main/public/fonts/fa-solid[.]lkf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:10",
-   "link": "https://urlhaus.abuse.ch/url/4073339/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/education-system-server/refs/heads/main/public/fonts/fa-solid-700[.]otf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:09",
-   "link": "https://urlhaus.abuse.ch/url/4073338/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/OlehKobrynovych/React__Internet-shop/refs/heads/master/public/fonts/fa-solid-400[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:09",
-   "link": "https://urlhaus.abuse.ch/url/4073337/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/hash_node_blogs/refs/heads/main/public/fonts/fa-solid-700[.]otf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:09",
-   "link": "https://urlhaus.abuse.ch/url/4073336/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Vallejo1921/servicios-software/refs/heads/main/public/fonts/fa-solid[.]lfk",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:09",
-   "link": "https://urlhaus.abuse.ch/url/4073335/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/youtube-clone-front-end/refs/heads/main/public/fonts/fa-solid-700[.]otf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:09",
-   "link": "https://urlhaus.abuse.ch/url/4073334/"
   }
  ],
  "malware_top": [
@@ -19531,12 +19498,12 @@
    "count": 84
   },
   {
-   "name": "ClearFake",
-   "count": 37
+   "name": "Cobalt Strike",
+   "count": 38
   },
   {
-   "name": "Cobalt Strike",
-   "count": 36
+   "name": "ClearFake",
+   "count": 37
   },
   {
    "name": "SalatStealer",
@@ -19567,6 +19534,10 @@
    "count": 12
   },
   {
+   "name": "VShell",
+   "count": 10
+  },
+  {
    "name": "IClickFix",
    "count": 10
   },
@@ -19580,10 +19551,6 @@
   },
   {
    "name": "WARDENStealer",
-   "count": 8
-  },
-  {
-   "name": "VShell",
    "count": 8
   },
   {
