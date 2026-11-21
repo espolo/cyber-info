@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T08:31:06Z",
+ "updated": "2026-11-21T09:01:13Z",
  "news": [
   {
    "id": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
@@ -14085,6 +14085,16 @@
    "last": "2026-11-18T20:21:01"
   },
   {
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Sandworm",
    "type": "apt",
    "country": "RU",
@@ -14095,8 +14105,8 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14108,16 +14118,6 @@
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Killnet",
-   "type": "hacktivist",
-   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14731,6 +14731,49 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "kudefy[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-21T08:54:33",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037836/"
+  },
+  {
+   "ioc": "36815382727fe02755ee0a6eb4cdb66b359e140f6a077bb8c3de57a246fad5d7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 50,
+   "date": "2026-11-21T08:53:47",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037835/"
+  },
+  {
+   "ioc": "e79c0a60cc0685ec4e6955385df6527db07ea820f932697d40fc5ffb652c341a",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-21T08:53:44",
+   "tags": [
+    "elf",
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037834/"
+  },
   {
    "ioc": "hxxp://45[.]198[.]224[.]75/x86_64",
    "type": "url",
@@ -17572,45 +17615,61 @@
     "macOS"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2037733/"
-  },
-  {
-   "ioc": "44edfb6d20c42172faba8c0a4405f43fa2adb6c2e40bf612c15b08ef138a04fc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T05:35:41",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037732/"
-  },
-  {
-   "ioc": "41e7123048891b8eaec1f4af3c9946f301e763122849c11fa4d5983f782bde5d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T05:35:40",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037730/"
-  },
-  {
-   "ioc": "4319503bbf832c6cba9790516f89c14e6301443b13ba2954dfea74c4bddcf602",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T05:35:40",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037731/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://95[.]9[.]35[.]137:50420/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-21T08:51:13",
+   "link": "https://urlhaus.abuse.ch/url/4072837/"
+  },
+  {
+   "ioc": "hxxp://42[.]224[.]98[.]35:59055/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T08:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4072836/"
+  },
+  {
+   "ioc": "hxxp://95[.]9[.]35[.]137:50420/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-21T08:38:13",
+   "link": "https://urlhaus.abuse.ch/url/4072835/"
+  },
+  {
+   "ioc": "hxxp://42[.]239[.]231[.]31:38748/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T08:32:14",
+   "link": "https://urlhaus.abuse.ch/url/4072834/"
+  },
   {
    "ioc": "hxxp://s53[.]eu/arch/armv7l",
    "host_it": false,
@@ -19326,53 +19385,6 @@
    ],
    "date": "2026-11-21T06:57:58",
    "link": "https://urlhaus.abuse.ch/url/4072689/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/Heyiwei-arc700",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072690/"
-  },
-  {
-   "ioc": "hxxp://18[.]220[.]36[.]224/main_mips",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072691/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-agent-linux-mips",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "mirai",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072692/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/armv7l",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Ngioweb"
-   ],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072693/"
   }
  ],
  "malware_top": [
@@ -19390,7 +19402,7 @@
   },
   {
    "name": "Mirai",
-   "count": 118
+   "count": 111
   },
   {
    "name": "Unknown Stealer",
@@ -19402,14 +19414,14 @@
   },
   {
    "name": "ClearFake",
-   "count": 44
-  },
-  {
-   "name": "Cobalt Strike",
-   "count": 25
+   "count": 41
   },
   {
    "name": "Vidar",
+   "count": 24
+  },
+  {
+   "name": "Cobalt Strike",
    "count": 24
   },
   {
@@ -19433,8 +19445,8 @@
    "count": 15
   },
   {
-   "name": "Remcos",
-   "count": 15
+   "name": "php.shin_webshell",
+   "count": 14
   },
   {
    "name": "Unknown RAT",
@@ -19445,19 +19457,11 @@
    "count": 14
   },
   {
-   "name": "php.shin_webshell",
-   "count": 13
-  },
-  {
    "name": "VShell",
    "count": 12
   },
   {
    "name": "PureRAT",
-   "count": 12
-  },
-  {
-   "name": "AsyncRAT",
    "count": 12
   },
   {
@@ -19469,8 +19473,16 @@
    "count": 12
   },
   {
+   "name": "Remcos",
+   "count": 12
+  },
+  {
    "name": "XWorm",
    "count": 11
+  },
+  {
+   "name": "AsyncRAT",
+   "count": 9
   },
   {
    "name": "DCRat",
@@ -19511,55 +19523,55 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 6.8,
+    "value": 6.77,
     "rank": 2
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 3.16,
+    "value": 3.2,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.07,
+    "value": 3.12,
     "rank": 4
-   },
-   {
-    "code": "GB",
-    "name": "United Kingdom",
-    "value": 2.74,
-    "rank": 5
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.71,
+    "value": 2.72,
+    "rank": 5
+   },
+   {
+    "code": "GB",
+    "name": "United Kingdom",
+    "value": 2.67,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.08,
+    "value": 2.07,
     "rank": 7
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 1.95,
+    "value": 1.96,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.44,
+    "value": 1.47,
     "rank": 9
    },
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.21,
+    "value": 1.22,
     "rank": 10
    },
    {
@@ -19571,15 +19583,15 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 0.93,
+    "value": 0.95,
     "rank": 12
    }
   ],
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.34,
-   "rank": 30
+   "value": 0.38,
+   "rank": 28
   },
   "l7_7d": [
    {
@@ -19591,13 +19603,13 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.88,
+    "value": 7.87,
     "rank": 2
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 3.01,
+    "value": 3.02,
     "rank": 3
    },
    {
@@ -19609,13 +19621,13 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.8,
+    "value": 2.79,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.37,
+    "value": 2.38,
     "rank": 6
    },
    {
