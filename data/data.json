@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T15:31:14Z",
+ "updated": "2026-11-21T16:01:22Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
@@ -10534,12 +10534,13 @@
    "id": "lockbit5|genica.com.ve",
    "victim": "genica.com.ve",
    "group": "LockBit",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-21T12:17:28",
-   "link": "https://www.ransomlook.io/group/lockbit5",
+   "country": "VE",
+   "sector": "Other",
+   "date": "2026-11-21T11:33:10",
+   "link": "https://www.ransomware.live/group/lockbit5",
    "summary": "Genica is a leading company in Latin America that offers a robust portfolio of over 40 products, inc...",
    "sources": [
+    "ransomware.live",
     "RansomLook"
    ]
   },
@@ -12254,6 +12255,19 @@
    ]
   },
   {
+   "id": "n0n|Company #237",
+   "victim": "Company #237",
+   "group": "n0n",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-18T22:17:42",
+   "link": "https://www.ransomlook.io/group/n0n",
+   "summary": "passenger transportation · Mexico",
+   "sources": [
+    "RansomLook"
+   ]
+  },
+  {
    "id": "n0n|Company #236",
    "victim": "Company #236",
    "group": "n0n",
@@ -12577,20 +12591,6 @@
    "date": "2026-11-18T22:12:27",
    "link": "https://www.ransomware.live/group/N0n",
    "summary": "consumer lending · United States | [PENDING EXPOSURE]",
-   "sources": [
-    "ransomware.live",
-    "RansomLook"
-   ]
-  },
-  {
-   "id": "N0n|Company #237",
-   "victim": "Company #237",
-   "group": "N0n",
-   "country": "MX",
-   "sector": "Not Found",
-   "date": "2026-11-18T22:11:51",
-   "link": "https://www.ransomware.live/group/N0n",
-   "summary": "passenger transportation · Mexico | [PENDING EXPOSURE]",
    "sources": [
     "ransomware.live",
     "RansomLook"
@@ -14054,7 +14054,7 @@
    "mentions": 0,
    "claims": 6,
    "claims_it": 0,
-   "last": "2026-11-21T12:17:28"
+   "last": "2026-11-21T11:33:10"
   },
   {
    "name": "akira",
@@ -14087,16 +14087,6 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
@@ -14108,6 +14098,16 @@
   },
   {
    "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
    "type": "apt",
    "country": "RU",
    "watch": true,
@@ -14142,7 +14142,7 @@
    "country": "",
    "watch": false,
    "mentions": 0,
-   "claims": 28,
+   "claims": 29,
    "claims_it": 0,
    "last": "2026-11-20T12:17:44"
   },
@@ -14317,16 +14317,6 @@
    "last": "2026-11-19T19:20:06"
   },
   {
-   "name": "N0n",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 5,
-   "claims_it": 0,
-   "last": "2026-11-18T22:14:17"
-  },
-  {
    "name": "Eclipse",
    "type": "ransomware",
    "country": "",
@@ -14375,6 +14365,16 @@
    "claims": 4,
    "claims_it": 0,
    "last": "2026-11-19T03:51:04"
+  },
+  {
+   "name": "N0n",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 0,
+   "claims": 4,
+   "claims_it": 0,
+   "last": "2026-11-18T22:14:17"
   },
   {
    "name": "brain cipher",
@@ -14724,235 +14724,270 @@
  "known_actors": 1528,
  "iocs": [
   {
-   "ioc": "62[.]60[.]226[.]50:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AMOS",
-   "confidence": 75,
-   "date": "2026-11-21T15:27:40",
+   "ioc": "cdee0cd66f63d11c1b9374ad4869fc602d3f70fd279ba9c246a107439fd1353c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-21T15:59:59",
    "tags": [
-    "ClickFix",
-    "exfil",
-    "macOS",
-    "phexia"
+    "elf",
+    "Mirai",
+    "Torii"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038201/"
+   "link": "https://threatfox.abuse.ch/ioc/2038204/"
   },
   {
-   "ioc": "62[.]60[.]226[.]50:1337",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AMOS",
-   "confidence": 75,
-   "date": "2026-11-21T15:27:40",
+   "ioc": "6219168e0de91145d2625d238c470add85dcaf1a209bc9c7839fd83bfb6e96de",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-21T15:59:58",
    "tags": [
-    "ClickFix",
-    "exfil",
-    "macOS",
-    "phexia"
+    "elf",
+    "Mirai",
+    "Torii"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038202/"
+   "link": "https://threatfox.abuse.ch/ioc/2038203/"
   },
   {
-   "ioc": "bigstake[.]club",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AMOS",
+   "ioc": "7a656791b445fff02ac6e9dd1081cc265db935476a9ee71139cb6aef52102e2b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Hajime",
    "confidence": 75,
-   "date": "2026-11-21T15:26:03",
-   "tags": [
-    "ClickFix",
-    "etherhiding",
-    "macOS",
-    "phexia",
-    "Polygon"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038199/"
+   "date": "2026-11-21T15:52:51",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037894/"
   },
   {
-   "ioc": "spcigud[.]top",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AMOS",
-   "confidence": 75,
-   "date": "2026-11-21T15:26:03",
+   "ioc": "99412eddb4712a891754cbab961766a231154b4e47e92545891b95fc46101d9f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-21T15:52:48",
    "tags": [
-    "ClickFix",
-    "etherhiding",
-    "macOS",
-    "phexia",
-    "Polygon"
+    "ARM",
+    "cowrie",
+    "elf",
+    "honeypot",
+    "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038200/"
+   "link": "https://threatfox.abuse.ch/ioc/2037896/"
   },
   {
-   "ioc": "white-vpn[.]top",
+   "ioc": "www[.]themiluimnikim[.]org[.]il",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:35",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:48",
    "tags": [
-    "apk",
-    "CoralCobra",
-    "Dropper",
-    "EVANGELION",
-    "VideoDPS"
+    "BSC-testnet",
+    "ClickFix",
+    "etherhiding"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038195/"
+   "link": "https://threatfox.abuse.ch/ioc/2037900/"
   },
   {
-   "ioc": "videoavarii17-sbs[.]pages[.]dev",
+   "ioc": "ulmherbals[.]gunturwebdesigning[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:35",
+   "malware": "ClearFake",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:47",
    "tags": [
-    "apk",
-    "CoralCobra",
-    "Dropper",
-    "EVANGELION",
-    "VideoDPS"
+    "BSC-testnet",
+    "ClickFix",
+    "etherhiding"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038196/"
+   "link": "https://threatfox.abuse.ch/ioc/2037901/"
   },
   {
-   "ioc": "bankbonus[.]live",
+   "ioc": "pommeau-de-douche[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:35",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:47",
    "tags": [
-    "apk",
-    "CoralCobra",
-    "Dropper",
-    "EVANGELION",
-    "VideoDPS"
+    "BSC-testnet",
+    "ClickFix",
+    "etherhiding"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038197/"
+   "link": "https://threatfox.abuse.ch/ioc/2037902/"
   },
   {
-   "ioc": "18tliktok[.]shop",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:35",
-   "tags": [
-    "apk",
-    "CoralCobra",
-    "Dropper",
-    "EVANGELION",
-    "VideoDPS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038198/"
-  },
-  {
-   "ioc": "mobiletoolapp[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:34",
-   "tags": [
-    "Android",
-    "ByVzor",
-    "Ransomware",
-    "RAT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038193/"
-  },
-  {
-   "ioc": "38[.]180[.]162[.]39:443",
+   "ioc": "52[.]186[.]171[.]181:3001",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:34",
+   "date": "2026-11-21T15:52:46",
    "tags": [
-    "Android",
-    "AS51852",
-    "ByVzor",
-    "RAT"
+    "Electron",
+    "ExaStealer",
+    "RAT",
+    "stealer"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038194/"
+   "link": "https://threatfox.abuse.ch/ioc/2037903/"
   },
   {
-   "ioc": "83[.]136[.]208[.]40:443",
-   "type": "ip:port",
+   "ioc": "prowesssoft[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:46",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037904/"
+  },
+  {
+   "ioc": "2fbf71321acb092a17f31527ac1a04c48fe9704d87eaeab5a5bdbc8afe46ec92",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:44",
+   "tags": [
+    "Discord",
+    "Electron",
+    "ExaStealer",
+    "java",
+    "RAT",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037905/"
+  },
+  {
+   "ioc": "4d719c725eb40615ab16a956d9a1958d833bd8bd1510281aaf36aa2f90b9f7ea",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:44",
+   "tags": [
+    "Discord",
+    "Electron",
+    "ExaStealer",
+    "java",
+    "RAT",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037908/"
+  },
+  {
+   "ioc": "14fbd521db526e8ee8294325699a5195af4aee0d233a2f046ef8bcf53b12f2cb",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:43",
+   "tags": [
+    "Discord",
+    "Electron",
+    "ExaStealer",
+    "java",
+    "RAT",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037906/"
+  },
+  {
+   "ioc": "23020d80d7410e07752d4c2707680fd85557ae8e2214ccda8ab46e3c2e173b1c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:43",
+   "tags": [
+    "Discord",
+    "Electron",
+    "ExaStealer",
+    "java",
+    "RAT",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037907/"
+  },
+  {
+   "ioc": "c45e3742a886edde9b32ac67c4f7a0388e2c24ef1948971b75bfa254229b3050",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:42",
+   "tags": [
+    "Discord",
+    "Electron",
+    "ExaStealer",
+    "java",
+    "RAT",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037909/"
+  },
+  {
+   "ioc": "38c74c3b28a001f1db194d18044596f22ad5bd5d714f46fea97dd52bfc1676f3",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:41",
+   "tags": [
+    "Discord",
+    "Electron",
+    "ExaStealer",
+    "java",
+    "RAT",
+    "stealer"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037910/"
+  },
+  {
+   "ioc": "maidstoneremovals[.]co[.]uk",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:40",
+   "tags": [
+    "ClickFix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037911/"
+  },
+  {
+   "ioc": "hxxps://papawork[.]lol/bot",
+   "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:33",
+   "date": "2026-11-21T15:52:39",
    "tags": [
-    "AS400897",
-    "CoralCobra",
-    "MetaMaskRAT",
-    "VLESS"
+    "Android",
+    "banker",
+    "TelegramC2",
+    "VideoDPS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038188/"
+   "link": "https://threatfox.abuse.ch/ioc/2038181/"
   },
   {
-   "ioc": "static-assetcdn[.]buzz",
+   "ioc": "papawork[.]lol",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:33",
+   "date": "2026-11-21T15:52:39",
    "tags": [
     "Android",
     "banker",
-    "ProxyBot",
-    "ShadowSVM1"
+    "VideoDPS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038189/"
-  },
-  {
-   "ioc": "apppulse-cdn[.]shop",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:33",
-   "tags": [
-    "Android",
-    "banker",
-    "ProxyBot",
-    "ShadowSVM1"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038190/"
-  },
-  {
-   "ioc": "metric-sync[.]biz",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:33",
-   "tags": [
-    "Android",
-    "banker",
-    "ProxyBot",
-    "ShadowSVM1"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038191/"
-  },
-  {
-   "ioc": "nodehealth-cdn[.]biz",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T15:14:33",
-   "tags": [
-    "Android",
-    "banker",
-    "ProxyBot",
-    "ShadowSVM1"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038192/"
+   "link": "https://threatfox.abuse.ch/ioc/2038182/"
   },
   {
    "ioc": "189[.]74[.]124[.]138:443",
@@ -14960,7 +14995,7 @@
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:32",
+   "date": "2026-11-21T15:52:38",
    "tags": [
     "Android",
     "AS48207",
@@ -14975,7 +15010,7 @@
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:32",
+   "date": "2026-11-21T15:52:38",
    "tags": [
     "Android",
     "CoralCobra",
@@ -14991,7 +15026,7 @@
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:32",
+   "date": "2026-11-21T15:52:37",
    "tags": [
     "Android",
     "CoralCobra",
@@ -15007,7 +15042,7 @@
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:32",
+   "date": "2026-11-21T15:52:37",
    "tags": [
     "Android",
     "CoralCobra",
@@ -15023,7 +15058,7 @@
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:32",
+   "date": "2026-11-21T15:52:36",
    "tags": [
     "Android",
     "CoralCobra",
@@ -15034,33 +15069,235 @@
    "link": "https://threatfox.abuse.ch/ioc/2038187/"
   },
   {
-   "ioc": "hxxps://papawork[.]lol/bot",
-   "type": "url",
+   "ioc": "83[.]136[.]208[.]40:443",
+   "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:31",
+   "date": "2026-11-21T15:52:36",
    "tags": [
-    "Android",
-    "banker",
-    "TelegramC2",
-    "VideoDPS"
+    "AS400897",
+    "CoralCobra",
+    "MetaMaskRAT",
+    "VLESS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038181/"
+   "link": "https://threatfox.abuse.ch/ioc/2038188/"
   },
   {
-   "ioc": "papawork[.]lol",
+   "ioc": "static-assetcdn[.]buzz",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T15:14:31",
+   "date": "2026-11-21T15:52:35",
    "tags": [
     "Android",
     "banker",
+    "ProxyBot",
+    "ShadowSVM1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038189/"
+  },
+  {
+   "ioc": "apppulse-cdn[.]shop",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:35",
+   "tags": [
+    "Android",
+    "banker",
+    "ProxyBot",
+    "ShadowSVM1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038190/"
+  },
+  {
+   "ioc": "metric-sync[.]biz",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:34",
+   "tags": [
+    "Android",
+    "banker",
+    "ProxyBot",
+    "ShadowSVM1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038191/"
+  },
+  {
+   "ioc": "38[.]180[.]162[.]39:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:34",
+   "tags": [
+    "Android",
+    "AS51852",
+    "ByVzor",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038194/"
+  },
+  {
+   "ioc": "nodehealth-cdn[.]biz",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:33",
+   "tags": [
+    "Android",
+    "banker",
+    "ProxyBot",
+    "ShadowSVM1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038192/"
+  },
+  {
+   "ioc": "mobiletoolapp[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:33",
+   "tags": [
+    "Android",
+    "ByVzor",
+    "Ransomware",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038193/"
+  },
+  {
+   "ioc": "white-vpn[.]top",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:32",
+   "tags": [
+    "apk",
+    "CoralCobra",
+    "Dropper",
+    "EVANGELION",
     "VideoDPS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038182/"
+   "link": "https://threatfox.abuse.ch/ioc/2038195/"
+  },
+  {
+   "ioc": "videoavarii17-sbs[.]pages[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:31",
+   "tags": [
+    "apk",
+    "CoralCobra",
+    "Dropper",
+    "EVANGELION",
+    "VideoDPS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038196/"
+  },
+  {
+   "ioc": "bankbonus[.]live",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:31",
+   "tags": [
+    "apk",
+    "CoralCobra",
+    "Dropper",
+    "EVANGELION",
+    "VideoDPS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038197/"
+  },
+  {
+   "ioc": "18tliktok[.]shop",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T15:52:31",
+   "tags": [
+    "apk",
+    "CoralCobra",
+    "Dropper",
+    "EVANGELION",
+    "VideoDPS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038198/"
+  },
+  {
+   "ioc": "bigstake[.]club",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AMOS",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:30",
+   "tags": [
+    "ClickFix",
+    "etherhiding",
+    "macOS",
+    "phexia",
+    "Polygon"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038199/"
+  },
+  {
+   "ioc": "spcigud[.]top",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AMOS",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:30",
+   "tags": [
+    "ClickFix",
+    "etherhiding",
+    "macOS",
+    "phexia",
+    "Polygon"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038200/"
+  },
+  {
+   "ioc": "62[.]60[.]226[.]50:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AMOS",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:29",
+   "tags": [
+    "ClickFix",
+    "exfil",
+    "macOS",
+    "phexia"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038201/"
+  },
+  {
+   "ioc": "62[.]60[.]226[.]50:1337",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AMOS",
+   "confidence": 75,
+   "date": "2026-11-21T15:52:28",
+   "tags": [
+    "ClickFix",
+    "exfil",
+    "macOS",
+    "phexia"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038202/"
   },
   {
    "ioc": "rililyde[.]workers[.]dev",
@@ -17106,201 +17343,1884 @@
     "CyberStrikeAI"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038008/"
-  },
-  {
-   "ioc": "167[.]104[.]99[.]17:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038009/"
-  },
-  {
-   "ioc": "169[.]58[.]246[.]69:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038010/"
-  },
-  {
-   "ioc": "170[.]205[.]30[.]185:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038011/"
-  },
-  {
-   "ioc": "170[.]39[.]192[.]98:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038012/"
-  },
-  {
-   "ioc": "172[.]252[.]172[.]13:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038013/"
-  },
-  {
-   "ioc": "172[.]252[.]172[.]14:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038014/"
-  },
-  {
-   "ioc": "172[.]252[.]172[.]15:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038015/"
-  },
-  {
-   "ioc": "173[.]249[.]207[.]158:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038016/"
-  },
-  {
-   "ioc": "173[.]249[.]32[.]127:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038017/"
-  },
-  {
-   "ioc": "175[.]24[.]198[.]184:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038018/"
-  },
-  {
-   "ioc": "180[.]76[.]146[.]5:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038019/"
-  },
-  {
-   "ioc": "182[.]16[.]61[.]92:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038020/"
-  },
-  {
-   "ioc": "182[.]16[.]61[.]94:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038021/"
-  },
-  {
-   "ioc": "182[.]254[.]194[.]177:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038022/"
-  },
-  {
-   "ioc": "185[.]213[.]61[.]47:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038023/"
-  },
-  {
-   "ioc": "188[.]166[.]181[.]202:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T13:34:31",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038024/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://77[.]239[.]124[.]137/xmrig-aarch64-glibc",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:35",
+   "link": "https://urlhaus.abuse.ch/url/4073287/"
+  },
+  {
+   "ioc": "hxxps://77[.]239[.]124[.]137/xmrig-armv7-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:34",
+   "link": "https://urlhaus.abuse.ch/url/4073286/"
+  },
+  {
+   "ioc": "hxxp://160[.]22[.]107[.]158/xmrig",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "docker",
+    "elf",
+    "mirai",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:31",
+   "link": "https://urlhaus.abuse.ch/url/4073285/"
+  },
+  {
+   "ioc": "hxxp://176[.]125[.]243[.]142/xmrig-armv7-glibc",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:31",
+   "link": "https://urlhaus.abuse.ch/url/4073284/"
+  },
+  {
+   "ioc": "hxxp://176[.]125[.]243[.]142/xmrig-x86_64-glibc",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "ssh"
+   ],
+   "date": "2026-11-21T15:57:31",
+   "link": "https://urlhaus.abuse.ch/url/4073283/"
+  },
+  {
+   "ioc": "hxxps://176[.]125[.]243[.]142/xmrig-x86_64-glibc",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:27",
+   "link": "https://urlhaus.abuse.ch/url/4073282/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tahaa-faruqii/leadmanagementapp/refs/heads/main/android/app/src/main/java/com/leadmanagement/newarchitecture/components/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073281/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/ShohabAhmedK/Technical_Assignment/refs/heads/main/android/app/src/main/java/com/awesomeproject/public/fonts/fa-solid-900[.]eot",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073280/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sudhanshu543115/IRCTC/refs/heads/main/ticketBooking-main/app/src/main/java/ticket/booking/entities/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073279/"
+  },
+  {
+   "ioc": "hxxps://white-vpn[.]top/app[.]apk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "apk ",
+    "CoralCobra",
+    "EVANGELION",
+    "rat",
+    "Uzbekistan"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073278/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/SoftyPy-IT/world-auto-solution-server/refs/heads/main/src/app/modules/Auth/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073277/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MuhirwaVerygood/PMS_Restful_backend/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073276/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/CTDE-MARL-agents/refs/heads/main/traffic-marl-vdn/logs/injection/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073275/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Smainer/smainer-desktop/refs/heads/main/src-tauri/icons/android/mipmap-hdpi/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073274/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mukhlisa03/library/refs/heads/master/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073273/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/01-yt-client/refs/heads/master/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:25",
+   "link": "https://urlhaus.abuse.ch/url/4073272/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Sovan56/creogrid/refs/heads/main/public/fonts/fa-solid[.]lfk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:24",
+   "link": "https://urlhaus.abuse.ch/url/4073271/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Usman-Tech-Ali/DocIntel---AI-powered-Contract-Analysis-Platform/refs/heads/main/apps/frontend/src/app/documents/%5Bid%5D/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:24",
+   "link": "https://urlhaus.abuse.ch/url/4073270/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/02-Redux-typescript/refs/heads/master/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:24",
+   "link": "https://urlhaus.abuse.ch/url/4073269/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/scaffold-studio-hq/scaffold-studio-mcp/refs/heads/main/public/fonts/fa-solid[.]lkf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:24",
+   "link": "https://urlhaus.abuse.ch/url/4073268/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/ctse-lab3-microservices/refs/heads/master/src/main/java/com/sliit/product_service/controller/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:23",
+   "link": "https://urlhaus.abuse.ch/url/4073267/"
+  },
+  {
+   "ioc": "hxxp://207[.]148[.]109[.]181:8925/xmrig62",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "docker",
+    "elf",
+    "mirai",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:23",
+   "link": "https://urlhaus.abuse.ch/url/4073266/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/silviustoian/mini-crm/refs/heads/main/src/app/clients/new/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:23",
+   "link": "https://urlhaus.abuse.ch/url/4073265/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tahaa-faruqii/bullmqfrontend/refs/heads/main/app/page/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:23",
+   "link": "https://urlhaus.abuse.ch/url/4073264/"
+  },
+  {
+   "ioc": "hxxp://bhai[.]indianpeople[.]shop:8040/Bin/ScreenConnect[.]Client[.]exe",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "botnet",
+    "connectwise",
+    "exe",
+    "phishing",
+    "rat",
+    "screenconnect"
+   ],
+   "date": "2026-11-21T15:57:23",
+   "link": "https://urlhaus.abuse.ch/url/4073263/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/swangai7178/ruby_management_systems/refs/heads/main/public/fonts/fa-solid-300[.]llf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:22",
+   "link": "https://urlhaus.abuse.ch/url/4073262/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mukhlisa03/social_stats/refs/heads/master/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:22",
+   "link": "https://urlhaus.abuse.ch/url/4073261/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Topten1004/NFC-Tag/refs/heads/main/public/fonts/fa-solid-300[.]llf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:22",
+   "link": "https://urlhaus.abuse.ch/url/4073260/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/silviustoian/virtualR-app/refs/heads/master/src/assets/profile-pictures/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:22",
+   "link": "https://urlhaus.abuse.ch/url/4073259/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Topten1004/ScanAssets/refs/heads/main/public/fonts/fa-solid-300[.]llf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:22",
+   "link": "https://urlhaus.abuse.ch/url/4073258/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sushilhemrom500530/Sequelize-MYSQL-and-Nodejs/refs/heads/main/config/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:22",
+   "link": "https://urlhaus.abuse.ch/url/4073257/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sunilgawai/vue-dashboard/refs/heads/main/public/fonts/fa-solid[.]lkf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073256/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/SrejonKhan/care-for-all-microservice/refs/heads/main/apps/frontend/src/app/admin/campaigns/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073255/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sushilhemrom500530/Chat-App---Socket-io/refs/heads/main/client/src/app/login/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073254/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/Lab-Task-Laravel_Crud/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073253/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mukhlisa03/counter_app/refs/heads/master/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073252/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/Micro-services-Assignment-/refs/heads/main/api-gateway/src/main/java/com/stationery/api_gateway/config/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073251/"
+  },
+  {
+   "ioc": "hxxps://176[.]125[.]243[.]142/xmrig-armv7-glibc",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073250/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sushilhemrom500530/task-management-system/refs/heads/main/src/auth/decorators/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073249/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sushilhemrom500530/PH-Health-Care-Server/refs/heads/main/src/app/modules/admin/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073248/"
+  },
+  {
+   "ioc": "hxxps://176[.]125[.]243[.]142/xmrig-aarch64-glibc",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073247/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/savir2010/course-generator/refs/heads/main/services/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073246/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sudhanshu543115/ERP_TENANT_DASHBOARD/refs/heads/main/src/common/components/ui/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073245/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Shamna03/intellecta/refs/heads/main/backend/ai_tutor_service/src/config/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:21",
+   "link": "https://urlhaus.abuse.ch/url/4073244/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tahaa-faruqii/bullmqbackend/refs/heads/main/api/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:20",
+   "link": "https://urlhaus.abuse.ch/url/4073243/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sebaslandaold/Sistema-Web-Hiring-Group/refs/heads/main/public/fonts/fa-solid-300[.]llf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:20",
+   "link": "https://urlhaus.abuse.ch/url/4073242/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/RAG-System-API/refs/heads/main/app/api/v1/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:20",
+   "link": "https://urlhaus.abuse.ch/url/4073241/"
+  },
+  {
+   "ioc": "hxxps://77[.]239[.]124[.]137/xmrig-aarch64-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:20",
+   "link": "https://urlhaus.abuse.ch/url/4073240/"
+  },
+  {
+   "ioc": "hxxps://176[.]125[.]243[.]142/xmrig-armv7-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:19",
+   "link": "https://urlhaus.abuse.ch/url/4073239/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/SrejonKhan/oporadh-barta-backend/refs/heads/main/src/routers/v1/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:19",
+   "link": "https://urlhaus.abuse.ch/url/4073238/"
+  },
+  {
+   "ioc": "hxxps://77[.]239[.]124[.]137/xmrig-x86_64-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:19",
+   "link": "https://urlhaus.abuse.ch/url/4073237/"
+  },
+  {
+   "ioc": "hxxps://176[.]125[.]243[.]142/xmrig-aarch64-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:18",
+   "link": "https://urlhaus.abuse.ch/url/4073236/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/muzammal-moiz/laravelseeder/refs/heads/main/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:18",
+   "link": "https://urlhaus.abuse.ch/url/4073235/"
+  },
+  {
+   "ioc": "hxxp://176[.]125[.]243[.]142/w",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "sh",
+    "ssh"
+   ],
+   "date": "2026-11-21T15:57:18",
+   "link": "https://urlhaus.abuse.ch/url/4073234/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tahaa-faruqii/AoChlin/refs/heads/main/android/app/src/debug/java/com/work1/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073233/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shovonroy173/shovonroy173/refs/heads/main/app/about-me/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073232/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tahaa-faruqii/dashboard-portal/refs/heads/main/src/feature/analytics/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073231/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Showline-Work/job_card_management/refs/heads/main/static/src/js/public/fonts/fa-solid-900[.]eot",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073230/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/nacos-uniuyo/CHECK-TODO-LIST-APP--GROUP-5/refs/heads/main/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073229/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/TAIJULAMAN/multi-vendor-admin/refs/heads/main/src/Redux/api/Chat/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073228/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/ctse-lab5-microservices/refs/heads/main/item-service/src/main/java/com/sliit/item_service/controller/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073227/"
+  },
+  {
+   "ioc": "hxxp://95[.]133[.]160[.]29/xmrig-x86_64-musl",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "docker",
+    "elf",
+    "ssh"
+   ],
+   "date": "2026-11-21T15:57:17",
+   "link": "https://urlhaus.abuse.ch/url/4073226/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/Artistic-Home-Designs/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073225/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/silviustoian/public-holidays/refs/heads/master/src/components/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073224/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/01-express/refs/heads/master/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073223/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/Java_is_Fun/refs/heads/master/src/main/java/com/my/exercises/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073222/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Smainer/smainer/refs/heads/main/training/src/smainer_training/core/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073221/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sushilhemrom500530/Furni_Tracks_Client_Side/refs/heads/main/src/layouts/dashboard/admin/admin-home/pie-chart/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073220/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/lab-task-crud/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073219/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sushilhemrom500530/Server-User-Authenticate/refs/heads/main/src/controller/auth/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073218/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shouzeb/Notify_before_expiry_date_android_app/refs/heads/master/public/fonts/fa-solid-300[.]llf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073217/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mufibra23/nlp-customer-intelligence/refs/heads/main/public/fonts/fa-solid-300[.]llf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073216/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/speedydevv1/desktop-skeleton/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073215/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/TalabuInc/fynliq-landing/refs/heads/feat/search-tabs-gradi/public/fonts/fa-solid[.]lfk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073214/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shamimrana2006/TechnicStore/refs/heads/main/src/app/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073213/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/SPulse-Org/SPulse/refs/heads/main/public/fonts/fa-solid[.]lkf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073212/"
+  },
+  {
+   "ioc": "hxxp://207[.]148[.]109[.]181:8925/bl2",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "docker",
+    "sh",
+    "ssh"
+   ],
+   "date": "2026-11-21T15:57:16",
+   "link": "https://urlhaus.abuse.ch/url/4073211/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tar1kkk/ticket-marketplace/refs/heads/main/components/ui/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:15",
+   "link": "https://urlhaus.abuse.ch/url/4073210/"
+  },
+  {
+   "ioc": "hxxp://207[.]148[.]109[.]181:8925/xmrig-lin",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "docker",
+    "elf",
+    "mirai",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:15",
+   "link": "https://urlhaus.abuse.ch/url/4073209/"
+  },
+  {
+   "ioc": "hxxps://videoavarii17-sbs[.]pages[.]dev/files/app[.]apk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "apk ",
+    "badpack",
+    "banker",
+    "VideoDPS"
+   ],
+   "date": "2026-11-21T15:57:15",
+   "link": "https://urlhaus.abuse.ch/url/4073208/"
+  },
+  {
+   "ioc": "hxxp://176[.]125[.]243[.]142/xmrig-armv7-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:15",
+   "link": "https://urlhaus.abuse.ch/url/4073207/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Smainer/smainer-telegram/refs/heads/main/miniapp/src/components/navigation/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4073206/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/Weather-app/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4073205/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/TalabiDele/Fylo/refs/heads/main/public/fonts/fa-solid[.]lfk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4073204/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/lab-task-mysql/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4073203/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/Policy-OnlinHimsApp/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073202/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tahaa-faruqii/Ain-e-Qadianiat/refs/heads/main/android/app/src/debug/java/com/agsx/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073201/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/swemonir/phixels[.]agency/refs/heads/main/src/components/ui/public/fonts/fa-solid-900[.]eot",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073200/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Ustream-web3/ustream-web3-blockend/refs/heads/main/public/fonts/fa-solid-300[.]llf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073199/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/tahaa-faruqii/whooapp/refs/heads/main/android/app/src/debug/java/com/whoo/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073198/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mukhlisa03/task-tracker/refs/heads/master/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073197/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Usman-Tech-Ali/Q2_SCD/refs/heads/main/MyApp/api-gateway/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073196/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/VadimT7/Gutenberg-Content-Importer-Wordpress-Plugin/refs/heads/main/gutenberg-content-importer/assets/css/public/fonts/fa-solid-900[.]eot",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073195/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Usman-Tech-Ali/starevents-management/refs/heads/main/frontend/src/components/ui/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073194/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Stephen-Salano/tenant-school-back-end/refs/heads/main/src/main/java/io/psyllabus/platform/tenant/secret/dto/request/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073193/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shamimkhaled/agentic-workflow-workspace/refs/heads/main/docs/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4073192/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shamimkhaled/chainsight-ai/refs/heads/dev/apps/accounts/migrations/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073191/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sohandillikar/weave-hacks-2/refs/heads/main/ai-pm-agent/backend/app/core/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073190/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mukhlisa03/write_read/refs/heads/master/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073189/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/dreamClothing-comingSoon/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073188/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/savir2010/poker-app/refs/heads/main/poker-frontend/ios/App/App/Assets[.]xcassets/AppIcon[.]appiconset/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073187/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/CountriesApp/refs/heads/main/countries-app/cypress/e2e/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073186/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shahinsamiur/forex_signalTele_bot/refs/heads/main/public/fonts/fa-solid[.]lfk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073185/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sushilhemrom500530/User-Authentication-Authorization/refs/heads/main/client/src/components/reuseable/input/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073184/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shamimkhaled/ai-agent-crm-mvp/refs/heads/main/src/app/api/voice/sessions/%5BcallSid%5D/takeover/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4073183/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shakil9120/Meeteria/refs/heads/main/src/components/videoCall/btn/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:09",
+   "link": "https://urlhaus.abuse.ch/url/4073182/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/namansharma28/tnp-task1/refs/heads/main/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:09",
+   "link": "https://urlhaus.abuse.ch/url/4073181/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/badajmoncef8-prog/ZeroReal-Orchestra/archive/refs/heads/main[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SVG"
+   ],
+   "date": "2026-11-21T15:57:09",
+   "link": "https://urlhaus.abuse.ch/url/4073180/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/sohandillikar/call-sense/refs/heads/main/frontend/src/components/calls/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:09",
+   "link": "https://urlhaus.abuse.ch/url/4073179/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/DummyProject/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:08",
+   "link": "https://urlhaus.abuse.ch/url/4073178/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MUmerch641/Starter-App/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:08",
+   "link": "https://urlhaus.abuse.ch/url/4073177/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Vallejo1921/awesome-python-automation-tools/refs/heads/main/public/fonts/fa-solid[.]lfk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:07",
+   "link": "https://urlhaus.abuse.ch/url/4073176/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/srushtibhilare/women/refs/heads/master/backend/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:07",
+   "link": "https://urlhaus.abuse.ch/url/4073175/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shriomy/CTSE-MARL-client/refs/heads/main/traffic-marl-vdn/src/components/dashboard/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:07",
+   "link": "https://urlhaus.abuse.ch/url/4073174/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/shamiulalamupom/mikrotik-routeros-api/refs/heads/main/frontend/routes/auth/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:07",
+   "link": "https://urlhaus.abuse.ch/url/4073173/"
+  },
+  {
+   "ioc": "hxxp://207[.]148[.]109[.]181:8925/diag[.]sh",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "docker",
+    "sh",
+    "ssh"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073172/"
+  },
+  {
+   "ioc": "hxxps://176[.]125[.]243[.]142/w",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "sh",
+    "ssh"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073171/"
+  },
+  {
+   "ioc": "hxxp://95[.]133[.]160[.]29/w",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "docker",
+    "sh",
+    "ssh"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073170/"
+  },
+  {
+   "ioc": "hxxps://176[.]125[.]243[.]142/xmrig-x86_64-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073169/"
+  },
+  {
+   "ioc": "hxxp://176[.]125[.]243[.]142/xmrig-aarch64-glibc",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073168/"
+  },
+  {
+   "ioc": "hxxp://176[.]125[.]243[.]142/xmrig-aarch64-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073167/"
+  },
+  {
+   "ioc": "hxxp://176[.]125[.]243[.]142/xmrig-x86_64-musl",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "crypto",
+    "elf",
+    "ssh",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073166/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/swemonir/phixels-api/refs/heads/main/src/app/module/analytics/public/fonts/fa-solid-900[.]eot",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T15:57:06",
+   "link": "https://urlhaus.abuse.ch/url/4073165/"
+  },
+  {
+   "ioc": "hxxps://146[.]75[.]122[.]132/alpine/edge/community/x86_64/xmrig-6[.]26[.]0-r0[.]apk",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "apk ",
+    "crypto",
+    "docker",
+    "xmr"
+   ],
+   "date": "2026-11-21T15:57:04",
+   "link": "https://urlhaus.abuse.ch/url/4073164/"
+  },
+  {
+   "ioc": "hxxp://115[.]192[.]50[.]89:60542/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-21T15:52:14",
+   "link": "https://urlhaus.abuse.ch/url/4073163/"
+  },
+  {
+   "ioc": "hxxp://114[.]217[.]251[.]140:56269/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "arm",
+    "cowrie",
+    "elf",
+    "honeypot",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-21T15:46:07",
+   "link": "https://urlhaus.abuse.ch/url/4073162/"
+  },
+  {
+   "ioc": "hxxp://123[.]10[.]38[.]248:36395/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-21T15:37:08",
+   "link": "https://urlhaus.abuse.ch/url/4073161/"
+  },
+  {
+   "ioc": "hxxp://183[.]129[.]20[.]182:36655/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-21T15:32:09",
+   "link": "https://urlhaus.abuse.ch/url/4073160/"
+  },
+  {
+   "ioc": "hxxp://176[.]226[.]132[.]173:38165/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-21T15:32:05",
+   "link": "https://urlhaus.abuse.ch/url/4073159/"
+  },
   {
    "ioc": "hxxp://210[.]208[.]111[.]36:36372/bin[.]sh",
    "host_it": false,
@@ -17572,1657 +19492,6 @@
    ],
    "date": "2026-11-21T14:45:41",
    "link": "https://urlhaus.abuse.ch/url/4073138/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:41",
-   "link": "https://urlhaus.abuse.ch/url/4073137/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:41",
-   "link": "https://urlhaus.abuse.ch/url/4073136/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:40",
-   "link": "https://urlhaus.abuse.ch/url/4073135/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:39",
-   "link": "https://urlhaus.abuse.ch/url/4073134/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:39",
-   "link": "https://urlhaus.abuse.ch/url/4073133/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:39",
-   "link": "https://urlhaus.abuse.ch/url/4073132/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:38",
-   "link": "https://urlhaus.abuse.ch/url/4073131/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:37",
-   "link": "https://urlhaus.abuse.ch/url/4073130/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:37",
-   "link": "https://urlhaus.abuse.ch/url/4073129/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:36",
-   "link": "https://urlhaus.abuse.ch/url/4073128/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:36",
-   "link": "https://urlhaus.abuse.ch/url/4073127/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:36",
-   "link": "https://urlhaus.abuse.ch/url/4073126/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:36",
-   "link": "https://urlhaus.abuse.ch/url/4073125/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:36",
-   "link": "https://urlhaus.abuse.ch/url/4073124/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:36",
-   "link": "https://urlhaus.abuse.ch/url/4073123/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:35",
-   "link": "https://urlhaus.abuse.ch/url/4073122/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:35",
-   "link": "https://urlhaus.abuse.ch/url/4073121/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:35",
-   "link": "https://urlhaus.abuse.ch/url/4073120/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:35",
-   "link": "https://urlhaus.abuse.ch/url/4073119/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:34",
-   "link": "https://urlhaus.abuse.ch/url/4073118/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:33",
-   "link": "https://urlhaus.abuse.ch/url/4073117/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:33",
-   "link": "https://urlhaus.abuse.ch/url/4073116/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:33",
-   "link": "https://urlhaus.abuse.ch/url/4073115/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:33",
-   "link": "https://urlhaus.abuse.ch/url/4073114/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/tg-fix/releases/download/tg-fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:33",
-   "link": "https://urlhaus.abuse.ch/url/4073113/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:32",
-   "link": "https://urlhaus.abuse.ch/url/4073112/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/tg-fix/releases/download/tg-fix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:32",
-   "link": "https://urlhaus.abuse.ch/url/4073111/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:32",
-   "link": "https://urlhaus.abuse.ch/url/4073110/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:32",
-   "link": "https://urlhaus.abuse.ch/url/4073109/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:32",
-   "link": "https://urlhaus.abuse.ch/url/4073108/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:31",
-   "link": "https://urlhaus.abuse.ch/url/4073107/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:31",
-   "link": "https://urlhaus.abuse.ch/url/4073106/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:30",
-   "link": "https://urlhaus.abuse.ch/url/4073105/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:29",
-   "link": "https://urlhaus.abuse.ch/url/4073104/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:27",
-   "link": "https://urlhaus.abuse.ch/url/4073103/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:27",
-   "link": "https://urlhaus.abuse.ch/url/4073102/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:27",
-   "link": "https://urlhaus.abuse.ch/url/4073101/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:27",
-   "link": "https://urlhaus.abuse.ch/url/4073100/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:27",
-   "link": "https://urlhaus.abuse.ch/url/4073099/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:25",
-   "link": "https://urlhaus.abuse.ch/url/4073098/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:25",
-   "link": "https://urlhaus.abuse.ch/url/4073097/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:25",
-   "link": "https://urlhaus.abuse.ch/url/4073096/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:25",
-   "link": "https://urlhaus.abuse.ch/url/4073095/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:24",
-   "link": "https://urlhaus.abuse.ch/url/4073094/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:21",
-   "link": "https://urlhaus.abuse.ch/url/4073093/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:21",
-   "link": "https://urlhaus.abuse.ch/url/4073092/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:21",
-   "link": "https://urlhaus.abuse.ch/url/4073091/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:21",
-   "link": "https://urlhaus.abuse.ch/url/4073090/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:20",
-   "link": "https://urlhaus.abuse.ch/url/4073089/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:20",
-   "link": "https://urlhaus.abuse.ch/url/4073088/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:20",
-   "link": "https://urlhaus.abuse.ch/url/4073087/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/tg-fix/releases/download/tg-fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:20",
-   "link": "https://urlhaus.abuse.ch/url/4073086/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:20",
-   "link": "https://urlhaus.abuse.ch/url/4073085/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:20",
-   "link": "https://urlhaus.abuse.ch/url/4073084/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073083/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073082/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073081/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073080/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073079/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/tg-fix/releases/download/tg-fix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073078/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073077/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073076/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073075/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:19",
-   "link": "https://urlhaus.abuse.ch/url/4073074/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:18",
-   "link": "https://urlhaus.abuse.ch/url/4073073/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:15",
-   "link": "https://urlhaus.abuse.ch/url/4073072/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:14",
-   "link": "https://urlhaus.abuse.ch/url/4073071/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:14",
-   "link": "https://urlhaus.abuse.ch/url/4073070/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:14",
-   "link": "https://urlhaus.abuse.ch/url/4073069/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:14",
-   "link": "https://urlhaus.abuse.ch/url/4073068/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:14",
-   "link": "https://urlhaus.abuse.ch/url/4073067/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:13",
-   "link": "https://urlhaus.abuse.ch/url/4073066/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:13",
-   "link": "https://urlhaus.abuse.ch/url/4073065/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:13",
-   "link": "https://urlhaus.abuse.ch/url/4073064/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:13",
-   "link": "https://urlhaus.abuse.ch/url/4073063/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:12",
-   "link": "https://urlhaus.abuse.ch/url/4073062/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:12",
-   "link": "https://urlhaus.abuse.ch/url/4073061/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/tg-fix/releases/download/tg-fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:12",
-   "link": "https://urlhaus.abuse.ch/url/4073060/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:12",
-   "link": "https://urlhaus.abuse.ch/url/4073059/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:12",
-   "link": "https://urlhaus.abuse.ch/url/4073058/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/roninherbalistcord/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:12",
-   "link": "https://urlhaus.abuse.ch/url/4073057/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/IllusionistHandcuff/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:45:11",
-   "link": "https://urlhaus.abuse.ch/url/4073056/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073055/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073054/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073053/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073052/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073051/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073050/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073049/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073048/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TgWsProxy/releases/download/TgWsProxy/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073047/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:16",
-   "link": "https://urlhaus.abuse.ch/url/4073046/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:15",
-   "link": "https://urlhaus.abuse.ch/url/4073045/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/tg-fix/releases/download/tg-fix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:14",
-   "link": "https://urlhaus.abuse.ch/url/4073044/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:14",
-   "link": "https://urlhaus.abuse.ch/url/4073043/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:14",
-   "link": "https://urlhaus.abuse.ch/url/4073042/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:14",
-   "link": "https://urlhaus.abuse.ch/url/4073041/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:14",
-   "link": "https://urlhaus.abuse.ch/url/4073040/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:11",
-   "link": "https://urlhaus.abuse.ch/url/4073039/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:11",
-   "link": "https://urlhaus.abuse.ch/url/4073038/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:10",
-   "link": "https://urlhaus.abuse.ch/url/4073037/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:10",
-   "link": "https://urlhaus.abuse.ch/url/4073036/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TelegramFix/releases/download/TelegramFix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:09",
-   "link": "https://urlhaus.abuse.ch/url/4073035/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:09",
-   "link": "https://urlhaus.abuse.ch/url/4073034/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:30:08",
-   "link": "https://urlhaus.abuse.ch/url/4073033/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/entitymarepleat/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-21T14:29:07",
-   "link": "https://urlhaus.abuse.ch/url/4073032/"
-  },
-  {
-   "ioc": "hxxp://189[.]127[.]169[.]20:41862/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T14:18:06",
-   "link": "https://urlhaus.abuse.ch/url/4073031/"
-  },
-  {
-   "ioc": "hxxp://221[.]14[.]87[.]129:59191/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-21T14:17:12",
-   "link": "https://urlhaus.abuse.ch/url/4073030/"
-  },
-  {
-   "ioc": "hxxp://112[.]250[.]137[.]138:34463/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T14:17:12",
-   "link": "https://urlhaus.abuse.ch/url/4073029/"
-  },
-  {
-   "ioc": "hxxp://115[.]55[.]56[.]129:33099/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-21T14:02:05",
-   "link": "https://urlhaus.abuse.ch/url/4073028/"
-  },
-  {
-   "ioc": "hxxp://59[.]96[.]142[.]145:46833/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "Mozi"
-   ],
-   "date": "2026-11-21T13:58:15",
-   "link": "https://urlhaus.abuse.ch/url/4073027/"
-  },
-  {
-   "ioc": "hxxp://122[.]99[.]54[.]19:35870/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T13:47:31",
-   "link": "https://urlhaus.abuse.ch/url/4073026/"
-  },
-  {
-   "ioc": "hxxp://122[.]99[.]54[.]19:35870/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T13:47:22",
-   "link": "https://urlhaus.abuse.ch/url/4073025/"
-  },
-  {
-   "ioc": "hxxp://115[.]51[.]90[.]254:54526/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T13:47:17",
-   "link": "https://urlhaus.abuse.ch/url/4073024/"
-  },
-  {
-   "ioc": "hxxp://189[.]127[.]169[.]20:41862/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T13:47:05",
-   "link": "https://urlhaus.abuse.ch/url/4073023/"
-  },
-  {
-   "ioc": "hxxp://116[.]149[.]147[.]10:46137/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "mirai",
-    "Mozi"
-   ],
-   "date": "2026-11-21T13:32:15",
-   "link": "https://urlhaus.abuse.ch/url/4073022/"
-  },
-  {
-   "ioc": "hxxp://160[.]178[.]207[.]240:41075/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-21T13:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4073021/"
-  },
-  {
-   "ioc": "hxxp://59[.]96[.]142[.]145:46833/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-21T13:32:06",
-   "link": "https://urlhaus.abuse.ch/url/4073020/"
-  },
-  {
-   "ioc": "hxxp://110[.]188[.]42[.]181:56379/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "mirai",
-    "Mozi"
-   ],
-   "date": "2026-11-21T13:18:14",
-   "link": "https://urlhaus.abuse.ch/url/4073019/"
-  },
-  {
-   "ioc": "hxxp://160[.]178[.]207[.]240:41075/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-21T13:17:07",
-   "link": "https://urlhaus.abuse.ch/url/4073018/"
-  },
-  {
-   "ioc": "hxxp://45[.]168[.]132[.]19:37680/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T13:17:06",
-   "link": "https://urlhaus.abuse.ch/url/4073017/"
-  },
-  {
-   "ioc": "hxxp://124[.]158[.]191[.]121:48440/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T13:17:05",
-   "link": "https://urlhaus.abuse.ch/url/4073016/"
-  },
-  {
-   "ioc": "hxxp://125[.]41[.]206[.]112:47861/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-21T13:02:06",
-   "link": "https://urlhaus.abuse.ch/url/4073015/"
-  },
-  {
-   "ioc": "hxxp://117[.]131[.]92[.]150:46332/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T12:47:06",
-   "link": "https://urlhaus.abuse.ch/url/4073014/"
-  },
-  {
-   "ioc": "hxxp://116[.]149[.]147[.]10:46137/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "arm",
-    "elf",
-    "mirai",
-    "Mozi"
-   ],
-   "date": "2026-11-21T12:46:12",
-   "link": "https://urlhaus.abuse.ch/url/4073013/"
-  },
-  {
-   "ioc": "hxxp://201[.]58[.]142[.]28/bins/dud[.]arm5",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "mirai"
-   ],
-   "date": "2026-11-21T12:44:09",
-   "link": "https://urlhaus.abuse.ch/url/4073012/"
-  },
-  {
-   "ioc": "hxxp://201[.]58[.]142[.]28/bins/dud[.]mips",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "mirai"
-   ],
-   "date": "2026-11-21T12:43:13",
-   "link": "https://urlhaus.abuse.ch/url/4073011/"
-  },
-  {
-   "ioc": "hxxp://201[.]58[.]142[.]28/bins/dud[.]x86",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "mirai"
-   ],
-   "date": "2026-11-21T12:43:13",
-   "link": "https://urlhaus.abuse.ch/url/4073010/"
-  },
-  {
-   "ioc": "hxxp://201[.]58[.]142[.]28/bins/dud[.]mpsl",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "mirai"
-   ],
-   "date": "2026-11-21T12:43:13",
-   "link": "https://urlhaus.abuse.ch/url/4073009/"
   }
  ],
  "malware_top": [
@@ -19240,7 +19509,7 @@
   },
   {
    "name": "Mirai",
-   "count": 107
+   "count": 109
   },
   {
    "name": "Unknown Stealer",
@@ -19264,7 +19533,7 @@
   },
   {
    "name": "SalatStealer",
-   "count": 18
+   "count": 17
   },
   {
    "name": "php.shin_webshell",
@@ -19308,7 +19577,7 @@
   },
   {
    "name": "WARDENStealer",
-   "count": 8
+   "count": 10
   },
   {
    "name": "StrelaStealer",
@@ -19355,43 +19624,43 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.29,
+    "value": 56.44,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 6.89,
+    "value": 6.87,
     "rank": 2
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 3.33,
+    "value": 3.34,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.28,
+    "value": 3.22,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.67,
+    "value": 2.66,
     "rank": 5
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.65,
+    "value": 2.66,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.16,
+    "value": 2.14,
     "rank": 7
    },
    {
@@ -19403,19 +19672,19 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.52,
+    "value": 1.5,
     "rank": 9
    },
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.22,
+    "value": 1.24,
     "rank": 10
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.21,
+    "value": 1.2,
     "rank": 11
    },
    {
@@ -19428,8 +19697,8 @@
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.78,
-   "rank": 16
+   "value": 0.86,
+   "rank": 13
   },
   "l7_7d": [
    {
@@ -19459,7 +19728,7 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.79,
+    "value": 2.78,
     "rank": 5
    },
    {
@@ -19495,7 +19764,7 @@
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 0.95,
+    "value": 0.94,
     "rank": 11
    },
    {
@@ -19508,7 +19777,7 @@
   "it_7d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.25,
+   "value": 0.26,
    "rank": 37
   },
   "outages_it": []
