@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T09:30:58Z",
+ "updated": "2026-11-21T10:01:07Z",
  "news": [
   {
    "id": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
@@ -14081,7 +14081,7 @@
    "last": "2026-11-18T20:21:01"
   },
   {
-   "name": "Sandworm",
+   "name": "APT28",
    "type": "apt",
    "country": "RU",
    "watch": true,
@@ -14101,8 +14101,8 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14111,8 +14111,8 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Sandworm",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14728,55 +14728,122 @@
  "known_actors": 1528,
  "iocs": [
   {
-   "ioc": "a58d49a64bc270b8e1b9c5fda1eacf4c8a56cc6e804f763e9514271009667651",
+   "ioc": "4518361039ae25b85c9b701ad8c61db2108352efe23b23b89764da0ef57e8270",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
+   "malware": "Mirai",
    "confidence": 90,
-   "date": "2026-11-21T09:05:44",
+   "date": "2026-11-21T09:59:57",
    "tags": [
-    "EasyShell",
     "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
+    "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037843/"
+   "link": "https://threatfox.abuse.ch/ioc/2037850/"
   },
   {
-   "ioc": "e74797ef676894e95c2139c320c91d5c9b09044f7f7bdaa7e7dd3ab74f11af68",
+   "ioc": "ff64b4d3c195006cd71060c734c151468668ed6f4daa0e59c924cf842c2e3f31",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
+   "malware": "Mirai",
    "confidence": 90,
-   "date": "2026-11-21T09:05:44",
+   "date": "2026-11-21T09:59:56",
    "tags": [
-    "EasyShell",
     "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
+    "Mirai"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037842/"
+   "link": "https://threatfox.abuse.ch/ioc/2037849/"
   },
   {
-   "ioc": "f76714fdd8dd5bd25bce281da217a2fab688182ae528fa12494e50f7ddc64281",
+   "ioc": "gem4jv80[.]pawrangers[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-21T09:53:53",
+   "tags": [
+    "ClearFake",
+    "mac-0xa07e",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037848/"
+  },
+  {
+   "ioc": "e79c0a60cc0685ec4e6955385df6527db07ea820f932697d40fc5ffb652c341a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T09:05:44",
+   "confidence": 50,
+   "date": "2026-11-21T09:53:14",
    "tags": [
-    "EasyShell",
     "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
+    "honeypot"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037841/"
+   "link": "https://threatfox.abuse.ch/ioc/2037834/"
+  },
+  {
+   "ioc": "36815382727fe02755ee0a6eb4cdb66b359e140f6a077bb8c3de57a246fad5d7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 50,
+   "date": "2026-11-21T09:53:14",
+   "tags": [
+    "honeypot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037835/"
+  },
+  {
+   "ioc": "37[.]221[.]79[.]4:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-21T09:44:45",
+   "tags": [
+    "drb-ra",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037847/"
+  },
+  {
+   "ioc": "36[.]134[.]81[.]249:8082",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 75,
+   "date": "2026-11-21T09:44:44",
+   "tags": [
+    "drb-ra",
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037846/"
+  },
+  {
+   "ioc": "172[.]86[.]85[.]170:8080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Evilginx",
+   "confidence": 75,
+   "date": "2026-11-21T09:43:47",
+   "tags": [
+    "drb-ra",
+    "EvilGinx",
+    "EvilGoPhish"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037845/"
+  },
+  {
+   "ioc": "124[.]222[.]90[.]40:8098",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 75,
+   "date": "2026-11-21T09:43:17",
+   "tags": [
+    "drb-ra",
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037844/"
   },
   {
    "ioc": "7d90295286ae5107e874c7b2cc4a01a790fc3a9b6944a17d690b3d93908ac4c8",
@@ -14796,7 +14863,58 @@
    "link": "https://threatfox.abuse.ch/ioc/2037840/"
   },
   {
-   "ioc": "1238816f186756c5823401a7251976e59bafa1bef4529d9f71a5cc80f78f4c98",
+   "ioc": "f76714fdd8dd5bd25bce281da217a2fab688182ae528fa12494e50f7ddc64281",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T09:05:44",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037841/"
+  },
+  {
+   "ioc": "e74797ef676894e95c2139c320c91d5c9b09044f7f7bdaa7e7dd3ab74f11af68",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T09:05:44",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037842/"
+  },
+  {
+   "ioc": "a58d49a64bc270b8e1b9c5fda1eacf4c8a56cc6e804f763e9514271009667651",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T09:05:44",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037843/"
+  },
+  {
+   "ioc": "3168c8f1a5e9a475e3928ce64401ff918e817a6bf7aff9b0431e8f6838d5d7f1",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -14810,7 +14928,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037839/"
+   "link": "https://threatfox.abuse.ch/ioc/2037837/"
   },
   {
    "ioc": "9bb20fdce84beb9511aee0237aa88617f7f9ee83d765197f5ea340d9d7b55805",
@@ -14830,7 +14948,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037838/"
   },
   {
-   "ioc": "3168c8f1a5e9a475e3928ce64401ff918e817a6bf7aff9b0431e8f6838d5d7f1",
+   "ioc": "1238816f186756c5823401a7251976e59bafa1bef4529d9f71a5cc80f78f4c98",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -14844,7 +14962,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037837/"
+   "link": "https://threatfox.abuse.ch/ioc/2037839/"
   },
   {
    "ioc": "kudefy[.]workers[.]dev",
@@ -14865,29 +14983,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2037836/"
   },
   {
-   "ioc": "36815382727fe02755ee0a6eb4cdb66b359e140f6a077bb8c3de57a246fad5d7",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Mirai",
-   "confidence": 50,
-   "date": "2026-11-21T08:53:47",
-   "tags": [
-    "honeypot"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037835/"
-  },
-  {
-   "ioc": "e79c0a60cc0685ec4e6955385df6527db07ea820f932697d40fc5ffb652c341a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "hxxp://45[.]198[.]224[.]75/x86_64",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown malware",
    "confidence": 50,
-   "date": "2026-11-21T08:53:44",
+   "date": "2026-11-21T08:12:44",
    "tags": [
-    "elf",
-    "honeypot"
+    "botnet",
+    "honeypot",
+    "telnet"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037834/"
+   "link": "https://threatfox.abuse.ch/ioc/2037827/"
   },
   {
    "ioc": "hxxp://45[.]198[.]224[.]75/x86",
@@ -14904,32 +15011,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2037828/"
   },
   {
-   "ioc": "hxxp://45[.]198[.]224[.]75/x86_64",
+   "ioc": "hxxp://194[.]147[.]58[.]39:8123/bot_x86_64",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown malware",
    "confidence": 50,
-   "date": "2026-11-21T08:12:44",
+   "date": "2026-11-21T08:12:43",
    "tags": [
     "botnet",
     "honeypot",
     "telnet"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037827/"
-  },
-  {
-   "ioc": "07b5c79f31acafb22a5bd8c407d485a2b8921859716840de796f61488ba0d6bc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "RevStealer",
-   "confidence": 90,
-   "date": "2026-11-21T08:12:43",
-   "tags": [
-    "REF2859",
-    "RevStealer",
-    "SetupCenter"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037833/"
+   "link": "https://threatfox.abuse.ch/ioc/2037829/"
   },
   {
    "ioc": "console[.]hazelcadence[.]website",
@@ -14946,18 +15039,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2037832/"
   },
   {
-   "ioc": "hxxp://194[.]147[.]58[.]39:8123/bot_x86_64",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 50,
+   "ioc": "07b5c79f31acafb22a5bd8c407d485a2b8921859716840de796f61488ba0d6bc",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "RevStealer",
+   "confidence": 90,
    "date": "2026-11-21T08:12:43",
    "tags": [
-    "botnet",
-    "honeypot",
-    "telnet"
+    "REF2859",
+    "RevStealer",
+    "SetupCenter"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037829/"
+   "link": "https://threatfox.abuse.ch/ioc/2037833/"
   },
   {
    "ioc": "sandiegopartybusrentals[.]com",
@@ -14984,7 +15077,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037830/"
   },
   {
-   "ioc": "2f828ce7ea08abeab1b9380201e7ff5f118d9c7b3c0104baf4e1d5dd08146826",
+   "ioc": "93559246104cd0d22f17c8af510663df8c8938644669950a84a2667d4f56775b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -14998,24 +15091,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037826/"
-  },
-  {
-   "ioc": "0242df7ba2726afc7874b8a5d1952556cb2e50f604856c780c17ee3f0bf476dd",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T08:05:52",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037825/"
+   "link": "https://threatfox.abuse.ch/ioc/2037823/"
   },
   {
    "ioc": "c50a471600f7d84195b1b3ebc4a0086ee6f81864a473730f4e5c9540a7e8368a",
@@ -15035,7 +15111,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037824/"
   },
   {
-   "ioc": "93559246104cd0d22f17c8af510663df8c8938644669950a84a2667d4f56775b",
+   "ioc": "0242df7ba2726afc7874b8a5d1952556cb2e50f604856c780c17ee3f0bf476dd",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -15049,10 +15125,27 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037823/"
+   "link": "https://threatfox.abuse.ch/ioc/2037825/"
   },
   {
-   "ioc": "5c19022afab86c539a6162abcd8249cddb777f7edfad243874aef76f7cc19502",
+   "ioc": "2f828ce7ea08abeab1b9380201e7ff5f118d9c7b3c0104baf4e1d5dd08146826",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T08:05:52",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037826/"
+  },
+  {
+   "ioc": "4c985a9bfa72e497dc167911ed11becd2bbfd777d71a17959ab446943ecccda5",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -15066,7 +15159,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037822/"
+   "link": "https://threatfox.abuse.ch/ioc/2037820/"
   },
   {
    "ioc": "6027cc4a9f6de1841481196df31f91cb53defa7cf34a47d142a333776aec859e",
@@ -15086,7 +15179,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037821/"
   },
   {
-   "ioc": "4c985a9bfa72e497dc167911ed11becd2bbfd777d71a17959ab446943ecccda5",
+   "ioc": "5c19022afab86c539a6162abcd8249cddb777f7edfad243874aef76f7cc19502",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -15100,7 +15193,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037820/"
+   "link": "https://threatfox.abuse.ch/ioc/2037822/"
   },
   {
    "ioc": "188[.]191[.]96[.]220:4521",
@@ -15661,7 +15754,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2036597/"
   },
   {
-   "ioc": "ixor[.]top",
+   "ioc": "bosinn[.]top",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
@@ -15674,7 +15767,7 @@
     "wretchedcat",
     "zero"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036601/"
+   "link": "https://threatfox.abuse.ch/ioc/2036599/"
   },
   {
    "ioc": "iiilii[.]top",
@@ -15693,7 +15786,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2036600/"
   },
   {
-   "ioc": "bosinn[.]top",
+   "ioc": "ixor[.]top",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
@@ -15706,39 +15799,7 @@
     "wretchedcat",
     "zero"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036599/"
-  },
-  {
-   "ioc": "syrna[.]cc",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:47:00",
-   "tags": [
-    "apk",
-    "EVANGELION",
-    "Uzbekistan",
-    "wretchedcat",
-    "zero"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036605/"
-  },
-  {
-   "ioc": "kkkvvvzxg[.]online",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:47:00",
-   "tags": [
-    "apk",
-    "EVANGELION",
-    "Uzbekistan",
-    "wretchedcat",
-    "zero"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036603/"
+   "link": "https://threatfox.abuse.ch/ioc/2036601/"
   },
   {
    "ioc": "nymra[.]cc",
@@ -15757,6 +15818,38 @@
    "link": "https://threatfox.abuse.ch/ioc/2036602/"
   },
   {
+   "ioc": "kkkvvvzxg[.]online",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:47:00",
+   "tags": [
+    "apk",
+    "EVANGELION",
+    "Uzbekistan",
+    "wretchedcat",
+    "zero"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036603/"
+  },
+  {
+   "ioc": "syrna[.]cc",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:47:00",
+   "tags": [
+    "apk",
+    "EVANGELION",
+    "Uzbekistan",
+    "wretchedcat",
+    "zero"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036605/"
+  },
+  {
    "ioc": "sgdkgdksgdkgsd[.]top",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -15771,22 +15864,6 @@
     "zero"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036604/"
-  },
-  {
-   "ioc": "62[.]60[.]239[.]15:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:58",
-   "tags": [
-    "apk",
-    "EVANGELION",
-    "Uzbekistan",
-    "wretchedcat",
-    "zero"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036607/"
   },
   {
    "ioc": "locanto[.]cam",
@@ -15805,6 +15882,22 @@
    "link": "https://threatfox.abuse.ch/ioc/2036606/"
   },
   {
+   "ioc": "62[.]60[.]239[.]15:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:58",
+   "tags": [
+    "apk",
+    "EVANGELION",
+    "Uzbekistan",
+    "wretchedcat",
+    "zero"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036607/"
+  },
+  {
    "ioc": "138[.]124[.]52[.]36:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -15819,38 +15912,6 @@
     "zero"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036608/"
-  },
-  {
-   "ioc": "gate-fender[.]luftribka[.]workers[.]dev",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:54",
-   "tags": [
-    "Android",
-    "CoralCobra",
-    "EVANGELION",
-    "MetaMaskRAT",
-    "VLESS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036611/"
-  },
-  {
-   "ioc": "all1[.]realdd[.]click",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:54",
-   "tags": [
-    "Android",
-    "CoralCobra",
-    "EVANGELION",
-    "MetaMaskRAT",
-    "VLESS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036610/"
   },
   {
    "ioc": "ru[.]dakjdnwgnu[.]sbs",
@@ -15869,28 +15930,12 @@
    "link": "https://threatfox.abuse.ch/ioc/2036609/"
   },
   {
-   "ioc": "83[.]136[.]208[.]221:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:53",
-   "tags": [
-    "Android",
-    "CoralCobra",
-    "MetaMaskRAT",
-    "REALITY",
-    "VLESS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036614/"
-  },
-  {
-   "ioc": "vkawdwa[.]top",
+   "ioc": "all1[.]realdd[.]click",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:53",
+   "date": "2026-11-21T07:46:54",
    "tags": [
     "Android",
     "CoralCobra",
@@ -15898,7 +15943,23 @@
     "MetaMaskRAT",
     "VLESS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036613/"
+   "link": "https://threatfox.abuse.ch/ioc/2036610/"
+  },
+  {
+   "ioc": "gate-fender[.]luftribka[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:54",
+   "tags": [
+    "Android",
+    "CoralCobra",
+    "EVANGELION",
+    "MetaMaskRAT",
+    "VLESS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036611/"
   },
   {
    "ioc": "petroodawd[.]top",
@@ -15917,6 +15978,38 @@
    "link": "https://threatfox.abuse.ch/ioc/2036612/"
   },
   {
+   "ioc": "vkawdwa[.]top",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:53",
+   "tags": [
+    "Android",
+    "CoralCobra",
+    "EVANGELION",
+    "MetaMaskRAT",
+    "VLESS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036613/"
+  },
+  {
+   "ioc": "83[.]136[.]208[.]221:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:53",
+   "tags": [
+    "Android",
+    "CoralCobra",
+    "MetaMaskRAT",
+    "REALITY",
+    "VLESS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036614/"
+  },
+  {
    "ioc": "163[.]5[.]254[.]98:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -15933,7 +16026,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2036615/"
   },
   {
-   "ioc": "91[.]219[.]227[.]48:2052",
+   "ioc": "146[.]185[.]208[.]145:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
@@ -15946,7 +16039,7 @@
     "REALITY",
     "VLESS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036618/"
+   "link": "https://threatfox.abuse.ch/ioc/2036616/"
   },
   {
    "ioc": "91[.]219[.]227[.]48:8443",
@@ -15965,7 +16058,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2036617/"
   },
   {
-   "ioc": "146[.]185[.]208[.]145:443",
+   "ioc": "91[.]219[.]227[.]48:2052",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
@@ -15978,7 +16071,7 @@
     "REALITY",
     "VLESS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036616/"
+   "link": "https://threatfox.abuse.ch/ioc/2036618/"
   },
   {
    "ioc": "138[.]249[.]18[.]192:443",
@@ -16013,22 +16106,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036620/"
   },
   {
-   "ioc": "94[.]228[.]167[.]90:9800",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:48",
-   "tags": [
-    "apk",
-    "banker",
-    "ProxyBot",
-    "ShadowSVM1",
-    "Uzbekistan"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036622/"
-  },
-  {
    "ioc": "64[.]188[.]62[.]110:9800",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -16045,34 +16122,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2036621/"
   },
   {
-   "ioc": "185[.]165[.]170[.]178:53946",
+   "ioc": "94[.]228[.]167[.]90:9800",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:47",
+   "date": "2026-11-21T07:46:48",
    "tags": [
-    "Android",
-    "AS51852",
-    "ByVzor",
-    "RAT"
+    "apk",
+    "banker",
+    "ProxyBot",
+    "ShadowSVM1",
+    "Uzbekistan"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036626/"
-  },
-  {
-   "ioc": "38[.]244[.]145[.]24:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:47",
-   "tags": [
-    "Android",
-    "AS51852",
-    "ByVzor",
-    "RAT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036625/"
+   "link": "https://threatfox.abuse.ch/ioc/2036622/"
   },
   {
    "ioc": "coreprotector[.]org",
@@ -16091,6 +16154,36 @@
    "link": "https://threatfox.abuse.ch/ioc/2036623/"
   },
   {
+   "ioc": "38[.]244[.]145[.]24:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:47",
+   "tags": [
+    "Android",
+    "AS51852",
+    "ByVzor",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036625/"
+  },
+  {
+   "ioc": "185[.]165[.]170[.]178:53946",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:47",
+   "tags": [
+    "Android",
+    "AS51852",
+    "ByVzor",
+    "RAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036626/"
+  },
+  {
    "ioc": "hxxps://coreprotector[.]org/api/v1/sync/auth",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -16104,21 +16197,6 @@
     "RAT"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036624/"
-  },
-  {
-   "ioc": "minecraft-vip[.]top",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:45",
-   "tags": [
-    "apk",
-    "Dropper",
-    "EVANGELION",
-    "Uzbekistan"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036628/"
   },
   {
    "ioc": "qadamcash[.]top",
@@ -16136,19 +16214,19 @@
    "link": "https://threatfox.abuse.ch/ioc/2036627/"
   },
   {
-   "ioc": "videoavarii17[.]sbs",
+   "ioc": "minecraft-vip[.]top",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:44",
+   "date": "2026-11-21T07:46:45",
    "tags": [
     "apk",
     "Dropper",
     "EVANGELION",
     "Uzbekistan"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036630/"
+   "link": "https://threatfox.abuse.ch/ioc/2036628/"
   },
   {
    "ioc": "playgoodout[.]click",
@@ -16164,6 +16242,48 @@
     "Uzbekistan"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036629/"
+  },
+  {
+   "ioc": "videoavarii17[.]sbs",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:44",
+   "tags": [
+    "apk",
+    "Dropper",
+    "EVANGELION",
+    "Uzbekistan"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036630/"
+  },
+  {
+   "ioc": "18tllktok[.]xyz",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:42",
+   "tags": [
+    "apk",
+    "Dropper",
+    "EVANGELION",
+    "Uzbekistan"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036631/"
+  },
+  {
+   "ioc": "156[.]238[.]235[.]191:8085",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:42",
+   "tags": [
+    "CyberStrikeAI"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036632/"
   },
   {
    "ioc": "add93044eaa6e3c2817cfdc53afc94812abd1bca1c99477211bc58ddd94443f3",
@@ -16183,45 +16303,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036640/"
   },
   {
-   "ioc": "156[.]238[.]235[.]191:8085",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:42",
-   "tags": [
-    "CyberStrikeAI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036632/"
-  },
-  {
-   "ioc": "18tllktok[.]xyz",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:42",
-   "tags": [
-    "apk",
-    "Dropper",
-    "EVANGELION",
-    "Uzbekistan"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036631/"
-  },
-  {
-   "ioc": "43[.]165[.]133[.]76:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:41",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036642/"
-  },
-  {
    "ioc": "b4a6c2cb9da0d98129ea463b377028adfcc0fbd1f3ca9a3fef19e387b95aa177",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16237,6 +16318,18 @@
     "RAT"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036641/"
+  },
+  {
+   "ioc": "43[.]165[.]133[.]76:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:41",
+   "tags": [
+    "AntiFox"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036642/"
   },
   {
    "ioc": "210[.]16[.]166[.]153:8787",
@@ -16267,22 +16360,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036673/"
   },
   {
-   "ioc": "10ab10b792effcd9c8573aca8574c20ae2ca2aa18327c39c5ee3895e4ef1f1d8",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T07:46:36",
-   "tags": [
-    "DLL-sideloading",
-    "f95zone",
-    "MSBuild",
-    "msi",
-    "WSF"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036671/"
-  },
-  {
    "ioc": "5f87cc02e026d4e965b4976b75a3b156ccf1fbaba36b2364280dced90264bff6",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16297,6 +16374,22 @@
     "WSF"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036670/"
+  },
+  {
+   "ioc": "10ab10b792effcd9c8573aca8574c20ae2ca2aa18327c39c5ee3895e4ef1f1d8",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T07:46:36",
+   "tags": [
+    "DLL-sideloading",
+    "f95zone",
+    "MSBuild",
+    "msi",
+    "WSF"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036671/"
   },
   {
    "ioc": "c53a366c303fa3799402eb567a5567db196b8e6e9286972c17cb0bc82cdbf112",
@@ -16315,22 +16408,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036672/"
   },
   {
-   "ioc": "47cc6f96011c0a91bf4703eaecf8d01689237855665ac8b3cc4cab3fd0833c94",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T07:46:34",
-   "tags": [
-    "DLL-sideloading",
-    "f95zone",
-    "MSBuild",
-    "msi",
-    "WSF"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036675/"
-  },
-  {
    "ioc": "97e59b5ffc6c065920956f4a4647975624a6e914a4340a2523df34607651f8f8",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16345,6 +16422,22 @@
     "WSF"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036674/"
+  },
+  {
+   "ioc": "47cc6f96011c0a91bf4703eaecf8d01689237855665ac8b3cc4cab3fd0833c94",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T07:46:34",
+   "tags": [
+    "DLL-sideloading",
+    "f95zone",
+    "MSBuild",
+    "msi",
+    "WSF"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036675/"
   },
   {
    "ioc": "a165d5d03f189823fa6af87c19a2ec4f930b541f450e02eeb07cb9561651b429",
@@ -16363,20 +16456,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2036676/"
   },
   {
-   "ioc": "hxxps://bosinn[.]top/api/sync",
-   "type": "url",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
+   "ioc": "daf94c11dd0cb4d364b97786e081a86e93cfa634f2a3bc910222bb29b35e5cca",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
    "date": "2026-11-21T07:46:32",
    "tags": [
-    "banker",
-    "EVANGELION",
-    "Uzbekistan",
-    "wretchedcat",
-    "zero"
+    "DLL-sideloading",
+    "f95zone",
+    "MSBuild",
+    "msi",
+    "WSF"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036679/"
+   "link": "https://threatfox.abuse.ch/ioc/2036677/"
   },
   {
    "ioc": "hxxps://node19092026[.]top/api/sync",
@@ -16395,20 +16488,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2036678/"
   },
   {
-   "ioc": "daf94c11dd0cb4d364b97786e081a86e93cfa634f2a3bc910222bb29b35e5cca",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
+   "ioc": "hxxps://bosinn[.]top/api/sync",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
    "date": "2026-11-21T07:46:32",
    "tags": [
-    "DLL-sideloading",
-    "f95zone",
-    "MSBuild",
-    "msi",
-    "WSF"
+    "banker",
+    "EVANGELION",
+    "Uzbekistan",
+    "wretchedcat",
+    "zero"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036677/"
+   "link": "https://threatfox.abuse.ch/ioc/2036679/"
   },
   {
    "ioc": "hxxps://ashra[.]cc/api/sync",
@@ -16427,22 +16520,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036680/"
   },
   {
-   "ioc": "hxxps://nymra[.]cc/api/sync",
-   "type": "url",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:30",
-   "tags": [
-    "banker",
-    "EVANGELION",
-    "Uzbekistan",
-    "wretchedcat",
-    "zero"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036683/"
-  },
-  {
    "ioc": "hxxps://dsjfjksdtr[.]top/api/sync",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -16459,12 +16536,12 @@
    "link": "https://threatfox.abuse.ch/ioc/2036681/"
   },
   {
-   "ioc": "hxxps://sgdkgdksgdkgsd[.]top/api/sync",
+   "ioc": "hxxps://nymra[.]cc/api/sync",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:29",
+   "date": "2026-11-21T07:46:30",
    "tags": [
     "banker",
     "EVANGELION",
@@ -16472,7 +16549,7 @@
     "wretchedcat",
     "zero"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036685/"
+   "link": "https://threatfox.abuse.ch/ioc/2036683/"
   },
   {
    "ioc": "hxxps://ixor[.]top/api/sync",
@@ -16491,6 +16568,22 @@
    "link": "https://threatfox.abuse.ch/ioc/2036682/"
   },
   {
+   "ioc": "hxxps://sgdkgdksgdkgsd[.]top/api/sync",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:29",
+   "tags": [
+    "banker",
+    "EVANGELION",
+    "Uzbekistan",
+    "wretchedcat",
+    "zero"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036685/"
+  },
+  {
    "ioc": "hxxps://syrna[.]cc/api/sync",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -16505,22 +16598,6 @@
     "zero"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036684/"
-  },
-  {
-   "ioc": "hxxps://locanto[.]cam/api/sync",
-   "type": "url",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:27",
-   "tags": [
-    "banker",
-    "EVANGELION",
-    "Uzbekistan",
-    "wretchedcat",
-    "zero"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036687/"
   },
   {
    "ioc": "hxxps://kkkvvvzxg[.]online/api/sync",
@@ -16539,12 +16616,12 @@
    "link": "https://threatfox.abuse.ch/ioc/2036686/"
   },
   {
-   "ioc": "hxxps://peppe[.]cc/api/sync",
+   "ioc": "hxxps://locanto[.]cam/api/sync",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:26",
+   "date": "2026-11-21T07:46:27",
    "tags": [
     "banker",
     "EVANGELION",
@@ -16552,7 +16629,7 @@
     "wretchedcat",
     "zero"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036689/"
+   "link": "https://threatfox.abuse.ch/ioc/2036687/"
   },
   {
    "ioc": "hxxps://iiilii[.]top/api/sync",
@@ -16571,36 +16648,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2036688/"
   },
   {
-   "ioc": "hxxps://vkawdwa[.]top/ws",
+   "ioc": "hxxps://peppe[.]cc/api/sync",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:25",
+   "date": "2026-11-21T07:46:26",
    "tags": [
-    "Android",
-    "CoralCobra",
-    "MetaMaskRAT",
-    "REALITY",
-    "VLESS"
+    "banker",
+    "EVANGELION",
+    "Uzbekistan",
+    "wretchedcat",
+    "zero"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036692/"
-  },
-  {
-   "ioc": "hxxps://petroodawd[.]top/ws",
-   "type": "url",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:25",
-   "tags": [
-    "Android",
-    "CoralCobra",
-    "MetaMaskRAT",
-    "REALITY",
-    "VLESS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036691/"
+   "link": "https://threatfox.abuse.ch/ioc/2036689/"
   },
   {
    "ioc": "hxxps://dakjdnwgnu[.]sbs/ws",
@@ -16619,6 +16680,38 @@
    "link": "https://threatfox.abuse.ch/ioc/2036690/"
   },
   {
+   "ioc": "hxxps://petroodawd[.]top/ws",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:25",
+   "tags": [
+    "Android",
+    "CoralCobra",
+    "MetaMaskRAT",
+    "REALITY",
+    "VLESS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036691/"
+  },
+  {
+   "ioc": "hxxps://vkawdwa[.]top/ws",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:25",
+   "tags": [
+    "Android",
+    "CoralCobra",
+    "MetaMaskRAT",
+    "REALITY",
+    "VLESS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036692/"
+  },
+  {
    "ioc": "hxxps://evroreal[.]click:443/",
    "type": "url",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -16633,22 +16726,6 @@
     "VLESS"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036693/"
-  },
-  {
-   "ioc": "hxxps://tetovich[.]click:443/",
-   "type": "url",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown Stealer",
-   "confidence": 100,
-   "date": "2026-11-21T07:46:23",
-   "tags": [
-    "Android",
-    "CoralCobra",
-    "MetaMaskRAT",
-    "REALITY",
-    "VLESS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036695/"
   },
   {
    "ioc": "hxxps://vkadaw[.]click:8443/",
@@ -16667,20 +16744,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2036694/"
   },
   {
-   "ioc": "153[.]52[.]255[.]31:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "ioc": "hxxps://tetovich[.]click:443/",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:22",
+   "date": "2026-11-21T07:46:23",
    "tags": [
     "Android",
-    "BadPack",
-    "Dropper",
-    "EVANGELION",
-    "Uzbekistan"
+    "CoralCobra",
+    "MetaMaskRAT",
+    "REALITY",
+    "VLESS"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036697/"
+   "link": "https://threatfox.abuse.ch/ioc/2036695/"
   },
   {
    "ioc": "hxxps://rudsakdjn[.]click:443/",
@@ -16699,12 +16776,12 @@
    "link": "https://threatfox.abuse.ch/ioc/2036696/"
   },
   {
-   "ioc": "45[.]9[.]149[.]124:443",
+   "ioc": "153[.]52[.]255[.]31:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Unknown Stealer",
    "confidence": 100,
-   "date": "2026-11-21T07:46:21",
+   "date": "2026-11-21T07:46:22",
    "tags": [
     "Android",
     "BadPack",
@@ -16712,7 +16789,7 @@
     "EVANGELION",
     "Uzbekistan"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036699/"
+   "link": "https://threatfox.abuse.ch/ioc/2036697/"
   },
   {
    "ioc": "45[.]155[.]54[.]26:443",
@@ -16729,6 +16806,22 @@
     "Uzbekistan"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036698/"
+  },
+  {
+   "ioc": "45[.]9[.]149[.]124:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown Stealer",
+   "confidence": 100,
+   "date": "2026-11-21T07:46:21",
+   "tags": [
+    "Android",
+    "BadPack",
+    "Dropper",
+    "EVANGELION",
+    "Uzbekistan"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036699/"
   },
   {
    "ioc": "minecraft-set[.]com",
@@ -16769,16 +16862,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036705/"
   },
   {
-   "ioc": "80[.]94[.]92[.]179:22",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T07:43:15",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2036702/"
-  },
-  {
    "ioc": "97a1e6f817d44a4f8b07fdebaf9357786742096c470eb5d78e789b6bb53979bb",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16787,6 +16870,16 @@
    "date": "2026-11-21T07:43:15",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2036701/"
+  },
+  {
+   "ioc": "80[.]94[.]92[.]179:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T07:43:15",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2036702/"
   },
   {
    "ioc": "27[.]79[.]5[.]137:22",
@@ -16799,16 +16892,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036703/"
   },
   {
-   "ioc": "109[.]160[.]32[.]146:22",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T07:43:13",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2036706/"
-  },
-  {
    "ioc": "171[.]243[.]149[.]120:22",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -16819,24 +16902,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2036704/"
   },
   {
-   "ioc": "193[.]32[.]162[.]84:22",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 60,
-   "date": "2026-11-21T07:43:12",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2036709/"
-  },
-  {
-   "ioc": "109[.]160[.]32[.]39:22",
+   "ioc": "109[.]160[.]32[.]146:22",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-21T07:43:12",
+   "date": "2026-11-21T07:43:13",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2036708/"
+   "link": "https://threatfox.abuse.ch/ioc/2036706/"
   },
   {
    "ioc": "109[.]160[.]32[.]131:22",
@@ -16849,14 +16922,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2036707/"
   },
   {
-   "ioc": "169e1952898276010f212f609c4956a4fd89daa35ce3fa45c31357b44149efaf",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
+   "ioc": "109[.]160[.]32[.]39:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
-   "confidence": 80,
-   "date": "2026-11-21T07:43:11",
+   "confidence": 75,
+   "date": "2026-11-21T07:43:12",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2036711/"
+   "link": "https://threatfox.abuse.ch/ioc/2036708/"
+  },
+  {
+   "ioc": "193[.]32[.]162[.]84:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 60,
+   "date": "2026-11-21T07:43:12",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2036709/"
   },
   {
    "ioc": "171[.]221[.]160[.]227:22",
@@ -16867,6 +16950,16 @@
    "date": "2026-11-21T07:43:11",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2036710/"
+  },
+  {
+   "ioc": "169e1952898276010f212f609c4956a4fd89daa35ce3fa45c31357b44149efaf",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 80,
+   "date": "2026-11-21T07:43:11",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2036711/"
   },
   {
    "ioc": "193[.]90[.]12[.]62:22",
@@ -16916,17 +17009,18 @@
    "link": "https://threatfox.abuse.ch/ioc/2036727/"
   },
   {
-   "ioc": "37[.]221[.]79[.]4:80",
-   "type": "ip:port",
+   "ioc": "fondasi[.]amscprivacy[.]com",
+   "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
+   "malware": "IClickFix",
    "confidence": 75,
    "date": "2026-11-21T07:43:06",
    "tags": [
-    "elf",
-    "honeypot"
+    "BSC-testnet",
+    "ClickFix",
+    "etherhiding"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036790/"
+   "link": "https://threatfox.abuse.ch/ioc/2036725/"
   },
   {
    "ioc": "hechman[.]top",
@@ -16944,32 +17038,17 @@
    "link": "https://threatfox.abuse.ch/ioc/2036775/"
   },
   {
-   "ioc": "fondasi[.]amscprivacy[.]com",
-   "type": "domain",
+   "ioc": "37[.]221[.]79[.]4:80",
+   "type": "ip:port",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
+   "malware": "Unknown malware",
    "confidence": 75,
    "date": "2026-11-21T07:43:06",
    "tags": [
-    "BSC-testnet",
-    "ClickFix",
-    "etherhiding"
+    "elf",
+    "honeypot"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2036725/"
-  },
-  {
-   "ioc": "45[.]86[.]68[.]34:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-21T07:43:05",
-   "tags": [
-    "honeypot",
-    "IoT",
-    "sentinel"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036807/"
+   "link": "https://threatfox.abuse.ch/ioc/2036790/"
   },
   {
    "ioc": "45[.]86[.]68[.]34:18129",
@@ -16986,6 +17065,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2036806/"
   },
   {
+   "ioc": "45[.]86[.]68[.]34:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 50,
+   "date": "2026-11-21T07:43:05",
+   "tags": [
+    "honeypot",
+    "IoT",
+    "sentinel"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036807/"
+  },
+  {
    "ioc": "e1a7aead734c79d37f42cbc8fac0f9fddfe6154ad8a892bb679fd9eb0fa49ee7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16994,19 +17087,6 @@
    "date": "2026-11-21T07:43:04",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037229/"
-  },
-  {
-   "ioc": "45[.]10[.]20[.]53:8000",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-21T07:43:03",
-   "tags": [
-    "CoinMiner",
-    "diicot"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037234/"
   },
   {
    "ioc": "45[.]10[.]20[.]53:1419",
@@ -17020,6 +17100,19 @@
     "diicot"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2037233/"
+  },
+  {
+   "ioc": "45[.]10[.]20[.]53:8000",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T07:43:03",
+   "tags": [
+    "CoinMiner",
+    "diicot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037234/"
   },
   {
    "ioc": "conad-plus[.]shop",
@@ -17050,20 +17143,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2037751/"
   },
   {
-   "ioc": "www[.]prowesssoft[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 75,
-   "date": "2026-11-21T07:42:57",
-   "tags": [
-    "ClickFix",
-    "etherhiding",
-    "Polygon"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037753/"
-  },
-  {
    "ioc": "www[.]maidstoneremovals[.]co[.]uk",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -17078,14 +17157,28 @@
    "link": "https://threatfox.abuse.ch/ioc/2037752/"
   },
   {
-   "ioc": "185[.]121[.]15[.]175:3333",
+   "ioc": "www[.]prowesssoft[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 75,
+   "date": "2026-11-21T07:42:57",
+   "tags": [
+    "ClickFix",
+    "etherhiding",
+    "Polygon"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037753/"
+  },
+  {
+   "ioc": "46[.]21[.]83[.]174:3333",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Coinminer",
    "confidence": 100,
    "date": "2026-11-21T07:42:56",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037775/"
+   "link": "https://threatfox.abuse.ch/ioc/2037773/"
   },
   {
    "ioc": "50[.]114[.]102[.]251:3333",
@@ -17098,14 +17191,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037774/"
   },
   {
-   "ioc": "46[.]21[.]83[.]174:3333",
+   "ioc": "185[.]121[.]15[.]175:3333",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Coinminer",
    "confidence": 100,
    "date": "2026-11-21T07:42:56",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037773/"
+   "link": "https://threatfox.abuse.ch/ioc/2037775/"
   },
   {
    "ioc": "194[.]147[.]58[.]39:8123",
@@ -17121,18 +17214,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2036578/"
   },
   {
-   "ioc": "168[.]110[.]13[.]57:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T07:42:52",
-   "tags": [
-    "PentAGI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2036596/"
-  },
-  {
    "ioc": "39[.]107[.]243[.]187:80",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -17143,6 +17224,18 @@
     "ARTEX"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2036594/"
+  },
+  {
+   "ioc": "168[.]110[.]13[.]57:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-21T07:42:52",
+   "tags": [
+    "PentAGI"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2036596/"
   },
   {
    "ioc": "cafesolublesl[.]es",
@@ -17156,40 +17249,6 @@
     "etherhide"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2037779/"
-  },
-  {
-   "ioc": "09486c9a434bd22c3bb46e92dd4eec02bd99671e35eaac4dfa1a2fa84d87c58b",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T07:35:34",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037778/"
-  },
-  {
-   "ioc": "8a7bb4e2c5b2d668951c74371b43421fbb5674a7ddd729066ee994591dff9091",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T07:35:34",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037777/"
   },
   {
    "ioc": "ca3b17782959e8a1b97e57363f6d2e61f52668dfc4501ae375aa548ef2dc00b3",
@@ -17209,12 +17268,12 @@
    "link": "https://threatfox.abuse.ch/ioc/2037776/"
   },
   {
-   "ioc": "832ad50276a88526977ebf7a4d74333fb2dfd1cd875def573aa7dce8828399c1",
+   "ioc": "8a7bb4e2c5b2d668951c74371b43421fbb5674a7ddd729066ee994591dff9091",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 90,
-   "date": "2026-11-21T07:05:40",
+   "date": "2026-11-21T07:35:34",
    "tags": [
     "EasyShell",
     "elf",
@@ -17223,15 +17282,15 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037772/"
+   "link": "https://threatfox.abuse.ch/ioc/2037777/"
   },
   {
-   "ioc": "ea2a034979d021746346218c75a41f5ac5cd5dea93ed756698a6edfe5a04d66f",
+   "ioc": "09486c9a434bd22c3bb46e92dd4eec02bd99671e35eaac4dfa1a2fa84d87c58b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 90,
-   "date": "2026-11-21T07:05:40",
+   "date": "2026-11-21T07:35:34",
    "tags": [
     "EasyShell",
     "elf",
@@ -17240,58 +17299,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037771/"
-  },
-  {
-   "ioc": "d4c8ec37ca836f0f01d1c1e1f34f549a37a09a251538f6e56a99cadc37e496fc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T07:05:40",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037770/"
-  },
-  {
-   "ioc": "1467a95824a3ea48eadc43ca152218af2f6d2ef9880f391a1f7add91450bff1e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T07:05:40",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037769/"
-  },
-  {
-   "ioc": "e6c4954796b5efee464583ac52fad6b03e19d2d9792e960ecbcf1bfcc7635f59",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T07:05:40",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037768/"
+   "link": "https://threatfox.abuse.ch/ioc/2037778/"
   },
   {
    "ioc": "d4ec31ed44698baae338d55ba1ed0f45ba959b1d84a1ff17ca1dbdc5ba439f3a",
@@ -17311,6 +17319,91 @@
    "link": "https://threatfox.abuse.ch/ioc/2037767/"
   },
   {
+   "ioc": "e6c4954796b5efee464583ac52fad6b03e19d2d9792e960ecbcf1bfcc7635f59",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T07:05:40",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037768/"
+  },
+  {
+   "ioc": "1467a95824a3ea48eadc43ca152218af2f6d2ef9880f391a1f7add91450bff1e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T07:05:40",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037769/"
+  },
+  {
+   "ioc": "d4c8ec37ca836f0f01d1c1e1f34f549a37a09a251538f6e56a99cadc37e496fc",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T07:05:40",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037770/"
+  },
+  {
+   "ioc": "ea2a034979d021746346218c75a41f5ac5cd5dea93ed756698a6edfe5a04d66f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T07:05:40",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037771/"
+  },
+  {
+   "ioc": "832ad50276a88526977ebf7a4d74333fb2dfd1cd875def573aa7dce8828399c1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T07:05:40",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037772/"
+  },
+  {
    "ioc": "93607de77b347997b832aac3f8bffd33e71846981eb293d29d6c03b352b99677",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -17328,7 +17421,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037766/"
   },
   {
-   "ioc": "nj[.]asiabet777[.]org",
+   "ioc": "m[.]gsx88[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Vidar",
@@ -17337,7 +17430,7 @@
    "tags": [
     "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037765/"
+   "link": "https://threatfox.abuse.ch/ioc/2037763/"
   },
   {
    "ioc": "gsx88[.]org",
@@ -17352,7 +17445,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037764/"
   },
   {
-   "ioc": "m[.]gsx88[.]org",
+   "ioc": "nj[.]asiabet777[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Vidar",
@@ -17361,19 +17454,7 @@
    "tags": [
     "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037763/"
-  },
-  {
-   "ioc": "84[.]200[.]87[.]203:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "VShell",
-   "confidence": 100,
-   "date": "2026-11-21T07:05:07",
-   "tags": [
-    "Vshell"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037762/"
+   "link": "https://threatfox.abuse.ch/ioc/2037765/"
   },
   {
    "ioc": "134[.]175[.]40[.]200:8084",
@@ -17386,6 +17467,18 @@
     "Vshell"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2037761/"
+  },
+  {
+   "ioc": "84[.]200[.]87[.]203:8080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-21T07:05:07",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037762/"
   },
   {
    "ioc": "139[.]224[.]211[.]87:81",
@@ -17502,20 +17595,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2037749/"
   },
   {
-   "ioc": "hxxp://175[.]107[.]208[.]107:54497/Mozi[.]a",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Mozi",
-   "confidence": 75,
-   "date": "2026-11-21T06:18:49",
-   "tags": [
-    "elf",
-    "IoT",
-    "Mozi"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037748/"
-  },
-  {
    "ioc": "hxxp://223[.]123[.]34[.]88:53640/Mozi[.]m",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -17528,102 +17607,804 @@
     "Mozi"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2037747/"
-  },
-  {
-   "ioc": "hxxp://182[.]127[.]104[.]240:55429/Mozi[.]m",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Mozi",
-   "confidence": 75,
-   "date": "2026-11-21T06:18:48",
-   "tags": [
-    "elf",
-    "IoT",
-    "Mozi"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037746/"
-  },
-  {
-   "ioc": "hxxp://139[.]135[.]43[.]173:59289/Mozi[.]a",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Mozi",
-   "confidence": 75,
-   "date": "2026-11-21T06:18:48",
-   "tags": [
-    "elf",
-    "IoT",
-    "Mozi"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037745/"
-  },
-  {
-   "ioc": "hxxp://103[.]66[.]148[.]82:42004/Mozi[.]m",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Mozi",
-   "confidence": 75,
-   "date": "2026-11-21T06:18:48",
-   "tags": [
-    "elf",
-    "IoT",
-    "Mozi"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037744/"
-  },
-  {
-   "ioc": "3f5080473eb31a2d6b9e01722ad4e81e345266c2164153d2e4149e5162c2120e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T06:06:09",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037743/"
-  },
-  {
-   "ioc": "3fa0f8c7618ee2f2445fe1dc065cdc3c035240205f6ca62d2017e0894f756b5f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T06:06:09",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037742/"
-  },
-  {
-   "ioc": "9c0c05ccc57cc2d3b5b4a03ee436f3ee035262a860527637532fcd655abdb697",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T06:06:08",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037741/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saif72437/airplane-ticket-booking-app/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072885/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/react-firebase-auth-crud/refs/heads/main/src/components/chart/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072886/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saif72437/voice-and-text-translator-app/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072887/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saif72437/diet-plan-app/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072888/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saadmustafa-111/Lemara_Commercial/refs/heads/main/src/app/dashboard/admin/commercial-listings/view/%5Bid%5D/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072889/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/pixifyai/refs/heads/main/src/pages/api/v1/model-versions/by-hash/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072890/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Rup-001/GYM-management-System/refs/heads/main/src/modules/auth/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072891/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/SahanDhanujaya/coredex-ml-project/refs/heads/pre-develop/artifacts/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072892/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/SahilDudhatWork/daily-news/refs/heads/main/static/Images/demo-seven/common/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:13",
+   "link": "https://urlhaus.abuse.ch/url/4072893/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/streamup-dashboard/refs/heads/main/src/components/styles/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072875/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/dreamhub/refs/heads/master/src/app/project/%5BprojectId%5D/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072876/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/netwade/refs/heads/main/src/app/components/componentStyles/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072877/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rutpshah/propflow/refs/heads/main/test/suite/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072878/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/form-flow-manager/refs/heads/main/src/app/api/auth/%5B[.][.][.]nextauth%5D/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072879/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/es-p-portfolio/refs/heads/main/pages/about/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072880/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/krav/refs/heads/main/src/components/landing/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072881/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/Food-Delivery-App-React/refs/heads/main/food-delivery-app/src/components/appDownload/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072882/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saadmustafa-111/Next3dModel/refs/heads/main/src/app/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072883/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/MoeenAhmed-Dev/dev-environment-manager/refs/heads/main/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:12",
+   "link": "https://urlhaus.abuse.ch/url/4072884/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/registration-form-php-cookies-sessions/refs/heads/main/css/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072849/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saif72437/real-estate-app/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072850/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mogul250/blogsite/refs/heads/main/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072851/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/real-time-chat-app-react-firebase-tailwind/refs/heads/main/chat-app/src/components/list/chatList/addUser/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072852/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/RogerThatTan/AdvWeb-Hotel/refs/heads/main/src/auth/guards/access-token/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072853/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/SaintsRoots/FindArtAndExhibition-fe/refs/heads/dev/public/fonts/fa-solid[.]lfk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072854/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/node-js-routing-with-ejs/refs/heads/main/views/components/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072855/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/recipe-app-react-native-frontend/refs/heads/main/android/app/src/main/java/com/recipeappui/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072856/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/recipe-app-react-native-node-express-backend/refs/heads/main/src/controller/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072857/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/springboot-and-html-simple-crud/refs/heads/main/back-end/demo/src/main/java/com/example/demo/controller/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072858/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Sajawal6363/dropspheregame/refs/heads/main/app/auth/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072859/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Sadithma406/SE-15-ENVOtix/refs/heads/main/Mobile_Frontend/src/screens/RedeemShops/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072860/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/imagica-mern-stack-ai-saas-app-backend/refs/heads/main/config/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072861/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Mouniraithammadi/planity-scraping/refs/heads/main/public/fonts/fa-solid-700[.]otf",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072862/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/imagica-mern-stack-ai-saas-app-frondend/refs/heads/main/src/components/resetPassword/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072863/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Saim-Masood/HK-040-Hackathon-SMEC2026/refs/heads/main/task1/src/components/ui/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072864/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rkanik/rkenger-go-server/refs/heads/main/database/mongodb/public/fonts/fa-solid-900[.]eot",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072865/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Rup-001/Movie-Mang[.]-System/refs/heads/main/config/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072866/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Sachin-Bandaranayaka/eatafrican/refs/heads/main/app/api/customers/%5Bid%5D/addresses/%5BaddressId%5D/default/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072867/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/springboot-html-css-registration-form/refs/heads/main/backend/demoApp/src/main/java/org/example/demoapp/controller/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072868/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/simple-e-commercce-microservices-node-js-auth-service/refs/heads/main/src/controllers/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072869/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/khanywala/refs/heads/main/app/api/auth/%5B[.][.][.]nextauth%5D/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072870/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Sajjad177/tamplate-js-project/refs/heads/main/src/modules/auth/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072871/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/movix/refs/heads/main/app/api/auth/%5B[.][.][.]nextauth%5D/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072872/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/saiksaif/psnclub_backend/refs/heads/main/controllers/middleware/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072873/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/project-anagement-collabtrack-app/refs/heads/master/components/ui/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:11",
+   "link": "https://urlhaus.abuse.ch/url/4072874/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Ryane23/salary-management/refs/heads/main/public/fonts/fa-solid-400[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4072846/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/mohsinmj1/Laravel8_Vue_AdminLTE3/refs/heads/master/public/fonts/fa-solid-500[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4072847/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/rKrishan99/React-Shopping-Cart-App/refs/heads/main/shopping-cart-app/src/components/cartTile/public/fonts/fa-solid-900[.]woff2",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "DEVPOPPER",
+    "github",
+    "js",
+    "TxDataHiding",
+    "VSCode"
+   ],
+   "date": "2026-11-21T09:57:10",
+   "link": "https://urlhaus.abuse.ch/url/4072848/"
+  },
+  {
+   "ioc": "hxxp://175[.]100[.]42[.]26:8080/api/v1/loader[.]sh?tag=cvh-b41069edc7f99991",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "175-100-42-26",
+    "cowrie",
+    "elf",
+    "honeypot"
+   ],
+   "date": "2026-11-21T09:54:05",
+   "link": "https://urlhaus.abuse.ch/url/4072845/"
+  },
+  {
+   "ioc": "hxxp://dl[.]atlas101[.]us[.]kg/dl[.]sh",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "cowrie",
+    "honeypot"
+   ],
+   "date": "2026-11-21T09:54:04",
+   "link": "https://urlhaus.abuse.ch/url/4072844/"
+  },
+  {
+   "ioc": "hxxp://125[.]47[.]218[.]189:42702/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T09:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4072841/"
+  },
+  {
+   "ioc": "hxxp://123[.]7[.]237[.]193:37282/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T09:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4072842/"
+  },
+  {
+   "ioc": "hxxp://59[.]96[.]142[.]237:38419/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T09:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4072843/"
+  },
+  {
+   "ioc": "hxxp://182[.]124[.]250[.]107:40582/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T09:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4072839/"
+  },
+  {
+   "ioc": "hxxp://182[.]121[.]168[.]84:44844/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-21T09:32:06",
+   "link": "https://urlhaus.abuse.ch/url/4072840/"
+  },
   {
    "ioc": "hxxp://125[.]47[.]218[.]189:42702/bin[.]sh",
    "host_it": false,
@@ -18767,630 +19548,6 @@
    "tags": [],
    "date": "2026-11-21T06:58:12",
    "link": "https://urlhaus.abuse.ch/url/4072752/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/ppc",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:11",
-   "link": "https://urlhaus.abuse.ch/url/4072740/"
-  },
-  {
-   "ioc": "hxxp://208[.]85[.]22[.]206:8080/xmrig[.]exe",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:11",
-   "link": "https://urlhaus.abuse.ch/url/4072741/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-agent-linux-amd64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:58:11",
-   "link": "https://urlhaus.abuse.ch/url/4072742/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8095/Heyiwei-csky-gx3201",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:11",
-   "link": "https://urlhaus.abuse.ch/url/4072743/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/x86",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "gafgyt"
-   ],
-   "date": "2026-11-21T06:58:10",
-   "link": "https://urlhaus.abuse.ch/url/4072737/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-shell-linux-ppc64le",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:58:10",
-   "link": "https://urlhaus.abuse.ch/url/4072738/"
-  },
-  {
-   "ioc": "hxxp://112[.]192[.]143[.]98:35381/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "arm",
-    "cowrie",
-    "elf",
-    "honeypot",
-    "mirai",
-    "Mozi"
-   ],
-   "date": "2026-11-21T06:58:10",
-   "link": "https://urlhaus.abuse.ch/url/4072739/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Matarwy/telegramHyip/refs/heads/main/public/fonts/fa-solid-500[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T06:58:09",
-   "link": "https://urlhaus.abuse.ch/url/4072734/"
-  },
-  {
-   "ioc": "hxxp://208[.]85[.]22[.]206:8081/bot_mipsel",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:09",
-   "link": "https://urlhaus.abuse.ch/url/4072735/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8082/wget[.]sh[.]bak-arch",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:09",
-   "link": "https://urlhaus.abuse.ch/url/4072736/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/i686",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "gafgyt"
-   ],
-   "date": "2026-11-21T06:58:08",
-   "link": "https://urlhaus.abuse.ch/url/4072731/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/mipsel",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:08",
-   "link": "https://urlhaus.abuse.ch/url/4072732/"
-  },
-  {
-   "ioc": "hxxp://37[.]221[.]79[.]4/ppc",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:08",
-   "link": "https://urlhaus.abuse.ch/url/4072733/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/armv4",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Ngioweb"
-   ],
-   "date": "2026-11-21T06:58:07",
-   "link": "https://urlhaus.abuse.ch/url/4072726/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-shell-linux-mips64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:58:07",
-   "link": "https://urlhaus.abuse.ch/url/4072727/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/aarch64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:07",
-   "link": "https://urlhaus.abuse.ch/url/4072728/"
-  },
-  {
-   "ioc": "hxxp://208[.]85[.]22[.]206:8081/bot_mips",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:07",
-   "link": "https://urlhaus.abuse.ch/url/4072729/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/Heyiwei-csky-gx3201",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:07",
-   "link": "https://urlhaus.abuse.ch/url/4072730/"
-  },
-  {
-   "ioc": "hxxp://208[.]85[.]22[.]206:8080/bot_linux_x86",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:06",
-   "link": "https://urlhaus.abuse.ch/url/4072719/"
-  },
-  {
-   "ioc": "hxxp://208[.]85[.]22[.]206:8080/xmrig",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:06",
-   "link": "https://urlhaus.abuse.ch/url/4072720/"
-  },
-  {
-   "ioc": "hxxp://198[.]84[.]87[.]4:8000/mipsel",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "CoinMiner"
-   ],
-   "date": "2026-11-21T06:58:06",
-   "link": "https://urlhaus.abuse.ch/url/4072721/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-shell-linux-386",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:58:06",
-   "link": "https://urlhaus.abuse.ch/url/4072722/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/i486",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "gafgyt"
-   ],
-   "date": "2026-11-21T06:58:06",
-   "link": "https://urlhaus.abuse.ch/url/4072723/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/Heyiwei-armv5l",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Ngioweb"
-   ],
-   "date": "2026-11-21T06:58:06",
-   "link": "https://urlhaus.abuse.ch/url/4072724/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8083/Heyiwei-csky-abiv1",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:06",
-   "link": "https://urlhaus.abuse.ch/url/4072725/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8100/mips",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:05",
-   "link": "https://urlhaus.abuse.ch/url/4072716/"
-  },
-  {
-   "ioc": "hxxp://208[.]85[.]22[.]206:8081/xmrig-mips",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:05",
-   "link": "https://urlhaus.abuse.ch/url/4072717/"
-  },
-  {
-   "ioc": "hxxps://qadamcash[.]top/api/download",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "apk ",
-    "EVANGELION",
-    "Uzbekistan",
-    "wretchedcat",
-    "zero"
-   ],
-   "date": "2026-11-21T06:58:05",
-   "link": "https://urlhaus.abuse.ch/url/4072718/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8089/p443/",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:04",
-   "link": "https://urlhaus.abuse.ch/url/4072711/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/arm",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Ngioweb"
-   ],
-   "date": "2026-11-21T06:58:04",
-   "link": "https://urlhaus.abuse.ch/url/4072712/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/mipsel",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:04",
-   "link": "https://urlhaus.abuse.ch/url/4072713/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/RashedulHaqueRasel1/Github_Analysis_Server/refs/heads/main/public/fonts/fa-solid-900[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T06:58:04",
-   "link": "https://urlhaus.abuse.ch/url/4072714/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-killer-linux-ppc",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:58:04",
-   "link": "https://urlhaus.abuse.ch/url/4072715/"
-  },
-  {
-   "ioc": "hxxp://112[.]44[.]253[.]35:9996/robots[.]txt",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:58:03",
-   "link": "https://urlhaus.abuse.ch/url/4072710/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/powerpc",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:02",
-   "link": "https://urlhaus.abuse.ch/url/4072709/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-agent-linux-ppc64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072698/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/Heyiwei-armv6l",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Ngioweb"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072699/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/Heyiwei-i686",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "gafgyt"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072700/"
-  },
-  {
-   "ioc": "hxxps://18tllktok[.]xyz/app[.]apk",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "apk ",
-    "badpack",
-    "dropper",
-    "EVANGELION",
-    "shellapp"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072701/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8110/mipsel",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072702/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8099/Heyiwei-csky-gx3201",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072703/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8113/armv8l",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072704/"
-  },
-  {
-   "ioc": "hxxp://198[.]84[.]87[.]4:8000/xmrig-x64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072705/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8100/mips64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072706/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8095/Heyiwei-csky-abiv1",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072707/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-preload-linux-m68k",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:58:01",
-   "link": "https://urlhaus.abuse.ch/url/4072708/"
-  },
-  {
-   "ioc": "hxxp://185[.]227[.]111[.]163:8000/bot[.]arm64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T06:58:00",
-   "link": "https://urlhaus.abuse.ch/url/4072697/"
-  },
-  {
-   "ioc": "hxxp://39[.]74[.]35[.]114:51449/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "cowrie",
-    "elf",
-    "honeypot",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-21T06:57:59",
-   "link": "https://urlhaus.abuse.ch/url/4072694/"
-  },
-  {
-   "ioc": "hxxp://175[.]100[.]42[.]26:8080/dist/myc2-agent-linux-ppc64le",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "botnet",
-    "honeypot",
-    "php2shell"
-   ],
-   "date": "2026-11-21T06:57:59",
-   "link": "https://urlhaus.abuse.ch/url/4072695/"
-  },
-  {
-   "ioc": "hxxps://site[.]hfgjjkrewjk[.]com/look/NisSrv[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:57:59",
-   "link": "https://urlhaus.abuse.ch/url/4072696/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/Heyiwei-i486",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "gafgyt"
-   ],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072684/"
-  },
-  {
-   "ioc": "hxxp://18[.]220[.]36[.]224/main_arm",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "gafgyt"
-   ],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072685/"
-  },
-  {
-   "ioc": "hxxp://37[.]221[.]79[.]4/dlr[.]x86_64",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072686/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8112/Heyiwei-x86_64",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072687/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Marwa-001/ai-resume-screener/refs/heads/master/client/src/assets/public/fonts/fa-brands-400[.]ttf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T06:57:58",
-   "link": "https://urlhaus.abuse.ch/url/4072688/"
   }
  ],
  "malware_top": [
@@ -19408,7 +19565,7 @@
   },
   {
    "name": "Mirai",
-   "count": 111
+   "count": 114
   },
   {
    "name": "Unknown Stealer",
@@ -19420,7 +19577,7 @@
   },
   {
    "name": "ClearFake",
-   "count": 40
+   "count": 41
   },
   {
    "name": "Cobalt Strike",
@@ -19451,6 +19608,10 @@
    "count": 15
   },
   {
+   "name": "VShell",
+   "count": 14
+  },
+  {
    "name": "php.shin_webshell",
    "count": 14
   },
@@ -19461,10 +19622,6 @@
   {
    "name": "NjRAT",
    "count": 14
-  },
-  {
-   "name": "VShell",
-   "count": 12
   },
   {
    "name": "PureRAT",
@@ -19523,31 +19680,31 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.11,
+    "value": 56.06,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 6.77,
+    "value": 6.72,
     "rank": 2
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 3.2,
+    "value": 3.24,
     "rank": 3
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.12,
+    "value": 3.17,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.72,
+    "value": 2.71,
     "rank": 5
    },
    {
@@ -19559,19 +19716,19 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.07,
+    "value": 2.05,
     "rank": 7
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 1.96,
+    "value": 1.95,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.47,
+    "value": 1.48,
     "rank": 9
    },
    {
@@ -19583,7 +19740,7 @@
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.2,
+    "value": 1.19,
     "rank": 11
    },
    {
@@ -19596,14 +19753,14 @@
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.38,
-   "rank": 28
+   "value": 0.43,
+   "rank": 26
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.84,
+    "value": 55.85,
     "rank": 1
    },
    {
@@ -19621,7 +19778,7 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.92,
+    "value": 2.91,
     "rank": 4
    },
    {
@@ -19639,7 +19796,7 @@
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.1,
+    "value": 2.11,
     "rank": 7
    },
    {
@@ -19657,7 +19814,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.33,
+    "value": 1.34,
     "rank": 10
    },
    {
@@ -19676,7 +19833,7 @@
   "it_7d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.19,
+   "value": 0.2,
    "rank": 42
   },
   "outages_it": []
