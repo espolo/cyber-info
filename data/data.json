@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T03:43:38Z",
+ "updated": "2026-11-21T04:01:13Z",
  "news": [
   {
    "id": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
@@ -14141,8 +14141,18 @@
    "last": "2026-11-18T20:21:01"
   },
   {
-   "name": "Sandworm",
+   "name": "Lazarus Group",
    "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14161,18 +14171,8 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
+   "name": "Sandworm",
    "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Killnet",
-   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14798,6 +14798,60 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "846f99ae97596408069270acd2bdff9d45a3c23d547040c65d23348da50b0f9c",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Formbook",
+   "confidence": 90,
+   "date": "2026-11-21T03:59:54",
+   "tags": [
+    "Formbook",
+    "ps1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037246/"
+  },
+  {
+   "ioc": "e801820dc15bd2986ba90b05146915d3f79197c39d71c279c8f283a4f48f6ba9",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Formbook",
+   "confidence": 90,
+   "date": "2026-11-21T03:59:53",
+   "tags": [
+    "Formbook",
+    "ps1"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037245/"
+  },
+  {
+   "ioc": "46[.]19[.]140[.]50:2083",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 75,
+   "date": "2026-11-21T03:45:53",
+   "tags": [
+    "CobaltStrike",
+    "drb-ra",
+    "modat"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037244/"
+  },
+  {
+   "ioc": "1391364755-58nbyzw9lr[.]ap-singapore[.]tencentscf[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 75,
+   "date": "2026-11-21T03:45:35",
+   "tags": [
+    "CobaltStrike",
+    "drb-ra",
+    "modat"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037243/"
+  },
   {
    "ioc": "turquoisecoastal[.]workers[.]dev",
    "type": "domain",
@@ -16892,49 +16946,59 @@
    "date": "2026-11-21T02:43:55",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037048/"
-  },
-  {
-   "ioc": "48185d0c5015e9b8bc3d77a1a017224d",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:54",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037043/"
-  },
-  {
-   "ioc": "8cc584b3cb9c91f15d2b40edecd12dc377453f6674e42ce5f9dc0eda37c8d7b3",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:54",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037044/"
-  },
-  {
-   "ioc": "767df9d5aa3ef1869bb02c685c6d03219527aa38",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:54",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037045/"
-  },
-  {
-   "ioc": "402bc1971b57d7df642991da05195841",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:54",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037046/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://222[.]241[.]234[.]241:50704/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "Mozi"
+   ],
+   "date": "2026-11-21T03:55:17",
+   "link": "https://urlhaus.abuse.ch/url/4072165/"
+  },
+  {
+   "ioc": "hxxp://42[.]224[.]125[.]216:39685/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-21T03:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4072164/"
+  },
+  {
+   "ioc": "hxxp://182[.]119[.]206[.]134:54379/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-21T03:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4072161/"
+  },
+  {
+   "ioc": "hxxp://36[.]89[.]252[.]178:49557/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-21T03:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4072162/"
+  },
+  {
+   "ioc": "hxxp://123[.]168[.]194[.]62:58368/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-21T03:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4072163/"
+  },
   {
    "ioc": "hxxp://196[.]191[.]231[.]12:51525/bin[.]sh",
    "host_it": false,
@@ -18536,67 +18600,6 @@
    ],
    "date": "2026-11-20T20:47:14",
    "link": "https://urlhaus.abuse.ch/url/4072016/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/netconsultantcurse/TG-WS-Proxy-v1[.]11[.]4/releases/download/TG-WS-Proxy-v1[.]11[.]4/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-20T20:47:14",
-   "link": "https://urlhaus.abuse.ch/url/4072017/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/netconsultantcurse/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-20T20:47:13",
-   "link": "https://urlhaus.abuse.ch/url/4072013/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/netconsultantcurse/TelegramZapret/releases/download/TelegramZapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-20T20:47:13",
-   "link": "https://urlhaus.abuse.ch/url/4072014/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/netconsultantcurse/tg-fix/releases/download/tg-fix/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-20T20:47:10",
-   "link": "https://urlhaus.abuse.ch/url/4071999/"
-  },
-  {
-   "ioc": "hxxp://221[.]202[.]206[.]185:59205/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-20T20:47:10",
-   "link": "https://urlhaus.abuse.ch/url/4072000/"
   }
  ],
  "malware_top": [
@@ -18637,16 +18640,16 @@
    "count": 30
   },
   {
-   "name": "AsyncRAT",
-   "count": 29
-  },
-  {
    "name": "Cobalt Strike",
    "count": 28
   },
   {
+   "name": "AsyncRAT",
+   "count": 28
+  },
+  {
    "name": "SalatStealer",
-   "count": 27
+   "count": 25
   },
   {
    "name": "Agent Tesla",
@@ -18729,7 +18732,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.59,
+    "value": 56.54,
     "rank": 1
    },
    {
@@ -18741,25 +18744,25 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.91,
+    "value": 2.95,
     "rank": 3
-   },
-   {
-    "code": "GB",
-    "name": "United Kingdom",
-    "value": 2.77,
-    "rank": 4
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.77,
-    "rank": 5
+    "value": 2.83,
+    "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.77,
+    "value": 2.76,
+    "rank": 5
+   },
+   {
+    "code": "GB",
+    "name": "United Kingdom",
+    "value": 2.76,
     "rank": 6
    },
    {
@@ -18771,31 +18774,31 @@
    {
     "code": "FR",
     "name": "France",
-    "value": 1.98,
+    "value": 1.97,
     "rank": 8
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.31,
+    "value": 1.33,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.22,
+    "value": 1.19,
     "rank": 10
    },
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.18,
+    "value": 1.15,
     "rank": 11
    },
    {
     "code": "IN",
     "name": "India",
-    "value": 0.96,
+    "value": 0.95,
     "rank": 12
    }
   ],
@@ -18821,13 +18824,13 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 3.0,
+    "value": 2.99,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.93,
+    "value": 2.92,
     "rank": 4
    },
    {
@@ -18839,7 +18842,7 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 2.33,
+    "value": 2.34,
     "rank": 6
    },
    {
@@ -18863,7 +18866,7 @@
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.3,
+    "value": 1.31,
     "rank": 10
    },
    {
