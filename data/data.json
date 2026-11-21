@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T03:30:59Z",
+ "updated": "2026-11-21T03:43:38Z",
  "news": [
   {
    "id": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
@@ -14151,8 +14151,8 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14171,8 +14171,8 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14799,14 +14799,179 @@
  "known_actors": 1528,
  "iocs": [
   {
-   "ioc": "hxxps://1211yodprikl[.]com/",
-   "type": "url",
+   "ioc": "turquoisecoastal[.]workers[.]dev",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "php.shin_webshell",
+   "confidence": 50,
+   "date": "2026-11-21T03:40:59",
+   "tags": [
+    "Cloudflare",
+    "gif",
+    "PHP",
+    "webshell",
+    "WordPress",
+    "workers.dev",
+    "wp-admin"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037242/"
+  },
+  {
+   "ioc": "62a775c87b652c7fef599889e24390fa7b2becfc40653a3788074d9bfcf97665",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:38:01",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037239/"
+  },
+  {
+   "ioc": "21175e1974d52b200b3499667c5a05feeb27ec548dd18de29fa062e7b4a8bb05",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:38:01",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037240/"
+  },
+  {
+   "ioc": "efef6a0f33fb184be1c8be8f22de9a322fe4f80971108518728e448168958b9b",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:38:01",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037241/"
+  },
+  {
+   "ioc": "7b1d3cfd503ac80563f9571e450f9209b5becc1a0c3a29aaf6903bcf3984e4d6",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:38:00",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037235/"
+  },
+  {
+   "ioc": "b53cc1d50a81bc1be8868d651efa6929e50450c37362d59f68d0aa6ca6176072",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:38:00",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037236/"
+  },
+  {
+   "ioc": "894cf8c461c29104b56724ed5e0ee52c38aced56bf83140c50065bc841368946",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:38:00",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037237/"
+  },
+  {
+   "ioc": "c18487a83320decb29d224df9801f8825404a91df658622b6d611bd5fd116636",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:38:00",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037238/"
+  },
+  {
+   "ioc": "45[.]10[.]20[.]53:1419",
+   "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "WARDENStealer",
+   "malware": "Unknown malware",
    "confidence": 75,
-   "date": "2026-11-21T03:29:00",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037231/"
+   "date": "2026-11-21T03:36:21",
+   "tags": [
+    "CoinMiner",
+    "diicot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037233/"
+  },
+  {
+   "ioc": "45[.]10[.]20[.]53:8000",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T03:36:21",
+   "tags": [
+    "CoinMiner",
+    "diicot"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037234/"
+  },
+  {
+   "ioc": "64[.]90[.]6[.]106:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-21T03:36:08",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037232/"
   },
   {
    "ioc": "hxxps://1111yodprokl[.]com/",
@@ -14817,6 +14982,16 @@
    "date": "2026-11-21T03:29:00",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037230/"
+  },
+  {
+   "ioc": "hxxps://1211yodprikl[.]com/",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 75,
+   "date": "2026-11-21T03:29:00",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037231/"
   },
   {
    "ioc": "e1a7aead734c79d37f42cbc8fac0f9fddfe6154ad8a892bb679fd9eb0fa49ee7",
@@ -14839,7 +15014,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037228/"
   },
   {
-   "ioc": "80d7048be731a2936da1861de95e61c9574a93c0c168f7b35e2847b58243485d",
+   "ioc": "42486529f2ef6ad7e55bea70dd213f176b036a92188e0731a4cd0a115d480c0e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -14853,24 +15028,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037227/"
-  },
-  {
-   "ioc": "bfc31c0a620f4838952f16189f2181a4ce737f2af32bfa619da3a441998453c6",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T03:06:05",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037226/"
+   "link": "https://threatfox.abuse.ch/ioc/2037224/"
   },
   {
    "ioc": "8bff0179b8545c7de2d2b15d3d01633007343fcf84d3b79e91814a01eb434e2f",
@@ -14890,7 +15048,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037225/"
   },
   {
-   "ioc": "42486529f2ef6ad7e55bea70dd213f176b036a92188e0731a4cd0a115d480c0e",
+   "ioc": "bfc31c0a620f4838952f16189f2181a4ce737f2af32bfa619da3a441998453c6",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -14904,15 +15062,15 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037224/"
+   "link": "https://threatfox.abuse.ch/ioc/2037226/"
   },
   {
-   "ioc": "42b3362781e97f289340ac10d3e6e34e70ec929013e2ebb5cc174d731c75e2b4",
+   "ioc": "80d7048be731a2936da1861de95e61c9574a93c0c168f7b35e2847b58243485d",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
    "confidence": 90,
-   "date": "2026-11-21T03:06:04",
+   "date": "2026-11-21T03:06:05",
    "tags": [
     "EasyShell",
     "elf",
@@ -14921,24 +15079,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037223/"
-  },
-  {
-   "ioc": "a46255a9702ef23fa53ebc887c02c1de174a805bc5c54e97779a7caf2c906adb",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-21T03:06:04",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2037222/"
+   "link": "https://threatfox.abuse.ch/ioc/2037227/"
   },
   {
    "ioc": "6921c8ca0c231f84bae040ff85de41fe8137d5ad150faab8c3ec21687460dd82",
@@ -14958,16 +15099,38 @@
    "link": "https://threatfox.abuse.ch/ioc/2037221/"
   },
   {
-   "ioc": "do[.]asiabet777[.]org",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Vidar",
-   "confidence": 100,
-   "date": "2026-11-21T03:05:34",
+   "ioc": "a46255a9702ef23fa53ebc887c02c1de174a805bc5c54e97779a7caf2c906adb",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:06:04",
    "tags": [
-    "Vidar"
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037220/"
+   "link": "https://threatfox.abuse.ch/ioc/2037222/"
+  },
+  {
+   "ioc": "42b3362781e97f289340ac10d3e6e34e70ec929013e2ebb5cc174d731c75e2b4",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-21T03:06:04",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037223/"
   },
   {
    "ioc": "v[.]gpy88[.]org",
@@ -14982,16 +15145,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2037219/"
   },
   {
-   "ioc": "13[.]233[.]232[.]1:80",
-   "type": "ip:port",
+   "ioc": "do[.]asiabet777[.]org",
+   "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "AdaptixC2",
+   "malware": "Vidar",
    "confidence": 100,
-   "date": "2026-11-21T03:05:06",
+   "date": "2026-11-21T03:05:34",
    "tags": [
-    "Adaptix"
+    "Vidar"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037218/"
+   "link": "https://threatfox.abuse.ch/ioc/2037220/"
   },
   {
    "ioc": "13[.]233[.]232[.]1:443",
@@ -15006,7 +15169,19 @@
    "link": "https://threatfox.abuse.ch/ioc/2037217/"
   },
   {
-   "ioc": "162[.]14[.]82[.]54:8083",
+   "ioc": "13[.]233[.]232[.]1:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "AdaptixC2",
+   "confidence": 100,
+   "date": "2026-11-21T03:05:06",
+   "tags": [
+    "Adaptix"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2037218/"
+  },
+  {
+   "ioc": "110[.]40[.]147[.]249:60000",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "VShell",
@@ -15015,7 +15190,7 @@
    "tags": [
     "Vshell"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037216/"
+   "link": "https://threatfox.abuse.ch/ioc/2037214/"
   },
   {
    "ioc": "115[.]190[.]208[.]155:8084",
@@ -15030,7 +15205,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2037215/"
   },
   {
-   "ioc": "110[.]40[.]147[.]249:60000",
+   "ioc": "162[.]14[.]82[.]54:8083",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "VShell",
@@ -15039,7 +15214,7 @@
    "tags": [
     "Vshell"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2037214/"
+   "link": "https://threatfox.abuse.ch/ioc/2037216/"
   },
   {
    "ioc": "signin[.]vitolbusiness[.]com",
@@ -15069,14 +15244,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037212/"
   },
   {
-   "ioc": "e39950f0b39918d0fb7e880932f73812",
-   "type": "md5_hash",
+   "ioc": "5714ed6291de831233ed8f10354d84b8f989d334f6b4006532bd0cdca67af33a",
+   "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
    "date": "2026-11-21T02:45:36",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037211/"
+   "link": "https://threatfox.abuse.ch/ioc/2037209/"
   },
   {
    "ioc": "b5b6c532e25850577466e364762193977c8b8b55",
@@ -15089,34 +15264,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037210/"
   },
   {
-   "ioc": "5714ed6291de831233ed8f10354d84b8f989d334f6b4006532bd0cdca67af33a",
-   "type": "sha256_hash",
+   "ioc": "e39950f0b39918d0fb7e880932f73812",
+   "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
    "date": "2026-11-21T02:45:36",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037209/"
-  },
-  {
-   "ioc": "ac7384154ffe7df16857b26217b181e1",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:35",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037208/"
-  },
-  {
-   "ioc": "409e58280714ea8c9b03fb45de3c586494ea80ab",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:35",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037207/"
+   "link": "https://threatfox.abuse.ch/ioc/2037211/"
   },
   {
    "ioc": "4127450a5d67ff726e3f986a3d69b9a3100481b843e4cce4bee0bc1c8c56e7d3",
@@ -15129,6 +15284,26 @@
    "link": "https://threatfox.abuse.ch/ioc/2037206/"
   },
   {
+   "ioc": "409e58280714ea8c9b03fb45de3c586494ea80ab",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:35",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037207/"
+  },
+  {
+   "ioc": "ac7384154ffe7df16857b26217b181e1",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:35",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037208/"
+  },
+  {
    "ioc": "41b2098d36fb9e430a58e20566db0470",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15137,16 +15312,6 @@
    "date": "2026-11-21T02:45:34",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037205/"
-  },
-  {
-   "ioc": "a2dcda270109fa94206a2b4933219c284333c320",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:33",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037204/"
   },
   {
    "ioc": "e3c9bf3370a43418aa84a33af81d89af2ad150e595e7e56e95e2abef7ca24abd",
@@ -15159,24 +15324,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037203/"
   },
   {
-   "ioc": "193530ea6fb5884d0659b83fdb6a6c8c",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:32",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037202/"
-  },
-  {
-   "ioc": "747fcb76e8270691f3d70efcedc9b1baed86b0df",
+   "ioc": "a2dcda270109fa94206a2b4933219c284333c320",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:32",
+   "date": "2026-11-21T02:45:33",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037201/"
+   "link": "https://threatfox.abuse.ch/ioc/2037204/"
   },
   {
    "ioc": "4e8f90d540caab82346f447cb134e8b679843c00700da6cea02d08919a2f97b2",
@@ -15189,6 +15344,26 @@
    "link": "https://threatfox.abuse.ch/ioc/2037200/"
   },
   {
+   "ioc": "747fcb76e8270691f3d70efcedc9b1baed86b0df",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:32",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037201/"
+  },
+  {
+   "ioc": "193530ea6fb5884d0659b83fdb6a6c8c",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:32",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037202/"
+  },
+  {
    "ioc": "67e6407b3bc3a5ea3c70f02861baa465",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15197,16 +15372,6 @@
    "date": "2026-11-21T02:45:31",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037199/"
-  },
-  {
-   "ioc": "8ec92e64499c6069201eebd3b64afcf3f842a05d",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:30",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037198/"
   },
   {
    "ioc": "aa5a39f44f92ae7eae242fbecb56be83b3098cf0b5f10705c456d49a6af4fc49",
@@ -15219,6 +15384,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2037197/"
   },
   {
+   "ioc": "8ec92e64499c6069201eebd3b64afcf3f842a05d",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:30",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037198/"
+  },
+  {
    "ioc": "025990652203aaae868110ad6e5ab1fe",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15227,26 +15402,6 @@
    "date": "2026-11-21T02:45:29",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037196/"
-  },
-  {
-   "ioc": "7eaf102cff85fb23e8eca78348ba62172894e80a",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:28",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037195/"
-  },
-  {
-   "ioc": "51d337e8cc1c32db14858e01dc8d75c63d8c2f8f7ae92ef340398867a694346e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:28",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037194/"
   },
   {
    "ioc": "e38998c0e4f32024fbdb1f0c1dea38f3",
@@ -15259,34 +15414,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037193/"
   },
   {
-   "ioc": "c476f61d6a8cc8807ad4391814b56ab71ed90273",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:27",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037192/"
-  },
-  {
-   "ioc": "8844e2a88fa82f99292af63bb7e0237a4f79835a70fe3f781cfe0932ab2d094b",
+   "ioc": "51d337e8cc1c32db14858e01dc8d75c63d8c2f8f7ae92ef340398867a694346e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:27",
+   "date": "2026-11-21T02:45:28",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037191/"
+   "link": "https://threatfox.abuse.ch/ioc/2037194/"
   },
   {
-   "ioc": "06670ff5fe1eaf07a47dedd04508f1ec",
-   "type": "md5_hash",
+   "ioc": "7eaf102cff85fb23e8eca78348ba62172894e80a",
+   "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:27",
+   "date": "2026-11-21T02:45:28",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037190/"
+   "link": "https://threatfox.abuse.ch/ioc/2037195/"
   },
   {
    "ioc": "61dd6cc594770144fd4066867840f19e394fe493",
@@ -15299,14 +15444,34 @@
    "link": "https://threatfox.abuse.ch/ioc/2037189/"
   },
   {
-   "ioc": "b80a0a9b438d52fad7c8d40d154961b158285ef855657c9f260621eec61b2ed6",
+   "ioc": "06670ff5fe1eaf07a47dedd04508f1ec",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:27",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037190/"
+  },
+  {
+   "ioc": "8844e2a88fa82f99292af63bb7e0237a4f79835a70fe3f781cfe0932ab2d094b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:26",
+   "date": "2026-11-21T02:45:27",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037188/"
+   "link": "https://threatfox.abuse.ch/ioc/2037191/"
+  },
+  {
+   "ioc": "c476f61d6a8cc8807ad4391814b56ab71ed90273",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:27",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037192/"
   },
   {
    "ioc": "e6eae0a677d66920c7588f0e45e36625",
@@ -15319,14 +15484,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037187/"
   },
   {
-   "ioc": "82c7007ab48d73036b9c7bdd0063831cc14ab5ca",
-   "type": "sha1_hash",
+   "ioc": "b80a0a9b438d52fad7c8d40d154961b158285ef855657c9f260621eec61b2ed6",
+   "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:25",
+   "date": "2026-11-21T02:45:26",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037186/"
+   "link": "https://threatfox.abuse.ch/ioc/2037188/"
   },
   {
    "ioc": "b23dcb1bab48905fd58e81a4b28917d69c255580f652bd028e3bf26c9e1657f2",
@@ -15339,14 +15504,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037185/"
   },
   {
-   "ioc": "da3ed66641797af77ff5bc705e9408bb",
-   "type": "md5_hash",
+   "ioc": "82c7007ab48d73036b9c7bdd0063831cc14ab5ca",
+   "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:23",
+   "date": "2026-11-21T02:45:25",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037184/"
+   "link": "https://threatfox.abuse.ch/ioc/2037186/"
   },
   {
    "ioc": "5d015a791bb348bcf20c60c00717577299eda914",
@@ -15359,24 +15524,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037183/"
   },
   {
-   "ioc": "9ce072b7f9cef2946c4501ce52926114d7451bac3b6f16556f7c358687d4d2cc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:22",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037182/"
-  },
-  {
-   "ioc": "632e32cc7a1a2f864fdca963c0be18a5",
+   "ioc": "da3ed66641797af77ff5bc705e9408bb",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:22",
+   "date": "2026-11-21T02:45:23",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037181/"
+   "link": "https://threatfox.abuse.ch/ioc/2037184/"
   },
   {
    "ioc": "81ce7f0383f3d0f9663838e8735a38ac29a0fd0b",
@@ -15389,24 +15544,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037180/"
   },
   {
-   "ioc": "516c331dc3184dbaeaaf2fa7a739122487b046fa97f3fccc3f36941aca668fb5",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:21",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037179/"
-  },
-  {
-   "ioc": "fb314eb00c7f651080323e9052112384",
+   "ioc": "632e32cc7a1a2f864fdca963c0be18a5",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:21",
+   "date": "2026-11-21T02:45:22",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037178/"
+   "link": "https://threatfox.abuse.ch/ioc/2037181/"
+  },
+  {
+   "ioc": "9ce072b7f9cef2946c4501ce52926114d7451bac3b6f16556f7c358687d4d2cc",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:22",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037182/"
   },
   {
    "ioc": "52798f378bc99d029532adfb230e1410d9eb9fe2",
@@ -15419,24 +15574,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037177/"
   },
   {
-   "ioc": "96c4c096f200dbef373df3435c8a98c41856d1e0a1cb3b2dd3073c8069a6a965",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:20",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037176/"
-  },
-  {
-   "ioc": "c0aedfb1d660372bee3da0eb76efa905",
+   "ioc": "fb314eb00c7f651080323e9052112384",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:20",
+   "date": "2026-11-21T02:45:21",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037175/"
+   "link": "https://threatfox.abuse.ch/ioc/2037178/"
+  },
+  {
+   "ioc": "516c331dc3184dbaeaaf2fa7a739122487b046fa97f3fccc3f36941aca668fb5",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:21",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037179/"
   },
   {
    "ioc": "1bf210fec176bfa9e3224935e05d3c718482a25b",
@@ -15449,34 +15604,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037174/"
   },
   {
-   "ioc": "9d5c30ad8bc22e21491d4fe59584166e43bf3f0b2948c63e7aeb1709845e124d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:19",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037173/"
-  },
-  {
-   "ioc": "db8746f5a10075c8cb5ed4274c6984c4",
+   "ioc": "c0aedfb1d660372bee3da0eb76efa905",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:19",
+   "date": "2026-11-21T02:45:20",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037172/"
+   "link": "https://threatfox.abuse.ch/ioc/2037175/"
   },
   {
-   "ioc": "9412653c258d9dcb48e8db915a8e57bd93c79530",
-   "type": "sha1_hash",
+   "ioc": "96c4c096f200dbef373df3435c8a98c41856d1e0a1cb3b2dd3073c8069a6a965",
+   "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:19",
+   "date": "2026-11-21T02:45:20",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037171/"
+   "link": "https://threatfox.abuse.ch/ioc/2037176/"
   },
   {
    "ioc": "0b63e58e09fde8dddb8ce81d6deca36f4229e68255001d9b1c3b311c071f04ad",
@@ -15489,24 +15634,34 @@
    "link": "https://threatfox.abuse.ch/ioc/2037170/"
   },
   {
-   "ioc": "4fb24e72a26eff74a6fb46b65a103ed2",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:18",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037169/"
-  },
-  {
-   "ioc": "9381f79956728c0a7bd010ad4c2aca3fd3a1a194",
+   "ioc": "9412653c258d9dcb48e8db915a8e57bd93c79530",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:18",
+   "date": "2026-11-21T02:45:19",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037168/"
+   "link": "https://threatfox.abuse.ch/ioc/2037171/"
+  },
+  {
+   "ioc": "db8746f5a10075c8cb5ed4274c6984c4",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:19",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037172/"
+  },
+  {
+   "ioc": "9d5c30ad8bc22e21491d4fe59584166e43bf3f0b2948c63e7aeb1709845e124d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:19",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037173/"
   },
   {
    "ioc": "7b6c1c65a3a2051a466f8530f86898789ed67ebcf8d19c9ae05b49b640c8ffbb",
@@ -15519,24 +15674,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037167/"
   },
   {
-   "ioc": "bdfe01240f667ea7f466637e74e62d20",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:17",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037166/"
-  },
-  {
-   "ioc": "0c6bbeae59c5c124f0e497057032fd70855e70ea",
+   "ioc": "9381f79956728c0a7bd010ad4c2aca3fd3a1a194",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:17",
+   "date": "2026-11-21T02:45:18",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037165/"
+   "link": "https://threatfox.abuse.ch/ioc/2037168/"
+  },
+  {
+   "ioc": "4fb24e72a26eff74a6fb46b65a103ed2",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:18",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037169/"
   },
   {
    "ioc": "40444b48570f2f516e6cc6e6f50cc39bc5e68afdc42753e1b0287120e487dd2d",
@@ -15549,24 +15704,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037164/"
   },
   {
-   "ioc": "849ad3e79dee7738df78c45ab3df3bb0",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:16",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037163/"
-  },
-  {
-   "ioc": "0e79f88c4d0a5dc0754a222cf5174a7886591211",
+   "ioc": "0c6bbeae59c5c124f0e497057032fd70855e70ea",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:16",
+   "date": "2026-11-21T02:45:17",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037162/"
+   "link": "https://threatfox.abuse.ch/ioc/2037165/"
+  },
+  {
+   "ioc": "bdfe01240f667ea7f466637e74e62d20",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:17",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037166/"
   },
   {
    "ioc": "06b7df8216b19067624b5d6d34c0958eb64ee0b237fba5fcb9a065136e145857",
@@ -15579,34 +15734,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037161/"
   },
   {
-   "ioc": "ff1f36481814fd44eeeb0391df7cc249",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:15",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037160/"
-  },
-  {
-   "ioc": "6fe09230dd77f208f8b26c1ac74cc5346d268205",
+   "ioc": "0e79f88c4d0a5dc0754a222cf5174a7886591211",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:15",
+   "date": "2026-11-21T02:45:16",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037159/"
+   "link": "https://threatfox.abuse.ch/ioc/2037162/"
   },
   {
-   "ioc": "afa29a7c2cbb2623fa34aa9a302284e6da84afc1c772c4f1b9afcd36af2ed13d",
-   "type": "sha256_hash",
+   "ioc": "849ad3e79dee7738df78c45ab3df3bb0",
+   "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:15",
+   "date": "2026-11-21T02:45:16",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037158/"
+   "link": "https://threatfox.abuse.ch/ioc/2037163/"
   },
   {
    "ioc": "bb55a57974a6f62bf0b7e59a318d3596",
@@ -15619,24 +15764,34 @@
    "link": "https://threatfox.abuse.ch/ioc/2037157/"
   },
   {
-   "ioc": "cf83ba7e5ff27425c2f73b205c8f505e744ee67d",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:14",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037156/"
-  },
-  {
-   "ioc": "0d668a8bbeac181d78f60c0d831a084391759d8aa79d20a65453c462e09b6d56",
+   "ioc": "afa29a7c2cbb2623fa34aa9a302284e6da84afc1c772c4f1b9afcd36af2ed13d",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:14",
+   "date": "2026-11-21T02:45:15",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037155/"
+   "link": "https://threatfox.abuse.ch/ioc/2037158/"
+  },
+  {
+   "ioc": "6fe09230dd77f208f8b26c1ac74cc5346d268205",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:15",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037159/"
+  },
+  {
+   "ioc": "ff1f36481814fd44eeeb0391df7cc249",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:15",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037160/"
   },
   {
    "ioc": "f9ff3086871a33a7c2efd8ca1f6826d8",
@@ -15649,14 +15804,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037154/"
   },
   {
-   "ioc": "0869aa1ae337e386bd8a184267441155dcb06a6d",
+   "ioc": "0d668a8bbeac181d78f60c0d831a084391759d8aa79d20a65453c462e09b6d56",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:14",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037155/"
+  },
+  {
+   "ioc": "cf83ba7e5ff27425c2f73b205c8f505e744ee67d",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:13",
+   "date": "2026-11-21T02:45:14",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037153/"
+   "link": "https://threatfox.abuse.ch/ioc/2037156/"
   },
   {
    "ioc": "bf02468e0c9999e6172799f1639234188ba85614c63979e95fcc30b9e762f644",
@@ -15669,6 +15834,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2037152/"
   },
   {
+   "ioc": "0869aa1ae337e386bd8a184267441155dcb06a6d",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:13",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037153/"
+  },
+  {
    "ioc": "96785a68ce2b95c239ea04916a34c7e8",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15677,26 +15852,6 @@
    "date": "2026-11-21T02:45:12",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037151/"
-  },
-  {
-   "ioc": "f1d06ac208e7e04f4dd8aba07aa1693819af73e3",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:11",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037150/"
-  },
-  {
-   "ioc": "5ae81c5519b1ba8f5e20af3f637d92a1f4114e6d1c7d4181ed0e023a0d02294a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:11",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037149/"
   },
   {
    "ioc": "8c53b1430397473f2bb68a8b720c437f",
@@ -15709,14 +15864,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037148/"
   },
   {
-   "ioc": "a8d5538a09a4e4d8a0190269e0898c3c86cf41a9",
+   "ioc": "5ae81c5519b1ba8f5e20af3f637d92a1f4114e6d1c7d4181ed0e023a0d02294a",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:11",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037149/"
+  },
+  {
+   "ioc": "f1d06ac208e7e04f4dd8aba07aa1693819af73e3",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:10",
+   "date": "2026-11-21T02:45:11",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037147/"
+   "link": "https://threatfox.abuse.ch/ioc/2037150/"
   },
   {
    "ioc": "332e8af5ced29957f7a2ac7941192e8444177645b7270ecd90dd6472beb6a841",
@@ -15729,6 +15894,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2037146/"
   },
   {
+   "ioc": "a8d5538a09a4e4d8a0190269e0898c3c86cf41a9",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:10",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037147/"
+  },
+  {
    "ioc": "b53220950831944130705abbed8229a2",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15737,16 +15912,6 @@
    "date": "2026-11-21T02:45:09",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037145/"
-  },
-  {
-   "ioc": "aff4cbc068488f8f75a420f0dcef0b6680230a1a",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:08",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037144/"
   },
   {
    "ioc": "46947d0a311f256d8942221843770af94cccab954e834a788692d353e30cb0ac",
@@ -15759,6 +15924,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2037143/"
   },
   {
+   "ioc": "aff4cbc068488f8f75a420f0dcef0b6680230a1a",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:08",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037144/"
+  },
+  {
    "ioc": "68489dd4accbb186d60d64dee22ff57a",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15767,16 +15942,6 @@
    "date": "2026-11-21T02:45:03",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037142/"
-  },
-  {
-   "ioc": "6ea4aac98815294aac01a2b8513df80891e62b98",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:45:02",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037141/"
   },
   {
    "ioc": "c33639458cd18395db22519b2f1fbf2989e0d167849094556a643efbf0490b4b",
@@ -15789,14 +15954,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037140/"
   },
   {
-   "ioc": "cd39220a038b583dbd65e2bf8f6c0b27",
-   "type": "md5_hash",
+   "ioc": "6ea4aac98815294aac01a2b8513df80891e62b98",
+   "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:45:01",
+   "date": "2026-11-21T02:45:02",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037139/"
+   "link": "https://threatfox.abuse.ch/ioc/2037141/"
   },
   {
    "ioc": "09aa26953e95f433898422c00c196749ffe4f1bc",
@@ -15807,6 +15972,16 @@
    "date": "2026-11-21T02:45:01",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037138/"
+  },
+  {
+   "ioc": "cd39220a038b583dbd65e2bf8f6c0b27",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:45:01",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037139/"
   },
   {
    "ioc": "76cb4b00e1562244575087b4e288bb4286a6c9233b0001973d62d7766d780095",
@@ -15829,16 +16004,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2037136/"
   },
   {
-   "ioc": "6988bb0728c19b3628f638005d375e9519faac98",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:58",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037135/"
-  },
-  {
    "ioc": "25c0d545db606316587893d2b9ef77e366adbb434f738f89f1a1d69ad4c2b41e",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15849,14 +16014,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037134/"
   },
   {
-   "ioc": "5ecc1fcb04fd0894d6cbed58a78083d8",
-   "type": "md5_hash",
+   "ioc": "6988bb0728c19b3628f638005d375e9519faac98",
+   "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:55",
+   "date": "2026-11-21T02:44:58",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037133/"
+   "link": "https://threatfox.abuse.ch/ioc/2037135/"
   },
   {
    "ioc": "80cb3228747a1639967f5d46d90735071b39363c",
@@ -15867,6 +16032,16 @@
    "date": "2026-11-21T02:44:55",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037132/"
+  },
+  {
+   "ioc": "5ecc1fcb04fd0894d6cbed58a78083d8",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:55",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037133/"
   },
   {
    "ioc": "dd3802e929650e2a500564a500c6c7f64c99bca0ed36e1247f0a334cfa5c74f0",
@@ -15889,16 +16064,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2037130/"
   },
   {
-   "ioc": "7affea9fd5118560cd97a857d94e632b65c311dd",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037129/"
-  },
-  {
    "ioc": "df896dfcdaa2f6884976ab2422c6846956cadec3ebba47b7dba27c7699e967c7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15907,6 +16072,16 @@
    "date": "2026-11-21T02:44:52",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037128/"
+  },
+  {
+   "ioc": "7affea9fd5118560cd97a857d94e632b65c311dd",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:52",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037129/"
   },
   {
    "ioc": "7c31acbea5287e2202579c2e5720eb55",
@@ -15919,16 +16094,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2037127/"
   },
   {
-   "ioc": "91343921657bd734d921358043ea757e3448df77",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:47",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037126/"
-  },
-  {
    "ioc": "9528c860beb0cfee6b6324ba57918e913d782f339f6ea85af542c2a11f75da30",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15939,24 +16104,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037125/"
   },
   {
-   "ioc": "bc55247d80a1b99a2e138ed4f4b287b2",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:45",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037124/"
-  },
-  {
-   "ioc": "51e7d36cf5f3d07c27d0e17fb3d3b13f69e4e252",
+   "ioc": "91343921657bd734d921358043ea757e3448df77",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:45",
+   "date": "2026-11-21T02:44:47",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037123/"
+   "link": "https://threatfox.abuse.ch/ioc/2037126/"
   },
   {
    "ioc": "394051a2a6425ba3dd25e2f01cb5efc0c1ef61e81243755a8f9e10d423912caf",
@@ -15969,24 +16124,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037122/"
   },
   {
-   "ioc": "e82fe2be9f7e8a43836446a8fe0a455a",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:42",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037121/"
-  },
-  {
-   "ioc": "8933b15daf65aefd0d3592e97add7fb3edbbde72",
+   "ioc": "51e7d36cf5f3d07c27d0e17fb3d3b13f69e4e252",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:42",
+   "date": "2026-11-21T02:44:45",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037120/"
+   "link": "https://threatfox.abuse.ch/ioc/2037123/"
+  },
+  {
+   "ioc": "bc55247d80a1b99a2e138ed4f4b287b2",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:45",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037124/"
   },
   {
    "ioc": "7b11662f77f9328817e0d28f203e13c8b2bdca04844034f0e694a5f085f4df2a",
@@ -15999,24 +16154,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037119/"
   },
   {
-   "ioc": "7a8437dba2ba337e1d9627c1b1c3a8bc",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:41",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037118/"
-  },
-  {
-   "ioc": "b443a0093b3bbaf6e90299bf4a881dcd6e1c74a0",
+   "ioc": "8933b15daf65aefd0d3592e97add7fb3edbbde72",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:41",
+   "date": "2026-11-21T02:44:42",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037117/"
+   "link": "https://threatfox.abuse.ch/ioc/2037120/"
+  },
+  {
+   "ioc": "e82fe2be9f7e8a43836446a8fe0a455a",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:42",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037121/"
   },
   {
    "ioc": "03dc6ff7788f31871548c648dc55f59aef4132cf7c3e99e8819e312288006098",
@@ -16029,24 +16184,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037116/"
   },
   {
-   "ioc": "d0dffccfd2f174155916ae4757050596",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:39",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037115/"
-  },
-  {
-   "ioc": "fdfcc33928aa849bbef0859ee9de37a59a3e0141",
+   "ioc": "b443a0093b3bbaf6e90299bf4a881dcd6e1c74a0",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:39",
+   "date": "2026-11-21T02:44:41",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037114/"
+   "link": "https://threatfox.abuse.ch/ioc/2037117/"
+  },
+  {
+   "ioc": "7a8437dba2ba337e1d9627c1b1c3a8bc",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:41",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037118/"
   },
   {
    "ioc": "d892ad2755370285ce008cb1aa5544ea61971e26e7aebed6bd9e217dde2fae00",
@@ -16059,6 +16214,26 @@
    "link": "https://threatfox.abuse.ch/ioc/2037113/"
   },
   {
+   "ioc": "fdfcc33928aa849bbef0859ee9de37a59a3e0141",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:39",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037114/"
+  },
+  {
+   "ioc": "d0dffccfd2f174155916ae4757050596",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:39",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037115/"
+  },
+  {
    "ioc": "fec0c3502950ad9e8c359db1d186a953",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16067,16 +16242,6 @@
    "date": "2026-11-21T02:44:37",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037112/"
-  },
-  {
-   "ioc": "96e7f5065b448b32e5396886b214c660cfe78794",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:36",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037111/"
   },
   {
    "ioc": "bf9eb3caa07d6e0a5b1f70d802da72202ff8b600d1c59d90eeca96e6c7a6ad29",
@@ -16089,14 +16254,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037110/"
   },
   {
-   "ioc": "9cb8075ffc0706c7978463025cde445b",
-   "type": "md5_hash",
+   "ioc": "96e7f5065b448b32e5396886b214c660cfe78794",
+   "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:35",
+   "date": "2026-11-21T02:44:36",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037109/"
+   "link": "https://threatfox.abuse.ch/ioc/2037111/"
   },
   {
    "ioc": "59cfc3260ade03000d8cfe0381c3aaf6a7c3bdae",
@@ -16109,24 +16274,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037108/"
   },
   {
-   "ioc": "ab0069cd5bdcbe7b3e2d622ab6746e9c11596193841b0c819e0d805a3a825be4",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:34",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037107/"
-  },
-  {
-   "ioc": "3ce891d7f6ff50128251a2ab37bb9297",
+   "ioc": "9cb8075ffc0706c7978463025cde445b",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:34",
+   "date": "2026-11-21T02:44:35",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037106/"
+   "link": "https://threatfox.abuse.ch/ioc/2037109/"
   },
   {
    "ioc": "be914e06eebd769dcc1054859f04b91a42b07dce",
@@ -16139,6 +16294,26 @@
    "link": "https://threatfox.abuse.ch/ioc/2037105/"
   },
   {
+   "ioc": "3ce891d7f6ff50128251a2ab37bb9297",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:34",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037106/"
+  },
+  {
+   "ioc": "ab0069cd5bdcbe7b3e2d622ab6746e9c11596193841b0c819e0d805a3a825be4",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:34",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037107/"
+  },
+  {
    "ioc": "f34a3dbc973b30d1f27bfd05223cf1ff3e238ec2cee10bd149e04820d57f2dbc",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16147,26 +16322,6 @@
    "date": "2026-11-21T02:44:33",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037104/"
-  },
-  {
-   "ioc": "bba08eb013b51856f8a1e67b9dc0f30d",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:31",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037103/"
-  },
-  {
-   "ioc": "2a5ab652762adfdc3bf640a0511cf1c977e9a3b9",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:31",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037102/"
   },
   {
    "ioc": "3d2b67b8fbcfce8c2b4235e0d22ba93d5acd7fa2674bd0d36ea55abc2dee3fb5",
@@ -16179,24 +16334,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037101/"
   },
   {
-   "ioc": "54a604a65ca63985c99c12f2bc815abf",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:30",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037100/"
-  },
-  {
-   "ioc": "5da657729feb446a2f88e8038536bad1d28b397e",
+   "ioc": "2a5ab652762adfdc3bf640a0511cf1c977e9a3b9",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:30",
+   "date": "2026-11-21T02:44:31",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037099/"
+   "link": "https://threatfox.abuse.ch/ioc/2037102/"
+  },
+  {
+   "ioc": "bba08eb013b51856f8a1e67b9dc0f30d",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:31",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037103/"
   },
   {
    "ioc": "bf2958481d72eefd6b1190c8818939d9033f7e083d674527c9a188a3237b5485",
@@ -16209,34 +16364,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037098/"
   },
   {
-   "ioc": "8d51e02370acb99f152024c4ef3322b1",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:29",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037097/"
-  },
-  {
-   "ioc": "65344f9e600a5065fcbf51d1d100cb0046059cfc",
+   "ioc": "5da657729feb446a2f88e8038536bad1d28b397e",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:29",
+   "date": "2026-11-21T02:44:30",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037096/"
+   "link": "https://threatfox.abuse.ch/ioc/2037099/"
   },
   {
-   "ioc": "d7f7b73c599f7f01658a1c0db27f85ac309068698d53b91e1cb168703088e8da",
-   "type": "sha256_hash",
+   "ioc": "54a604a65ca63985c99c12f2bc815abf",
+   "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:29",
+   "date": "2026-11-21T02:44:30",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037095/"
+   "link": "https://threatfox.abuse.ch/ioc/2037100/"
   },
   {
    "ioc": "bffd0dc575f1dec18f38c7bd397d23d6",
@@ -16249,14 +16394,34 @@
    "link": "https://threatfox.abuse.ch/ioc/2037094/"
   },
   {
-   "ioc": "c1817f148fde263fd40ddcf64890c9eae1e32e51",
+   "ioc": "d7f7b73c599f7f01658a1c0db27f85ac309068698d53b91e1cb168703088e8da",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:29",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037095/"
+  },
+  {
+   "ioc": "65344f9e600a5065fcbf51d1d100cb0046059cfc",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:28",
+   "date": "2026-11-21T02:44:29",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037093/"
+   "link": "https://threatfox.abuse.ch/ioc/2037096/"
+  },
+  {
+   "ioc": "8d51e02370acb99f152024c4ef3322b1",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:29",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037097/"
   },
   {
    "ioc": "96ebae0df4f3a6ca3a11a9f42a795b91b9611b54008ad4285ab85abd5a5531ab",
@@ -16269,6 +16434,16 @@
    "link": "https://threatfox.abuse.ch/ioc/2037092/"
   },
   {
+   "ioc": "c1817f148fde263fd40ddcf64890c9eae1e32e51",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:28",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037093/"
+  },
+  {
    "ioc": "31e80675cce863ae312b7432d64c5730",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16277,16 +16452,6 @@
    "date": "2026-11-21T02:44:27",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037091/"
-  },
-  {
-   "ioc": "186bc2710f0dc7a7f9b92f9b5623c5bbc4514b0e",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:26",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037090/"
   },
   {
    "ioc": "71758e33e0b43ebb470436b4eab96aca1bbe702185d5b83de9c955361c21e6c1",
@@ -16299,34 +16464,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037089/"
   },
   {
-   "ioc": "5619a91530103300690422b3061d078d",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:25",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037088/"
-  },
-  {
-   "ioc": "46e42c617559d223d59ab6571af4a2076d03c095",
+   "ioc": "186bc2710f0dc7a7f9b92f9b5623c5bbc4514b0e",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:25",
+   "date": "2026-11-21T02:44:26",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037087/"
-  },
-  {
-   "ioc": "f15676408712db6c2d2eefc45efcc1945f51032a1db3d8ca5e62d13c512d2794",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:25",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037086/"
+   "link": "https://threatfox.abuse.ch/ioc/2037090/"
   },
   {
    "ioc": "4039e1a0a7076e9eaad77df5695b80fc",
@@ -16339,24 +16484,34 @@
    "link": "https://threatfox.abuse.ch/ioc/2037085/"
   },
   {
-   "ioc": "2b4cfbb94d6ce3bd7441af7d9586f24df6bb3479",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:24",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037084/"
-  },
-  {
-   "ioc": "bc64599c557d4b3881194f96085459ea4190dd6823244a68ec887c221c4c6cb1",
+   "ioc": "f15676408712db6c2d2eefc45efcc1945f51032a1db3d8ca5e62d13c512d2794",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:24",
+   "date": "2026-11-21T02:44:25",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037083/"
+   "link": "https://threatfox.abuse.ch/ioc/2037086/"
+  },
+  {
+   "ioc": "46e42c617559d223d59ab6571af4a2076d03c095",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:25",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037087/"
+  },
+  {
+   "ioc": "5619a91530103300690422b3061d078d",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:25",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037088/"
   },
   {
    "ioc": "12d98dc70cd0116983686aa58299d3e1",
@@ -16369,24 +16524,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037082/"
   },
   {
-   "ioc": "63c11b4acc92ae0bc899d964f2ec6c92f4333a11",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:23",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037081/"
-  },
-  {
-   "ioc": "1dea74d0fd5526eded902cc896ae24eed2bbd8279c32e2152ff4aa0cae55da7b",
+   "ioc": "bc64599c557d4b3881194f96085459ea4190dd6823244a68ec887c221c4c6cb1",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:23",
+   "date": "2026-11-21T02:44:24",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037080/"
+   "link": "https://threatfox.abuse.ch/ioc/2037083/"
+  },
+  {
+   "ioc": "2b4cfbb94d6ce3bd7441af7d9586f24df6bb3479",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:24",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037084/"
   },
   {
    "ioc": "afd80a9974f25ecf115bfcf5ebca85c0",
@@ -16399,24 +16554,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037079/"
   },
   {
-   "ioc": "6576b74144783a0c80e7dbe527705dc9fc6a2eec",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:22",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037078/"
-  },
-  {
-   "ioc": "5b0a92a8e092748a3a8e17a069963f36fdad6f0ef773f5d394eba9150105b0ed",
+   "ioc": "1dea74d0fd5526eded902cc896ae24eed2bbd8279c32e2152ff4aa0cae55da7b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:22",
+   "date": "2026-11-21T02:44:23",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037077/"
+   "link": "https://threatfox.abuse.ch/ioc/2037080/"
+  },
+  {
+   "ioc": "63c11b4acc92ae0bc899d964f2ec6c92f4333a11",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:23",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037081/"
   },
   {
    "ioc": "b5669095613965cb5c028af6803cb782",
@@ -16429,24 +16584,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037076/"
   },
   {
-   "ioc": "60d9da3c3e56d9799b2c7b2bc1ee0c0ed48225d6",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:21",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037075/"
-  },
-  {
-   "ioc": "7b06020e14d10bfe2172f6081547f25f9e6b483580478f763e7e75433ad37ed3",
+   "ioc": "5b0a92a8e092748a3a8e17a069963f36fdad6f0ef773f5d394eba9150105b0ed",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:21",
+   "date": "2026-11-21T02:44:22",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037074/"
+   "link": "https://threatfox.abuse.ch/ioc/2037077/"
+  },
+  {
+   "ioc": "6576b74144783a0c80e7dbe527705dc9fc6a2eec",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:22",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037078/"
   },
   {
    "ioc": "16c802ec86535364dd270749a24161cb",
@@ -16459,14 +16614,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037073/"
   },
   {
-   "ioc": "307a46518de92051c251edf732968db553d9f81a",
+   "ioc": "7b06020e14d10bfe2172f6081547f25f9e6b483580478f763e7e75433ad37ed3",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:21",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037074/"
+  },
+  {
+   "ioc": "60d9da3c3e56d9799b2c7b2bc1ee0c0ed48225d6",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:20",
+   "date": "2026-11-21T02:44:21",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037072/"
+   "link": "https://threatfox.abuse.ch/ioc/2037075/"
   },
   {
    "ioc": "b3c78ddeca5293e5c6a0a07a15c2c3bba66e806217992cd0dc0c7dc2cd3ebdc0",
@@ -16479,34 +16644,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037071/"
   },
   {
-   "ioc": "ec377e8a2f01de9f805bb3ebfde858da",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:19",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037070/"
-  },
-  {
-   "ioc": "e8aaf9ea5b70d8cc24b4eea6c3e8836f767c26b7",
+   "ioc": "307a46518de92051c251edf732968db553d9f81a",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:19",
+   "date": "2026-11-21T02:44:20",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037069/"
-  },
-  {
-   "ioc": "d29a0a76992dacc67f67dee2236a759b339049e2fa2bca848d4ef65a68ce0b54",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:19",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037068/"
+   "link": "https://threatfox.abuse.ch/ioc/2037072/"
   },
   {
    "ioc": "1ebe97d0629e71c8301c1a39f2d84aae",
@@ -16519,24 +16664,34 @@
    "link": "https://threatfox.abuse.ch/ioc/2037067/"
   },
   {
-   "ioc": "a2a5ea718abb113b1ef95b275b26fb371e4d41c5",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:18",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037066/"
-  },
-  {
-   "ioc": "38777144a4e3adeb93a6e99e02547186f8b3b72ce62175e4b96b0e16b44ec4a0",
+   "ioc": "d29a0a76992dacc67f67dee2236a759b339049e2fa2bca848d4ef65a68ce0b54",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:18",
+   "date": "2026-11-21T02:44:19",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037065/"
+   "link": "https://threatfox.abuse.ch/ioc/2037068/"
+  },
+  {
+   "ioc": "e8aaf9ea5b70d8cc24b4eea6c3e8836f767c26b7",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:19",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037069/"
+  },
+  {
+   "ioc": "ec377e8a2f01de9f805bb3ebfde858da",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:19",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037070/"
   },
   {
    "ioc": "15462a579d4c8f376f7cca83378839b0",
@@ -16549,14 +16704,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037064/"
   },
   {
-   "ioc": "fe694536fb7f23fb6b4ae209f4e4f0da730e4d87",
+   "ioc": "38777144a4e3adeb93a6e99e02547186f8b3b72ce62175e4b96b0e16b44ec4a0",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:18",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037065/"
+  },
+  {
+   "ioc": "a2a5ea718abb113b1ef95b275b26fb371e4d41c5",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:17",
+   "date": "2026-11-21T02:44:18",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037063/"
+   "link": "https://threatfox.abuse.ch/ioc/2037066/"
   },
   {
    "ioc": "d2a5420f5bde7ec680e479c0b6fbbcbe9656116b78ad7595faaed864a5ec0994",
@@ -16569,24 +16734,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037062/"
   },
   {
-   "ioc": "d52e7372bb376d6df0fbb7174308dc0b",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:15",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037061/"
-  },
-  {
-   "ioc": "0e5d07e995c2d5fadc1b315a1d1a7613a242ffb5",
+   "ioc": "fe694536fb7f23fb6b4ae209f4e4f0da730e4d87",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:15",
+   "date": "2026-11-21T02:44:17",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037060/"
+   "link": "https://threatfox.abuse.ch/ioc/2037063/"
   },
   {
    "ioc": "7dd8190b2936fb2a4834b869ada85db6e778acc85a1e4f25866ab99a62e66bc5",
@@ -16599,24 +16754,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037059/"
   },
   {
-   "ioc": "3d68990274d44606968dfeb8cb5b55f1",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ZStealer",
-   "confidence": 95,
-   "date": "2026-11-21T02:44:13",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037058/"
-  },
-  {
-   "ioc": "06e4ee90e7bd4dc8b0974a2a30111d3dcfd08765",
+   "ioc": "0e5d07e995c2d5fadc1b315a1d1a7613a242ffb5",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "ZStealer",
    "confidence": 95,
-   "date": "2026-11-21T02:44:13",
+   "date": "2026-11-21T02:44:15",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037057/"
+   "link": "https://threatfox.abuse.ch/ioc/2037060/"
+  },
+  {
+   "ioc": "d52e7372bb376d6df0fbb7174308dc0b",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:15",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037061/"
   },
   {
    "ioc": "5a3f3fc9f779cd90a1f0e67b46804b7ad832eaa9c8a729353c3a693cc8fd6390",
@@ -16629,6 +16784,26 @@
    "link": "https://threatfox.abuse.ch/ioc/2037056/"
   },
   {
+   "ioc": "06e4ee90e7bd4dc8b0974a2a30111d3dcfd08765",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:13",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037057/"
+  },
+  {
+   "ioc": "3d68990274d44606968dfeb8cb5b55f1",
+   "type": "md5_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "ZStealer",
+   "confidence": 95,
+   "date": "2026-11-21T02:44:13",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037058/"
+  },
+  {
    "ioc": "14d53f21aa9e1d44a62093a92ce909de",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16637,26 +16812,6 @@
    "date": "2026-11-21T02:43:58",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2037055/"
-  },
-  {
-   "ioc": "950499be53ee44b49ddfc88aefcb6856e49c7cd2",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:57",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037054/"
-  },
-  {
-   "ioc": "aa0a64028c435b665568e162f08b8e9fffa0a2deac7082db109d87778ff453f8",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:57",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037053/"
   },
   {
    "ioc": "7da57a566201d3c4437e38a4fc07dbd4",
@@ -16669,24 +16824,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037052/"
   },
   {
-   "ioc": "7403f61e246c16bbb1cea2e4ff4f6cd98bd05768",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:56",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037051/"
-  },
-  {
-   "ioc": "7babb27fd1b2c9f0794ee6813f6e1d0c6e854bd7a44b0675d4cc701fd6791836",
+   "ioc": "aa0a64028c435b665568e162f08b8e9fffa0a2deac7082db109d87778ff453f8",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Merdoor",
    "confidence": 95,
-   "date": "2026-11-21T02:43:56",
+   "date": "2026-11-21T02:43:57",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037050/"
+   "link": "https://threatfox.abuse.ch/ioc/2037053/"
+  },
+  {
+   "ioc": "950499be53ee44b49ddfc88aefcb6856e49c7cd2",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Merdoor",
+   "confidence": 95,
+   "date": "2026-11-21T02:43:57",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037054/"
   },
   {
    "ioc": "c485e37f741763855ffb5a5b7cd0bef9",
@@ -16699,14 +16854,24 @@
    "link": "https://threatfox.abuse.ch/ioc/2037049/"
   },
   {
-   "ioc": "63c15d2bc96add8430ec3d224bdabc36c4e26f45",
+   "ioc": "7babb27fd1b2c9f0794ee6813f6e1d0c6e854bd7a44b0675d4cc701fd6791836",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Merdoor",
+   "confidence": 95,
+   "date": "2026-11-21T02:43:56",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037050/"
+  },
+  {
+   "ioc": "7403f61e246c16bbb1cea2e4ff4f6cd98bd05768",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Merdoor",
    "confidence": 95,
-   "date": "2026-11-21T02:43:55",
+   "date": "2026-11-21T02:43:56",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037048/"
+   "link": "https://threatfox.abuse.ch/ioc/2037051/"
   },
   {
    "ioc": "486a31a2c5222c0019a1bf32bb732b3cd4e5d9671d365eafe37fc5b714923a87",
@@ -16719,34 +16884,14 @@
    "link": "https://threatfox.abuse.ch/ioc/2037047/"
   },
   {
-   "ioc": "402bc1971b57d7df642991da05195841",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:54",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037046/"
-  },
-  {
-   "ioc": "767df9d5aa3ef1869bb02c685c6d03219527aa38",
+   "ioc": "63c15d2bc96add8430ec3d224bdabc36c4e26f45",
    "type": "sha1_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Merdoor",
    "confidence": 95,
-   "date": "2026-11-21T02:43:54",
+   "date": "2026-11-21T02:43:55",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037045/"
-  },
-  {
-   "ioc": "8cc584b3cb9c91f15d2b40edecd12dc377453f6674e42ce5f9dc0eda37c8d7b3",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:54",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037044/"
+   "link": "https://threatfox.abuse.ch/ioc/2037048/"
   },
   {
    "ioc": "48185d0c5015e9b8bc3d77a1a017224d",
@@ -16759,114 +16904,34 @@
    "link": "https://threatfox.abuse.ch/ioc/2037043/"
   },
   {
-   "ioc": "e21fd093ae0dce8b5ceaa5361978a7ab43ce923c",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:53",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037042/"
-  },
-  {
-   "ioc": "63ff876ea8936d73702db64496755b91165efef2a0f6c20f7a1f3f067887b121",
+   "ioc": "8cc584b3cb9c91f15d2b40edecd12dc377453f6674e42ce5f9dc0eda37c8d7b3",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Merdoor",
    "confidence": 95,
-   "date": "2026-11-21T02:43:53",
+   "date": "2026-11-21T02:43:54",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037041/"
+   "link": "https://threatfox.abuse.ch/ioc/2037044/"
   },
   {
-   "ioc": "b19ad5cdb2b2f95461799dd5342a1b80",
+   "ioc": "767df9d5aa3ef1869bb02c685c6d03219527aa38",
+   "type": "sha1_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Merdoor",
+   "confidence": 95,
+   "date": "2026-11-21T02:43:54",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2037045/"
+  },
+  {
+   "ioc": "402bc1971b57d7df642991da05195841",
    "type": "md5_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Merdoor",
    "confidence": 95,
-   "date": "2026-11-21T02:43:52",
+   "date": "2026-11-21T02:43:54",
    "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037040/"
-  },
-  {
-   "ioc": "9a6c7714efb9a2f9bca92b675bd576699a7685df",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037039/"
-  },
-  {
-   "ioc": "ff9db0f01ca982129b34a4558955b83a3c611ffb8a5115e1fc56ff31a6416999",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037038/"
-  },
-  {
-   "ioc": "c1a63f87a9e2df558f608ee731f5fee7",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:52",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037037/"
-  },
-  {
-   "ioc": "c3449561e139206b8f9c821e0b8a50e21234be60",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:51",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037036/"
-  },
-  {
-   "ioc": "31f541c97638c8e071db516c88bbfd720ffa985d9db01ca2ff7eefaa10658820",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:51",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037035/"
-  },
-  {
-   "ioc": "3150b95970c871c20365d731a683a116",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:51",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037034/"
-  },
-  {
-   "ioc": "d7d7706b6bc0dc35a36f5e0cf99dc6eaa4992869",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:50",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037033/"
-  },
-  {
-   "ioc": "afb71472ce1c07cd6fe49de3d9e91beb275337cf2bbf9c2d885aca3efc145dc8",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Merdoor",
-   "confidence": 95,
-   "date": "2026-11-21T02:43:50",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2037032/"
+   "link": "https://threatfox.abuse.ch/ioc/2037046/"
   }
  ],
  "urlhaus": [
@@ -18613,7 +18678,7 @@
   },
   {
    "name": "php.shin_webshell",
-   "count": 13
+   "count": 14
   },
   {
    "name": "DCRat",
