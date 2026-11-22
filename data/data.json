@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T01:01:05Z",
+ "updated": "2026-11-22T01:30:56Z",
  "news": [
   {
    "id": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
@@ -75,6 +75,19 @@
    "lang": "it",
    "type": "news",
    "date": "2026-11-21T14:10:00Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
+   "id": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+   "title": "President Trump Taps Kirsten Davies as National Cyber Director",
+   "link": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+   "summary": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
+   "source": "SecurityWeek",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-21T13:00:00Z",
    "actors": [],
    "threat": false,
    "highlight": false
@@ -10500,19 +10513,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afe202e22c04503a381a647178043cc&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2fauthor%2fdavide-sanfratello%2f&c=13676530880906088943&mkt=en-us",
-   "title": "Red Hot Cyber Conference 2027: al via il Program Sponsor, aziende protagoniste della nuova edizione",
-   "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afe202e22c04503a381a647178043cc&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2fauthor%2fdavide-sanfratello%2f&c=13676530880906088943&mkt=en-us",
-   "summary": "Utilizziamo i cookie sul nostro sito Web per offrirti l'esperienza più pertinente ricordando le tue preferenze e ripetendo le visite. Cliccando su \"Accetta tutto\", acconsenti all'uso di TUTTI i cookie ...",
-   "source": "Red Hot Cyber",
-   "lang": "it",
-   "type": "news",
-   "date": "2026-11-15T16:00:00Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -14085,6 +14085,16 @@
    "last": ""
   },
   {
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
@@ -14097,16 +14107,6 @@
   {
    "name": "Killnet",
    "type": "hacktivist",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Sandworm",
-   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14711,6 +14711,103 @@
  "known_actors": 1528,
  "iocs": [
   {
+   "ioc": "hxxps://malaga-city[.]club/",
+   "type": "url",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "WARDENStealer",
+   "confidence": 75,
+   "date": "2026-11-22T01:08:23",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2038924/"
+  },
+  {
+   "ioc": "9490296f7aa662d27c8c78eea9c9d900cc6205d8e35b7cfdc317e2c1869994eb",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-22T01:05:11",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038923/"
+  },
+  {
+   "ioc": "8f6192d75c9d567a5decf52302cac812a9a3f6b5add4f741438ab1051e49fee8",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-22T01:05:11",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038922/"
+  },
+  {
+   "ioc": "d6861d48e5cfe2824859f91dcfd2cd58aea2f0249f5a42ebfaf19d2635accc4a",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-22T01:05:11",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038921/"
+  },
+  {
+   "ioc": "162[.]14[.]74[.]12:8080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-22T01:05:07",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038920/"
+  },
+  {
+   "ioc": "162[.]14[.]74[.]12:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-22T01:05:06",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038919/"
+  },
+  {
+   "ioc": "162[.]14[.]74[.]12:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Cobalt Strike",
+   "confidence": 100,
+   "date": "2026-11-22T01:05:05",
+   "tags": [
+    "CobaltStrike"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038918/"
+  },
+  {
    "ioc": "932bb42694b82fc803a2ea2939f26a93c540cb86fa675f5e4e2182163f4abe15",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -14846,20 +14943,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038908/"
   },
   {
-   "ioc": "fa46b778adbf5fb6df4d0d7c04fa5ca12cd7340f5ee3689435a068978a0bb9c4",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "SNOWLIGHT",
-   "confidence": 95,
-   "date": "2026-11-22T01:00:40",
-   "tags": [
-    "elf",
-    "Mirai",
-    "SNOWLIGHT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038906/"
-  },
-  {
    "ioc": "41c6adc791bbfb2f821dcdce2be7c5770dc9a082512394f10b99c63a9fb6101b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -14872,6 +14955,20 @@
     "SNOWLIGHT"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038907/"
+  },
+  {
+   "ioc": "fa46b778adbf5fb6df4d0d7c04fa5ca12cd7340f5ee3689435a068978a0bb9c4",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "SNOWLIGHT",
+   "confidence": 95,
+   "date": "2026-11-22T01:00:40",
+   "tags": [
+    "elf",
+    "Mirai",
+    "SNOWLIGHT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038906/"
   },
   {
    "ioc": "670335cdacd8e5e2720606d0bc6155e0489ee0b09d9690701e181c6760d2e3c4",
@@ -15279,7 +15376,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038875/"
   },
   {
-   "ioc": "eittrew[.]com",
+   "ioc": "yerwiist[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -15292,215 +15389,7 @@
     "DGA",
     "Dropper"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038859/"
-  },
-  {
-   "ioc": "giabiobo[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038860/"
-  },
-  {
-   "ioc": "itertwuy[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038861/"
-  },
-  {
-   "ioc": "jerrmizss[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038862/"
-  },
-  {
-   "ioc": "lerrffd[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038863/"
-  },
-  {
-   "ioc": "luropprt[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038864/"
-  },
-  {
-   "ioc": "madegsly[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038865/"
-  },
-  {
-   "ioc": "offuubo[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038866/"
-  },
-  {
-   "ioc": "pviifuts[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038867/"
-  },
-  {
-   "ioc": "qmusyyo[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038868/"
-  },
-  {
-   "ioc": "quittkca[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038869/"
-  },
-  {
-   "ioc": "rpicomer[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038870/"
-  },
-  {
-   "ioc": "teirmssad[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038871/"
-  },
-  {
-   "ioc": "uikopuct[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:42:23",
-   "tags": [
-    "ADFraud",
-    "Android",
-    "c2",
-    "DGA",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038872/"
+   "link": "https://threatfox.abuse.ch/ioc/2038874/"
   },
   {
    "ioc": "wemgnno[.]com",
@@ -15519,7 +15408,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038873/"
   },
   {
-   "ioc": "yerwiist[.]com",
+   "ioc": "uikopuct[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -15532,7 +15421,215 @@
     "DGA",
     "Dropper"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038874/"
+   "link": "https://threatfox.abuse.ch/ioc/2038872/"
+  },
+  {
+   "ioc": "teirmssad[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038871/"
+  },
+  {
+   "ioc": "rpicomer[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038870/"
+  },
+  {
+   "ioc": "quittkca[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038869/"
+  },
+  {
+   "ioc": "qmusyyo[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038868/"
+  },
+  {
+   "ioc": "pviifuts[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038867/"
+  },
+  {
+   "ioc": "offuubo[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038866/"
+  },
+  {
+   "ioc": "madegsly[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038865/"
+  },
+  {
+   "ioc": "luropprt[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038864/"
+  },
+  {
+   "ioc": "lerrffd[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038863/"
+  },
+  {
+   "ioc": "jerrmizss[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038862/"
+  },
+  {
+   "ioc": "itertwuy[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038861/"
+  },
+  {
+   "ioc": "giabiobo[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038860/"
+  },
+  {
+   "ioc": "eittrew[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:42:23",
+   "tags": [
+    "ADFraud",
+    "Android",
+    "c2",
+    "DGA",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038859/"
   },
   {
    "ioc": "2af51a5f6b71c8dd7f0a7bf8c3f7b5325b42e3a4112a7c4d778103ca65cdbf42",
@@ -15631,18 +15728,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038851/"
   },
   {
-   "ioc": "22bfdf8757d125efee8e6ded5d1b2985e3ab4ad4006f34595456dc4bf6ed168e",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:58",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038849/"
-  },
-  {
    "ioc": "2440b0e76a2dbdb9078628198e61fa1ba8f7fd645e74cfec5c3d7b481f0a21a7",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15653,6 +15738,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038850/"
+  },
+  {
+   "ioc": "22bfdf8757d125efee8e6ded5d1b2985e3ab4ad4006f34595456dc4bf6ed168e",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:58",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038849/"
   },
   {
    "ioc": "214058bb45ae64c426916340f7a17248457eb5a094750472a377d5717d034832",
@@ -15691,18 +15788,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038846/"
   },
   {
-   "ioc": "1ca3057978e283cf3b24615d73343ca1974359b9da0e1b2f79bc2d125fa65272",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:54",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038844/"
-  },
-  {
    "ioc": "1cc5b572e3f30c0c03a913c0f3ba728409214f2b5c05f5c54dab491fc8e50a8d",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15713,6 +15798,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038845/"
+  },
+  {
+   "ioc": "1ca3057978e283cf3b24615d73343ca1974359b9da0e1b2f79bc2d125fa65272",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:54",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038844/"
   },
   {
    "ioc": "1c67d2956c26839e9db74a8dc76bd0d5fc2bd93f006385814023d58d984c2aa6",
@@ -15763,18 +15860,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038840/"
   },
   {
-   "ioc": "15b24b680843ebf631c16111be0184087d1b4b400508a5b311290ae29757bde4",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:49",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038838/"
-  },
-  {
    "ioc": "1702dd28a873d655c0ef144aa577d74630caa9db8c0019664a6b31f2750b85d0",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15785,6 +15870,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038839/"
+  },
+  {
+   "ioc": "15b24b680843ebf631c16111be0184087d1b4b400508a5b311290ae29757bde4",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:49",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038838/"
   },
   {
    "ioc": "1564312302cc6dbc6dc8403ceac0f5b34399989456815f201069ca6cf8807025",
@@ -15823,18 +15920,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038835/"
   },
   {
-   "ioc": "116da749d6136cf312dc3b1ee9d15c90186df73005799ed115d74799b501fe96",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:45",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038833/"
-  },
-  {
    "ioc": "120875ee27329c5b875830ad596ef2a7569ac7e9d745715930c6e4f0d6482f81",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15845,6 +15930,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038834/"
+  },
+  {
+   "ioc": "116da749d6136cf312dc3b1ee9d15c90186df73005799ed115d74799b501fe96",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:45",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038833/"
   },
   {
    "ioc": "1116699aa1bc44534a0c0b59afba75e335bc512a3de99d85061b2d5b07705dbd",
@@ -15871,18 +15968,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038831/"
   },
   {
-   "ioc": "0f83afb963851fadf4881769ffaba7bc2e139d0895cfe5d9aea94e7ec309803a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:42",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038829/"
-  },
-  {
    "ioc": "0fb305c6685bcdbf8ef01e1965b3bba939d13ffeadcf662f8bd3d0b2ac43672b",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15893,6 +15978,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038830/"
+  },
+  {
+   "ioc": "0f83afb963851fadf4881769ffaba7bc2e139d0895cfe5d9aea94e7ec309803a",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:42",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038829/"
   },
   {
    "ioc": "0ec6daf71773f4cbc6a846268f5c58d2ffef949f930185b7f6949d29b6d611de",
@@ -15919,18 +16016,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038827/"
   },
   {
-   "ioc": "0bc9cf3bdc60760a186bd275fe3ee5119f18b2dfa11fe3f7d1c33530325da239",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:39",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038825/"
-  },
-  {
    "ioc": "0c95fb428691341cd899549e1a793df320547e3346d470f18f579b9478da154a",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -15941,6 +16026,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038826/"
+  },
+  {
+   "ioc": "0bc9cf3bdc60760a186bd275fe3ee5119f18b2dfa11fe3f7d1c33530325da239",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:39",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038825/"
   },
   {
    "ioc": "0b564dd0756dc78a7b40671e4dddcec996d71c34a9ef447818a8d7ab179e4bc8",
@@ -16003,18 +16100,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038820/"
   },
   {
-   "ioc": "08120e687ee43b371921209cc361c0c0c13c5800a6c7d485eada411cf91537de",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:33",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038818/"
-  },
-  {
    "ioc": "082019951bd972a7eac9ceb3dcdc0ef6a47a78570c611475b1c5e82526cafbd4",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16025,6 +16110,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038819/"
+  },
+  {
+   "ioc": "08120e687ee43b371921209cc361c0c0c13c5800a6c7d485eada411cf91537de",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:33",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038818/"
   },
   {
    "ioc": "0715486ca3ff9539e3d058f4cef21e25fb4f417bb919f0fdab772454d991b266",
@@ -16063,18 +16160,6 @@
    "link": "https://threatfox.abuse.ch/ioc/2038815/"
   },
   {
-   "ioc": "04031fb74d2acb1e27d9ee217f1cd4561c8feb794dc483698fb0f4c4bd382b66",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-22T00:35:29",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038813/"
-  },
-  {
    "ioc": "049b5a87a99fc770f1bb42ffec0e7ee690e1fde067bbd9b25f6fcc40804128c9",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
@@ -16085,6 +16170,18 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2038814/"
+  },
+  {
+   "ioc": "04031fb74d2acb1e27d9ee217f1cd4561c8feb794dc483698fb0f4c4bd382b66",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 75,
+   "date": "2026-11-22T00:35:29",
+   "tags": [
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038813/"
   },
   {
    "ioc": "03e56a3999e549fdd9324af50709e39e83ab114b080250ce346f0ef84a02333e",
@@ -16135,7 +16232,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038809/"
   },
   {
-   "ioc": "cb781f11edbec9e5d83c90884a07ed26b602e71831ce7b4f003f3eca34534b64",
+   "ioc": "dbd123433f8b8f9c663036dbc4a783416eb6385fae6b314afc00c0a418adff7f",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -16149,75 +16246,7 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038802/"
-  },
-  {
-   "ioc": "3491e4f8d017805c783d7e90250e9dd2072762d2ecf2f7258c69be82a059e5ce",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-22T00:35:19",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038803/"
-  },
-  {
-   "ioc": "5f56af52911f489cb16a1651d9e7dbcc548e31538deb0af063b0497faa0614bd",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-22T00:35:19",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038804/"
-  },
-  {
-   "ioc": "0e476203bba5fe08484a848b5c9a5b9149af538db8c6693a37be93dc7668d81f",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-22T00:35:19",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038805/"
-  },
-  {
-   "ioc": "4e09ad406af52ea01043d3e02420523e501cd86373efc041d8988e6f8791cb1c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-22T00:35:19",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038806/"
+   "link": "https://threatfox.abuse.ch/ioc/2038808/"
   },
   {
    "ioc": "6e002fad9194ce4be2cf02c55bbe3b33bf3c8d85e84454e4778180fa0b8f1b1e",
@@ -16237,7 +16266,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038807/"
   },
   {
-   "ioc": "dbd123433f8b8f9c663036dbc4a783416eb6385fae6b314afc00c0a418adff7f",
+   "ioc": "4e09ad406af52ea01043d3e02420523e501cd86373efc041d8988e6f8791cb1c",
    "type": "sha256_hash",
    "threat": "Indicator that identifies a malware sample (payload)",
    "malware": "Unknown malware",
@@ -16251,10 +16280,78 @@
     "RUST",
     "SnoopyTriage"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038808/"
+   "link": "https://threatfox.abuse.ch/ioc/2038806/"
   },
   {
-   "ioc": "waquiind[.]com",
+   "ioc": "0e476203bba5fe08484a848b5c9a5b9149af538db8c6693a37be93dc7668d81f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-22T00:35:19",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038805/"
+  },
+  {
+   "ioc": "5f56af52911f489cb16a1651d9e7dbcc548e31538deb0af063b0497faa0614bd",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-22T00:35:19",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038804/"
+  },
+  {
+   "ioc": "3491e4f8d017805c783d7e90250e9dd2072762d2ecf2f7258c69be82a059e5ce",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-22T00:35:19",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038803/"
+  },
+  {
+   "ioc": "cb781f11edbec9e5d83c90884a07ed26b602e71831ce7b4f003f3eca34534b64",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-22T00:35:19",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038802/"
+  },
+  {
+   "ioc": "usercmp1[.]apisyncs[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -16266,172 +16363,7 @@
     "c2",
     "Dropper"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038788/"
-  },
-  {
-   "ioc": "lndpy[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038789/"
-  },
-  {
-   "ioc": "imgstorage2[.]lndpy[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038790/"
-  },
-  {
-   "ioc": "hsrdkt[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038791/"
-  },
-  {
-   "ioc": "cdn3[.]hsrdkt[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038792/"
-  },
-  {
-   "ioc": "apisyncs[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038793/"
-  },
-  {
-   "ioc": "a[.]apisyncs[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038794/"
-  },
-  {
-   "ioc": "c[.]apisyncs[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038795/"
-  },
-  {
-   "ioc": "t2[.]apisyncs[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038796/"
-  },
-  {
-   "ioc": "sg3[.]apisyncs[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038797/"
-  },
-  {
-   "ioc": "sg4[.]apisyncs[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038798/"
-  },
-  {
-   "ioc": "sg5[.]apisyncs[.]com",
-   "type": "domain",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:33:23",
-   "tags": [
-    "ADFraud",
-    "andorid",
-    "c2",
-    "Dropper"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038799/"
+   "link": "https://threatfox.abuse.ch/ioc/2038801/"
   },
   {
    "ioc": "flush[.]apisyncs[.]com",
@@ -16449,7 +16381,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038800/"
   },
   {
-   "ioc": "usercmp1[.]apisyncs[.]com",
+   "ioc": "sg5[.]apisyncs[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -16461,7 +16393,172 @@
     "c2",
     "Dropper"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038801/"
+   "link": "https://threatfox.abuse.ch/ioc/2038799/"
+  },
+  {
+   "ioc": "sg4[.]apisyncs[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038798/"
+  },
+  {
+   "ioc": "sg3[.]apisyncs[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038797/"
+  },
+  {
+   "ioc": "t2[.]apisyncs[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038796/"
+  },
+  {
+   "ioc": "c[.]apisyncs[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038795/"
+  },
+  {
+   "ioc": "a[.]apisyncs[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038794/"
+  },
+  {
+   "ioc": "apisyncs[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038793/"
+  },
+  {
+   "ioc": "cdn3[.]hsrdkt[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038792/"
+  },
+  {
+   "ioc": "hsrdkt[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038791/"
+  },
+  {
+   "ioc": "imgstorage2[.]lndpy[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038790/"
+  },
+  {
+   "ioc": "lndpy[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038789/"
+  },
+  {
+   "ioc": "waquiind[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:33:23",
+   "tags": [
+    "ADFraud",
+    "andorid",
+    "c2",
+    "Dropper"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038788/"
   },
   {
    "ioc": "huonew[.]com",
@@ -16707,7 +16804,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038771/"
   },
   {
-   "ioc": "hxxp://139[.]135[.]60[.]2:52711/Mozi[.]m",
+   "ioc": "hxxp://72[.]255[.]26[.]192:56473/Mozi[.]a",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Mozi",
@@ -16718,7 +16815,7 @@
     "IoT",
     "Mozi"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038768/"
+   "link": "https://threatfox.abuse.ch/ioc/2038770/"
   },
   {
    "ioc": "hxxp://223[.]123[.]73[.]209:52457/Mozi[.]m",
@@ -16735,7 +16832,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038769/"
   },
   {
-   "ioc": "hxxp://72[.]255[.]26[.]192:56473/Mozi[.]a",
+   "ioc": "hxxp://139[.]135[.]60[.]2:52711/Mozi[.]m",
    "type": "url",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "Mozi",
@@ -16746,21 +16843,7 @@
     "IoT",
     "Mozi"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038770/"
-  },
-  {
-   "ioc": "hxxp://102[.]21[.]87[.]48:55635/Mozi[.]m",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Mozi",
-   "confidence": 75,
-   "date": "2026-11-22T00:19:07",
-   "tags": [
-    "elf",
-    "IoT",
-    "Mozi"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038766/"
+   "link": "https://threatfox.abuse.ch/ioc/2038768/"
   },
   {
    "ioc": "hxxp://103[.]174[.]243[.]205:34747/Mozi[.]m",
@@ -16777,6 +16860,20 @@
    "link": "https://threatfox.abuse.ch/ioc/2038767/"
   },
   {
+   "ioc": "hxxp://102[.]21[.]87[.]48:55635/Mozi[.]m",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Mozi",
+   "confidence": 75,
+   "date": "2026-11-22T00:19:07",
+   "tags": [
+    "elf",
+    "IoT",
+    "Mozi"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038766/"
+  },
+  {
    "ioc": "m[.]nerobet888[.]com",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
@@ -16790,7 +16887,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038765/"
   },
   {
-   "ioc": "cobaltfriobpliaon[.]pro",
+   "ioc": "thistle-pliaor-zrams[.]pro",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -16800,85 +16897,7 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038756/"
-  },
-  {
-   "ioc": "coral-vale-greopgaeen[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-22T00:06:19",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038757/"
-  },
-  {
-   "ioc": "famplianpleoa[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-22T00:06:19",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038758/"
-  },
-  {
-   "ioc": "kiln-bruiyn-ncuas[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-22T00:06:19",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038759/"
-  },
-  {
-   "ioc": "reoddium-thistle[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-22T00:06:19",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038760/"
-  },
-  {
-   "ioc": "silver-glide-badger-rioen[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-22T00:06:19",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038761/"
-  },
-  {
-   "ioc": "silvercreskriaor[.]pro",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "IClickFix",
-   "confidence": 100,
-   "date": "2026-11-22T00:06:19",
-   "tags": [
-    "ClickFix",
-    "Mac"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038762/"
+   "link": "https://threatfox.abuse.ch/ioc/2038764/"
   },
   {
    "ioc": "stuststoaara-grove[.]pro",
@@ -16894,7 +16913,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038763/"
   },
   {
-   "ioc": "thistle-pliaor-zrams[.]pro",
+   "ioc": "silvercreskriaor[.]pro",
    "type": "domain",
    "threat": "Indicator that identifies a malware distribution server (payload delivery)",
    "malware": "IClickFix",
@@ -16904,7 +16923,85 @@
     "ClickFix",
     "Mac"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038764/"
+   "link": "https://threatfox.abuse.ch/ioc/2038762/"
+  },
+  {
+   "ioc": "silver-glide-badger-rioen[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-22T00:06:19",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038761/"
+  },
+  {
+   "ioc": "reoddium-thistle[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-22T00:06:19",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038760/"
+  },
+  {
+   "ioc": "kiln-bruiyn-ncuas[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-22T00:06:19",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038759/"
+  },
+  {
+   "ioc": "famplianpleoa[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-22T00:06:19",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038758/"
+  },
+  {
+   "ioc": "coral-vale-greopgaeen[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-22T00:06:19",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038757/"
+  },
+  {
+   "ioc": "cobaltfriobpliaon[.]pro",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "IClickFix",
+   "confidence": 100,
+   "date": "2026-11-22T00:06:19",
+   "tags": [
+    "ClickFix",
+    "Mac"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038756/"
   },
   {
    "ioc": "rate-limited-proxy-66-249-89-229[.]google[.]com",
@@ -16923,7 +17020,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038755/"
   },
   {
-   "ioc": "209[.]99[.]186[.]196:443",
+   "ioc": "94[.]131[.]125[.]122:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -16932,55 +17029,7 @@
    "tags": [
     "ARTEX"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038748/"
-  },
-  {
-   "ioc": "23[.]226[.]70[.]140:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:00:24",
-   "tags": [
-    "ARTEX"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038749/"
-  },
-  {
-   "ioc": "23[.]226[.]70[.]141:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:00:24",
-   "tags": [
-    "ARTEX"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038750/"
-  },
-  {
-   "ioc": "23[.]226[.]70[.]142:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:00:24",
-   "tags": [
-    "ARTEX"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038751/"
-  },
-  {
-   "ioc": "43[.]251[.]224[.]148:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:00:24",
-   "tags": [
-    "ARTEX"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038752/"
+   "link": "https://threatfox.abuse.ch/ioc/2038754/"
   },
   {
    "ioc": "60[.]204[.]233[.]159:8787",
@@ -16995,7 +17044,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038753/"
   },
   {
-   "ioc": "94[.]131[.]125[.]122:443",
+   "ioc": "43[.]251[.]224[.]148:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17004,10 +17053,58 @@
    "tags": [
     "ARTEX"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038754/"
+   "link": "https://threatfox.abuse.ch/ioc/2038752/"
   },
   {
-   "ioc": "113[.]45[.]68[.]166:8787",
+   "ioc": "23[.]226[.]70[.]142:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:00:24",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038751/"
+  },
+  {
+   "ioc": "23[.]226[.]70[.]141:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:00:24",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038750/"
+  },
+  {
+   "ioc": "23[.]226[.]70[.]140:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:00:24",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038749/"
+  },
+  {
+   "ioc": "209[.]99[.]186[.]196:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:00:24",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038748/"
+  },
+  {
+   "ioc": "186[.]246[.]53[.]38:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17016,43 +17113,7 @@
    "tags": [
     "ARTEX"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038742/"
-  },
-  {
-   "ioc": "13[.]140[.]39[.]150:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:00:23",
-   "tags": [
-    "ARTEX"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038743/"
-  },
-  {
-   "ioc": "137[.]220[.]130[.]26:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:00:23",
-   "tags": [
-    "ARTEX"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038744/"
-  },
-  {
-   "ioc": "139[.]162[.]40[.]209:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-22T00:00:23",
-   "tags": [
-    "ARTEX"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038745/"
+   "link": "https://threatfox.abuse.ch/ioc/2038747/"
   },
   {
    "ioc": "161[.]120[.]218[.]168:443",
@@ -17067,7 +17128,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038746/"
   },
   {
-   "ioc": "186[.]246[.]53[.]38:443",
+   "ioc": "139[.]162[.]40[.]209:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17076,7 +17137,43 @@
    "tags": [
     "ARTEX"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038747/"
+   "link": "https://threatfox.abuse.ch/ioc/2038745/"
+  },
+  {
+   "ioc": "137[.]220[.]130[.]26:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:00:23",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038744/"
+  },
+  {
+   "ioc": "13[.]140[.]39[.]150:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:00:23",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038743/"
+  },
+  {
+   "ioc": "113[.]45[.]68[.]166:8787",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-22T00:00:23",
+   "tags": [
+    "ARTEX"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038742/"
   },
   {
    "ioc": "c014333302604fc100a0f095be65ac3b762f9384b0590934463d0cd9ddbc6089",
@@ -17144,7 +17241,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038737/"
   },
   {
-   "ioc": "119[.]28[.]19[.]56:443",
+   "ioc": "43[.]173[.]38[.]91:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17153,10 +17250,10 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038711/"
+   "link": "https://threatfox.abuse.ch/ioc/2038736/"
   },
   {
-   "ioc": "142[.]86[.]110[.]155:443",
+   "ioc": "43[.]167[.]92[.]43:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17165,10 +17262,10 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038712/"
+   "link": "https://threatfox.abuse.ch/ioc/2038735/"
   },
   {
-   "ioc": "150[.]109[.]186[.]112:443",
+   "ioc": "43[.]167[.]172[.]20:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17177,10 +17274,10 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038713/"
+   "link": "https://threatfox.abuse.ch/ioc/2038734/"
   },
   {
-   "ioc": "154[.]198[.]52[.]12:443",
+   "ioc": "43[.]166[.]5[.]95:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17189,10 +17286,10 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038714/"
+   "link": "https://threatfox.abuse.ch/ioc/2038733/"
   },
   {
-   "ioc": "161[.]120[.]218[.]134:443",
+   "ioc": "43[.]166[.]240[.]130:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17201,10 +17298,10 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038715/"
+   "link": "https://threatfox.abuse.ch/ioc/2038732/"
   },
   {
-   "ioc": "161[.]120[.]218[.]28:443",
+   "ioc": "43[.]166[.]18[.]250:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17213,10 +17310,10 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038716/"
+   "link": "https://threatfox.abuse.ch/ioc/2038731/"
   },
   {
-   "ioc": "161[.]120[.]220[.]30:443",
+   "ioc": "43[.]157[.]210[.]152:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17225,10 +17322,10 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038717/"
+   "link": "https://threatfox.abuse.ch/ioc/2038730/"
   },
   {
-   "ioc": "170[.]106[.]38[.]231:443",
+   "ioc": "43[.]157[.]174[.]2:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17237,115 +17334,7 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038718/"
-  },
-  {
-   "ioc": "186[.]240[.]202[.]78:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038719/"
-  },
-  {
-   "ioc": "34[.]61[.]246[.]29:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038720/"
-  },
-  {
-   "ioc": "43[.]128[.]1[.]168:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038721/"
-  },
-  {
-   "ioc": "43[.]128[.]211[.]240:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038722/"
-  },
-  {
-   "ioc": "43[.]128[.]213[.]140:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038723/"
-  },
-  {
-   "ioc": "43[.]128[.]220[.]9:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038724/"
-  },
-  {
-   "ioc": "43[.]133[.]205[.]196:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038725/"
-  },
-  {
-   "ioc": "43[.]152[.]243[.]245:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038726/"
-  },
-  {
-   "ioc": "43[.]157[.]169[.]156:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 100,
-   "date": "2026-11-21T23:58:46",
-   "tags": [
-    "AntiFox"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2038727/"
+   "link": "https://threatfox.abuse.ch/ioc/2038729/"
   },
   {
    "ioc": "43[.]157[.]170[.]157:443",
@@ -17360,7 +17349,7 @@
    "link": "https://threatfox.abuse.ch/ioc/2038728/"
   },
   {
-   "ioc": "43[.]157[.]174[.]2:443",
+   "ioc": "43[.]157[.]169[.]156:443",
    "type": "ip:port",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
    "malware": "Unknown malware",
@@ -17369,10 +17358,143 @@
    "tags": [
     "AntiFox"
    ],
-   "link": "https://threatfox.abuse.ch/ioc/2038729/"
+   "link": "https://threatfox.abuse.ch/ioc/2038727/"
+  },
+  {
+   "ioc": "43[.]152[.]243[.]245:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-21T23:58:46",
+   "tags": [
+    "AntiFox"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038726/"
+  },
+  {
+   "ioc": "43[.]133[.]205[.]196:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-21T23:58:46",
+   "tags": [
+    "AntiFox"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2038725/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://42[.]236[.]150[.]228:42410/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-22T01:17:06",
+   "link": "https://urlhaus.abuse.ch/url/4073567/"
+  },
+  {
+   "ioc": "hxxp://157[.]18[.]147[.]56:55920/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-22T01:17:05",
+   "link": "https://urlhaus.abuse.ch/url/4073566/"
+  },
+  {
+   "ioc": "hxxp://59[.]180[.]158[.]196:39107/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-22T01:10:20",
+   "link": "https://urlhaus.abuse.ch/url/4073565/"
+  },
+  {
+   "ioc": "hxxp://200[.]115[.]102[.]2:60334/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-22T01:08:15",
+   "link": "https://urlhaus.abuse.ch/url/4073564/"
+  },
+  {
+   "ioc": "hxxp://61[.]53[.]140[.]4:45556/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-22T01:04:12",
+   "link": "https://urlhaus.abuse.ch/url/4073563/"
+  },
+  {
+   "ioc": "hxxp://27[.]17[.]242[.]120:44735/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-22T01:02:09",
+   "link": "https://urlhaus.abuse.ch/url/4073562/"
+  },
+  {
+   "ioc": "hxxp://27[.]207[.]139[.]35:44352/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-22T01:02:06",
+   "link": "https://urlhaus.abuse.ch/url/4073561/"
+  },
+  {
+   "ioc": "hxxp://222[.]141[.]117[.]165:53003/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-22T01:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4073559/"
+  },
+  {
+   "ioc": "hxxp://123[.]11[.]180[.]127:40460/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-22T01:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4073560/"
+  },
   {
    "ioc": "hxxp://157[.]18[.]147[.]56:55920/bin[.]sh",
    "host_it": false,
@@ -19173,143 +19295,12 @@
    ],
    "date": "2026-11-21T18:52:24",
    "link": "https://urlhaus.abuse.ch/url/4073411/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/Nayem707/test/refs/heads/master/public/fonts/fa-solid-700[.]otf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073412/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/thachrocky12345/adversarial-review-with-agent-/refs/heads/main/docs/decisions/public/fonts/fa-solid-900[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073413/"
-  },
-  {
-   "ioc": "hxxp://204[.]141[.]236[.]157:8110/csky/vx_A[.]bin",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073414/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/the-akdn/the-ismaili-tv/refs/heads/main/plans/public/fonts/fa-solid-900[.]eot",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073415/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/utujesandrine456/Lumina/refs/heads/main/app/driver/public/fonts/fa-solid-900[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073416/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/tryReduct/Reduct-web/refs/heads/main/frontend/src/components/ui/public/fonts/fa-solid-400[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073417/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/vijayguhan10/activity-master-4trip/refs/heads/main/src/Activity/pages/Home/components/public/fonts/fa-solid-900[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073418/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/utujesandrine456/ssq-report/refs/heads/master/src/app/api/generate-pdf/public/fonts/fa-solid-900[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:24",
-   "link": "https://urlhaus.abuse.ch/url/4073419/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/wasifahmed85/admin-layout-mail-otp/refs/heads/main/app/Http/Controllers/Backend/Admin/Auth/public/fonts/fa-solid-900[.]woff2",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "DEVPOPPER",
-    "github",
-    "js",
-    "TxDataHiding",
-    "VSCode"
-   ],
-   "date": "2026-11-21T18:52:23",
-   "link": "https://urlhaus.abuse.ch/url/4073401/"
   }
  ],
  "malware_top": [
   {
    "name": "Skimer",
-   "count": 335
+   "count": 332
   },
   {
    "name": "Unknown Loader",
@@ -19321,7 +19312,7 @@
   },
   {
    "name": "Mirai",
-   "count": 134
+   "count": 135
   },
   {
    "name": "Merdoor",
@@ -19336,56 +19327,60 @@
    "count": 84
   },
   {
-   "name": "ClearFake",
-   "count": 45
+   "name": "Cobalt Strike",
+   "count": 42
   },
   {
-   "name": "Cobalt Strike",
-   "count": 39
+   "name": "ClearFake",
+   "count": 42
   },
   {
    "name": "SNOWLIGHT",
    "count": 32
   },
   {
-   "name": "Snowlight",
-   "count": 32
-  },
-  {
    "name": "IClickFix",
-   "count": 30
+   "count": 29
   },
   {
    "name": "SalatStealer",
    "count": 23
   },
   {
-   "name": "Sliver",
-   "count": 19
+   "name": "Snowlight",
+   "count": 20
   },
   {
-   "name": "php.shin_webshell",
-   "count": 18
+   "name": "Sliver",
+   "count": 19
   },
   {
    "name": "ValleyRAT",
    "count": 18
   },
   {
-   "name": "Mozi",
-   "count": 16
+   "name": "php.shin_webshell",
+   "count": 17
   },
   {
-   "name": "VShell",
-   "count": 12
+   "name": "Mozi",
+   "count": 16
   },
   {
    "name": "stealler",
    "count": 12
   },
   {
+   "name": "VShell",
+   "count": 11
+  },
+  {
    "name": "Vidar",
    "count": 11
+  },
+  {
+   "name": "WARDENStealer",
+   "count": 10
   },
   {
    "name": "Venus Stealer",
@@ -19402,10 +19397,6 @@
   {
    "name": "StrelaStealer",
    "count": 7
-  },
-  {
-   "name": "Unknown RAT",
-   "count": 6
   }
  ],
  "agid_campaigns": [
