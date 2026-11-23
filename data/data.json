@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T14:31:01Z",
+ "updated": "2026-11-23T15:01:18Z",
  "news": [
   {
    "id": "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
@@ -12,6 +12,19 @@
    "date": "2026-11-24T00:00:00Z",
    "actors": [],
    "threat": true,
+   "highlight": false
+  },
+  {
+   "id": "https://www.acn.gov.it/portale/w/rilevata-nuova-vulnerabilita-in-gpgme",
+   "title": "Rilevata nuova vulnerabilità in GPGME",
+   "link": "https://www.acn.gov.it/portale/w/rilevata-nuova-vulnerabilita-in-gpgme",
+   "summary": "GnuPG ha rilasciato aggiornamenti di sicurezza che sanano una vulnerabilità con gravità \"critica\" in GPGME, libreria open source per integrare le operazioni crittografiche basate su GnuPG nelle applicazioni software. Tale vulnerabilità, qualora sfruttata, potrebbe permettere a un utente malintenzion…",
+   "source": "CSIRT Italia (ACN)",
+   "lang": "it",
+   "type": "advisory",
+   "date": "2026-11-23T14:30:11Z",
+   "actors": [],
+   "threat": false,
    "highlight": false
   },
   {
@@ -10508,21 +10521,6 @@
    ],
    "threat": true,
    "highlight": false
-  },
-  {
-   "id": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afe90aec94040d38d376788ccbe644e&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2falibaba-sfida-openai-e-anthropic-qwen4-max-costa-fino-a-4-volte-meno%2f&c=3844027827813262581&mkt=en-us",
-   "title": "Alibaba sfida OpenAI e Anthropic: Qwen4-Max costa fino a 4 volte meno",
-   "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afe90aec94040d38d376788ccbe644e&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2falibaba-sfida-openai-e-anthropic-qwen4-max-costa-fino-a-4-volte-meno%2f&c=3844027827813262581&mkt=en-us",
-   "summary": "La Cina presenta un'IA che riduce i costi di OpenAI e Anthropic. Scopri come Qwen4-Max offre prestazioni competitive a prezzi inferiori.",
-   "source": "Red Hot Cyber",
-   "lang": "it",
-   "type": "news",
-   "date": "2026-11-17T01:54:00Z",
-   "actors": [
-    "Cleaver"
-   ],
-   "threat": true,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -13821,28 +13819,8 @@
    "last": "2026-11-20T14:18:13"
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Killnet",
    "type": "hacktivist",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "APT28",
-   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -13861,11 +13839,31 @@
    "last": ""
   },
   {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Cleaver",
    "type": "apt",
    "country": "IR",
    "watch": false,
-   "mentions": 14,
+   "mentions": 13,
    "claims": 0,
    "claims_it": 0,
    "last": "2026-11-17T08:54:00Z"
@@ -14446,6 +14444,92 @@
  "known_actors": 1527,
  "iocs": [
   {
+   "ioc": "1f98c6bf1d31f7e66456ded3c6b0358a8d892460a920053a3a9b5f45cb317249",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-23T15:00:26",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2042436/"
+  },
+  {
+   "ioc": "236b836ba8c39858fe6dde77830dbce358e241cbf32c514fb482191f41c3354a",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-23T15:00:25",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2042435/"
+  },
+  {
+   "ioc": "cb5a396b5cfee4520b43d940de6ac2bbceb965ee7a3069012cffe716d49cd060",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-23T15:00:24",
+   "tags": [
+    "Loader",
+    "macho"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2042434/"
+  },
+  {
+   "ioc": "109[.]206[.]236[.]18:1418",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-23T14:51:11",
+   "tags": [
+    "CoinMiner",
+    "diicot",
+    "golang",
+    "linux",
+    "Mexals",
+    "ROOTKIT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2042429/"
+  },
+  {
+   "ioc": "hxxp://digital[.]digitaldatainsights[.]org/[.]x/black3",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-23T14:51:09",
+   "tags": [
+    "cryptojacking",
+    "diicot",
+    "linux",
+    "Mexals",
+    "second-stage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2042430/"
+  },
+  {
+   "ioc": "2cxhrha9[.]tucargaseguraceo[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-23T14:44:40",
+   "tags": [
+    "ClearFake",
+    "mac-0x68dc",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2042433/"
+  },
+  {
    "ioc": "f[.]hkb7[.]org",
    "type": "domain",
    "threat": "Indicator that identifies a botnet command&control server (C&C)",
@@ -14468,39 +14552,6 @@
     "Vidar"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2042432/"
-  },
-  {
-   "ioc": "hxxp://digital[.]digitaldatainsights[.]org/[.]x/black3",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-23T14:29:57",
-   "tags": [
-    "cryptojacking",
-    "diicot",
-    "linux",
-    "Mexals",
-    "second-stage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2042430/"
-  },
-  {
-   "ioc": "109[.]206[.]236[.]18:1418",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-23T14:29:56",
-   "tags": [
-    "CoinMiner",
-    "diicot",
-    "golang",
-    "linux",
-    "Mexals",
-    "ROOTKIT"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2042429/"
   },
   {
    "ioc": "xad[.]asdselot[.]org",
@@ -17089,72 +17140,396 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2042238/"
-  },
-  {
-   "ioc": "657024daf87e42b005b81edbcd2a024c542b967713b9fa3e378509b697f46495",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-23T11:05:17",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2042239/"
-  },
-  {
-   "ioc": "cbe73149db807dad32141b3af5c3e0441aa32825bd5d4734014511ef2e2c624c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-23T11:05:17",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2042240/"
-  },
-  {
-   "ioc": "b74c895f78bc7ff88113f000e18eaeff5d1bb9a42cee6827202cd635a43dafea",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-23T11:05:17",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2042241/"
-  },
-  {
-   "ioc": "8[.]148[.]4[.]65:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Cobalt Strike",
-   "confidence": 100,
-   "date": "2026-11-23T11:05:06",
-   "tags": [
-    "CobaltStrike"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2042234/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://aws-edge-10273753[.]io/assets/v2/payload/hermes-mini",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:52:17",
+   "link": "https://urlhaus.abuse.ch/url/4074799/"
+  },
+  {
+   "ioc": "hxxp://13[.]140[.]34[.]106:8111/qv/qboot[.]sh",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "node-red",
+    "sh"
+   ],
+   "date": "2026-11-23T14:52:16",
+   "link": "https://urlhaus.abuse.ch/url/4074797/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/z3ncv/cdn-edge/main/install[.]sh",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "CoinMiner",
+    "node-red",
+    "sh"
+   ],
+   "date": "2026-11-23T14:52:16",
+   "link": "https://urlhaus.abuse.ch/url/4074798/"
+  },
+  {
+   "ioc": "hxxps://beneon4[.]hypstok[.]info/HFinex[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "hype",
+    "Password-protected",
+    "zip"
+   ],
+   "date": "2026-11-23T14:52:14",
+   "link": "https://urlhaus.abuse.ch/url/4074795/"
+  },
+  {
+   "ioc": "hxxps://moveeros[.]com/Bin/ScreenConnect[.]ClientSetup[.]msi",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "botnet",
+    "connectwise",
+    "rat",
+    "rmm",
+    "screenconnect"
+   ],
+   "date": "2026-11-23T14:52:14",
+   "link": "https://urlhaus.abuse.ch/url/4074796/"
+  },
+  {
+   "ioc": "hxxps://documentazione[.]siap[.]cloud/[.]kf/i[.]sh",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "CoinMiner",
+    "node-red",
+    "sh"
+   ],
+   "date": "2026-11-23T14:52:10",
+   "link": "https://urlhaus.abuse.ch/url/4074792/"
+  },
+  {
+   "ioc": "hxxps://aws-edge-10273753[.]io/assets/v2/payload/hermes-front-welle1-static",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:52:10",
+   "link": "https://urlhaus.abuse.ch/url/4074793/"
+  },
+  {
+   "ioc": "hxxps://aws-edge-10273753[.]io/assets/v2/payload/hermes-front-welle2-static",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:52:10",
+   "link": "https://urlhaus.abuse.ch/url/4074794/"
+  },
+  {
+   "ioc": "hxxp://45[.]61[.]163[.]210:8080/bin/boot",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "node-red",
+    "sh"
+   ],
+   "date": "2026-11-23T14:51:32",
+   "link": "https://urlhaus.abuse.ch/url/4074791/"
+  },
+  {
+   "ioc": "hxxp://45[.]61[.]163[.]210/bin/boot",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "node-red",
+    "sh"
+   ],
+   "date": "2026-11-23T14:51:27",
+   "link": "https://urlhaus.abuse.ch/url/4074790/"
+  },
+  {
+   "ioc": "hxxp://188[.]240[.]231[.]64:8444/bins/6",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:20",
+   "link": "https://urlhaus.abuse.ch/url/4074788/"
+  },
+  {
+   "ioc": "hxxp://188[.]240[.]231[.]64:8444/bins/4",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:20",
+   "link": "https://urlhaus.abuse.ch/url/4074789/"
+  },
+  {
+   "ioc": "hxxp://188[.]240[.]231[.]64:8444/bins/3d",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074778/"
+  },
+  {
+   "ioc": "hxxp://188[.]240[.]231[.]64:8444/bins/1",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074779/"
+  },
+  {
+   "ioc": "hxxp://188[.]240[.]231[.]64:8444/bins/2",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074780/"
+  },
+  {
+   "ioc": "hxxp://188[.]240[.]231[.]64:8444/bins/5",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074781/"
+  },
+  {
+   "ioc": "hxxp://146[.]56[.]164[.]121:8443/bins/3d",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074782/"
+  },
+  {
+   "ioc": "hxxp://146[.]56[.]164[.]121:8443/bins/6",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074783/"
+  },
+  {
+   "ioc": "hxxp://146[.]56[.]164[.]121:8443/bins/4",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074784/"
+  },
+  {
+   "ioc": "hxxp://146[.]56[.]164[.]121:8443/bins/2",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074785/"
+  },
+  {
+   "ioc": "hxxp://146[.]56[.]164[.]121:8443/bins/1",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074786/"
+  },
+  {
+   "ioc": "hxxp://146[.]56[.]164[.]121:8443/bins/5",
+   "host_it": false,
+   "status": "offline",
+   "threat": "malware_download",
+   "tags": [
+    "elf",
+    "mirai",
+    "node-red"
+   ],
+   "date": "2026-11-23T14:51:18",
+   "link": "https://urlhaus.abuse.ch/url/4074787/"
+  },
+  {
+   "ioc": "hxxps://nbdkdajf234[.]xyz/predict/fsdownload/81EX[.]apk",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "apk "
+   ],
+   "date": "2026-11-23T14:51:10",
+   "link": "https://urlhaus.abuse.ch/url/4074776/"
+  },
+  {
+   "ioc": "hxxps://sosoa3[.]fixiow[.]icu/DvnX[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "dvx.to",
+    "Password-protected",
+    "zip"
+   ],
+   "date": "2026-11-23T14:51:10",
+   "link": "https://urlhaus.abuse.ch/url/4074777/"
+  },
+  {
+   "ioc": "hxxps://nbdkdajf234[.]xyz/predict/fsdownload/81EX[.]mobileconfig",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IOS"
+   ],
+   "date": "2026-11-23T14:51:07",
+   "link": "https://urlhaus.abuse.ch/url/4074775/"
+  },
+  {
+   "ioc": "hxxps://beneon3[.]hypstok[.]info/HFinex[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "hype",
+    "Password-protected",
+    "zip"
+   ],
+   "date": "2026-11-23T14:51:06",
+   "link": "https://urlhaus.abuse.ch/url/4074774/"
+  },
+  {
+   "ioc": "hxxp://45[.]168[.]132[.]19:47811/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-23T14:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4074773/"
+  },
+  {
+   "ioc": "hxxp://195[.]64[.]243[.]84:39888/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-23T14:47:04",
+   "link": "https://urlhaus.abuse.ch/url/4074772/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/violetsanninstretch/RefreshLock-HzMonitorSwitcher/releases/download/refresh-lock-v1[.]2/RefreshLockHz[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "MopsStealer"
+   ],
+   "date": "2026-11-23T14:45:06",
+   "link": "https://urlhaus.abuse.ch/url/4074771/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/OutpostRepair/DriveHealth-NVMeSmartCheck/releases/download/drivehealth-v1[.]2/DriveHealth[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "MopsStealer"
+   ],
+   "date": "2026-11-23T14:44:06",
+   "link": "https://urlhaus.abuse.ch/url/4074770/"
+  },
+  {
+   "ioc": "hxxp://42[.]239[.]238[.]250:51757/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-23T14:32:18",
+   "link": "https://urlhaus.abuse.ch/url/4074769/"
+  },
   {
    "ioc": "hxxps://shandysip[.]com/d/ScreenConnect[.]ClientSetup[.]exe",
    "host_it": false,
@@ -17438,7 +17813,7 @@
   {
    "ioc": "hxxps://beneon2[.]hypstok[.]info/HFinex[.]zip",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "hype",
@@ -17451,7 +17826,7 @@
   {
    "ioc": "hxxps://sosoa2[.]fixiow[.]icu/DvnX[.]zip",
    "host_it": false,
-   "status": "online",
+   "status": "offline",
    "threat": "malware_download",
    "tags": [
     "dvx.to",
@@ -18669,428 +19044,6 @@
    ],
    "date": "2026-11-23T10:03:13",
    "link": "https://urlhaus.abuse.ch/url/4074651/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/powerpc",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:13",
-   "link": "https://urlhaus.abuse.ch/url/4074652/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/armv6l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:13",
-   "link": "https://urlhaus.abuse.ch/url/4074653/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/armv5l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:13",
-   "link": "https://urlhaus.abuse.ch/url/4074654/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/motorola-68000",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:13",
-   "link": "https://urlhaus.abuse.ch/url/4074655/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/armv7l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:10",
-   "link": "https://urlhaus.abuse.ch/url/4074642/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/x86_64",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:10",
-   "link": "https://urlhaus.abuse.ch/url/4074643/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/i486",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:10",
-   "link": "https://urlhaus.abuse.ch/url/4074644/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/bins/arm7",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:10",
-   "link": "https://urlhaus.abuse.ch/url/4074645/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/arcade/refs/heads/main/templates/sports/content/category/Software-3[.]3[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T10:03:08",
-   "link": "https://urlhaus.abuse.ch/url/4074637/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/phantom-frida/refs/heads/main/upfold/frida-phantom-2[.]6[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T10:03:08",
-   "link": "https://urlhaus.abuse.ch/url/4074638/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/arm64",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:08",
-   "link": "https://urlhaus.abuse.ch/url/4074639/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/armv4l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:08",
-   "link": "https://urlhaus.abuse.ch/url/4074640/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]81/arch/superh-4",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-81",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T10:03:08",
-   "link": "https://urlhaus.abuse.ch/url/4074641/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/bot/refs/heads/main/[.]github/workflows/Software-2[.]6[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T10:03:07",
-   "link": "https://urlhaus.abuse.ch/url/4074632/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/gamemodern/refs/heads/main/templates/modern/content/welcome/Software_v2[.]4[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T10:03:07",
-   "link": "https://urlhaus.abuse.ch/url/4074633/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/MesinLearning_/refs/heads/main/nosehole/Mesin_Learning_v1[.]9[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T10:03:07",
-   "link": "https://urlhaus.abuse.ch/url/4074634/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/gameadsense/refs/heads/main/baltei/Software-1[.]7[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T10:03:07",
-   "link": "https://urlhaus.abuse.ch/url/4074635/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/finish/refs/heads/main/storage/logs/Software_v1[.]3[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T10:03:07",
-   "link": "https://urlhaus.abuse.ch/url/4074636/"
-  },
-  {
-   "ioc": "hxxp://60[.]22[.]176[.]179:51559/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [],
-   "date": "2026-11-23T10:02:18",
-   "link": "https://urlhaus.abuse.ch/url/4074631/"
-  },
-  {
-   "ioc": "hxxp://183[.]214[.]149[.]164:51427/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-23T10:02:07",
-   "link": "https://urlhaus.abuse.ch/url/4074630/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/muhamadsatria-id/candak/refs/heads/main/android/gradle/wrapper/Software-v3[.]0[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-23T09:59:07",
-   "link": "https://urlhaus.abuse.ch/url/4074629/"
-  },
-  {
-   "ioc": "hxxp://fd2[.]eu/arch/armv5l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "botnetdomain",
-    "elf",
-    "fd2-eu",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:57:13",
-   "link": "https://urlhaus.abuse.ch/url/4074628/"
-  },
-  {
-   "ioc": "hxxp://fd2[.]eu/arch/armv7l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "botnetdomain",
-    "elf",
-    "fd2-eu",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:57:09",
-   "link": "https://urlhaus.abuse.ch/url/4074624/"
-  },
-  {
-   "ioc": "hxxp://fd2[.]eu/arch/mips",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "botnetdomain",
-    "elf",
-    "fd2-eu",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:57:09",
-   "link": "https://urlhaus.abuse.ch/url/4074625/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]84/arch/mipsel",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-84",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:57:09",
-   "link": "https://urlhaus.abuse.ch/url/4074626/"
-  },
-  {
-   "ioc": "hxxp://fd2[.]eu/arch/mipsel",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "botnetdomain",
-    "elf",
-    "fd2-eu",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:57:09",
-   "link": "https://urlhaus.abuse.ch/url/4074627/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]84/arch/armv5l",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-84",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:56:12",
-   "link": "https://urlhaus.abuse.ch/url/4074621/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]84/arch/i686",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-84",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:56:12",
-   "link": "https://urlhaus.abuse.ch/url/4074622/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]84/arch/x86_64",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-84",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:56:12",
-   "link": "https://urlhaus.abuse.ch/url/4074623/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]84/t",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-84",
-    "mirai",
-    "sh",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:56:11",
-   "link": "https://urlhaus.abuse.ch/url/4074620/"
-  },
-  {
-   "ioc": "hxxp://176[.]65[.]149[.]84/arch/mips",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "176-65-149-84",
-    "elf",
-    "mirai",
-    "ua-wget"
-   ],
-   "date": "2026-11-23T09:56:09",
-   "link": "https://urlhaus.abuse.ch/url/4074619/"
   }
  ],
  "malware_top": [
@@ -19116,7 +19069,7 @@
   },
   {
    "name": "Unknown Loader",
-   "count": 41
+   "count": 44
   },
   {
    "name": "SNOWLIGHT",
@@ -19128,7 +19081,7 @@
   },
   {
    "name": "ClearFake",
-   "count": 33
+   "count": 31
   },
   {
    "name": "ValleyRAT",
@@ -19223,25 +19176,25 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.42,
+    "value": 54.55,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.97,
+    "value": 7.95,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.64,
+    "value": 3.6,
     "rank": 3
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 3.38,
+    "value": 3.41,
     "rank": 4
    },
    {
@@ -19253,13 +19206,13 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 3.08,
+    "value": 3.02,
     "rank": 6
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.37,
+    "value": 2.38,
     "rank": 7
    },
    {
@@ -19271,33 +19224,33 @@
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.11,
+    "value": 1.12,
     "rank": 9
    },
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.07,
+    "value": 1.08,
     "rank": 10
-   },
-   {
-    "code": "TR",
-    "name": "Turkey",
-    "value": 0.92,
-    "rank": 11
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 0.92,
+    "value": 0.91,
+    "rank": 11
+   },
+   {
+    "code": "SG",
+    "name": "Singapore",
+    "value": 0.89,
     "rank": 12
    }
   ],
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.74,
-   "rank": 15
+   "value": 0.7,
+   "rank": 16
   },
   "l7_7d": [
    {
@@ -19315,7 +19268,7 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 3.15,
+    "value": 3.14,
     "rank": 3
    },
    {
@@ -19327,13 +19280,13 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.81,
+    "value": 2.82,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.66,
+    "value": 2.67,
     "rank": 6
    },
    {
