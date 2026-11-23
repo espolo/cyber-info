@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T21:36:02Z",
+ "updated": "2026-11-23T22:01:18Z",
  "news": [
   {
    "id": "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
@@ -10503,6 +10503,19 @@
  ],
  "ransomware": [
   {
+   "id": "the gentlemen|HT Global Circuits",
+   "victim": "HT Global Circuits",
+   "group": "the gentlemen",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-23T22:36:23",
+   "link": "https://www.ransomlook.io/group/the gentlemen",
+   "summary": "htglobalcircuits.com Revenue $70.4 Million HT Global Circuits is a private American PCB maker founded in 1990 in St. Petersburg, Florida, with 36 years of experience, over 1 billion boards shipped and 2000 plus customers. Led by CEO Ahmad Hamadeh, it…",
+   "sources": [
+    "RansomLook"
+   ]
+  },
+  {
    "id": "the gentlemen|Cimmino",
    "victim": "Cimmino",
    "group": "the gentlemen",
@@ -13344,19 +13357,6 @@
    "sources": [
     "RansomLook"
    ]
-  },
-  {
-   "id": "n0n|Company #231",
-   "victim": "Company #231",
-   "group": "n0n",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-18T22:17:36",
-   "link": "https://www.ransomlook.io/group/n0n",
-   "summary": "automated test and measurement systems · United States",
-   "sources": [
-    "RansomLook"
-   ]
   }
  ],
  "kev": [
@@ -13783,16 +13783,6 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
@@ -13806,6 +13796,16 @@
    "name": "Sandworm",
    "type": "apt",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13828,9 +13828,9 @@
    "country": "",
    "watch": false,
    "mentions": 2,
-   "claims": 15,
+   "claims": 16,
    "claims_it": 0,
-   "last": "2026-11-23T22:24:43"
+   "last": "2026-11-23T22:36:23"
   },
   {
    "name": "safepay",
@@ -13848,7 +13848,7 @@
    "country": "",
    "watch": false,
    "mentions": 0,
-   "claims": 16,
+   "claims": 15,
    "claims_it": 0,
    "last": "2026-11-22T11:16:13"
   },
@@ -14397,6 +14397,71 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "73848f2877a159e57b3818c56ebe0727789c5c3bb23f48e1cc85ef9034cc5015",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 80,
+   "date": "2026-11-23T22:00:30",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2047684/"
+  },
+  {
+   "ioc": "2dcef3004c7cfe215b6e10a2bad10883a748f51111cfdce839ac0e0bcc8bb1ef",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-23T22:00:29",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2047683/"
+  },
+  {
+   "ioc": "11f5289599801ba00a82cc6a9e9c945266a48dad0eca55bf98206fa49e9a44fe",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-23T22:00:28",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2047682/"
+  },
+  {
+   "ioc": "9a4fc35966f3f806e5c66ec5a505fb401bbe2df43c5fb1eb6f83283aa95913a7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-23T22:00:27",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2047681/"
+  },
+  {
+   "ioc": "www[.]raffaelesestito[.]it",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 90,
+   "date": "2026-11-23T21:57:35",
+   "tags": [
+    "compromised",
+    "etherhide"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2047680/"
+  },
   {
    "ioc": "f579fd2239cad643440d0310dd654f8827a55a3f54d8c4e30882ab4c843ccd4d",
    "type": "sha256_hash",
@@ -17000,79 +17065,47 @@
     "CobaltStrike"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2047483/"
-  },
-  {
-   "ioc": "151[.]239[.]11[.]18:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Cobalt Strike",
-   "confidence": 100,
-   "date": "2026-11-23T20:05:05",
-   "tags": [
-    "CobaltStrike"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047482/"
-  },
-  {
-   "ioc": "1[.]14[.]104[.]208:8443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-23T20:03:00",
-   "tags": [
-    "offensive-agency",
-    "PentAGI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047481/"
-  },
-  {
-   "ioc": "1[.]14[.]104[.]208:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-23T20:03:00",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047480/"
-  },
-  {
-   "ioc": "1[.]52[.]155[.]94:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-23T20:02:59",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047479/"
-  },
-  {
-   "ioc": "1[.]94[.]253[.]199:9080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-23T20:02:59",
-   "tags": [
-    "CyberStrikeAI",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047478/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://125[.]45[.]9[.]154:52685/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "cowrie",
+    "elf",
+    "honeypot",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-23T22:00:14",
+   "link": "https://urlhaus.abuse.ch/url/4075078/"
+  },
+  {
+   "ioc": "hxxp://115[.]62[.]73[.]78:39805/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-23T21:53:05",
+   "link": "https://urlhaus.abuse.ch/url/4075077/"
+  },
   {
    "ioc": "hxxp://112[.]237[.]46[.]241:55571/bin[.]sh",
    "host_it": false,
    "status": "online",
    "threat": "malware_download",
-   "tags": [],
+   "tags": [
+    "Mozi"
+   ],
    "date": "2026-11-23T21:32:05",
    "link": "https://urlhaus.abuse.ch/url/4075076/"
   },
@@ -18957,36 +18990,12 @@
    ],
    "date": "2026-11-23T19:45:33",
    "link": "https://urlhaus.abuse.ch/url/4074927/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/FrostPattern76/zapret-discord-youtube/releases/download/zapret-discord-youtube/zapret-discord-youtube-1[.]10[.]4[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret"
-   ],
-   "date": "2026-11-23T19:45:33",
-   "link": "https://urlhaus.abuse.ch/url/4074928/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/FrostPattern76/Skachat-Zapret/releases/download/Skachat-Zapret/zapret-discord-youtube-1[.]10[.]4[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "zapret"
-   ],
-   "date": "2026-11-23T19:45:33",
-   "link": "https://urlhaus.abuse.ch/url/4074929/"
   }
  ],
  "malware_top": [
   {
    "name": "Mirai",
-   "count": 179
+   "count": 178
   },
   {
    "name": "Raven Stealer",
@@ -19006,7 +19015,7 @@
   },
   {
    "name": "Unknown Loader",
-   "count": 56
+   "count": 60
   },
   {
    "name": "NjRAT",
@@ -19018,19 +19027,19 @@
   },
   {
    "name": "ClearFake",
-   "count": 31
+   "count": 32
   },
   {
    "name": "Cobalt Strike",
    "count": 27
   },
   {
-   "name": "VShell",
+   "name": "Agent Tesla",
    "count": 27
   },
   {
-   "name": "Agent Tesla",
-   "count": 27
+   "name": "VShell",
+   "count": 26
   },
   {
    "name": "IClickFix",
@@ -19113,25 +19122,25 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.4,
+    "value": 55.59,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.65,
+    "value": 7.64,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.61,
+    "value": 3.54,
     "rank": 3
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 3.39,
+    "value": 3.36,
     "rank": 4
    },
    {
@@ -19143,13 +19152,13 @@
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.82,
+    "value": 2.78,
     "rank": 6
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.36,
+    "value": 2.33,
     "rank": 7
    },
    {
@@ -19167,18 +19176,18 @@
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.03,
+    "value": 1.04,
     "rank": 10
    },
    {
     "code": "SG",
     "name": "Singapore",
-    "value": 0.92,
+    "value": 0.91,
     "rank": 11
    },
    {
-    "code": "HK",
-    "name": "Hong Kong",
+    "code": "IN",
+    "name": "India",
     "value": 0.91,
     "rank": 12
    }
@@ -19186,20 +19195,20 @@
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 0.45,
-   "rank": 26
+   "value": 0.42,
+   "rank": 27
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 55.96,
+    "value": 55.99,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.6,
+    "value": 7.61,
     "rank": 2
    },
    {
