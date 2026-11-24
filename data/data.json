@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T03:01:15Z",
+ "updated": "2026-11-24T03:30:58Z",
  "news": [
   {
    "id": "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
@@ -10499,6 +10499,19 @@
  ],
  "ransomware": [
   {
+   "id": "soul|A government website for a county in a U.S. state",
+   "victim": "A government website for a county in a U.S. state",
+   "group": "soul",
+   "country": "",
+   "sector": "",
+   "date": "2026-11-24T04:16:54",
+   "link": "https://www.ransomlook.io/group/soul",
+   "summary": "Sector: County Government | Location: United States | Employees: unknown | Revenue: tax revenue: $44.85 million | Deadline: 2026-11-25 02:27 UTC Official website of county, providing access to county government services, department information, publi…",
+   "sources": [
+    "RansomLook"
+   ]
+  },
+  {
    "id": "rhysida|Nationwide IT Services, Inc.",
    "victim": "Nationwide IT Services, Inc.",
    "group": "rhysida",
@@ -13340,19 +13353,6 @@
    "sources": [
     "RansomLook"
    ]
-  },
-  {
-   "id": "n0n|Company #235",
-   "victim": "Company #235",
-   "group": "n0n",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-18T22:17:40",
-   "link": "https://www.ransomlook.io/group/n0n",
-   "summary": "mobile engagement and QR code technology · United States",
-   "sources": [
-    "RansomLook"
-   ]
   }
  ],
  "kev": [
@@ -13769,17 +13769,7 @@
    "last": "2026-11-20T14:18:13"
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "APT28",
+   "name": "Sandworm",
    "type": "apt",
    "country": "RU",
    "watch": true,
@@ -13799,9 +13789,19 @@
    "last": ""
   },
   {
-   "name": "Sandworm",
+   "name": "APT28",
    "type": "apt",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13849,16 +13849,6 @@
    "last": "2026-11-21T11:03:17Z"
   },
   {
-   "name": "n0n",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 12,
-   "claims_it": 0,
-   "last": "2026-11-22T11:16:13"
-  },
-  {
    "name": "Vortex",
    "type": "ransomware",
    "country": "",
@@ -13867,6 +13857,16 @@
    "claims": 12,
    "claims_it": 0,
    "last": "2026-11-20T13:18:00"
+  },
+  {
+   "name": "n0n",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 0,
+   "claims": 11,
+   "claims_it": 0,
+   "last": "2026-11-22T11:16:13"
   },
   {
    "name": "inc ransom",
@@ -14069,6 +14069,16 @@
    "last": "2026-11-17T15:01:11Z"
   },
   {
+   "name": "soul",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 0,
+   "claims": 3,
+   "claims_it": 0,
+   "last": "2026-11-24T04:16:54"
+  },
+  {
    "name": "leakeddata",
    "type": "ransomware",
    "country": "",
@@ -14167,16 +14177,6 @@
    "claims": 2,
    "claims_it": 0,
    "last": "2026-11-23T06:29:20"
-  },
-  {
-   "name": "soul",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 2,
-   "claims_it": 0,
-   "last": "2026-11-21T17:17:05"
   },
   {
    "name": "Inception",
@@ -14366,10 +14366,10 @@
   "safepay": "ransomware",
   "spacebears": "ransomware",
   "unknown": "ransomware",
+  "soul": "ransomware",
   "the gentlemen": "ransomware",
   "aoqin leaks": "ransomware",
   "inc ransom": "ransomware",
-  "soul": "ransomware",
   "leakeddata": "ransomware",
   "climax": "ransomware",
   "space bears": "ransomware",
@@ -14382,6 +14382,201 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "95[.]179[.]234[.]59:7193",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Potassium",
+   "confidence": 100,
+   "date": "2026-11-24T03:26:52",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Mirai",
+    "potassium",
+    "woof"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048043/"
+  },
+  {
+   "ioc": "65[.]20[.]104[.]205:7193",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Potassium",
+   "confidence": 100,
+   "date": "2026-11-24T03:26:52",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Mirai",
+    "potassium",
+    "woof"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048042/"
+  },
+  {
+   "ioc": "217[.]69[.]2[.]143:7193",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Potassium",
+   "confidence": 100,
+   "date": "2026-11-24T03:26:52",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Mirai",
+    "potassium",
+    "woof"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048041/"
+  },
+  {
+   "ioc": "201[.]79[.]60[.]54:7193",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Potassium",
+   "confidence": 100,
+   "date": "2026-11-24T03:26:52",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Mirai",
+    "potassium",
+    "woof"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048040/"
+  },
+  {
+   "ioc": "f40fc6eab7347f4fe4ab0edde0538668b170c892396b1af29f78ff480c453635",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-24T03:05:18",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048039/"
+  },
+  {
+   "ioc": "a698344cdf91121a20833c08fe8ff3e8cac1fc47aa1a688edce1563a7bc68b6d",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-24T03:05:18",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048038/"
+  },
+  {
+   "ioc": "cab64a6df35dac01e5f839016d70e30a74c430de61ef2dbaadae62aca2ddc08f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-24T03:05:18",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048037/"
+  },
+  {
+   "ioc": "8d7929a9418933f133ef3465b12c4fabed7086eb424afd9f2983919b383bd960",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-24T03:05:18",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048036/"
+  },
+  {
+   "ioc": "630d7c64d16efcccc9034cba2880fde19668dd6a77d3c872be3fc0970e98ecf1",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-24T03:05:17",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048035/"
+  },
+  {
+   "ioc": "bd0eadf5a948f917cd72ece7234410732cd5e2afcf9e863d8c1aa20a17d7c361",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-24T03:05:17",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048034/"
+  },
+  {
+   "ioc": "7d3325f6970b252c7ec080ced62b03ea556e79ffb5588197c9905623270a6d4f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 90,
+   "date": "2026-11-24T03:05:17",
+   "tags": [
+    "EasyShell",
+    "elf",
+    "macho",
+    "RAT",
+    "RUST",
+    "SnoopyTriage"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048033/"
+  },
+  {
+   "ioc": "111[.]228[.]24[.]209:8085",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-24T03:05:05",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2048032/"
+  },
   {
    "ioc": "196[.]251[.]121[.]178:8041",
    "type": "ip:port",
@@ -16922,173 +17117,74 @@
     "offensive-agency"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2047844/"
-  },
-  {
-   "ioc": "47[.]94[.]201[.]243:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T00:20:51",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047843/"
-  },
-  {
-   "ioc": "51[.]158[.]152[.]138:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T00:20:45",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047842/"
-  },
-  {
-   "ioc": "52[.]128[.]244[.]246:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T00:20:44",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047841/"
-  },
-  {
-   "ioc": "72[.]18[.]200[.]112:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T00:20:28",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047840/"
-  },
-  {
-   "ioc": "8[.]148[.]218[.]235:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T00:20:24",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047839/"
-  },
-  {
-   "ioc": "82[.]157[.]167[.]144:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T00:20:19",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047838/"
-  },
-  {
-   "ioc": "211[.]230[.]3[.]71:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Mirai",
-   "confidence": 100,
-   "date": "2026-11-24T00:20:06",
-   "tags": [
-    "Mirai"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047837/"
-  },
-  {
-   "ioc": "96[.]44[.]168[.]70:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T00:20:06",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047836/"
-  },
-  {
-   "ioc": "zuppy[.]store",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "ClearFake",
-   "confidence": 100,
-   "date": "2026-11-24T00:19:46",
-   "tags": [
-    "24November2026",
-    "ClearFake",
-    "Commandline",
-    "macOS"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047835/"
-  },
-  {
-   "ioc": "hxxp://103[.]151[.]47[.]90:42565/Mozi[.]m",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Mozi",
-   "confidence": 75,
-   "date": "2026-11-24T00:19:12",
-   "tags": [
-    "elf",
-    "IoT",
-    "Mozi"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047834/"
-  },
-  {
-   "ioc": "hxxps://bangladesh-humanresources[.]com//prophetic_/_muller/kaprifolierne[.]smi",
-   "type": "url",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "CloudEyE",
-   "confidence": 100,
-   "date": "2026-11-24T00:07:03",
-   "tags": [
-    "bat",
-    "CloudEyE",
-    "guloader",
-    "powershell"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047833/"
-  },
-  {
-   "ioc": "321e918b3cc963df98aa03a4e1d7fe8c15f95ceb712c543a23970501674a3ad1",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 90,
-   "date": "2026-11-24T00:05:33",
-   "tags": [
-    "EasyShell",
-    "elf",
-    "macho",
-    "RAT",
-    "RUST",
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2047832/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://59[.]96[.]137[.]187:34493/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-24T03:24:06",
+   "link": "https://urlhaus.abuse.ch/url/4075147/"
+  },
+  {
+   "ioc": "hxxp://27[.]21[.]24[.]24:46178/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-24T03:22:12",
+   "link": "https://urlhaus.abuse.ch/url/4075146/"
+  },
+  {
+   "ioc": "hxxp://115[.]49[.]65[.]46:38036/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-24T03:17:07",
+   "link": "https://urlhaus.abuse.ch/url/4075145/"
+  },
+  {
+   "ioc": "hxxp://42[.]239[.]242[.]83:52378/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-24T03:06:14",
+   "link": "https://urlhaus.abuse.ch/url/4075144/"
+  },
+  {
+   "ioc": "hxxp://117[.]223[.]142[.]118:53513/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-24T03:02:13",
+   "link": "https://urlhaus.abuse.ch/url/4075143/"
+  },
   {
    "ioc": "hxxp://27[.]21[.]24[.]24:46178/bin[.]sh",
    "host_it": false,
@@ -18865,71 +18961,6 @@
    ],
    "date": "2026-11-23T20:49:16",
    "link": "https://urlhaus.abuse.ch/url/4074994/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/StarlingVitalize/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-23T20:49:16",
-   "link": "https://urlhaus.abuse.ch/url/4074995/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/JuniorFoster/Telegram-Fix/releases/download/Telegram-Fix/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-23T20:49:16",
-   "link": "https://urlhaus.abuse.ch/url/4074996/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/StarlingVitalize/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-23T20:49:16",
-   "link": "https://urlhaus.abuse.ch/url/4074997/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/StarlingVitalize/ZapretTelegram/releases/download/ZapretTelegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-23T20:49:16",
-   "link": "https://urlhaus.abuse.ch/url/4074998/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/StarlingVitalize/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-23T20:49:16",
-   "link": "https://urlhaus.abuse.ch/url/4074999/"
   }
  ],
  "malware_top": [
@@ -18943,7 +18974,7 @@
   },
   {
    "name": "Vidar",
-   "count": 88
+   "count": 87
   },
   {
    "name": "XWorm",
@@ -18966,11 +18997,11 @@
    "count": 33
   },
   {
-   "name": "Cobalt Strike",
+   "name": "VShell",
    "count": 28
   },
   {
-   "name": "VShell",
+   "name": "Cobalt Strike",
    "count": 28
   },
   {
@@ -19014,6 +19045,10 @@
    "count": 11
   },
   {
+   "name": "Potassium",
+   "count": 10
+  },
+  {
    "name": "AsyncRAT",
    "count": 9
   },
@@ -19024,10 +19059,6 @@
   {
    "name": "Mozi",
    "count": 7
-  },
-  {
-   "name": "Potassium",
-   "count": 6
   },
   {
    "name": "AMOS",
@@ -19062,61 +19093,61 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.48,
+    "value": 56.76,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.36,
+    "value": 7.3,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.34,
+    "value": 3.32,
     "rank": 3
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 3.25,
+    "value": 3.23,
     "rank": 4
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.72,
+    "value": 2.7,
     "rank": 5
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.68,
+    "value": 2.67,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.31,
+    "value": 2.29,
     "rank": 7
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 2.2,
+    "value": 2.18,
     "rank": 8
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.27,
+    "value": 1.26,
     "rank": 9
    },
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 0.99,
+    "value": 0.98,
     "rank": 10
    },
    {
@@ -19128,7 +19159,7 @@
    {
     "code": "SG",
     "name": "Singapore",
-    "value": 0.91,
+    "value": 0.9,
     "rank": 12
    }
   ],
