@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T16:51:53Z",
+ "updated": "2026-11-24T17:01:13Z",
  "news": [
   {
    "id": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
@@ -13824,16 +13824,6 @@
    "last": "2026-11-20T14:18:13"
   },
   {
-   "name": "Sandworm",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
@@ -13847,6 +13837,16 @@
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14459,6 +14459,31 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "zincwarehouse[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-24T17:00:34",
+   "tags": [
+    "24November2026",
+    "ClearFake",
+    "Commandline",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2049841/"
+  },
+  {
+   "ioc": "polabghyu56[.]shop",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "TonRAT",
+   "confidence": 75,
+   "date": "2026-11-24T16:53:04",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2049840/"
+  },
   {
    "ioc": "hwdr78rq[.]thewildanddomestic[.]com",
    "type": "domain",
@@ -17118,35 +17143,23 @@
     "offensive-agency"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2049643/"
-  },
-  {
-   "ioc": "154[.]202[.]127[.]214:3000",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T12:22:48",
-   "tags": [
-    "autocve",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2049642/"
-  },
-  {
-   "ioc": "161[.]120[.]216[.]76:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T12:22:35",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2049640/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://78[.]25[.]126[.]68:52947/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-24T17:00:16",
+   "link": "https://urlhaus.abuse.ch/url/4075520/"
+  },
   {
    "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1566966094147756102/1571551492131913768/ba3abaf9c7?ex=6b070261&is=6b05b0e1&hm=f744062e79c63672b87f207727f7b5ae33d0125b2009ff531468964acaec2b07&",
    "host_it": false,
@@ -18958,18 +18971,6 @@
    ],
    "date": "2026-11-24T12:17:07",
    "link": "https://urlhaus.abuse.ch/url/4075373/"
-  },
-  {
-   "ioc": "hxxp://94[.]156[.]152[.]236/issfolder/iisru23[.]jpg",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "stego",
-    "xworm"
-   ],
-   "date": "2026-11-24T12:12:23",
-   "link": "https://urlhaus.abuse.ch/url/4075370/"
   }
  ],
  "malware_top": [
@@ -18979,11 +18980,11 @@
   },
   {
    "name": "ClearFake",
-   "count": 59
+   "count": 60
   },
   {
    "name": "Unknown Loader",
-   "count": 59
+   "count": 56
   },
   {
    "name": "Cobalt Strike",
@@ -19092,86 +19093,6 @@
   }
  ],
  "radar": {
-  "l7_1d": [
-   {
-    "code": "US",
-    "name": "United States",
-    "value": 58.79,
-    "rank": 1
-   },
-   {
-    "code": "CA",
-    "name": "Canada",
-    "value": 6.79,
-    "rank": 2
-   },
-   {
-    "code": "MY",
-    "name": "Malaysia",
-    "value": 3.09,
-    "rank": 3
-   },
-   {
-    "code": "CN",
-    "name": "China",
-    "value": 2.72,
-    "rank": 4
-   },
-   {
-    "code": "GB",
-    "name": "United Kingdom",
-    "value": 2.66,
-    "rank": 5
-   },
-   {
-    "code": "IL",
-    "name": "Israel",
-    "value": 2.54,
-    "rank": 6
-   },
-   {
-    "code": "DE",
-    "name": "Germany",
-    "value": 2.3,
-    "rank": 7
-   },
-   {
-    "code": "FR",
-    "name": "France",
-    "value": 1.64,
-    "rank": 8
-   },
-   {
-    "code": "AU",
-    "name": "Australia",
-    "value": 1.24,
-    "rank": 9
-   },
-   {
-    "code": "IT",
-    "name": "Italy",
-    "value": 1.13,
-    "rank": 10
-   },
-   {
-    "code": "HK",
-    "name": "Hong Kong",
-    "value": 0.88,
-    "rank": 11
-   },
-   {
-    "code": "SE",
-    "name": "Sweden",
-    "value": 0.85,
-    "rank": 12
-   }
-  ],
-  "it_1d": {
-   "code": "IT",
-   "name": "Italy",
-   "value": 1.13,
-   "rank": 10
-  },
   "outages_it": []
  },
  "telegram_channels": [
