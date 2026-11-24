@@ -1,9 +1,22 @@
 {
- "updated": "2026-11-24T16:31:13Z",
+ "updated": "2026-11-24T16:51:53Z",
  "news": [
   {
+   "id": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
+   "title": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
+   "link": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
+   "summary": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts. The post VMware Updates Patch Critical ESX, vCenter Vulnerabilities appeared first on SecurityWeek .",
+   "source": "SecurityWeek",
+   "lang": "en",
+   "type": "news",
+   "date": "2026-11-24T16:32:56Z",
+   "actors": [],
+   "threat": false,
+   "highlight": false
+  },
+  {
    "id": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
-   "title": "ShinyHunters resurfaces after FBI arrests, uses old PGP keys as proof",
+   "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
    "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
    "summary": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]",
    "source": "BleepingComputer",
@@ -10489,19 +10502,6 @@
    "actors": [],
    "threat": false,
    "highlight": false
-  },
-  {
-   "id": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b0133afdb464628bac56eddab13ae93&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2ftelegram-diventa-un-agente-ia-legge-le-chat-risponde-e-crea-applicazioni%2f&c=15375693304297641339&mkt=en-us",
-   "title": "Telegram diventa un agente IA: legge le chat, risponde e crea applicazioni",
-   "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b0133afdb464628bac56eddab13ae93&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2ftelegram-diventa-un-agente-ia-legge-le-chat-risponde-e-crea-applicazioni%2f&c=15375693304297641339&mkt=en-us",
-   "summary": "Scopri come l'assistente IA in Telegram gestisce compiti complessi e organizza conversazioni, documenti e applicazioni in modo autonomo ...",
-   "source": "Red Hot Cyber",
-   "lang": "it",
-   "type": "news",
-   "date": "2026-11-17T23:27:00Z",
-   "actors": [],
-   "threat": false,
-   "highlight": false
   }
  ],
  "ransomware": [
@@ -13824,8 +13824,18 @@
    "last": "2026-11-20T14:18:13"
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -13844,18 +13854,8 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Sandworm",
-   "type": "apt",
+   "name": "Killnet",
+   "type": "hacktivist",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -14459,6 +14459,74 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "hwdr78rq[.]thewildanddomestic[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-24T16:49:20",
+   "tags": [
+    "ClearFake",
+    "mac-0x0f14",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2049839/"
+  },
+  {
+   "ioc": "thewildanddomestic[.]com",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-24T16:44:45",
+   "tags": [
+    "24November2026",
+    "ClearFake",
+    "Commandline",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2049838/"
+  },
+  {
+   "ioc": "eclipse4g5kxfwsvpu4qx5sdcnrji6gxl5gt67bucjlgt35g7akvjoid[.]onion",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-24T16:31:22",
+   "tags": [
+    "eclipse",
+    "Ransomware"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2049837/"
+  },
+  {
+   "ioc": "rxgxga7ycwvxzriw3lkbc44egcbmlkgwlzl66c7va3gqmogsqpifnfyd[.]onion",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-24T16:31:22",
+   "tags": [
+    "eclipse",
+    "Ransomware"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2049836/"
+  },
+  {
+   "ioc": "yecdjimqiaekprxza6wkqecma4bwt757qiyfjngsaxg7rkjv4xukpwad[.]onion",
+   "type": "domain",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-24T16:31:22",
+   "tags": [
+    "eclipse",
+    "Ransomware"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2049835/"
+  },
   {
    "ioc": "be0yei6l[.]theadventistforum[.]com",
    "type": "domain",
@@ -17076,74 +17144,193 @@
     "offensive-agency"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2049640/"
-  },
-  {
-   "ioc": "162[.]141[.]167[.]40:3333",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 50,
-   "date": "2026-11-24T12:22:33",
-   "tags": [
-    "offensive-agency",
-    "t3mp3st"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2049639/"
-  },
-  {
-   "ioc": "164[.]92[.]157[.]176:8080",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T12:22:31",
-   "tags": [
-    "CyberStrikeAI",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2049638/"
-  },
-  {
-   "ioc": "165[.]154[.]227[.]149:443",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T12:22:30",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2049637/"
-  },
-  {
-   "ioc": "182[.]137[.]119[.]156:1024",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T12:22:17",
-   "tags": [
-    "offensive-agency",
-    "PentAGI"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2049636/"
-  },
-  {
-   "ioc": "185[.]228[.]138[.]115:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-24T12:22:14",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2049635/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://cdn[.]discordapp[.]com/attachments/1566966094147756102/1571551492131913768/ba3abaf9c7?ex=6b070261&is=6b05b0e1&hm=f744062e79c63672b87f207727f7b5ae33d0125b2009ff531468964acaec2b07&",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "IRAHook"
+   ],
+   "date": "2026-11-24T16:49:10",
+   "link": "https://urlhaus.abuse.ch/url/4075519/"
+  },
+  {
+   "ioc": "hxxp://210[.]208[.]110[.]42:46200/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-24T16:48:07",
+   "link": "https://urlhaus.abuse.ch/url/4075518/"
+  },
+  {
+   "ioc": "hxxp://78[.]25[.]126[.]68:52947/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-24T16:47:11",
+   "link": "https://urlhaus.abuse.ch/url/4075517/"
+  },
+  {
+   "ioc": "hxxp://78[.]70[.]157[.]129:40372/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-24T16:47:10",
+   "link": "https://urlhaus.abuse.ch/url/4075515/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/CuttlefishTow/haPP/releases/download/1[.]8[.]2/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:47:10",
+   "link": "https://urlhaus.abuse.ch/url/4075516/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/CuttlefishTow/hAPP-PlUS/releases/download/1[.]8[.]1/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:18",
+   "link": "https://urlhaus.abuse.ch/url/4075514/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/PantherPurify/HAPP-PRoXy/releases/download/1[.]8[.]1/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:15",
+   "link": "https://urlhaus.abuse.ch/url/4075513/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/PantherPurify/HAPp-winDOWS/releases/download/1[.]7[.]9/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:13",
+   "link": "https://urlhaus.abuse.ch/url/4075512/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/CuttlefishTow/HAPp-WIndOws/releases/download/1[.]8[.]0/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:12",
+   "link": "https://urlhaus.abuse.ch/url/4075511/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/PantherPurify/HApP-Plus/releases/download/1[.]8[.]0/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:11",
+   "link": "https://urlhaus.abuse.ch/url/4075509/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/PantherPurify/hApP/releases/download/1[.]8[.]1/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:11",
+   "link": "https://urlhaus.abuse.ch/url/4075510/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/CuttlefishTow/Happ_ProXY/releases/download/1[.]8[.]2/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:10",
+   "link": "https://urlhaus.abuse.ch/url/4075506/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/PantherPurify/hAPp-VpN/releases/download/1[.]8[.]0/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:10",
+   "link": "https://urlhaus.abuse.ch/url/4075507/"
+  },
+  {
+   "ioc": "hxxps://github[.]com/CuttlefishTow/hAPp-vpn/releases/download/1[.]8[.]1/happ[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SalatStealer",
+    "zapret"
+   ],
+   "date": "2026-11-24T16:31:10",
+   "link": "https://urlhaus.abuse.ch/url/4075508/"
+  },
   {
    "ioc": "hxxps://github[.]com/PaceGiverSpiral/Skachat-Zapret/releases/download/Skachat-Zapret/zapret-discord-youtube-1[.]10[.]4[.]rar",
    "host_it": false,
@@ -18783,181 +18970,6 @@
    ],
    "date": "2026-11-24T12:12:23",
    "link": "https://urlhaus.abuse.ch/url/4075370/"
-  },
-  {
-   "ioc": "hxxp://94[.]156[.]152[.]236/issfolder/iisy[.]png",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "stego",
-    "xworm"
-   ],
-   "date": "2026-11-24T12:12:14",
-   "link": "https://urlhaus.abuse.ch/url/4075369/"
-  },
-  {
-   "ioc": "hxxps://www[.]bagsrad[.]com/contentcgbnv/utyhrgtbdfcontrnvectrnmyjupilehgibvrthddbrun/contentual[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "AsyncRAT",
-    "exe",
-    "rat"
-   ],
-   "date": "2026-11-24T12:12:05",
-   "link": "https://urlhaus.abuse.ch/url/4075368/"
-  },
-  {
-   "ioc": "hxxps://hhautoinvestment[.]co[.]tz/secured_stub[.]ps1",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "ascii",
-    "Formbook",
-    "powershell",
-    "ps1"
-   ],
-   "date": "2026-11-24T12:09:09",
-   "link": "https://urlhaus.abuse.ch/url/4075367/"
-  },
-  {
-   "ioc": "hxxps://drive[.]google[.]com/uc?export=download&id=1mWvRjD1ULxnEfHrFNZdTbvIFVUS0Mtxf",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Formbook",
-    "GuLoader"
-   ],
-   "date": "2026-11-24T12:09:07",
-   "link": "https://urlhaus.abuse.ch/url/4075366/"
-  },
-  {
-   "ioc": "hxxp://182[.]121[.]109[.]178:54629/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "32-bit",
-    "elf",
-    "mips",
-    "Mozi"
-   ],
-   "date": "2026-11-24T12:09:06",
-   "link": "https://urlhaus.abuse.ch/url/4075365/"
-  },
-  {
-   "ioc": "hxxp://27[.]44[.]147[.]146:49761/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf"
-   ],
-   "date": "2026-11-24T12:07:18",
-   "link": "https://urlhaus.abuse.ch/url/4075364/"
-  },
-  {
-   "ioc": "hxxp://185[.]29[.]9[.]117/22/secured_stub[.]ps1",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "ascii",
-    "powershell",
-    "ps1",
-    "rat",
-    "RemcosRAT"
-   ],
-   "date": "2026-11-24T12:03:06",
-   "link": "https://urlhaus.abuse.ch/url/4075363/"
-  },
-  {
-   "ioc": "hxxp://185[.]29[.]9[.]117/22/goodness[.]hta",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "hta",
-    "rat",
-    "RemcosRAT"
-   ],
-   "date": "2026-11-24T12:03:05",
-   "link": "https://urlhaus.abuse.ch/url/4075362/"
-  },
-  {
-   "ioc": "hxxp://27[.]194[.]175[.]162:38589/Mozi[.]m",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "elf",
-    "honeypot",
-    "mirai",
-    "web-exploit"
-   ],
-   "date": "2026-11-24T12:02:16",
-   "link": "https://urlhaus.abuse.ch/url/4075361/"
-  },
-  {
-   "ioc": "hxxp://219[.]155[.]16[.]66:44060/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-24T12:02:11",
-   "link": "https://urlhaus.abuse.ch/url/4075360/"
-  },
-  {
-   "ioc": "hxxps://hyp[.]hyperseqk[.]icu/HFinex[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "hype",
-    "Password-protected",
-    "zip"
-   ],
-   "date": "2026-11-24T12:02:06",
-   "link": "https://urlhaus.abuse.ch/url/4075359/"
-  },
-  {
-   "ioc": "hxxp://191[.]217[.]250[.]87/run[.]sh",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "script"
-   ],
-   "date": "2026-11-24T12:02:04",
-   "link": "https://urlhaus.abuse.ch/url/4075358/"
-  },
-  {
-   "ioc": "hxxp://222[.]219[.]74[.]121:50455/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-24T11:47:15",
-   "link": "https://urlhaus.abuse.ch/url/4075357/"
-  },
-  {
-   "ioc": "hxxp://182[.]112[.]232[.]161:53654/bin[.]sh",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-24T11:47:12",
-   "link": "https://urlhaus.abuse.ch/url/4075356/"
   }
  ],
  "malware_top": [
@@ -18966,12 +18978,12 @@
    "count": 65
   },
   {
-   "name": "Unknown Loader",
+   "name": "ClearFake",
    "count": 59
   },
   {
-   "name": "ClearFake",
-   "count": 57
+   "name": "Unknown Loader",
+   "count": 59
   },
   {
    "name": "Cobalt Strike",
@@ -19026,10 +19038,6 @@
    "count": 7
   },
   {
-   "name": "SnappyClient",
-   "count": 6
-  },
-  {
    "name": "Evilginx",
    "count": 5
   },
@@ -19043,6 +19051,10 @@
   },
   {
    "name": "Remus",
+   "count": 5
+  },
+  {
+   "name": "SnappyClient",
    "count": 5
   },
   {
@@ -19084,31 +19096,31 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 58.75,
+    "value": 58.79,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 6.78,
+    "value": 6.79,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.08,
+    "value": 3.09,
     "rank": 3
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.69,
+    "value": 2.72,
     "rank": 4
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.65,
+    "value": 2.66,
     "rank": 5
    },
    {
@@ -19138,107 +19150,27 @@
    {
     "code": "IT",
     "name": "Italy",
-    "value": 1.16,
+    "value": 1.13,
     "rank": 10
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 0.89,
+    "value": 0.88,
     "rank": 11
    },
    {
-    "code": "IN",
-    "name": "India",
-    "value": 0.86,
+    "code": "SE",
+    "name": "Sweden",
+    "value": 0.85,
     "rank": 12
    }
   ],
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 1.16,
+   "value": 1.13,
    "rank": 10
-  },
-  "l7_7d": [
-   {
-    "code": "US",
-    "name": "United States",
-    "value": 56.33,
-    "rank": 1
-   },
-   {
-    "code": "CA",
-    "name": "Canada",
-    "value": 7.51,
-    "rank": 2
-   },
-   {
-    "code": "IL",
-    "name": "Israel",
-    "value": 2.99,
-    "rank": 3
-   },
-   {
-    "code": "GB",
-    "name": "United Kingdom",
-    "value": 2.9,
-    "rank": 4
-   },
-   {
-    "code": "MY",
-    "name": "Malaysia",
-    "value": 2.85,
-    "rank": 5
-   },
-   {
-    "code": "CN",
-    "name": "China",
-    "value": 2.77,
-    "rank": 6
-   },
-   {
-    "code": "DE",
-    "name": "Germany",
-    "value": 2.16,
-    "rank": 7
-   },
-   {
-    "code": "FR",
-    "name": "France",
-    "value": 2.01,
-    "rank": 8
-   },
-   {
-    "code": "AU",
-    "name": "Australia",
-    "value": 1.43,
-    "rank": 9
-   },
-   {
-    "code": "CY",
-    "name": "Cyprus",
-    "value": 1.09,
-    "rank": 10
-   },
-   {
-    "code": "IN",
-    "name": "India",
-    "value": 0.92,
-    "rank": 11
-   },
-   {
-    "code": "HK",
-    "name": "Hong Kong",
-    "value": 0.9,
-    "rank": 12
-   }
-  ],
-  "it_7d": {
-   "code": "IT",
-   "name": "Italy",
-   "value": 0.62,
-   "rank": 18
   },
   "outages_it": []
  },
@@ -19246,6 +19178,7 @@
   "NoName057(16)"
  ],
  "errors": [
-  "Telegram NoName057(16): nessun canale pubblico raggiungibile tra: noname05716engversion, noname05716engver, noname05716eng, nnm057_16, noname05716 (aggiorna gli username in config.json)"
+  "Telegram NoName057(16): nessun canale pubblico raggiungibile tra: noname05716engversion, noname05716engver, noname05716eng, nnm057_16, noname05716 (aggiorna gli username in config.json)",
+  "Cloudflare Radar attacchi: HTTPSConnectionPool(host='api.cloudflare.com', port=443): Read timed out. (read timeout=40)"
  ]
 }
