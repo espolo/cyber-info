@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T12:00:17Z",
+ "updated": "2026-11-26T12:01:08Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
@@ -13939,9 +13939,9 @@
    "last": "2026-11-23T12:17:43"
   },
   {
-   "name": "Scattered Spider",
-   "type": "criminal",
-   "country": "",
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13952,16 +13952,6 @@
    "name": "Lazarus Group",
    "type": "apt",
    "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Sandworm",
-   "type": "apt",
-   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13992,6 +13982,16 @@
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Scattered Spider",
+   "type": "criminal",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14572,6 +14572,62 @@
  },
  "known_actors": 1529,
  "iocs": [
+  {
+   "ioc": "43a84f772ace85a725203697d7aede093422c3f51c34960449adf9999d531af7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-26T12:00:53",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2053882/"
+  },
+  {
+   "ioc": "ac5c4f9a9de682f3485eca1ad5532e3e5026e094242e5e43b060e9853adf0dc6",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-26T12:00:52",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2053881/"
+  },
+  {
+   "ioc": "9f4ca779fac5cf519313a9c2d631f4201077c4e36c8be0d2d4e1753ea19a2136",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-26T12:00:51",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2053880/"
+  },
+  {
+   "ioc": "69a97d58e4ef452adef717790a0336dd1d974030e7c207c3e2ca75a1f4e10891",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Mirai",
+   "confidence": 90,
+   "date": "2026-11-26T12:00:50",
+   "tags": [
+    "elf",
+    "Mirai",
+    "Torii"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2053879/"
+  },
   {
    "ioc": "baz[.]asdselot[.]org",
    "type": "domain",
@@ -17069,54 +17125,6 @@
     "CobaltStrike"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2053726/"
-  },
-  {
-   "ioc": "146[.]70[.]79[.]61:80",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Cobalt Strike",
-   "confidence": 100,
-   "date": "2026-11-26T09:05:08",
-   "tags": [
-    "CobaltStrike"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2053727/"
-  },
-  {
-   "ioc": "146[.]70[.]79[.]61:22",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Cobalt Strike",
-   "confidence": 100,
-   "date": "2026-11-26T09:05:07",
-   "tags": [
-    "CobaltStrike"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2053725/"
-  },
-  {
-   "ioc": "zyntera[.]id",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 75,
-   "date": "2026-11-26T08:50:50",
-   "tags": [
-    "etherhiding"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2053724/"
-  },
-  {
-   "ioc": "tuzlukcu-haber[.]xyz",
-   "type": "domain",
-   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
-   "malware": "Unknown Loader",
-   "confidence": 75,
-   "date": "2026-11-26T08:50:49",
-   "tags": [
-    "etherhiding"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2053701/"
   }
  ],
  "urlhaus": [
@@ -17269,7 +17277,7 @@
   {
    "ioc": "hxxp://182[.]235[.]148[.]10:47710/bin[.]sh",
    "host_it": false,
-   "status": "offline",
+   "status": "online",
    "threat": "malware_download",
    "tags": [],
    "date": "2026-11-26T11:01:26",
@@ -18801,7 +18809,7 @@
   },
   {
    "name": "Mirai",
-   "count": 99
+   "count": 104
   },
   {
    "name": "Vidar",
