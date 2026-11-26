@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T04:31:07Z",
+ "updated": "2026-11-26T05:01:06Z",
  "news": [
   {
    "id": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
@@ -10539,15 +10539,16 @@
    ]
   },
   {
-   "id": "dark project|Golden State College & Milan Institute",
+   "id": "Dark Project|Golden State College & Milan Institute",
    "victim": "Golden State College & Milan Institute",
    "group": "Dark Project",
-   "country": "",
-   "sector": "",
-   "date": "2026-11-26T01:17:41",
-   "link": "https://www.ransomlook.io/group/dark project",
-   "summary": "Golden State College & Milan Institute fell victim to a cyberattack, resulting in the theft of more than 420 GB of confidential data. The stolen data includes documents containing correspondence with clients, financial information, personal data of e…",
+   "country": "US",
+   "sector": "Education",
+   "date": "2026-11-26T00:50:57",
+   "link": "https://www.ransomware.live/group/Dark Project",
+   "summary": "About Golden State College & Milan Institute Golden State College offers higher-education programs in areas such as accounting, information technology, social and behavioral science, and criminal justice. Milan Institute is a private career-training …",
    "sources": [
+    "ransomware.live",
     "RansomLook"
    ]
   },
@@ -13032,12 +13033,11 @@
    "victim": "Demas Schaefer Family Lawyers",
    "group": "rhysida",
    "country": "",
-   "sector": "Professional Services",
-   "date": "2026-11-23T12:24:58",
-   "link": "https://www.ransomware.live/group/rhysida",
+   "sector": "",
+   "date": "2026-11-23T13:16:48",
+   "link": "https://www.ransomlook.io/group/rhysida",
    "summary": "Demas Schaefer Family Lawyers 630 030 files, 894.8 GB- Client identity documents: driver licenses, passports, birth certificates, Client ID forms (hundreds of family-law matters), opposing-party ID.- Financial disclosure of clients: Notices of Assess…",
    "sources": [
-    "ransomware.live",
     "RansomLook"
    ]
   },
@@ -13943,9 +13943,39 @@
    "last": "2026-11-23T12:17:43"
   },
   {
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "akira",
+   "type": "ransomware",
+   "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Scattered Spider",
    "type": "criminal",
    "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13966,36 +13996,6 @@
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Sandworm",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "akira",
-   "type": "ransomware",
-   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14190,7 +14190,7 @@
    "mentions": 0,
    "claims": 4,
    "claims_it": 0,
-   "last": "2026-11-26T01:17:41"
+   "last": "2026-11-26T00:50:57"
   },
   {
    "name": "medusalocker",
@@ -14554,6 +14554,45 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "b055c8859a55e8683cec80bb4b721d10e0e6821637f2dafdb35c8bab29874eb7",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 85,
+   "date": "2026-11-26T05:00:48",
+   "tags": [
+    "elf",
+    "Loader"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2053113/"
+  },
+  {
+   "ioc": "ds8bthor[.]aafigayolues[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-26T04:53:18",
+   "tags": [
+    "ClearFake",
+    "mac-0x68dc",
+    "macOS"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2053112/"
+  },
+  {
+   "ioc": "aafigayolues[.]org",
+   "type": "domain",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "ClearFake",
+   "confidence": 100,
+   "date": "2026-11-26T04:46:31",
+   "tags": [
+    "ClearFake"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2053111/"
+  },
   {
    "ioc": "gameobs[.]apple02cdn[.]com",
    "type": "domain",
@@ -17259,50 +17298,49 @@
     "RemcosRAT"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2052914/"
-  },
-  {
-   "ioc": "5911fd63541c30322daa6b9018ad2579f97213f76a3d2af6bfb82c6345dad219",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "PureLogs Stealer",
-   "confidence": 85,
-   "date": "2026-11-26T01:00:53",
-   "tags": [
-    "ps1",
-    "PureLogsStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2052913/"
-  },
-  {
-   "ioc": "fe2dad70883ad1099bd8b3bbf7bd035dc3de0b4392a7417a58b009993606fce1",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "PureLogs Stealer",
-   "confidence": 85,
-   "date": "2026-11-26T01:00:52",
-   "tags": [
-    "ps1",
-    "PureLogsStealer",
-    "stealer"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2052912/"
-  },
-  {
-   "ioc": "9ff9ff55671b2c70204778508ddef1d19f3dc5fb175e5fb81114537aebfaed07",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Formbook",
-   "confidence": 85,
-   "date": "2026-11-26T01:00:51",
-   "tags": [
-    "Formbook",
-    "ps1"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2052911/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://182[.]121[.]248[.]125:55725/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-26T04:47:05",
+   "link": "https://urlhaus.abuse.ch/url/4076521/"
+  },
+  {
+   "ioc": "hxxp://60[.]19[.]218[.]79:39142/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-26T04:32:08",
+   "link": "https://urlhaus.abuse.ch/url/4076520/"
+  },
+  {
+   "ioc": "hxxp://79[.]14[.]162[.]226:51303/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-26T04:32:07",
+   "link": "https://urlhaus.abuse.ch/url/4076519/"
+  },
+  {
+   "ioc": "hxxp://77[.]78[.]23[.]238:59051/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [],
+   "date": "2026-11-26T04:32:04",
+   "link": "https://urlhaus.abuse.ch/url/4076518/"
+  },
   {
    "ioc": "hxxp://221[.]15[.]231[.]253:40973/bin[.]sh",
    "host_it": false,
@@ -19066,58 +19104,6 @@
    ],
    "date": "2026-11-25T23:07:11",
    "link": "https://urlhaus.abuse.ch/url/4076377/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/SupporterPick/tg-fix/releases/download/tg-fix/TgWsProxy_windows_7_32bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-25T23:07:10",
-   "link": "https://urlhaus.abuse.ch/url/4076371/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Curveryopull/Zapret-Telegram/releases/download/Zapret-Telegram/TgWsProxy_windows_7_64bit[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-25T23:07:09",
-   "link": "https://urlhaus.abuse.ch/url/4076370/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Curveryopull/Telegram-Zapret/releases/download/Telegram-Zapret/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-25T23:07:08",
-   "link": "https://urlhaus.abuse.ch/url/4076369/"
-  },
-  {
-   "ioc": "hxxps://github[.]com/Curveryopull/Tg-Ws-Proxy/releases/download/Tg-Ws-Proxy/TgWsProxy_windows_arm64[.]exe",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "exe",
-    "github",
-    "SalatStealer"
-   ],
-   "date": "2026-11-25T23:07:07",
-   "link": "https://urlhaus.abuse.ch/url/4076362/"
   }
  ],
  "malware_top": [
@@ -19127,7 +19113,7 @@
   },
   {
    "name": "ClearFake",
-   "count": 363
+   "count": 365
   },
   {
    "name": "ZStealer",
@@ -19135,7 +19121,7 @@
   },
   {
    "name": "Vidar",
-   "count": 80
+   "count": 77
   },
   {
    "name": "Mirai",
@@ -19158,12 +19144,12 @@
    "count": 29
   },
   {
-   "name": "Raven Stealer",
+   "name": "Unknown Loader",
    "count": 21
   },
   {
-   "name": "Unknown Loader",
-   "count": 20
+   "name": "Raven Stealer",
+   "count": 21
   },
   {
    "name": "PureRAT",
@@ -19244,72 +19230,72 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 55.73,
+    "value": 55.75,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.66,
+    "value": 7.67,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.09,
+    "value": 3.1,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 3.03,
+    "value": 3.01,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.54,
+    "value": 2.56,
     "rank": 5
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.52,
+    "value": 2.55,
     "rank": 6
    },
    {
     "code": "IT",
     "name": "Italy",
-    "value": 2.24,
+    "value": 2.23,
     "rank": 7
    },
    {
     "code": "FR",
     "name": "France",
-    "value": 1.88,
+    "value": 1.89,
     "rank": 8
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 1.81,
+    "value": 1.79,
     "rank": 9
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.71,
+    "value": 1.76,
     "rank": 10
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.27,
+    "value": 1.24,
     "rank": 11
    },
    {
-    "code": "IN",
-    "name": "India",
+    "code": "CY",
+    "name": "Cyprus",
     "value": 0.91,
     "rank": 12
    }
@@ -19317,7 +19303,7 @@
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 2.24,
+   "value": 2.23,
    "rank": 7
   },
   "l7_7d": [
@@ -19330,37 +19316,37 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.22,
+    "value": 7.21,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 2.98,
+    "value": 2.99,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.88,
+    "value": 2.87,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.76,
+    "value": 2.75,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.71,
+    "value": 2.7,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.24,
+    "value": 2.25,
     "rank": 7
    },
    {
@@ -19372,13 +19358,13 @@
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.31,
+    "value": 1.32,
     "rank": 9
    },
    {
     "code": "IT",
     "name": "Italy",
-    "value": 1.09,
+    "value": 1.1,
     "rank": 10
    },
    {
@@ -19390,14 +19376,14 @@
    {
     "code": "SE",
     "name": "Sweden",
-    "value": 1.0,
+    "value": 1.01,
     "rank": 12
    }
   ],
   "it_7d": {
    "code": "IT",
    "name": "Italy",
-   "value": 1.09,
+   "value": 1.1,
    "rank": 10
   },
   "outages_it": []
