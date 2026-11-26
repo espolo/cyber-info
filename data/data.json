@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T21:47:38Z",
+ "updated": "2026-11-26T22:01:06Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
@@ -13927,29 +13927,9 @@
    "last": "2026-11-23T12:17:43"
   },
   {
-   "name": "Sandworm",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "APT28",
    "type": "apt",
    "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13967,9 +13947,29 @@
    "last": ""
   },
   {
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
    "name": "Scattered Spider",
    "type": "criminal",
    "country": "",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "Sandworm",
+   "type": "apt",
+   "country": "RU",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14549,6 +14549,172 @@
  },
  "known_actors": 1528,
  "iocs": [
+  {
+   "ioc": "eee68e36c9c6cf08bf1a94c5f1df208eab365de65fe3b347f5eece9d3eaddf02",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown Loader",
+   "confidence": 75,
+   "date": "2026-11-26T22:00:53",
+   "tags": [
+    "Dropper",
+    "msi"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054572/"
+  },
+  {
+   "ioc": "hxxp://45[.]198[.]224[.]75/xmrig-x64",
+   "type": "url",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-26T21:56:11",
+   "tags": [
+    "catstorm",
+    "elf",
+    "miner",
+    "xmrig"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054571/"
+  },
+  {
+   "ioc": "45[.]198[.]224[.]75:443",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-26T21:56:10",
+   "tags": [
+    "catstorm",
+    "DDoS",
+    "elf",
+    "go"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054570/"
+  },
+  {
+   "ioc": "1[.]159[.]39[.]155:8080",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Unknown RAT",
+   "confidence": 75,
+   "date": "2026-11-26T21:55:43",
+   "tags": [
+    "SpectralRAT"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054569/"
+  },
+  {
+   "ioc": "103[.]163[.]214[.]231:2052",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-26T21:55:32",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054567/"
+  },
+  {
+   "ioc": "103[.]163[.]214[.]232:3000",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Jackskid",
+   "confidence": 100,
+   "date": "2026-11-26T21:55:32",
+   "tags": [
+    "botnet",
+    "DDoS",
+    "Jackskid",
+    "Mirai",
+    "rctea"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054568/"
+  },
+  {
+   "ioc": "141[.]11[.]243[.]171:80",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-26T21:48:06",
+   "tags": [
+    "DPRK",
+    "etherhiding",
+    "NullReceiver",
+    "polinrider"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054562/"
+  },
+  {
+   "ioc": "79023ba175e1eab1a7ccdd5f9cfb8038b8a50d51afb223a29334d023e03d0d94",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-26T21:48:06",
+   "tags": [
+    "BSC",
+    "DPRK",
+    "etherhiding",
+    "NullReceiver",
+    "polinrider"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054563/"
+  },
+  {
+   "ioc": "4d741f034c9d5d8c059e2433d9d8214e24f15c7eba5bfbecfbaf017efdfda00a",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-26T21:48:06",
+   "tags": [
+    "BSC",
+    "DPRK",
+    "etherhiding",
+    "NullReceiver",
+    "polinrider"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054564/"
+  },
+  {
+   "ioc": "2809f79f834d2aee9f9b4f1a8ae455a645c459cdab537cee48603b8259fbf3df",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-26T21:48:06",
+   "tags": [
+    "BSC",
+    "DPRK",
+    "etherhiding",
+    "NullReceiver",
+    "polinrider"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054565/"
+  },
+  {
+   "ioc": "1d6f39133dedfb2abc019f42088324fdf533744e8c5fea5c8681c16a9992520f",
+   "type": "sha256_hash",
+   "threat": "Indicator that identifies a malware sample (payload)",
+   "malware": "Unknown malware",
+   "confidence": 100,
+   "date": "2026-11-26T21:48:06",
+   "tags": [
+    "BSC",
+    "DPRK",
+    "etherhiding",
+    "NullReceiver",
+    "polinrider"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2054566/"
+  },
   {
    "ioc": "ylheltwi[.]aafikalipepe[.]org",
    "type": "domain",
@@ -16993,119 +17159,35 @@
    "date": "2026-11-26T18:39:46",
    "tags": [],
    "link": "https://threatfox.abuse.ch/ioc/2054419/"
-  },
-  {
-   "ioc": "045721c2370b76925431cb7faed9b392debfc6416315338e559a61a44a08ad5d",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ACR Stealer",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:46",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054420/"
-  },
-  {
-   "ioc": "f1deb81291095d2a54b85332c53b5a409a323335",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "ACR Stealer",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:46",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054421/"
-  },
-  {
-   "ioc": "d044cc11f5ec87fd134386cd7f8c769434ca7926a79883ef063ef22291bbd85c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:45",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054417/"
-  },
-  {
-   "ioc": "f3f4d3a66aa578a243f044b2ba8c9b6e16eac310",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:45",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054418/"
-  },
-  {
-   "ioc": "48b2676bf043fb47891535b8fee4264754f17661",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:44",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054415/"
-  },
-  {
-   "ioc": "78dbec4fdb89f76fdf3d12b996ef16fb",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:44",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054416/"
-  },
-  {
-   "ioc": "cc1e58e92bdf103b95fefcbccc7328a6",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "WannaCryptor",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:43",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054413/"
-  },
-  {
-   "ioc": "70e2c20f766b62aa54accfbe378d0c9405b8c82aa5168bb7f2369f81d33f9ef7",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Vidar",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:43",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054414/"
-  },
-  {
-   "ioc": "3ff52d7813732314b4038e85a53f8d74",
-   "type": "md5_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "NjRAT",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:42",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054410/"
-  },
-  {
-   "ioc": "5bf5445a7d72337bac0e0242e5f6d83a2707f3478146927d3a4791c7ffa52b4a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "WannaCryptor",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:42",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054411/"
-  },
-  {
-   "ioc": "b8d0deb678a498a5adc6bd2f92d481bd23dfcec7",
-   "type": "sha1_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "WannaCryptor",
-   "confidence": 95,
-   "date": "2026-11-26T18:39:42",
-   "tags": [],
-   "link": "https://threatfox.abuse.ch/ioc/2054412/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://46[.]252[.]38[.]41:49213/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "arm",
+    "elf",
+    "mirai",
+    "Mozi"
+   ],
+   "date": "2026-11-26T21:58:14",
+   "link": "https://urlhaus.abuse.ch/url/4076947/"
+  },
+  {
+   "ioc": "hxxp://123[.]9[.]246[.]143:37588/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-26T21:47:07",
+   "link": "https://urlhaus.abuse.ch/url/4076946/"
+  },
   {
    "ioc": "hxxp://117[.]223[.]143[.]1:36734/i",
    "host_it": false,
@@ -18882,32 +18964,6 @@
    ],
    "date": "2026-11-26T15:11:09",
    "link": "https://urlhaus.abuse.ch/url/4076797/"
-  },
-  {
-   "ioc": "hxxp://93[.]94[.]52[.]110/189?NGXc5h",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "ClickFix",
-    "fake-captcha",
-    "powershell"
-   ],
-   "date": "2026-11-26T15:11:09",
-   "link": "https://urlhaus.abuse.ch/url/4076798/"
-  },
-  {
-   "ioc": "hxxps://panelc[.]iwillberich[.]cfd/static/builds/corvus-silent[.]exe",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "EtherHiding",
-    "infostealer",
-    "Slientnet"
-   ],
-   "date": "2026-11-26T15:10:18",
-   "link": "https://urlhaus.abuse.ch/url/4076794/"
   }
  ],
  "malware_top": [
@@ -18917,11 +18973,11 @@
   },
   {
    "name": "Unknown Loader",
-   "count": 197
+   "count": 198
   },
   {
    "name": "ClearFake",
-   "count": 136
+   "count": 134
   },
   {
    "name": "Vidar",
@@ -18953,7 +19009,7 @@
   },
   {
    "name": "Unknown RAT",
-   "count": 24
+   "count": 25
   },
   {
    "name": "Unknown Stealer",
@@ -18964,11 +19020,11 @@
    "count": 22
   },
   {
-   "name": "WannaCryptor",
-   "count": 15
+   "name": "Jackskid",
+   "count": 17
   },
   {
-   "name": "Jackskid",
+   "name": "WannaCryptor",
    "count": 15
   },
   {
@@ -19040,49 +19096,49 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.12,
+    "value": 56.15,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 8.26,
+    "value": 8.14,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.24,
+    "value": 3.32,
     "rank": 3
    },
    {
     "code": "GB",
     "name": "United Kingdom",
-    "value": 2.81,
+    "value": 2.8,
     "rank": 4
    },
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.44,
+    "value": 2.43,
     "rank": 5
+   },
+   {
+    "code": "IT",
+    "name": "Italy",
+    "value": 2.34,
+    "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
     "value": 2.33,
-    "rank": 6
-   },
-   {
-    "code": "IT",
-    "name": "Italy",
-    "value": 2.3,
     "rank": 7
    },
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.87,
+    "value": 1.85,
     "rank": 8
    },
    {
@@ -19094,13 +19150,13 @@
    {
     "code": "CN",
     "name": "China",
-    "value": 1.73,
+    "value": 1.74,
     "rank": 10
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.06,
+    "value": 1.05,
     "rank": 11
    },
    {
@@ -19113,14 +19169,14 @@
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 2.3,
-   "rank": 7
+   "value": 2.34,
+   "rank": 6
   },
   "l7_7d": [
    {
     "code": "US",
     "name": "United States",
-    "value": 56.45,
+    "value": 56.44,
     "rank": 1
    },
    {
@@ -19132,7 +19188,7 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.15,
+    "value": 3.16,
     "rank": 3
    },
    {
@@ -19144,19 +19200,19 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.68,
+    "value": 2.67,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.65,
+    "value": 2.64,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.24,
+    "value": 2.25,
     "rank": 7
    },
    {
@@ -19166,14 +19222,14 @@
     "rank": 8
    },
    {
-    "code": "AU",
-    "name": "Australia",
-    "value": 1.31,
+    "code": "IT",
+    "name": "Italy",
+    "value": 1.33,
     "rank": 9
    },
    {
-    "code": "IT",
-    "name": "Italy",
+    "code": "AU",
+    "name": "Australia",
     "value": 1.31,
     "rank": 10
    },
@@ -19193,8 +19249,8 @@
   "it_7d": {
    "code": "IT",
    "name": "Italy",
-   "value": 1.31,
-   "rank": 10
+   "value": 1.33,
+   "rank": 9
   },
   "outages_it": []
  },
