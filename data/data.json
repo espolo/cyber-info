@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T22:01:06Z",
+ "updated": "2026-11-27T22:12:51Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
@@ -13825,16 +13825,6 @@
    "last": "2026-11-27T06:44:27"
   },
   {
-   "name": "LockBit",
-   "type": "ransomware",
-   "country": "",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Sandworm",
    "type": "apt",
    "country": "RU",
@@ -13845,9 +13835,19 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "Killnet",
+   "type": "hacktivist",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "akira",
+   "type": "ransomware",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13865,8 +13865,8 @@
    "last": ""
   },
   {
-   "name": "Killnet",
-   "type": "hacktivist",
+   "name": "APT28",
+   "type": "apt",
    "country": "RU",
    "watch": true,
    "mentions": 0,
@@ -13885,9 +13885,9 @@
    "last": ""
   },
   {
-   "name": "APT28",
+   "name": "Lazarus Group",
    "type": "apt",
-   "country": "RU",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13895,7 +13895,7 @@
    "last": ""
   },
   {
-   "name": "akira",
+   "name": "LockBit",
    "type": "ransomware",
    "country": "",
    "watch": true,
@@ -14235,16 +14235,6 @@
    "last": "2026-11-27T10:17:47"
   },
   {
-   "name": "everest",
-   "type": "ransomware",
-   "country": "",
-   "watch": false,
-   "mentions": 0,
-   "claims": 3,
-   "claims_it": 0,
-   "last": "2026-11-26T02:06:32"
-  },
-  {
    "name": "SoulGroup",
    "type": "ransomware",
    "country": "",
@@ -14293,6 +14283,16 @@
    "claims": 2,
    "claims_it": 0,
    "last": "2026-11-26T09:25:13"
+  },
+  {
+   "name": "everest",
+   "type": "ransomware",
+   "country": "",
+   "watch": false,
+   "mentions": 0,
+   "claims": 2,
+   "claims_it": 0,
+   "last": "2026-11-26T02:06:32"
   },
   {
    "name": "climax",
@@ -14544,6 +14544,18 @@
  },
  "known_actors": 1529,
  "iocs": [
+  {
+   "ioc": "8[.]140[.]227[.]156:8088",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "VShell",
+   "confidence": 100,
+   "date": "2026-11-27T22:05:05",
+   "tags": [
+    "Vshell"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2056624/"
+  },
   {
    "ioc": "138[.]197[.]154[.]120:4444",
    "type": "ip:port",
@@ -17147,22 +17159,98 @@
     "offensive-agency"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2056425/"
-  },
-  {
-   "ioc": "192[.]238[.]128[.]161:8787",
-   "type": "ip:port",
-   "threat": "Indicator that identifies a botnet command&control server (C&C)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-27T20:23:00",
-   "tags": [
-    "ARTEX",
-    "offensive-agency"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056423/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/youstt135/youstt135[.]github[.]io/refs/heads/main/assets/v3[.]5[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-27T22:04:10",
+   "link": "https://urlhaus.abuse.ch/url/4078071/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/Zabar1079/zabar1079[.]github[.]io/refs/heads/main/availableness/App-2[.]0[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-27T22:04:07",
+   "link": "https://urlhaus.abuse.ch/url/4078069/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/deadly-centropomus6106/deadly-centropomus6106[.]github[.]io/refs/heads/main/swagsman/Latest-v1[.]6[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-27T22:04:07",
+   "link": "https://urlhaus.abuse.ch/url/4078070/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/vicleyva/vicleyva[.]github[.]io/refs/heads/main/assets/1[.]4[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-27T22:04:06",
+   "link": "https://urlhaus.abuse.ch/url/4078066/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/yqman34/yqman34[.]github[.]io/refs/heads/main/styan/v1[.]3[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-27T22:04:06",
+   "link": "https://urlhaus.abuse.ch/url/4078067/"
+  },
+  {
+   "ioc": "hxxps://raw[.]githubusercontent[.]com/daniel-arteaga-chamorro/daniel-arteaga-chamorro[.]github[.]io/refs/heads/main/fotos/Application-2[.]4[.]zip",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "github",
+    "SmartLoader",
+    "zip"
+   ],
+   "date": "2026-11-27T22:04:06",
+   "link": "https://urlhaus.abuse.ch/url/4078068/"
+  },
+  {
+   "ioc": "hxxp://125[.]45[.]10[.]178:49609/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-27T22:02:05",
+   "link": "https://urlhaus.abuse.ch/url/4078065/"
+  },
   {
    "ioc": "hxxp://115[.]55[.]6[.]58:37033/i",
    "host_it": false,
@@ -18987,104 +19075,6 @@
    ],
    "date": "2026-11-27T16:26:08",
    "link": "https://urlhaus.abuse.ch/url/4077922/"
-  },
-  {
-   "ioc": "hxxps://bit31[.]gerhodd[.]com/crg1u8ae4i",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "fake-repo",
-    "github",
-    "github-pages",
-    "redirect"
-   ],
-   "date": "2026-11-27T16:26:08",
-   "link": "https://urlhaus.abuse.ch/url/4077923/"
-  },
-  {
-   "ioc": "hxxps://quantum[.]gerhodd[.]com/pz3gq14w",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "fake-repo",
-    "github",
-    "github-pages",
-    "redirect"
-   ],
-   "date": "2026-11-27T16:26:08",
-   "link": "https://urlhaus.abuse.ch/url/4077924/"
-  },
-  {
-   "ioc": "hxxps://app41[.]gerhodd[.]com/ixptmn6v",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "fake-repo",
-    "github",
-    "github-pages",
-    "redirect"
-   ],
-   "date": "2026-11-27T16:26:08",
-   "link": "https://urlhaus.abuse.ch/url/4077925/"
-  },
-  {
-   "ioc": "hxxps://quantum72[.]gerhodd[.]com/t2wzjtu3m",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "fake-repo",
-    "github",
-    "github-pages",
-    "redirect"
-   ],
-   "date": "2026-11-27T16:26:08",
-   "link": "https://urlhaus.abuse.ch/url/4077926/"
-  },
-  {
-   "ioc": "hxxps://start[.]gerhodd[.]com/f0oafuwwen",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "fake-repo",
-    "github",
-    "github-pages",
-    "redirect"
-   ],
-   "date": "2026-11-27T16:26:08",
-   "link": "https://urlhaus.abuse.ch/url/4077927/"
-  },
-  {
-   "ioc": "hxxps://sync[.]gerhodd[.]com/masu64hw",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "fake-repo",
-    "github",
-    "github-pages",
-    "redirect"
-   ],
-   "date": "2026-11-27T16:26:08",
-   "link": "https://urlhaus.abuse.ch/url/4077928/"
-  },
-  {
-   "ioc": "hxxps://spark[.]gerhodd[.]com/48868uvvcu",
-   "host_it": false,
-   "status": "offline",
-   "threat": "malware_download",
-   "tags": [
-    "fake-repo",
-    "github",
-    "github-pages",
-    "redirect"
-   ],
-   "date": "2026-11-27T16:26:08",
-   "link": "https://urlhaus.abuse.ch/url/4077929/"
   }
  ],
  "malware_top": [
@@ -19106,11 +19096,11 @@
   },
   {
    "name": "VShell",
-   "count": 44
+   "count": 45
   },
   {
    "name": "Vidar",
-   "count": 42
+   "count": 41
   },
   {
    "name": "Unknown RAT",
@@ -19303,19 +19293,19 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 56.05,
+    "value": 56.04,
     "rank": 1
    },
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.46,
+    "value": 7.47,
     "rank": 2
    },
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 3.61,
+    "value": 3.62,
     "rank": 3
    },
    {
