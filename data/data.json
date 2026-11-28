@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T04:31:02Z",
+ "updated": "2026-11-28T05:01:10Z",
  "news": [
   {
    "id": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
@@ -13809,7 +13809,17 @@
    "last": ""
   },
   {
-   "name": "LockBit",
+   "name": "APT28",
+   "type": "apt",
+   "country": "RU",
+   "watch": true,
+   "mentions": 0,
+   "claims": 0,
+   "claims_it": 0,
+   "last": ""
+  },
+  {
+   "name": "akira",
    "type": "ransomware",
    "country": "",
    "watch": true,
@@ -13829,16 +13839,6 @@
    "last": ""
   },
   {
-   "name": "APT28",
-   "type": "apt",
-   "country": "RU",
-   "watch": true,
-   "mentions": 0,
-   "claims": 0,
-   "claims_it": 0,
-   "last": ""
-  },
-  {
    "name": "Killnet",
    "type": "hacktivist",
    "country": "RU",
@@ -13849,9 +13849,9 @@
    "last": ""
   },
   {
-   "name": "Lazarus Group",
-   "type": "apt",
-   "country": "KP",
+   "name": "LockBit",
+   "type": "ransomware",
+   "country": "",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -13859,9 +13859,9 @@
    "last": ""
   },
   {
-   "name": "akira",
-   "type": "ransomware",
-   "country": "",
+   "name": "Lazarus Group",
+   "type": "apt",
+   "country": "KP",
    "watch": true,
    "mentions": 0,
    "claims": 0,
@@ -14518,6 +14518,80 @@
  },
  "known_actors": 1529,
  "iocs": [
+  {
+   "ioc": "218[.]16[.]164[.]138:49439",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a malware distribution server (payload delivery)",
+   "malware": "Mirai",
+   "confidence": 50,
+   "date": "2026-11-28T04:53:38",
+   "tags": [
+    "Dropper",
+    "honeypot",
+    "Mirai"
+   ],
+   "link": "https://threatfox.abuse.ch/ioc/2056979/"
+  },
+  {
+   "ioc": "103[.]248[.]120[.]6:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-28T04:31:55",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2056973/"
+  },
+  {
+   "ioc": "115[.]191[.]79[.]153:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-28T04:31:55",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2056974/"
+  },
+  {
+   "ioc": "144[.]31[.]159[.]153:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-28T04:31:55",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2056975/"
+  },
+  {
+   "ioc": "154[.]116[.]254[.]157:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-28T04:31:55",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2056976/"
+  },
+  {
+   "ioc": "216[.]155[.]93[.]75:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-28T04:31:55",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2056977/"
+  },
+  {
+   "ioc": "35[.]210[.]61[.]208:22",
+   "type": "ip:port",
+   "threat": "Indicator that identifies a botnet command&control server (C&C)",
+   "malware": "Mirai",
+   "confidence": 75,
+   "date": "2026-11-28T04:31:55",
+   "tags": [],
+   "link": "https://threatfox.abuse.ch/ioc/2056978/"
+  },
   {
    "ioc": "101[.]42[.]119[.]53:8787",
    "type": "ip:port",
@@ -17021,93 +17095,45 @@
     "SnoopyTriage"
    ],
    "link": "https://threatfox.abuse.ch/ioc/2056780/"
-  },
-  {
-   "ioc": "18ae1994c6f7191f6bbbea840f7095466dd8cd2ce62d12d9d89a4cbf43517ebf",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-28T00:35:33",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056779/"
-  },
-  {
-   "ioc": "17a249e43beb518d7eb81353b47cb1eead1096da544a02dbf86d469f1b0e8eaf",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-28T00:35:32",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056777/"
-  },
-  {
-   "ioc": "180ae96c1046a41d94be88b1a01f56c738749ed291560727646a308f90177d3a",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-28T00:35:32",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056778/"
-  },
-  {
-   "ioc": "1736bfc83f9a5bda39e9054e9daef7ee69216f7d3bd7a99d0da1fc1a8d08709c",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-28T00:35:31",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056776/"
-  },
-  {
-   "ioc": "172ce4abcb11d645e7e2191db6c58681824effcca315d60d1797c6f02046a7f3",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-28T00:35:30",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056775/"
-  },
-  {
-   "ioc": "11f94a1a30745bc9536ed3edc08ae266f53330a5a43f34fc5b071549ffae4fcc",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-28T00:35:29",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056773/"
-  },
-  {
-   "ioc": "13b626624226d5a07069d49210329d4f4ad8411510a3783de988d758e04d68e6",
-   "type": "sha256_hash",
-   "threat": "Indicator that identifies a malware sample (payload)",
-   "malware": "Unknown malware",
-   "confidence": 75,
-   "date": "2026-11-28T00:35:29",
-   "tags": [
-    "SnoopyTriage"
-   ],
-   "link": "https://threatfox.abuse.ch/ioc/2056774/"
   }
  ],
  "urlhaus": [
+  {
+   "ioc": "hxxp://123[.]14[.]41[.]169:45790/bin[.]sh",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "Mozi"
+   ],
+   "date": "2026-11-28T04:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4078421/"
+  },
+  {
+   "ioc": "hxxp://117[.]220[.]61[.]84:43156/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "mirai"
+   ],
+   "date": "2026-11-28T04:47:06",
+   "link": "https://urlhaus.abuse.ch/url/4078422/"
+  },
+  {
+   "ioc": "hxxp://112[.]252[.]254[.]6:35800/i",
+   "host_it": false,
+   "status": "online",
+   "threat": "malware_download",
+   "tags": [
+    "32-bit",
+    "elf",
+    "mips",
+    "Mozi"
+   ],
+   "date": "2026-11-28T04:38:34",
+   "link": "https://urlhaus.abuse.ch/url/4078420/"
+  },
   {
    "ioc": "hxxp://120[.]28[.]193[.]113:60958/i",
    "host_it": false,
@@ -18876,41 +18902,6 @@
    ],
    "date": "2026-11-28T01:32:05",
    "link": "https://urlhaus.abuse.ch/url/4078275/"
-  },
-  {
-   "ioc": "hxxp://42[.]235[.]53[.]254:53190/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "Mozi"
-   ],
-   "date": "2026-11-28T01:17:07",
-   "link": "https://urlhaus.abuse.ch/url/4078272/"
-  },
-  {
-   "ioc": "hxxp://220[.]198[.]113[.]151:51674/i",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "mirai"
-   ],
-   "date": "2026-11-28T01:13:06",
-   "link": "https://urlhaus.abuse.ch/url/4078271/"
-  },
-  {
-   "ioc": "hxxps://raw[.]githubusercontent[.]com/mibhati/mibhati[.]github[.]io/refs/heads/main/speculativeness/v2[.]4[.]zip",
-   "host_it": false,
-   "status": "online",
-   "threat": "malware_download",
-   "tags": [
-    "github",
-    "SmartLoader",
-    "zip"
-   ],
-   "date": "2026-11-28T01:11:07",
-   "link": "https://urlhaus.abuse.ch/url/4078268/"
   }
  ],
  "malware_top": [
@@ -18920,7 +18911,7 @@
   },
   {
    "name": "Mirai",
-   "count": 90
+   "count": 98
   },
   {
    "name": "ClearFake",
@@ -18944,7 +18935,7 @@
   },
   {
    "name": "Vidar",
-   "count": 36
+   "count": 34
   },
   {
    "name": "WARDENStealer",
@@ -18999,10 +18990,6 @@
    "count": 6
   },
   {
-   "name": "WannaCry",
-   "count": 6
-  },
-  {
    "name": "Formbook",
    "count": 5
   },
@@ -19012,6 +18999,10 @@
   },
   {
    "name": "SNOWLIGHT",
+   "count": 4
+  },
+  {
+   "name": "Anatsa",
    "count": 4
   }
  ],
@@ -19049,7 +19040,7 @@
    {
     "code": "US",
     "name": "United States",
-    "value": 54.34,
+    "value": 54.53,
     "rank": 1
    },
    {
@@ -19061,7 +19052,7 @@
    {
     "code": "MY",
     "name": "Malaysia",
-    "value": 5.94,
+    "value": 5.86,
     "rank": 3
    },
    {
@@ -19073,24 +19064,24 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.42,
+    "value": 2.38,
     "rank": 5
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.31,
+    "value": 2.3,
     "rank": 6
-   },
-   {
-    "code": "IT",
-    "name": "Italy",
-    "value": 2.07,
-    "rank": 7
    },
    {
     "code": "FR",
     "name": "France",
+    "value": 2.02,
+    "rank": 7
+   },
+   {
+    "code": "IT",
+    "name": "Italy",
     "value": 2.01,
     "rank": 8
    },
@@ -19103,27 +19094,27 @@
    {
     "code": "AU",
     "name": "Australia",
-    "value": 1.13,
+    "value": 1.15,
     "rank": 10
    },
    {
     "code": "HK",
     "name": "Hong Kong",
-    "value": 1.11,
+    "value": 1.14,
     "rank": 11
    },
    {
     "code": "CY",
     "name": "Cyprus",
-    "value": 1.08,
+    "value": 0.86,
     "rank": 12
    }
   ],
   "it_1d": {
    "code": "IT",
    "name": "Italy",
-   "value": 2.07,
-   "rank": 7
+   "value": 2.01,
+   "rank": 8
   },
   "l7_7d": [
    {
@@ -19135,7 +19126,7 @@
    {
     "code": "CA",
     "name": "Canada",
-    "value": 7.53,
+    "value": 7.54,
     "rank": 2
    },
    {
@@ -19153,19 +19144,19 @@
    {
     "code": "IL",
     "name": "Israel",
-    "value": 2.62,
+    "value": 2.61,
     "rank": 5
    },
    {
     "code": "CN",
     "name": "China",
-    "value": 2.43,
+    "value": 2.42,
     "rank": 6
    },
    {
     "code": "DE",
     "name": "Germany",
-    "value": 2.28,
+    "value": 2.29,
     "rank": 7
    },
    {
